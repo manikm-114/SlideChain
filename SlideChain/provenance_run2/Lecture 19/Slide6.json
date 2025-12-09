@@ -1,0 +1,92 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "first-order differential equation"
+          },
+          {
+            "category": "mathematics",
+            "term": "exponential growth"
+          },
+          {
+            "category": "mathematics",
+            "term": "exponential decay"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray imaging"
+          }
+        ],
+        "evidence": [
+          "This shows that whenever the process is described by a first-order differential equation, the solution must be of this form: y is exponential growth or exponential decay.",
+          "In other words, a constant multiplied by an exponential function, with index k t, where t is time.",
+          "So, this explains why you see exponential decay, exponential growth, or attenuation in earlier imaging modalities like X-ray imaging, and why you see the same behavior here in MRI."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "that gives: y equals A e to the k t"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This explains why you see exponential decay, exponential growth, or attenuation in earlier imaging modalities like X-ray imaging, and why you see the same behavior here in MRI."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "earlier imaging modalities like X-ray imaging",
+        "p": "is seen in",
+        "s": "exponential decay, exponential growth, or attenuation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "In other words, a constant multiplied by an exponential function, with index k t, where t is time.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "exponential growth or exponential decay",
+            "p": "represents",
+            "s": "exponential function"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

@@ -1,0 +1,9 @@
+The next key idea is back-projection, which is the standard method for reconstructing CT slices.
+
+Here’s how it works: we start with the sinogram, which contains all the projection data. For each projection, we take its information and “back-project” it—that means we spread that projection back across the image space at the angle where it was acquired.
+Let’s look at this cartoon example. Imagine we have a large oval, and inside it are two smaller red ovals. If we take a projection from the top down, the sinogram shows two bright spots that correspond to those red ovals. When we back-project this data, we get a blurry reconstruction along that one angle.
+
+Now, let’s do the same from a side view. Again, the sinogram shows two high-amplitude areas, and when we back-project that projection, we get another blurry reconstruction, but this time along the side angle.
+
+At this point, we have two back-projections. When we combine them, the overlap starts to suggest the locations of the two smaller ovals inside the larger one. Of course, with only two projections, the result is quite rough—in this case, it looks more like two squares.
+But as we add more and more projections from many different angles, the combined back-projections gradually approximate the true shapes. With enough views, the reconstruction recovers the original sample very accurately.

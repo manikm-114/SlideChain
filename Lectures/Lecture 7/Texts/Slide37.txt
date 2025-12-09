@@ -1,0 +1,22 @@
+Now we’re entering the most important part of this discussion — the mathematical foundation behind the sampling theorem.
+
+Let’s start by recalling our goal: we want to take a continuous signal, sample it at regular intervals, and then perfectly reconstruct the original signal from just those samples. But this only works under certain conditions — particularly, when the sampling rate is high enough to avoid aliasing. That’s what the Nyquist theorem guarantees.
+
+Now, let’s walk through this derivation step by step. It’s a bit more mathematical, but I’ll explain the reasoning behind each part.
+
+We begin by expressing the function f of t as the inverse Fourier transform of a product — specifically, a low-pass filter in the frequency domain multiplied by a sampled version of the original function’s spectrum. Symbolically, we write:
+f of t equals the inverse Fourier transform of the product of capital Pi  P of u and the convolution of f hat of u with S P of u.
+
+Next, we apply properties of the Fourier transform. We pull out the convolution and apply inverse transforms separately. This leads to:
+f of t equals the inverse transform of Pi  P of u, convolved with the inverse transform of f hat of u multiplied by S  P of u.
+Then, we take this result back to the time domain.
+
+Here’s what we get:f of t equals P times sinc of pi P t, convolved with f of t times S 1 over P of t.
+This expression means we’re convolving the sinc function — which comes from the inverse transform of a box function in frequency — with the sampled version of the original function.
+
+And from there, we arrive at the reconstruction formula you’ve probably seen before:
+f of t equals the sum over k from minus infinity to infinity of f at k over P times sinc of pi times the quantity t minus k over P over pi times the quantity t minus k over P.
+This is the classic sinc interpolation formula. It tells us that, under the right sampling conditions — meaning, the sampling rate is at least twice the highest frequency in the signal — the continuous signal can be reconstructed exactly by convolving the samples with the sinc function.
+
+So in summary: sampling in the time domain corresponds to periodic replication in the frequency domain. When the signal is bandlimited and the sampling rate is high enough, we can perfectly reconstruct it using this formula.
+This is the core of the sampling theorem. And this formula — the final one on the slide — is one of the most beautiful results in signal processing.

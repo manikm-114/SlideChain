@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:42:42.856952+00:00",
+  "text_length": 1043,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe have now finished the general perspective, so let’s move on to radioactivity.\n\nRadioactivity is explained in several sections of the textbook. The reading itself is not especially difficult, but the terminology can feel confusing, especially if you don’t have a strong background in chemistry. I’ve had to go through these materials multiple times myself. Over time, it becomes clearer — what we are really dealing with are physical and chemical phenomena at the atomic level.\nSo why does radioactivity occur? The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process. The decay can follow different mechanisms, which we will study in detail.\n\nImportantly, radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations. Once you see the formulation, it’s not as difficult as it sounds. With some practice, the mathematics will become straightforward, and it provides a precise way to describe radioactive processes.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"radioactivity\", \"category\": \"physics\"},\n    {\"term\": \"decay mechanisms\", \"category\": \"physics\"},\n    {\"term\": \"decay modeling\", \"category\": \"mathematics\"},\n    {\"term\": \"tracer production\", \"category\": \"instrumentation\"},\n    {\"term\": \"gamma camera\", \"category\": \"instrumentation\"},\n    {\"term\": \"coincidence detection\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Radioactivity is explained in several sections of the textbook.\",\n    \"The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process.\",\n    \"Radioactivity follows an exponential curve.\",\n    \"Radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations.\",\n    \"Gamma camera\",\n    \"Coincidence detection\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radioactivity",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "Radioactivity is explained in several sections of the textbook.",
+      "The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process.",
+      "Radioactivity follows an exponential curve.",
+      "Radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations.",
+      "Gamma camera",
+      "Coincidence detection"
+    ]
+  }
+}

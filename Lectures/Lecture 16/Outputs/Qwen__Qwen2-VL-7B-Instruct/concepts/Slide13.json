@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide13",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T09:59:51.562850+00:00",
+  "text_length": 793,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis slide is mainly a review of basic nuclear physics concepts: the atomic number and the mass number.\nThe atomic number, denoted by Z, is simply the number of protons in the nucleus of an atom. The mass number, usually written as A, is the total number of nucleons, meaning the number of protons plus the number of neutrons. In most cases, the atomic weight is approximately equal to this mass number.\n\nFor example, in helium, the atomic number is 2, because there are two protons. The mass number is 4, because helium has two protons and two neutrons. When an atom is neutral, the number of electrons surrounding the nucleus matches the number of protons in the nucleus. This keeps the charge balanced.\nNow, once we understand atomic number and mass number, we can define what isotopes are.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Atomic Number (Z)\", \"category\": \"physics\"},\n    {\"term\": \"Mass Number (A)\", \"category\": \"physics\"},\n    {\"term\": \"Protons\", \"category\": \"physics\"},\n    {\"term\": \"Neutrons\", \"category\": \"physics\"},\n    {\"term\": \"Electrons\", \"category\": \"physics\"},\n    {\"term\": \"Isotopes\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"the number of protons in its nucleus\",\n    \"the total number of protons and neutrons\",\n    \"the number of nucleons in a nucleus\",\n    \"the number of protons\",\n    \"the number of protons\",\n    \"the number of protons\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Protons",
+        "category": "physics"
+      },
+      {
+        "term": "Neutrons",
+        "category": "physics"
+      },
+      {
+        "term": "Electrons",
+        "category": "physics"
+      },
+      {
+        "term": "Isotopes",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "the number of protons in its nucleus",
+      "the total number of protons and neutrons",
+      "the number of nucleons in a nucleus",
+      "the number of protons",
+      "the number of protons",
+      "the number of protons"
+    ]
+  }
+}

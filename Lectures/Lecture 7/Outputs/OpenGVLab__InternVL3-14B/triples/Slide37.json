@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"sinc interpolation formula\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This is the classic sinc interpolation formula. It tells us that, under the right sampling conditions — meaning, the sampling rate is at least twice the highest frequency in the signal — the continuous signal can be reconstructed exactly by convolving the samples with the sinc function.\"\n    },\n    {\n      \"s\": \"Nyquist theorem\",\n      \"p\": \"guarantees\",\n      \"o\": \"avoiding aliasing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That’s what the Nyquist theorem guarantees.\"\n    },\n    {\n      \"s\": \"sampling in the time domain\",\n      \"p\": \"corresponds_to\",\n      \"o\": \"periodic replication in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"sampling in the time domain corresponds to periodic replication in the frequency domain.\"\n    }\n  ]",
+  "parsed": {
+    "s": "sampling in the time domain",
+    "p": "corresponds_to",
+    "o": "periodic replication in the frequency domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "sampling in the time domain corresponds to periodic replication in the frequency domain."
+    ]
+  }
+}

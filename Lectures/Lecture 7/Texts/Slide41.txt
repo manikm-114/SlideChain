@@ -1,0 +1,21 @@
+Now let’s focus on the last few steps of the derivation and clarify what’s happening here, line by line.
+Previously, we had the convolution of two time-domain signals: one was a sinc function, the other was a sum of scaled impulses. That brought us to this expression:
+f of t equals sinc of pi P t, divided by pi P t, convolved with the sum from k equals minus infinity to infinity of f of t times delta of t minus k over P.
+Let’s unpack that.
+First, remember that this sum is what we call a delta train — an infinite series of delta functions spaced at intervals of 1 over P.
+
+Now you might ask — wait a minute, where did the 1 over P factor go?
+Good observation.
+Originally, the delta train had a scaling factor of 1 over P. But earlier in the derivation, we also had a P multiplying the sinc function. So those two terms — P and 1 over P — cancel out. That’s why we don’t see the 1 over P anymore in the final expression.
+
+So what do we have now?
+We have a continuous function — that’s the sinc — multiplying a series of impulses that are sampling the original function at regular intervals.
+This is the essence of the sampling process.
+The function f of t is being sampled at every t equals k over P, and the result is a series of weighted sinc functions. Each one is centered at t equals k over P and scaled by the corresponding sample value, f of k over P.
+And that brings us to the final expression:
+f of t equals the sum from k equals minus infinity to infinity of f of k over P, multiplied by sinc of pi P times t minus k over P, divided by pi P times t minus k over P.
+That’s the sampling theorem.
+
+It tells us that if a signal is band-limited — that is, its frequency content is restricted — then we can reconstruct the entire continuous-time signal exactly from its samples, as long as the sampling rate is high enough.
+Each sample contributes a scaled sinc function, and the sum of all those sinc functions reconstructs the original signal.
+This formula is both elegant and powerful — and it lies at the foundation of all modern digital signal processing.

@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:08:55.208370+00:00",
+  "text_length": 610,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, for those of you considering a concentration in imaging—or even just taking this course seriously—it can really pay off in your career.\n\nMedical imaging is a technical field, but it’s also full of opportunities. If you understand how imaging systems work, and you can apply that knowledge to real-world problems, you’ll bring serious value to any team—whether in research, healthcare, or industry.\n\nAnd in case you’re still wondering: yes, biomedical engineering is a great profession. It sits at the intersection of life sciences, medicine, and engineering—and that makes it both exciting and employable.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"biomedical engineering\", \"category\": \"modality\"},\n    {\"term\": \"life sciences\", \"category\": \"anatomy\"},\n    {\"term\": \"medicine\", \"category\": \"anatomy\"},\n    {\"term\": \"engineering\", \"category\": \"instrumentation\"},\n    {\"term\": \"research\", \"category\": \"software\"},\n    {\"term\": \"healthcare\", \"category\": \"software\"},\n    {\"term\": \"industry\", \"category\": \"software\"},\n    {\"term\": \"biomedical\", \"category\": \"software\"},\n    {\"term\": \"exciting\", \"category\": \"algorithm\"},\n    {\"term\": \"employable\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Medical imaging is a technical field, but it’s also full of opportunities.\",\n    \"And in case you’re still wondering: yes, biomedical engineering is a great profession.\",\n    \"It sits at the intersection of life sciences, medicine, and engineering—and that makes it both exciting and employable.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "biomedical engineering",
+        "category": "modality"
+      },
+      {
+        "term": "research",
+        "category": "software"
+      },
+      {
+        "term": "healthcare",
+        "category": "software"
+      },
+      {
+        "term": "biomedical",
+        "category": "software"
+      },
+      {
+        "term": "exciting",
+        "category": "algorithm"
+      },
+      {
+        "term": "employable",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Medical imaging is a technical field, but it's also full of opportunities.",
+      "And in case you're still wondering: yes, biomedical engineering is a great profession.",
+      "It sits at the intersection of life sciences, medicine, and engineering-and that makes it both exciting and employable."
+    ]
+  }
+}

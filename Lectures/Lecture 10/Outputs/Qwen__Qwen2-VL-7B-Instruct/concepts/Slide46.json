@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T04:19:44.514562+00:00",
+  "text_length": 789,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere, you see a visual demonstration from an online animation that shows how a neural network learns during training. Backpropagation is the key idea behind this process.\n\nThink of it like this — the network makes a guess, compares that guess to the correct answer, and measures the error. Then, instead of adjusting everything randomly, it calculates how much each parameter contributed to that error. Using this information, it sends a correction signal backward through the layers, adjusting the parameters step by step.\nWith enough training cycles, the network gradually reshapes its decision boundaries, as you see in the animation, until it can classify almost all points correctly.\n\nIf you’re curious, I encourage you to watch the video linked here to see backpropagation in action.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"backpropagation\", \"category\": \"algorithm\"},\n    {\"term\": \"neural network\", \"category\": \"ai_ml\"},\n    {\"term\": \"training\", \"category\": \"algorithm\"},\n    {\"term\": \"parameters\", \"category\": \"algorithm\"},\n    {\"term\": \"error\", \"category\": \"algorithm\"},\n    {\"term\": \"decision boundaries\", \"category\": \"algorithm\"},\n    {\"term\": \"classification\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\"Here, you see a visual demonstration from an online animation that shows how a neural network learns during training. Backpropagation is the key idea behind this process.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "backpropagation",
+        "category": "algorithm"
+      },
+      {
+        "term": "neural network",
+        "category": "ai_ml"
+      },
+      {
+        "term": "training",
+        "category": "algorithm"
+      },
+      {
+        "term": "parameters",
+        "category": "algorithm"
+      },
+      {
+        "term": "error",
+        "category": "algorithm"
+      },
+      {
+        "term": "decision boundaries",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Here, you see a visual demonstration from an online animation that shows how a neural network learns during training. Backpropagation is the key idea behind this process."
+    ]
+  }
+}

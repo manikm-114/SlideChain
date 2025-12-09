@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Pulsed wave Doppler\",\n      \"p\": \"uses\",\n      \"o\": \"pulse repetition frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This repetition rate is an important parameter because it determines how deep your ultrasound can penetrate and how fast you can sample motion.\"\n    },\n    {\n      \"s\": \"Pulsed wave Doppler\",\n      \"p\": \"measures\",\n      \"o\": \"velocity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"By measuring the change in the timing or phase of these echoes, we can estimate velocity.\"\n    },\n    {\n      \"s\": \"Pulsed wave Doppler\",\n      \"p\": \"depends_on\",\n      \"o\": \"gate depth\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In pulsed wave Doppler, we can also target a specific depth, often referred to as the gate depth.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Pulsed wave Doppler",
+        "p": "uses",
+        "o": "pulse repetition frequency",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This repetition rate is an important parameter because it determines how deep your ultrasound can penetrate and how fast you can sample motion."
+      },
+      {
+        "s": "Pulsed wave Doppler",
+        "p": "measures",
+        "o": "velocity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By measuring the change in the timing or phase of these echoes, we can estimate velocity."
+      },
+      {
+        "s": "Pulsed wave Doppler",
+        "p": "depends_on",
+        "o": "gate depth",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In pulsed wave Doppler, we can also target a specific depth, often referred to as the gate depth."
+      }
+    ]
+  }
+}

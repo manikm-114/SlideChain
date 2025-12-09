@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T15:53:19.135977+00:00",
+  "text_length": 311,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Optical Imaging\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"lecture 23\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"final imaging modality\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"light-based imaging\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Optical Imaging",
+        "category": "modality"
+      },
+      {
+        "term": "lecture 23",
+        "category": "modality"
+      },
+      {
+        "term": "final imaging modality",
+        "category": "modality"
+      },
+      {
+        "term": "light-based imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "This lecture will connect what we've learned about other imaging techniques to the world of light-based imaging."
+    ]
+  }
+}

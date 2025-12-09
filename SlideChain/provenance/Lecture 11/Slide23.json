@@ -1,0 +1,77 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "vectors"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Mathematically, this is captured using the cross-correlation between the two images.",
+            "modalities": [
+              "text"
+            ],
+            "o": "cross-correlation",
+            "p": "uses",
+            "s": "structural comparison"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "full similarity measure"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The cross-correlation between the two images, which measures how the variations in image X line up with the variations in image Y.",
+            "modalities": [
+              "text"
+            ],
+            "o": "structural similarity",
+            "p": "measures",
+            "s": "sigma-X-Y"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "luminance, contrast, and structure"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Mathematically, this is captured using the cross-correlation between the two images. We call it sigma-X-Y, which measures how the variations in image X line up with the variations in image Y."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "cross-correlation between the two images",
+        "p": "uses",
+        "s": "structural comparison"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "similarity"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

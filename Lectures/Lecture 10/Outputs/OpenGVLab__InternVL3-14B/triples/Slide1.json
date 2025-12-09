@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide1",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Lecture 10\",\n      \"p\": \"depends_on\",\n      \"o\": \"linear systems\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"this topic builds directly on what we’ve covered in linear systems\"\n    },\n    {\n      \"s\": \"Lecture 10\",\n      \"p\": \"depends_on\",\n      \"o\": \"Fourier analysis\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"this topic builds directly on what we’ve covered in linear systems and Fourier analysis\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Lecture 10",
+        "p": "depends_on",
+        "o": "linear systems",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "this topic builds directly on what we’ve covered in linear systems"
+      },
+      {
+        "s": "Lecture 10",
+        "p": "depends_on",
+        "o": "Fourier analysis",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "this topic builds directly on what we’ve covered in linear systems and Fourier analysis"
+      }
+    ]
+  }
+}

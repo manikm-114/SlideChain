@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Rotating Field (Classic View)\",\n      \"p\": \"represents\",\n      \"o\": \"RF excitation\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This picture is very convenient to describe using the concept of a rotating frame.\"\n    },\n    {\n      \"s\": \"B-one field\",\n      \"p\": \"produces\",\n      \"o\": \"torque\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The cross product between the magnetization vector and B-one produces a torque.\"\n    },\n    {\n      \"s\": \"torque\",\n      \"p\": \"causes\",\n      \"o\": \"magnetization to tip away from the z-axis\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This torque acts in the direction perpendicular to both vectors, and it causes the magnetization to tip away from the z-axis.\"\n    },\n    {\n      \"s\": \"magnetization vector\",\n      \"p\": \"traces out\",\n      \"o\": \"cone",
+  "parsed": {
+    "s": "torque",
+    "p": "causes",
+    "o": "magnetization to tip away from the z-axis",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This torque acts in the direction perpendicular to both vectors, and it causes the magnetization to tip away from the z-axis."
+    ]
+  }
+}

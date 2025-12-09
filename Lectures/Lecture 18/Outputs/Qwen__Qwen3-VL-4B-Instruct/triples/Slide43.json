@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide43",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T12:13:34.455098+00:00",
+  "text_length": 986,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about how the MR signal is actually detected.\n‘\nWhen the magnetization vector, capital M, is flipped away from the z-axis, it develops a transverse component, which we call M x y. This transverse magnetization does not remain static — it oscillates at the resonance frequency. That oscillation induces a sinusoidal current in the radiofrequency coil, exactly as predicted by Faraday’s law of electromagnetic induction.\n\nThe strength of this induced signal depends directly on the size of M x y. The larger the transverse component, the stronger the oscillating magnetic field, and therefore the stronger the detected voltage in the coil.\nThe maximum possible signal is reached when the flip angle is ninety degrees. At this angle, the entire magnetization vector lies in the x-y plane, meaning that M x y is equal to M naught, the full equilibrium magnetization. This is why a ninety-degree pulse is often used in MRI — it gives the largest possible signal for detection.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"M_xy\",\n      \"p\": \"uses\",\n      \"o\": \"RF coil\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"M_xy Oscillates to induce a Sinusoidal Signal via Induction in an RF Coil at the Resonance Frequency\"\n    },\n    {\n      \"s\": \"M_xy\",\n      \"p\": \"depends_on\",\n      \"o\": \"flip angle α\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"The Highest Induction Reached at the Flip Angle 90° so that M_xy=M₀\"\n    },\n    {\n      \"s\": \"M_xy\",\n      \"p\": \"produces\",\n      \"o\": \"Sinusoidal Signal\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"M_xy Oscillates to induce a Sinusoidal Signal via Induction in an RF Coil at the Reson",
+  "parsed": {
+    "s": "M_xy",
+    "p": "depends_on",
+    "o": "flip angle α",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "The Highest Induction Reached at the Flip Angle 90° so that M_xy=M₀"
+    ]
+  }
+}

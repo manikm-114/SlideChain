@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide47",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T07:41:49.835577+00:00",
+  "text_length": 1234,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet me share with you some typical radiation dose values.\nFor example, in a breast exam, the physical energy absorbed is measured in grays. But when you take biological sensitivity into account and use standard formulas, the unit becomes the sievert, often abbreviated as Sv or sometimes called C-word.\n\nTo clarify, grays measure the pure physical energy deposited, while sieverts factor in biological effects, making them more meaningful for assessing health risk.\nBecause a sievert—or the C-word—is a relatively large unit, radiation dose is often expressed in millisieverts (mSv).\nFor a typical breast examination, the effective dose is quite low.\nFor high-dose CT scans, the effective dose can be in the range of three millisieverts.\nFor a full-body CT scan, it could be around ten millisieverts.\nThese values give you an idea of the radiation dose magnitude.\n\nIn CT scanning, another important metric is the CT Dose Index, or CTDI, which is used to estimate how much radiation dose is delivered.\nCTDI is not organ-specific; it measures the average dose over one full rotation of the scanner around the patient, providing a rough estimate of radiation exposure.\nLater, I will show you a figure to illustrate this concept visually.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"CTDI\",\n      \"p\": \"measures\",\n      \"o\": \"the average dose over one full rotation of the scanner around the patient\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"CTDI is not organ-specific; it measures the average dose over one full rotation of the scanner around the patient, providing a rough estimate of radiation exposure.\"\n    },\n    {\n      \"s\": \"effective dose equivalent\",\n      \"p\": \"represents\",\n      \"o\": \"patient risk\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"where Dz is the absorbed dose at position z and T is the thickness of the slice. In terms of assessing patient risk, again the value of He is a better measure.\"\n    },\n    {\n      \"s\": \"effective dose equivalent\",\n      \"p\": \"uses\",\n      \"o\": \"standard formulas\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.8,\n      \"evidence\": \"when you take biological sensitivity into account",
+  "parsed": {
+    "s": "effective dose equivalent",
+    "p": "represents",
+    "o": "patient risk",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "where Dz is the absorbed dose at position z and T is the thickness of the slice. In terms of assessing patient risk, again the value of He is a better measure."
+    ]
+  }
+}

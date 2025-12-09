@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T23:04:06.669848+00:00",
+  "text_length": 772,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs we step into the topic of convolution, let’s outline what we’ll be exploring today.\nWe’ll begin by revisiting shift-invariant linear systems, grounding ourselves in a concept we touched on earlier. Then, we’ll move into two important formulations of convolution: continuous convolution and discrete convolution.\n\nEach of them plays a crucial role depending on the context — continuous for signals that evolve smoothly over time or space, and discrete for digital signals and images. Through this lecture, we’ll examine both perspectives and their practical implications.\nBy the end of the course, you’ll not only understand how convolution works — you'll also appreciate why it matters in system analysis, image reconstruction, and the broader field of medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"shift-invariant linear system\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"continuous convolution\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"discrete convolution\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"image reconstruction\",\n      \"category\": \"reconstruction\"\n    },\n    {\n      \"term\": \"medical imaging\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"We’ll begin by revisiting shift-invariant linear systems\",\n    \"Then, we’ll move into two important formulations of convolution: continuous convolution and discrete convolution.\",\n    \"Through this lecture, we’ll examine both perspectives and their practical implications.\",\n    \"By the end of the course, you’ll not only understand how convolution works — you'll also appreciate why it matters in system analysis, image reconstruction, and the broader field of medical imaging.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "shift-invariant linear system",
+        "category": "mathematics"
+      },
+      {
+        "term": "continuous convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "image reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "We'll begin by revisiting shift-invariant linear systems",
+      "Then, we'll move into two important formulations of convolution: continuous convolution and discrete convolution.",
+      "Through this lecture, we'll examine both perspectives and their practical implications.",
+      "By the end of the course, you'll not only understand how convolution works - you'll also appreciate why it matters in system analysis, image reconstruction, and the broader field of medical imaging."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"shift-invariant system\", \"p\":\"depends_on\", \"o\":\"impulse response\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In a shift-invariant system, if you know the system’s response to an impulse at one location, you can predict its response at any other location or time.\"},\n    {\"s\":\"linear system\", \"p\":\"depends_on\", \"o\":\"impulse response\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If we know how the system reacts to a delta function at time zero, we can use that as a building block to find the output for any input.\"},\n    {\"s\":\"output\", \"p\":\"produces\", \"o\":\"sum of individual outputs\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If you add multiple inputs, the output will be the sum of individual outputs due to each input.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "shift-invariant system",
+        "p": "depends_on",
+        "o": "impulse response",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In a shift-invariant system, if you know the system’s response to an impulse at one location, you can predict its response at any other location or time."
+      },
+      {
+        "s": "linear system",
+        "p": "depends_on",
+        "o": "impulse response",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If we know how the system reacts to a delta function at time zero, we can use that as a building block to find the output for any input."
+      },
+      {
+        "s": "output",
+        "p": "produces",
+        "o": "sum of individual outputs",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If you add multiple inputs, the output will be the sum of individual outputs due to each input."
+      }
+    ]
+  }
+}

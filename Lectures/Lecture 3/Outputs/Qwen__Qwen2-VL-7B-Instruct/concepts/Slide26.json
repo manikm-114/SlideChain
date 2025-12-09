@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:22:53.396917+00:00",
+  "text_length": 555,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nOne subtle idea is relative linearity. A system’s behavior might depend on the chosen coordinate system or reference point. For example, a linear function with an intercept (like y = mx + b) is still linear in its relative changes. If you redefine the origin to subtract out b, it behaves like a linear function passing through zero.\nSimilarly, for systems, we often focus on relative changes in input and output rather than absolute values. This helps us apply linear system theory even when the system’s baseline isn’t perfectly aligned with the origin.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Relative Linearity\", \"category\": \"signal_processing\"},\n    {\"term\": \"Linear function\", \"category\": \"mathematics\"},\n    {\"term\": \"Coordinate system\", \"category\": \"mathematics\"},\n    {\"term\": \"Reference point\", \"category\": \"mathematics\"},\n    {\"term\": \"Linear system\", \"category\": \"signal_processing\"},\n    {\"term\": \"Relative changes\", \"category\": \"signal_processing\"},\n    {\"term\": \"Baseline\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The apparent discrepancy between the linear system and linear function concepts can be eliminated by considering the system responses in terms of relative changes.\",\n    \"A system’s behavior might depend on the chosen coordinate system or reference point.\",\n    \"For systems, we often focus on relative changes in input and output rather than absolute values.\",\n    \"This helps us apply linear system theory even when the system’s baseline isn’t perfectly aligned with the origin.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Relative Linearity",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Linear function",
+        "category": "mathematics"
+      },
+      {
+        "term": "Coordinate system",
+        "category": "mathematics"
+      },
+      {
+        "term": "Reference point",
+        "category": "mathematics"
+      },
+      {
+        "term": "Linear system",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Relative changes",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Baseline",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The apparent discrepancy between the linear system and linear function concepts can be eliminated by considering the system responses in terms of relative changes.",
+      "A system's behavior might depend on the chosen coordinate system or reference point.",
+      "For systems, we often focus on relative changes in input and output rather than absolute values.",
+      "This helps us apply linear system theory even when the system's baseline isn't perfectly aligned with the origin."
+    ]
+  }
+}

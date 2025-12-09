@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide49",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"RC equals 1 second\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Suppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.\"},\n    {\"s\":\"MATLAB\", \"p\":\"produces\", \"o\":\"plots\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Use MATLAB to generate the plots shown in the first row.\"},\n    {\"s\":\"MATLAB\", \"p\":\"produces\", \"o\":\"convolution of the input signal with the system’s impulse response\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Your goal is to compute the convolution of the input signal with the system’s impulse response\"},\n    {\"s\":\"MATLAB\", \"p\":\"produces\", \"o\":\"h(t) equals RC times e to the power of minus t over RC, multiplied by the unit step function\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"h of t equals R C times e to the power of minus t over R C, multiplied by the",
+  "parsed": {
+    "s": "MATLAB",
+    "p": "produces",
+    "o": "convolution of the input signal with the system’s impulse response",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Your goal is to compute the convolution of the input signal with the system’s impulse response"
+    ]
+  }
+}

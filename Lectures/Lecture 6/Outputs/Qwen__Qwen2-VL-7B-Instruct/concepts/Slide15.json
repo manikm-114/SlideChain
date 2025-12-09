@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T23:33:05.838268+00:00",
+  "text_length": 1696,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s do something clever.\n\nWe just looked at the gate function, or rectangular function, which is not periodic. And because it’s non-periodic, we can't represent it using a Fourier series — only the Fourier transform works in that case.\nBut what if we wanted to use Fourier series?\u000bWell — we can! We just need to make the function periodic.\nAnd here’s how we do it: we take that single gate function — and simply repeat it over and over again, at regular intervals. This is called periodization.\n\nIn this slide, the original gate function is being repeated with a period of 16. So now you’ve got a train of rectangular pulses, equally spaced along the time axis.\nVisually, you can think of it like flipping a light switch on for a second — and then leaving it off for a long time — then flipping it on again — and repeating that process over and over.\nThe key is: now we’ve created a periodic signal.\nAnd because it’s periodic, we can now apply Fourier series to analyze it — just like we did before.\n\nAll you need to do is plug this periodic function into the Fourier series formulas, and you’ll get a representation as a sum of sine and cosine waves — or complex exponentials.\nThis kind of construction is very useful. In fact, it shows up in engineering and physics quite a bit — especially in systems that switch on and off repeatedly. Sometimes you’ll hear people talk about the duty cycle, which refers to how much of each period the function is “on” versus “off.”\n\nSo again — by making the function periodic, we unlock the power of the Fourier series.\nAnd soon, we’ll compare this with what happens when we go back to the non-periodic version, and apply the Fourier transform instead.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"periodization\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier series\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier transform\", \"category\": \"mathematics\"},\n    {\"term\": \"duty cycle\", \"category\": \"signal_processing\"},\n    {\"term\": \"periodic signal\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"We just looked at the gate function, or rectangular function, which is not periodic.\", \"But what if we wanted to use Fourier series? Well — we can! We just need to make the function periodic.\", \"And because it’s periodic, we can now apply Fourier series to analyze it — just like we did before.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "periodization",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier series",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "duty cycle",
+        "category": "signal_processing"
+      },
+      {
+        "term": "periodic signal",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "We just looked at the gate function, or rectangular function, which is not periodic.",
+      "But what if we wanted to use Fourier series? Well - we can! We just need to make the function periodic.",
+      "And because it's periodic, we can now apply Fourier series to analyze it - just like we did before."
+    ]
+  }
+}

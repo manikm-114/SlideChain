@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide40",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\n\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\n\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"random events\", \"p\":\"depends_on\", \"o\":\"gamma-ray activity\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "random events",
+        "p": "depends_on",
+        "o": "gamma-ray activity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time."
+      }
+    ]
+  }
+}

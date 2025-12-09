@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide4",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s build on that by comparing systems to something you’re already familiar with—functions. A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range. Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output.\nThese elements could represent anything: parts of a social system, components of a physiological system, or pieces of a mechanical system. The important point is that both functions and systems describe relationships between inputs and outputs. Our goal is to define these relationships clearly so that we can apply them to engineering and medical imaging problems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"function\", \"category\": \"mathematics\"},\n    {\"term\": \"system\", \"category\": \"software\"},\n    {\"term\": \"input\", \"category\": \"signal_processing\"},\n    {\"term\": \"output\", \"category\": \"signal_processing\"},\n    {\"term\": \"domain\", \"category\": \"mathematics\"},\n    {\"term\": \"range\", \"category\": \"mathematics\"},\n    {\"term\": \"elements\", \"category\": \"workflow\"},\n    {\"term\": \"relationships\", \"category\": \"mathematics\"},\n    {\"term\": \"engineering\", \"category\": \"workflow\"},\n    {\"term\": \"medical imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range. Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "function",
+        "category": "mathematics"
+      },
+      {
+        "term": "system",
+        "category": "software"
+      },
+      {
+        "term": "input",
+        "category": "signal_processing"
+      },
+      {
+        "term": "output",
+        "category": "signal_processing"
+      },
+      {
+        "term": "domain",
+        "category": "mathematics"
+      },
+      {
+        "term": "range",
+        "category": "mathematics"
+      },
+      {
+        "term": "elements",
+        "category": "workflow"
+      },
+      {
+        "term": "relationships",
+        "category": "mathematics"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range. Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output."
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Here we observe a practical example of cross-correlation in action —a technique known as matched filtering, widely used in signal detection.
+In the top plot, the blue curve shows a received signal that includes both the desired pulse and a lot of background noise.The red curve represents the matched filter — a reference copy of the signal we’re trying to detect.
+The bottom plot shows the cross-correlation output.Notice the sharp peak centered around one second — this is where the received signal best aligns with the matched filter.That spike tells us that the target signal is present at that location in time.
+This is exactly what the Cauchy–Schwarz inequality predicted:the inner product, or correlation, reaches its maximum value when the two signals are best aligned.
+Matched filtering like this is essential in many fields:from radar and sonar, to wireless communication, and even in medical imaging —anywhere we want to pull a weak signal out of noisy data.
+Cross-correlation gives us a way to do that precisely and efficiently.

@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide49",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere we see a modern clinical MRI scanner. This particular system is the Sparkler 1 point 5 Tesla MRI, which was made through a joint venture between Philips and Neusoft in 2008. What you notice first is the large cylindrical magnet housing, which contains the superconducting magnet that generates the powerful and stable magnetic field, known as B-zero. That main field is what aligns the spins inside the patient’s body and makes MRI possible.\n\nAt the front of the scanner is the bore opening, with the patient table extending outward. The table is designed to move smoothly into the bore, positioning the patient precisely at the isocenter of the magnet, where the magnetic field is most uniform. Inside the bore, hidden from view in this picture, are the gradient coils and the radio frequency coils, which together perform the tasks of spatial encoding and signal detection. The control panels you see on either side allow the operator to manage some of the basic functions and safety interlocks.\n\nThis specific 1 point 5 Tesla strength is one of the most common clinical field strengths worldwide, balancing good image quality with manageable cost and patient comfort. It represents an industry standard for many diagnostic applications, including brain, spine, and body imaging. So this photo gives you a sense of what an actual MRI scanner looks like in the clinic, as compared to the system diagrams and cutaway renderings we discussed earlier.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"magnetic field\", \"category\": \"physics\"},\n    {\"term\": \"superconducting magnet\", \"category\": \"physics\"},\n    {\"term\": \"isocenter\", \"category\": \"anatomy\"},\n    {\"term\": \"gradient coils\", \"category\": \"instrumentation\"},\n    {\"term\": \"radio frequency coils\", \"category\": \"instrumentation\"},\n    {\"term\": \"1 point 5 Tesla\", \"category\": \"modality\"},\n    {\"term\": \"brain, spine, and body imaging\", \"category\": \"modality\"},\n    {\"term\": \"image quality\", \"category\": \"quality_metric\"},\n    {\"term\": \"patient comfort\", \"category\": \"quality_metric\"},\n    {\"term\": \"industry standard\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"This specific 1 point 5 Tesla strength is one of the most common clinical field strengths worldwide, balancing good image quality with manageable cost and patient comfort. It represents an industry standard for many diagnostic applications, including brain, spine, and body imaging.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "magnetic field",
+        "category": "physics"
+      },
+      {
+        "term": "superconducting magnet",
+        "category": "physics"
+      },
+      {
+        "term": "gradient coils",
+        "category": "instrumentation"
+      },
+      {
+        "term": "radio frequency coils",
+        "category": "instrumentation"
+      },
+      {
+        "term": "1 point 5 Tesla",
+        "category": "modality"
+      },
+      {
+        "term": "brain, spine, and body imaging",
+        "category": "modality"
+      },
+      {
+        "term": "image quality",
+        "category": "quality_metric"
+      },
+      {
+        "term": "patient comfort",
+        "category": "quality_metric"
+      },
+      {
+        "term": "industry standard",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "This specific 1 point 5 Tesla strength is one of the most common clinical field strengths worldwide, balancing good image quality with manageable cost and patient comfort. It represents an industry standard for many diagnostic applications, including brain, spine, and body imaging."
+    ]
+  }
+}

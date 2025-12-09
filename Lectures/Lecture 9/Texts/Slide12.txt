@@ -1,0 +1,10 @@
+Here’s a straightforward MATLAB example to show linear convolution in action.
+
+We start with two sequences:x equals 5,4,3,2,1,0h equals 1,2,3,4,5,6
+The first figure shows both sequences plotted together. The blue line is x — starting high and decreasing. The red line is h — starting low and increasing.
+Now we use MATLAB’s built-in conv function to compute their linear convolution:lconv equals conv x, h;
+
+When we plot the result, we see the familiar triangular shape. It rises as the two signals increasingly overlap, reaches a peak when their centers align, and then falls as the overlap decreases.
+
+If this feels familiar, it’s because we used the same function — conv — earlier when convolving the RC circuit’s impulse response with the unit step function in your homework. The process is exactly the same here; only the input sequences are different.
+This example is a nice reminder that MATLAB makes it very easy to visualize convolution, and seeing the result in a plot helps reinforce what’s happening mathematically.

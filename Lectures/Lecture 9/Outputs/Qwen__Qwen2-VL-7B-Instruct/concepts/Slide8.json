@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide8",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:01:03.877564+00:00",
+  "text_length": 1711,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s walk through this functional example, which will connect directly to what we’ll do in MATLAB later.\n\nWe start with h of n, shown in the first plot — a simple rectangular pulse. Then we have x of n in the second plot — think of it as three rectangular pulses in a row, one shown in red and the other two in blue.\nIf we take these two signals and perform a linear convolution — shown in the third plot — we get a series of triangular shapes. This makes sense: convolving two rectangular pulses produces a triangle. Here we have three such triangles because x of n contains three rectangles.\n\nNow, in the fourth plot, something changes. We create x  N of n — this means x of n is now periodically extended with N samples per period. In other words, we’ve made it repeat over and over, which is why we call it circularly extended.\nIn the fifth plot, we see the linear convolution of this periodic x  N of n with h of n. Notice what happens: instead of three clean, separate triangles, the edges wrap around, and the red and blue parts start overlapping. These are edge effects caused by the circular extension.\nFinally, the last plot shows the composite output. The green section in the middle is the portion unaffected by edge effects. This part matches the original linear convolution result and is what we actually want.\n\nThe lesson here is important: to avoid these unwanted overlaps in circular convolution, we often use zero-padding — adding extra zeros to the signals before performing the convolution. This ensures that the result matches the true linear convolution without distortion at the edges.\nWe’ll explore this zero-padding step in detail in a few slides, and you’ll see how MATLAB handles it.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"edge effects\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"convolving two rectangular pulses produces a triangle\",\n    \"the red and blue parts start overlapping\",\n    \"to avoid these unwanted overlaps in circular convolution, we often use zero-padding\",\n    \"we’ll explore this zero-padding step in detail in a few slides, and you’ll see how MATLAB handles it\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "edge effects",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "convolving two rectangular pulses produces a triangle",
+      "the red and blue parts start overlapping",
+      "to avoid these unwanted overlaps in circular convolution, we often use zero-padding",
+      "we'll explore this zero-padding step in detail in a few slides, and you'll see how MATLAB handles it"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Now, how do we actually optimize a neural network so that it performs well?As I mentioned earlier, when you start with a fresh network, its performance is usually terrible — the outputs are essentially random. The idea is to adjust the parameters — the weights, which we represent as a vector w — in such a way that the network’s predictions get closer and closer to the desired results.
+
+We measure the difference between the network’s current output and the target output using what we call a loss function, or an error function. The goal is to make this error as small as possible.
+One common approach is gradient descent. We start with an initial set of weights — often chosen randomly. Then, in each training step, we look at the slope of the error function with respect to each weight. This slope, or gradient, tells us which direction increases the error — so we move in the opposite direction, reducing the error.
+
+Mathematically, the new weight vector equals the old weight vector, minus a small fraction of the gradient. That fraction is controlled by the learning rate, a simple scaling factor between zero and one. If the learning rate is too big, the updates may overshoot, and the training becomes unstable. If it’s too small, the network learns very slowly.
+
+By repeatedly updating the weights in this way, the error decreases step by step. Eventually, if everything is set up well, the process converges and the network produces accurate outputs.

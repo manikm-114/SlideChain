@@ -1,0 +1,11 @@
+Here we’re looking at the difference between a continuous signal and its discrete version.
+
+On the left, we have a smooth, continuous function — like something you might see in the physical world, such as a sound wave or a voltage signal. It's defined at every instant in time.
+
+But to work with this signal on a computer, we can't use all those infinite points. Instead, we select only a finite number of values, spaced out at regular intervals. That's what's shown on the right.
+This process is called sampling.
+
+If we sample densely enough — meaning, if the points are close together — then the discrete version can represent the continuous signal fairly accurately. The more samples we take, the more detail we preserve from the original waveform.
+
+So the idea is: start with a smooth, continuous signal and convert it into a sequence of numbers that still captures the shape and behavior of the original. That's what makes signal processing on computers possible.
+Up next, we’ll explore how often we need to sample to preserve that accuracy — and what happens if we don't.

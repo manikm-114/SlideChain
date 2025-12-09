@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MRI\",\n      \"p\": \"uses\",\n      \"o\": \"Larmor frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MRI, the same idea holds. The RF signal has to be applied at the exact precessional frequency—the Larmor frequency.\"\n    },\n    {\n      \"s\": \"resonance\",\n      \"p\": \"represents\",\n      \"o\": \"applying a force at the right frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That is resonance: applying a force at the right frequency so that every push adds up.\"\n    },\n    {\n      \"s\": \"revolving door\",\n      \"p\": \"represents\",\n      \"o\": \"resonance\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So the revolving door is a nice analogy: push in rhythm with the rotation, and the system responds strongly.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MRI",
+        "p": "uses",
+        "o": "Larmor frequency",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In MRI, the same idea holds. The RF signal has to be applied at the exact precessional frequency-the Larmor frequency."
+      },
+      {
+        "s": "resonance",
+        "p": "represents",
+        "o": "applying a force at the right frequency",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "That is resonance: applying a force at the right frequency so that every push adds up."
+      },
+      {
+        "s": "revolving door",
+        "p": "represents",
+        "o": "resonance",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So the revolving door is a nice analogy: push in rhythm with the rotation, and the system responds strongly."
+      }
+    ]
+  }
+}

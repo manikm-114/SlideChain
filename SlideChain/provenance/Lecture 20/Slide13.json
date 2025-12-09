@@ -1,0 +1,78 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "magnetization vector"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "for real MRI coil design, we need precise optimization to make sure the fields are uniform and stable. That\u2019s done through finite element analysis",
+            "modalities": [
+              "text"
+            ],
+            "o": "precise optimization",
+            "p": "depends_on",
+            "s": "finite element analysis"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "magnetic field distribution"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the B-one field rotates smoothly"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "FIGURE 4.25. (Left) The ideal current density needed to produce a spatially uniform B1 field across a sample placed in the cylindrical coil."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "spatially uniform B1 field",
+        "p": "produces",
+        "s": "current density"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "finite element analysis"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "When the current in one connecting wire flows in a particular direction, it generates a local magnetic field pointing downward. To produce a local field pointing upward, the current in the adjacent wire must flow in the opposite direction, forming a closed loop.",
+            "modalities": [
+              "text"
+            ],
+            "o": "uniform B-one field",
+            "p": "uses",
+            "s": "birdcage coil"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

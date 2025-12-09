@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide48",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Linear System\", \"p\":\"represents\", \"o\":\"Shift-invariant\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Linear System → Shift-invariant\"},\n    {\"s\":\"Shift-invariant\", \"p\":\"represents\", \"o\":\"Convolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Shift-invariant → Convolution\"},\n    {\"s\":\"Convolution\", \"p\":\"uses\", \"o\":\"Additive and homogeneous properties\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"L(v1(t) + v2(t)) = L(v1(t)) + L(v2(t)) (L is additive) L(αv(t)) = αL(v(t)) (L is homogeneous)\"},\n    {\"s\":\"Convolution\", \"p\":\"represents\", \"o\":\"f(x) * g(x) = ∫ f(a)g(x - a)da\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"f(x) * g(x) = ∫ f(a)g(x - a)da\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Linear System",
+        "p": "represents",
+        "o": "Shift-invariant",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Linear System → Shift-invariant"
+      },
+      {
+        "s": "Shift-invariant",
+        "p": "represents",
+        "o": "Convolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Shift-invariant → Convolution"
+      }
+    ]
+  }
+}

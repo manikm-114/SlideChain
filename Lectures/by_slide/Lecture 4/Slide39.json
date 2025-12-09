@@ -1,0 +1,190 @@
+{
+  "lecture": "Lecture 4",
+  "slide_id": "Slide39",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide39.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide39.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "deconvolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "multiplication",
+              "category": "mathematics"
+            },
+            {
+              "term": "division",
+              "category": "mathematics"
+            },
+            {
+              "term": "integration",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.",
+            "For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"deconvolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"division\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"integration\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\\", \\\"For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"deconvolution\", \"category\": \"signal_processing\"}, {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"multiplication\", \"category\": \"mathematics\"}, {\"term\": \"division\", \"category\": \"mathematics\"}, {\"term\": \"integration\", \"category\": \"mathematics\"}], \"evidence\": [\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\", \"For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide39.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"convolution\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"deconvolution\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier analysis",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "deconvolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "integration",
+              "category": "mathematics"
+            },
+            {
+              "term": "summation",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "connection between convolution and deconvolution will become much clearer",
+            "convolution and deconvolution",
+            "integration is the continuous counterpart of summation"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"deconvolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"integration\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"summation\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"connection between convolution and deconvolution will become much clearer\\\",\\n    \\\"convolution and deconvolution\\\",\\n    \\\"integration is the continuous counterpart of summation\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier analysis\", \"category\": \"frequency_domain\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"deconvolution\", \"category\": \"signal_processing\"}, {\"term\": \"integration\", \"category\": \"mathematics\"}, {\"term\": \"summation\", \"category\": \"mathematics\"}], \"evidence\": [\"connection between convolution and deconvolution will become much clearer\", \"convolution and deconvolution\", \"integration is the continuous counterpart of summation\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide39.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "convolution",
+              "p": "represents",
+              "o": "advanced forms of multiplication",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "convolution and deconvolution will become much clearer. For now, think of convolution and deconvolution as the advanced forms of multiplication and division"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"convolution\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"advanced forms of multiplication\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"convolution and deconvolution will become much clearer. For now, think of convolution and deconvolution as the advanced forms of multiplication and division\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"deconvolution\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"advanced forms of division\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"convolution and deconvolution as the advanced forms of multiplication and division\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"convolution\", \"p\": \"represents\", \"o\": \"advanced forms of multiplication\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"convolution and deconvolution will become much clearer. For now, think of convolution and deconvolution as the advanced forms of multiplication and division\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "deconvolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "multiplication",
+              "category": "mathematics"
+            },
+            {
+              "term": "division",
+              "category": "mathematics"
+            },
+            {
+              "term": "integration",
+              "category": "mathematics"
+            },
+            {
+              "term": "summation",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.",
+            "think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T22:04:48.308497+00:00\", \"text_length\": 342, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"deconvolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"division\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"integration\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"summation\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\\",\\n    \\\"think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"deconvolution\", \"category\": \"signal_processing\"}, {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"multiplication\", \"category\": \"mathematics\"}, {\"term\": \"division\", \"category\": \"mathematics\"}, {\"term\": \"integration\", \"category\": \"mathematics\"}, {\"term\": \"summation\", \"category\": \"mathematics\"}], \"evidence\": [\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\", \"think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide39.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T22:48:20.014892+00:00\", \"text_length\": 342, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution and deconvolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "multiplication and division",
+              "category": "mathematics"
+            },
+            {
+              "term": "integration is the continuous counterpart of summation",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.",
+            "For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T23:10:03.560036+00:00\", \"text_length\": 342, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"convolution and deconvolution\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"multiplication and division\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"integration is the continuous counterpart of summation\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\\",\\n    \\\"For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"convolution and deconvolution\", \"category\": \"signal_processing\"}, {\"term\": \"multiplication and division\", \"category\": \"mathematics\"}, {\"term\": \"integration is the continuous counterpart of summation\", \"category\": \"mathematics\"}], \"evidence\": [\"Once we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\", \"For now, think of convolution and deconvolution as the advanced forms of multiplication and division, just like integration is the continuous counterpart of summation.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide39.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T23:16:50.962568+00:00\", \"text_length\": 342, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nYou might not fully grasp this yet — and that’s perfectly fine.\\nOnce we cover Fourier analysis, the connection between convolution and deconvolution will become much clearer.\\nFor now, think of convolution and deconvolution as the advanced forms of multiplication and division,\\u000bjust like integration is the continuous counterpart of summation.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

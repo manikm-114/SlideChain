@@ -1,0 +1,177 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Processional Frequency on B"
+          },
+          {
+            "category": "physics",
+            "term": "Angular Frequency of Precession"
+          },
+          {
+            "category": "physics",
+            "term": "Local Magnetic Field"
+          },
+          {
+            "category": "mathematics",
+            "term": "Proportional"
+          },
+          {
+            "category": "physics",
+            "term": "Gamma"
+          },
+          {
+            "category": "physics",
+            "term": "B-prime"
+          }
+        ],
+        "evidence": [
+          "The processional frequency is proportional to the local magnetic field.",
+          "The angular frequency of precession, omega, is proportional to the local magnetic field.",
+          "If we call the main field B-naught, then omega is proportional to B-naught.",
+          "Later on, if you change B-naught to B-prime, omega will be proportional to B-prime.",
+          "And then you multiply by a physical constant, called gamma.",
+          "So, in short, omega equals gamma times B."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector - or you can think of it as a spinning top - will process faster.",
+            "modalities": [
+              "text"
+            ],
+            "o": "local magnetic field",
+            "p": "measures",
+            "s": "processional frequency"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "the processional frequency is proportional to the local magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "omega equals gamma times B"
+          },
+          {
+            "category": "physics",
+            "term": "the angular frequency of precession, omega, is proportional to the local magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "if you change B-naught to B-prime, omega will be proportional to B-prime"
+          }
+        ],
+        "evidence": [
+          "The key point is this: the processional frequency is proportional to the local magnetic field.",
+          "So, in short, omega equals gamma times B.",
+          "the angular frequency of precession, omega, is proportional to the local magnetic field.",
+          "if you change B-naught to B-prime, omega will be proportional to B-prime."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "the angular frequency of precession, omega, is proportional to the local magnetic field. If we call the main field B-naught, then omega is proportional to B-naught.",
+            "modalities": [
+              "text"
+            ],
+            "o": "B-naught",
+            "p": "depends_on",
+            "s": "omega"
+          },
+          {
+            "confidence": 0.95,
+            "evidence": "in short, omega equals gamma times B.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gamma times B",
+            "p": "produces",
+            "s": "omega"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "processional frequency"
+          },
+          {
+            "category": "physics",
+            "term": "local magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "M vector"
+          },
+          {
+            "category": "physics",
+            "term": "spinning top"
+          },
+          {
+            "category": "physics",
+            "term": "angular frequency of precession"
+          },
+          {
+            "category": "physics",
+            "term": "omega"
+          },
+          {
+            "category": "physics",
+            "term": "B-naught"
+          },
+          {
+            "category": "physics",
+            "term": "B-prime"
+          },
+          {
+            "category": "physics",
+            "term": "gamma"
+          }
+        ],
+        "evidence": [
+          "The key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector - or you can think of it as a spinning top - will process faster."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "the processional frequency is proportional to the local magnetic field",
+            "modalities": [
+              "text"
+            ],
+            "o": "local magnetic field",
+            "p": "depends_on",
+            "s": "processional frequency"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

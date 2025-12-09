@@ -1,0 +1,63 @@
+{
+  "slide_id": "Slide35",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo anyway, one way to improve the localization capability — meaning how precisely we can tell where the light comes from — is through something called temporal gating. The idea is very clever. You see, when photons travel through tissue, they go all over the place — scattering in every direction. But if we can measure when each photon arrives, and only collect the ones that arrive early, we can get a much cleaner signal.\n\nFor optical signals, the temporal resolution — that is, the time resolution — of modern detectors is extremely good. So we can actually do this kind of time gating. Temporal gating simply means we only collect the photons that arrive first, before they have time to bounce around and scatter too much.\nIn other words, those early-arriving photons are the ones that have traveled almost straight through, or maybe with just a few scatterings — not too many. So by keeping only those early photons, we’re kind of reconstructing a straighter path through the tissue. This gives us a better localized image and sharper information. That’s the essence of temporal gating — a brilliant idea to improve spatial resolution in optical imaging.\n\nNow, you can think of this as a kind of collimation mechanism. Earlier, we talked about mechanical collimation, where you physically restrict the beam using a tube — that’s what we use in X-ray systems. I jokingly said, It’s my 'technical way' of collimation — you just put a tube in front of the detector so only straight rays go through.\nAnd then we also mentioned electronic collimation, which you might remember from the pattern-imaging systems or coincidence detection in nuclear imaging. There, you don’t use a physical tube — you use timing electronics, or coincidence circuits, to select only the photons coming from the right direction.\nNow here, temporal gating plays a similar role — but for light. Instead of a physical or electronic filter, we use time as the filter. We only accept photons that arrive early enough, meaning those that haven’t wandered too much. That’s why I call it a “temporal collimation” mechanism.\n\nAnd remember, I also mentioned, a while ago, that you can do something similar with polarized radiation? In that case, we used a magnetic collimation trick — flipping the spin of particles back and forth to control their direction, kind of “cheating” to get the same effect.\n\nAnyway, the big picture is this: optical imaging is not easy. It’s still a very active research topic. Even now — well, I think maybe early this year, or perhaps late last year — my group published a paper about improving optical tomography using advanced computational techniques. So we’re making progress. But I must say, it’s still far from routine clinical use. It’s fascinating physics and engineering, but not yet something you’d see in a hospital every day.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"temporal gating\", \"category\": \"signal_processing\"},\n    {\"term\": \"temporal resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"optical signals\", \"category\": \"physics\"},\n    {\"term\": \"modern detectors\", \"category\": \"instrumentation\"},\n    {\"term\": \"time gating\", \"category\": \"signal_processing\"},\n    {\"term\": \"collimation mechanism\", \"category\": \"instrumentation\"},\n    {\"term\": \"mechanical collimation\", \"category\": \"instrumentation\"},\n    {\"term\": \"electronic collimation\", \"category\": \"instrumentation\"},\n    {\"term\": \"polarized radiation\", \"category\": \"physics\"},\n    {\"term\": \"computational techniques\", \"category\": \"software\"},\n    {\"term\": \"optical imaging\", \"category\": \"modality\"},\n    {\"term\": \"clinical use\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\"...the temporal resolution of modern detectors is extremely good.\", \n               \"...we can actually do this kind of time gating.\", \n               \"...we’re making progress...but I must say, it’s still far from routine clinical use.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "temporal gating",
+        "category": "signal_processing"
+      },
+      {
+        "term": "temporal resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "optical signals",
+        "category": "physics"
+      },
+      {
+        "term": "modern detectors",
+        "category": "instrumentation"
+      },
+      {
+        "term": "time gating",
+        "category": "signal_processing"
+      },
+      {
+        "term": "collimation mechanism",
+        "category": "instrumentation"
+      },
+      {
+        "term": "mechanical collimation",
+        "category": "instrumentation"
+      },
+      {
+        "term": "electronic collimation",
+        "category": "instrumentation"
+      },
+      {
+        "term": "polarized radiation",
+        "category": "physics"
+      },
+      {
+        "term": "computational techniques",
+        "category": "software"
+      },
+      {
+        "term": "optical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "clinical use",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "...the temporal resolution of modern detectors is extremely good.",
+      "...we can actually do this kind of time gating.",
+      "...we’re making progress...but I must say, it’s still far from routine clinical use."
+    ]
+  }
+}

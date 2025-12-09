@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"dual-energy CT\", \"p\":\"uses\", \"o\":\"two different X-ray spectra\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The key is that we collect data using two different X-ray spectra.\"},\n    {\"s\":\"dual-energy CT\", \"p\":\"measures\", \"o\":\"A1 and A2\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"if we measure the transmitted X-ray signal with spectrum one, we get one equation that depends on A1 and A2. If we measure again with spectrum two, we get a second equation.\"},\n    {\"s\":\"dual-energy CT\", \"p\":\"reconstructs_with\", \"o\":\"attenuation coefficient\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"And once we know A1 and A2, we can reconstruct the attenuation coefficient at any X-ray energy.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "dual-energy CT",
+        "p": "uses",
+        "o": "two different X-ray spectra",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The key is that we collect data using two different X-ray spectra."
+      },
+      {
+        "s": "dual-energy CT",
+        "p": "measures",
+        "o": "A1 and A2",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "if we measure the transmitted X-ray signal with spectrum one, we get one equation that depends on A1 and A2. If we measure again with spectrum two, we get a second equation."
+      },
+      {
+        "s": "dual-energy CT",
+        "p": "reconstructs_with",
+        "o": "attenuation coefficient",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "And once we know A1 and A2, we can reconstruct the attenuation coefficient at any X-ray energy."
+      }
+    ]
+  }
+}

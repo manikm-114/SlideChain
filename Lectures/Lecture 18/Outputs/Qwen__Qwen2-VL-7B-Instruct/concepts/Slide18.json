@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:44:40.970047+00:00",
+  "text_length": 868,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThat wraps up the first part of our discussion. Next, we will move more systematically, following closely along with the structure in your textbook.\nIn the first part, we covered some foundational physics: angular momentum, magnetic moments from a quantum mechanical perspective, magnetization in the classical sense, and the fascinating but at first mysterious idea of precession. These are the building blocks.\n\nThe magnetic moment represents the behavior of individual protons at the quantum level. Magnetization describes how many of these tiny moments add up into a collective vector that we can measure in bulk. And precession explains how that vector behaves in an external magnetic field.\nTogether, these ideas form the physical foundation that allows us to understand signal generation, relaxation, and ultimately the imaging sequences that make MRI possible.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"angular momentum\", \"category\": \"physics\"},\n    {\"term\": \"magnetic moments\", \"category\": \"physics\"},\n    {\"term\": \"magnetization\", \"category\": \"physics\"},\n    {\"term\": \"precession\", \"category\": \"physics\"},\n    {\"term\": \"RF Perturbation\", \"category\": \"signal_processing\"},\n    {\"term\": \"Bloch Equation\", \"category\": \"signal_processing\"},\n    {\"term\": \"T1 & T2\", \"category\": \"signal_processing\"},\n    {\"term\": \"FID Detection\", \"category\": \"signal_processing\"},\n    {\"term\": \"T1 & T2 Mechanism\", \"category\": \"signal_processing\"},\n    {\"term\": \"Inversion Recovery\", \"category\": \"signal_processing\"},\n    {\"term\": \"Spin Echo\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"These are the building blocks.\",\n    \"Together, these ideas form the physical foundation that allows us to understand signal generation, relaxation, and ultimately the imaging sequences that make MRI possible.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "angular momentum",
+        "category": "physics"
+      },
+      {
+        "term": "magnetic moments",
+        "category": "physics"
+      },
+      {
+        "term": "magnetization",
+        "category": "physics"
+      },
+      {
+        "term": "precession",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "These are the building blocks.",
+      "Together, these ideas form the physical foundation that allows us to understand signal generation, relaxation, and ultimately the imaging sequences that make MRI possible."
+    ]
+  }
+}

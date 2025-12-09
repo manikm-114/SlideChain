@@ -1,0 +1,131 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "threshold setting"
+          },
+          {
+            "category": "algorithm",
+            "term": "decision boundary"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "false positive fraction"
+          },
+          {
+            "category": "algorithm",
+            "term": "ROC curve"
+          },
+          {
+            "category": "algorithm",
+            "term": "moderate threshold"
+          }
+        ],
+        "evidence": [
+          "shift the decision boundary slightly to the left",
+          "sensitivity increases",
+          "false positive fraction increases",
+          "On the ROC curve",
+          "This \u201cmoderate\u201d threshold represents a more balanced decision-making strategy"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "This \u201cmoderate\u201d threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.",
+            "modalities": [
+              "text"
+            ],
+            "o": "more balanced decision-making strategy",
+            "p": "represents",
+            "s": "moderate threshold setting"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "moderate"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "more balanced decision-making strategy"
+      },
+      "triples": null
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "threshold"
+          },
+          {
+            "category": "modality",
+            "term": "diseased distribution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "false positive fraction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ROC curve"
+          },
+          {
+            "category": "workflow",
+            "term": "trade-off"
+          },
+          {
+            "category": "software",
+            "term": "moderate"
+          },
+          {
+            "category": "workflow",
+            "term": "decision-making strategy"
+          }
+        ],
+        "evidence": [
+          "This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.",
+          "But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "<decision boundary>",
+        "p": "moves",
+        "s": "<threshold>"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide45.txt"
+  },
+  "slide_id": "Slide45"
+}

@@ -1,0 +1,92 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "backprojection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered projection profile"
+          },
+          {
+            "category": "reconstruction",
+            "term": "field of view"
+          },
+          {
+            "category": "reconstruction",
+            "term": "elevation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "theta"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered"
+          }
+        ],
+        "evidence": [
+          "one-dimensional projection data acquisition at an angle theta",
+          "projection profile",
+          "backprojection is the filtered projection profile smeared back over the field of view",
+          "different theta angles",
+          "backprojection"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "backprojection is the filtered projection profile smeared back over the field of view"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "I backproject it.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "backprojection",
+            "p": "reconstructs_with",
+            "s": "projection profile"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "smeared back over the field of view"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

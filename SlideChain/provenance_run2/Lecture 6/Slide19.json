@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sinc function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular gate"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "mathematics",
+            "term": "sine of pi times u"
+          },
+          {
+            "category": "mathematics",
+            "term": "denominator grows"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaling property"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time and frequency are inversely related"
+          }
+        ],
+        "evidence": [
+          "the sinc function came from a rectangular gate function of width 1",
+          "this is the frequency domain representation of a simple gate in time",
+          "sine of pi times u, divided by pi times u",
+          "the denominator grows",
+          "the scaling property",
+          "time and frequency are inversely related"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "So this is the frequency domain representation of a simple gate in time.",
+            "modalities": [
+              "text"
+            ],
+            "o": "frequency domain representation of a simple gate in time",
+            "p": "represents",
+            "s": "sinc function"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "this sinc function came from a rectangular gate function of width 1.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sinc function",
+            "p": "produces",
+            "s": "rectangular gate"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "narrow sinc"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "signature look of the sinc function - one strong central lobe and then smaller and smaller ripples on the sides"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "What you see here is the graph of that function - sinc of u - which is defined as sine of pi times u, divided by pi times u."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "sinc of u",
+        "p": "produces",
+        "s": "sinc function"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide19.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide19.txt"
+  },
+  "slide_id": "Slide19"
+}

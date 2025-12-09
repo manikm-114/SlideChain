@@ -1,0 +1,151 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "diagnostic accuracy"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.",
+            "modalities": [
+              "text"
+            ],
+            "o": "retrospective reconstruction",
+            "p": "uses",
+            "s": "helical CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This technique is called retrospective reconstruction. Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.",
+            "modalities": [
+              "text"
+            ],
+            "o": "densely sampled slices",
+            "p": "produces",
+            "s": "retrospective reconstruction"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "helical CT"
+          },
+          {
+            "category": "reconstruction",
+            "term": "retrospective reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "synthetic data points"
+          },
+          {
+            "category": "data_processing",
+            "term": "densely sampled slices"
+          },
+          {
+            "category": "quality_metric",
+            "term": "diagnostic accuracy"
+          }
+        ],
+        "evidence": [
+          "In helical CT, instead of discrete circular scans, you have one continuous helical acquisition.",
+          "For each helical rotation, interpolation creates synthetic data points.",
+          "Retrospective reconstruction has a significant clinical advantage.",
+          "For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.",
+          "With retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "densely sampled slices mean one slice will include the tumor"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "This technique is called retrospective reconstruction. ... generating a large number of slices computationally.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "densely sampled slices",
+            "p": "produces",
+            "s": "retrospective reconstruction"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "For each helical rotation, interpolation creates synthetic data points.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "synthetic data points",
+            "p": "reconstructs_with",
+            "s": "retrospective reconstruction"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "You can reconstruct images at many arbitrary longitudinal positions along the patient",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "longitudinal positions along the patient",
+            "p": "measures",
+            "s": "retrospective reconstruction"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "helical CT"
+          },
+          {
+            "category": "reconstruction",
+            "term": "retrospective reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "synthetic data points"
+          },
+          {
+            "category": "quality_metric",
+            "term": "diagnostic accuracy"
+          }
+        ],
+        "evidence": [
+          "We analyzed helical CT scanning modes further.",
+          "Traditional step-and-shoot CT uses multiple circular scans. For each scan, you reconstruct one CT slice, repeating many times for full coverage.",
+          "In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.",
+          "Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.",
+          "With retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

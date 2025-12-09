@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide24",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:13:32.146780+00:00",
+  "text_length": 576,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSimilarly, it’s possible to have homogeneity without additivity. Imagine a function that applies one slope if the input is rational and another slope if it’s irrational. Scaling works consistently because multiplying by a rational scalar preserves the input’s type (rational or irrational), so homogeneity holds. But if you add two irrational inputs that sum to a rational number, the slopes change—and additivity breaks down.\nThese examples remind us why linear systems require both properties. We can’t shortcut the definition by assuming one implies the other in all cases.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"homogeneity\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"additivity\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"scaling\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"rational\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"irrational\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"slope\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"linear systems\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"homogeneity without additivity\",\n    \"additivity breaks down\",\n    \"scaling works consistently\",\n    \"multiplying by a rational scalar preserves the input’s type\",\n    \"We can’t shortcut the definition by assuming one implies the other in all cases\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "homogeneity",
+        "category": "mathematics"
+      },
+      {
+        "term": "additivity",
+        "category": "mathematics"
+      },
+      {
+        "term": "scaling",
+        "category": "mathematics"
+      },
+      {
+        "term": "rational",
+        "category": "mathematics"
+      },
+      {
+        "term": "irrational",
+        "category": "mathematics"
+      },
+      {
+        "term": "slope",
+        "category": "mathematics"
+      },
+      {
+        "term": "linear systems",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "homogeneity without additivity",
+      "additivity breaks down",
+      "scaling works consistently",
+      "multiplying by a rational scalar preserves the input's type",
+      "We can't shortcut the definition by assuming one implies the other in all cases"
+    ]
+  }
+}

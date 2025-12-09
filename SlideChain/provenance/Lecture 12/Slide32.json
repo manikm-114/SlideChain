@@ -1,0 +1,112 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "molecular level"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "gadolinium around 50 keV."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "sharp jump in attenuation around 50 keV",
+        "p": "has",
+        "s": "gadolinium"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "K-edge effect"
+          },
+          {
+            "category": "signal_processing",
+            "term": "mass attenuation curves"
+          },
+          {
+            "category": "signal_processing",
+            "term": "iodine"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gadolinium"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gold"
+          },
+          {
+            "category": "modality",
+            "term": "spectral CT"
+          },
+          {
+            "category": "algorithm",
+            "term": "molecular imaging"
+          },
+          {
+            "category": "algorithm",
+            "term": "drug delivery"
+          }
+        ],
+        "evidence": [
+          "contrast agents take advantage of the K-edge effect",
+          "iodine, gadolinium, and gold have sharp jumps in attenuation",
+          "spectral CT can unlock these curves and make imaging chemically specific",
+          "iodine is the most common CT contrast agent",
+          "gadolinium can also be detected in spectral CT",
+          "gold nanoparticles are being investigated for advanced applications"
+        ]
+      },
+      "triples": null
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "spectral CT can unlock these curves"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Now let's look at how contrast agents take advantage of the K-edge effect we just discussed."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "K-edge effect",
+        "p": "uses",
+        "s": "gold"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "drug delivery"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "gadolinium, which is widely used in MRI, can also be detected in spectral CT"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "MRI contrast agent",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "gadolinium"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

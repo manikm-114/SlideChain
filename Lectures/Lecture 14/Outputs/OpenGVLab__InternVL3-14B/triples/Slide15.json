@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"helical CT\", \"p\":\"uses\", \"o\":\"retrospective reconstruction\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.\"},\n    {\"s\":\"retrospective reconstruction\", \"p\":\"produces\", \"o\":\"densely sampled slices\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This technique is called retrospective reconstruction. Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.\"},\n    {\"s\":\"retrospective reconstruction\", \"p\":\"improves\", \"o\":\"detection confidence and diagnostic accuracy\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"With retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "helical CT",
+        "p": "uses",
+        "o": "retrospective reconstruction",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points."
+      },
+      {
+        "s": "retrospective reconstruction",
+        "p": "produces",
+        "o": "densely sampled slices",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This technique is called retrospective reconstruction. Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected."
+      }
+    ]
+  }
+}

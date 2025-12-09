@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"inverse FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"wrap-around effects\", \"category\": \"signal_processing\"},\n    {\"term\": \"undistorted result\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"zero-padding is the key to making circular convolution match linear convolution\",\n    \"zero-padded circular convolution\",\n    \"linear convolution\",\n    \"take the FFT of these zero-padded signals\",\n    \"take the inverse FFT to return to the time domain\",\n    \"zero-padding has removed the unwanted wrap-around effects\",\n    \"correct, undistorted result\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "inverse FFT",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "wrap-around effects",
+        "category": "signal_processing"
+      },
+      {
+        "term": "undistorted result",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "zero-padding is the key to making circular convolution match linear convolution",
+      "zero-padded circular convolution",
+      "linear convolution",
+      "take the FFT of these zero-padded signals",
+      "take the inverse FFT to return to the time domain",
+      "zero-padding has removed the unwanted wrap-around effects",
+      "correct, undistorted result"
+    ]
+  }
+}

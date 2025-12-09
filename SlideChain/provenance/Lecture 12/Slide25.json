@@ -1,0 +1,133 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Compton scattering"
+          },
+          {
+            "category": "modality",
+            "term": "X-rays"
+          },
+          {
+            "category": "physics",
+            "term": "radiation protection"
+          },
+          {
+            "category": "physics",
+            "term": "photons"
+          },
+          {
+            "category": "instrumentation",
+            "term": "lead shielding"
+          },
+          {
+            "category": "instrumentation",
+            "term": "lead glass windows"
+          },
+          {
+            "category": "instrumentation",
+            "term": "lead aprons"
+          }
+        ],
+        "evidence": [
+          "Compton scattering has major implications for radiation protection.",
+          "When we use X-rays on a patient...",
+          "That is why radiation protection is so critical.",
+          "These scattered photons, especially those from Compton scattering...",
+          "To minimize this risk, we use lead shielding, such as lead glass windows and lead aprons."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "To minimize this risk, we use lead shielding, such as lead glass windows and lead aprons.",
+            "modalities": [
+              "text"
+            ],
+            "o": "lead shielding",
+            "p": "depends_on",
+            "s": "radiation protection"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When we use X-rays on a patient, most of the useful photons travel through the body and reach the detector to form the image. But many photons do not follow this direct path - instead, they are scattered in different directions. These scattered photons, especially those from Compton scattering, can expose people nearby.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Compton scattering",
+            "p": "produces",
+            "s": "X-rays"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Compton scattering has major implications for radiation protection.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Compton scattering",
+            "p": "represents",
+            "s": "radiation protection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "healthcare workers"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Compton scattering has major implications for radiation protection.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radiation protection",
+            "p": "measures",
+            "s": "Compton scattering"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "lead aprons"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "To minimize this risk, we use lead shielding, such as lead glass windows and lead aprons. These barriers absorb scattered radiation and protect staff from unnecessary dose. Without them, repeated daily exposure could become dangerous."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "lead shielding",
+        "p": "depends_on",
+        "s": "radiation protection"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "radiation dose"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide25.txt"
+  },
+  "slide_id": "Slide25"
+}

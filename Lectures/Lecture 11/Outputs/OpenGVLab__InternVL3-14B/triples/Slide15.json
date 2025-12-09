@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Structural Similarity Index\", \"p\":\"measures\", \"o\":\"luminance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The first step is to look at their luminance, which simply means the average brightness level.\"},\n    {\"s\":\"Structural Similarity Index\", \"p\":\"measures\", \"o\":\"contrast\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Next, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean.\"},\n    {\"s\":\"Structural Similarity Index\", \"p\":\"measures\", \"o\":\"structure\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"After normalizing for luminance and contrast, we focus on the most important part: the structure.\"},\n    {\"s\":\"Structural Similarity Index\", \"p\":\"produces\", \"o\":\"Similarity Measure\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Finally, SSIM combines all three comparisons — luminance, contrast, and structure — into a single value between zero and one.\"}",
+  "parsed": {
+    "s": "Structural Similarity Index",
+    "p": "produces",
+    "o": "Similarity Measure",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Finally, SSIM combines all three comparisons - luminance, contrast, and structure - into a single value between zero and one."
+    ]
+  }
+}

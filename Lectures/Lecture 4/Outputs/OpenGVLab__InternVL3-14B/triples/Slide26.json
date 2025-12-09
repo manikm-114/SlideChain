@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB code\",\n      \"p\": \"produces\",\n      \"o\": \"plot\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then we call y equals conv of x and h and finally, we plot the result.\"\n    },\n    {\n      \"s\": \"convolution process\",\n      \"p\": \"represents\",\n      \"o\": \"flipping, shifting, multiplying, and adding\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Practicing with simple examples like this helps you visualize and internalize the convolution process — flipping, shifting, multiplying, and adding.\"\n    },\n    {\n      \"s\": \"imaging systems\",\n      \"p\": \"depends_on\",\n      \"o\": \"convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"And in imaging systems, which are designed to be linear and shift-invariant, convolution defines how the system responds to any input.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB code",
+        "p": "produces",
+        "o": "plot",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Then we call y equals conv of x and h and finally, we plot the result."
+      },
+      {
+        "s": "convolution process",
+        "p": "represents",
+        "o": "flipping, shifting, multiplying, and adding",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Practicing with simple examples like this helps you visualize and internalize the convolution process - flipping, shifting, multiplying, and adding."
+      },
+      {
+        "s": "imaging systems",
+        "p": "depends_on",
+        "o": "convolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "And in imaging systems, which are designed to be linear and shift-invariant, convolution defines how the system responds to any input."
+      }
+    ]
+  }
+}

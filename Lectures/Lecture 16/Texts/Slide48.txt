@@ -1,0 +1,10 @@
+The point spread function is a useful way to judge how well a gamma camera can resolve detail. The narrower the point spread function, the better the spatial resolution. Now, what actually determines resolution in nuclear imaging? It turns out there are several factors at play, each introducing its own kind of blurring.
+
+First, there’s the intrinsic resolution of the gamma camera itself. This is limited by the scintillation crystal and the electronics that localize the signal. A thicker crystal spreads the light more broadly, and that uncertainty shows up as blur in the final image.
+Second, the geometry of the collimator plays a major role. Whether you use a parallel-hole, converging, diverging, or pinhole design, the length and diameter of the channels directly control how sharp or blurry the image will be. Longer, narrower channels improve resolution but reduce sensitivity, because many photons are blocked. Shorter, wider channels improve sensitivity but at the cost of blurrier images.
+Third, Compton scattering inside the patient adds another layer of uncertainty. The deeper the radioactive source lies within the body, the more gamma photons are likely to scatter before they escape. Scattered photons are misleading—they point in the wrong direction, lowering contrast and degrading resolution.
+
+When we put all these effects together, the total system resolution can be expressed mathematically. Just as when you combine independent sources of random error, you add their variances, here too the variances of the three components—intrinsic resolution, collimator resolution, and Compton scatter—add together. The overall resolution is then the square root of that sum. In other words,
+system resolution equals the square root of the sum of the squares of the three main contributions.
+
+This is the fundamental idea: every component of the imaging chain blurs the signal a little bit, and together they define the ultimate sharpness—or fuzziness—of the nuclear medicine image.

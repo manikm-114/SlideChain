@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "CT number windows"
+          },
+          {
+            "category": "physics",
+            "term": "Hounsfield units"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gray levels"
+          },
+          {
+            "category": "data_processing",
+            "term": "windowing"
+          },
+          {
+            "category": "anatomy",
+            "term": "lung imaging"
+          },
+          {
+            "category": "workflow",
+            "term": "clinical needs"
+          }
+        ],
+        "evidence": [
+          "Different body regions use different CT number windows for display.",
+          "The full range of CT numbers might be mapped to 256 grayscale levels on a display, from white to black.",
+          "For lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value.",
+          "This windowing is critical to tailoring visualization to different clinical needs."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Different body regions use different CT number windows for display. These windows are defined by minimum and maximum CT numbers, depending on the manufacturer or clinical application.",
+            "modalities": [
+              "text"
+            ],
+            "o": "manufacturer or clinical application",
+            "p": "depends_on",
+            "s": "CT number windows"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "visualization"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The human eye can typically distinguish about 50 shades within a window.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "human eye",
+            "p": "uses",
+            "s": "CT number window"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "For lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "bone window C/W 1000, 2500"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "C/W 1000, 2500",
+        "p": "uses",
+        "s": "bone window"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "clip"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide34.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide34.txt"
+  },
+  "slide_id": "Slide34"
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"additivity\",\n      \"p\": \"represents\",\n      \"o\": \"homogeneity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"For continuous functions, additivity and homogeneity can indeed be shown to be equivalent.\"\n    },\n    {\n      \"s\": \"homogeneity\",\n      \"p\": \"represents\",\n      \"o\": \"additivity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Conversely, if a system satisfies homogeneity, you can reason your way back to additivity.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "additivity",
+        "p": "represents",
+        "o": "homogeneity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "For continuous functions, additivity and homogeneity can indeed be shown to be equivalent."
+      },
+      {
+        "s": "homogeneity",
+        "p": "represents",
+        "o": "additivity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Conversely, if a system satisfies homogeneity, you can reason your way back to additivity."
+      }
+    ]
+  }
+}

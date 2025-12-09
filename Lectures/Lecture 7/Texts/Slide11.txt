@@ -1,0 +1,28 @@
+Let’s take a moment to review this important concept — how a continuous function can be represented using delta functions.
+You may remember that the delta function plays a central role in signal processing.
+And here's the key idea:When you multiply a delta function with a continuous function f of t, and integrate over all time, the result is just the value of f at the point where the delta is centered.
+
+Mathematically, we write:
+The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught.
+This tells us that the delta function samples the value of f at t naught.It picks out that one value and ignores everything else.
+
+Now, you might wonder how this works — so here’s an intuitive explanation.
+Think of the delta function as the limit of a very narrow and very tall pulse — getting narrower and taller, but always keeping the same area, which is 1.
+
+So if we take that narrow pulse, center it at t naught, and multiply it with f of t, we get a tiny slice of the function near t naught.
+When we integrate over that narrow region, the result becomes:
+f of t star, where t star is some point very close to t naught.
+And in the limit — as the width goes to zero — that becomes exactly:
+f of t naught.
+So this is how we record a sample.
+
+It also leads us to a deeper interpretation:
+We can reconstruct the entire function f of t by summing up all these infinitesimal slices — each one represented by a delta function, placed at the right location, and scaled by the value of the function at that point.
+
+That’s what this second formula is saying:
+f of t equals the integral from minus infinity to infinity of delta of tau minus t, times f of tau, d tau.
+It’s a kind of weighted sum of deltas — where the weights are just the values of the function itself.
+
+You can think of this as a very fine-grained, particle-like view of a continuous function.Each point — each “particle” — contributes through a delta function, and together, they rebuild the original signal.
+This is not just a mathematical trick — it connects deeply with how we sample, record, and reconstruct signals in the real world.
+And once again, it highlights why the delta function is so important — both in theory and in practice.

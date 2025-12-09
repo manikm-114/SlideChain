@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide22",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T23:44:54.563450+00:00",
+  "text_length": 1992,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s now take a look at a few more examples of Fourier transform pairs — some of them elegant, some of them a bit more abstract.\n\nFirst, we have the Gaussian function. In the time domain, it’s written as e to the power negative pi t squared. This is the familiar bell-shaped curve — smooth, centered, and decaying quickly. What’s remarkable is that its Fourier transform is also a Gaussian — e to the power negative pi u squared. The shape stays the same, just transformed into the frequency domain. The Gaussian is one of the few functions that’s unchanged, except for scaling — we say it’s self-Fourier.\n\nNext, let’s consider a constant function — just a flat value c across time. Now, technically this function is not square-integrable, meaning we can’t just apply the Fourier transform in the usual way. But in a generalized sense, we can still assign it a meaning. And it turns out the Fourier transform of a constant is a scaled delta function — specifically, c times delta of u. This makes intuitive sense: a constant signal has no frequency variation, so all its energy is concentrated at zero frequency.\n\nAnd finally, look at this interesting example: the shifted delta function delta of t minus a. If you perform the Fourier transform of this, you get a complex exponential — e to the power minus i 2 pi a u. This tells us that shifting a delta function in time introduces a phase shift in frequency. And that phase shift depends on the amount of translation — the value a — and also on the frequency u.\n\nNow, I should point out — when you’re working with generalized functions like constants and delta functions, the usual rules don’t always apply directly. These are not square-integrable functions. So we use the tools of distribution theory to handle them more rigorously. If you’re curious, I explain this in more detail in the book chapter.\n\nBut for now, just keep in mind — even with these edge cases, the idea of expressing a signal in terms of wave components still holds.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Gaussian function\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transform of a constant\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transform of a shifted delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"distribution theory\", \"category\": \"mathematics\"},\n    {\"term\": \"generalized functions\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"First, we have the Gaussian function.\",\n    \"Next, let’s consider a constant function — just a flat value c across time.\",\n    \"And finally, look at this interesting example: the shifted delta function delta of t minus a.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Gaussian function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transform of a constant",
+        "category": "signal_processing"
+      },
+      {
+        "term": "distribution theory",
+        "category": "mathematics"
+      },
+      {
+        "term": "generalized functions",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "First, we have the Gaussian function.",
+      "Next, let's consider a constant function - just a flat value c across time.",
+      "And finally, look at this interesting example: the shifted delta function delta of t minus a."
+    ]
+  }
+}

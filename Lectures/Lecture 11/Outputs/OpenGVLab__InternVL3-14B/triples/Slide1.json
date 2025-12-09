@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide1",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Lecture Eleven\",\n      \"p\": \"represents\",\n      \"o\": \"image quality assessment\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Lecture Eleven: Quality Assessment\"\n    },\n    {\n      \"s\": \"quality assessment\",\n      \"p\": \"measures\",\n      \"o\": \"image clarity, reliability, and suitability for diagnosis\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"is this image good enough? Is it clear, reliable, and suitable for diagnosis?\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Lecture Eleven",
+        "p": "represents",
+        "o": "image quality assessment",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Lecture Eleven: Quality Assessment"
+      }
+    ]
+  }
+}

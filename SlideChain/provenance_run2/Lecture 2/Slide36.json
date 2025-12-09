@@ -1,0 +1,131 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "scripts"
+          },
+          {
+            "category": "software",
+            "term": "functions"
+          },
+          {
+            "category": "software",
+            "term": "workspace"
+          }
+        ],
+        "evidence": [
+          "Scripts are simple. They run a series of commands and use variables already in your workspace.",
+          "Functions, on the other hand, are more structured. You give them inputs, and they return outputs.",
+          "Inside a function, all variables are local - meaning they don\u2019t interfere with anything else in your workspace."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "They run a series of commands and use variables already in your workspace.",
+            "modalities": [
+              "text"
+            ],
+            "o": "variables already in your workspace",
+            "p": "uses",
+            "s": "Scripts"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "You give them inputs, and they return outputs.",
+            "modalities": [
+              "text"
+            ],
+            "o": "inputs",
+            "p": "uses",
+            "s": "Functions"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "You give them inputs, and they return outputs.",
+            "modalities": [
+              "text"
+            ],
+            "o": "outputs",
+            "p": "produces",
+            "s": "Functions"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "scripts"
+          },
+          {
+            "category": "software",
+            "term": "functions"
+          },
+          {
+            "category": "software",
+            "term": "workspace"
+          }
+        ],
+        "evidence": [
+          "Scripts, which do not accept input arguments or return output arguments. They operate on data in the workspace.",
+          "Functions, which can accept input arguments and return output arguments. Internal variables are local to the function."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "workflow",
+            "term": "Knowing when to use a script or a function is key to writing clean, reliable code."
+          }
+        ],
+        "evidence": [
+          "Scripts, which do not accept input arguments or return output arguments. They operate on data in the workspace.",
+          "Functions, which can accept input arguments and return output arguments. Internal variables are local to the function.",
+          "They're great for quick experiments or automation.",
+          "Knowing when to use a script or a function is key to writing clean, reliable code."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "code"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "They\u2019re great for quick experiments or automation.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB",
+            "p": "uses",
+            "s": "scripts"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

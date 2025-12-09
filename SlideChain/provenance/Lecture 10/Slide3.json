@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "function"
+          },
+          {
+            "category": "software",
+            "term": "system"
+          },
+          {
+            "category": "software",
+            "term": "network"
+          }
+        ],
+        "evidence": [
+          "A function is a mathematical concept. It takes an input, processes it according to some rule, and produces an output.",
+          "A system is essentially the same idea, but we often use this term in engineering. We talk about inputs and outputs, and the system could be simple or complex.",
+          "A network is really just a more complex kind of system - one made up of many interconnected subsystems.",
+          "In electrical engineering, we often study electrical networks, where components like resistors, capacitors, and inductors are connected to form a circuit.",
+          "In modern artificial intelligence, we have neural networks, which connect many artificial neurons to process information - in some ways, similar to how biological neurons communicate through electrical signals in our nervous system."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "function"
+          },
+          {
+            "category": "mathematics",
+            "term": "system"
+          },
+          {
+            "category": "ai_ml",
+            "term": "network"
+          },
+          {
+            "category": "physics",
+            "term": "electrical network"
+          },
+          {
+            "category": "ai_ml",
+            "term": "neural network"
+          }
+        ],
+        "evidence": [
+          "A function is a mathematical concept.",
+          "A system is essentially the same idea, but we often use this term in engineering.",
+          "a network is really just a more complex kind of system",
+          "In electrical engineering, we often study electrical networks",
+          "In modern artificial intelligence, we have neural networks"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "a network is really just a more complex kind of system - one made up of many interconnected subsystems.",
+            "modalities": [
+              "text"
+            ],
+            "o": "system",
+            "p": "represents",
+            "s": "network"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "From a mathematical perspective, you can think of a network as a very complicated function",
+            "modalities": [
+              "text"
+            ],
+            "o": "function",
+            "p": "represents",
+            "s": "network"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "nervous system"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide3.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide3.txt"
+  },
+  "slide_id": "Slide3"
+}

@@ -1,0 +1,9 @@
+When we sample a signal in the time domain — or the spatial domain — it creates a very specific effect in the frequency domain. Sampling in one domain is equivalent to performing a convolution in the other domain.
+
+Let’s walk through it.We start with our original spectrum, which we’ll call F of u. Here, u represents frequency, and u-max is the highest frequency present in the signal — its bandwidth.
+When we multiply our signal in time by an impulse train — a set of regularly spaced spikes — that multiplication turns into a convolution in frequency. The result is that the original spectrum gets repeated again and again, spaced apart by the sampling frequency.
+
+In this diagram, the middle shape is the original spectrum. To the left and right, you can see identical copies. The spacing between them is one over capital T, where capital T is the sampling interval in time.
+If our sampling frequency — which is one over T — is at least twice the maximum frequency in the signal, then these repeated copies don’t touch each other. In that case, we can simply keep the central copy and reconstruct the original signal perfectly.
+
+But if we sample too slowly, the copies overlap. This overlap distorts the spectrum, and once that happens, there’s no way to separate the original from the distortion. That’s the aliasing problem we saw in the earlier “bad case” example.

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide39",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:54:08.420932+00:00",
+  "text_length": 502,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\nWe create a function called matrix_multiply that takes two square matrices and a size n.\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"matrix_multiply\", \"category\": \"algorithm\"},\n    {\"term\": \"matrix multiplication\", \"category\": \"mathematics\"},\n    {\"term\": \"nested loops\", \"category\": \"software\"},\n    {\"term\": \"dot product\", \"category\": \"mathematics\"},\n    {\"term\": \"under the hood\", \"category\": \"software\"},\n    {\"term\": \"optimization\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"We create a function called matrix_multiply that takes two square matrices and a size n.\",\n    \"Using three nested loops, we compute the product row by row and column by column.\",\n    \"For each entry in the result, we take a dot product between a row of A and a column of B.\",\n    \"This hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "matrix_multiply",
+        "category": "algorithm"
+      },
+      {
+        "term": "matrix multiplication",
+        "category": "mathematics"
+      },
+      {
+        "term": "nested loops",
+        "category": "software"
+      },
+      {
+        "term": "dot product",
+        "category": "mathematics"
+      },
+      {
+        "term": "under the hood",
+        "category": "software"
+      },
+      {
+        "term": "optimization",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "We create a function called matrix_multiply that takes two square matrices and a size n.",
+      "Using three nested loops, we compute the product row by row and column by column.",
+      "For each entry in the result, we take a dot product between a row of A and a column of B.",
+      "This hands-on approach shows exactly how matrix multiplication works under the hood - which is important to understand before we talk about optimization."
+    ]
+  }
+}

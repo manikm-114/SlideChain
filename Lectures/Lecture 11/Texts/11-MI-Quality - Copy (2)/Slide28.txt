@@ -1,0 +1,12 @@
+Now we move into the second part of our lecture: system-specific measures.
+
+So far, we’ve discussed general mathematical ways of comparing images — measures like mean squared error, KL divergence, and SSIM. These are important, but they don’t tell the whole story, because image quality also depends heavily on the imaging system itself.
+Every imaging system — whether it’s an X-ray detector, an MRI scanner, or an ultrasound probe — has its own characteristics and limitations. To assess the quality of images produced by a system, we need to look at metrics that reflect the system’s performance.
+
+This includes measures such as:
+Noise, and the related quantities signal-to-noise ratio (SNR) and contrast-to-noise ratio (CNR).
+Resolution, which can be spatial, contrast, temporal, or spectral, depending on what aspect of the system we are evaluating.
+And finally, artifacts, which are false or misleading structures that appear in the image because of imperfections in the imaging process.
+Together, these system-specific measures tell us how good a given imaging device is at capturing and representing reality.
+
+So let’s begin this section with one of the most important system-specific measures: the signal-to-noise ratio, or SNR.

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide20",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s a simple cartoon that helps you visualize the concept. You’ve probably experienced the Doppler effect in everyday life. Imagine you’re standing at a train station. When the train comes toward you, the pitch of its whistle sounds higher. When the train moves away, the pitch sounds lower.\n\nThe same thing happens with the siren of a police car. When the car is moving toward you, the sound waves are compressed, giving you a higher frequency or a sharper tone. When the car moves away, the sound waves are stretched, and you perceive a lower frequency.\n\nIn other words, the perceived frequency depends directly on the relative velocity between the sound source and the observer. This change in frequency with motion is the Doppler effect, and it forms the physical foundation for Doppler ultrasound imaging, where we measure blood flow speed and direction inside the body.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Doppler effect\", \"category\": \"physics\"},\n    {\"term\": \"Doppler ultrasound imaging\", \"category\": \"modality\"},\n    {\"term\": \"blood flow speed and direction\", \"category\": \"anatomy\"},\n    {\"term\": \"frequency with motion\", \"category\": \"signal_processing\"},\n    {\"term\": \"sound waves\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"The same thing happens with the siren of a police car. When the car is moving toward you, the sound waves are compressed, giving you a higher frequency or a sharper tone. When the car moves away, the sound waves are stretched, and you perceive a lower frequency.\", \"This change in frequency with motion is the Doppler effect, and it forms the physical foundation for Doppler ultrasound imaging, where we measure blood flow speed and direction inside the body.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Doppler effect",
+        "category": "physics"
+      },
+      {
+        "term": "Doppler ultrasound imaging",
+        "category": "modality"
+      },
+      {
+        "term": "frequency with motion",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sound waves",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The same thing happens with the siren of a police car. When the car is moving toward you, the sound waves are compressed, giving you a higher frequency or a sharper tone. When the car moves away, the sound waves are stretched, and you perceive a lower frequency.",
+      "This change in frequency with motion is the Doppler effect, and it forms the physical foundation for Doppler ultrasound imaging, where we measure blood flow speed and direction inside the body."
+    ]
+  }
+}

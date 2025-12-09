@@ -1,0 +1,79 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "linearly"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This function, often called the triangular function, is shaped just like its name suggests - a triangle."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "triangle",
+        "p": "represents",
+        "s": "triangle function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "triangle function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinusoidal waves"
+          }
+        ],
+        "evidence": [
+          "Now let's move on to our second example - the triangle function.",
+          "Mathematically, it's defined like this: one minus the absolute value of x when x is between negative 1 and 1, and zero otherwise.",
+          "So what we want to do now is find its Fourier transform.",
+          "In other words, we want to express this smooth, non-periodic triangular function as a combination of infinitely many sinusoidal waves - just like we did with the gate function.",
+          "We'll add up all these waves - each with a different frequency and amplitude - and by doing so, we'll be able to reconstruct this triangle shape exactly."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "each component carries part of the shape"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "We want to express this smooth, non-periodic triangular function as a combination of infinitely many sinusoidal waves."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a combination of sinusoidal waves",
+        "p": "produces",
+        "s": "triangle function"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

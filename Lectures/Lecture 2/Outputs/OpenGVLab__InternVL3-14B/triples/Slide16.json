@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"backslash operator\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Instead, MATLAB gives us a much better tool: the backslash operator.\"\n    },\n    {\n      \"s\": \"inv(A)*b\",\n      \"p\": \"represents\",\n      \"o\": \"mathematically valid method\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you might think — okay, just take the inverse of A and multiply it by b. So, x equals inv of A times b.\"\n    },\n    {\n      \"s\": \"inv(A)*b\",\n      \"p\": \"is\",\n      \"o\": \"bad idea\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It’s slow, it’s unstable, and it can lead to all kinds of numerical issues\"\n    },\n    {\n      \"s\": \"A\\\\b\",\n      \"p\": \"is\",\n      \"o\": \"better tool",
+  "parsed": {
+    "s": "inv(A)*b",
+    "p": "is",
+    "o": "bad idea",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "It’s slow, it’s unstable, and it can lead to all kinds of numerical issues"
+    ]
+  }
+}

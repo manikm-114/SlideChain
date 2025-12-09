@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"T1 & T2 at 1.5T\", \"p\":\"measures\", \"o\":\"Tissue Relaxation Times at 1.5T\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here we have a summary table of T1 and T2 relaxation times for different tissues, measured at a field strength of one point five Tesla.\"},\n    {\"s\":\"Fat\", \"p\":\"measures\", \"o\":\"260 ms for T1 and 80 ms for T2\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For fat, the T1 relaxation time is about two hundred sixty milliseconds, and the T2 is about eighty milliseconds.\"},\n    {\"s\":\"Muscle\", \"p\":\"measures\", \"o\":\"870 ms for T1 and 45 ms for T2\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For muscle, T1 is around eight hundred seventy milliseconds, while T2 is much shorter, about forty-five milliseconds.\"},\n    {\"s\":\"Brain (gray matter)\", \"p\":\"measures\", \"o\":\"900",
+  "parsed": {
+    "s": "Muscle",
+    "p": "measures",
+    "o": "870 ms for T1 and 45 ms for T2",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "For muscle, T1 is around eight hundred seventy milliseconds, while T2 is much shorter, about forty-five milliseconds."
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide51",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nAnd in the center of the city, there is this Bell Tower. Every morning, the bell would be rung so life would be synchronized. This is the heart of the city. We enjoyed very much the tour during the conference.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Bell Tower\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"heart of the city\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Every morning, the bell would be rung so life would be synchronized. This is the heart of the city.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

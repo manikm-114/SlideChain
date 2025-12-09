@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"PET\", \"p\":\"measures\", \"o\":\"Detected Number of Photons\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In PET, you see that the data model has a uniform weighting factor multiplied by the concentration at each location.\"},\n    {\"s\":\"PET\", \"p\":\"reconstructs_with\", \"o\":\"filtered backprojection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"you can use deterministic reconstruction, like filtered backprojection.\"},\n    {\"s\":\"time-of-flight approach\", \"p\":\"estimates\", \"o\":\"mu\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"An interesting twist is the time-of-flight approach, which uses the difference in arrival times of photons at the detectors to estimate where the annihilation occurred.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "PET",
+        "p": "reconstructs_with",
+        "o": "filtered backprojection",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you can use deterministic reconstruction, like filtered backprojection."
+      }
+    ]
+  }
+}

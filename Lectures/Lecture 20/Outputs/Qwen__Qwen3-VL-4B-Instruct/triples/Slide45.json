@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide45",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T14:32:15.813012+00:00",
+  "text_length": 925,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen a patient undergoes radiation therapy for cancer, a highly energetic beam is directed toward the tumor to destroy cancerous cells. However, the accuracy of this beam is critical — we need to know precisely where the tumor is during treatment, and that’s where image guidance becomes essential.\n\nWhat you see here is a new concept that integrates interior MRI with a medical linear accelerator. The idea is to use MRI imaging to continuously visualize a small region of interest — the area where the tumor resides — while radiation therapy is being delivered. This allows us to target the tumor with submillimeter precision and adjust in real time if the tumor moves due to breathing or other physiological motion.\n\nThis work is being developed in collaboration with colleagues at UT Southwestern, where we are exploring how this interior MRI can guide radiation delivery and make cancer therapy safer and more effective.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"interior MRI\",\n      \"p\": \"uses\",\n      \"o\": \"medical linear accelerator\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"The new concept integrates interior MRI with a medical linear accelerator.\"\n    },\n    {\n      \"s\": \"interior MRI\",\n      \"p\": \"measures\",\n      \"o\": \"tumor location\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"use MRI imaging to continuously visualize a small region of interest — the area where the tumor resides — while radiation therapy is being delivered.\"\n    },\n    {\n      \"s\": \"interior MRI\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"CBCT\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.8,\n      \"evidence\": \"Blending of CBCT and reconstructed iMRI image in the FoV.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "interior MRI",
+        "p": "uses",
+        "o": "medical linear accelerator",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.9,
+        "evidence": "The new concept integrates interior MRI with a medical linear accelerator."
+      }
+    ]
+  }
+}

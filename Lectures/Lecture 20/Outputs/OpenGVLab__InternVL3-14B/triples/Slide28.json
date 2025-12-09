@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Spectral imaging\",\n      \"p\": \"measures\",\n      \"o\": \"multiple frequencies\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"each voxel emits signals at multiple frequencies, instead of a signal of a single frequency\"\n    },\n    {\n      \"s\": \"Spectral imaging\",\n      \"p\": \"represents\",\n      \"o\": \"biochemical information\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"spectral imaging gives us access to biochemical information, not just structural or functional detail\"\n    },\n    {\n      \"s\": \"Spectral imaging\",\n      \"p\": \"produces\",\n      \"o\": \"peaks for creatine, choline, glutamate, glutamine, and N-acetylaspartate\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can see peaks for creatine, choline, glutamate, glutamine, and N-acetylaspartate, or NAA\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Spectral imaging",
+        "p": "measures",
+        "o": "multiple frequencies",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "each voxel emits signals at multiple frequencies, instead of a signal of a single frequency"
+      },
+      {
+        "s": "Spectral imaging",
+        "p": "represents",
+        "o": "biochemical information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "spectral imaging gives us access to biochemical information, not just structural or functional detail"
+      },
+      {
+        "s": "Spectral imaging",
+        "p": "produces",
+        "o": "peaks for creatine, choline, glutamate, glutamine, and N-acetylaspartate",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "you can see peaks for creatine, choline, glutamate, glutamine, and N-acetylaspartate, or NAA"
+      }
+    ]
+  }
+}

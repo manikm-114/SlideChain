@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"diffusion-weighted imaging\", \"p\":\"uses\", \"o\":\"spin-echo sequence\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here, we use a spin-echo sequence with a 90-degree excitation pulse followed by a 180-degree refocusing pulse.\"},\n    {\"s\":\"diffusion-weighted imaging\", \"p\":\"measures\", \"o\":\"diffusion coefficient of water\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A simple spin-echo imaging sequence used to measure the diffusion coefficient of water for each pixel in an image.\"},\n    {\"s\":\"diffusion-weighted imaging\", \"p\":\"depends_on\", \"o\":\"gradient strength\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The signal attenuation due to diffusion depends on three main factors: first, the gradient strength, represented by capital G;\"},\n    {\"s\":\"diffusion-weighted imaging\", \"p\":\"depends_on\", \"o\":\"duration of each gradient pulse\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The signal attenuation due to diffusion depends on three main",
+  "parsed": {
+    "s": "diffusion-weighted imaging",
+    "p": "depends_on",
+    "o": "gradient strength",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The signal attenuation due to diffusion depends on three main factors: first, the gradient strength, represented by capital G;"
+    ]
+  }
+}

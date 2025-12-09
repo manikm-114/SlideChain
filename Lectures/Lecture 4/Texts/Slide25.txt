@@ -1,0 +1,12 @@
+Let’s consider a hands-on example using two discrete functions, each with five data points.
+Now imagine holding out both hands:your left hand represents one function — let’s call it x of n,and your right hand represents the other — this will be h of n, the impulse response.
+Because of that negative k in the convolution sum,one function needs to be flipped — think of it like flipping your right hand so you see the back of it.That’s how we visualize h of n minus k.
+Now we shift this flipped function across the input and calculate the output step-by-step.
+
+For n equals zero, you align the flipped function with the origin,multiply the overlapping points, then sum the products —this gives you the output y of zero.
+
+For n equals one, shift the flipped function one step to the right,multiply again, sum the result — and you get y of one.
+You keep shifting, multiplying, and summing for each value of n.
+You’ll notice that when the two functions fully overlap,you get the largest value in the convolution.And as they slide past each other, the overlap decreases,so the convolution value gradually falls back to zero.
+
+This visual analogy with your hands is a powerful way to understand discrete convolution —especially how flipping, shifting, multiplying, and summing all come together.

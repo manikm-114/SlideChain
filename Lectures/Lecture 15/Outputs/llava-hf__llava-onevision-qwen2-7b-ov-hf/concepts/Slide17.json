@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide17",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s see what happens if we change the maximum theta value.\n\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\n\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\n\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"sinogram\", \"category\": \"reconstruction\"},\n    {\"term\": \"maximum theta value\", \"category\": \"reconstruction\"},\n    {\"term\": \"truncated\", \"category\": \"reconstruction\"},\n    {\"term\": \"projections\", \"category\": \"reconstruction\"},\n    {\"term\": \"algorithm\", \"category\": \"reconstruction\"},\n    {\"term\": \"complete picture\", \"category\": \"reconstruction\"},\n    {\"term\": \"angular range\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\", \"So, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sinogram",
+        "category": "reconstruction"
+      },
+      {
+        "term": "maximum theta value",
+        "category": "reconstruction"
+      },
+      {
+        "term": "truncated",
+        "category": "reconstruction"
+      },
+      {
+        "term": "projections",
+        "category": "reconstruction"
+      },
+      {
+        "term": "algorithm",
+        "category": "reconstruction"
+      },
+      {
+        "term": "complete picture",
+        "category": "reconstruction"
+      },
+      {
+        "term": "angular range",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.",
+      "So, limiting the maximum theta is like taking photos of a sculpture but only from one side-you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range."
+    ]
+  }
+}

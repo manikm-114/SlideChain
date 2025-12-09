@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide6",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nFunctions come in many forms—like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry. If you’re unfamiliar with fractals, they’re fascinating patterns that repeat at every scale, and I encourage you to explore them further if you’re curious. But for our purposes, it’s enough to be comfortable with regular functions and their properties.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"functions\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"sinusoidal functions, linear functions, fractal geometry\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Functions come in many forms—like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

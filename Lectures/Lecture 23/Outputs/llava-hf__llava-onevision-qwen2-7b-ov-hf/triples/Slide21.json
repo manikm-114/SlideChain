@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo now, let’s think about what happens if we have not just a few components, but many, many wavelength components all mixed together — just like a rainbow of light. Imagine several sine-wave components of different colors, each slightly different in frequency. When we add them together, the result no longer looks like a clean, single-frequency wave.\n\nInstead, you start to see an envelope pattern — a burst that looks like a Gaussian-shaped profile, or what we often call a coherence envelope. The more components you add — red, orange, green, blue, all slightly shifted — the narrower and sharper that envelope becomes. This figure visually shows exactly that. With two components, you can still see the oscillations clearly. Add three components, and the interference gets tighter. Add seven components, and now the oscillations begin to cluster and fade away at the edges, forming a smooth, localized shape. \n\nSo, if you keep increasing the number of wavelengths, the interference pattern becomes confined in space — like a short pulse — and its overall shape starts resembling a Gaussian curve. That’s the idea behind partial coherence. The more wavelengths you combine, the shorter the coherence length becomes, and the interference fringes appear only within that small region.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"coherence envelope\", \"p\":\"represents\",\n     \"o\":\"Gaussian-shaped profile\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The result no longer looks like a clean, single-frequency wave. Instead, you start to see an envelope pattern — a burst that looks like a Gaussian-shaped profile, or what we often call a coherence envelope.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "coherence envelope",
+        "p": "represents",
+        "o": "Gaussian-shaped profile",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The result no longer looks like a clean, single-frequency wave. Instead, you start to see an envelope pattern - a burst that looks like a Gaussian-shaped profile, or what we often call a coherence envelope."
+      }
+    ]
+  }
+}

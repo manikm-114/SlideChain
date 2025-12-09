@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide37",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-07T23:16:38.587093+00:00",
+  "text_length": 1319,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about the reverse process of blurring — a technique called deconvolution.\nWhen an image is blurred, it’s often because the original scene has been convolved with a point spread function — or PSF.\u000bWe saw earlier that even a perfect point source becomes a blurred spot due to system limitations.\nDeconvolution is the process of trying to undo that effect —\u000bto recover the original image from its blurred version.\nYou can think of convolution like a kind of advanced multiplication:\u000bwe blend the signal with the system’s response.\u000bIn that same spirit, deconvolution behaves like an advanced form of division —\u000bwe’re trying to undo the blending, and isolate the original input.\nWe can see that clearly in the example on this slide.\u000bThe left image is a blurred photo of a car — the license plate is unreadable.\u000bAfter deconvolution, the right image restores the clarity — now we can read the plate.\nThis kind of technique is used not just in photography, but in microscopy, astronomy, and especially in medical imaging,\u000bwhere resolving fine detail can be critical.\nIt’s important to note that deconvolution is not always perfect —\u000bin real-world systems, noise and distortion make it a challenging problem.\u000bBut with good modeling of the PSF and proper regularization,\u000bwe can often greatly enhance image quality.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"deconvolution\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"blurred photo of a car\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"The left image is a blurred photo of a car — the license plate is unreadable. After deconvolution, the right image restores the clarity — now we can read the plate.\"\n    },\n    {\n      \"s\": \"deconvolution\",\n      \"p\": \"uses\",\n      \"o\": \"point spread function\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"When an image is blurred, it’s often because the original scene has been convolved with a point spread function — or PSF.\"\n    },\n    {\n      \"s\": \"deconvolution\",\n      \"p\": \"produces\",\n      \"o\": \"restored clarity\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"After deconv",
+  "parsed": {
+    "s": "deconvolution",
+    "p": "uses",
+    "o": "point spread function",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "When an image is blurred, it's often because the original scene has been convolved with a point spread function - or PSF."
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+Now we can state the discrete Fourier transform 
+
+We’ve sampled the signal at timest n equals to n divided by capital P, for n equals to 0, 1, …, N minus 1.We’ll read the spectrum at frequenciesu m equals to m divided by capital T, for m equals to 0, 1, …, N minus 1,with N equals to T times P.
+
+The DFT value at u m is
+“sum from n equals zero to N minus one, f of n over P, into e to the power of minus j, two pi, m n over N.”
+This is just an inner product with a complex sinusoid of frequency index m.Each output is complex: its magnitude tells us how much of that frequency is present, and its angle (the phase) tells us the shift.
+
+A few quick anchors:
+t n equals to n over P are the time samples.
+u m equals to m over T are the frequency samples.
+The exponential “e to the minus j two pi m n over N” is the rotating basis wave.
+
+Next, we’ll write the inverse DFT and see why a factor of one over N naturally appears so we can reconstruct the time samples exactly.

@@ -1,0 +1,117 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "wavefront"
+          },
+          {
+            "category": "physics",
+            "term": "secondary sources"
+          },
+          {
+            "category": "physics",
+            "term": "spherical wave"
+          },
+          {
+            "category": "physics",
+            "term": "plane wave"
+          },
+          {
+            "category": "physics",
+            "term": "diffraction"
+          },
+          {
+            "category": "physics",
+            "term": "interference"
+          },
+          {
+            "category": "physics",
+            "term": "Huygens\u2019 sources"
+          },
+          {
+            "category": "physics",
+            "term": "reflection"
+          },
+          {
+            "category": "physics",
+            "term": "refraction"
+          },
+          {
+            "category": "physics",
+            "term": "transmitted beam"
+          }
+        ],
+        "evidence": [
+          "current wavefront",
+          "multiple small secondary sources",
+          "spherical wave",
+          "plane wave propagating",
+          "diffraction",
+          "interference",
+          "Huygens\u2019 sources",
+          "reflection",
+          "refraction",
+          "transmitted beam"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "If you have two slits, the waves from the two openings will interfere due to phase differences."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "interference",
+        "p": "produces",
+        "s": "two slits"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "refraction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "plane wave propagates along one direction"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "spherical wavefront (each point emits a wavelet) ... the envelope formed by all these secondary spherical waves added together-form the next wavefront"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "secondary spherical waves",
+        "p": "reconstructs_with",
+        "s": "spherical wavefront"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "wave phenomena"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

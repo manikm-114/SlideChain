@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"reconstructed red curve\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"samples\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The red curve is what we get when we try to reconstruct the signal from those samples.\"\n    },\n    {\n      \"s\": \"reconstructed red curve\",\n      \"p\": \"passes through\",\n      \"o\": \"blue points\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"At the sample locations, the reconstructed red curve passes exactly through the blue points\"\n    },\n    {\n      \"s\": \"reconstructed red curve\",\n      \"p\": \"drifts away from\",\n      \"o\": \"true black signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"But between the sample points, the red curve drifts far away from the true black signal.\"\n    },\n    {\n      \"s\": \"aliasing\",\n      \"p\": \"caused by\",\n      \"o\": \"sampling rate less than twice the maximum frequency",
+  "parsed": {
+    "s": "reconstructed red curve",
+    "p": "drifts away from",
+    "o": "true black signal",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "But between the sample points, the red curve drifts far away from the true black signal."
+    ]
+  }
+}

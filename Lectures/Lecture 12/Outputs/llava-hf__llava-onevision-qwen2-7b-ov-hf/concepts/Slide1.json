@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide1",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLast time, we talked about image quality assessment.\u000bToday, we begin a new part of the course — focusing on imaging modalities. And the very first modality we will discuss is X-ray imaging.\nBefore we dive in, let me share a quick study tip. When you are learning a subject as complex as medical imaging, it is really important to build good habits: preview the material before class, review it after class, and pay special attention to the key ideas. I will repeat important concepts as needed to reinforce your understanding.\n\nEarlier in the course, I showed you a poster that summarized the foundation of medical imaging. I also created a similar poster for my graduate-level class, and students really liked it. These visual maps help connect the big picture with the details.\nTools like this can make complicated subjects easier to follow.\n\nSo with that in mind, let’s move forward and begin our journey into X-ray radiography.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"X-ray imaging\", \"category\": \"modality\"},\n    {\"term\": \"image quality assessment\", \"category\": \"quality_metric\"},\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"pre-class preview\", \"category\": \"software\"},\n    {\"term\": \"post-class review\", \"category\": \"software\"},\n    {\"term\": \"key ideas\", \"category\": \"software\"},\n    {\"term\": \"visual maps\", \"category\": \"software\"},\n    {\"term\": \"complicated subjects\", \"category\": \"communication\"},\n    {\"term\": \"X-ray radiography\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"Let’s move forward and begin our journey into X-ray radiography.\", \"When you are learning a subject as complex as medical imaging, it is really important to build good habits: preview the material before class, review it after class, and pay special attention to the key ideas. I will repeat important concepts as needed to reinforce your understanding.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray imaging",
+        "category": "modality"
+      },
+      {
+        "term": "image quality assessment",
+        "category": "quality_metric"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "key ideas",
+        "category": "software"
+      },
+      {
+        "term": "visual maps",
+        "category": "software"
+      },
+      {
+        "term": "complicated subjects",
+        "category": "communication"
+      },
+      {
+        "term": "X-ray radiography",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Let’s move forward and begin our journey into X-ray radiography.",
+      "When you are learning a subject as complex as medical imaging, it is really important to build good habits: preview the material before class, review it after class, and pay special attention to the key ideas. I will repeat important concepts as needed to reinforce your understanding."
+    ]
+  }
+}

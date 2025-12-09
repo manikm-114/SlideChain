@@ -1,0 +1,11 @@
+In the new approach, we assume there is no known sub-region.
+Instead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.
+
+The boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.
+This assumption matches the idea of band-limited signals from sampling theory.
+With this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.
+
+For example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.
+Here is a real dataset scanned on a Siemens scanner demonstrating this.
+Interior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.
+

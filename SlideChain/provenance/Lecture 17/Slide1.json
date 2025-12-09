@@ -1,0 +1,145 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "SPECT"
+          },
+          {
+            "category": "modality",
+            "term": "PET"
+          },
+          {
+            "category": "modality",
+            "term": "molecular imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "tracers"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detectors"
+          }
+        ],
+        "evidence": [
+          "SPECT stands for Single Photon Emission Computed Tomography, and PET means Positron Emission Tomography.",
+          "Both enable molecular imaging and are vital for diagnostics, functional evaluation.",
+          "They use specific tracers and detectors, which we\u2019ll explore in detail today"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Both enable molecular imaging and are vital for diagnostics, functional evaluation. They use specific tracers and detectors"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "specific tracers and detectors",
+        "p": "uses",
+        "s": "SPECT"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "SPECT"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "SPECT stands for Single Photon Emission Computed Tomography, and PET means Positron Emission Tomography.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Single Photon Emission Computed Tomography",
+            "p": "uses",
+            "s": "SPECT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "detectors"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "Both enable molecular imaging"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "molecular imaging",
+        "p": "measures",
+        "s": "SPECT and PET"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "SPECT"
+          },
+          {
+            "category": "modality",
+            "term": "PET"
+          },
+          {
+            "category": "modality",
+            "term": "nuclear imaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "tracers"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detectors"
+          },
+          {
+            "category": "workflow",
+            "term": "diagnostics"
+          },
+          {
+            "category": "workflow",
+            "term": "functional evaluation"
+          }
+        ],
+        "evidence": [
+          "SPECT stands for Single Photon Emission Computed Tomography, and PET means Positron Emission Tomography.",
+          "Both enable molecular imaging and are vital for diagnostics, functional evaluation."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "SPECT stands for Single Photon Emission Computed Tomography, and PET means Positron Emission Tomography.",
+            "modalities": [
+              "text"
+            ],
+            "o": "nuclear imaging",
+            "p": "uses",
+            "s": "SPECT"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide1.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide1.txt"
+  },
+  "slide_id": "Slide1"
+}

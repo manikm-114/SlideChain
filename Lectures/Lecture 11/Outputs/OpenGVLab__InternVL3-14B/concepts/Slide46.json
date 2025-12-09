@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"threshold\", \"category\": \"algorithm\"},\n    {\"term\": \"sensitivity\", \"category\": \"quality_metric\"},\n    {\"term\": \"false positive fraction\", \"category\": \"quality_metric\"},\n    {\"term\": \"ROC curve\", \"category\": \"algorithm\"},\n    {\"term\": \"specificity\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"By moving the cutoff further to the left, we dramatically reduce the chance of missing diseased patients.\",\n    \"Almost everyone with the disease is now flagged as positive. That means our sensitivity is very high — close to 100%.\",\n    \"With the threshold this low, about half of the non-diseased population also falls into the positive range. In other words, the false positive fraction climbs to nearly 50%.\",\n    \"On the ROC curve, this decision strategy places us near the top-right portion — very sensitive, but much less specific.\",\n    \"Different thresholds give you different balances between catching true positives and avoiding false alarms.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "threshold",
+        "category": "algorithm"
+      },
+      {
+        "term": "sensitivity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "false positive fraction",
+        "category": "quality_metric"
+      },
+      {
+        "term": "ROC curve",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "By moving the cutoff further to the left, we dramatically reduce the chance of missing diseased patients.",
+      "Almost everyone with the disease is now flagged as positive. That means our sensitivity is very high - close to 100%.",
+      "With the threshold this low, about half of the non-diseased population also falls into the positive range. In other words, the false positive fraction climbs to nearly 50%.",
+      "On the ROC curve, this decision strategy places us near the top-right portion - very sensitive, but much less specific.",
+      "Different thresholds give you different balances between catching true positives and avoiding false alarms."
+    ]
+  }
+}

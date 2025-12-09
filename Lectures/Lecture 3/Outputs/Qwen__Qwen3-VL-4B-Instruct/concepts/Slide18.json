@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:12:39.219835+00:00",
+  "text_length": 352,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s look at additivity first. If you know how a system responds to input F1, producing output K1, and separately how it responds to input F2, producing K2, then additivity tells us the system’s response to F1 + F2 is simply K1 + K2. This property allows us to analyze complex inputs by breaking them into simpler parts—a key advantage in engineering.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"additivity\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"system’s response to input F1, producing output K1\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"system’s response to input F2, producing K2\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"system’s response to F1 + F2 is simply K1 + K2\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"analyze complex inputs by breaking them into simpler parts\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"Let’s look at additivity first. If you know how a system responds to input F1, producing output K1, and separately how it responds to input F2, producing K2, then additivity tells us the system’s response to F1 + F2 is simply K1 + K2.\",\n    \"This property allows us to analyze complex inputs by breaking them into simpler parts—a key advantage in engineering.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "additivity",
+        "category": "mathematics"
+      },
+      {
+        "term": "analyze complex inputs by breaking them into simpler parts",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Let's look at additivity first. If you know how a system responds to input F1, producing output K1, and separately how it responds to input F2, producing K2, then additivity tells us the system's response to F1 + F2 is simply K1 + K2.",
+      "This property allows us to analyze complex inputs by breaking them into simpler parts-a key advantage in engineering."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide31",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:05:33.520051+00:00",
+  "text_length": 854,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIt’s often much easier to demonstrate precision than to explain it with equations.\nHere you see a gyroscope. Its circular motion around the stand is precession. This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.\n\nNotice how the wheel does not simply fall. Instead, because of torque, it precesses around the point where it is supported. If I increase the downward force—for example, by adding the weight of a wrench to the axle—you can see that the precession frequency increases.\n\nThis is the same principle that applies in MRI. The frequency of precession is directly linked to the strength of the magnetic field. Stronger forces or fields lead to faster precession. We call this frequency encoding, and it is the foundation for how MRI gathers spatial information.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"precession\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"angular momentum\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"torque\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"frequency encoding\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"magnetic field\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"precession frequency\",\n      \"category\": \"frequency_domain\"\n    }\n  ],\n  \"evidence\": [\n    \"Its circular motion around the stand is precession.\",\n    \"This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.\",\n    \"Notice how the wheel does not simply fall. Instead, because of torque, it precesses around the point where it is supported.\",\n    \"This is the same principle that applies in MRI. The frequency of precession is directly linked to the strength of the magnetic field.\",\n    \"Stronger forces or fields lead to faster precession.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "precession",
+        "category": "physics"
+      },
+      {
+        "term": "angular momentum",
+        "category": "physics"
+      },
+      {
+        "term": "torque",
+        "category": "physics"
+      },
+      {
+        "term": "frequency encoding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "magnetic field",
+        "category": "modality"
+      },
+      {
+        "term": "precession frequency",
+        "category": "frequency_domain"
+      }
+    ],
+    "evidence": [
+      "Its circular motion around the stand is precession.",
+      "This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.",
+      "Notice how the wheel does not simply fall. Instead, because of torque, it precesses around the point where it is supported.",
+      "This is the same principle that applies in MRI. The frequency of precession is directly linked to the strength of the magnetic field.",
+      "Stronger forces or fields lead to faster precession."
+    ]
+  }
+}

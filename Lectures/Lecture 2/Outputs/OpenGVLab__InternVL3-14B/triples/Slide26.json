@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"fopen\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To read an entire structured dataset, you first open the file using fopen\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"textread\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"then use the textread function to extract data from all columns\"\n    },\n    {\n      \"s\": \"textread\",\n      \"p\": \"depends_on\",\n      \"o\": \"format symbols\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Each data type in the file corresponds to a format symbol\"\n    },\n    {\n      \"s\": \"textread\",\n      \"p\": \"uses\",\n      \"o\": \"asterisks\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can still use textread,",
+  "parsed": {
+    "s": "textread",
+    "p": "depends_on",
+    "o": "format symbols",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Each data type in the file corresponds to a format symbol"
+    ]
+  }
+}

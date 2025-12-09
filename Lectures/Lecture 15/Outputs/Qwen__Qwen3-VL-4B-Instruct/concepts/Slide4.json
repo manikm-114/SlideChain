@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:08:53.016045+00:00",
+  "text_length": 660,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s step into the theory of CT.\u000b\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\n\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\n\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"CT\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"X-ray projections\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"attenuated\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"reconstructing\",\n      \"category\": \"reconstruction\"\n    },\n    {\n      \"term\": \"computed tomography\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"CT uses X-ray projections taken from many different angles around the body.\",\n    \"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\",\n    \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray projections",
+        "category": "physics"
+      },
+      {
+        "term": "attenuated",
+        "category": "physics"
+      },
+      {
+        "term": "reconstructing",
+        "category": "reconstruction"
+      },
+      {
+        "term": "computed tomography",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "CT uses X-ray projections taken from many different angles around the body.",
+      "As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+      "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body. That's the foundation of computed tomography."
+    ]
+  }
+}

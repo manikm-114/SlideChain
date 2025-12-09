@@ -1,0 +1,61 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "high gain"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "We want R1 to be large so that most of the input voltage appears across it, ensuring we capture as much of the signal as possible.",
+            "modalities": [
+              "text"
+            ],
+            "o": "R1",
+            "p": "uses",
+            "s": "Large input resistance"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "output voltage v out changes"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "In the example at the bottom right, R S is our sensor, whose resistance changes slightly by a factor of x in response to something like temperature or pressure. R_L is the load resistor. If x equals zero, the sensor is at its nominal value. When x changes, even by a small amount, the output voltage V out changes."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the input impedance of our measuring instrument",
+        "p": "represents",
+        "s": "R2"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "amplification"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide24.txt"
+  },
+  "slide_id": "Slide24"
+}

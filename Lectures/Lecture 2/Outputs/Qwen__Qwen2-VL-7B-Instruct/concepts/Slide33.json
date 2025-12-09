@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:46:11.904809+00:00",
+  "text_length": 290,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe peaks function creates a sample surface. Use mesh to visualize it.\nTo smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.\nThis technique is useful in graphics, simulations, and image processing — anytime you want smoother, higher-resolution data.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"meshgrid\", \"category\": \"mathematics\"},\n    {\"term\": \"interp2\", \"category\": \"mathematics\"},\n    {\"term\": \"peaks\", \"category\": \"mathematics\"},\n    {\"term\": \"visualization\", \"category\": \"software\"},\n    {\"term\": \"smoothing\", \"category\": \"signal_processing\"},\n    {\"term\": \"grid\", \"category\": \"mathematics\"},\n    {\"term\": \"estimation\", \"category\": \"mathematics\"},\n    {\"term\": \"higher-resolution\", \"category\": \"data_processing\"},\n    {\"term\": \"graphics\", \"category\": \"software\"},\n    {\"term\": \"simulations\", \"category\": \"software\"},\n    {\"term\": \"image processing\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.\", \"This technique is useful in graphics, simulations, and image processing — anytime you want smoother, higher-resolution data.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "meshgrid",
+        "category": "mathematics"
+      },
+      {
+        "term": "interp2",
+        "category": "mathematics"
+      },
+      {
+        "term": "peaks",
+        "category": "mathematics"
+      },
+      {
+        "term": "grid",
+        "category": "mathematics"
+      },
+      {
+        "term": "higher-resolution",
+        "category": "data_processing"
+      },
+      {
+        "term": "graphics",
+        "category": "software"
+      },
+      {
+        "term": "simulations",
+        "category": "software"
+      },
+      {
+        "term": "image processing",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.",
+      "This technique is useful in graphics, simulations, and image processing - anytime you want smoother, higher-resolution data."
+    ]
+  }
+}

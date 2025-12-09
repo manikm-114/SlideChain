@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T06:19:51.222150+00:00",
+  "text_length": 373,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWelcome back. We can see today’s topic is CT Reconstruction. \n\nIn this session, we’ll build on that foundation and map raw X-ray measurements into cross-sectional images. By the end, you’ll have a clear roadmap of the reconstruction pipeline and where classic methods, such as filtered back-projection and modern iterative ideas, fit into an online, real-world CT workflow.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"CT Reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"filtered back-projection\", \"category\": \"algorithm\"},\n    {\"term\": \"iterative ideas\", \"category\": \"algorithm\"},\n    {\"term\": \"online, real-world CT workflow\", \"category\": \"workflow\"},\n    {\"term\": \"raw X-ray measurements\", \"category\": \"signal_processing\"},\n    {\"term\": \"cross-sectional images\", \"category\": \"reconstruction\"},\n    {\"term\": \"reconstruction pipeline\", \"category\": \"workflow\"}\n  ],\n  \"evidence\": [\n    \"We’ll build on that foundation and map raw X-ray measurements into cross-sectional images.\",\n    \"By the end, you’ll have a clear roadmap of the reconstruction pipeline and where classic methods, such as filtered back-projection and modern iterative ideas, fit into an online, real-world CT workflow.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT Reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "filtered back-projection",
+        "category": "algorithm"
+      },
+      {
+        "term": "iterative ideas",
+        "category": "algorithm"
+      },
+      {
+        "term": "online, real-world CT workflow",
+        "category": "workflow"
+      },
+      {
+        "term": "raw X-ray measurements",
+        "category": "signal_processing"
+      },
+      {
+        "term": "cross-sectional images",
+        "category": "reconstruction"
+      },
+      {
+        "term": "reconstruction pipeline",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "We'll build on that foundation and map raw X-ray measurements into cross-sectional images.",
+      "By the end, you'll have a clear roadmap of the reconstruction pipeline and where classic methods, such as filtered back-projection and modern iterative ideas, fit into an online, real-world CT workflow."
+    ]
+  }
+}

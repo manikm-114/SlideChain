@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"delta function\",\n      \"p\": \"measures\",\n      \"o\": \"value of f at t naught\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught.\"\n    },\n    {\n      \"s\": \"delta function\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"continuous function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Even more fascinating — we can actually rebuild any continuous function using this idea.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "delta function",
+        "p": "measures",
+        "o": "value of f at t naught",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t - equals f of t naught."
+      },
+      {
+        "s": "delta function",
+        "p": "reconstructs_with",
+        "o": "continuous function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Even more fascinating - we can actually rebuild any continuous function using this idea."
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT function"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency bins"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency resolution"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "spectrum"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "bin spacing"
+          }
+        ],
+        "evidence": [
+          "add zero-padding before taking the Fourier transform",
+          "call the FFT function",
+          "spacing between frequency bins",
+          "frequency resolution of the spectrum",
+          "finer spacing",
+          "spectrum at a finer scale",
+          "spacing between DFT bins"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "spectral analysis"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Now let's see what happens when we add zero-padding before taking the Fourier transform. This time, when we call the FFT function, we specify a length of two thousand. That means we take our original signal and append enough zeros to make it two thousand points long before computing the FFT.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "FFT function",
+            "p": "uses",
+            "s": "zero-padding"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "increased frequency resolution"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Now, the bin spacing is Fs divided by two thousand, which equals zero point five hertz."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "spacing between DFT bins",
+        "p": "measures",
+        "s": "zero-padding"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "resolution"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

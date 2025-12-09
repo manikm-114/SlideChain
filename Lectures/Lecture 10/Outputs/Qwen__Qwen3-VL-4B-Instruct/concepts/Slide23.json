@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T02:29:58.494732+00:00",
+  "text_length": 642,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn this sense, an alternating current circuit can be treated just like a direct current circuit — once we use phasor notation and impedance. That’s why we say AC is DC in disguise.\n\nBy representing AC voltages and currents as phasors, we turn differential equations into simple algebraic ones, just like in DC analysis. This dramatically simplifies the process of solving AC circuit problems.\nThis clever idea was first developed decades ago by an engineer at the GE Global Research Center, not far from here. It’s now a standard computational tool in electrical engineering, and it’s one of the reasons AC circuit analysis can be so elegant.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"AC is DC in disguise\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"phasor notation and impedance\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"differential equations into simple algebraic ones\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"AC circuit analysis can be so elegant\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"In this sense, an alternating current circuit can be treated just like a direct current circuit — once we use phasor notation and impedance. That’s why we say AC is DC in disguise.\",\n    \"By representing AC voltages and currents as phasors, we turn differential equations into simple algebraic ones, just like in DC analysis.\",\n    \"This clever idea was first developed decades ago by an engineer at the GE Global Research Center, not far from here. It’s now a standard computational tool in electrical engineering, and it’s one of the reasons AC circuit analysis can be so elegant.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "AC is DC in disguise",
+        "category": "mathematics"
+      },
+      {
+        "term": "phasor notation and impedance",
+        "category": "mathematics"
+      },
+      {
+        "term": "differential equations into simple algebraic ones",
+        "category": "mathematics"
+      },
+      {
+        "term": "AC circuit analysis can be so elegant",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "In this sense, an alternating current circuit can be treated just like a direct current circuit - once we use phasor notation and impedance. That's why we say AC is DC in disguise.",
+      "By representing AC voltages and currents as phasors, we turn differential equations into simple algebraic ones, just like in DC analysis.",
+      "This clever idea was first developed decades ago by an engineer at the GE Global Research Center, not far from here. It's now a standard computational tool in electrical engineering, and it's one of the reasons AC circuit analysis can be so elegant."
+    ]
+  }
+}

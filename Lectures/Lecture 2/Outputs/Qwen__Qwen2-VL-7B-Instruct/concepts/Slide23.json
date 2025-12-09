@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:30:23.360422+00:00",
+  "text_length": 432,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s add a third dimension.\nUse plot 3 of x, y, z to make a 3D line plot.\nFor surfaces, use the mesh command — it draws a grid over the surface defined by z values.\nIf you want a contour plot — use contour z matrix. That shows level curves of a surface.\nYou can also control the axis limits with axis, add a title with title, and label the axes using x label and y label.\nTo explain the meaning of different curves, use legend.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"plot3\", \"category\": \"software\"},\n    {\"term\": \"mesh\", \"category\": \"software\"},\n    {\"term\": \"contour\", \"category\": \"software\"},\n    {\"term\": \"axis\", \"category\": \"software\"},\n    {\"term\": \"title\", \"category\": \"software\"},\n    {\"term\": \"xlabel\", \"category\": \"software\"},\n    {\"term\": \"ylabel\", \"category\": \"software\"},\n    {\"term\": \"legend\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"3D line plot of x, y, z data.\",\n    \"surface plot.\",\n    \"contour plot of z.\",\n    \"change axes\",\n    \"add title to figure;\",\n    \"label axes.\",\n    \"add key to figure.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "mesh",
+        "category": "software"
+      },
+      {
+        "term": "contour",
+        "category": "software"
+      },
+      {
+        "term": "axis",
+        "category": "software"
+      },
+      {
+        "term": "title",
+        "category": "software"
+      },
+      {
+        "term": "legend",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "3D line plot of x, y, z data.",
+      "surface plot.",
+      "contour plot of z.",
+      "change axes",
+      "add title to figure;",
+      "label axes.",
+      "add key to figure."
+    ]
+  }
+}

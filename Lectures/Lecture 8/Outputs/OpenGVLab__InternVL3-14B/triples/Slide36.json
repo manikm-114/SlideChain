@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"spectral analysis\",\n      \"p\": \"uses\",\n      \"o\": \"one divided by capital N is equal to delta t multiplied by delta nu\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here, we use an important relationship: one divided by capital N is equal to delta t multiplied by delta nu.\"\n    },\n    {\n      \"s\": \"spectral analysis\",\n      \"p\": \"depends_on\",\n      \"o\": \"zero padding\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"One way to improve the resolution is called zero padding.\"\n    },\n    {\n      \"s\": \"MATLAB example\",\n      \"p\": \"produces\",\n      \"o\": \"signal by adding two sinusoids\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In this MATLAB example, we create a signal by adding two sinusoids.\"\n    },\n    {\n      \"s\": \"sampling frequency\",\n      \"p\": \"equals\",\n      \"o\": \"one kilohertz",
+  "parsed": {
+    "s": "MATLAB example",
+    "p": "produces",
+    "o": "signal by adding two sinusoids",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In this MATLAB example, we create a signal by adding two sinusoids."
+    ]
+  }
+}

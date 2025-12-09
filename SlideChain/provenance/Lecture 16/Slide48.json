@@ -1,0 +1,118 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "square root of the sum of the squares"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "First, there\u2019s the intrinsic resolution of the gamma camera itself.",
+            "modalities": [
+              "text"
+            ],
+            "o": "intrinsic resolution",
+            "p": "depends_on",
+            "s": "gamma camera"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Second, the geometry of the collimator plays a major role.",
+            "modalities": [
+              "text"
+            ],
+            "o": "geometry of the collimator",
+            "p": "depends_on",
+            "s": "gamma camera"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Third, Compton scattering inside the patient adds another layer of uncertainty.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Compton scattering",
+            "p": "depends_on",
+            "s": "gamma camera"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The overall resolution is then the square root of that sum.",
+            "modalities": [
+              "text"
+            ],
+            "o": "square root of the sum of the squares of the three main contributions",
+            "p": "represents",
+            "s": "system resolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "square of the sum"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The intrinsic spatial resolution of the gamma camera (excluding the collimator) Rgamma: This reflects the uncertainty in the exact location at which light is produced in the scintillation crystal. The degree of uncertainty is dictated by the thickness of the crystal and also by the intrinsic resolution of the Anger position encoder. The thicker the crystal, the broader is the light spread function (Section 1.5.3) and the poorer is the spatial resolution. A typical value of Rgamma lies in the range 3-5 mm.",
+            "modalities": [
+              "text"
+            ],
+            "o": "spatial resolution",
+            "p": "measures",
+            "s": "intrinsic resolution of the gamma camera"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "second, the geometry of the collimator plays a major role"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The degree of uncertainty is dictated by the thickness of the crystal and also by the intrinsic resolution of the Anger position encoder."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the intrinsic resolution of the Anger position encoder",
+        "p": "depends_on",
+        "s": "The intrinsic spatial resolution of the gamma camera"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "square root"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "A thicker crystal spreads the light more broadly, and that uncertainty shows up as blur in the final image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "scintillation crystal and the electronics that localize the signal",
+            "p": "measures",
+            "s": "intrinsic resolution"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide48.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide48.txt"
+  },
+  "slide_id": "Slide48"
+}

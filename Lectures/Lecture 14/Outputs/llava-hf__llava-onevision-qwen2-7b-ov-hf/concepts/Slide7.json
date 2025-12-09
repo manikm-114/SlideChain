@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide7",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem— which assumes a full projection profile for each one-dimensional Fourier transform—can no longer be applied straightforwardly.\n\nWhat happens if part of the data is missing? If some portion of the projection profile is lost, the Fourier transformation cannot be performed fully. This is called the data truncation problem. Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data.\n\nBefore we delve into the types of data truncation, let me give you some context.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"data truncation\", \"category\": \"data_processing\"},\n    {\"term\": \"projection profile\", \"category\": \"physics\"},\n    {\"term\": \"Fourier transformation\", \"category\": \"signal_processing\"},\n    {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"This leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem— which assumes a full projection profile for each one-dimensional Fourier transform—can no longer be applied straightforwardly.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "data truncation",
+        "category": "data_processing"
+      },
+      {
+        "term": "projection profile",
+        "category": "physics"
+      },
+      {
+        "term": "Fourier transformation",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly."
+    ]
+  }
+}

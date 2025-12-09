@@ -1,0 +1,19 @@
+Now let’s simplify the Fourier series we derived for the square wave.
+Earlier, we saw that the Fourier coefficients involved a term like “1 minus e to the negative pi i n.” Let’s think carefully about that. What happens when n is even?
+
+Well, if you plug in an even number, this expression becomes zero. That means: all even-numbered terms in the series disappear completely. On the other hand, when n is odd, this term evaluates to two.
+So what does this tell us? It tells us that the square wave is made up only of odd harmonics. That is, only the sine waves whose frequencies are odd multiples of the base frequency will appear in the final expression.
+With this insight, we rewrite the series, summing over only the odd values of n. And since the numerator is just 2 now, the coefficient simplifies to 2 over pi i n, multiplied by e to the 2 pi i n t.
+
+Now we go one step further. We combine the terms for plus n and minus n. When we do that and apply Euler’s identity again, something beautiful happens. The sum of e to the i theta and e to the negative i theta becomes a sine function. Specifically:
+e to the 2 pi i n t minus e to the minus 2 pi i n t equals 2 i times sine of 2 pi n t
+So now, our series, which originally looked complex and full of exponentials, becomes a clean sine series.
+We make one last substitution. Since we’re only keeping odd values of n, we can write n as 2 k plus 1, where k runs from zero to infinity.
+
+This gives us the final, elegant result:
+f of t equals 4 over pi, times the sum from k equals 0 to infinity, of 1 over 2 k plus 1, times sine of 2 pi times 2 k plus 1 t
+This is the Fourier series for the square wave.
+
+Notice how only sine terms appear. That makes perfect sense, because the square wave is an odd function—it’s symmetric around the origin. And in Fourier analysis, odd functions naturally expand into sine terms, just like even functions expand into cosines.
+This result is not only beautiful but also extremely useful. It tells us exactly how to build a square wave by layering together the right sine waves, each scaled just right.
+Let’s go on and see what this looks like when we actually approximate the square wave with a few of these terms.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fan-Beam FBP\",\n      \"p\": \"uses\",\n      \"o\": \"filtered back projection algorithm\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Uses the filtered back projection algorithm to perform the inverse Radon transform\"\n    },\n    {\n      \"s\": \"ifanbeam\",\n      \"p\": \"converts\",\n      \"o\": \"fan-beam data to parallel beam projections\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Converts the fan-beam data to parallel beam projections\"\n    },\n    {\n      \"s\": \"ifanbeam\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"inverse Radon transform\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"performs the inverse Radon transform\"\n    },\n    {\n      \"s\": \"ifan1\",\n      \"p\": \"equals\",\n      \"o\": \"ifanbeam(F1, D, 'FanSensorSpacing', dsensor1)\",\n      \"modalities\": [\"",
+  "parsed": {
+    "s": "ifanbeam",
+    "p": "reconstructs_with",
+    "o": "inverse Radon transform",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "performs the inverse Radon transform"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T17:33:27.909238+00:00",
+  "text_length": 727,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, this is a phased array, and you can extend the same concept to the two-dimensional case. Instead of having one line of elements, you now have a grid—a 2D array of transducer elements.\n\nBy controlling the phase and timing in two dimensions, you can purposely focus along the principal axis, or you can steer the beam left, right, up, or down—even in a circular pattern if you wish. This allows for electronic focusing and beam steering in both dimensions, giving you precise control over the acoustic field.\n\nSo, in summary, the 2D phased array operates the same way as the 1D version but adds another level of control. It enables full 3D imaging capabilities, higher flexibility, and more advanced ultrasound applications.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"2D phased array\", \"category\": \"signal_processing\"},\n    {\"term\": \"two-dimensional focusing\", \"category\": \"signal_processing\"},\n    {\"term\": \"beam steering\", \"category\": \"signal_processing\"},\n    {\"term\": \"electronic focusing\", \"category\": \"signal_processing\"},\n    {\"term\": \"2D phased array operates the same way as the 1D version\", \"category\": \"signal_processing\"},\n    {\"term\": \"adds another level of control\", \"category\": \"signal_processing\"},\n    {\"term\": \"enables full 3D imaging capabilities\", \"category\": \"signal_processing\"},\n    {\"term\": \"higher flexibility\", \"category\": \"signal_processing\"},\n    {\"term\": \"more advanced ultrasound applications\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The operation of a two-dimensional array. The black squares represent the individual crystals in the array. (Left) Two-dimensional focusing can be achieved using appropriate time delays applied symmetrically with respect to the individual elements of the array. (Right) Electronic beam steering can be performed in two dimensions.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "2D phased array",
+        "category": "signal_processing"
+      },
+      {
+        "term": "beam steering",
+        "category": "signal_processing"
+      },
+      {
+        "term": "electronic focusing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "2D phased array operates the same way as the 1D version",
+        "category": "signal_processing"
+      },
+      {
+        "term": "adds another level of control",
+        "category": "signal_processing"
+      },
+      {
+        "term": "enables full 3D imaging capabilities",
+        "category": "signal_processing"
+      },
+      {
+        "term": "higher flexibility",
+        "category": "signal_processing"
+      },
+      {
+        "term": "more advanced ultrasound applications",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The operation of a two-dimensional array. The black squares represent the individual crystals in the array. (Left) Two-dimensional focusing can be achieved using appropriate time delays applied symmetrically with respect to the individual elements of the array. (Right) Electronic beam steering can be performed in two dimensions."
+    ]
+  }
+}

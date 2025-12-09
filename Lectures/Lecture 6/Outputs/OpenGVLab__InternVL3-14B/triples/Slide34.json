@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"2D rotation\",\n      \"p\": \"represents\",\n      \"o\": \"orthonormal transformation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Because this kind of rotation is a basic example of an orthonormal transformation\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"2D rotation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That’s why understanding this simple 2D rotation helps us better appreciate what the Fourier transform is doing\"\n    },\n    {\n      \"s\": \"rotation matrix\",\n      \"p\": \"produces\",\n      \"o\": \"new coordinates\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You can also write this transformation in matrix form. It’s a simple 2-by-2 rotation matrix.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "2D rotation",
+        "p": "represents",
+        "o": "orthonormal transformation",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Because this kind of rotation is a basic example of an orthonormal transformation"
+      },
+      {
+        "s": "Fourier transform",
+        "p": "depends_on",
+        "o": "2D rotation",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "That’s why understanding this simple 2D rotation helps us better appreciate what the Fourier transform is doing"
+      },
+      {
+        "s": "rotation matrix",
+        "p": "produces",
+        "o": "new coordinates",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "You can also write this transformation in matrix form. It’s a simple 2-by-2 rotation matrix."
+      }
+    ]
+  }
+}

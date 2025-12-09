@@ -1,0 +1,7 @@
+Now, let’s take our overlapping case and place a conservative threshold, shown by the blue line here.
+
+With this choice, notice what happens. For diseased patients, only those who fall far to the right of the threshold are called positive. That means many truly diseased patients on the left side are missed. The sensitivity — or true positive rate — drops to around 50%.
+On the other hand, for healthy patients, almost all are correctly classified. Only a very small slice on the right is misclassified as diseased. That means the false positive fraction is low, and specificity is high.
+
+So in ROC space, where we plot sensitivity against 1 minus specificity, this operating point appears toward the lower-left corner. It reflects a cautious decision-making style: you’re very reluctant to call a disease, so you minimize false alarms. But the trade-off is that you miss a lot of true cases.
+This illustrates the key idea: where you set the threshold directly determines the balance between sensitivity and specificity.

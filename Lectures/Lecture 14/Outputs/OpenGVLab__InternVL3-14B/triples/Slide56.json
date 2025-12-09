@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide56",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MSAD\",\n      \"p\": \"depends_on\",\n      \"o\": \"mA\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MSAD is Directly Proportional to mA\"\n    },\n    {\n      \"s\": \"MSAD\",\n      \"p\": \"depends_on\",\n      \"o\": \"Scan Time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MSAD is Directly Proportional to Scan Time\"\n    },\n    {\n      \"s\": \"MSAD\",\n      \"p\": \"depends_on\",\n      \"o\": \"kVp\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MSAD Increases with kVp\"\n    },\n    {\n      \"s\": \"MSAD\",\n      \"p\": \"depends_on\",\n      \"o\": \"Slice Thickness\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MSAD Increases Slightly as Slice Thickness Decreases\"\n    },",
+  "parsed": {
+    "s": "MSAD",
+    "p": "depends_on",
+    "o": "Slice Thickness",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "MSAD Increases Slightly as Slice Thickness Decreases"
+    ]
+  }
+}

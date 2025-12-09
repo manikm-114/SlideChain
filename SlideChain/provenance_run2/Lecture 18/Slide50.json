@@ -1,0 +1,129 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "cerebrospinal fluid"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "For muscle, T1 is around eight hundred seventy milliseconds, while T2 is much shorter, about forty-five milliseconds."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "870 ms for T1 and 45 ms for T2",
+        "p": "measures",
+        "s": "Muscle"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 relaxation time"
+          },
+          {
+            "category": "physics",
+            "term": "T2 relaxation time"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "field strength"
+          },
+          {
+            "category": "physics",
+            "term": "Tesla"
+          },
+          {
+            "category": "anatomy",
+            "term": "muscle"
+          },
+          {
+            "category": "anatomy",
+            "term": "brain"
+          },
+          {
+            "category": "anatomy",
+            "term": "liver"
+          },
+          {
+            "category": "modality",
+            "term": "contrast"
+          },
+          {
+            "category": "physics",
+            "term": "relaxation times"
+          }
+        ],
+        "evidence": [
+          "different tissues have different relaxation times",
+          "MRI's powerful ability to generate contrast between tissues"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "different tissues have different relaxation times"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "For fat, the T1 relaxation time is about two hundred sixty milliseconds"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "T1 (ms)",
+        "p": "measures",
+        "s": "Fat"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 relaxation time"
+          },
+          {
+            "category": "physics",
+            "term": "T2 relaxation time"
+          }
+        ],
+        "evidence": [
+          "These values illustrate a key point: different tissues have different relaxation times, and that difference is what gives MRI its powerful ability to generate contrast between tissues."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "The T2 relaxation time for muscle is about forty-five milliseconds."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "T2 relaxation time",
+        "p": "measures",
+        "s": "muscle"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide50.txt"
+  },
+  "slide_id": "Slide50"
+}

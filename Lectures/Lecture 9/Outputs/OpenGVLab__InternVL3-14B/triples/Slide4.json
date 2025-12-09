@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"signals in the time domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the left, we have signals in the time domain. On the right, we have their corresponding representations in the frequency domain.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"takes\",\n      \"o\": \"from one domain to the other\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The arrows between them remind us that the Fourier transform takes us from one domain to the other\"\n    },\n    {\n      \"s\": \"multiplication in one domain\",\n      \"p\": \"corresponds to\",\n      \"o\": \"convolution in the other\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"because multiplication in one domain corresponds to convolution in the other, and vice versa\"\n    },\n    {\n      \"s\": \"narrow pulse in time\",\n      \"p\": \"",
+  "parsed": {
+    "s": "multiplication in one domain",
+    "p": "corresponds to",
+    "o": "convolution in the other",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "because multiplication in one domain corresponds to convolution in the other, and vice versa"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+Now that we understand the structure of the Fourier series — with its constant term, cosine terms, and sine terms — the next question is:
+How do we actually calculate the coefficients?
+These coefficients — which we call a n and b n — are essential.They tell us exactly how much of each sine or cosine function we need in order to construct the original function.Think of them like weights — how much of each frequency should be included in our series.
+So, how do we find them?
+
+The answer is beautifully simple — we use inner products.
+Remember our earlier discussion: in vector spaces, you can isolate the contribution of a basis vector by projecting onto it.The same logic applies here in the world of functions.Because sine and cosine functions are orthogonal, we can project the function onto each basis element to extract the corresponding coefficient.
+
+Let’s look at this process in the context of the unit interval — from zero to one.
+First, to get the a naught coefficient — that’s the DC or constant component —we take the inner product of f of t with the constant function 1.
+
+This gives us:
+a naught over 2 equals the integral from 0 to 1 of f of t d t.
+So, it’s just the average value of the function over that interval.
+Next, for the cosine coefficients, a n,we multiply f of t by the cosine of 2 pi n t, and integrate over the interval from 0 to 1.Then, we multiply the result by 2.
+
+So we have:
+a n equals 2 times the integral from 0 to 1 of f of t times cosine of 2 pi n t, d t.
+In the same way, to compute the sine coefficients, b n,we do the same thing — but using sine instead of cosine.
+
+So the formula is:
+b n equals 2 times the integral from 0 to 1 of f of t times sine of 2 pi n t, d t.
+And that’s it.
+Each coefficient is computed by projecting the function onto its corresponding basis function — either constant, cosine, or sine.
+This is the beauty of orthogonality:Each projection is independent of the others. So we can break the function into clean, non-overlapping components.
+It’s like using X, Y, and Z axes in 3D space to describe a vector — but here we’re in an infinite-dimensional space, and our axes are made of smooth waveforms.
+Now that we know how to compute these coefficients, we’re ready to apply Fourier series to real examples — and see how they reconstruct signals, even sharp or irregular ones, using only smooth sine and cosine waves.

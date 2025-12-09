@@ -1,0 +1,9 @@
+Next, we have what are called metal artifacts. Inside the human body, you may have metal implants like pacemakers or dental fillings. Metal is much denser than bone, so it can block X-rays effectively.
+Because of this, X-rays cannot penetrate metal implants well. The attenuated signal behind the metal may be very noisy or even just noise without a clear signal.
+
+When you perform filtered backprojection reconstruction in such cases, the results are often poor, showing streaking artifacts.
+This happens because the line integral passing through the metal is very long, with many photons blocked or scattered. Beam hardening and other effects further degrade the signal.
+As a result, the detected signals are compromised with a low signal-to-noise ratio. When estimating line integrals, the data is inconsistent and inaccurate.
+
+Filtered backprojection on such corrupted data generates stripe-like artifacts in the images, which is a typical manifestation of metal artifacts in CT.
+Reducing metal artifacts is an important research topic, and multiple algorithms have been developed, though it remains challenging.

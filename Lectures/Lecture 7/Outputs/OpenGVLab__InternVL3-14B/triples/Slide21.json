@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sampling a signal\",\n      \"p\": \"uses\",\n      \"o\": \"impulse train\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To sample this signal, what we’re really doing is multiplying it by a train of impulses.\"\n    },\n    {\n      \"s\": \"impulse train\",\n      \"p\": \"represents\",\n      \"o\": \"fixed sampling intervals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"These impulses are spaced evenly along the axis, representing fixed sampling intervals.\"\n    },\n    {\n      \"s\": \"multiplying by an impulse train\",\n      \"p\": \"produces\",\n      \"o\": \"discrete values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"when you multiply the continuous signal by this impulse train, the result is a set of discrete values.\"\n    },\n    {\n      \"s\": \"multiplying by an impulse train in space\",\n      \"p\": \"corresponds to\",\n      \"o\": \"replicating the",
+  "parsed": {
+    "s": "multiplying by an impulse train",
+    "p": "produces",
+    "o": "discrete values",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "when you multiply the continuous signal by this impulse train, the result is a set of discrete values."
+    ]
+  }
+}

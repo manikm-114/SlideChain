@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide39",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-14T14:41:52.608992+00:00",
+  "text_length": 1350,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s explore a closely related imaging technique in nuclear medicine called Single Photon Emission Computed Tomography, or SPECT. While Positron Emission Tomography (PET) relies on the detection of paired gamma ray photons emitted from the tracer, SPECT works differently.\n\nIn SPECT, the radio tracer emits gamma ray photons randomly and individually, without being paired. Essentially, instead of detecting two photons coming from opposite directions (as we do in PET), we measure single gamma ray photons emitted from a radioactive tracer within the body.\n\nWhen a photon is detected through a collimator, we know it came from a particular path through the patient body, but since the photons are not paired, we need to use different data preprocessing and image reconstruction methods. SPECT provides valuable information, but it’s a bit different from PET. In SPECT, we capture these single photons from various angles around the body and use dedicated tomographic reconstruction techniques to create an image.\n\nWe’ll discuss the details of SPECT imaging later in the course, but for now, keep in mind that while PET relies on paired photons to provide highly precise spatial information, SPECT uses single photons to gather functional information in a different way. Both PET and SPECT produce tomographic images of radio-tracer activities.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Single Photon Emission CT\",\n      \"p\": \"uses\",\n      \"o\": \"single gamma ray photons\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"In SPECT, the radio tracer emits gamma ray photons randomly and individually, without being paired.\"\n    },\n    {\n      \"s\": \"Single Photon Emission CT\",\n      \"p\": \"measures\",\n      \"o\": \"single gamma ray photons\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"SPECT works differently... we measure single gamma ray photons emitted from a radioactive tracer within the body.\"\n    },\n    {\n      \"s\": \"Single Photon Emission CT\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"dedicated tomographic reconstruction techniques\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"we capture these single photons from various angles around the body and use dedicated",
+  "parsed": {
+    "s": "Single Photon Emission CT",
+    "p": "measures",
+    "o": "single gamma ray photons",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "SPECT works differently... we measure single gamma ray photons emitted from a radioactive tracer within the body."
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "remaining intensity"
+          },
+          {
+            "category": "physics",
+            "term": "half-value thickness"
+          },
+          {
+            "category": "mathematics",
+            "term": "decibel"
+          },
+          {
+            "category": "mathematics",
+            "term": "logarithms"
+          },
+          {
+            "category": "physics",
+            "term": "intensity"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound"
+          }
+        ],
+        "evidence": [
+          "Calculate the remaining intensity",
+          "half-value thickness",
+          "negative 30 dB equals 10 log of I2 over 100 milliwatts",
+          "intensity is reduced by a factor of one thousand",
+          "using the decibel formula",
+          "I2 over I1 equals 0.5",
+          "ultrasound intensity drops by 50 percent"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "We\u2019ll look at how to calculate remaining intensity and half-value thickness for ultrasound.",
+            "modalities": [
+              "text"
+            ],
+            "o": "remaining intensity",
+            "p": "measures",
+            "s": "ultrasound"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The half-value thickness indicates the intensity is decreased by 50%",
+            "modalities": [
+              "text"
+            ],
+            "o": "half-value thickness",
+            "p": "represents",
+            "s": "ultrasound"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Using the decibel formula again, we get 10 log of 0.5 equals negative 3 dB.",
+            "modalities": [
+              "text"
+            ],
+            "o": "logarithms",
+            "p": "uses",
+            "s": "decibel formula"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "ultrasound",
+        "term": "ultrasound intensity change"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "the decibel scale helps us describe very large or very small intensity ratios in a practical and readable way"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The half-value thickness represents the depth at which the ultrasound intensity drops by 50 percent."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "depth",
+        "p": "measures",
+        "s": "half-value thickness"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "3 decibel"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

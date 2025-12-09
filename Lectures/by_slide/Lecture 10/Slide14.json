@@ -1,0 +1,159 @@
+{
+  "lecture": "Lecture 10",
+  "slide_id": "Slide14",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide14.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide14.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "loop",
+              "category": "mathematics"
+            },
+            {
+              "term": "independent loop",
+              "category": "mathematics"
+            },
+            {
+              "term": "Kirchhoff’s Voltage Law",
+              "category": "mathematics"
+            },
+            {
+              "term": "circuit",
+              "category": "physics"
+            },
+            {
+              "term": "voltage source",
+              "category": "physics"
+            },
+            {
+              "term": "resistor",
+              "category": "physics"
+            },
+            {
+              "term": "current source",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+            "But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.",
+            "The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"loop\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"independent loop\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Kirchhoff’s Voltage Law\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"circuit\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"voltage source\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"resistor\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"current source\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\\\", \\\"But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\\", \\\"The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"loop\", \"category\": \"mathematics\"}, {\"term\": \"independent loop\", \"category\": \"mathematics\"}, {\"term\": \"Kirchhoff’s Voltage Law\", \"category\": \"mathematics\"}, {\"term\": \"circuit\", \"category\": \"physics\"}, {\"term\": \"voltage source\", \"category\": \"physics\"}, {\"term\": \"resistor\", \"category\": \"physics\"}, {\"term\": \"current source\", \"category\": \"physics\"}], \"evidence\": [\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\", \"But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\", \"The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide14.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"loop\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"independent loop\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide14.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"\", \"parsed\": null}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide14.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"\", \"parsed\": null}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide14.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "loops",
+              "category": "signal_processing"
+            },
+            {
+              "term": "independent loops",
+              "category": "signal_processing"
+            },
+            {
+              "term": "building blocks",
+              "category": "signal_processing"
+            },
+            {
+              "term": "solving circuit problems",
+              "category": "signal_processing"
+            },
+            {
+              "term": "current through each branch",
+              "category": "signal_processing"
+            },
+            {
+              "term": "voltage across each resistor",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+            "We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.",
+            "The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.",
+            "These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T03:24:29.562257+00:00\", \"text_length\": 1134, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"loops\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"independent loops\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Kirchhoff's Voltage Law\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"building blocks\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"solving circuit problems\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"current through each branch\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"voltage across each resistor\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\\\",\\n    \\\"We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\\",\\n    \\\"The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law.\\\",\\n    \\\"These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"loops\", \"category\": \"signal_processing\"}, {\"term\": \"independent loops\", \"category\": \"signal_processing\"}, {\"term\": \"building blocks\", \"category\": \"signal_processing\"}, {\"term\": \"solving circuit problems\", \"category\": \"signal_processing\"}, {\"term\": \"current through each branch\", \"category\": \"signal_processing\"}, {\"term\": \"voltage across each resistor\", \"category\": \"signal_processing\"}], \"evidence\": [\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\", \"We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\", \"The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.\", \"These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide14.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T04:36:06.197434+00:00\", \"text_length\": 1134, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide14.json",
+        "parsed": {
+          "term": "You might notice that other closed paths exist - for example, one that goes all the way around the outside - but these can be derived from combinations of the independent loops. They don't give us any new information.",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T02:28:28.607431+00:00\", \"text_length\": 1134, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"In this example, we have three independent loops: Loop 1 includes the voltage source, resistor R 1, and resistor R 2. Loop 2 includes resistor R 2 and resistor R 3. Loop 3 includes resistor R 3 and the current source.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"You might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"The reason this concept is important is that each independent loop\", \"parsed\": {\"term\": \"You might notice that other closed paths exist - for example, one that goes all the way around the outside - but these can be derived from combinations of the independent loops. They don't give us any new information.\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide14.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "independent loops",
+              "p": "produces",
+              "o": "one equation",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.95,
+              "evidence": "each independent loop gives us one equation when we apply Kirchhoff's Voltage Law."
+            },
+            {
+              "s": "independent loops",
+              "p": "represents",
+              "o": "closed path",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.9,
+              "evidence": "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T02:35:16.894141+00:00\", \"text_length\": 1134, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about loops — and more specifically, independent loops.\\n\\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\n\\nIn this example, we have three independent loops:\\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\\nLoop 2 includes resistor R 2 and resistor R 3.\\nLoop 3 includes resistor R 3 and the current source.\\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\\n\\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"independent loops\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"one equation\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"independent loops\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"closed path\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"independent loops\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"branch not part of any other loop in the set\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"independent loops\", \"p\": \"produces\", \"o\": \"one equation\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.95, \"evidence\": \"each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.\"}, {\"s\": \"independent loops\", \"p\": \"represents\", \"o\": \"closed path\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": \"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\"}]}}"
+      }
+    }
+  }
+}

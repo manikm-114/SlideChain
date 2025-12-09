@@ -1,0 +1,10 @@
+Now let’s apply the same idea in the continuous case.
+Again, you’re given the system’s response to a delta function, which we call h of t.
+If we shift the delta to t minus tau, the output becomes h of t minus tau.In other words, shifting the input shifts the output in the same way — that’s shift-invariance.
+Next, we scale the input by x of tau.Because the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.
+Finally, to build the full output for a general input signal,we integrate over all time — summing these scaled and shifted responses.
+This gives us the continuous-time convolution integral:
+
+You can think of this as collecting all the weighted impulse responses across time,and combining them to form the system’s output, where we have utilized the sampling property of the delta function.
+This is how linear, shift-invariant systems behave in continuous time —and this operation, convolution, lies at the heart of modeling and understanding them.
+Finally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.

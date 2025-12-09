@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "CT"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The relationship between the input and output depends on two key factors. Second, the thickness of the material, which we call delta x."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "thickness of the material",
+        "p": "depends_on",
+        "s": "output intensity"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "Mathematical Backbone"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The relationship between the input and output depends on two key factors. First, the property of the material, which we describe using the linear attenuation coefficient, written as the Greek letter mu. Second, the thickness of the material, which we call delta x.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Attenuation Coefficient",
+            "p": "uses",
+            "s": "Input Intensity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "radiography"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The relationship between the input and output depends on two key factors. First, the property of the material, which we describe using the linear attenuation coefficient, written as the Greek letter mu."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the linear attenuation coefficient",
+        "p": "depends_on",
+        "s": "Exponential Attenuation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "attenuation law"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

@@ -1,0 +1,56 @@
+{
+  "slide_id": "Slide19",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T10:58:31.835789+00:00",
+  "text_length": 718,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\n\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"closed-form solutions\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier slice theorem\", \"category\": \"frequency_domain\"},\n    {\"term\": \"SPECT\", \"category\": \"modality\"},\n    {\"term\": \"analytic techniques\", \"category\": \"mathematics\"},\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"PET reconstruction\", \"category\": \"modality\"},\n    {\"term\": \"deterministic\", \"category\": \"algorithm\"},\n    {\"term\": \"linear equations\", \"category\": \"mathematics\"},\n    {\"term\": \"reconstruction problem\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\",\n    \"These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "closed-form solutions",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "SPECT",
+        "category": "modality"
+      },
+      {
+        "term": "analytic techniques",
+        "category": "mathematics"
+      },
+      {
+        "term": "CT",
+        "category": "modality"
+      },
+      {
+        "term": "PET reconstruction",
+        "category": "modality"
+      },
+      {
+        "term": "deterministic",
+        "category": "algorithm"
+      },
+      {
+        "term": "linear equations",
+        "category": "mathematics"
+      },
+      {
+        "term": "reconstruction problem",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.",
+      "These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics."
+    ]
+  }
+}

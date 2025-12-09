@@ -1,0 +1,5 @@
+So now we move to the next part: being spatially specific.
+In MRI, we don’t just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that — within that slice, we also want to know the signal from each location.
+
+That means we need to encode each pixel in a way that makes its signal slightly different from every other pixel. Only then can we reconstruct an image that shows the T1 and T2 values for each voxel.
+The first step in this process is slice selection. We begin by defining which slice we want to image.

@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "detected MR signal"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This method is commonly used to acquire the MR spectrum from a single voxel - that is, a small three-dimensional volume within the body"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "a small three-dimensional volume",
+        "p": "represents",
+        "s": "PRESS method"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "time-consuming"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "SLIDE_TEXT: You begin by applying a 90-degree RF pulse to select a specific slice of tissue, as shown in the figure.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "specific slice of tissue",
+            "p": "uses",
+            "s": "90-degree RF pulse"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "signal collected from it contains contributions from all the chemical compounds present there"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Now let's look at one of the two methods used in MRI spectroscopy - the PRESS method, which stands for Point-Resolved Spectroscopy. This method is commonly used to acquire the MR spectrum from a single voxel - that is, a small three-dimensional volume within the body."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "an NMR spectrum from a single voxel",
+        "p": "produces",
+        "s": "PRESS method"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "spatially resolved chemical map"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This method is commonly used to acquire the MR spectrum from a single voxel - that is, a small three-dimensional volume within the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Point-Resolved Spectroscopy",
+            "p": "uses",
+            "s": "PRESS method"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide37",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:34:43.372239+00:00",
+  "text_length": 2344,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nContinuing from our previous discussions, let’s dive into the physics of X-ray imaging and how we can collect and process data to reconstruct an image.\n\nIn X-ray imaging, we start with the concept of a line integral. Essentially, the X-rays pass through the object, and what we measure is the energy of penetrated x-ray photons and then compute the line integral along the x-ray path. Such line integrals together form the Radon transform. To make it simpler, imagine you have an object, and you put all line integrals from a specific direction to form an x-ray projection. This projection is a one-dimensional profile, which is the information you can get along all the X-ray paths passing through the object in that direction.\n\nNow, let’s take this idea into the realm of mathematics. We start with a 2D image, denoted as \nf(x,y). When we have all x-ray projections or the Radon transform, we get a new 2D function  p(θ,t), where  t is the coordinate along the 1D detector array and  θ is the projection orientation. By changing the angle θ, we rotate the data acquisition system to gather x-ray projections.\n\nNow, the magic happens when we flip the process around. Given this collected projection dataset, our goal is to reconstruct the original 2D image f(x,y). This is the inverse process, and here’s where things get interesting: by perform the 1D Fourier trans of each and every of the 1D projections, we move into the Fourier domain.\n\nTo put it simply, the 1D projections we collect represent profiles in the frequency domain. By rotating the data acquisition system, we eventually capture the entire Fourier space. And once we have all the data in the Fourier space, we can apply the inverse Fourier transform to reconstruct the original image. This process connects the data from the physical object to the Fourier spectrum of the underlying image, and from the Fourier spectrum, we can reconstruct the original image.\n\nWhile this overview gives you the fundamental idea, later in the course, we’ll dive deeper into the Fourier transform, why they can be inverted, and how this mathematical framework ties directly to the imaging process. But for now, keep in mind that the forward process (how we collect data) and the inverse process (how we reconstruct the image) are two sides of the same coin, closely linked by Fourier analysis.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"X-ray imaging\", \"category\": \"modality\"},\n    {\"term\": \"Radon transform\", \"category\": \"mathematics\"},\n    {\"term\": \"1D Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"2D Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"inverse process\", \"category\": \"algorithm\"},\n    {\"term\": \"Fourier space\", \"category\": \"frequency_domain\"},\n    {\"term\": \"Fourier analysis\", \"category\": \"mathematics\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"The Radon transform is used to collect x-ray projections.\",\n    \"The 1D Fourier transform is applied to each projection.\",\n    \"The 2D Fourier transform is used to reconstruct the original image.\",\n    \"The inverse process is used to reconstruct the original image from the projections.\",\n    \"The Fourier space is captured by rotating the data acquisition system.\",\n    \"The Fourier analysis connects the data from the physical object to the Fourier spectrum of the underlying image.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray imaging",
+        "category": "modality"
+      },
+      {
+        "term": "Radon transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "inverse process",
+        "category": "algorithm"
+      },
+      {
+        "term": "Fourier space",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "The Radon transform is used to collect x-ray projections.",
+      "The 1D Fourier transform is applied to each projection.",
+      "The 2D Fourier transform is used to reconstruct the original image.",
+      "The inverse process is used to reconstruct the original image from the projections.",
+      "The Fourier space is captured by rotating the data acquisition system.",
+      "The Fourier analysis connects the data from the physical object to the Fourier spectrum of the underlying image."
+    ]
+  }
+}

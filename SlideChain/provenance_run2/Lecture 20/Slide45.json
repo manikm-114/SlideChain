@@ -1,0 +1,135 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "radiation therapy"
+          },
+          {
+            "category": "modality",
+            "term": "image guidance"
+          },
+          {
+            "category": "modality",
+            "term": "MRI imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "medical linear accelerator"
+          },
+          {
+            "category": "quality_metric",
+            "term": "submillimeter precision"
+          },
+          {
+            "category": "modality",
+            "term": "interior MRI"
+          }
+        ],
+        "evidence": [
+          "highly energetic beam",
+          "image guidance",
+          "MRI imaging",
+          "medical linear accelerator",
+          "submillimeter precision",
+          "physiological motion",
+          "interior MRI"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This work is being developed in collaboration with colleagues at UT Southwestern, where we are exploring how this interior MRI can guide radiation delivery and make cancer therapy safer and more effective.",
+            "modalities": [
+              "text"
+            ],
+            "o": "medical linear accelerator",
+            "p": "uses",
+            "s": "interior MRI"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The idea is to use MRI imaging to continuously visualize a small region of interest - the area where the tumor resides - while radiation therapy is being delivered.",
+            "modalities": [
+              "text"
+            ],
+            "o": "tumor",
+            "p": "measures",
+            "s": "interior MRI"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "cancer therapy"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "This allows us to target the tumor with submillimeter precision and adjust in real time if the tumor moves due to breathing or other physiological motion."
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The new concept integrates interior MRI with a medical linear accelerator.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "medical linear accelerator",
+            "p": "uses",
+            "s": "interior MRI"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "image guidance"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "quality_metric",
+            "term": "submillimeter precision"
+          },
+          {
+            "category": "software",
+            "term": "real time"
+          },
+          {
+            "category": "communication",
+            "term": "collaboration"
+          }
+        ],
+        "evidence": [
+          "SLIDE_TEXT"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide45.txt"
+  },
+  "slide_id": "Slide45"
+}

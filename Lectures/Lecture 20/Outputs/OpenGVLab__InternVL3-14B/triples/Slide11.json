@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Gradient Coils\",\n      \"p\": \"produces\",\n      \"o\": \"Sounds\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Sounds Are Generated during Imaging due to Mechanical Stress within Gradient Coils\"\n    },\n    {\n      \"s\": \"Gradient Coils\",\n      \"p\": \"represents\",\n      \"o\": \"G-X, G-Y, and G-Z\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we can generate any arbitrary gradient field, often represented as G-X, G-Y, and G-Z\"\n    },\n    {\n      \"s\": \"Gradient Coils\",\n      \"p\": \"depends_on\",\n      \"o\": \"Maxwell’s equations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Using Maxwell’s equations—just four equations that describe how electric and magnetic fields behave—we can simulate the magnetic field using finite element computation\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gradient Coils",
+        "p": "produces",
+        "o": "Sounds",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Sounds Are Generated during Imaging due to Mechanical Stress within Gradient Coils"
+      },
+      {
+        "s": "Gradient Coils",
+        "p": "represents",
+        "o": "G-X, G-Y, and G-Z",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we can generate any arbitrary gradient field, often represented as G-X, G-Y, and G-Z"
+      },
+      {
+        "s": "Gradient Coils",
+        "p": "depends_on",
+        "o": "Maxwell’s equations",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using Maxwell’s equations-just four equations that describe how electric and magnetic fields behave-we can simulate the magnetic field using finite element computation"
+      }
+    ]
+  }
+}

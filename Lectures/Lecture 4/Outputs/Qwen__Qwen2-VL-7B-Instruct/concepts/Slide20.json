@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:31:06.906922+00:00",
+  "text_length": 758,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a look at this graph.\nThis impulse response, shown here as h of n, is our key piece of knowledge.\nI’m not asking you to start from nothing.\u000bI’m giving you the system’s reaction to a standardized input — the delta function applied at time zero.\nOnce you have that, you’re ready.\nBecause if I give the system a more general input — not just a single impulse, but any arbitrary shape —\u000byou can still figure out the output.\nSo the question becomes:\u000bHow do you compute the output from this known impulse response and a general input?\nThat’s exactly where convolution comes in.\nConvolution is the operation that combines the input signal with the impulse response,\u000bto produce the final output.\nIt’s absolutely essential in imaging and signal processing.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Impulse response\", \"category\": \"signal_processing\"},\n    {\"term\": \"Convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"Delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"Output\", \"category\": \"signal_processing\"},\n    {\"term\": \"Arbitrary shape\", \"category\": \"signal_processing\"},\n    {\"term\": \"Input signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"Impulse response\", \"category\": \"signal_processing\"},\n    {\"term\": \"General input\", \"category\": \"signal_processing\"},\n    {\"term\": \"Convolution operation\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"This impulse response, shown here as h of n, is our key piece of knowledge.\",\n    \"Once you have that, you’re ready.\",\n    \"Because if I give the system a more general input — not just a single impulse, but any arbitrary shape — you can still figure out the output.\",\n    \"That’s exactly where convolution comes in.\",\n    \"Convolution is the operation that combines the input signal with the impulse response, to produce the final output.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Impulse response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Output",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Arbitrary shape",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Input signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Impulse response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "General input",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This impulse response, shown here as h of n, is our key piece of knowledge.",
+      "Once you have that, you're ready.",
+      "Because if I give the system a more general input - not just a single impulse, but any arbitrary shape - you can still figure out the output.",
+      "That's exactly where convolution comes in.",
+      "Convolution is the operation that combines the input signal with the impulse response, to produce the final output."
+    ]
+  }
+}

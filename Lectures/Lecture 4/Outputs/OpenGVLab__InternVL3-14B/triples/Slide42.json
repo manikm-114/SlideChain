@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide42",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"convolution\",\n      \"p\": \"uses\",\n      \"o\": \"integral of f of x minus u times g of u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In convolution, we compute the integral of f of x minus u times g of u.\"\n    },\n    {\n      \"s\": \"cross-correlation\",\n      \"p\": \"uses\",\n      \"o\": \"integral of f of x plus u times g of u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In cross-correlation, it’s f of x plus u times g of u.\"\n    },\n    {\n      \"s\": \"convolution\",\n      \"p\": \"represents\",\n      \"o\": \"flipping one of the functions before shifting and multiplying\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So, convolution flips one of the functions before shifting and multiplying\"\n    },\n    {\n      \"s\": \"cross-correlation\",\n      \"p\": \"represents\",\n      \"o\":",
+  "parsed": {
+    "s": "convolution",
+    "p": "represents",
+    "o": "flipping one of the functions before shifting and multiplying",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "So, convolution flips one of the functions before shifting and multiplying"
+    ]
+  }
+}

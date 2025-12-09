@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide10",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T08:14:38.046759+00:00",
+  "text_length": 1553,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s move from simple back-projection to filtered back-projection, or FBP.\n\nAs we saw in the last example, back-projection is the standard way of reconstructing CT slices. We take the sinogram, back-project each view, and combine them. But here’s the problem: if we simply use unfiltered back-projection, the resulting image often looks blurry. That’s because the projections overlap in a way that smears out the details.\nTo fix this, we apply a filter in the sinogram space before back-projecting. Filtering helps sharpen the edges and preserve the fine details that would otherwise be lost.\n\nLook at the images here. In the top row, we have a sinogram and its back-projected image. Notice how the back-projection produces just a fuzzy, grayish blob with poorly defined boundaries.\n\nNow, in the bottom row, the sinogram has first been filtered. After reconstruction, the image is much clearer—you can actually see the circular structure with sharp edges, and even a smaller circle inside it, which could represent something like a tumor.\nOn the right side, you see examples of different filters that can be applied, such as the Ram-Lak filter, the Shepp-Logan filter, and the Hamming filter. Each of these adjusts the frequency content of the sinogram differently, but they all serve the same purpose: to enhance contrast and reduce blurring in the final reconstructed image.\n\nSo in summary, filtered back-projection is one of the most widely used methods in CT, because it gives us images that are both accurate and sharp enough for clinical use.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Direct back-projection from a sinogram\",\n      \"p\": \"produces\",\n      \"o\": \"a blurry image\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Direct back-projection from a sinogram produces a blurry image\"\n    },\n    {\n      \"s\": \"Filtration (Ramp filter)\",\n      \"p\": \"is required in the sinogram space\",\n      \"o\": \"to fix the blurring\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Filtration (Ramp filter) is required in the sinogram space\"\n    },\n    {\n      \"s\": \"Filtered back-projection (FBP)\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"a sinogram\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Filtered back-projection (FBP) is one of the most widely",
+  "parsed": {
+    "s": "Filtration (Ramp filter)",
+    "p": "is required in the sinogram space",
+    "o": "to fix the blurring",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "Filtration (Ramp filter) is required in the sinogram space"
+    ]
+  }
+}

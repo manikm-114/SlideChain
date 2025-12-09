@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"convolution theorem\",\n      \"p\": \"represents\",\n      \"o\": \"multiplication in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Convolution in the time domain corresponds to multiplication in the frequency domain.\"\n    },\n    {\n      \"s\": \"convolution theorem\",\n      \"p\": \"produces\",\n      \"o\": \"sinc squared\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the transform of f convolved with g is F of s times G of s.\"\n    },\n    {\n      \"s\": \"convolution theorem\",\n      \"p\": \"depends_on\",\n      \"o\": \"Fourier transform\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If the Fourier transform of f of t is capital F of s, and the transform of g of t is capital G of s, then the transform of f convolved with g is F of s times G of s.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "convolution theorem",
+        "p": "represents",
+        "o": "multiplication in the frequency domain",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Convolution in the time domain corresponds to multiplication in the frequency domain."
+      },
+      {
+        "s": "convolution theorem",
+        "p": "produces",
+        "o": "sinc squared",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the transform of f convolved with g is F of s times G of s."
+      },
+      {
+        "s": "convolution theorem",
+        "p": "depends_on",
+        "o": "Fourier transform",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If the Fourier transform of f of t is capital F of s, and the transform of g of t is capital G of s, then the transform of f convolved with g is F of s times G of s."
+      }
+    ]
+  }
+}

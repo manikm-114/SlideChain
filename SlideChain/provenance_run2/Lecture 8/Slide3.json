@@ -1,0 +1,65 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "P must be at least 2 W. This ensures there is no overlap between the repeated copies of the spectrum in the frequency domain."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Nyquist rate",
+        "p": "uses",
+        "s": "sampling theorem"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "Frequency domain"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "P = 1 / delta-t"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "But this only works if the original signal's Fourier transform is band-limited. That means its frequency spectrum is essentially zero outside a certain range, from minus w to plus w."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "original signal's Fourier transform is band-limited",
+        "p": "depends_on",
+        "s": "sampling theorem"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Inverse Fourier transform"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide3.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide3.txt"
+  },
+  "slide_id": "Slide3"
+}

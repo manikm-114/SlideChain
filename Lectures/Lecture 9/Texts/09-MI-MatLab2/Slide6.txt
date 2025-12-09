@@ -1,0 +1,10 @@
+Here’s our first step in the convolution process — calculating the value at n equals zero.
+
+On the top left, the red arrows show f of k, our first discrete signal. On the bottom left, the green arrows show g of negative k, which means we have flipped the second signal in time.
+The formula in the middle tells us what convolution is in mathematical terms: we take the sum over all k of x of k multiplied by h of n minus k. 
+
+Here, x is our input, and h is our system’s impulse response.
+At n equals zero, we line up the flipped signal so that its zero index matches the zero index of the original signal. You can think of this like the hand illustration on the right: one hand flipped, the other fixed, and their starting points aligned at zero.
+
+Now, at each matching position of the red and green arrows, we multiply the values together and then sum all those products. That sum is the value of the convolution at n equals zero.
+This is the key step — convolution is nothing more than multiplying corresponding values from two aligned sequences, and then summing the results. We repeat this process for each shift of n to get the full convolution.

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"circuit\", \"p\":\"uses\", \"o\":\"two distinct nodes\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So even though there are multiple connection spots physically drawn, electrically, we have just two distinct nodes in this circuit.\"},\n    {\"s\":\"node\", \"p\":\"connects\", \"o\":\"resistor R 1, resistor R 2, resistor R 3, and the voltage source\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This first node connects resistor R 1, resistor R 2, resistor R 3, and the voltage source.\"},\n    {\"s\":\"node\", \"p\":\"connects\", \"o\":\"lower ends of R 2 and R 3, the negative terminal of the voltage source, and the current source\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The other connection point, down here, is the second node. It ties together the lower ends of R 2 and R 3, the negative terminal of the voltage source, and the current source.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "circuit",
+        "p": "uses",
+        "o": "two distinct nodes",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So even though there are multiple connection spots physically drawn, electrically, we have just two distinct nodes in this circuit."
+      }
+    ]
+  }
+}

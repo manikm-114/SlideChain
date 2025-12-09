@@ -1,0 +1,179 @@
+{
+  "lecture": "Lecture 22",
+  "slide_id": "Slide21",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide21.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Doppler shift",
+              "category": "physics"
+            },
+            {
+              "term": "ultrasound",
+              "category": "modality"
+            },
+            {
+              "term": "transducer",
+              "category": "instrumentation"
+            },
+            {
+              "term": "ultrasound energy",
+              "category": "signal_processing"
+            },
+            {
+              "term": "reflected frequency",
+              "category": "signal_processing"
+            },
+            {
+              "term": "incident frequency",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Doppler frequency shift",
+              "category": "signal_processing"
+            },
+            {
+              "term": "motion changes the observed frequency",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "The Doppler shift occurs in flowing blood.",
+            "The reflected frequency becomes slightly different.",
+            "The Doppler shift tells us how motion changes the observed frequency."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Doppler shift\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"ultrasound\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"red blood cells\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"flowing blood\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"transducer\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"ultrasound energy\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"reflected frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"incident frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Doppler frequency shift\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"motion changes the observed frequency\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The Doppler shift occurs in flowing blood.\\\", \\\"The reflected frequency becomes slightly different.\\\", \\\"The Doppler shift tells us how motion changes the observed frequency.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Doppler shift\", \"category\": \"physics\"}, {\"term\": \"ultrasound\", \"category\": \"modality\"}, {\"term\": \"transducer\", \"category\": \"instrumentation\"}, {\"term\": \"ultrasound energy\", \"category\": \"signal_processing\"}, {\"term\": \"reflected frequency\", \"category\": \"signal_processing\"}, {\"term\": \"incident frequency\", \"category\": \"signal_processing\"}, {\"term\": \"Doppler frequency shift\", \"category\": \"signal_processing\"}, {\"term\": \"motion changes the observed frequency\", \"category\": \"physics\"}], \"evidence\": [\"The Doppler shift occurs in flowing blood.\", \"The reflected frequency becomes slightly different.\", \"The Doppler shift tells us how motion changes the observed frequency.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"ultrasound energy\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"blood vessel\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide21.json",
+        "parsed": {
+          "term": "Doppler imaging",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Doppler shift\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"ultrasound energy\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"reflected frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"transmitted frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Doppler frequency shift\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"velocity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"red blood cells\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"transducer\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"Doppler imaging\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift.\\\",\\n    \\\"The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream.\\\",\\n    \\\"The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\\",\\n    \\\"The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\\",\\n    \\\"The vertical component of the velocity—\", \"parsed\": {\"term\": \"Doppler imaging\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide21.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Doppler shift",
+              "p": "measures",
+              "o": "velocity of motion along the ultrasound beam direction",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift."
+            },
+            {
+              "s": "Doppler shift",
+              "p": "depends_on",
+              "o": "vertical component of the velocity",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "The vertical component of the velocity-represented here as v cos θ-is what contributes to this difference."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Doppler shift\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"velocity of motion along the ultrasound beam direction\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Doppler shift\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"vertical component of the velocity\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Doppler shift\", \"p\": \"measures\", \"o\": \"velocity of motion along the ultrasound beam direction\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift.\"}, {\"s\": \"Doppler shift\", \"p\": \"depends_on\", \"o\": \"vertical component of the velocity\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"The vertical component of the velocity-represented here as v cos θ-is what contributes to this difference.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Doppler shift",
+              "category": "signal_processing"
+            },
+            {
+              "term": "ultrasound",
+              "category": "modality"
+            },
+            {
+              "term": "transducer",
+              "category": "instrumentation"
+            },
+            {
+              "term": "Doppler frequency shift",
+              "category": "signal_processing"
+            },
+            {
+              "term": "velocity",
+              "category": "physics"
+            },
+            {
+              "term": "ultrasound beam direction",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Doppler imaging",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "An illustration of the Doppler shift in flowing blood.",
+            "The RBCs scattering the ultrasound beam are traveling at velocity v.",
+            "The difference in these frequencies is the measured Doppler shift."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T17:45:53.070744+00:00\", \"text_length\": 1155, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Doppler shift\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"ultrasound\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"red blood cells (RBCs)\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"transducer\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"ultrasound frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"backscattered echo\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Doppler frequency shift\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"velocity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"ultrasound beam direction\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Doppler imaging\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"An illustration of the Doppler shift in flowing blood.\\\",\\n    \\\"The RBCs scattering the ultrasound beam are traveling at velocity v.\\\",\\n    \\\"The difference in these frequencies is the measured Doppler shift.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Doppler shift\", \"category\": \"signal_processing\"}, {\"term\": \"ultrasound\", \"category\": \"modality\"}, {\"term\": \"transducer\", \"category\": \"instrumentation\"}, {\"term\": \"Doppler frequency shift\", \"category\": \"signal_processing\"}, {\"term\": \"velocity\", \"category\": \"physics\"}, {\"term\": \"ultrasound beam direction\", \"category\": \"signal_processing\"}, {\"term\": \"Doppler imaging\", \"category\": \"signal_processing\"}], \"evidence\": [\"An illustration of the Doppler shift in flowing blood.\", \"The RBCs scattering the ultrasound beam are traveling at velocity v.\", \"The difference in these frequencies is the measured Doppler shift.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T18:45:14.575948+00:00\", \"text_length\": 1155, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "term": "The wall or the moving red blood cells reflect the ultrasound energy back to the transducer",
+          "category": "instrumentation"
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T14:26:48.003376+00:00\", \"text_length\": 1155, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"the Doppler shift occurs in flowing blood\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the reflected frequency becomes slightly different\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the vertical component of the velocity—represented here as v cos θ—is what contributes to this difference\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the small difference between the transmitted and received frequencies is what we call the Doppler frequency shift\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"The Doppler shift tells us how motion changes the observed frequency\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Doppler imaging in medical ultrasound\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"The wall or the moving red blood cells reflect the ultrasound energy back to the transducer\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\", \"parsed\": {\"term\": \"The wall or the moving red blood cells reflect the ultrasound energy back to the transducer\", \"category\": \"instrumentation\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide21.json",
+        "parsed": {
+          "s": "the Doppler shift",
+          "p": "produces",
+          "o": "information about motion",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T14:33:29.399731+00:00\", \"text_length\": 1155, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\\n\\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\\n\\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"the Doppler shift\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"the difference in frequencies\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"The difference in these frequencies is the measured Doppler shift.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"the Doppler shift\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"information about motion\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"the Doppler shift\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"the vertical component of the velocity\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.85,\\n      \\\"evidence\\\": \\\"The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference.\\\"\", \"parsed\": {\"s\": \"the Doppler shift\", \"p\": \"produces\", \"o\": \"information about motion\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\"]}}"
+      }
+    }
+  }
+}

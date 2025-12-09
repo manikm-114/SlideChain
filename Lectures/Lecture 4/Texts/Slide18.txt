@@ -1,0 +1,17 @@
+Now that we’ve developed an understanding of the delta function and its role in modeling discrete events, let’s take this idea a step further and see how we can use it to represent an entire discrete function.
+
+Here we observe a powerful mathematical concept: any discrete function — let’s call it g of n — can be expressed as a weighted sum of shifted delta functions. That is, we take the delta function, shift it to the appropriate position, and scale it by the function’s value at that point. When we add all these together, we recover the original function.
+Here you can see the mathematical expression in this slide.
+
+This formula tells us that each sample of g contributes one impulse, located at n equals k, and scaled by g at that k. When we add up all these scaled and shifted impulses, we rebuild the function g.
+
+Let’s look at a specific example to make this concrete.
+
+Suppose your discrete function consists of just a few nonzero points. The first point is at n equals 0 with value 1 — that’s just delta of n.
+The second point is at n equals 1 with a value of negative 1 — so we write that as minus delta of n minus 1.
+And the third point is at n equals 2 with a value of 1.5 — which becomes 1.5 times delta of n minus 2.
+
+By adding these three impulses together, we effectively reconstruct the original signal, point by point.
+
+This approach is not only elegant, it’s also foundational in signal processing and linear systems. It allows us to treat any discrete-time signal as a sum of building blocks — scaled and shifted impulses — making analysis and filtering much easier later on.
+We’ll continue building on this idea when we introduce convolution, which is just the response of a system to this kind of delta-based representation.

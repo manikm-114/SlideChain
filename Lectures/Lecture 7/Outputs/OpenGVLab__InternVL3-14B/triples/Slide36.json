@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"signal reconstruction\",\n      \"p\": \"depends_on\",\n      \"o\": \"sampling rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"To determine those two unknowns for each sinusoid — amplitude and phase — we need at least two data points per cycle.\"\n    },\n    {\n      \"s\": \"Nyquist sampling rate\",\n      \"p\": \"measures\",\n      \"o\": \"samples per second\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the sampling rate — measured in samples per second — must be greater than 2 times nu.\"\n    },\n    {\n      \"s\": \"Nyquist sampling rate\",\n      \"p\": \"produces\",\n      \"o\": \"accurate signal capture\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"if we sample at twice the highest frequency or more, we guarantee that every sinusoidal component is accurately captured.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "signal reconstruction",
+        "p": "depends_on",
+        "o": "sampling rate",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "To determine those two unknowns for each sinusoid - amplitude and phase - we need at least two data points per cycle."
+      },
+      {
+        "s": "Nyquist sampling rate",
+        "p": "measures",
+        "o": "samples per second",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the sampling rate - measured in samples per second - must be greater than 2 times nu."
+      }
+    ]
+  }
+}

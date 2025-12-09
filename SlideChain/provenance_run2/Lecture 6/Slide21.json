@@ -1,0 +1,120 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "triangle function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinc function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gate function"
+          }
+        ],
+        "evidence": [
+          "the Fourier transform of the triangle function",
+          "the square of the sinc function",
+          "convolution",
+          "frequency domain",
+          "Fourier transform of the gate function"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "the triangle function is, in a way, the convolution of two gate functions."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "convolution of two gate functions",
+        "p": "depends_on",
+        "s": "triangle function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinc function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinc squared"
+          }
+        ],
+        "evidence": [
+          "The Fourier transform turns out to be the square of the sinc function.",
+          "The triangle function is, in a way, the convolution of two gate functions.",
+          "In the frequency domain, convolution in time corresponds to multiplication in frequency."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "central peak and decaying ripples"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Let's now take a look at the result of the Fourier transform of the triangle function. ... we get sinc squared."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the Fourier transform of the triangle function",
+        "p": "represents",
+        "s": "sinc squared"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

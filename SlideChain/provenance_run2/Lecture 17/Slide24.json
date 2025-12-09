@@ -1,0 +1,67 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstructed images"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "If you introduce radioactive tracers into the phantom and reconstruct with filtered back projection..."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "phantom experiment",
+        "p": "reconstructs_with",
+        "s": "filtered back projection"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "filtered back projection"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "If you introduce radioactive tracers into the phantom and reconstruct with filtered back projection, you are assuming no noise-that every measurement is an exact line integral.",
+            "modalities": [
+              "image"
+            ],
+            "o": "filtered back projection",
+            "p": "reconstructs_with",
+            "s": "phantom"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "improved quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide24.txt"
+  },
+  "slide_id": "Slide24"
+}

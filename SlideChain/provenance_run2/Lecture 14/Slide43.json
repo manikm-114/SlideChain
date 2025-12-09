@@ -1,0 +1,121 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "metal artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered backprojection reconstruction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "streaking artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "beam hardening"
+          },
+          {
+            "category": "quality_metric",
+            "term": "signal-to-noise ratio"
+          },
+          {
+            "category": "mathematics",
+            "term": "line integrals"
+          },
+          {
+            "category": "data_processing",
+            "term": "corrupted data"
+          },
+          {
+            "category": "quality_metric",
+            "term": "stripe-like artifacts"
+          },
+          {
+            "category": "algorithm",
+            "term": "reducing metal artifacts"
+          }
+        ],
+        "evidence": [
+          "metal artifacts",
+          "X-rays",
+          "filtered backprojection reconstruction",
+          "streaking artifacts",
+          "beam hardening",
+          "signal-to-noise ratio",
+          "line integrals",
+          "corrupted data",
+          "stripe-like artifacts",
+          "reducing metal artifacts"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Filtered backprojection on such corrupted data generates stripe-like artifacts in the images, which is a typical manifestation of metal artifacts in CT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "stripe-like artifacts",
+            "p": "produces",
+            "s": "Filtered backprojection reconstruction"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "streaking artifacts"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "data is inconsistent and inaccurate"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "When you perform filtered backprojection reconstruction in such cases, the results are often poor, showing streaking artifacts.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Metal Artifacts",
+            "p": "reconstructs_with",
+            "s": "Filtered backprojection"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "reducing metal artifacts"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide43.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide43.txt"
+  },
+  "slide_id": "Slide43"
+}

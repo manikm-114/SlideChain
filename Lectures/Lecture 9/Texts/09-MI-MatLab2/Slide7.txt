@@ -1,0 +1,7 @@
+Now let’s see what happens when we compute the convolution at n equals eight.
+
+Just like before, the red arrows on the top represent f of k, and the green arrows on the bottom show g of eight minus k — meaning the second signal has been flipped and shifted so that its index aligns with n equals eight.
+In our hand analogy, you can imagine sliding the flipped hand far enough to the right so that only the outer fingers — the “end fingers” — are touching. This is the opposite alignment from what we saw at n equals zero.
+
+At this position, only a few of the red and green arrows overlap. We multiply those overlapping values and then sum them up. The result gives us the convolution value at n equals eight.
+By repeating this shifting process for every value of n, we build up the entire convolution sequence, one position at a time.

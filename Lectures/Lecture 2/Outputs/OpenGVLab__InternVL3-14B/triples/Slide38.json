@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"summing one over i squared\",\n      \"p\": \"uses\",\n      \"o\": \"forward summation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We can do this two ways — forward, starting from i equals 1\"\n    },\n    {\n      \"s\": \"summing one over i squared\",\n      \"p\": \"uses\",\n      \"o\": \"backward summation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We can do this two ways — ... or backward, starting from i equals 10\"\n    },\n    {\n      \"s\": \"numerical stability\",\n      \"p\": \"depends_on\",\n      \"o\": \"order of summation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"But because of floating-point rounding, the order can make a small difference. This is a great example of how numerical stability matters\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "portable scanners"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "We built a CT scanner that does not rotate the gantry as in conventional designs. Instead, the patient lies on a rotating table-literally a sheet that turns-while the X-ray tube and detector remain fixed in place.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rotating table",
+            "p": "uses",
+            "s": "CT scanner"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Although this setup limits the viewing angle compared to traditional systems, it still produces good-quality images.",
+            "modalities": [
+              "text"
+            ],
+            "o": "good-quality images",
+            "p": "produces",
+            "s": "CT scanner"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "imagination"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "produces good-quality images"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "We built a CT scanner that does not rotate the gantry as in conventional designs. Instead, the patient lies on a rotating table-literally a sheet that turns-while the X-ray tube and detector remain fixed in place.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "rotating table",
+            "p": "uses",
+            "s": "CT scanner"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "Although this setup limits the viewing angle compared to traditional systems, it still produces good-quality images.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "good-quality images",
+            "p": "produces",
+            "s": "CT scanner"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "portable scanners"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Several years ago, we undertook an innovative project and received some news coverage about it. We built a CT scanner that does not rotate the gantry as in conventional designs. Instead, the patient lies on a rotating table-literally a sheet that turns-while the X-ray tube and detector remain fixed in place.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rotating table",
+            "p": "uses",
+            "s": "CT scanner"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide60.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide60.txt"
+  },
+  "slide_id": "Slide60"
+}

@@ -1,0 +1,112 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "frequency bins"
+          },
+          {
+            "category": "data_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "bin refinement"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete FFT bins"
+          }
+        ],
+        "evidence": [
+          "refine our frequency bins by a factor of two",
+          "increasing the FFT length",
+          "appending enough zeros to double the length of the signal before computing the FFT",
+          "frequency at two hundred two point five hertz is now well resolved",
+          "frequency at four hundred forty-five point eight hertz is still not well resolved",
+          "zero-padding and bin refinement improve resolution",
+          "frequency exactly matches a discrete bin location"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "When we plot the result, the improvement is clear: the frequency at two hundred two point five hertz is now well resolved, showing a sharp and distinct peak."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "improved resolution",
+        "p": "produces",
+        "s": "FFT length"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "FFT"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "energy is still spread across multiple bins"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "bin-refine factor"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT length"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency bins"
+          },
+          {
+            "category": "signal_processing",
+            "term": "resolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete FFT bins"
+          },
+          {
+            "category": "signal_processing",
+            "term": "perfectly aligned frequencies"
+          }
+        ],
+        "evidence": [
+          "We do this by setting a bin-refine factor equal to two, and then increasing the FFT length to be two times the number of samples in our original time vector. In practice, this means appending enough zeros to double the length of the signal before computing the FFT.",
+          "The takeaway is that zero-padding and bin refinement improve resolution, but they cannot create a perfectly sharp spike unless the frequency exactly matches a discrete bin location."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

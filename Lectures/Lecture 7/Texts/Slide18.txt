@@ -1,0 +1,13 @@
+Now here’s what happens when the sampling is too slow.
+This plot shows a rapidly oscillating signal — it's a sine wave with a high frequency. But look at those red dots. Those are the actual points we sampled, and as you can see, there are only a few of them.
+This is a classic case of under-sampling.
+
+In this case, the original signal — that fine blue waveform — is oscillating at a frequency of 8 hertz. But the sampling rate is just 8.5 samples per second, which is not high enough to capture the details of the wave.
+
+So what’s the problem?
+Well, based on just the red dots, it might look like the wave is slowly rising and falling — as if it’s a low-frequency signal. But that’s not true at all.
+This is known as aliasing — when a high-frequency signal gets misinterpreted as something much lower in frequency, simply because it was sampled too slowly.
+So even though you're doing regular sampling — evenly spaced in time — the result can be very misleading if your sampling rate is too low.
+
+This example shows why choosing the right sampling rate is critical.Too slow, and you could end up completely misrepresenting your signal.
+Next, let’s talk about the theoretical limit — the Nyquist rate — and how it protects us from this problem.

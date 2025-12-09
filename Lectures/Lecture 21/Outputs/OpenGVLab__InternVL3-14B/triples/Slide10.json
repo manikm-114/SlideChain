@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"displacement\", \"p\":\"represents\", \"o\":\"w\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"displacement, denoted as w\"},\n    {\"s\":\"velocity\", \"p\":\"represents\", \"o\":\"u\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"velocity, which we call u\"},\n    {\"s\":\"acceleration\", \"p\":\"represents\", \"o\":\"a\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"acceleration, which we represent as a\"},\n    {\"s\":\"displacement\", \"p\":\"produces\", \"o\":\"pressure increment\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the delay in motion creates compression, and that’s how the ultrasound wave starts to form\"},\n    {\"s\":\"displacement\", \"p\":\"depends_on\", \"o\":\"velocity times time\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"displacement is proportional to velocity times time\"},\n    {\"s\":\"displacement\", \"p\":\"depends_on\", \"o\":\"acceleration times time squared",
+  "parsed": {
+    "s": "displacement",
+    "p": "depends_on",
+    "o": "velocity times time",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "displacement is proportional to velocity times time"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+When you read the textbook chapter on MRI hardware, pay special attention to why we need to generate a linear magnetic field. The basic idea is actually very simple, and this diagram illustrates it nicely.
+
+You might remember from high school physics that whenever an electric current flows through a wire, it produces a magnetic field that circles around the wire. If we take that wire and bend it into a loop, the small circular magnetic fields from each segment combine together. The result is a field that looks like the one produced by a tiny bar magnet, pointing in the direction given by the right-hand rule — curl your fingers along the current, and your thumb points toward the magnetic field direction.
+
+Now, if you use a single loop, the magnetic field strength is small. But if you wind many loops together — for example, a coil with a hundred turns — the magnetic field becomes roughly a hundred times stronger. That’s the basic principle behind electromagnets and, in our case, gradient coils.
+On the left side of the figure, you see a loop with current flowing upward, generating a magnetic field that points to the right. On the right side, the current direction is reversed, producing a magnetic field that points to the left.
+
+When we place these two coils symmetrically and run equal but opposite currents, something interesting happens. At the center between the coils, the magnetic fields cancel each other out, giving a field strength near zero. But if you move slightly to one side, one field becomes stronger while the other becomes weaker. That means the magnetic field increases linearly as you move away from the center — exactly the gradient we need.
+So, in the central region, the total field varies in a nearly linear fashion, even though the actual fields from each coil are curved. This linear section is the useful part of the gradient field for imaging.
+
+In summary:A single loop of current generates a circular magnetic field.Multiple loops amplify the field strength.Two symmetric, oppositely oriented coils produce a linear gradient in the central region.
+That’s the simple physical idea behind how gradient coils work — elegant, practical, and directly derived from the basic laws of electromagnetism you learned in school.

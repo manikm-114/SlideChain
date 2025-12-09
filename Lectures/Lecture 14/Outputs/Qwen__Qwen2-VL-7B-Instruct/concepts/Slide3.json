@@ -1,0 +1,26 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:45:36.744155+00:00",
+  "text_length": 472,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, let’s look at the outline for today’s lecture.\n\nFirst, we’ll talk about projection data truncation—the issue when the X-ray projections don’t fully cover the object, which can cause artifacts.\n\nNext, we’ll discuss different scanning modes used in CT technology.\n\nThen, we will move on to common image artifacts that can degrade image quality.\n\nFinally, we’ll cover X-ray radiation dose, which is important because it can be harmful to patients if not properly managed.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"projection data truncation\", \"category\": \"data_processing\"},\n    {\"term\": \"different scanning modes\", \"category\": \"modality\"},\n    {\"term\": \"common image artifacts\", \"category\": \"image_processing\"},\n    {\"term\": \"X-ray radiation dose\", \"category\": \"radiation_dosimetry\"}\n  ],\n  \"evidence\": [\n    \"projection data truncation—the issue when the X-ray projections don’t fully cover the object, which can cause artifacts\",\n    \"different scanning modes used in CT technology\",\n    \"common image artifacts that can degrade image quality\",\n    \"X-ray radiation dose, which is important because it can be harmful to patients if not properly managed\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "projection data truncation",
+        "category": "data_processing"
+      },
+      {
+        "term": "different scanning modes",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "projection data truncation-the issue when the X-ray projections don't fully cover the object, which can cause artifacts",
+      "different scanning modes used in CT technology",
+      "common image artifacts that can degrade image quality",
+      "X-ray radiation dose, which is important because it can be harmful to patients if not properly managed"
+    ]
+  }
+}

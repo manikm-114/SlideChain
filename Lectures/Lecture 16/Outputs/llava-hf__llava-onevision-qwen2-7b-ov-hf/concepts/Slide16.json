@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nRadioactive isotopes can decay through several different mechanisms, and it’s important to understand the main ones.\n\nIn your textbook, these are grouped into four basic types. The first is alpha decay, the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission — the third is gamma decay, and the fourth is electron capture.\nAn easy way to remember them is simply in order: alpha, beta, gamma, and then electron capture. Each of these processes describes a different way in which an unstable nucleus transforms into a more stable state, releasing radiation in the process.\n\nWe’ll go into detail about each type of decay in the following slides.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"alpha decay\", \"category\": \"physics\"},\n    {\"term\": \"beta decay\", \"category\": \"physics\"},\n    {\"term\": \"gamma decay\", \"category\": \"physics\"},\n    {\"term\": \"electron capture\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"In your textbook, these are grouped into four basic types. The first is alpha decay, the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission — the third is gamma decay, and the fourth is electron capture.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "alpha decay",
+        "category": "physics"
+      },
+      {
+        "term": "beta decay",
+        "category": "physics"
+      },
+      {
+        "term": "gamma decay",
+        "category": "physics"
+      },
+      {
+        "term": "electron capture",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "In your textbook, these are grouped into four basic types. The first is alpha decay, the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission - the third is gamma decay, and the fourth is electron capture."
+    ]
+  }
+}

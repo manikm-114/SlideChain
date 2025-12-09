@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo this is about the processional frequency on B. In the textbook, we actually mentioned this in the previous lecture..\n\nBut let’s focus on the conclusion. The derivation goes through all these steps, and if you take the time, you will understand the details.\nThe key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector — or you can think of it as a spinning top — will process faster.\n\nSo just follow the picture here. The last line is very clear: the angular frequency of precession, omega, is proportional to the local magnetic field. If we call the main field B-naught, then omega is proportional to B-naught. Later on, if you change B-naught to B-prime, omega will be proportional to B-prime.\nAnd then you multiply by a physical constant, called gamma.\n\n So, in short, omega equals gamma times B.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"processional frequency\", \"category\": \"physics\"},\n    {\"term\": \"local magnetic field\", \"category\": \"physics\"},\n    {\"term\": \"M vector\", \"category\": \"physics\"},\n    {\"term\": \"spinning top\", \"category\": \"physics\"},\n    {\"term\": \"angular frequency of precession\", \"category\": \"physics\"},\n    {\"term\": \"omega\", \"category\": \"physics\"},\n    {\"term\": \"B-naught\", \"category\": \"physics\"},\n    {\"term\": \"B-prime\", \"category\": \"physics\"},\n    {\"term\": \"gamma\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"The key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector — or you can think of it as a spinning top — will process faster.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "processional frequency",
+        "category": "physics"
+      },
+      {
+        "term": "local magnetic field",
+        "category": "physics"
+      },
+      {
+        "term": "M vector",
+        "category": "physics"
+      },
+      {
+        "term": "spinning top",
+        "category": "physics"
+      },
+      {
+        "term": "angular frequency of precession",
+        "category": "physics"
+      },
+      {
+        "term": "omega",
+        "category": "physics"
+      },
+      {
+        "term": "B-naught",
+        "category": "physics"
+      },
+      {
+        "term": "B-prime",
+        "category": "physics"
+      },
+      {
+        "term": "gamma",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector - or you can think of it as a spinning top - will process faster."
+    ]
+  }
+}

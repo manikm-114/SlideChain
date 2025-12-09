@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:24:29.562257+00:00",
+  "text_length": 1134,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about loops — and more specifically, independent loops.\n\nA loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\n\nIn this example, we have three independent loops:\nLoop 1 includes the voltage source, resistor R 1, and resistor R 2.\nLoop 2 includes resistor R 2 and resistor R 3.\nLoop 3 includes resistor R 3 and the current source.\nYou might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.\n\nThe reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"loops\", \"category\": \"signal_processing\"},\n    {\"term\": \"independent loops\", \"category\": \"signal_processing\"},\n    {\"term\": \"Kirchhoff's Voltage Law\", \"category\": \"signal_processing\"},\n    {\"term\": \"building blocks\", \"category\": \"signal_processing\"},\n    {\"term\": \"solving circuit problems\", \"category\": \"signal_processing\"},\n    {\"term\": \"current through each branch\", \"category\": \"signal_processing\"},\n    {\"term\": \"voltage across each resistor\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.\",\n    \"We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.\",\n    \"The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law.\",\n    \"These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "loops",
+        "category": "signal_processing"
+      },
+      {
+        "term": "independent loops",
+        "category": "signal_processing"
+      },
+      {
+        "term": "building blocks",
+        "category": "signal_processing"
+      },
+      {
+        "term": "solving circuit problems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "current through each branch",
+        "category": "signal_processing"
+      },
+      {
+        "term": "voltage across each resistor",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+      "We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.",
+      "The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.",
+      "These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor."
+    ]
+  }
+}

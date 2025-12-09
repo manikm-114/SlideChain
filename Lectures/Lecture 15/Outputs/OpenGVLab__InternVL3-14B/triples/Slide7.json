@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Radon Transform\",\n      \"p\": \"represents\",\n      \"o\": \"X-ray projection data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Radon transform is essentially a way to represent X-ray projection data\"\n    },\n    {\n      \"s\": \"Radon Transform\",\n      \"p\": \"produces\",\n      \"o\": \"sinogram\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the result is something called a sinogram\"\n    },\n    {\n      \"s\": \"sinogram\",\n      \"p\": \"indicates\",\n      \"o\": \"characteristics of the sample\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A sinogram is just an image that shows how the projections vary as we rotate around the object. This representation also tells us something about the characteristics of the sample.\"\n    },\n    {\n      \"s\": \"sinogram\",\n      \"p\": \"measures\",\n      \"o\": \"amplitude\",\n      \"modalities\": [\"",
+  "parsed": {
+    "s": "sinogram",
+    "p": "indicates",
+    "o": "characteristics of the sample",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "A sinogram is just an image that shows how the projections vary as we rotate around the object. This representation also tells us something about the characteristics of the sample."
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "reflection"
+          },
+          {
+            "category": "physics",
+            "term": "refraction"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "physics",
+            "term": "motion"
+          },
+          {
+            "category": "quality_metric",
+            "term": "distortions"
+          }
+        ],
+        "evidence": [
+          "various artifacts can appear due to limitations in the system or the physics of sound propagation",
+          "artifacts may come from reflection, refraction, attenuation, or motion",
+          "distortions",
+          "mimic real anatomical structures"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "These artifacts may come from reflection, refraction, attenuation, or motion.",
+            "modalities": [
+              "text"
+            ],
+            "o": "reflection, refraction, attenuation, or motion",
+            "p": "depends_on",
+            "s": "Ultrasound image artifacts"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Some are simply distortions",
+            "modalities": [
+              "text"
+            ],
+            "o": "distortions",
+            "p": "represents",
+            "s": "Ultrasound image artifacts"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "others can mimic real anatomical structures",
+            "modalities": [
+              "text"
+            ],
+            "o": "real anatomical structures",
+            "p": "represents",
+            "s": "Ultrasound image artifacts"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "ultrasound image artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "reflection"
+          },
+          {
+            "category": "physics",
+            "term": "refraction"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "physics",
+            "term": "motion"
+          },
+          {
+            "category": "modality",
+            "term": "distortions"
+          }
+        ],
+        "evidence": [
+          "Like any imaging modality, ultrasound is not perfect - and various artifacts can appear due to limitations in the system or the physics of sound propagation. These artifacts may come from reflection, refraction, attenuation, or motion. Some are simply distortions, while others can mimic real anatomical structures."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "used advantageously in image interpretation"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "These artifacts may come from reflection, refraction, attenuation, or motion. Some are simply distortions",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "distortions",
+            "p": "produces",
+            "s": "ultrasound image artifacts"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "others can mimic real anatomical structures",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "mimic real anatomical structures",
+            "p": "produces",
+            "s": "ultrasound image artifacts"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "ai_ml",
+        "term": "distortions"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide35.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide35.txt"
+  },
+  "slide_id": "Slide35"
+}

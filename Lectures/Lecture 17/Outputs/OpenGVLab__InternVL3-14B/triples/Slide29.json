@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"SPECT scanner\", \"p\":\"uses\", \"o\":\"rotation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The SPECT camera system is held together by a sturdy structure, and it’s designed to rotate around the patient.\"},\n    {\"s\":\"SPECT scanner\", \"p\":\"produces\", \"o\":\"full three-dimensional reconstruction\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By rotating the detector and collimators around the patient, we get signals from different angles, enabling a full three-dimensional reconstruction.\"},\n    {\"s\":\"SPECT scanner\", \"p\":\"allows for\", \"o\":\"standard longitudinal scanning\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The system also allows for standard longitudinal scanning, which is what you typically see in practical clinical use.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "SPECT scanner",
+        "p": "uses",
+        "o": "rotation",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The SPECT camera system is held together by a sturdy structure, and it’s designed to rotate around the patient."
+      },
+      {
+        "s": "SPECT scanner",
+        "p": "produces",
+        "o": "full three-dimensional reconstruction",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By rotating the detector and collimators around the patient, we get signals from different angles, enabling a full three-dimensional reconstruction."
+      }
+    ]
+  }
+}

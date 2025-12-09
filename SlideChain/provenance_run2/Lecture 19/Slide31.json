@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "instrumentation",
+            "term": "phase-encoding gradient"
+          },
+          {
+            "category": "signal_processing",
+            "term": "inverse Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier space"
+          }
+        ],
+        "evidence": [
+          "The data are actually collected in the k-space.",
+          "Each coordinate, k_x and k_y, corresponds to a Fourier component of the image.",
+          "MRI does not record the image directly. Instead, it records data in k-space, which is really the Fourier space, and then uses the inverse transform to bring everything back into an image we can see."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "after finishing one line, you step the phase-encoding gradient to a new value, moving up or down in the k y direction, and then record another frequency-encoded line"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "MRI does not record the image directly. Instead, it records data in k-space, which is really the Fourier space"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Fourier space",
+        "p": "represents",
+        "s": "k-space"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "horizontal lines"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide31.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide31.txt"
+  },
+  "slide_id": "Slide31"
+}

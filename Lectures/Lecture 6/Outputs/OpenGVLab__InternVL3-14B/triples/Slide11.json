@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series formula\",\n      \"p\": \"uses\",\n      \"o\": \"expression for c_n\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now, we’re going to insert that expression for c_n directly into the Fourier series formula.\"\n    },\n    {\n      \"s\": \"each term in the series\",\n      \"p\": \"contains\",\n      \"o\": \"inner product multiplied by a complex exponential\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So now, each term in the series contains an inner product multiplied by a complex exponential.\"\n    },\n    {\n      \"s\": \"inner product\",\n      \"p\": \"represents\",\n      \"o\": \"multiplying f(t) and the complex exponential e to the power minus i 2 pi n t over T point by point, and then integrating over the interval\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"What we’re really doing here is taking the inner product of two functions: One is f of t,",
+  "parsed": {
+    "s": "each term in the series",
+    "p": "contains",
+    "o": "inner product multiplied by a complex exponential",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "So now, each term in the series contains an inner product multiplied by a complex exponential."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:13:49.757208+00:00",
+  "text_length": 555,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nOne subtle idea is relative linearity. A system’s behavior might depend on the chosen coordinate system or reference point. For example, a linear function with an intercept (like y = mx + b) is still linear in its relative changes. If you redefine the origin to subtract out b, it behaves like a linear function passing through zero.\nSimilarly, for systems, we often focus on relative changes in input and output rather than absolute values. This helps us apply linear system theory even when the system’s baseline isn’t perfectly aligned with the origin.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"relative linearity\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"a system’s behavior might depend on the chosen coordinate system or reference point\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"a linear function with an intercept (like y = mx + b) is still linear in its relative changes\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"we often focus on relative changes in input and output rather than absolute values\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"One subtle idea is relative linearity.\",\n    \"A system’s behavior might depend on the chosen coordinate system or reference point.\",\n    \"a linear function with an intercept (like y = mx + b) is still linear in its relative changes.\",\n    \"we often focus on relative changes in input and output rather than absolute values.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "relative linearity",
+        "category": "mathematics"
+      },
+      {
+        "term": "a linear function with an intercept (like y = mx + b) is still linear in its relative changes",
+        "category": "mathematics"
+      },
+      {
+        "term": "we often focus on relative changes in input and output rather than absolute values",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "One subtle idea is relative linearity.",
+      "A system's behavior might depend on the chosen coordinate system or reference point.",
+      "a linear function with an intercept (like y = mx + b) is still linear in its relative changes.",
+      "we often focus on relative changes in input and output rather than absolute values."
+    ]
+  }
+}

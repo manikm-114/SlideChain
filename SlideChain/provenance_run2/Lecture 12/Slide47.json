@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "hybrid detector array"
+          },
+          {
+            "category": "instrumentation",
+            "term": "energy-integrating detectors"
+          },
+          {
+            "category": "instrumentation",
+            "term": "photon-counting detectors"
+          },
+          {
+            "category": "physics",
+            "term": "spectral information"
+          },
+          {
+            "category": "physics",
+            "term": "material decomposition"
+          },
+          {
+            "category": "physics",
+            "term": "K-edge imaging"
+          },
+          {
+            "category": "physics",
+            "term": "molecular contrast"
+          },
+          {
+            "category": "physics",
+            "term": "structural information"
+          },
+          {
+            "category": "modality",
+            "term": "CT technology"
+          }
+        ],
+        "evidence": [
+          "combine them",
+          "traditional energy-integrating detectors",
+          "strategically insert photon-counting detectors",
+          "spectral information",
+          "material decomposition",
+          "K-edge imaging",
+          "molecular contrast",
+          "structural information",
+          "next generation of CT technology"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Instead of using only one type of detector, why not combine them? In this design, most pixels are traditional energy-integrating detectors...",
+            "modalities": [
+              "text"
+            ],
+            "o": "traditional energy-integrating detectors",
+            "p": "uses",
+            "s": "hybrid detector array"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "...strategically insert photon-counting detectors at certain positions...",
+            "modalities": [
+              "text"
+            ],
+            "o": "photon-counting detectors",
+            "p": "uses",
+            "s": "hybrid detector array"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "...These pixels give us the spectral information...",
+            "modalities": [
+              "text"
+            ],
+            "o": "spectral information",
+            "p": "measures",
+            "s": "photon-counting detectors"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "...it represents an exciting direction for the next generation of CT technology.",
+            "modalities": [
+              "text"
+            ],
+            "o": "next generation of CT technology",
+            "p": "represents",
+            "s": "hybrid detector array"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "next generation of CT technology"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "integrating detectors give us the structural information"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "These pixels give us the spectral information - the energy-resolved measurements that allow for material decomposition, K-edge imaging, and molecular contrast."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "spectral information",
+        "p": "measures",
+        "s": "photon-counting detectors"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "next generation of CT technology"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide47.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide47.txt"
+  },
+  "slide_id": "Slide47"
+}

@@ -1,0 +1,56 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"},\n    {\"term\": \"sampling\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse train\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"spectrum\", \"category\": \"frequency_domain\"},\n    {\"term\": \"delta functions\", \"category\": \"signal_processing\"},\n    {\"term\": \"spectral replicas\", \"category\": \"frequency_domain\"},\n    {\"term\": \"aliasing\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampling rate\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"sampling in the spatial or time domain means multiplying the signal by an impulse train\",\n    \"In the frequency domain, that multiplication becomes a convolution\",\n    \"the original signal’s spectrum\",\n    \"a train of delta functions\",\n    \"convolve the original spectrum with this delta train\",\n    \"multiple shifted copies of the original spectrum\",\n    \"the replicas overlap, and this overlap is what causes aliasing\",\n    \"we need a high enough sampling rate in the time domain\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "frequency domain",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "sampling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse train",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "spectrum",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "delta functions",
+        "category": "signal_processing"
+      },
+      {
+        "term": "spectral replicas",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "aliasing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling rate",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "sampling in the spatial or time domain means multiplying the signal by an impulse train",
+      "In the frequency domain, that multiplication becomes a convolution",
+      "the original signal’s spectrum",
+      "a train of delta functions",
+      "convolve the original spectrum with this delta train",
+      "multiple shifted copies of the original spectrum",
+      "the replicas overlap, and this overlap is what causes aliasing",
+      "we need a high enough sampling rate in the time domain"
+    ]
+  }
+}

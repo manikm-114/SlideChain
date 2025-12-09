@@ -1,0 +1,143 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "displacement"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration"
+          },
+          {
+            "category": "physics",
+            "term": "pressure"
+          },
+          {
+            "category": "physics",
+            "term": "volume"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound wave"
+          }
+        ],
+        "evidence": [
+          "displacement is proportional to velocity times time",
+          "displacement caused by acceleration is a second-order relationship",
+          "combination of displacement, velocity, and acceleration",
+          "changes in pressure and volume",
+          "w equals u times t",
+          "w equals one-half times a times t squared",
+          "ultrasound wave starts to form"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "displacement is proportional to velocity times time"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "velocity times time",
+        "p": "depends_on",
+        "s": "displacement"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound wave"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "the motion doesn't happen immediately. The molecules there need time to respond, and that brings in acceleration, which we represent as a"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This process... creates compression, and that's how the ultrasound wave starts to form."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "p (pressure)",
+        "p": "produces",
+        "s": "w (displacement)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "displacement"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration"
+          },
+          {
+            "category": "physics",
+            "term": "pressure increment"
+          },
+          {
+            "category": "physics",
+            "term": "compression"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound wave"
+          },
+          {
+            "category": "anatomy",
+            "term": "tissue element"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear relationship"
+          }
+        ],
+        "evidence": [
+          "That\u2019s a linear relationship, meaning if you double the velocity, the displacement doubles in the same time period.",
+          "So the first one - w equals u times t - is linear, and the second one - w equals one-half a t squared - is quadratic in time."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "Acceleration is proportional to velocity times time."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Time",
+        "p": "depends_on",
+        "s": "Acceleration"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide10.txt"
+  },
+  "slide_id": "Slide10"
+}

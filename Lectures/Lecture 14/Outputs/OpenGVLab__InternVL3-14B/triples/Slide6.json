@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"classic CT theory\", \"p\":\"uses\", \"o\":\"Fourier transform\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Fourier transform, as we learned, is the foundation of classic CT theory.\"},\n    {\"s\":\"classic CT theory\", \"p\":\"requires\", \"o\":\"complete coverage of an entire cross-section or the whole object\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It requires complete coverage of an entire cross-section or the whole object.\"},\n    {\"s\":\"projection data\", \"p\":\"uses\", \"o\":\"Fourier slice theorem\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When you have projection data, you can use the Fourier slice theorem in 2D or 3D.\"},\n    {\"s\":\"filtered back projection\", \"p\":\"represents\", \"o\":\"inverse Fourier transform in polar coordinates\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"filtered back projection is essentially just the inverse Fourier transform represented in polar coordinates.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "classic CT theory",
+        "p": "uses",
+        "o": "Fourier transform",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The Fourier transform, as we learned, is the foundation of classic CT theory."
+      },
+      {
+        "s": "projection data",
+        "p": "uses",
+        "o": "Fourier slice theorem",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When you have projection data, you can use the Fourier slice theorem in 2D or 3D."
+      }
+    ]
+  }
+}

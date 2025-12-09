@@ -1,0 +1,62 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "MRI signal"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "B-zero"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "These coils are used to create small, linearly varying magnetic fields on top of the main magnetic field. By turning the gradient coils on and off in different directions, the scanner performs slice selection, phase encoding, and frequency encoding, which are the core steps that allow spatial localization of the MRI signal."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "patient",
+        "p": "uses",
+        "s": "Gradient Coils"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "aligned with the center of the magnet"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The patient is positioned on the table and moved smoothly into the bore for imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "patient",
+            "p": "uses",
+            "s": "patient table"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide48.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide48.txt"
+  },
+  "slide_id": "Slide48"
+}

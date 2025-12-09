@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide55",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:37:00.958773+00:00",
+  "text_length": 450,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo measure radiation dose, we use specialized instruments called dosimeters.\nI personally had the opportunity to work on radiation dose measurements for CT scanners during my time at Washington University School of Medicine.\n\nIt was engaging and valuable research work, and I frequently used dosimetry equipment to evaluate radiation output.\nThese dosimeters help assess the radiation delivered by the scanner, ensuring safety and proper calibration.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"To measure radiation dose, we use specialized instruments called dosimeters.\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"These dosimeters help assess the radiation delivered by the scanner, ensuring safety and proper calibration.\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"I frequently used dosimetry equipment to evaluate radiation output.\",\n      \"category\": \"instrumentation\"\n    }\n  ],\n  \"evidence\": [\n    \"To measure radiation dose, we use specialized instruments called dosimeters.\",\n    \"These dosimeters help assess the radiation delivered by the scanner, ensuring safety and proper calibration.\",\n    \"I frequently used dosimetry equipment to evaluate radiation output.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "To measure radiation dose, we use specialized instruments called dosimeters.",
+        "category": "instrumentation"
+      },
+      {
+        "term": "These dosimeters help assess the radiation delivered by the scanner, ensuring safety and proper calibration.",
+        "category": "physics"
+      },
+      {
+        "term": "I frequently used dosimetry equipment to evaluate radiation output.",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "To measure radiation dose, we use specialized instruments called dosimeters.",
+      "These dosimeters help assess the radiation delivered by the scanner, ensuring safety and proper calibration.",
+      "I frequently used dosimetry equipment to evaluate radiation output."
+    ]
+  }
+}

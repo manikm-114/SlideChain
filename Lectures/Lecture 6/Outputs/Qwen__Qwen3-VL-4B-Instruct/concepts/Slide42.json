@@ -1,0 +1,16 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T23:18:46.568208+00:00",
+  "text_length": 896,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAlright, to wrap up today’s session, here’s your homework assignment.\n\nFirst, I’d like you to read about the uncertainty principle of the Fourier transform. This is a fascinating and important concept. Summarize it in your own words, but keep it concise — no more than three sentences.\n\nSecond, I want you to analytically compute the Fourier transform of this function: the exponential of b times t, multiplied by the step function u of negative t. Here, b is a positive constant, and u of t is defined as 1 for positive time and 0 otherwise.\nThe due date is one week from now, by midnight next Friday. Please make sure to upload your report to MLS.\n\nAnd before we end, I’ve heard from a few students that the Fourier series material was a bit confusing. If that’s you, don’t hesitate — come talk to me now or reach out later. I’m happy to help clarify anything.\nThat’s all for today — thank you!\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"uncertainty property of the Fourier transform\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"Fourier transform of exp(bt)u(-t)\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"step function u(t)\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"Read about the uncertainty property of the Fourier transform and write no more than three sentences to explain what it is.\",\n    \"Analytically compute the Fourier transform of exp(bt)u(-t), where b is positive, u(t) is the step function (u(t)=1 for positive t and 0 otherwise).\",\n    \"u(t) is the step function (u(t)=1 for positive t and 0 otherwise).\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Read about the uncertainty property of the Fourier transform and write no more than three sentences to explain what it is.",
+      "Analytically compute the Fourier transform of exp(bt)u(-t), where b is positive, u(t) is the step function (u(t)=1 for positive t and 0 otherwise).",
+      "u(t) is the step function (u(t)=1 for positive t and 0 otherwise)."
+    ]
+  }
+}

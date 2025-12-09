@@ -1,0 +1,34 @@
+{
+  "slide_id": "Slide25",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T11:40:25.176441+00:00",
+  "text_length": 668,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThen you change the transform back from the t, s system to the x, y coordinate system.\u000b\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\n\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"two-dimensional Fourier transform\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"u component is w cosine theta, and the v component is w sine theta.\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"the general form of the Fourier slice theorem\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\",\n    \"two-dimensional Fourier transform\",\n    \"u component is w cosine theta, and the v component is w sine theta.\",\n    \"the general form of the Fourier slice theorem\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.",
+        "category": "mathematics"
+      },
+      {
+        "term": "two-dimensional Fourier transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "u component is w cosine theta, and the v component is w sine theta.",
+        "category": "mathematics"
+      },
+      {
+        "term": "the general form of the Fourier slice theorem",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.",
+      "two-dimensional Fourier transform",
+      "u component is w cosine theta, and the v component is w sine theta.",
+      "the general form of the Fourier slice theorem"
+    ]
+  }
+}

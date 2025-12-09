@@ -1,0 +1,10 @@
+Let’s talk about something elegant and powerful — the rotation property of the Fourier transform.
+
+Here’s the idea: if you rotate a two-dimensional function in space, then its Fourier transform also rotates — by the exact same angle and in the same direction. That means the structure of the frequency content preserves the orientation of the original signal.
+
+For instance, if you rotate an image by 30 degrees counterclockwise, the entire frequency spectrum also rotates by 30 degrees counterclockwise. The shape and the distribution of frequencies remain the same, just oriented differently. This behavior is not just limited to 2D — it holds in any number of dimensions.
+
+Why does this happen? Well, it comes from the mathematics of how the Fourier transform is defined. If we apply a rotation matrix — let’s call it R theta — to the spatial variable, we see that the frequency variable ends up rotated in exactly the same way. It’s a symmetry property built into the transform itself.
+
+Now, the proof is shown here, and you’re welcome to follow through it if you like. It involves a change of variables and some linear algebra, but the takeaway is beautifully simple: rotate the function, and its spectrum rotates too.
+This rotational invariance is one of the reasons Fourier analysis is so useful in imaging, especially in applications like object detection, texture analysis, and pattern recognition — where orientation should not change the essential features.

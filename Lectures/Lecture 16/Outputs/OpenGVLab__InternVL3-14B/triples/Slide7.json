@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"nuclear imaging\", \"p\":\"uses\", \"o\":\"gamma rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"in nuclear imaging, the radiation does not come from an external source outside the body. Instead, it comes from inside the patient, because we introduce a radioactive tracer into the body. That tracer emits gamma rays.\"},\n    {\"s\":\"gamma rays\", \"p\":\"passes through\", \"o\":\"collimator\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To form an image, we need to know where each photon came from. This is why we use a collimator — such as a pinhole collimator or a parallel-hole collimator. The collimator ensures that only photons traveling along certain directions are recorded, giving us the directional information we need for tomographic imaging.\"},\n    {\"s\":\"gamma rays\", \"p\":\"strikes\", \"o\":\"scintillation crystal\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"After passing through the collimator, the gamma rays strike a scintillation crystal. This crystal converts the high-energy gamma photons into flashes of visible light.\"},\n    {\"",
+  "parsed": {
+    "s": "gamma rays",
+    "p": "strikes",
+    "o": "scintillation crystal",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "After passing through the collimator, the gamma rays strike a scintillation crystal. This crystal converts the high-energy gamma photons into flashes of visible light."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Taylor expansion\",\n      \"p\": \"represents\",\n      \"o\": \"approximation of smooth, well-behaved functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This allows us to approximate any smooth, well-behaved function using a sum of terms\"\n    },\n    {\n      \"s\": \"Taylor expansion\",\n      \"p\": \"uses\",\n      \"o\": \"constant, linear, quadratic terms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"starting with a constant (the function’s value at a point), then adding linear terms based on the first derivative, and quadratic terms based on the second derivative, and so on.\"\n    },\n    {\n      \"s\": \"engineering practice\",\n      \"p\": \"uses\",\n      \"o\": \"simpler terms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In engineering practice, though, we often stop at the simpler terms—constant or linear—because they offer a good balance of accuracy and simplicity.\"\n    }",
+  "parsed": {
+    "s": "engineering practice",
+    "p": "uses",
+    "o": "simpler terms",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "In engineering practice, though, we often stop at the simpler terms-constant or linear-because they offer a good balance of accuracy and simplicity."
+    ]
+  }
+}

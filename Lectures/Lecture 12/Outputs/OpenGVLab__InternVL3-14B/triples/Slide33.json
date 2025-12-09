@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"X-ray detector\",\n      \"p\": \"uses\",\n      \"o\": \"Energy-integrating\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Energy-integrating detectors — This is the technology used in nearly all current CT scanners.\"\n    },\n    {\n      \"s\": \"X-ray detector\",\n      \"p\": \"uses\",\n      \"o\": \"Photon-counting\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Photon-counting detectors — This is the emerging, next-generation technology.\"\n    },\n    {\n      \"s\": \"Energy-integrating detectors\",\n      \"p\": \"produces\",\n      \"o\": \"grayscale images\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That gives us grayscale images — the kind you are familiar with in clinical CT.\"\n    },\n    {\n      \"s\": \"Photon-counting detectors\",\n      \"p\": \"measures\",\n      \"o\": \"each incoming photon individually\",\n      \"modalities\": [\"text\"],",
+  "parsed": {
+    "s": "Energy-integrating detectors",
+    "p": "produces",
+    "o": "grayscale images",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "That gives us grayscale images - the kind you are familiar with in clinical CT."
+    ]
+  }
+}

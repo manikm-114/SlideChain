@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:01:16.967727+00:00",
+  "text_length": 1232,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis idea is not too hard to grasp if we think about orbital motion.\nTake the example of the Moon orbiting around the Earth, or a satellite orbiting a planet. You might wonder: why doesn’t it just fall straight down? The answer is that there is always a centripetal force pointing inward, toward the center of the orbit.\n\nThat centripetal force doesn’t change the magnitude of the velocity, but it does change its direction. Because the force is always perpendicular to the velocity vector, it continuously “bends” the path, keeping the satellite in circular motion rather than letting it fly off in a straight line.\nMathematically, the centripetal force is equal to mass times velocity squared, divided by the radius: F equals m v squared over r.\n\nNow connect this to angular momentum. When the change in a vector is always perpendicular to the vector itself, the result is circular motion. In the orbital case, the velocity vector keeps changing direction, while in angular momentum, the same principle applies: torque causes a perpendicular change in angular momentum, and so the angular momentum vector itself traces out a circle.\n\nThis is the key point to understand precession: a perpendicular change leads to circular motion.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"centripetal force\", \"category\": \"physics\"},\n    {\"term\": \"mass times velocity squared\", \"category\": \"physics\"},\n    {\"term\": \"radius\", \"category\": \"physics\"},\n    {\"term\": \"angular momentum\", \"category\": \"physics\"},\n    {\"term\": \"torque\", \"category\": \"physics\"},\n    {\"term\": \"precession\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"There is always a centripetal force pointing inward, toward the center of the orbit.\",\n    \"The centripetal force doesn’t change the magnitude of the velocity, but it does change its direction.\",\n    \"The centripetal force is equal to mass times velocity squared, divided by the radius.\",\n    \"When the change in a vector is always perpendicular to the vector itself, the result is circular motion.\",\n    \"In the orbital case, the velocity vector keeps changing direction, while in angular momentum, the same principle applies: torque causes a perpendicular change in angular momentum, and so the angular momentum vector itself traces out a circle.\",\n    \"This is the key point to understand precession: a perpendicular change leads to circular motion.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "centripetal force",
+        "category": "physics"
+      },
+      {
+        "term": "mass times velocity squared",
+        "category": "physics"
+      },
+      {
+        "term": "radius",
+        "category": "physics"
+      },
+      {
+        "term": "angular momentum",
+        "category": "physics"
+      },
+      {
+        "term": "torque",
+        "category": "physics"
+      },
+      {
+        "term": "precession",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "There is always a centripetal force pointing inward, toward the center of the orbit.",
+      "The centripetal force doesn't change the magnitude of the velocity, but it does change its direction.",
+      "The centripetal force is equal to mass times velocity squared, divided by the radius.",
+      "When the change in a vector is always perpendicular to the vector itself, the result is circular motion.",
+      "In the orbital case, the velocity vector keeps changing direction, while in angular momentum, the same principle applies: torque causes a perpendicular change in angular momentum, and so the angular momentum vector itself traces out a circle.",
+      "This is the key point to understand precession: a perpendicular change leads to circular motion."
+    ]
+  }
+}

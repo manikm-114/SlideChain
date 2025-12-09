@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide45",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:31:02.115871+00:00",
+  "text_length": 389,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWhen you do projection, they basically decompose a single pixel into a two-by-two matrix, then shoot rays through all these centers into the projection domain. \n\nIf a ray hits the center of a detector bin, that detector takes the full value. If it hits the boundary between two detector bins, the value is divided equally. If it hits at an arbitrary location, linear interpolation is used.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"projection\", \"category\": \"algorithm\"},\n    {\"term\": \"decompose\", \"category\": \"mathematics\"},\n    {\"term\": \"two-by-two matrix\", \"category\": \"mathematics\"},\n    {\"term\": \"rays\", \"category\": \"physics\"},\n    {\"term\": \"detector bins\", \"category\": \"instrumentation\"},\n    {\"term\": \"linear interpolation\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"they basically decompose a single pixel into a two-by-two matrix\",\n    \"shoot rays through all these centers into the projection domain\",\n    \"If a ray hits the center of a detector bin, that detector takes the full value\",\n    \"If it hits the boundary between two detector bins, the value is divided equally\",\n    \"If it hits at an arbitrary location, linear interpolation is used\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "projection",
+        "category": "algorithm"
+      },
+      {
+        "term": "decompose",
+        "category": "mathematics"
+      },
+      {
+        "term": "two-by-two matrix",
+        "category": "mathematics"
+      },
+      {
+        "term": "rays",
+        "category": "physics"
+      },
+      {
+        "term": "detector bins",
+        "category": "instrumentation"
+      },
+      {
+        "term": "linear interpolation",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "they basically decompose a single pixel into a two-by-two matrix",
+      "shoot rays through all these centers into the projection domain",
+      "If a ray hits the center of a detector bin, that detector takes the full value",
+      "If it hits the boundary between two detector bins, the value is divided equally",
+      "If it hits at an arbitrary location, linear interpolation is used"
+    ]
+  }
+}

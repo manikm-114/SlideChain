@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"System Output (Continuous)\",\n      \"p\": \"represents\",\n      \"o\": \"convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This operation, convolution, lies at the heart of modeling and understanding them.\"\n    },\n    {\n      \"s\": \"System Output (Continuous)\",\n      \"p\": \"produces\",\n      \"o\": \"y(t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"x(t) -> h -> y(t)\"\n    },\n    {\n      \"s\": \"System Output (Continuous)\",\n      \"p\": \"depends_on\",\n      \"o\": \"h(t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If we shift the delta to t minus tau, the output becomes h of t minus tau.\"\n    },\n    {\n      \"s\": \"System Output (Continuous)\",\n      \"p\": \"uses\",\n      \"o\": \"delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"e",
+  "parsed": {
+    "s": "System Output (Continuous)",
+    "p": "depends_on",
+    "o": "h(t)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "If we shift the delta to t minus tau, the output becomes h of t minus tau."
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "electric current"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "instrumentation",
+            "term": "conducting loop"
+          },
+          {
+            "category": "physics",
+            "term": "Faraday\u2019s law of electromagnetic induction"
+          },
+          {
+            "category": "physics",
+            "term": "Lenz\u2019s law"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "radiofrequency fields"
+          },
+          {
+            "category": "physics",
+            "term": "induced currents"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coils"
+          }
+        ],
+        "evidence": [
+          "an electric current can generate a magnetic field",
+          "a changing magnetic field can generate an electric current",
+          "conducting loop",
+          "Faraday\u2019s law of electromagnetic induction",
+          "Lenz\u2019s law",
+          "MRI",
+          "protons",
+          "radiofrequency fields",
+          "induced currents",
+          "coils"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The scanner excites protons using magnetic and radiofrequency fields, and then relies on induced currents in coils to detect the returning signals.",
+            "modalities": [
+              "text"
+            ],
+            "o": "induced currents in coils",
+            "p": "depends_on",
+            "s": "MRI"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "induced current"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "conducting loop"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "protons"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic and radiofrequency fields"
+          },
+          {
+            "category": "physics",
+            "term": "induced currents in coils"
+          }
+        ],
+        "evidence": [
+          "a changing magnetic field can generate an electric current",
+          "Faraday's law of electromagnetic induction",
+          "Lenz's law",
+          "induced current always acts to oppose the change that caused it",
+          "the scanner excites protons using magnetic and radiofrequency fields",
+          "induced currents in coils to detect the returning signals"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "relied on induced currents in coils to detect the returning signals"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Faraday\u2019s law of electromagnetic induction"
+          },
+          {
+            "category": "physics",
+            "term": "induced current"
+          },
+          {
+            "category": "physics",
+            "term": "Lenz\u2019s law"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scanner"
+          },
+          {
+            "category": "signal_processing",
+            "term": "magnetic and radiofrequency fields"
+          },
+          {
+            "category": "signal_processing",
+            "term": "induced currents in coils"
+          }
+        ],
+        "evidence": [
+          "So far, we have seen that an electric current can generate a magnetic field. But the reverse is also true: a changing magnetic field can generate an electric current.",
+          "The scanner excites protons using magnetic and radiofrequency fields, and then relies on induced currents in coils to detect the returning signals."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "If you insert a magnet into the loop, or pull it out, the magnetic field inside the loop changes. This change induces a current in the loop"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "electric current",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "conducting loop"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

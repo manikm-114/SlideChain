@@ -1,0 +1,170 @@
+{
+  "lecture": "Lecture 14",
+  "slide_id": "Slide48",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide48.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide48.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide48.json",
+        "parsed": {
+          "term": "context",
+          "category": "communication"
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"millisievert\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"microsievert\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"natural radiation dose\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"India\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"China\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"Toronto\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"United States\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"natural background radiation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"background levels\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"medical radiation doses\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"context\\\", \\\"category\\\": \\\"communication\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"If you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\\", \\n             \\\"In China, the natural background radiation exposure is roughly half that of India.\\\",\\n             \\\"If you are concerned that radiation is harmful, then living in Toronto would be better,\", \"parsed\": {\"term\": \"context\", \"category\": \"communication\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide48.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"India\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"millisieverts\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"You receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide48.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "radiation dose",
+              "category": "physics"
+            },
+            {
+              "term": "natural sources",
+              "category": "physics"
+            },
+            {
+              "term": "millisieverts",
+              "category": "physics"
+            },
+            {
+              "term": "background radiation",
+              "category": "physics"
+            },
+            {
+              "term": "cosmic rays",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "annual natural radiation dose",
+            "natural sources like soil and cosmic rays",
+            "annual natural radiation dose of over 10 millisieverts",
+            "natural background radiation exposure",
+            "comes from natural sources in the environment"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"radiation dose\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"natural sources\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"millisieverts\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"background radiation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"cosmic rays\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"annual natural radiation dose\\\",\\n    \\\"natural sources like soil and cosmic rays\\\",\\n    \\\"annual natural radiation dose of over 10 millisieverts\\\",\\n    \\\"natural background radiation exposure\\\",\\n    \\\"comes from natural sources in the environment\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"radiation dose\", \"category\": \"physics\"}, {\"term\": \"natural sources\", \"category\": \"physics\"}, {\"term\": \"millisieverts\", \"category\": \"physics\"}, {\"term\": \"background radiation\", \"category\": \"physics\"}, {\"term\": \"cosmic rays\", \"category\": \"physics\"}], \"evidence\": [\"annual natural radiation dose\", \"natural sources like soil and cosmic rays\", \"annual natural radiation dose of over 10 millisieverts\", \"natural background radiation exposure\", \"comes from natural sources in the environment\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide48.json",
+        "parsed": {
+          "s": "Toronto",
+          "p": "measures",
+          "o": "lower natural background radiation",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "If you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"India\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"over 10 millisieverts\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"If you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\\"},\\n    {\\\"s\\\":\\\"China\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"roughly half that of India\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"In China, the natural background radiation exposure is roughly half that of India.\\\"},\\n    {\\\"s\\\":\\\"Toronto\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"lower natural background radiation\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"If you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\\"},\\n    {\\\"s\\\":\\\"United States\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"about three millisieverts per year\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"In the United States, the average natural background radiation dose\", \"parsed\": {\"s\": \"Toronto\", \"p\": \"measures\", \"o\": \"lower natural background radiation\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"If you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide48.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "millisieverts",
+              "category": "physics"
+            },
+            {
+              "term": "microsieverts",
+              "category": "physics"
+            },
+            {
+              "term": "natural background radiation",
+              "category": "physics"
+            },
+            {
+              "term": "cosmic rays",
+              "category": "physics"
+            },
+            {
+              "term": "Toronto",
+              "category": "modality"
+            },
+            {
+              "term": "United States",
+              "category": "modality"
+            },
+            {
+              "term": "average natural background radiation dose",
+              "category": "physics"
+            },
+            {
+              "term": "background levels",
+              "category": "physics"
+            },
+            {
+              "term": "natural sources",
+              "category": "physics"
+            },
+            {
+              "term": "environment",
+              "category": "physics"
+            },
+            {
+              "term": "medical radiation doses",
+              "category": "physics"
+            },
+            {
+              "term": "context",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "living in India",
+            "roughly half that of India",
+            "living in Toronto would be better",
+            "average natural background radiation dose",
+            "unavoidable since radiation comes from natural sources in the environment",
+            "helps put medical radiation doses into context"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T09:06:14.574032+00:00\", \"text_length\": 808, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"millisieverts\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"microsieverts\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"natural background radiation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"cosmic rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"Toronto\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"United States\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"average natural background radiation dose\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"background levels\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"natural sources\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"environment\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"medical radiation doses\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"context\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"living in India\\\",\\n    \\\"roughly half that of India\\\",\\n    \\\"living in Toronto would be better\\\",\\n    \\\"average natural background radiation dose\\\",\\n    \\\"unavoidable since radiation comes from natural sources in the environment\\\",\\n    \\\"helps put medical radiation doses into context\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"millisieverts\", \"category\": \"physics\"}, {\"term\": \"microsieverts\", \"category\": \"physics\"}, {\"term\": \"natural background radiation\", \"category\": \"physics\"}, {\"term\": \"cosmic rays\", \"category\": \"physics\"}, {\"term\": \"Toronto\", \"category\": \"modality\"}, {\"term\": \"United States\", \"category\": \"modality\"}, {\"term\": \"average natural background radiation dose\", \"category\": \"physics\"}, {\"term\": \"background levels\", \"category\": \"physics\"}, {\"term\": \"natural sources\", \"category\": \"physics\"}, {\"term\": \"environment\", \"category\": \"physics\"}, {\"term\": \"medical radiation doses\", \"category\": \"physics\"}, {\"term\": \"context\", \"category\": \"physics\"}], \"evidence\": [\"living in India\", \"roughly half that of India\", \"living in Toronto would be better\", \"average natural background radiation dose\", \"unavoidable since radiation comes from natural sources in the environment\", \"helps put medical radiation doses into context\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide48.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:57:27.423177+00:00\", \"text_length\": 808, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide48.json",
+        "parsed": {
+          "term": "put medical radiation doses into context",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T07:35:58.589117+00:00\", \"text_length\": 808, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"natural reference\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"average annual effective dose from natural sources\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"millisieverts\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"microsieverts\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"natural background radiation exposure\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"radiation comes from natural sources in the environment\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"put medical radiation doses into context\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Before we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\\",\\n    \\\"If you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\\",\\n    \\\"In China, the natural background radiation exposure is roughly half that of India.\\\",\\n    \\\"If you are\", \"parsed\": {\"term\": \"put medical radiation doses into context\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide48.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide48\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:41:50.439453+00:00\", \"text_length\": 808, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBefore we dive deeper, let me give you a natural reference to help put radiation dose levels in perspective.\\nIf you live in India, you receive an annual natural radiation dose of over 10 millisieverts—or 10 million microsieverts—which comes from natural sources like soil and cosmic rays.\\n\\nIn China, the natural background radiation exposure is roughly half that of India.\\nIf you are concerned that radiation is harmful, then living in Toronto would be better, as the natural background radiation there is lower.\\nIn the United States, the average natural background radiation dose is about three millisieverts per year.\\n\\nThese background levels are unavoidable since radiation comes from natural sources in the environment.\\nUnderstanding these reference levels helps put medical radiation doses into context.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

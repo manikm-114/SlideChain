@@ -1,0 +1,168 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Nyquist rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Shannon interpolation formula"
+          },
+          {
+            "category": "signal_processing",
+            "term": "band-limited signals"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete samples"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructed signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "original signal"
+          }
+        ],
+        "evidence": [
+          "sampling rate is high enough to meet the sampling theorem\u2019s requirement",
+          "sampling rate is greater than twice the maximum frequency in the signal - the Nyquist rate",
+          "Shannon interpolation formula to reconstruct the original signal perfectly",
+          "band-limited signals",
+          "continuous signal",
+          "discrete samples",
+          "reconstructed signal",
+          "original signal"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "if the sampling rate is greater than twice the maximum frequency in the signal - the Nyquist rate - then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Shannon interpolation formula",
+            "p": "reconstructs_with",
+            "s": "reconstructed signal"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sampling theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Nyquist rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Shannon interpolation formula"
+          },
+          {
+            "category": "signal_processing",
+            "term": "band-limited signals"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous and discrete forms"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          }
+        ],
+        "evidence": [
+          "The reconstructed signal (shown in red) lies exactly on top of the original black curve.",
+          "You can repeat this process over and over, with different sample sets, and it will work every time.",
+          "With the right sampling rate, theory and practice agree perfectly."
+        ]
+      },
+      "triples": null
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "band-limited signals"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The blue points show where we took our samples - a limited number of values, spaced evenly in time."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "where we took our samples",
+        "p": "represents",
+        "s": "blue points"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Nyquist rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Shannon interpolation formula"
+          },
+          {
+            "category": "signal_processing",
+            "term": "reconstructed signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "band-limited signals"
+          },
+          {
+            "category": "signal_processing",
+            "term": "original signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete samples"
+          }
+        ],
+        "evidence": [
+          "...if the sampling rate is greater than twice the maximum frequency in the signal - the Nyquist rate - then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.",
+          "For band-limited signals, as long as we sample fast enough, we can go back and forth between continuous and discrete forms without losing information."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

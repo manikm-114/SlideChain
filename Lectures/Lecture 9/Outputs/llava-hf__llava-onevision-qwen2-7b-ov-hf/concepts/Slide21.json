@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s refine our frequency bins by a factor of two — the same idea we used earlier when going from one-hertz bins to zero-point-five-hertz bins.\n\nWe do this by setting a bin-refine factor equal to two, and then increasing the FFT length to be two times the number of samples in our original time vector. In practice, this means appending enough zeros to double the length of the signal before computing the FFT.\nWhen we plot the result, the improvement is clear: the frequency at two hundred two point five hertz is now well resolved, showing a sharp and distinct peak.\n\nHowever, notice that the frequency at four hundred forty-five point eight hertz is still not well resolved. Even with a bin spacing of zero-point-five hertz, this frequency does not fall exactly on one of the discrete FFT bins, so its energy is still spread across multiple bins. The peak is visible but not as sharp or as tall as the perfectly aligned frequencies.\n\nThe takeaway is that zero-padding and bin refinement improve resolution, but they cannot create a perfectly sharp spike unless the frequency exactly matches a discrete bin location.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"bin-refine factor\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT length\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency bins\", \"category\": \"signal_processing\"},\n    {\"term\": \"resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete FFT bins\", \"category\": \"signal_processing\"},\n    {\"term\": \"perfectly aligned frequencies\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-spacing\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"We do this by setting a bin-refine factor equal to two, and then increasing the FFT length to be two times the number of samples in our original time vector. In practice, this means appending enough zeros to double the length of the signal before computing the FFT.\", \"The takeaway is that zero-padding and bin refinement improve resolution, but they cannot create a perfectly sharp spike unless the frequency exactly matches a discrete bin location.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "bin-refine factor",
+        "category": "signal_processing"
+      },
+      {
+        "term": "FFT length",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency bins",
+        "category": "signal_processing"
+      },
+      {
+        "term": "resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete FFT bins",
+        "category": "signal_processing"
+      },
+      {
+        "term": "perfectly aligned frequencies",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "We do this by setting a bin-refine factor equal to two, and then increasing the FFT length to be two times the number of samples in our original time vector. In practice, this means appending enough zeros to double the length of the signal before computing the FFT.",
+      "The takeaway is that zero-padding and bin refinement improve resolution, but they cannot create a perfectly sharp spike unless the frequency exactly matches a discrete bin location."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide60",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"CT scanner\",\n      \"p\": \"uses\",\n      \"o\": \"rotating table\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We built a CT scanner that does not rotate the gantry as in conventional designs. Instead, the patient lies on a rotating table—literally a sheet that turns—while the X-ray tube and detector remain fixed in place.\"\n    },\n    {\n      \"s\": \"CT scanner\",\n      \"p\": \"produces\",\n      \"o\": \"good-quality images\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Although this setup limits the viewing angle compared to traditional systems, it still produces good-quality images.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT scanner",
+        "p": "uses",
+        "o": "rotating table",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We built a CT scanner that does not rotate the gantry as in conventional designs. Instead, the patient lies on a rotating table-literally a sheet that turns-while the X-ray tube and detector remain fixed in place."
+      },
+      {
+        "s": "CT scanner",
+        "p": "produces",
+        "o": "good-quality images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Although this setup limits the viewing angle compared to traditional systems, it still produces good-quality images."
+      }
+    ]
+  }
+}

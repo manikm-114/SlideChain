@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT scan\", \"p\":\"uses\", \"o\":\"gamma rays and X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"First, gamma rays and X-rays have overlapping energy ranges.\"},\n    {\"s\":\"CT scan\", \"p\":\"reconstructs_with\", \"o\":\"line integrals\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Second, the data from both modalities can be expressed as line integrals.\"},\n    {\"s\":\"CT scan\", \"p\":\"produces\", \"o\":\"two-dimensional slices\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Third, both CT and nuclear imaging generate two-dimensional slices, three-dimensional volumes, or even four-dimensional datasets when dynamics are included.\"},\n    {\"s\":\"PET scan\", \"p\":\"uses\", \"o\":\"internal sources\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In CT, the radiation source is external — the X-ray tube outside the patient. In nuclear imaging, the source is internal — a radioactive tracer introduced into the bloodstream.\"},\n    {\"s\":\"PET scan\", \"p\":\"measures",
+  "parsed": {
+    "s": "PET scan",
+    "p": "uses",
+    "o": "internal sources",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In CT, the radiation source is external - the X-ray tube outside the patient. In nuclear imaging, the source is internal - a radioactive tracer introduced into the bloodstream."
+    ]
+  }
+}

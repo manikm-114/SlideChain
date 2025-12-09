@@ -1,0 +1,171 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide39",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide39.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide39.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "matrix multiplication",
+              "category": "mathematics"
+            },
+            {
+              "term": "nested loops",
+              "category": "software"
+            },
+            {
+              "term": "dot product",
+              "category": "mathematics"
+            },
+            {
+              "term": "optimization",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "We create a function called matrix_multiply that takes two square matrices and a size n.",
+            "Using three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"matrix multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nested loops\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"dot product\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"optimization\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"We create a function called matrix_multiply that takes two square matrices and a size n.\\\", \\\"Using three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"matrix multiplication\", \"category\": \"mathematics\"}, {\"term\": \"nested loops\", \"category\": \"software\"}, {\"term\": \"dot product\", \"category\": \"mathematics\"}, {\"term\": \"optimization\", \"category\": \"software\"}], \"evidence\": [\"We create a function called matrix_multiply that takes two square matrices and a size n.\", \"Using three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide39.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"matrix_multiply\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"square matrices\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "matrix multiplication",
+              "category": "mathematics"
+            },
+            {
+              "term": "nested loops",
+              "category": "algorithm"
+            },
+            {
+              "term": "dot product",
+              "category": "mathematics"
+            },
+            {
+              "term": "function",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "write our own matrix multiplication function",
+            "Using three nested loops",
+            "dot product between a row of A and a column of B",
+            "create a function called matrix_multiply",
+            "Hint: Use vectorization"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"matrix multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nested loops\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"dot product\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"function\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"vectorization\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"write our own matrix multiplication function\\\",\\n    \\\"Using three nested loops\\\",\\n    \\\"dot product between a row of A and a column of B\\\",\\n    \\\"create a function called matrix_multiply\\\",\\n    \\\"Hint: Use vectorization\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"matrix multiplication\", \"category\": \"mathematics\"}, {\"term\": \"nested loops\", \"category\": \"algorithm\"}, {\"term\": \"dot product\", \"category\": \"mathematics\"}, {\"term\": \"function\", \"category\": \"software\"}], \"evidence\": [\"write our own matrix multiplication function\", \"Using three nested loops\", \"dot product between a row of A and a column of B\", \"create a function called matrix_multiply\", \"Hint: Use vectorization\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide39.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "matrix_multiply",
+              "p": "uses",
+              "o": "three nested loops",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Using three nested loops, we compute the product row by row and column by column."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"matrix_multiply\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"three nested loops\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Using three nested loops, we compute the product row by row and column by column.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"matrix_multiply\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"product of two square matrices\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"We create a function called matrix_multiply that takes two square matrices and a size n.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"matrix_multiply\", \"p\": \"uses\", \"o\": \"three nested loops\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Using three nested loops, we compute the product row by row and column by column.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide39.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "matrix_multiply",
+              "category": "algorithm"
+            },
+            {
+              "term": "matrix multiplication",
+              "category": "mathematics"
+            },
+            {
+              "term": "nested loops",
+              "category": "software"
+            },
+            {
+              "term": "dot product",
+              "category": "mathematics"
+            },
+            {
+              "term": "under the hood",
+              "category": "software"
+            },
+            {
+              "term": "optimization",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "We create a function called matrix_multiply that takes two square matrices and a size n.",
+            "Using three nested loops, we compute the product row by row and column by column.",
+            "For each entry in the result, we take a dot product between a row of A and a column of B.",
+            "This hands-on approach shows exactly how matrix multiplication works under the hood - which is important to understand before we talk about optimization."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:54:08.420932+00:00\", \"text_length\": 502, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"matrix_multiply\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"matrix multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nested loops\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"dot product\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"under the hood\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"optimization\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"We create a function called matrix_multiply that takes two square matrices and a size n.\\\",\\n    \\\"Using three nested loops, we compute the product row by row and column by column.\\\",\\n    \\\"For each entry in the result, we take a dot product between a row of A and a column of B.\\\",\\n    \\\"This hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"matrix_multiply\", \"category\": \"algorithm\"}, {\"term\": \"matrix multiplication\", \"category\": \"mathematics\"}, {\"term\": \"nested loops\", \"category\": \"software\"}, {\"term\": \"dot product\", \"category\": \"mathematics\"}, {\"term\": \"under the hood\", \"category\": \"software\"}, {\"term\": \"optimization\", \"category\": \"software\"}], \"evidence\": [\"We create a function called matrix_multiply that takes two square matrices and a size n.\", \"Using three nested loops, we compute the product row by row and column by column.\", \"For each entry in the result, we take a dot product between a row of A and a column of B.\", \"This hands-on approach shows exactly how matrix multiplication works under the hood - which is important to understand before we talk about optimization.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide39.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:38:30.561004+00:00\", \"text_length\": 502, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide39.json",
+        "parsed": {
+          "term": "this hands-on approach shows exactly how matrix multiplication works under the hood - which is important to understand before we talk about optimization.",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:47:19.601832+00:00\", \"text_length\": 502, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"write our own matrix multiplication function — no built-in functions allowed.\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"create a function called matrix_multiply that takes two square matrices and a size n.\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"using three nested loops, we compute the product row by row and column by column.\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"for each entry in the result, we take a dot product between a row of A and a column of B.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"this hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"write our own matrix multiplication function — no built-in functions allowed.\\\",\\n    \\\"create a function called matrix_multiply that takes two square matrices and a size n.\\\",\\n    \\\"using three nested loops, we compute the product row by row and column by column.\\\",\\n    \\\"for each entry in the result, we take a dot product\", \"parsed\": {\"term\": \"this hands-on approach shows exactly how matrix multiplication works under the hood - which is important to understand before we talk about optimization.\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide39.json",
+        "parsed": {
+          "s": "matrix_multiply",
+          "p": "represents",
+          "o": "dot product between a row of A and a column of B",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "For each entry in the result, we take a dot product between a row of A and a column of B."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide39\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:55:38.716819+00:00\", \"text_length\": 502, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s write our own matrix multiplication function — no built-in functions allowed.\\nWe create a function called matrix_multiply that takes two square matrices and a size n.\\nUsing three nested loops, we compute the product row by row and column by column. For each entry in the result, we take a dot product between a row of A and a column of B.\\nThis hands-on approach shows exactly how matrix multiplication works under the hood — which is important to understand before we talk about optimization.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"matrix_multiply\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"three nested loops\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"We create a function called matrix_multiply that takes two square matrices and a size n. Using three nested loops, we compute the product row by row and column by column.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"matrix_multiply\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"dot product between a row of A and a column of B\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"For each entry in the result, we take a dot product between a row of A and a column of B.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"matrix_multiply\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"n-by-n matrix C\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.8,\\n      \\\"evidence\\\": \\\"Write a Matlab function to multiply two n-by-n matrices A and B. (\", \"parsed\": {\"s\": \"matrix_multiply\", \"p\": \"represents\", \"o\": \"dot product between a row of A and a column of B\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"For each entry in the result, we take a dot product between a row of A and a column of B.\"]}}"
+      }
+    }
+  }
+}

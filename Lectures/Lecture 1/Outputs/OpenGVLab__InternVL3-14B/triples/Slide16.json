@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"health-related knowledge\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"First—and perhaps most importantly—it gives you essential health-related knowledge.\"\n    },\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"career requirements\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The second reason is career-related.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "medical imaging",
+        "p": "depends_on",
+        "o": "health-related knowledge",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "First-and perhaps most importantly-it gives you essential health-related knowledge."
+      }
+    ]
+  }
+}

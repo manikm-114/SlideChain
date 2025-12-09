@@ -1,0 +1,25 @@
+The last topic I’m going to explain is motion artifacts. Imagine you have a phantom object, like this one, viewed at angle zero. The phantom has a taiji pattern, a yin-yang shape.
+As you slowly increase the projection angle, the X-ray source rotates around the phantom.
+Over time, the data you collect changes. When the angle reaches 90 degrees, the phantom appears compressed, shrunk to a minimum in the projection.
+
+As the source continues rotating, at 180 degrees, the phantom appears expanded again.
+This back-and-forth pattern creates a sinusoidal oscillation in the data.
+This example illustrates what happens when the object isn’t stationary, but moves periodically.
+You gather projection data while the object moves according to this periodic motion.
+If you then apply filtered backprojection to reconstruct images from this data, you get motion artifacts—blurring or distortion caused by the object’s movement during acquisition.
+
+However, if you know the object’s motion trajectory, you can incorporate that information into iterative reconstruction algorithms.
+With this additional information, it is possible to recover accurate images despite motion.
+Tomographic reconstruction remains feasible, provided you have either explicit knowledge of motion or use algorithms that infer motion implicitly.
+Due to time constraints in this lecture, we won’t delve deeply into motion artifact correction algorithms.
+For cardiac imaging, one way to reduce motion artifacts is through hardware: performing ultra-fast scanning so the heart doesn’t have significant motion during image acquisition.
+
+This instantaneous imaging “freezes” the cardiac structure, minimizing motion blur.
+Another way is through smart computational algorithms that predict motion and correct for it during reconstruction.
+Often, cardiac CT patients are given beta blockers to slow the heart rate, reducing motion during scanning.
+Additionally, CT acquisition can be synchronized with the ECG signal, coupling image data with specific cardiac phases.
+The ECG indicates when the heart is largest or smallest. You can select data segments corresponding to the heart’s maximum volume and reconstruct images at that phase.
+
+Similarly, you regroup data segments for the minimum volume phase and reconstruct images accordingly.
+This approach allows reconstruction of a beating heart in different cardiac phases.
+This gives a rough idea of how motion artifacts are managed in dynamic organ imaging.

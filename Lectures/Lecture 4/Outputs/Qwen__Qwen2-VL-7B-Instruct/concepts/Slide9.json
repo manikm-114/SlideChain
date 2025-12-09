@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide9",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:14:49.565617+00:00",
+  "text_length": 597,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s extend that idea.\nImpulse isn’t limited to rectangular shapes. We can see in this graph that different Gaussian curves — whether wide or narrow, flat or sharp — can all serve as impulse-like inputs.\n\nWhat matters is the area under each curve. This area represents the total impulse delivered by the force, regardless of how the function looks. As long as that area remains the same, the impact on the system is the same.\nThis insight is critical in both physics and engineering: we often abstract away the exact shape of a signal and focus instead on its integrated effect — the impulse.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Gaussian curves\", \"category\": \"signal_processing\"},\n    {\"term\": \"area under the curve\", \"category\": \"mathematics\"},\n    {\"term\": \"total impulse\", \"category\": \"physics\"},\n    {\"term\": \"abstract away\", \"category\": \"signal_processing\"},\n    {\"term\": \"integrated effect\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"different Gaussian curves — whether wide or narrow, flat or sharp — can all serve as impulse-like inputs.\",\n    \"As long as that area remains the same, the impact on the system is the same.\",\n    \"we often abstract away the exact shape of a signal and focus instead on its integrated effect — the impulse.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Gaussian curves",
+        "category": "signal_processing"
+      },
+      {
+        "term": "total impulse",
+        "category": "physics"
+      },
+      {
+        "term": "abstract away",
+        "category": "signal_processing"
+      },
+      {
+        "term": "integrated effect",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "different Gaussian curves - whether wide or narrow, flat or sharp - can all serve as impulse-like inputs.",
+      "As long as that area remains the same, the impact on the system is the same.",
+      "we often abstract away the exact shape of a signal and focus instead on its integrated effect - the impulse."
+    ]
+  }
+}

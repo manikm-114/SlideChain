@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide7",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s see what happens when we compute the convolution at n equals eight.\n\nJust like before, the red arrows on the top represent f of k, and the green arrows on the bottom show g of eight minus k — meaning the second signal has been flipped and shifted so that its index aligns with n equals eight.\nIn our hand analogy, you can imagine sliding the flipped hand far enough to the right so that only the outer fingers — the “end fingers” — are touching. This is the opposite alignment from what we saw at n equals zero.\n\nAt this position, only a few of the red and green arrows overlap. We multiply those overlapping values and then sum them up. The result gives us the convolution value at n equals eight.\nBy repeating this shifting process for every value of n, we build up the entire convolution sequence, one position at a time.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"flipped and shifted\", \"category\": \"signal_processing\"},\n    {\"term\": \"end fingers\", \"category\": \"signal_processing\"},\n    {\"term\": \"multiplication and sum\", \"category\": \"signal_processing\"},\n    {\"term\": \"entire convolution sequence\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Just like before, the red arrows on the top represent f of k, and the green arrows on the bottom show g of eight minus k — meaning the second signal has been flipped and shifted so that its index aligns with n equals eight.\", \"At this position, only a few of the red and green arrows overlap. We multiply those overlapping values and then sum them up. The result gives us the convolution value at n equals eight.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "flipped and shifted",
+        "category": "signal_processing"
+      },
+      {
+        "term": "end fingers",
+        "category": "signal_processing"
+      },
+      {
+        "term": "entire convolution sequence",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Just like before, the red arrows on the top represent f of k, and the green arrows on the bottom show g of eight minus k - meaning the second signal has been flipped and shifted so that its index aligns with n equals eight.",
+      "At this position, only a few of the red and green arrows overlap. We multiply those overlapping values and then sum them up. The result gives us the convolution value at n equals eight."
+    ]
+  }
+}

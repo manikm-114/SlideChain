@@ -1,0 +1,46 @@
+Now that we’ve seen why digital signals are so useful, let’s take a look at how real-world signals actually make their way into a computer.
+This diagram shows the full journey — from a physical system to digital data inside your laptop.
+
+Let’s walk through it step by step.
+It all starts with the physical world — maybe we’re measuring temperature, pressure, light intensity, motion, or some other physical quantity.
+
+To capture this, we need a sensor — or more specifically, a transducer.A transducer converts the physical phenomenon into an electrical signal — usually an analog one.This analog signal may be noisy, or it may contain extra fluctuations we don’t want.
+
+So the next step is called signal conditioning.Here we might filter the signal, smooth it, amplify it, or perform other adjustments to get it into a clean, usable form.This step helps us reduce noise and make sure the signal is suitable for the next stage.
+
+Now comes the critical component — the Analog-to-Digital Converter, or A-D converter for short.
+This is where the continuous analog signal gets sampled and turned into a digital signal — a sequence of numbers the computer can store and process.
+
+More specifically, to get a analog signal into the computer, let’s break down what happens during digitization with an A/D converter — using this visual example.
+
+Here you see an analog signal, represented here as a smooth, continuous wave — like a sound wave moving across time.Actually, a digital computer can’t store this continuous curve directly.Instead, it must sample the signal at specific time points.
+
+At each of these time points, we ask:What is the value of the signal right here?And that gives us a sequence of numbers.
+In the rightmost illustration, you can see vertical bars that “catch” the wave at regular intervals.These bars represent sampling operations — and the height of each bar shows the value of the signal at that point in time.
+
+Now, here's something important:The computer can’t store every possible value — like pi=3.14159 etc. or e=2.71828 etc. with infinite precision.Instead, it must round the values to the nearest available level.
+This process is called quantization.It means converting a smooth, continuous range of amplitudes into a set of fixed, discrete values — often represented by whole numbers.
+
+So here, we get a string of numbers like:3, 5, 6, 6, 4, 2, 1, 2.
+And these numbers are what the computer stores.
+But even these whole numbers aren’t stored in decimal form.Computers use binary — just zeros and ones to represent either an integral or a decimal number.
+
+So each number gets translated into binary. For example:
+1 becomes zero one,
+2 becomes one zero,
+3 becomes one one,
+and so on.
+This is how a continuous analog signal — like sound or temperature — becomes a digital signal inside a computer:First through sampling across time, then through quantization of amplitude, and finally through binary encoding.
+
+Each step introduces a tradeoff:
+More sampling points give better resolution in time.
+More quantization levels give better precision in amplitude.
+But more of both means more data to store and process.
+This is the foundation of digital signal processing — and now you’ve seen how it all begins.
+
+And finally, that digital data — made up of zeros and ones — enters the computer, where it can be displayed, analyzed, stored, or transmitted.
+
+So again, the pipeline goes like this:
+Physical system → transducer → signal conditioning → analog-to-digital conversion → computer.
+This entire process happens in almost every modern system — from medical devices to smart homes to autonomous vehicles.
+And the better we understand this chain, the better we can design systems that are accurate, efficient, and reliable.

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"for loops\",\n      \"p\": \"uses\",\n      \"o\": \"known sequence\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"for loops are useful when working through a known sequence.\"\n    },\n    {\n      \"s\": \"while loops\",\n      \"p\": \"depends_on\",\n      \"o\": \"condition\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, a while loop runs as long as a condition is true.\"\n    },\n    {\n      \"s\": \"break\",\n      \"p\": \"produces\",\n      \"o\": \"exit a loop early\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Finally, break lets you exit a loop early.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "for loops",
+        "p": "uses",
+        "o": "known sequence",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "for loops are useful when working through a known sequence."
+      },
+      {
+        "s": "break",
+        "p": "produces",
+        "o": "exit a loop early",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Finally, break lets you exit a loop early."
+      }
+    ]
+  }
+}

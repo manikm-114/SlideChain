@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide8",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThis slide further illustrates the principle of nuclear imaging. Here we see the use of a parallel-hole collimator. The purpose of the collimator is to make sure that the signals we detect are aligned with the holes. That way, any photon recorded must have come from directly beneath that hole, and this gives us the spatial information we need. Without it, we would not know the photon’s origin.\n\nOnce the gamma photon passes through the collimator, it hits the scintillation crystal. The crystal converts that high-energy photon into visible light. Then the photomultiplier tubes convert the light into an electrical signal, which can be read by the computer for image formation.\nNow, notice what happens after a radioactive tracer is injected into the bloodstream. The tracer travels through the body and tends to accumulate in certain locations, depending on the physiology. In this example, for cardiac imaging, the tracer concentrates in the heart muscle. This allows us to see how it penetrates the cardiac chambers and the muscle wall.\nThe resulting image reflects the distribution of the tracer. Since the tracer participates in biochemical reactions, nuclear imaging provides insight into physiology — the function of tissues — rather than just anatomy.\n\nThis makes nuclear imaging highly complementary to X-ray imaging. While X-ray imaging uses an external source and shows structure, nuclear imaging relies on an internal radioactive tracer and shows biological function. Together, they give us a much more complete picture.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"gamma photon\", \"p\":\"uses\", \"o\":\"collimator\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Once the gamma photon passes through the collimator, it hits the scintillation crystal.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "gamma photon",
+        "p": "uses",
+        "o": "collimator",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "Once the gamma photon passes through the collimator, it hits the scintillation crystal."
+      }
+    ]
+  }
+}

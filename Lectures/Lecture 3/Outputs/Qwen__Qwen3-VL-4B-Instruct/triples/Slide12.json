@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-07T22:16:00.051501+00:00",
+  "text_length": 544,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nAnother type of system is the control system. Unlike simple measurement systems, control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\nFor instance, think of a radar tracking an airplane. The radar detects the plane’s position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change. Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Control System\",\n      \"p\": \"uses\",\n      \"o\": \"feedback\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\"\n    },\n    {\n      \"s\": \"Control System\",\n      \"p\": \"produces\",\n      \"o\": \"output\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Control System... generates an output\"\n    },\n    {\n      \"s\": \"Control System\",\n      \"p\": \"depends_on\",\n      \"o\": \"feedback\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Control System",
+        "p": "uses",
+        "o": "feedback",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior."
+      },
+      {
+        "s": "Control System",
+        "p": "produces",
+        "o": "output",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Control System... generates an output"
+      },
+      {
+        "s": "Control System",
+        "p": "depends_on",
+        "o": "feedback",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior."
+      }
+    ]
+  }
+}

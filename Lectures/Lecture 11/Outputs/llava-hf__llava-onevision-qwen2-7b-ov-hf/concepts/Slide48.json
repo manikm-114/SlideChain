@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide48",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s step back and think about what diagnostic performance really means.\n\nNot every doctor reads images with the same skill. Some physicians, with years of training and experience, can clearly separate diseased from non-diseased cases. For them, the two distributions hardly overlap, and their ROC curve bends sharply toward the upper-left corner — that’s excellent diagnostic power.\n\nOthers, perhaps junior residents still in training, may not yet recognize subtle features. Their separation is weaker, the overlap is greater, and the ROC curve lies closer to the diagonal. In the extreme case, if you cannot tell disease from normal at all, your decision is no better than flipping a coin — that’s the chance line.\n\nSo diagnostic performance is shaped by two things: the reader’s skill and the technology’s power. Better imaging systems reduce overlap, but equally important is the ability of the radiologist to interpret the image correctly.\n\nThat’s why, in practice, the same scan might lead to different conclusions depending on who reads it. A highly trained radiologist can extract subtle discriminating features that others may miss. This is exactly what the ROC curve captures — the combined effect of technology and human expertise.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"diagnostic performance\", \"category\": \"quality_metric\"},\n    {\"term\": \"ROC curve\", \"category\": \"mathematics\"},\n    {\"term\": \"reader’s skill\", \"category\": \"software\"},\n    {\"term\": \"technology’s power\", \"category\": \"instrumentation\"},\n    {\"term\": \"junior residents\", \"category\": \"workflow\"},\n    {\"term\": \"highly trained radiologist\", \"category\": \"algorithm\"},\n    {\"term\": \"subtle discriminating features\", \"category\": \"signal_processing\"},\n    {\"term\": \"ROC curve\", \"category\": \"communication\"},\n    {\"term\": \"technology and human expertise\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"Diagnostic performance is shaped by two things: the reader’s skill and the technology’s power.\", \"Better imaging systems reduce overlap, but equally important is the ability of the radiologist to interpret the image correctly.\", \"The ROC curve captures — the combined effect of technology and human expertise.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "diagnostic performance",
+        "category": "quality_metric"
+      },
+      {
+        "term": "ROC curve",
+        "category": "mathematics"
+      },
+      {
+        "term": "reader’s skill",
+        "category": "software"
+      },
+      {
+        "term": "technology’s power",
+        "category": "instrumentation"
+      },
+      {
+        "term": "junior residents",
+        "category": "workflow"
+      },
+      {
+        "term": "highly trained radiologist",
+        "category": "algorithm"
+      },
+      {
+        "term": "subtle discriminating features",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ROC curve",
+        "category": "communication"
+      },
+      {
+        "term": "technology and human expertise",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "Diagnostic performance is shaped by two things: the reader’s skill and the technology’s power.",
+      "Better imaging systems reduce overlap, but equally important is the ability of the radiologist to interpret the image correctly.",
+      "The ROC curve captures - the combined effect of technology and human expertise."
+    ]
+  }
+}

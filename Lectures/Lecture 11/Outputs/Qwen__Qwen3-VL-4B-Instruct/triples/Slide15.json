@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T03:12:08.484037+00:00",
+  "text_length": 1376,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at how the Structural Similarity Index, or SSIM, is actually computed.\nSuppose we have two images, which we’ll call signal X and signal Y. The first step is to look at their luminance, which simply means the average brightness level. We measure the mean intensity of each image and make sure we are comparing them on the same scale.\n\nNext, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean. A high standard deviation means strong contrast, while a low standard deviation means the image looks flat or washed out. So we compute the standard deviation for each image to quantify its contrast.\n\nAfter normalizing for luminance and contrast, we focus on the most important part: the structure. This step captures how patterns of pixels in one image relate to patterns in the other — whether the edges, textures, and fine details line up.\n\nFinally, SSIM combines all three comparisons — luminance, contrast, and structure — into a single value between zero and one. A score of one means the images are structurally identical. A lower score means important structural information has been lost.\n\nSo, in summary: SSIM works by checking three things — do the images have the same brightness, the same contrast, and the same structural patterns? When all three align, we say the images are very similar.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Structural Similarity\",\n      \"p\": \"measures\",\n      \"o\": \"luminance\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The first step is to look at their luminance, which simply means the average brightness level.\"\n    },\n    {\n      \"s\": \"Structural Similarity\",\n      \"p\": \"measures\",\n      \"o\": \"contrast\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Next, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean.\"\n    },\n    {\n      \"s\": \"Structural Similarity\",\n      \"p\": \"measures\",\n      \"o\": \"structure\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"After normalizing for luminance and contrast, we focus on the most important part: the structure. This step captures how patterns of pixels in one image relate to patterns in the other — whether the",
+  "parsed": {
+    "s": "Structural Similarity",
+    "p": "measures",
+    "o": "contrast",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Next, we look at the contrast. This is captured by the standard deviation - how much the pixel values vary around the mean."
+    ]
+  }
+}

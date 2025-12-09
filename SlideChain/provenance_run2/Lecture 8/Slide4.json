@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "zero crossings"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "For a pure sinusoid, two unknowns fully describe it: the amplitude and the phase."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "two unknowns",
+        "p": "depends_on",
+        "s": "pure sinusoid"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Nyquist rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "aliasing problem"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "delta functions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "maximum frequency"
+          }
+        ],
+        "evidence": [
+          "In the frequency domain, a pure sine wave corresponds to a pair of delta functions located at its positive and negative frequency components.",
+          "When we sample at exactly 2 w, the duplicated spectra in the frequency domain just touch each other.",
+          "That's why, in practice, sampling exactly at 2 w is risky. To be safe, we require PPP - the spacing between repeated spectra in frequency - to be slightly greater than 2 w."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Suppose our continuous signal is a pure sine wave with a frequency of 1 hertz. That means it completes exactly one cycle in one second. In the frequency domain, this is a band-limited signal - its maximum frequency is 1 hertz.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "continuous signal",
+            "p": "represents",
+            "s": "pure sine wave"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "pair of delta functions"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

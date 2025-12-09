@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide18",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nFrom this point of view, you shoot X-rays, and you are not trying to get a result directly. This is a different perspective. You shoot parallel-beam X-rays, going this way and that way, and then you get line-integral measurements. What do such measurements do? They act like a probing wave.\n\nIn this case, think of the underlying image not as Albert Einstein or a cross-section of your chest. Think of the image as a summation of many waves. Because of Fourier analysis, you can always do this—you reconstruct a bunch of waves.\nFor example, consider waves propagating horizontally, like the green wave. For any horizontal wave, let me make some comments so you understand why Fourier analysis works nicely. For such a horizontal wave, for all X-ray projections along oblique directions—that is, any orientation that is not vertical—we can say one thing: if you do the vertical line integral, the wave has a positive cycle and a negative cycle that cancel out. The wave just keeps oscillating. So if the projection orientation is horizontal or makes an oblique angle—any degree except vertical—all these ray-sums give you zero.\n\nGetting zero means you get no information about the underlying horizontal wave—except in one direction: the vertical direction. Along the vertical projection, the positive and negative cycles do not cancel, so only the vertical projection gives you critical information about a horizontal wave. Other directions cancel out.\n\nFrom the vertical projection, you obtain information about waves propagating horizontally. And Fourier analysis says the image decomposes into many waves along different orientations. So, to get horizontal waves, you use vertical projections. For waves at one-degree orientation, you need projections at ninety degrees plus one degree—the orthogonal direction.\n\nIf you want to resolve all the waves, you need projection angles spanning zero to one-hundred-eighty degrees. This is the heuristic: you need orientations that probe each wave family. With the horizontal wave superimposed this way, you take the vertical projection; then, if you do Fourier analysis along the horizontal direction, you should recover all the wave information along that horizontal direction. Let me explain this a little better.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"X-ray projections\", \"p\":\"measures\", \"o\":\"line-integral measurements\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"'They act like a probing wave.'\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray projections",
+        "p": "measures",
+        "o": "line-integral measurements",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "'They act like a probing wave.'"
+      }
+    ]
+  }
+}

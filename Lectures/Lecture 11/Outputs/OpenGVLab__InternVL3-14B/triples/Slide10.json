@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"entropy\", \"p\":\"measures\", \"o\":\"uncertainty\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"entropy tells us how much information, or how much unpredictability, is contained in a random variable.\"},\n    {\"s\":\"mutual information\", \"p\":\"measures\", \"o\":\"how much uncertainty about Y is reduced when you know X\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"mutual information can be written as the difference between two entropies: the entropy of Y by itself, minus the entropy of Y given X.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "entropy",
+        "p": "measures",
+        "o": "uncertainty",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "entropy tells us how much information, or how much unpredictability, is contained in a random variable."
+      },
+      {
+        "s": "mutual information",
+        "p": "measures",
+        "o": "how much uncertainty about Y is reduced when you know X",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "mutual information can be written as the difference between two entropies: the entropy of Y by itself, minus the entropy of Y given X."
+      }
+    ]
+  }
+}

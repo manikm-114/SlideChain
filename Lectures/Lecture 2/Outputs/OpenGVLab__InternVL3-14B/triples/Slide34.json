@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"matrix tools\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here’s how we morph faces using matrix tools.\"},\n    {\"s\":\"face images\", \"p\":\"warp\", \"o\":\"interpolation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We warp two face images using interpolation on each color channel.\"},\n    {\"s\":\"blending\", \"p\":\"uses\", \"o\":\"weighted average\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Then blend them using a weighted average — with alpha controlling the mix.\"},\n    {\"s\":\"unusual pixels\", \"p\":\"detect\", \"o\":\"Mahalanobis distance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color.\"},\n    {\"s\":\"binary mask\", \"p\":\"create\", \"o\":\"thresholding\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Next, we create a binary mask by thresholding the",
+  "parsed": {
+    "s": "unusual pixels",
+    "p": "detect",
+    "o": "Mahalanobis distance",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "To detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Modulation Transfer Function\",\n      \"p\": \"measures\",\n      \"o\": \"resolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So MTF gives us a frequency-domain way of measuring resolution.\"\n    },\n    {\n      \"s\": \"MTF curve\",\n      \"p\": \"represents\",\n      \"o\": \"behavior of imaging system\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The MTF curve shows this behavior.\"\n    },\n    {\n      \"s\": \"line-pair phantom\",\n      \"p\": \"represents\",\n      \"o\": \"test pattern\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A practical way to think about this is with a line-pair phantom, where black and white bars alternate like a test pattern.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Modulation Transfer Function",
+        "p": "measures",
+        "o": "resolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So MTF gives us a frequency-domain way of measuring resolution."
+      },
+      {
+        "s": "line-pair phantom",
+        "p": "represents",
+        "o": "test pattern",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A practical way to think about this is with a line-pair phantom, where black and white bars alternate like a test pattern."
+      }
+    ]
+  }
+}

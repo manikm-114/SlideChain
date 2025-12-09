@@ -1,0 +1,12 @@
+Let’s take this a step further and look at low-pass and high-pass filtering using the Fourier transform.
+
+Start with the image on the far left — this is our original image of a building. Below it, you see the corresponding frequency spectrum. It contains both low-frequency components, which encode smooth variations like brightness and shading, and high-frequency components, which capture edges and fine details.
+
+Now look at the middle column.
+Here, we’ve applied a low-pass filter. That means we kept only the low-frequency components — those near the center of the Fourier spectrum — and removed the rest. You can see the filtered spectrum just below. The result, shown in the middle image above, is a smoothed version of the original — the fine details are gone, and only the broad, soft structures remain.
+
+Next, we move to the rightmost column.
+This time we’ve done the opposite. We removed the low frequencies and kept only a selected band of high-frequency components. You can see that in the frequency plot — a ring where the center is zeroed out. The corresponding spatial image above now reveals only the edges — the sharp transitions in intensity.
+So by simply choosing which frequency bands to preserve or remove, we can control the kind of information we keep — soft versus sharp, background versus boundary.
+
+This is another powerful reason why we often work in the frequency domain — filtering becomes intuitive and flexible.

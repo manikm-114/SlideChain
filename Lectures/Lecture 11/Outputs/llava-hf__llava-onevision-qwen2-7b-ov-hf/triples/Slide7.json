@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide7",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo far, these measures seem very reasonable. Think about it this way: you have one signal or one image, and you also have a standard — the ground truth. \n\nBy comparing them pixel by pixel, we’re essentially measuring the difference between two curves, or between two surfaces, or even between two volumes in three dimensions.\nThe formula reduces to something very intuitive: it’s about the area between the two curves. The yellow region you see here represents those differences. The larger the area, the greater the error.\n\nThis is why MSE and related measures are so widely used — they give us a direct and interpretable way to say how close or how far two images are. It’s simple, mathematically neat, and visually intuitive.\n\nBut here’s an important point: while this is a good first step, it is not the whole story. Measuring differences point by point tells us something, but not everything. In medical imaging, we also care about structural similarity, system behavior, and clinical tasks. So, as we continue, you’ll see that this is only the beginning.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"pixel\", \"p\":\"measures\", \"o\":\"difference\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"By comparing them pixel by pixel, we’re essentially measuring the difference between two curves, or between two surfaces, or even between two volumes in three dimensions.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "pixel",
+        "p": "measures",
+        "o": "difference",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "By comparing them pixel by pixel, we’re essentially measuring the difference between two curves, or between two surfaces, or even between two volumes in three dimensions."
+      }
+    ]
+  }
+}

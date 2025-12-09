@@ -1,0 +1,7 @@
+Now, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.
+
+Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.
+When we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.
+This is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.
+
+So in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features

@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide6",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s look at a good case — when our sampling rate is high enough to meet the sampling theorem’s requirement.\n\nThe black curve here is our original, continuous signal. Think of it as the “true” signal. The blue points show where we took our samples — a limited number of values, spaced evenly in time.\n\nHere’s the magic: if the sampling rate is greater than twice the maximum frequency in the signal — the Nyquist rate — then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.\nWhen we do that here, the reconstructed signal (shown in red) lies exactly on top of the original black curve. They match so perfectly that you can’t even see the difference.\n\nThis is the sampling theorem in action. For band-limited signals, as long as we sample fast enough, we can go back and forth between continuous and discrete forms without losing information. You can repeat this process over and over, with different sample sets, and it will work every time.\nIn short — with the right sampling rate, theory and practice agree perfectly.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Nyquist rate\", \"category\": \"signal_processing\"},\n    {\"term\": \"Shannon interpolation formula\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstructed signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"band-limited signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"sample rate\", \"category\": \"signal_processing\"},\n    {\"term\": \"original signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete samples\", \"category\": \"signal_processing\"},\n    {\"term\": \"perfect reconstruction\", \"category\": \"signal_processing\"},\n    {\"term\": \"practice and theory agree\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"...if the sampling rate is greater than twice the maximum frequency in the signal — the Nyquist rate — then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.\", \"For band-limited signals, as long as we sample fast enough, we can go back and forth between continuous and discrete forms without losing information.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Nyquist rate",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Shannon interpolation formula",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstructed signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "band-limited signals",
+        "category": "signal_processing"
+      },
+      {
+        "term": "original signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete samples",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "...if the sampling rate is greater than twice the maximum frequency in the signal - the Nyquist rate - then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.",
+      "For band-limited signals, as long as we sample fast enough, we can go back and forth between continuous and discrete forms without losing information."
+    ]
+  }
+}

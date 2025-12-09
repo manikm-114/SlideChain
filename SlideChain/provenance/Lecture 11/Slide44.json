@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "threshold"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "true positive rate"
+          },
+          {
+            "category": "quality_metric",
+            "term": "specificity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "false positive fraction"
+          },
+          {
+            "category": "mathematics",
+            "term": "ROC space"
+          },
+          {
+            "category": "quality_metric",
+            "term": "balance between sensitivity and specificity"
+          }
+        ],
+        "evidence": [
+          "With this choice, notice what happens.",
+          "The sensitivity - or true positive rate - drops to around 50%.",
+          "That means the false positive fraction is low, and specificity is high.",
+          "In ROC space, where we plot sensitivity against 1 minus specificity",
+          "It reflects a cautious decision-making style",
+          "where you set the threshold directly determines the balance between sensitivity and specificity"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "On the other hand, for healthy patients, almost all are correctly classified. Only a very small slice on the right is misclassified as diseased."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "high specificity",
+        "p": "produces",
+        "s": "conservative threshold"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "non-diseased"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "threshold directly determines the balance between sensitivity and specificity"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Now, let's take our overlapping case and place a conservative threshold, shown by the blue line here."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "conservative threshold",
+        "p": "represents",
+        "s": "blue line"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "balance between sensitivity and specificity"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide44.txt"
+  },
+  "slide_id": "Slide44"
+}

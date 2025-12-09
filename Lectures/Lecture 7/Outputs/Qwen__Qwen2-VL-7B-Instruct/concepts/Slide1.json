@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T23:45:12.011347+00:00",
+  "text_length": 1150,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWelcome, everyone. Today, we’re diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.\n\nSome of you may have already gone through the chapter in the textbook — and that’s a great start. But as I’ve mentioned before, the draft versions of these chapters may still contain a few typos or unclear steps. That’s why it’s important not just to read, but also to listen carefully during the lecture.\n\nI’ve reviewed and corrected the derivations we’ll go over today, so what you see here should be more accurate and easier to follow than the original draft. This is also a good example of why attending the lecture — or in this case, watching this video — is still valuable, even if you’ve read the chapter. I’ll walk you through the ideas step by step, explain the reasoning behind each move, and help you build a stronger intuition than what the written text alone might offer.\n\nSo after this session, I encourage you to review both the lecture and the textbook. With both perspectives, your understanding will be much deeper — and that’s the goal.\nLet’s get started.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"signal processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"derivations\", \"category\": \"mathematics\"},\n    {\"term\": \"lecture\", \"category\": \"software\"},\n    {\"term\": \"textbook\", \"category\": \"data_processing\"},\n    {\"term\": \"intuition\", \"category\": \"algorithm\"},\n    {\"term\": \"review\", \"category\": \"data_processing\"},\n    {\"term\": \"lecture\", \"category\": \"software\"},\n    {\"term\": \"textbook\", \"category\": \"data_processing\"},\n    {\"term\": \"understanding\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Today, we’re diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.\",\n    \"I’ve reviewed and corrected the derivations we’ll go over today, so what you see here should be more accurate and easier to follow than the original draft.\",\n    \"With both perspectives, your understanding will be much deeper — and that’s the goal.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "signal processing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "derivations",
+        "category": "mathematics"
+      },
+      {
+        "term": "lecture",
+        "category": "software"
+      },
+      {
+        "term": "textbook",
+        "category": "data_processing"
+      },
+      {
+        "term": "intuition",
+        "category": "algorithm"
+      },
+      {
+        "term": "review",
+        "category": "data_processing"
+      },
+      {
+        "term": "lecture",
+        "category": "software"
+      },
+      {
+        "term": "textbook",
+        "category": "data_processing"
+      },
+      {
+        "term": "understanding",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Today, we're diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.",
+      "I've reviewed and corrected the derivations we'll go over today, so what you see here should be more accurate and easier to follow than the original draft.",
+      "With both perspectives, your understanding will be much deeper - and that's the goal."
+    ]
+  }
+}

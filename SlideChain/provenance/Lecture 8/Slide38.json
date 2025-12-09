@@ -1,0 +1,140 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero padding"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency spacing"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Nyquist frequency"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "spectrum"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency components"
+          }
+        ],
+        "evidence": [
+          "We take our original signal and extend it in the time domain by adding a large number of zeros at the end.",
+          "When we compute the Fourier transform of this longer sequence, the frequency spacing between the points in the spectrum becomes smaller.",
+          "This means we get a finer frequency grid - more points between zero and the Nyquist frequency.",
+          "As a result, when we plot the spectrum, both peaks - the one at one hundred hertz and the one at one hundred two point five hertz - are now represented much more accurately.",
+          "So, zero padding is a simple but powerful trick for improving the visual resolution of your spectrum."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "We take our original signal and extend it in the time domain by adding a large number of zeros at the end.",
+            "modalities": [
+              "text"
+            ],
+            "o": "adding a large number of zeros",
+            "p": "uses",
+            "s": "zero padding"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This means we get a finer frequency grid - more points between zero and the Nyquist frequency.",
+            "modalities": [
+              "text"
+            ],
+            "o": "finer frequency grid",
+            "p": "produces",
+            "s": "zero padding"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Nyquist-Shannon sampling theorem"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "as a result, when we plot the spectrum, both peaks - the one at one hundred hertz and the one at one hundred two point five hertz - are now represented much more accurately"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When we compute the Fourier transform of this longer sequence, the frequency spacing between the points in the spectrum becomes smaller. This means we get a finer frequency grid - more points between zero and the Nyquist frequency."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "a finer frequency grid",
+        "p": "produces",
+        "s": "zero padding"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency spacing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Nyquist frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectrum"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency components"
+          }
+        ],
+        "evidence": [
+          "When we compute the Fourier transform of this longer sequence, the frequency spacing between the points in the spectrum becomes smaller.",
+          "As a result, when we plot the spectrum, both peaks - the one at one hundred hertz and the one at one hundred two point five hertz - are now represented much more accurately.",
+          "So, zero padding is a simple but powerful trick for improving the visual resolution of your spectrum."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

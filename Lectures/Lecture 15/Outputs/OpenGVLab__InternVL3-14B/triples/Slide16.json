@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"theta step\",\n      \"p\": \"represents\",\n      \"o\": \"rotation angles sampling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This sets how finely we sample the rotation angles.\"\n    },\n    {\n      \"s\": \"theta step\",\n      \"p\": \"produces\",\n      \"o\": \"coarser sinogram\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The sinogram becomes much coarser.\"\n    },\n    {\n      \"s\": \"coarser sinogram\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"lower resolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It means lower resolution.\"\n    },\n    {\n      \"s\": \"small theta step\",\n      \"p\": \"produces\",\n      \"o\": \"high-resolution reconstruction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"to get a high-resolution reconstruction, we want",
+  "parsed": {
+    "s": "coarser sinogram",
+    "p": "reconstructs_with",
+    "o": "lower resolution",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "It means lower resolution."
+    ]
+  }
+}

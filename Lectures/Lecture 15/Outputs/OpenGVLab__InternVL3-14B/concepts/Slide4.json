@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"X-ray projections\", \"category\": \"physics\"},\n    {\"term\": \"attenuated\", \"category\": \"physics\"},\n    {\"term\": \"tissues\", \"category\": \"anatomy\"},\n    {\"term\": \"reconstructing\", \"category\": \"reconstruction\"},\n    {\"term\": \"computed tomography\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"CT uses X-ray projections taken from many different angles around the body.\",\n    \"they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\",\n    \"Dense tissues like bone attenuate more, while soft tissues attenuate less.\",\n    \"we build up enough information to start reconstructing what’s inside the body.\",\n    \"That’s the foundation of computed tomography.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray projections",
+        "category": "physics"
+      },
+      {
+        "term": "attenuated",
+        "category": "physics"
+      },
+      {
+        "term": "tissues",
+        "category": "anatomy"
+      },
+      {
+        "term": "reconstructing",
+        "category": "reconstruction"
+      },
+      {
+        "term": "computed tomography",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "CT uses X-ray projections taken from many different angles around the body.",
+      "they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+      "Dense tissues like bone attenuate more, while soft tissues attenuate less.",
+      "we build up enough information to start reconstructing what’s inside the body.",
+      "That’s the foundation of computed tomography."
+    ]
+  }
+}

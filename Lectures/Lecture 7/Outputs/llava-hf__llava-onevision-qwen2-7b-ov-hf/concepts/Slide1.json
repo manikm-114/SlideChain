@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide1",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWelcome, everyone. Today, we’re diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.\n\nSome of you may have already gone through the chapter in the textbook — and that’s a great start. But as I’ve mentioned before, the draft versions of these chapters may still contain a few typos or unclear steps. That’s why it’s important not just to read, but also to listen carefully during the lecture.\n\nI’ve reviewed and corrected the derivations we’ll go over today, so what you see here should be more accurate and easier to follow than the original draft. This is also a good example of why attending the lecture — or in this case, watching this video — is still valuable, even if you’ve read the chapter. I’ll walk you through the ideas step by step, explain the reasoning behind each move, and help you build a stronger intuition than what the written text alone might offer.\n\nSo after this session, I encourage you to review both the lecture and the textbook. With both perspectives, your understanding will be much deeper — and that’s the goal.\nLet’s get started.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"signal processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"biomedical imaging\", \"category\": \"modality\"},\n    {\"term\": \"draft chapters\", \"category\": \"software\"},\n    {\"term\": \"derivations\", \"category\": \"mathematics\"},\n    {\"term\": \"lecture\", \"category\": \"workflow\"},\n    {\"term\": \"textbook\", \"category\": \"software\"},\n    {\"term\": \"draft versions\", \"category\": \"software\"},\n    {\"term\": \"typos\", \"category\": \"software\"},\n    {\"term\": \"unclear steps\", \"category\": \"software\"},\n    {\"term\": \"intuition\", \"category\": \"algorithm\"},\n    {\"term\": \"deeper understanding\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"Welcome, everyone. Today, we’re diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.\", \"I’ve reviewed and corrected the derivations we’ll go over today, so what you see here should be more accurate and easier to follow than the original draft.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "signal processing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "biomedical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "derivations",
+        "category": "mathematics"
+      },
+      {
+        "term": "lecture",
+        "category": "workflow"
+      },
+      {
+        "term": "textbook",
+        "category": "software"
+      },
+      {
+        "term": "draft versions",
+        "category": "software"
+      },
+      {
+        "term": "typos",
+        "category": "software"
+      },
+      {
+        "term": "unclear steps",
+        "category": "software"
+      },
+      {
+        "term": "intuition",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Welcome, everyone. Today, we’re diving into the topic of signal processing, which is a key concept in this course and incredibly important in the field of biomedical imaging.",
+      "I’ve reviewed and corrected the derivations we’ll go over today, so what you see here should be more accurate and easier to follow than the original draft."
+    ]
+  }
+}

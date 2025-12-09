@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT scanner\", \"p\":\"uses\", \"o\":\"filtered backprojection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To reconstruct images, we rely on line integrals from X-ray projections, using filtered backprojection and Fourier transform-based reconstruction, or interior tomography for region-of-interest reconstruction.\"},\n    {\"s\":\"CT scanner\", \"p\":\"uses\", \"o\":\"Fourier transform-based reconstruction\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To reconstruct images, we rely on line integrals from X-ray projections, using filtered backprojection and Fourier transform-based reconstruction, or interior tomography for region-of-interest reconstruction.\"},\n    {\"s\":\"CT scanner\", \"p\":\"uses\", \"o\":\"interior tomography\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To reconstruct images, we rely on line integrals from X-ray projections, using filtered backprojection and Fourier transform-based reconstruction, or interior tomography for region-of-interest reconstruction.\"},\n    {\"s\":\"CT scanner\", \"p\":\"depends_on\", \"o\":\"X-ray sources\", \"modalities\":[\"text\"], \"confidence\":1.0,",
+  "parsed": {
+    "s": "CT scanner",
+    "p": "uses",
+    "o": "interior tomography",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "To reconstruct images, we rely on line integrals from X-ray projections, using filtered backprojection and Fourier transform-based reconstruction, or interior tomography for region-of-interest reconstruction."
+    ]
+  }
+}

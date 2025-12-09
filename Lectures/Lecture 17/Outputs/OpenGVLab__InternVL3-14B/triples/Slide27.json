@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"PET-MRI\", \"p\":\"produces\", \"o\":\"unique diagnostic information\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By combining PET with MRI—as shown here—you get unique diagnostic information.\"},\n    {\"s\":\"PET\", \"p\":\"measures\", \"o\":\"molecular and metabolic data\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"PET provides molecular and metabolic data\"},\n    {\"s\":\"MRI\", \"p\":\"represents\", \"o\":\"detailed anatomical views\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MRI supplies detailed anatomical views\"},\n    {\"s\":\"MRI\", \"p\":\"measures\", \"o\":\"soft tissue contrast\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MRI provides excellent soft tissue contrast\"},\n    {\"s\":\"PET-MRI\", \"p\":\"reconstructs_with\", \"o\":\"PET and MRI\", \"modalities\":[\"image\"], \"confidence\":1.0, \"evidence\":\"By combining PET with MRI—as shown here—you get unique diagnostic information.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "PET-MRI",
+        "p": "produces",
+        "o": "unique diagnostic information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By combining PET with MRI-as shown here-you get unique diagnostic information."
+      },
+      {
+        "s": "PET",
+        "p": "measures",
+        "o": "molecular and metabolic data",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "PET provides molecular and metabolic data"
+      },
+      {
+        "s": "MRI",
+        "p": "represents",
+        "o": "detailed anatomical views",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MRI supplies detailed anatomical views"
+      },
+      {
+        "s": "MRI",
+        "p": "measures",
+        "o": "soft tissue contrast",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MRI provides excellent soft tissue contrast"
+      }
+    ]
+  }
+}

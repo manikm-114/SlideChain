@@ -1,0 +1,186 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "sensor spacing"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector spacing"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "data_processing",
+            "term": "data size"
+          },
+          {
+            "category": "data_processing",
+            "term": "computational load"
+          },
+          {
+            "category": "modality",
+            "term": "fan-beam CT"
+          }
+        ],
+        "evidence": [
+          "resolution is directly related to detector spacing",
+          "smaller spacing means higher resolution",
+          "larger spacing means lower resolution",
+          "finding the right balance is part of designing and operating a CT system",
+          "reconstruction looks blurred and distorted",
+          "reducing sensor spacing increases data size and computational load"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "resolution is directly related to detector spacing",
+            "modalities": [
+              "text"
+            ],
+            "o": "sensor spacing",
+            "p": "depends_on",
+            "s": "fan-beam CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "this is the D sensor value on line 26",
+            "modalities": [
+              "text"
+            ],
+            "o": "sensor spacing",
+            "p": "represents",
+            "s": "D sensor"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "resolution is directly related to detector spacing",
+            "modalities": [
+              "text"
+            ],
+            "o": "resolution",
+            "p": "produces",
+            "s": "D sensor"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "sensor spacing"
+          },
+          {
+            "category": "physics",
+            "term": "resolution"
+          },
+          {
+            "category": "modality",
+            "term": "fan-beam CT"
+          },
+          {
+            "category": "software",
+            "term": "D sensor value"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "data_processing",
+            "term": "data size"
+          },
+          {
+            "category": "data_processing",
+            "term": "computational load"
+          },
+          {
+            "category": "algorithm",
+            "term": "balance"
+          }
+        ],
+        "evidence": [
+          "The resolution is related to the sensor spacing (high spacing equals low resolution)",
+          "resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution",
+          "reduction in sensor spacing increases data size and computational load",
+          "if the spacing is too large, the resolution drops too much to be useful",
+          "finding the right balance is part of designing and operating a CT system"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "FBP reconstruction"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The reconstruction is still decent, but not quite as sharp as when we used the smaller spacing."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "decent reconstruction",
+        "p": "produces",
+        "s": "Dsensor: 1"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "resolution"
+          },
+          {
+            "category": "instrumentation",
+            "term": "sensor spacing"
+          },
+          {
+            "category": "data_processing",
+            "term": "data size"
+          },
+          {
+            "category": "software",
+            "term": "computational load"
+          },
+          {
+            "category": "quality_metric",
+            "term": "useful"
+          }
+        ],
+        "evidence": [
+          "So the key point here is: resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution.",
+          "Reducing sensor spacing increases data size and computational load. But if the spacing is too large, the resolution drops too much to be useful. Finding the right balance is part of designing and operating a CT system."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide26.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide26.txt"
+  },
+  "slide_id": "Slide26"
+}

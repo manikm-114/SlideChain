@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide41",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"PET imaging\",\n      \"p\": \"uses\",\n      \"o\": \"coincidence detection\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the principle behind coincidence detection\"\n    },\n    {\n      \"s\": \"coincidence detection\",\n      \"p\": \"depends_on\",\n      \"o\": \"time window\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If your time window is short enough, you get a well-controlled count rate\"\n    },\n    {\n      \"s\": \"correction factor\",\n      \"p\": \"produces\",\n      \"o\": \"restored measured data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"help restore your measured data to the real level\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "PET imaging",
+        "p": "uses",
+        "o": "coincidence detection",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the principle behind coincidence detection"
+      },
+      {
+        "s": "coincidence detection",
+        "p": "depends_on",
+        "o": "time window",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "If your time window is short enough, you get a well-controlled count rate"
+      }
+    ]
+  }
+}

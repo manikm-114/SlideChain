@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide1",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWelcome back, everyone. Let me remind you of the best way to get the most out of this course. First, make sure you read the assigned chapter before each lecture. Join the lecture with the preview in mind and listen carefully.  Ask if you have questions proactively. Afterward, work through the homework and revisit the material again. This layered approach — reading, watching, listening, asking, practicing — really helps deepen your understanding.\n\nToday, we’re going to explore a very powerful concept in signal processing: the Fourier series. This topic takes us a step beyond convolution, both in complexity and in importance. It’s a bit more challenging, but it’s absolutely central to many applications in engineering, physics, and medical imaging. So, I’ll do my best to break it down and highlight the key ideas so that you can follow along with confidence.\nLet’s get started.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Fourier series\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"engineering\", \"category\": \"physics\"},\n    {\"term\": \"physics\", \"category\": \"physics\"},\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"central\", \"category\": \"signal_processing\"},\n    {\"term\": \"deep\", \"category\": \"signal_processing\"},\n    {\"term\": \"confidence\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"...it’s a bit more challenging, but it’s absolutely central to many applications in engineering, physics, and medical imaging.\", \"This layered approach — reading, watching, listening, asking, practicing — really helps deepen your understanding.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier series",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "physics",
+        "category": "physics"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "central",
+        "category": "signal_processing"
+      },
+      {
+        "term": "deep",
+        "category": "signal_processing"
+      },
+      {
+        "term": "confidence",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "...it’s a bit more challenging, but it’s absolutely central to many applications in engineering, physics, and medical imaging.",
+      "This layered approach - reading, watching, listening, asking, practicing - really helps deepen your understanding."
+    ]
+  }
+}

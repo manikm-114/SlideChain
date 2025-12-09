@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide8",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:28:34.284628+00:00",
+  "text_length": 1118,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo that gives us a general idea of how MRI works. Areas in the body that contain a lot of water, like soft tissues, produce strong signals, which show up bright in the image. Areas with little water, like bone, produce weak signals, so they appear dark. That is the basic contrast mechanism in MRI.\nThe short lecture we just saw is an excellent example of how to present these key principles clearly. I encourage you to revisit it after you study the details, because once you learn the full physics of MRI, you will be able to understand nearly all of it.\n\nNow, let’s review some of the mathematical foundations. One important concept is the dot product. If we have two vectors, v and w, their dot product is equal to the magnitude of v times the magnitude of w times the cosine of the angle between them. Geometrically, the dot product measures how much one vector projects onto another. You can think of it as relating to the area formed by the parallelogram between the two vectors.\n\nThis is a very elegant mathematical operation, and it also has a counterpart called the cross product, which we will look at next.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Dot Product\", \"category\": \"mathematics\"},\n    {\"term\": \"v·w = |v| |w| cos θ\", \"category\": \"mathematics\"},\n    {\"term\": \"v and w\", \"category\": \"mathematics\"},\n    {\"term\": \"magnitude of v\", \"category\": \"mathematics\"},\n    {\"term\": \"magnitude of w\", \"category\": \"mathematics\"},\n    {\"term\": \"angle between them\", \"category\": \"mathematics\"},\n    {\"term\": \"dot product measures how much one vector projects onto another\", \"category\": \"mathematics\"},\n    {\"term\": \"area formed by the parallelogram between the two vectors\", \"category\": \"mathematics\"},\n    {\"term\": \"counterpart called the cross product\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"One important concept is the dot product.\",\n    \"The dot product measures how much one vector projects onto another.\",\n    \"You can think of it as relating to the area formed by the parallelogram between the two vectors.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Dot Product",
+        "category": "mathematics"
+      },
+      {
+        "term": "v and w",
+        "category": "mathematics"
+      },
+      {
+        "term": "magnitude of v",
+        "category": "mathematics"
+      },
+      {
+        "term": "magnitude of w",
+        "category": "mathematics"
+      },
+      {
+        "term": "angle between them",
+        "category": "mathematics"
+      },
+      {
+        "term": "dot product measures how much one vector projects onto another",
+        "category": "mathematics"
+      },
+      {
+        "term": "area formed by the parallelogram between the two vectors",
+        "category": "mathematics"
+      },
+      {
+        "term": "counterpart called the cross product",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "One important concept is the dot product.",
+      "The dot product measures how much one vector projects onto another.",
+      "You can think of it as relating to the area formed by the parallelogram between the two vectors."
+    ]
+  }
+}

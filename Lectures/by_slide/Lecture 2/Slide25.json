@@ -1,0 +1,222 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide25",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide25.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "f open",
+              "category": "software"
+            },
+            {
+              "term": "f scanf",
+              "category": "software"
+            },
+            {
+              "term": "f close",
+              "category": "software"
+            },
+            {
+              "term": "help textread",
+              "category": "software"
+            },
+            {
+              "term": "help f printf",
+              "category": "software"
+            },
+            {
+              "term": "data file",
+              "category": "data_processing"
+            },
+            {
+              "term": "mixed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "read from and write to files",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "To open a file, use f open, and pass the file name and read mode.",
+            "Use f scanf to read numbers from the file.",
+            "When you're done, always close the file using f close.",
+            "If you need formatting help, use help textread or help f printf.",
+            "You’ll often need to work with mixed data - so learning how to read from and write to files is essential in MATLAB workflows."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"f open\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"f scanf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"f close\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help textread\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help f printf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"data file\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"names, types, numbers, yes or no labels\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"mixed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"read from and write to files\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"To open a file, use f open, and pass the file name and read mode.\\\", \\n               \\\"Use f scanf to read numbers from the file.\\\", \\n               \\\"When you're done, always close the file using f close.\\\", \\n               \\\"If you need formatting help, use help textread or help f printf.\\\", \\n               \\\"You’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"f open\", \"category\": \"software\"}, {\"term\": \"f scanf\", \"category\": \"software\"}, {\"term\": \"f close\", \"category\": \"software\"}, {\"term\": \"help textread\", \"category\": \"software\"}, {\"term\": \"help f printf\", \"category\": \"software\"}, {\"term\": \"data file\", \"category\": \"data_processing\"}, {\"term\": \"mixed data\", \"category\": \"data_processing\"}, {\"term\": \"read from and write to files\", \"category\": \"data_processing\"}], \"evidence\": [\"To open a file, use f open, and pass the file name and read mode.\", \"Use f scanf to read numbers from the file.\", \"When you're done, always close the file using f close.\", \"If you need formatting help, use help textread or help f printf.\", \"You’ll often need to work with mixed data - so learning how to read from and write to files is essential in MATLAB workflows.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide25.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "f open",
+              "p": "uses",
+              "o": "file",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "To open a file, use f open, and pass the file name and read mode."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"f open\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"file\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"To open a file, use f open, and pass the file name and read mode.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"f open\", \"p\": \"uses\", \"o\": \"file\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"To open a file, use f open, and pass the file name and read mode.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "f open",
+              "category": "software"
+            },
+            {
+              "term": "file ID",
+              "category": "software"
+            },
+            {
+              "term": "f scanf",
+              "category": "software"
+            },
+            {
+              "term": "f close",
+              "category": "software"
+            },
+            {
+              "term": "help textread",
+              "category": "software"
+            },
+            {
+              "term": "help f printf",
+              "category": "software"
+            },
+            {
+              "term": "mixed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "MATLAB workflows",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "To open a file, use f open",
+            "f open in dot dat, r t",
+            "Use f scanf to read numbers from the file",
+            "always close the file using f close",
+            "If you need formatting help, use help textread or help f printf",
+            "learning how to read from and write to files is essential in MATLAB workflows",
+            "You’ll often need to work with mixed data"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"f open\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"file ID\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"f scanf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"f close\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help textread\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help f printf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"mixed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"MATLAB workflows\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To open a file, use f open\\\",\\n    \\\"f open in dot dat, r t\\\",\\n    \\\"Use f scanf to read numbers from the file\\\",\\n    \\\"always close the file using f close\\\",\\n    \\\"If you need formatting help, use help textread or help f printf\\\",\\n    \\\"learning how to read from and write to files is essential in MATLAB workflows\\\",\\n    \\\"You’ll often need to work with mixed data\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"f open\", \"category\": \"software\"}, {\"term\": \"file ID\", \"category\": \"software\"}, {\"term\": \"f scanf\", \"category\": \"software\"}, {\"term\": \"f close\", \"category\": \"software\"}, {\"term\": \"help textread\", \"category\": \"software\"}, {\"term\": \"help f printf\", \"category\": \"software\"}, {\"term\": \"mixed data\", \"category\": \"data_processing\"}, {\"term\": \"MATLAB workflows\", \"category\": \"software\"}], \"evidence\": [\"To open a file, use f open\", \"f open in dot dat, r t\", \"Use f scanf to read numbers from the file\", \"always close the file using f close\", \"If you need formatting help, use help textread or help f printf\", \"learning how to read from and write to files is essential in MATLAB workflows\", \"You’ll often need to work with mixed data\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide25.json",
+        "parsed": {
+          "s": "reading and writing data files",
+          "p": "uses",
+          "o": "fclose",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "When you're done, always close the file using fclose"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"reading and writing data files\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"fopen\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"To open a file, use fopen\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"reading and writing data files\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"fscanf\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Use fscanf to read numbers from the file\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"reading and writing data files\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"fclose\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"When you're done, always close the file using fclose\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"formatted read\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"help textread\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"If you need formatting help, use help textread\", \"parsed\": {\"s\": \"reading and writing data files\", \"p\": \"uses\", \"o\": \"fclose\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"When you're done, always close the file using fclose\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "textread",
+              "category": "software"
+            },
+            {
+              "term": "data file",
+              "category": "data_processing"
+            },
+            {
+              "term": "mixed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "MATLAB workflows",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "To open a file, use fopen, and pass the file name and read mode.",
+            "Use fscanf to read numbers from the file.",
+            "When you're done, always close the file using fclose.",
+            "If you need formatting help, use help textread or help fprintf.",
+            "Below is an example of a data file - it has names, types, numbers, and yes or no labels.",
+            "You'll often need to work with mixed data - so learning how to read from and write to files is essential in MATLAB workflows."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:33:57.036211+00:00\", \"text_length\": 568, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"fopen\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"fscanf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"fclose\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"textread\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"fprintf\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"data file\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"mixed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"MATLAB workflows\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To open a file, use fopen, and pass the file name and read mode.\\\",\\n    \\\"Use fscanf to read numbers from the file.\\\",\\n    \\\"When you're done, always close the file using fclose.\\\",\\n    \\\"If you need formatting help, use help textread or help fprintf.\\\",\\n    \\\"Below is an example of a data file — it has names, types, numbers, and yes or no labels.\\\",\\n    \\\"You’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"textread\", \"category\": \"software\"}, {\"term\": \"data file\", \"category\": \"data_processing\"}, {\"term\": \"mixed data\", \"category\": \"data_processing\"}, {\"term\": \"MATLAB workflows\", \"category\": \"software\"}], \"evidence\": [\"To open a file, use fopen, and pass the file name and read mode.\", \"Use fscanf to read numbers from the file.\", \"When you're done, always close the file using fclose.\", \"If you need formatting help, use help textread or help fprintf.\", \"Below is an example of a data file - it has names, types, numbers, and yes or no labels.\", \"You'll often need to work with mixed data - so learning how to read from and write to files is essential in MATLAB workflows.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "f open",
+              "p": "uses",
+              "o": "file",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "To open a file, use f open, and pass the file name and read mode. For example: f open in dot dat, r t."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:30:09.043493+00:00\", \"text_length\": 568, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"f open\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"file\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"To open a file, use f open, and pass the file name and read mode. For example: f open in dot dat, r t.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"f open\", \"p\": \"uses\", \"o\": \"file\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"To open a file, use f open, and pass the file name and read mode. For example: f open in dot dat, r t.\"}]}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "term": "MATLAB workflows",
+          "category": "workflow"
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:40:26.000649+00:00\", \"text_length\": 568, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"f open\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"fid\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"f scanf\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"f close\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"help textread\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"help f printf\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"mixed data\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reading and writing data files\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"MATLAB workflows\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To open a file, use f open, and pass the file name and read mode.\\\",\\n    \\\"This gives you a file ID — or fid.\\\",\\n    \\\"Use f scanf to read numbers from the file.\\\",\\n    \\\"When you're done, always close the file using f close.\\\",\\n    \\\"If\", \"parsed\": {\"term\": \"MATLAB workflows\", \"category\": \"workflow\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "s": "fclose",
+          "p": "uses",
+          "o": "file ID",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "When you're done, always close the file using f close."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:53:35.084491+00:00\", \"text_length\": 568, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s talk about reading and writing data files.\\nTo open a file, use f open, and pass the file name and read mode.\\u000bFor example: f open in dot dat, r t.\\nThis gives you a file ID — or fid.\\nUse f scanf to read numbers from the file.\\u000bWhen you're done, always close the file using f close.\\nIf you need formatting help, use help textread or help f printf.\\nBelow is an example of a data file — it has names, types, numbers, and yes or no labels.\\nYou’ll often need to work with mixed data — so learning how to read from and write to files is essential in MATLAB workflows.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"fopen\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"file name and read mode\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"To open a file, use f open, and pass the file name and read mode.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"fscanf\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"file ID\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.8,\\n      \\\"evidence\\\": \\\"Use f scanf to read numbers from the file.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"fclose\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"file ID\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"When you're done, always close the file using f close.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"help textread\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"formatted read\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\":\", \"parsed\": {\"s\": \"fclose\", \"p\": \"uses\", \"o\": \"file ID\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"When you're done, always close the file using f close.\"]}}"
+      }
+    }
+  }
+}

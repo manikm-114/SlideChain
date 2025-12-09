@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"reconstructed signal\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"Shannon interpolation formula\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if the sampling rate is greater than twice the maximum frequency in the signal — the Nyquist rate — then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly.\"\n    },\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"produces\",\n      \"o\": \"perfect reconstruction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is the sampling theorem in action. For band-limited signals, as long as we sample fast enough, we can go back and forth between continuous and discrete forms without losing information.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "reconstructed signal",
+        "p": "reconstructs_with",
+        "o": "Shannon interpolation formula",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "if the sampling rate is greater than twice the maximum frequency in the signal - the Nyquist rate - then we can take these discrete samples and use the Shannon interpolation formula to reconstruct the original signal perfectly."
+      }
+    ]
+  }
+}

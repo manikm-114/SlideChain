@@ -1,0 +1,173 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "inverse FFT"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wrap-around effects"
+          },
+          {
+            "category": "signal_processing",
+            "term": "undistorted result"
+          }
+        ],
+        "evidence": [
+          "zero-padding is the key to making circular convolution match linear convolution",
+          "zero-padded circular convolution",
+          "linear convolution",
+          "take the FFT of these zero-padded signals",
+          "take the inverse FFT to return to the time domain",
+          "zero-padding has removed the unwanted wrap-around effects",
+          "correct, undistorted result"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.",
+            "modalities": [
+              "text"
+            ],
+            "o": "correct, undistorted result",
+            "p": "produces",
+            "s": "zero-padding"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "if you\u2019re using the FFT method to compute convolution, always add enough zero-padding",
+            "modalities": [
+              "text"
+            ],
+            "o": "zero-padding",
+            "p": "depends_on",
+            "s": "FFT method"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wrap-around effects"
+          },
+          {
+            "category": "signal_processing",
+            "term": "true linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT method"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          }
+        ],
+        "evidence": [
+          "Here we see why zero-padding is the key to making circular convolution match linear convolution.",
+          "This perfect match confirms that zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.",
+          "So the takeaway is clear: if you're using the FFT method to compute convolution, always add enough zero-padding to get the true linear convolution."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Xp = fft(x_pad);"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "FFT of x_pad",
+        "p": "produces",
+        "s": "Xp"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the zero-padded circular convolution - shown in blue - lies exactly on top of the linear convolution - shown in red"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "When we plot the result, we see that the zero-padded circular convolution - shown in blue - lies exactly on top of the linear convolution - shown in red. This perfect match confirms that zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "linear convolution",
+            "p": "reconstructs_with",
+            "s": "zero-padding"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency domain"
+          }
+        ],
+        "evidence": [
+          "Here we see why zero-padding is the key to making circular convolution match linear convolution."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

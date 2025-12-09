@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"detector ring\", \"category\": \"instrumentation\"},\n    {\"term\": \"gamma detectors\", \"category\": \"instrumentation\"},\n    {\"term\": \"gamma photons\", \"category\": \"physics\"},\n    {\"term\": \"coincidence\", \"category\": \"signal_processing\"},\n    {\"term\": \"line of response\", \"category\": \"reconstruction\"},\n    {\"term\": \"radio-tracer distribution\", \"category\": \"modality\"},\n    {\"term\": \"attenuation coefficient\", \"category\": \"physics\"},\n    {\"term\": \"line integral\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"This setup can be used for both human studies and small-animal imaging.\",\n    \"The pilot imaging ring itself consists of gamma detectors and the associated electronic circuitry.\",\n    \"When multiple gamma photons are detected within the same time window, the system identifies them as coming from the same event and reports a coincidence along a line of response.\",\n    \"The line of response corresponds to the radio-tracer distribution along that line, which is essentially a line integral.\",\n    \"The attenuation coefficient in this formulation is treated as independent and can be factored out.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "detector ring",
+        "category": "instrumentation"
+      },
+      {
+        "term": "gamma detectors",
+        "category": "instrumentation"
+      },
+      {
+        "term": "gamma photons",
+        "category": "physics"
+      },
+      {
+        "term": "coincidence",
+        "category": "signal_processing"
+      },
+      {
+        "term": "line of response",
+        "category": "reconstruction"
+      },
+      {
+        "term": "radio-tracer distribution",
+        "category": "modality"
+      },
+      {
+        "term": "attenuation coefficient",
+        "category": "physics"
+      },
+      {
+        "term": "line integral",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "This setup can be used for both human studies and small-animal imaging.",
+      "The pilot imaging ring itself consists of gamma detectors and the associated electronic circuitry.",
+      "When multiple gamma photons are detected within the same time window, the system identifies them as coming from the same event and reports a coincidence along a line of response.",
+      "The line of response corresponds to the radio-tracer distribution along that line, which is essentially a line integral.",
+      "The attenuation coefficient in this formulation is treated as independent and can be factored out."
+    ]
+  }
+}

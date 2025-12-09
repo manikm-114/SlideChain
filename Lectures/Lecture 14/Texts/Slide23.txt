@@ -1,0 +1,17 @@
+There is also an interesting transverse data truncation problem.
+Imagine your cross-section represents the green base, while the blue area is a smaller region of interest, or ROI.
+Perhaps you’re only interested in the heart, or in the ear if planning a cochlear implant.
+
+In this case, the ROI is small. You might use a narrow fan beam targeted only through the ROI, then rotate as in third-generation fan beam geometry. This means the projection data is transversely truncated on both sides.
+With truncation on both edges, the Fourier slice theorem no longer applies, making reconstruction very challenging.
+Mathematically, this “interior problem” has no unique solution, meaning multiple structures could produce identical data, and you wouldn’t know which is correct.
+
+Several years ago, my group revisited and solved this problem, which we felt very proud of.
+While the classical interior problem’s non-uniqueness holds in unrestricted function spaces, we showed that introducing prior knowledge allows exact reconstruction. 
+
+For example, if you know a small sub-region of the ROI, such as air in the airway or blood in the aorta, you can use that known X-ray attenuation coefficient as a reference. This prior information enables theoretical, exact reconstruction within the ROI from truncated data, a method called interior tomography. Our work was well received, although reviewers raised important questions.
+
+One student tested whether blood density varies among different races or sexes, finding it consistent across populations.
+This allowed us to use blood density as a stable reference in cardiac imaging, so you only need to scan the heart, reducing radiation dose.
+Later, reviewers pointed out that contrast agents—like iodine injected during CT angiography—change blood density, so you can’t always rely on a fixed reference.
+This challenge led us to develop a new solution.

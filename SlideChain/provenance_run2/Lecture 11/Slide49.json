@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "predictive value"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The receiver operating characteristic, or ROC curve, gives us a full picture of diagnostic performance across different decision thresholds.",
+            "modalities": [
+              "text"
+            ],
+            "o": "diagnostic performance",
+            "p": "measures",
+            "s": "ROC curve"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "That\u2019s where the area under the ROC curve, or AUC, comes in.",
+            "modalities": [
+              "text"
+            ],
+            "o": "area under the ROC curve",
+            "p": "represents",
+            "s": "AUC"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "If the curve falls along the diagonal, the area is 0.5. That means the test has no predictive value - you\u2019re essentially flipping a coin.",
+            "modalities": [
+              "text"
+            ],
+            "o": "predictive value",
+            "p": "measures",
+            "s": "AUC"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "trade-offs"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The area under the ROC curve, or AUC, comes in. If the curve falls along the diagonal, the area is 0.5. That means the test has no predictive value - you're essentially flipping a coin. A perfect test, one that never misses disease and never gives false alarms, would trace along the top and left borders, with an AUC equal to 1. In practice, no system achieves that ideal, because there's always some chance of error. So most real diagnostic tests fall somewhere in between. The higher the area under the curve, the better the test is at distinguishing diseased from non-diseased cases. This is why AUC has become such a standard benchmark. It condenses all those trade-offs between sensitivity and specificity into a single number. And just like in teaching or training, performance varies - some students, or some doctors, do exceptionally well; others struggle. The ROC and its AUC make that difference visible in a very clear, quantitative way."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Area under ROC Curve (AUC)",
+        "p": "measures",
+        "s": "Area under ROC Curve (AUC)"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "condenses all those trade-offs between sensitivity and specificity into a single number"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "It condenses all those trade-offs between sensitivity and specificity into a single number."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "trade-offs between sensitivity and specificity",
+        "p": "represents",
+        "s": "Area under ROC Curve (AUC)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "between"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide49.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide49.txt"
+  },
+  "slide_id": "Slide49"
+}

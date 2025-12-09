@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "telescopes"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Here we can see some examples of actual lenses used in optical systems.",
+            "modalities": [
+              "text"
+            ],
+            "o": "lenses",
+            "p": "uses",
+            "s": "optical systems"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Each type has a specific purpose, but all follow the same physical principles of light refraction and focusing.",
+            "modalities": [
+              "text"
+            ],
+            "o": "light refraction and focusing",
+            "p": "depends_on",
+            "s": "lenses"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Everything from microscopes to cameras to telescopes depends on these very same ideas of ray tracing and lens design.",
+            "modalities": [
+              "text"
+            ],
+            "o": "optical principles",
+            "p": "depends_on",
+            "s": "imaging technology"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "optics",
+        "term": "lens design"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "microscopes to cameras to telescopes"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "Here we can see some examples of actual lenses used in optical systems.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "optical systems",
+            "p": "represents",
+            "s": "lenses"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Everything from microscopes to cameras to telescopes depends on these very same ideas of ray tracing and lens design.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "ray tracing and lens design",
+            "p": "depends_on",
+            "s": "lenses"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "telescopes"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

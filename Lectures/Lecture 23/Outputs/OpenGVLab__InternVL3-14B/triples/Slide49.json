@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide49",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"X-rays\", \"p\":\"uses\", \"o\":\"nanophosphors\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We know that X-rays can penetrate deeply into tissue, and we also know that nanophosphors can convert X-rays into visible light.\"},\n    {\"s\":\"nanophosphors\", \"p\":\"produces\", \"o\":\"visible light\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The nanophosphors there absorb the X-rays and emit light locally — right where the neurons are.\"},\n    {\"s\":\"X-optogenetics\", \"p\":\"depends_on\", \"o\":\"X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We know that X-rays can penetrate deeply into tissue, and we also know that nanophosphors can convert X-rays into visible light. So, what if we could use X-rays as a remote light source to activate optogenetic proteins deep inside the brain?\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-rays",
+        "p": "uses",
+        "o": "nanophosphors",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We know that X-rays can penetrate deeply into tissue, and we also know that nanophosphors can convert X-rays into visible light."
+      },
+      {
+        "s": "nanophosphors",
+        "p": "produces",
+        "o": "visible light",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The nanophosphors there absorb the X-rays and emit light locally - right where the neurons are."
+      },
+      {
+        "s": "X-optogenetics",
+        "p": "depends_on",
+        "o": "X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We know that X-rays can penetrate deeply into tissue, and we also know that nanophosphors can convert X-rays into visible light. So, what if we could use X-rays as a remote light source to activate optogenetic proteins deep inside the brain?"
+      }
+    ]
+  }
+}

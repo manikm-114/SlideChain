@@ -1,0 +1,113 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier series"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinusoidal components"
+          },
+          {
+            "category": "signal_processing",
+            "term": "periodic"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampled signal"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous function"
+          }
+        ],
+        "evidence": [
+          "a Fourier series is built from sinusoidal components",
+          "each of these components is periodic",
+          "the Fourier transform of a sampled signal",
+          "in the frequency domain",
+          "continuous function in the frequency domain"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In the time domain, a Fourier series is built from sinusoidal components - each one a sine or cosine wave.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sinusoidal components",
+            "p": "represents",
+            "s": "Fourier series"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This tells us that in the frequency domain, we also get a periodic function.",
+            "modalities": [
+              "text"
+            ],
+            "o": "periodic function",
+            "p": "produces",
+            "s": "Fourier transform of a sampled signal"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "domain"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "The periodicity comes directly from the fact that the Fourier transform of a sampled signal is made up of these repeating sinusoidal components."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "periodicity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "In the time domain, a Fourier series is built from sinusoidal components - each one a sine or cosine wave. And by definition, each of these components is periodic. Whether we have just one frequency or many, the result will still be periodic.",
+            "modalities": [
+              "text"
+            ],
+            "o": "periodic function",
+            "p": "represents",
+            "s": "Fourier series"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide19.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide19.txt"
+  },
+  "slide_id": "Slide19"
+}

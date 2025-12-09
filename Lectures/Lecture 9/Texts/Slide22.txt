@@ -1,0 +1,7 @@
+Now, let’s refine our frequency bins even further — this time by a factor of four.
+
+In MATLAB, that means setting the bin-refine factor to four and increasing the FFT length to four times the length of our original time vector. In other words, we append enough zeros so that the signal length is quadrupled before computing the FFT.
+By doing this, our frequency bin spacing changes from one hertz to zero-point-two hertz. This very fine resolution means that even frequencies like four hundred forty-five point eight hertz — which were previously hard to resolve — now align closely with a bin and show a sharp, well-defined spike.
+
+When we plot the result, every frequency in our multi-component signal — forty-five hertz, one hundred hertz, two hundred two point five hertz, four hundred seven hertz, and four hundred forty-five point eight hertz — is clearly visible, each with a maximum amplitude of one.
+This example confirms that refining the bin spacing through zero-padding greatly improves our ability to detect non-integer frequencies. With enough refinement, even challenging frequencies can be resolved as sharply as those that naturally align with the original bin spacing.

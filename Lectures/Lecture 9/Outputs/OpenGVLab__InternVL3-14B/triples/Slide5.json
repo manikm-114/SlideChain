@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"convolution\",\n      \"p\": \"represents\",\n      \"o\": \"sliding one pattern over another and measuring how well they match at each shift\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is exactly what happens in math: convolution measures the similarity between a signal and a shifted, flipped version of another signal.\"\n    },\n    {\n      \"s\": \"picture\",\n      \"p\": \"uses\",\n      \"o\": \"two hands\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The picture here shows this idea using two hands.\"\n    },\n    {\n      \"s\": \"vertical axis\",\n      \"p\": \"represents\",\n      \"o\": \"flipping\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The vertical axis represents flipping\"\n    },\n    {\n      \"s\": \"horizontal axis\",\n      \"p\": \"represents\",\n      \"o\": \"shifting\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,",
+  "parsed": {
+    "s": "vertical axis",
+    "p": "represents",
+    "o": "flipping",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The vertical axis represents flipping"
+    ]
+  }
+}

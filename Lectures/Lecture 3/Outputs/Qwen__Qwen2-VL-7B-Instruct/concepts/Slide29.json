@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide29",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:26:50.711702+00:00",
+  "text_length": 264,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAn inductor works similarly, but with current depending on the integral of voltage over time, or voltage depending on the derivative of current. Again, if we account for initial conditions, we can apply linear system theory to analyze these components effectively.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"V-I Relationship for Inductor\", \"category\": \"physics\"},\n    {\"term\": \"inductor\", \"category\": \"physics\"},\n    {\"term\": \"current\", \"category\": \"physics\"},\n    {\"term\": \"voltage\", \"category\": \"physics\"},\n    {\"term\": \"integral of voltage over time\", \"category\": \"physics\"},\n    {\"term\": \"derivative of current\", \"category\": \"physics\"},\n    {\"term\": \"linear system theory\", \"category\": \"physics\"},\n    {\"term\": \"initial conditions\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"An inductor works similarly, but with current depending on the integral of voltage over time, or voltage depending on the derivative of current. Again, if we account for initial conditions, we can apply linear system theory to analyze these components effectively.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "inductor",
+        "category": "physics"
+      },
+      {
+        "term": "current",
+        "category": "physics"
+      },
+      {
+        "term": "voltage",
+        "category": "physics"
+      },
+      {
+        "term": "integral of voltage over time",
+        "category": "physics"
+      },
+      {
+        "term": "derivative of current",
+        "category": "physics"
+      },
+      {
+        "term": "linear system theory",
+        "category": "physics"
+      },
+      {
+        "term": "initial conditions",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "An inductor works similarly, but with current depending on the integral of voltage over time, or voltage depending on the derivative of current. Again, if we account for initial conditions, we can apply linear system theory to analyze these components effectively."
+    ]
+  }
+}

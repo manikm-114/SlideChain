@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discretizing signal\",\n      \"p\": \"produces\",\n      \"o\": \"discrete set of values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the top half, we have discretized the signal in the time domain. This means we start with a continuous signal, sample it at regular intervals, and get a discrete set of values\"\n    },\n    {\n      \"s\": \"discretizing spectrum\",\n      \"p\": \"produces\",\n      \"o\": \"periodic structure\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The idea is to take the continuous Fourier spectrum and multiply it by a periodic train of delta functions in the frequency domain\"\n    },\n    {\n      \"s\": \"sampling in one domain\",\n      \"p\": \"causes\",\n      \"o\": \"repetition in the other domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"sampling in one domain causes repetition — or duplication — in the other domain\"\n    },\n    {\n      \"",
+  "parsed": {
+    "s": "sampling in one domain",
+    "p": "causes",
+    "o": "repetition in the other domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "sampling in one domain causes repetition - or duplication - in the other domain"
+    ]
+  }
+}

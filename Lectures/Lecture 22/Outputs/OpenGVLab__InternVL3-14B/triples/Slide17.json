@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"beam forming\", \"p\":\"uses\", \"o\":\"relative time delays across elements\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You perform focusing in this way—based on the relative time delays across elements.\"},\n    {\"s\":\"beam forming\", \"p\":\"produces\", \"o\":\"focus spot\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You can adjust the focus at a certain depth—from the transducer surface to the focal plane—and make the focus spot here.\"},\n    {\"s\":\"scanning\", \"p\":\"performs\", \"o\":\"line by line\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"From left to right, you perform scanning—line by line—so you get information along each line.\"},\n    {\"s\":\"beam forming & scanning\", \"p\":\"reconstructs_with\", \"o\":\"two-dimensional image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When you repeat this line-by-line process, you effectively build up a two-dimensional image.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "beam forming",
+        "p": "uses",
+        "o": "relative time delays across elements",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You perform focusing in this way-based on the relative time delays across elements."
+      },
+      {
+        "s": "beam forming",
+        "p": "produces",
+        "o": "focus spot",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You can adjust the focus at a certain depth-from the transducer surface to the focal plane-and make the focus spot here."
+      }
+    ]
+  }
+}

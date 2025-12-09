@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"mammography\", \"p\":\"uses\", \"o\":\"soft X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\"},\n    {\"s\":\"Medical CT\", \"p\":\"uses\", \"o\":\"hard X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays\"},\n    {\"s\":\"Airport security\", \"p\":\"uses\", \"o\":\"hard X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "mammography",
+        "p": "uses",
+        "o": "soft X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures."
+      },
+      {
+        "s": "Airport security",
+        "p": "uses",
+        "o": "hard X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required"
+      }
+    ]
+  }
+}

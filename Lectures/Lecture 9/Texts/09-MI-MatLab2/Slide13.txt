@@ -1,0 +1,8 @@
+Here’s where we can clearly see the difference between linear convolution and circular convolution without zero padding.
+
+In MATLAB, we can perform circular convolution using the Fourier transform approach. First, we take the FFT of our two sequences, x and h. Then, we multiply their spectra point by point. Finally, we take the inverse FFT to bring the result back into the time domain.
+Mathematically, multiplication in the frequency domain is equivalent to convolution in the time domain — but here’s the key point: if we don’t use zero-padding, the convolution we get is circular by nature.
+In the plot below, the blue curve is the circular convolution result without zero-padding. The red dashed curve is the linear convolution result from our earlier example.
+
+Notice how the blue curve is distorted — it doesn’t match the clean triangular shape of the red curve. That distortion comes from the wrapping-around effect we talked about earlier: parts of the signal from the end are interfering with parts from the beginning.
+This is why zero-padding is essential when we want the frequency-domain method to give the same result as linear convolution. Without it, circular convolution will give you something different.

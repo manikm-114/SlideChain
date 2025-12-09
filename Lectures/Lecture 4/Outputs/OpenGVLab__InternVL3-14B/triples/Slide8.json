@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"area under the force-time curve\",\n      \"p\": \"represents\",\n      \"o\": \"cumulative effect of the force\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This area represents the cumulative effect of the force.\"\n    },\n    {\n      \"s\": \"total impulse\",\n      \"p\": \"depends_on\",\n      \"o\": \"area under the force-time curve\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"What truly matters is the area under the force-time curve.\"\n    },\n    {\n      \"s\": \"different kinds of inputs\",\n      \"p\": \"produces\",\n      \"o\": \"same response\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"different kinds of inputs can result in the same response if their total impact — the area — is identical.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "area under the force-time curve",
+        "p": "represents",
+        "o": "cumulative effect of the force",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This area represents the cumulative effect of the force."
+      },
+      {
+        "s": "total impulse",
+        "p": "depends_on",
+        "o": "area under the force-time curve",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "What truly matters is the area under the force-time curve."
+      },
+      {
+        "s": "different kinds of inputs",
+        "p": "produces",
+        "o": "same response",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "different kinds of inputs can result in the same response if their total impact - the area - is identical."
+      }
+    ]
+  }
+}

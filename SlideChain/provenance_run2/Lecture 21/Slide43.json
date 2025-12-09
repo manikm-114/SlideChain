@@ -1,0 +1,98 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "square root of Zc multiplied by Zs"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Plot the transmitted frequency spectrum of an ultrasound beam from a transducer operating at a central frequency of 1.5 MHz.",
+            "modalities": [
+              "text"
+            ],
+            "o": "transmitted frequency spectrum",
+            "p": "uses",
+            "s": "homework assignment"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "A layer of material with an acoustic impedance Z_ML is placed between the transducer and the skin.",
+            "modalities": [
+              "text"
+            ],
+            "o": "matching layer",
+            "p": "uses",
+            "s": "homework assignment"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "If the acoustic impedance of the skin is denoted by Z_S and that of the transducer crystal is denoted by Z_C, show mathematically that the value of Z_ML that minimizes the energy of the reflected wave is given by Z_ML = \u221a(Z_C Z_S).",
+            "modalities": [
+              "text"
+            ],
+            "o": "acoustic impedance",
+            "p": "depends_on",
+            "s": "transducer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "efficiency"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Plot the transmitted frequency spectrum of an ultrasound beam from a transducer operating at a central frequency of 1.5 MHz.",
+            "modalities": [
+              "text"
+            ],
+            "o": "ultrasound beam",
+            "p": "uses",
+            "s": "transducer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "backscattered"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "acoustic impedance"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "Plot the transmitted frequency spectrum of an ultrasound beam from a transducer operating at a central frequency of one point five megahertz. Assume that the transducer is damped, and then repeat the plot for the beam returning to the transducer after passing through tissue and being backscattered."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "<ultrasound beam>",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "<transducer>"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide43.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide43.txt"
+  },
+  "slide_id": "Slide43"
+}

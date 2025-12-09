@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"edge detection\", \"p\":\"uses\", \"o\":\"True Positive\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"True Positive: The patient has a tumor, and the system or doctor correctly identifies it.\"},\n    {\"s\":\"edge detection\", \"p\":\"uses\", \"o\":\"False Positive\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"False Positive: The patient is healthy, but the system says there is a tumor.\"},\n    {\"s\":\"edge detection\", \"p\":\"uses\", \"o\":\"True Negative\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"True Negative: The patient is healthy, and the report correctly says no tumor.\"},\n    {\"s\":\"edge detection\", \"p\":\"uses\", \"o\":\"False Negative\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"False Negative: The patient does have a tumor, but the system or doctor misses it.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "edge detection",
+        "p": "uses",
+        "o": "True Positive",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "True Positive: The patient has a tumor, and the system or doctor correctly identifies it."
+      },
+      {
+        "s": "edge detection",
+        "p": "uses",
+        "o": "False Positive",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "False Positive: The patient is healthy, but the system says there is a tumor."
+      },
+      {
+        "s": "edge detection",
+        "p": "uses",
+        "o": "True Negative",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "True Negative: The patient is healthy, and the report correctly says no tumor."
+      },
+      {
+        "s": "edge detection",
+        "p": "uses",
+        "o": "False Negative",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "False Negative: The patient does have a tumor, but the system or doctor misses it."
+      }
+    ]
+  }
+}

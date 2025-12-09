@@ -1,0 +1,86 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Several blocks combined form a 'bucket,' which can include hundreds of crystals."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "several blocks",
+        "p": "consists of",
+        "s": "bucket"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The scintillation crystal's job is to convert incoming gamma photons into visible light. This visible light is then captured by a photomultiplier tube, or PMT.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "photomultiplier tube",
+            "p": "uses",
+            "s": "scintillation crystal"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "several blocks combined form a \"bucket\""
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The photomultiplier tube multiplies and amplifies that light signal, converting it into an electrical current."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "electrical current",
+        "p": "produces",
+        "s": "photomultiplier tube"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "multiplies and amplifies that light signal, converting it into an electrical current"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "electrical current",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "PMT"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

@@ -1,0 +1,169 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "piecewise-defined function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "accumulating the area under the product of two functions"
+          },
+          {
+            "category": "mathematics",
+            "term": "flipped, shifted, multiplied, and then integrated"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal processing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "medical imaging"
+          }
+        ],
+        "evidence": [
+          "convolution result",
+          "piecewise definition",
+          "continuous convolution",
+          "accumulating the area under the product of two functions",
+          "flipped, shifted, multiplied, and then integrated",
+          "signal processing and medical imaging"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This leads to a piecewise-defined function, expressed as follows:",
+            "modalities": [
+              "text"
+            ],
+            "o": "piecewise-defined function",
+            "p": "represents",
+            "s": "convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When we plot these expressions, we get a smooth, continuous curve",
+            "modalities": [
+              "text"
+            ],
+            "o": "smooth, continuous curve",
+            "p": "produces",
+            "s": "convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "It\u2019s a powerful blend of geometry and calculus, and it\u2019s absolutely foundational in signal processing and medical imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "accumulating the area under the product of two functions",
+            "p": "depends_on",
+            "s": "convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "piecewise-defined function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "geometry and calculus"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal processing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "medical imaging"
+          }
+        ],
+        "evidence": [
+          "This example gives us a complete, mathematical walkthrough of continuous convolution",
+          "It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions",
+          "It's a powerful blend of geometry and calculus, and it's absolutely foundational in signal processing and medical imaging"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "geometry and calculus"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The slide says: 'This leads to a piecewise-defined function, expressed as follows: y of t equals ...'."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a piecewise-defined function",
+        "p": "produces",
+        "s": "y(t) = f(t) * g(t)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "piecewise-defined function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "foundational in signal processing and medical imaging"
+          }
+        ],
+        "evidence": [
+          "Putting everything together, we now have the complete solution.",
+          "It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions - each one flipped, shifted, multiplied, and then integrated, step by step.",
+          "It\u2019s a powerful blend of geometry and calculus, and it\u2019s absolutely foundational in signal processing and medical imaging."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

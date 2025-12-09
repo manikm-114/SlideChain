@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"sum of sinusoidal components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Within this interval, we can represent the function f of t as a sum of sinusoidal components\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"uses\",\n      \"o\": \"complex exponentials\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"specifically, complex exponentials of the form: e to the power i times 2 pi n, times t over T\"\n    },\n    {\n      \"s\": \"coefficient c_n\",\n      \"p\": \"produces\",\n      \"o\": \"integral formula\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"To compute the coefficient c n, we use the formula at the bottom\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "sum of sinusoidal components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Within this interval, we can represent the function f of t as a sum of sinusoidal components"
+      },
+      {
+        "s": "Fourier series",
+        "p": "uses",
+        "o": "complex exponentials",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "specifically, complex exponentials of the form: e to the power i times 2 pi n, times t over T"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"PET-CT\", \"p\":\"represents\", \"o\":\"hybrid scanner\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"PET-CT was the first successful hybrid scanner.\"},\n    {\"s\":\"nuclear imaging\", \"p\":\"measures\", \"o\":\"metabolites\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The major strength of nuclear imaging is its ability to label many types of metabolites.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "PET-CT",
+        "p": "represents",
+        "o": "hybrid scanner",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "PET-CT was the first successful hybrid scanner."
+      },
+      {
+        "s": "nuclear imaging",
+        "p": "measures",
+        "o": "metabolites",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The major strength of nuclear imaging is its ability to label many types of metabolites."
+      }
+    ]
+  }
+}

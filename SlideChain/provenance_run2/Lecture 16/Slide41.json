@@ -1,0 +1,129 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "parallel-hole collimator"
+          },
+          {
+            "category": "instrumentation",
+            "term": "diverging collimator"
+          },
+          {
+            "category": "instrumentation",
+            "term": "converging collimator"
+          },
+          {
+            "category": "instrumentation",
+            "term": "pinhole collimator"
+          },
+          {
+            "category": "quality_metric",
+            "term": "spatial resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "modality",
+            "term": "nuclear medicine imaging"
+          },
+          {
+            "category": "workflow",
+            "term": "trade-off"
+          }
+        ],
+        "evidence": [
+          "the most commonly used design",
+          "useful when you need to fit a large object",
+          "helpful when you want to examine a small organ",
+          "creating a highly magnified but inverted image",
+          "gain higher spatial resolution",
+          "collect more photons",
+          "designing collimators is therefore about finding the right balance"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "producing a magnified image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "magnified image",
+            "p": "produces",
+            "s": "converging collimator"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "balance"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The object and the image appear at the same scale.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "object",
+            "p": "uses",
+            "s": "parallel-hole collimator"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "spatial resolution can be excellent"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "(Top right) A diverging collimator, using which the image is smaller than the object."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "an image smaller than the object",
+        "p": "produces",
+        "s": "A diverging collimator"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "balance"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "useful when you need to fit a large object, like the entire body, onto a smaller detector field of view"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the image is smaller than the object",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "diverging collimator"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide41.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide41.txt"
+  },
+  "slide_id": "Slide41"
+}

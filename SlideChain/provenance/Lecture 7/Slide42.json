@@ -1,0 +1,131 @@
+{
+  "lecture": "Lecture 7",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "analog signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta functions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "analog-to-digital conversion"
+          },
+          {
+            "category": "mathematics",
+            "term": "sampling theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "weighted impulses"
+          }
+        ],
+        "evidence": [
+          "smooth, continuous signal",
+          "process of sampling",
+          "train of delta functions",
+          "discrete-time representation",
+          "analog-to-digital conversion",
+          "sampling theorem",
+          "series of weighted impulses"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "In the middle plot, you see a train of delta functions - these are evenly spaced impulses in time."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "train of delta functions",
+        "p": "produces",
+        "s": "sampling"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "analog signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta functions"
+          },
+          {
+            "category": "mathematics",
+            "term": "multiplication"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete-time representation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "digital signal processing"
+          }
+        ],
+        "evidence": [
+          "At the top, we have a smooth, continuous signal - this is your analog signal - represented here as f of t, where t is time.",
+          "Next, what do we do? We multiply the continuous signal by this train of impulses. That's shown in the bottom figure.",
+          "And this is the essence of analog-to-digital conversion.",
+          "We've turned a smooth, continuous-time signal into a discrete-time representation - something that can now be stored, processed, and transmitted digitally."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "series of weighted impulses, where the height of each spike corresponds to the signal's value at that instant"
+      },
+      "triples": null
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sampling theorem"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "At the top, we have a smooth, continuous signal - this is your analog signal - represented here as f of t, where t is time.",
+            "modalities": [
+              "text"
+            ],
+            "o": "smooth, continuous signal",
+            "p": "represents",
+            "s": "analog signal"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

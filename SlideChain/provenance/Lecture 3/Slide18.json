@@ -1,0 +1,111 @@
+{
+  "lecture": "Lecture 3",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "additivity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "input"
+          },
+          {
+            "category": "signal_processing",
+            "term": "output"
+          },
+          {
+            "category": "signal_processing",
+            "term": "system"
+          },
+          {
+            "category": "signal_processing",
+            "term": "response"
+          },
+          {
+            "category": "signal_processing",
+            "term": "complex inputs"
+          },
+          {
+            "category": "signal_processing",
+            "term": "simpler parts"
+          }
+        ],
+        "evidence": [
+          "additivity tells us the system\u2019s response to F1 + F2 is simply K1 + K2",
+          "analyze complex inputs by breaking them into simpler parts"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "additivity tells us the system\u2019s response to F1 + F2 is simply K1 + K2",
+            "modalities": [
+              "text"
+            ],
+            "o": "system\u2019s response to F1 + F2 is simply K1 + K2",
+            "p": "represents",
+            "s": "additivity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "engineering"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "additivity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "analyze complex inputs by breaking them into simpler parts"
+          }
+        ],
+        "evidence": [
+          "Let's look at additivity first. If you know how a system responds to input F1, producing output K1, and separately how it responds to input F2, producing K2, then additivity tells us the system's response to F1 + F2 is simply K1 + K2.",
+          "This property allows us to analyze complex inputs by breaking them into simpler parts-a key advantage in engineering."
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "f2(x) \u2192 H[f2(x)] \u2192 K2(x)"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "K2",
+        "p": "produces",
+        "s": "F2"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "advantage"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide46",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo now we come to the final part of this lecture. You see, we have obtained cross-sectional images using MRI. The last slides summarize the key points and also point to the MRI scanners themselves. I will not go into the engineering details of scanners here, since these are mostly descriptive and you can easily read them from the textbook. \n\nThe textbook straightforwardly explains the scanner components. If you read carefully, you will find it both easy and interesting to understand. You will also find additional material about spin echo sequences, gradient echo, and slice selection, which can deepen your understanding. These are not required for the core lecture, but they are excellent supplemental resources if you want to learn more. And finally, you will have some homework related to this lecture, so that you can review the key ideas and practice the concepts we discussed.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"cross-sectional images\", \"category\": \"modality\"},\n    {\"term\": \"MRI scanners\", \"category\": \"instrumentation\"},\n    {\"term\": \"scanner components\", \"category\": \"instrumentation\"},\n    {\"term\": \"spin echo sequences\", \"category\": \"signal_processing\"},\n    {\"term\": \"gradient echo\", \"category\": \"signal_processing\"},\n    {\"term\": \"slice selection\", \"category\": \"signal_processing\"},\n    {\"term\": \"homework\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\"The last slides summarize the key points and also point to the MRI scanners themselves.\", \"These are not required for the core lecture, but they are excellent supplemental resources if you want to learn more.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "cross-sectional images",
+        "category": "modality"
+      },
+      {
+        "term": "MRI scanners",
+        "category": "instrumentation"
+      },
+      {
+        "term": "scanner components",
+        "category": "instrumentation"
+      },
+      {
+        "term": "spin echo sequences",
+        "category": "signal_processing"
+      },
+      {
+        "term": "gradient echo",
+        "category": "signal_processing"
+      },
+      {
+        "term": "slice selection",
+        "category": "signal_processing"
+      },
+      {
+        "term": "homework",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "The last slides summarize the key points and also point to the MRI scanners themselves.",
+      "These are not required for the core lecture, but they are excellent supplemental resources if you want to learn more."
+    ]
+  }
+}

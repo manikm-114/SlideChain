@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"spiral imaging\", \"p\":\"uses\", \"o\":\"continuous gradient fields\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In spiral imaging, there is no separate phase encoding step. Instead, both gradient fields — G x and G y — continuously change their amplitudes over time.\"},\n    {\"s\":\"spiral imaging\", \"p\":\"produces\", \"o\":\"T-one-weighted, T-two-weighted, or proton-density-weighted images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"After data acquisition, the spiral k-space data must be interpolated onto a rectangular grid before applying the two-dimensional inverse Fourier transform to reconstruct the image. This reconstruction yields T-one-weighted, T-two-weighted, or proton-density-weighted images, depending on how the pulse sequence parameters — such as flip angle, T-E, and T-R — are chosen.\"},\n    {\"s\":\"spiral imaging\", \"p\":\"reconstructs_with\", \"o\":\"two-dimensional inverse Fourier transform\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"After data acquisition, the spiral k-space data must be interpolated onto a",
+  "parsed": {
+    "s": "spiral imaging",
+    "p": "produces",
+    "o": "T-one-weighted, T-two-weighted, or proton-density-weighted images",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "After data acquisition, the spiral k-space data must be interpolated onto a rectangular grid before applying the two-dimensional inverse Fourier transform to reconstruct the image. This reconstruction yields T-one-weighted, T-two-weighted, or proton-density-weighted images, depending on how the pulse sequence parameters - such as flip angle, T-E, and T-R - are chosen."
+    ]
+  }
+}

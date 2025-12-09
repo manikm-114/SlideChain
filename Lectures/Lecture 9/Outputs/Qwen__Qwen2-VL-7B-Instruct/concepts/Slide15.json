@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:12:47.046763+00:00",
+  "text_length": 830,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow that we’ve explored convolution in detail — both in the time domain and through the FFT method — let’s move into one of the most common and powerful applications of the Fourier transform: spectral analysis.\n\nSpectral analysis is about looking at a signal in the frequency domain to see what frequencies are present and how strong they are. This is incredibly useful in engineering, science, and even everyday technology — from analyzing audio signals, to detecting features in images, to identifying patterns in biomedical data.\n\nIn the upcoming slides, we’ll take an example signal, examine its spectrum, and then see how techniques like zero-padding and refining spectral bins help us get a clearer, more detailed view of its frequency content.\nLet’s start by looking at our example signal and breaking it down step by step.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"spectral analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"refined spectral bins\", \"category\": \"signal_processing\"},\n    {\"term\": \"2D filtering\", \"category\": \"signal_processing\"},\n    {\"term\": \"noise removal\", \"category\": \"signal_processing\"},\n    {\"term\": \"edge enhancement\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Looking at a signal in the frequency domain to see what frequencies are present and how strong they are\",\n    \"Zero-padding and refining spectral bins help us get a clearer, more detailed view of its frequency content\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "spectral analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Looking at a signal in the frequency domain to see what frequencies are present and how strong they are",
+      "Zero-padding and refining spectral bins help us get a clearer, more detailed view of its frequency content"
+    ]
+  }
+}

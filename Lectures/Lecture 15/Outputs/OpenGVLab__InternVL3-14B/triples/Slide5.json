@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"CT Process\",\n      \"p\": \"uses\",\n      \"o\": \"X-ray projections\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"X-ray projections are taken at multiple views\"\n    },\n    {\n      \"s\": \"CT Process\",\n      \"p\": \"solves\",\n      \"o\": \"inverse problem\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Solve the inverse problem to get tomographic information (CT)\"\n    },\n    {\n      \"s\": \"CT Process\",\n      \"p\": \"uses\",\n      \"o\": \"Radon Transform\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Mathematically, this is done using the Radon transform and its inverse\"\n    },\n    {\n      \"s\": \"CT Process\",\n      \"p\": \"produces\",\n      \"o\": \"3D imaging\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That’s what you see",
+  "parsed": {
+    "s": "CT Process",
+    "p": "uses",
+    "o": "Radon Transform",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Mathematically, this is done using the Radon transform and its inverse"
+    ]
+  }
+}

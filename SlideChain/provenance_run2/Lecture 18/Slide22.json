@@ -1,0 +1,103 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "quantum mechanics"
+          },
+          {
+            "category": "physics",
+            "term": "nuclear magnetic quantum number"
+          },
+          {
+            "category": "physics",
+            "term": "longitudinal component"
+          },
+          {
+            "category": "physics",
+            "term": "Planck\u2019s constant"
+          },
+          {
+            "category": "physics",
+            "term": "energy levels"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          }
+        ],
+        "evidence": [
+          "When a proton with a magnetic moment is placed in a strong external magnetic field, its behavior becomes quantized.",
+          "quantum mechanics tells us that only certain orientations are allowed.",
+          "the nuclear magnetic quantum number, m I, which for a proton can be plus one-half or minus one-half.",
+          "we focus on the longitudinal component of the magnetic moment",
+          "gamma times Planck\u2019s constant divided by four pi",
+          "the fundamental energy levels we use in MRI"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "the z-component of the magnetic moment, \u03bcz, equals plus or minus gamma times Planck\u2019s constant divided by four pi. This means the magnetic moment is never perfectly aligned-it is always tilted slightly. But it is restricted to these two possible states.",
+            "modalities": [
+              "text"
+            ],
+            "o": "nuclear magnetic quantum number",
+            "p": "depends_on",
+            "s": "magnetic moment"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "These values are determined by the nuclear magnetic quantum number, m I, which for a proton can be plus one-half or minus one-half."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "So, the z-component of the magnetic moment, miu z, equals plus or minus gamma times Planck's constant divided by four pi."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "plus or minus gamma times Planck's constant divided by four pi",
+        "p": "equals",
+        "s": "the z-component of the magnetic moment, miu z"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "proton's magnetic moment"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide22.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide22.txt"
+  },
+  "slide_id": "Slide22"
+}

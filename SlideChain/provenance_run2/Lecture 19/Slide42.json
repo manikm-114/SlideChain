@@ -1,0 +1,62 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "This is a very special case, but it makes the principle clear: our signal directly corresponds to the Fourier components of the object we are imaging."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "This function describes the true tissue properties in space"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "true tissue properties in space",
+        "p": "represents",
+        "s": "f(x,y)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "inverse Fourier transform"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The signal of t, the thing we actually measure, is the Fourier transform of f of x and y, evaluated along the kx axis.",
+            "modalities": [
+              "text"
+            ],
+            "o": "kx",
+            "p": "measures",
+            "s": "t"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

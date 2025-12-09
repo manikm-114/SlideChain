@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:41:53.008948+00:00",
+  "text_length": 769,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, graphically, you can see this process clearly. The total counts—the overall measured signal or image—actually contain two main components. These two components are scatter background and random counts, along with a variety of other effects and oddities. You can estimate the random count by using a delayed window, and triple coincidences can be corrected as well. There are many correction methods, but the most important thing to understand from this lecture is to have a rough idea of how these corrections work.\n\nAll these corrections—including attenuation correction, scatter correction, random correction, and corrections for dead time—are essential to refine the measured signal and make sure your results reflect the true activity as accurately as possible.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"scatter background\", \"category\": \"signal_processing\"},\n    {\"term\": \"random counts\", \"category\": \"signal_processing\"},\n    {\"term\": \"correction methods\", \"category\": \"algorithm\"},\n    {\"term\": \"corrections\", \"category\": \"signal_processing\"},\n    {\"term\": \"true activity\", \"category\": \"signal_processing\"},\n    {\"term\": \"corrections—including attenuation correction, scatter correction, random correction, and corrections for dead time\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"The total counts—the overall measured signal or image—actually contain two main components. These two components are scatter background and random counts, along with a variety of other effects and oddities. You can estimate the random count by using a delayed window, and triple coincidences can be corrected as well. There are many correction methods, but the most important thing to understand from this lecture is to have a rough idea of how these corrections work.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "scatter background",
+        "category": "signal_processing"
+      },
+      {
+        "term": "random counts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "correction methods",
+        "category": "algorithm"
+      },
+      {
+        "term": "corrections",
+        "category": "signal_processing"
+      },
+      {
+        "term": "true activity",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The total counts-the overall measured signal or image-actually contain two main components. These two components are scatter background and random counts, along with a variety of other effects and oddities. You can estimate the random count by using a delayed window, and triple coincidences can be corrected as well. There are many correction methods, but the most important thing to understand from this lecture is to have a rough idea of how these corrections work."
+    ]
+  }
+}

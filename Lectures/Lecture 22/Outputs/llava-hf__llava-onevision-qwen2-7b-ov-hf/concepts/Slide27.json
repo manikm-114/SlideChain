@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide27",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe second mode we use is called pulsed wave Doppler. In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses — almost like delta functions — separated in time. It’s not exactly a delta function, but it’s very narrow in duration. \n\nSo, at time one, you send out the first pulse into the tissue along the time axis. Then, after receiving the echo back, at time two, you send out the second pulse, and so on. Each pulse travels into the tissue, reflects from structures, and returns to the transducer. The process repeats again and again, one pulse at a time, to measure motion and flow at specific depths within the body.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Pulsed wave Doppler\", \"category\": \"signal_processing\"},\n    {\"term\": \"short pulses\", \"category\": \"signal_processing\"},\n    {\"term\": \"series of short pulses\", \"category\": \"signal_processing\"},\n    {\"term\": \"pulse\", \"category\": \"signal_processing\"},\n    {\"term\": \"echo\", \"category\": \"signal_processing\"},\n    {\"term\": \"structure\", \"category\": \"anatomy\"},\n    {\"term\": \"transducer\", \"category\": \"instrumentation\"},\n    {\"term\": \"time axis\", \"category\": \"mathematics\"},\n    {\"term\": \"repeats again and again\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses — almost like delta functions — separated in time.\", \"Each pulse travels into the tissue, reflects from structures, and returns to the transducer. The process repeats again and again, one pulse at a time, to measure motion and flow at specific depths within the body.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Pulsed wave Doppler",
+        "category": "signal_processing"
+      },
+      {
+        "term": "short pulses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "series of short pulses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "pulse",
+        "category": "signal_processing"
+      },
+      {
+        "term": "echo",
+        "category": "signal_processing"
+      },
+      {
+        "term": "transducer",
+        "category": "instrumentation"
+      },
+      {
+        "term": "time axis",
+        "category": "mathematics"
+      },
+      {
+        "term": "repeats again and again",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses - almost like delta functions - separated in time.",
+      "Each pulse travels into the tissue, reflects from structures, and returns to the transducer. The process repeats again and again, one pulse at a time, to measure motion and flow at specific depths within the body."
+    ]
+  }
+}

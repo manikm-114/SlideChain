@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"sensitivity\", \"category\": \"quality_metric\"},\n    {\"term\": \"specificity\", \"category\": \"quality_metric\"},\n    {\"term\": \"ROC curve\", \"category\": \"algorithm\"},\n    {\"term\": \"threshold\", \"category\": \"algorithm\"},\n    {\"term\": \"false positive rate\", \"category\": \"quality_metric\"},\n    {\"term\": \"true positive rate\", \"category\": \"quality_metric\"},\n    {\"term\": \"AUC\", \"category\": \"quality_metric\"},\n    {\"term\": \"diagnostic accuracy\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"sensitivity and specificity are not fixed properties of a test\",\n    \"sweeping through all possible thresholds\",\n    \"On the x-axis, we plot 1 – specificity, which is the false positive rate\",\n    \"On the y-axis, we plot sensitivity, the true positive rate\",\n    \"the area under the ROC curve, or AUC, provides a single number to summarize diagnostic accuracy\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sensitivity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "specificity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "ROC curve",
+        "category": "algorithm"
+      },
+      {
+        "term": "threshold",
+        "category": "algorithm"
+      },
+      {
+        "term": "false positive rate",
+        "category": "quality_metric"
+      },
+      {
+        "term": "true positive rate",
+        "category": "quality_metric"
+      },
+      {
+        "term": "diagnostic accuracy",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "sensitivity and specificity are not fixed properties of a test",
+      "sweeping through all possible thresholds",
+      "On the x-axis, we plot 1 - specificity, which is the false positive rate",
+      "On the y-axis, we plot sensitivity, the true positive rate",
+      "the area under the ROC curve, or AUC, provides a single number to summarize diagnostic accuracy"
+    ]
+  }
+}

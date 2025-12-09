@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discretizing signal\",\n      \"p\": \"produces\",\n      \"o\": \"discretizing spectrum\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Because when we discretize, the spectrum is periodically repeated — we get infinitely many copies of it.\"\n    },\n    {\n      \"s\": \"signal\",\n      \"p\": \"depends_on\",\n      \"o\": \"Fourier spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"if a signal is finite in time — meaning it has a limited duration — then its Fourier spectrum is also limited to a finite interval.\"\n    },\n    {\n      \"s\": \"signal\",\n      \"p\": \"represents\",\n      \"o\": \"limited duration\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"if a signal is finite in time — meaning it has a limited duration\"\n    },\n    {\n      \"s\": \"Fourier spectrum\",\n      \"p\": \"extends\",\n      \"o\": \"infinitely\",\n      \"",
+  "parsed": {
+    "s": "signal",
+    "p": "represents",
+    "o": "limited duration",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "if a signal is finite in time - meaning it has a limited duration"
+    ]
+  }
+}

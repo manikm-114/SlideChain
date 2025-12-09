@@ -1,0 +1,115 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "triangular function"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaling property"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Gaussian function"
+          }
+        ],
+        "evidence": [
+          "This shows different versions of a triangular function",
+          "its frequency content gets narrower",
+          "the key idea: When the function gets wider in time, its frequency content gets narrower",
+          "Wider in time means tighter in frequency, and vice versa",
+          "if you use a delta function",
+          "a Gaussian function is balanced",
+          "scaling is not just a math trick"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The narrow blue triangle has the widest Fourier transform - that\u2019s the blue curve in the bottom plot.",
+            "modalities": [
+              "text"
+            ],
+            "o": "widest Fourier transform",
+            "p": "produces",
+            "s": "narrow blue triangle"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The medium-width orange triangle gives a more focused frequency response - that\u2019s the orange curve.",
+            "modalities": [
+              "text"
+            ],
+            "o": "more focused frequency response",
+            "p": "produces",
+            "s": "medium-width orange triangle"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "And the wide green triangle gives a sharp, tall peak in the frequency domain - the green curve below.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sharp, tall peak in the frequency domain",
+            "p": "produces",
+            "s": "wide green triangle"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "powerful way"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Scaling is not just a math trick - it's a powerful way to understand how functions behave in both domains."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The wide green triangle gives a sharp, tall peak in the frequency domain - the green curve below."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a sharp, tall peak in the frequency domain",
+        "p": "produces",
+        "s": "The green triangle"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

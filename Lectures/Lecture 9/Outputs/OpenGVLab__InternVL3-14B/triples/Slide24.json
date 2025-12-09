@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"2D Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"frequency-domain representation\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The forward 2D Fourier transform...expresses it in terms of its spatial frequency components.\"\n    },\n    {\n      \"s\": \"inverse 2D Fourier transform\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original spatial-domain function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The inverse 2D Fourier transform takes that frequency-domain representation and reconstructs the original spatial-domain function.\"\n    },\n    {\n      \"s\": \"frequency-domain representation\",\n      \"p\": \"represents\",\n      \"o\": \"amplitude of different spatial frequency components\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The colors represent the amplitude of different spatial frequency components...\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "2D Fourier transform",
+        "p": "produces",
+        "o": "frequency-domain representation",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The forward 2D Fourier transform...expresses it in terms of its spatial frequency components."
+      },
+      {
+        "s": "inverse 2D Fourier transform",
+        "p": "reconstructs_with",
+        "o": "original spatial-domain function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The inverse 2D Fourier transform takes that frequency-domain representation and reconstructs the original spatial-domain function."
+      },
+      {
+        "s": "frequency-domain representation",
+        "p": "represents",
+        "o": "amplitude of different spatial frequency components",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The colors represent the amplitude of different spatial frequency components..."
+      }
+    ]
+  }
+}

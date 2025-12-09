@@ -1,0 +1,10 @@
+We can also use operational amplifiers in measurement setups, particularly for impedance matching.
+
+Looking into the input port of an op amp, the impedance is very high. This means it can capture a signal from a source without significantly loading it. On the other hand, when we take the signal from the output port, the impedance is very low. This allows the signal to drive the next stage efficiently. In this way, the op amp satisfies the two opposing requirements we discussed earlier: high input impedance and low output impedance.
+
+This principle applies to both DC and AC circuit analysis. Remember the voltage–current relationships for resistors, capacitors, and inductors. When you connect these components into a network, Kirchhoff’s Voltage Law and Kirchhoff’s Current Law give you enough equations to solve for all unknowns.
+
+The beauty of phasor notation is that for AC steady-state circuits, you don’t need to solve differential equations. You simply work with algebraic equations, just as in DC analysis. This is why, in a sense, we can say “AC is DC in disguise” — at least for steady-state analysis.
+Of course, if you’re dealing with transients — for example, when a signal is suddenly applied — you would still need to solve the time-domain differential equations. But once the system reaches steady state, algebraic methods are enough.
+
+These circuit concepts are applied in many areas — from sensing signals in medical imaging to filtering unwanted noise. In fact, we’ve already seen examples where Fourier analysis helps us understand how circuits pass or block certain frequencies. This is crucial for designing data acquisition systems that can detect and process signals effectively.

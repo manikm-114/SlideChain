@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier analysis\",\n      \"p\": \"uses\",\n      \"o\": \"simple tools to solve complex problems\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Fourier analysis follows two powerful principles: Use simple tools to solve complex problems.\"\n    },\n    {\n      \"s\": \"Fourier analysis\",\n      \"p\": \"uses\",\n      \"o\": \"divide big problems into small, manageable pieces\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Fourier analysis follows two powerful principles: ... Divide big problems into small, manageable pieces.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier analysis",
+        "p": "uses",
+        "o": "simple tools to solve complex problems",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Fourier analysis follows two powerful principles: Use simple tools to solve complex problems."
+      },
+      {
+        "s": "Fourier analysis",
+        "p": "uses",
+        "o": "divide big problems into small, manageable pieces",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Fourier analysis follows two powerful principles: ... Divide big problems into small, manageable pieces."
+      }
+    ]
+  }
+}

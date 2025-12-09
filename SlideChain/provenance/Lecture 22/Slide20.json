@@ -1,0 +1,113 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Doppler effect"
+          },
+          {
+            "category": "physics",
+            "term": "sound waves"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency"
+          },
+          {
+            "category": "modality",
+            "term": "Doppler ultrasound imaging"
+          },
+          {
+            "category": "physics",
+            "term": "relative velocity"
+          }
+        ],
+        "evidence": [
+          "the same thing happens with the siren of a police car",
+          "the perceived frequency depends directly on the relative velocity",
+          "Doppler effect, and it forms the physical foundation for Doppler ultrasound imaging",
+          "measure blood flow speed and direction inside the body"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "where we measure blood flow speed and direction inside the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "blood flow speed and direction",
+            "p": "measures",
+            "s": "Doppler ultrasound imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "blood flow direction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "measure blood flow speed and direction inside the body"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "In other words, the perceived frequency depends directly on the relative velocity between the sound source and the observer."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the relative velocity between the sound source and the observer",
+        "p": "depends_on",
+        "s": "the Doppler effect"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Doppler effect"
+          },
+          {
+            "category": "modality",
+            "term": "Doppler ultrasound imaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency with motion"
+          },
+          {
+            "category": "physics",
+            "term": "sound waves"
+          }
+        ],
+        "evidence": [
+          "The same thing happens with the siren of a police car. When the car is moving toward you, the sound waves are compressed, giving you a higher frequency or a sharper tone. When the car moves away, the sound waves are stretched, and you perceive a lower frequency.",
+          "This change in frequency with motion is the Doppler effect, and it forms the physical foundation for Doppler ultrasound imaging, where we measure blood flow speed and direction inside the body."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

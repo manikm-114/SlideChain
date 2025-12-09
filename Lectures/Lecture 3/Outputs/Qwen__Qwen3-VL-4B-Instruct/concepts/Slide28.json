@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:14:06.523298+00:00",
+  "text_length": 352,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nA capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition. If we focus on the relative change—the change from that initial state—the system behaves linearly. This shows how initial conditions affect our view of linearity, and why considering relative changes can be so useful.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"A capacitor introduces a bit more complexity\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Its voltage depends on the integral of the current over time, plus an initial condition\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"If we focus on the relative change—the change from that initial state—the system behaves linearly\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"This shows how initial conditions affect our view of linearity\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"and why considering relative changes can be so useful\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"A capacitor introduces a bit more complexity\",\n    \"Its voltage depends on the integral of the current over time, plus an initial condition\",\n    \"If we focus on the relative change—the change from that initial state—the system behaves linearly\",\n    \"This shows how initial conditions affect our view of linearity\",\n    \"and why considering relative changes can be so useful\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "A capacitor introduces a bit more complexity",
+        "category": "physics"
+      },
+      {
+        "term": "Its voltage depends on the integral of the current over time, plus an initial condition",
+        "category": "mathematics"
+      },
+      {
+        "term": "This shows how initial conditions affect our view of linearity",
+        "category": "mathematics"
+      },
+      {
+        "term": "and why considering relative changes can be so useful",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "A capacitor introduces a bit more complexity",
+      "Its voltage depends on the integral of the current over time, plus an initial condition",
+      "If we focus on the relative change-the change from that initial state-the system behaves linearly",
+      "This shows how initial conditions affect our view of linearity",
+      "and why considering relative changes can be so useful"
+    ]
+  }
+}

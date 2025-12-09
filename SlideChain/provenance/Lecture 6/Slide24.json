@@ -1,0 +1,111 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transformations"
+          },
+          {
+            "category": "signal_processing",
+            "term": "additivity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaling or homogeneity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "mathematics",
+            "term": "summation"
+          }
+        ],
+        "evidence": [
+          "Fourier transformations",
+          "additivity",
+          "scaling or homogeneity",
+          "Fourier transform",
+          "summation"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "So this is just, again, this part copied from the Stanford textbook. So you have a function f and g. There are Fourier transformations. So you have Fourier transformation. You have this summation, the summation of the original function. Then you perform Fourier transformation. The result is the same as the summation of the Fourier transformation of f and the Fourier transformation of g. So this is additivity.",
+            "modalities": [
+              "text"
+            ],
+            "o": "additivity",
+            "p": "represents",
+            "s": "Fourier transformation"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "How about the scaling or homogeneity? So if f is scaled by alpha, then we perform Fourier transform. That's the same as performing the Fourier transform of f. Then you scale the result by the same scaling factor.",
+            "modalities": [
+              "text"
+            ],
+            "o": "scaling or homogeneity",
+            "p": "represents",
+            "s": "Fourier transformation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "mathematics",
+            "term": "linearity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "additivity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaling property"
+          }
+        ],
+        "evidence": [
+          "The linearity properties are easy to check from the corresponding properties for integrals.",
+          "The first linearity. So this is just, again, this part copied from the Stanford textbook. So you have a function f and g.",
+          "So in the system, linear system lecture, we explain that.",
+          "So you can verify these two properties according to the formula by defining the Fourier transform."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "performing the Fourier transform of f. Then you scale the result by the same scaling factor"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide24.txt"
+  },
+  "slide_id": "Slide24"
+}

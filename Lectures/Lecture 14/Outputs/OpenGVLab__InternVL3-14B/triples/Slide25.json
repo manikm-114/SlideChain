@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"classic CT\", \"p\":\"reconstructs_with\", \"o\":\"filtered backprojection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"classic CT reconstructs a global image, like a wholesale business covering the entire area.\"},\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"partial data\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Interior tomography, however, only requires partial data limited to the region of interest.\"},\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"smaller, targeted area\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Interior tomography reconstructs a smaller, targeted area—like retail shopping.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "classic CT",
+        "p": "reconstructs_with",
+        "o": "filtered backprojection",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "classic CT reconstructs a global image, like a wholesale business covering the entire area."
+      },
+      {
+        "s": "interior tomography",
+        "p": "reconstructs_with",
+        "o": "partial data",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Interior tomography, however, only requires partial data limited to the region of interest."
+      },
+      {
+        "s": "interior tomography",
+        "p": "reconstructs_with",
+        "o": "smaller, targeted area",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Interior tomography reconstructs a smaller, targeted area-like retail shopping."
+      }
+    ]
+  }
+}

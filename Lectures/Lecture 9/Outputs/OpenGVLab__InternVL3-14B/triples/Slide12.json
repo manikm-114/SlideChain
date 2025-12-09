@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"conv function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now we use MATLAB’s built-in conv function to compute their linear convolution\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"produces\",\n      \"o\": \"triangular shape\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we plot the result, we see the familiar triangular shape\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "conv function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now we use MATLAB’s built-in conv function to compute their linear convolution"
+      },
+      {
+        "s": "MATLAB",
+        "p": "produces",
+        "o": "triangular shape",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "When we plot the result, we see the familiar triangular shape"
+      }
+    ]
+  }
+}

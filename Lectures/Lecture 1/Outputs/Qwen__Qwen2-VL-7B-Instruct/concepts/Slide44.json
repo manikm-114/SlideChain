@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide44",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:45:59.353918+00:00",
+  "text_length": 1469,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\n\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\n\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\n\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"biomedical imaging\", \"category\": \"modality\"},\n    {\"term\": \"phenotype\", \"category\": \"anatomy\"},\n    {\"term\": \"genotype\", \"category\": \"anatomy\"},\n    {\"term\": \"bioinformatics\", \"category\": \"software\"},\n    {\"term\": \"personalized medicine\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Biomedical imaging plays a crucial role in studying the phenotype.\",\n    \"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\",\n    \"Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "biomedical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "bioinformatics",
+        "category": "software"
+      },
+      {
+        "term": "personalized medicine",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Biomedical imaging plays a crucial role in studying the phenotype.",
+      "We can use biomedical imaging to observe and understand the effects of genetic factors on the body.",
+      "Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine."
+    ]
+  }
+}

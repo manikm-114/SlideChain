@@ -1,0 +1,5 @@
+So, analytic approach: we convert X-ray data into Fourier space—equivalently, we could work in Radon space—but here I explain the Fourier-space processing. We invert the Fourier-space transform according to a closed-form formula, like the one I derived. Filtered backprojection is an analytic formula; you do not need iterative reconstruction.
+
+In the reconstruction process, some filtering or prior processing steps may be used. An iterative algorithm is very useful when the data are not complete—say, some views are missing, projections are blocked by metal, or there are other imperfections in data acquisition. Analytic pros: you don’t need an iterative process; you have a formula—that’s nice. But it assumes low noise and complete data.
+
+So the two approaches—iterative and analytic—have their strengths and weaknesses. Nowadays, iterative methods are often more popular when we need low-dose reconstruction or a very short acquisition time. And filtered backprojection, as I explained here, is just the mathematical formulas plus the geometrical pictures I mentioned.

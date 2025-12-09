@@ -1,0 +1,72 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "Clinical Images"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Here we observe the plan for CT reconstruction. We will connect data space-the set of X-ray line integrals-to image space-the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object.",
+            "modalities": [
+              "text"
+            ],
+            "o": "CT Reconstruction",
+            "p": "uses",
+            "s": "Duality of Information"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "Clinical Images"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "From this principle, we derive filtered back-projection (FBP)."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "filtered back-projection (FBP)",
+        "p": "produces",
+        "s": "Analytic Approach"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "limited angles"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "A times x equals b",
+            "modalities": [
+              "text"
+            ],
+            "o": "linear equations",
+            "p": "uses",
+            "s": "scanner"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

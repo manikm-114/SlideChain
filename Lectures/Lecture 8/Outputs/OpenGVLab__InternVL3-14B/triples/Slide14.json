@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discretizing spectrum\",\n      \"p\": \"uses\",\n      \"o\": \"periodic train of impulses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To do that, we multiply the spectrum by a periodic train of impulses\"\n    },\n    {\n      \"s\": \"discretizing spectrum\",\n      \"p\": \"produces\",\n      \"o\": \"discrete signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"By doing this, we end up with a signal that is discrete in both the time domain and the frequency domain\"\n    },\n    {\n      \"s\": \"discretizing spectrum\",\n      \"p\": \"depends_on\",\n      \"o\": \"sampling rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"As before, we must choose our frequency-domain sampling rate carefully\"\n    },\n    {\n      \"s\": \"discretizing spectrum\",\n      \"p\": \"represents\",\n      \"o\": \"Fourier spectrum\",\n      \"modalities\": [\"text",
+  "parsed": {
+    "s": "discretizing spectrum",
+    "p": "depends_on",
+    "o": "sampling rate",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "As before, we must choose our frequency-domain sampling rate carefully"
+    ]
+  }
+}

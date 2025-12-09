@@ -1,0 +1,201 @@
+{
+  "lecture": "Lecture 9",
+  "slide_id": "Slide23",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide23.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide23.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "spatial frequencies",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "2D Fourier transforms",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.",
+            "This is a critical tool in image analysis, because many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"image processing\\\", \\\"category\\\": \\\"image_processing\\\"},\\n    {\\\"term\\\": \\\"spatial frequencies\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"noise removal\\\", \\\"category\\\": \\\"image_processing\\\"},\\n    {\\\"term\\\": \\\"edge enhancement\\\", \\\"category\\\": \\\"image_processing\\\"},\\n    {\\\"term\\\": \\\"2D Fourier transforms\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\\", \\\"This is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"spatial frequencies\", \"category\": \"frequency_domain\"}, {\"term\": \"2D Fourier transforms\", \"category\": \"signal_processing\"}], \"evidence\": [\"In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\", \"This is a critical tool in image analysis, because many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide23.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Fourier transform\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"image processing\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide23.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier transform",
+              "category": "mathematics"
+            },
+            {
+              "term": "two dimensions",
+              "category": "mathematics"
+            },
+            {
+              "term": "spatial coordinates",
+              "category": "mathematics"
+            },
+            {
+              "term": "frequencies",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "spatial frequencies",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "image processing",
+              "category": "signal_processing"
+            },
+            {
+              "term": "noise removal",
+              "category": "signal_processing"
+            },
+            {
+              "term": "edge enhancement",
+              "category": "signal_processing"
+            },
+            {
+              "term": "2D Fourier transforms",
+              "category": "mathematics"
+            },
+            {
+              "term": "filtering",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Fourier transform in one dimension",
+            "two dimensions",
+            "horizontal and vertical spatial coordinates",
+            "frequencies",
+            "spatial frequencies",
+            "image processing",
+            "noise removal",
+            "edge enhancement",
+            "2D Fourier transforms",
+            "filtering"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier transform\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"two dimensions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"spatial coordinates\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"frequencies\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"spatial frequencies\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"image processing\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"noise removal\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"edge enhancement\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"2D Fourier transforms\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"filtering\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Fourier transform in one dimension\\\",\\n    \\\"two dimensions\\\",\\n    \\\"horizontal and vertical spatial coordinates\\\",\\n    \\\"frequencies\\\",\\n    \\\"spatial frequencies\\\",\\n    \\\"image processing\\\",\\n    \\\"noise removal\\\",\\n    \\\"edge enhancement\\\",\\n    \\\"2D Fourier transforms\\\",\\n    \\\"filtering\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier transform\", \"category\": \"mathematics\"}, {\"term\": \"two dimensions\", \"category\": \"mathematics\"}, {\"term\": \"spatial coordinates\", \"category\": \"mathematics\"}, {\"term\": \"frequencies\", \"category\": \"frequency_domain\"}, {\"term\": \"spatial frequencies\", \"category\": \"frequency_domain\"}, {\"term\": \"image processing\", \"category\": \"signal_processing\"}, {\"term\": \"noise removal\", \"category\": \"signal_processing\"}, {\"term\": \"edge enhancement\", \"category\": \"signal_processing\"}, {\"term\": \"2D Fourier transforms\", \"category\": \"mathematics\"}, {\"term\": \"filtering\", \"category\": \"signal_processing\"}], \"evidence\": [\"Fourier transform in one dimension\", \"two dimensions\", \"horizontal and vertical spatial coordinates\", \"frequencies\", \"spatial frequencies\", \"image processing\", \"noise removal\", \"edge enhancement\", \"2D Fourier transforms\", \"filtering\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide23.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Fourier transform",
+              "p": "represents",
+              "o": "spatial frequencies",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "a two-dimensional Fourier transform tells us what spatial frequencies are present in an image"
+            },
+            {
+              "s": "image processing tasks",
+              "p": "depends_on",
+              "o": "frequency domain",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Fourier transform\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"spatial frequencies\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"a two-dimensional Fourier transform tells us what spatial frequencies are present in an image\\\"},\\n    {\\\"s\\\":\\\"image processing tasks\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"frequency domain\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain\\\"},\\n    {\\\"s\\\":\\\"2D Fourier transforms\\\", \\\"p\\\":\\\"applies to\\\", \\\"o\\\":\\\"filtering images\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"In the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Fourier transform\", \"p\": \"represents\", \"o\": \"spatial frequencies\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"a two-dimensional Fourier transform tells us what spatial frequencies are present in an image\"}, {\"s\": \"image processing tasks\", \"p\": \"depends_on\", \"o\": \"frequency domain\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide23.json",
+        "parsed": {
+          "term": "Edge Enhancement",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T02:27:21.704312+00:00\", \"text_length\": 862, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Discrete Convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Zero-padding\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Circular Equivalent to Linear\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Spectral Analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Zero-padding\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Refined Spectral Bins\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"2D Filtering\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Noise Removal\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Edge Enhancement\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Fourier analysis is just as powerful in two dimensions, and that's exactly what we need for image processing.\\\",\\n    \\\"In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time.\\\",\\n    \\\"A two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\\",\\n    \\\"This is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform\", \"parsed\": {\"term\": \"Edge Enhancement\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide23.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T02:55:10.540297+00:00\", \"text_length\": 862, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Discrete Convolution\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"Zero-padding\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Zero-padding\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide23.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "two-dimensional fourier transform",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "spatial frequencies",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "noise removal",
+              "category": "data_processing"
+            },
+            {
+              "term": "edge enhancement",
+              "category": "data_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "frequency_domain"
+            }
+          ],
+          "evidence": [
+            "Fourier analysis is just as powerful in two dimensions, and that's exactly what we need for image processing.",
+            "a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.",
+            "many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T02:03:22.416738+00:00\", \"text_length\": 862, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"two-dimensional fourier transform\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"spatial frequencies\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"noise removal\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"edge enhancement\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"frequency domain\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\\",\\n    \\\"a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\\",\\n    \\\"many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"two-dimensional fourier transform\", \"category\": \"frequency_domain\"}, {\"term\": \"spatial frequencies\", \"category\": \"frequency_domain\"}, {\"term\": \"noise removal\", \"category\": \"data_processing\"}, {\"term\": \"edge enhancement\", \"category\": \"data_processing\"}, {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"}], \"evidence\": [\"Fourier analysis is just as powerful in two dimensions, and that's exactly what we need for image processing.\", \"a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\", \"many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide23.json",
+        "parsed": {
+          "s": "noise removal",
+          "p": "uses",
+          "o": "2D Fourier transforms",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.95,
+          "evidence": [
+            "This is a critical tool in image analysis, because many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T02:07:21.313036+00:00\", \"text_length\": 862, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo far, we’ve looked at the Fourier transform in one dimension — signals that vary with time. But Fourier analysis is just as powerful in two dimensions, and that’s exactly what we need for image processing.\\n\\nIn the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image.\\n\\nThis is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\nIn the next slides, we’ll see how 2D Fourier transforms can be applied to filtering images, starting with noise removal and then moving on to edge enhancement.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"2D Fourier transforms\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"filtering images\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"In the context of images, the two dimensions are the horizontal and vertical spatial coordinates, rather than time. Just as a one-dimensional Fourier transform tells us what frequencies are present in a signal, a two-dimensional Fourier transform tells us what spatial frequencies are present in an image. This is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"noise removal\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"2D Fourier transforms\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"This is a critical tool in image analysis, because many image processing tasks — such as noise removal or edge enhancement — are easier to understand and perform in the frequency domain.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"edge enhancement\\\",\\n      \\\"\", \"parsed\": {\"s\": \"noise removal\", \"p\": \"uses\", \"o\": \"2D Fourier transforms\", \"modalities\": [\"text\"], \"confidence\": 0.95, \"evidence\": [\"This is a critical tool in image analysis, because many image processing tasks - such as noise removal or edge enhancement - are easier to understand and perform in the frequency domain.\"]}}"
+      }
+    }
+  }
+}

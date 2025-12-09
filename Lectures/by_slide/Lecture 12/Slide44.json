@@ -1,0 +1,166 @@
+{
+  "lecture": "Lecture 12",
+  "slide_id": "Slide44",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide44.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "contrast-enhanced photon-counting CT",
+              "category": "modality"
+            },
+            {
+              "term": "dual-energy imaging",
+              "category": "modality"
+            },
+            {
+              "term": "attenuation",
+              "category": "physics"
+            },
+            {
+              "term": "detector evolution",
+              "category": "instrumentation"
+            },
+            {
+              "term": "photon-counting",
+              "category": "modality"
+            },
+            {
+              "term": "clinical reality",
+              "category": "workflow"
+            },
+            {
+              "term": "next generation of medical imaging",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Just last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.",
+            "This is a milestone. What we have been discussing - from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting - is not just a research vision anymore. It is becoming a clinical reality."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"contrast-enhanced photon-counting CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"dual-energy imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detector evolution\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"photon-counting\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"clinical reality\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"next generation of medical imaging\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Just last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\\", \\\"This is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"contrast-enhanced photon-counting CT\", \"category\": \"modality\"}, {\"term\": \"dual-energy imaging\", \"category\": \"modality\"}, {\"term\": \"attenuation\", \"category\": \"physics\"}, {\"term\": \"detector evolution\", \"category\": \"instrumentation\"}, {\"term\": \"photon-counting\", \"category\": \"modality\"}, {\"term\": \"clinical reality\", \"category\": \"workflow\"}, {\"term\": \"next generation of medical imaging\", \"category\": \"software\"}], \"evidence\": [\"Just last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\", \"This is a milestone. What we have been discussing - from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting - is not just a research vision anymore. It is becoming a clinical reality.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"contrast-enhanced photon-counting CT\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"human clinical imaging\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "photon-counting CT",
+              "category": "modality"
+            },
+            {
+              "term": "contrast-enhanced",
+              "category": "modality"
+            },
+            {
+              "term": "detector technology",
+              "category": "instrumentation"
+            },
+            {
+              "term": "attenuation",
+              "category": "physics"
+            },
+            {
+              "term": "detector evolution",
+              "category": "instrumentation"
+            },
+            {
+              "term": "dual-energy imaging",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray physics",
+              "category": "physics"
+            },
+            {
+              "term": "noise performance",
+              "category": "quality_metric"
+            },
+            {
+              "term": "contrast",
+              "category": "quality_metric"
+            }
+          ],
+          "evidence": [
+            "contrast-enhanced photon-counting CT",
+            "detector technology",
+            "attenuation",
+            "detector evolution",
+            "dual-energy imaging",
+            "X-ray physics",
+            "noise performance",
+            "separate materials",
+            "improved contrast"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"photon-counting CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"contrast-enhanced\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"detector technology\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detector evolution\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"dual-energy imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray physics\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"noise performance\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"material separation\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"contrast\\\", \\\"category\\\": \\\"quality_metric\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"contrast-enhanced photon-counting CT\\\",\\n    \\\"detector technology\\\",\\n    \\\"attenuation\\\",\\n    \\\"detector evolution\\\",\\n    \\\"dual-energy imaging\\\",\\n    \\\"X-ray physics\\\",\\n    \\\"noise performance\\\",\\n    \\\"separate materials\\\",\\n    \\\"improved contrast\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"photon-counting CT\", \"category\": \"modality\"}, {\"term\": \"contrast-enhanced\", \"category\": \"modality\"}, {\"term\": \"detector technology\", \"category\": \"instrumentation\"}, {\"term\": \"attenuation\", \"category\": \"physics\"}, {\"term\": \"detector evolution\", \"category\": \"instrumentation\"}, {\"term\": \"dual-energy imaging\", \"category\": \"modality\"}, {\"term\": \"X-ray physics\", \"category\": \"physics\"}, {\"term\": \"noise performance\", \"category\": \"quality_metric\"}, {\"term\": \"contrast\", \"category\": \"quality_metric\"}], \"evidence\": [\"contrast-enhanced photon-counting CT\", \"detector technology\", \"attenuation\", \"detector evolution\", \"dual-energy imaging\", \"X-ray physics\", \"noise performance\", \"separate materials\", \"improved contrast\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide44.json",
+        "parsed": {
+          "s": "contrast-enhanced photon-counting CT",
+          "p": "measures",
+          "o": "better noise performance",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"contrast-enhanced photon-counting CT\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"Siemens\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\\"},\\n    {\\\"s\\\":\\\"contrast-enhanced photon-counting CT\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"improved contrast\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\\"},\\n    {\\\"s\\\":\\\"contrast-enhanced photon-counting CT\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"better noise performance\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\\"},\\n    {\\\"s\\\":\\\"contrast-enhanced photon-counting CT\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"ability to separate materials with high precision\\\", \\\"modalities\\\":[\\\"text\\\"],\", \"parsed\": {\"s\": \"contrast-enhanced photon-counting CT\", \"p\": \"measures\", \"o\": \"better noise performance\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "term": "medical imaging",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T06:43:32.598699+00:00\", \"text_length\": 1081, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"contrast-enhanced photon-counting CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"human experience\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"feasibility\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"contrast\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"noise performance\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"material separation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"clinical reality\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"fundamental principles\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\\",\\n    \\\"The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\\",\\n    \\\"This is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore\", \"parsed\": {\"term\": \"medical imaging\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:23:07.358782+00:00\", \"text_length\": 1081, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "term": "ability to separate materials with high precision",
+          "category": "quality_metric"
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:07:23.914527+00:00\", \"text_length\": 1081, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"photon-counting CT\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"contrast-enhanced photon-counting CT\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"X-ray physics\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"attenuation\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"detector evolution\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"dual-energy imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"improved contrast\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"better noise performance\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"ability to separate materials with high precision\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\\",\\n    \\\"For the very first time, we are seeing photon-counting\", \"parsed\": {\"term\": \"ability to separate materials with high precision\", \"category\": \"quality_metric\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:14:21.868096+00:00\", \"text_length\": 1081, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd let me close with this very exciting development.\\nJust last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\n\\nWhat does this mean? For the very first time, we are seeing photon-counting CT applied in real clinical imaging of patients — not just phantoms or animal models. The results demonstrated the feasibility and advantages of this new detector technology, including improved contrast, better noise performance, and the ability to separate materials with high precision.\\n\\nSo this is a milestone. What we have been discussing — from X-ray physics, to attenuation, to detector evolution, to dual-energy imaging, and finally photon-counting — is not just a research vision anymore. It is becoming a clinical reality.\\nThis is where the field is going. And as engineers and scientists, your understanding of these fundamental principles will position you to contribute to the next generation of medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Abdominal Imaging with Contrast-enhanced Photon-counting CT: First Human Experience\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"a major paper published in the journal Radiology\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"Just last year, a major paper was published in the journal Radiology. This study, conducted by a team of physicians in collaboration with Siemens, reported the first human experience with contrast-enhanced photon-counting CT.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

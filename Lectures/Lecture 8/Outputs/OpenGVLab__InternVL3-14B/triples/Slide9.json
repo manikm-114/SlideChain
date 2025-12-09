@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Signal sampling\",\n      \"p\": \"uses\",\n      \"o\": \"continuous signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"At the top, we have our continuous signal, f x.\"\n    },\n    {\n      \"s\": \"Signal sampling\",\n      \"p\": \"uses\",\n      \"o\": \"Shah function (impulse train)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Next, we have what’s called a Shah function, or an impulse train.\"\n    },\n    {\n      \"s\": \"Shah function (impulse train)\",\n      \"p\": \"represents\",\n      \"o\": \"series of delta functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This is simply a series of delta functions, each spaced t units apart.\"\n    },\n    {\n      \"s\": \"sampled function\",\n      \"p\": \"produces\",\n      \"o\": \"original signal’s values at discrete points\",\n      \"modalities\": [\"text\"],\n      \"",
+  "parsed": {
+    "s": "Shah function (impulse train)",
+    "p": "represents",
+    "o": "series of delta functions",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "This is simply a series of delta functions, each spaced t units apart."
+    ]
+  }
+}

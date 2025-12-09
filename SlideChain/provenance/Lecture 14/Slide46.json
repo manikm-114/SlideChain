@@ -1,0 +1,87 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "dose equivalent"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This calculation is summarized by a formula sometimes noted as equation 1.30 in radiation safety literature.",
+            "modalities": [
+              "text"
+            ],
+            "o": "biological risk",
+            "p": "represents",
+            "s": "effective dose equivalent"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The absorbed dose is a physical measurement of energy per unit mass of tissue, expressed in grays.",
+            "modalities": [
+              "text"
+            ],
+            "o": "energy per unit mass of tissue",
+            "p": "measures",
+            "s": "absorbed dose"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "equation 1.30"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "some tissues, like those involved in reproduction or rapidly regenerating cells, are more sensitive to radiation damage"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The most useful measure of radiation dose is the effective dose equivalent H_E, which sums the dose delivered to each organ weighted by the radiation sensitivity w of that organ with respect to cancer and genetic risks:"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the dose delivered to each organ weighted by the radiation sensitivity w of that organ",
+        "p": "represents",
+        "s": "The effective dose equivalent"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "biological risk"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Radiation dose is a physical measurement of energy per unit mass of tissue, expressed in grays.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Absorbed dose",
+            "p": "measures",
+            "s": "Radiation dose"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide46.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide46.txt"
+  },
+  "slide_id": "Slide46"
+}

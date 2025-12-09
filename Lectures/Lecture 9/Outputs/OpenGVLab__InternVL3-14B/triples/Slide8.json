@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"linear convolution\",\n      \"p\": \"produces\",\n      \"o\": \"triangular shapes\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we take these two signals and perform a linear convolution — shown in the third plot — we get a series of triangular shapes.\"\n    },\n    {\n      \"s\": \"circular convolution\",\n      \"p\": \"produces\",\n      \"o\": \"edge effects\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Notice what happens: instead of three clean, separate triangles, the edges wrap around, and the red and blue parts start overlapping. These are edge effects caused by the circular extension.\"\n    },\n    {\n      \"s\": \"zero-padding\",\n      \"p\": \"avoids\",\n      \"o\": \"unwanted overlaps\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"to avoid these unwanted overlaps in circular convolution, we often use zero-padding\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "linear convolution",
+        "p": "produces",
+        "o": "triangular shapes",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If we take these two signals and perform a linear convolution - shown in the third plot - we get a series of triangular shapes."
+      },
+      {
+        "s": "circular convolution",
+        "p": "produces",
+        "o": "edge effects",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Notice what happens: instead of three clean, separate triangles, the edges wrap around, and the red and blue parts start overlapping. These are edge effects caused by the circular extension."
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide55",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:18:23.913920+00:00",
+  "text_length": 938,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, here are your exercises for this week. \n\nThese questions are designed to help you practice the core ideas we learned today: calculating radioactivity from decay counts, relating activity to half-life and the number of nuclei, analyzing how the signal-to-noise ratio changes with dose and scan time, and modeling the technetium generator with parent–daughter decay equations. You are not limited to only these four questions. If you want to challenge yourself, feel free to explore more problems in the textbook. But these are the ones that will be graded.\n\nSince this is an online course, all discussions and clarifications will happen here. If anything is unclear, simply revisit the lecture materials, the slides, or the recorded explanation—we’ll keep everything accessible for you to review at your own pace.\n\nThat brings us to the end of today’s lecture. Thank you for studying along online, and I’ll see you in the next session.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"radioactivity\", \"category\": \"physics\"},\n    {\"term\": \"half-life\", \"category\": \"physics\"},\n    {\"term\": \"signal-to-noise ratio\", \"category\": \"signal_processing\"},\n    {\"term\": \"technetium generator\", \"category\": \"physics\"},\n    {\"term\": \"parent-daughter decay\", \"category\": \"physics\"},\n    {\"term\": \"activity\", \"category\": \"physics\"},\n    {\"term\": \"dose\", \"category\": \"physics\"},\n    {\"term\": \"scan time\", \"category\": \"signal_processing\"},\n    {\"term\": \"equations\", \"category\": \"mathematics\"},\n    {\"term\": \"plot graphs\", \"category\": \"data_processing\"},\n    {\"term\": \"activity of parent and daughter nuclei\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"calculating radioactivity from decay counts\",\n    \"relating activity to half-life and the number of nuclei\",\n    \"analyzing how the signal-to-noise ratio changes with dose and scan time\",\n    \"modeling the technetium generator with parent–daughter decay equations\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radioactivity",
+        "category": "physics"
+      },
+      {
+        "term": "half-life",
+        "category": "physics"
+      },
+      {
+        "term": "signal-to-noise ratio",
+        "category": "signal_processing"
+      },
+      {
+        "term": "technetium generator",
+        "category": "physics"
+      },
+      {
+        "term": "activity",
+        "category": "physics"
+      },
+      {
+        "term": "dose",
+        "category": "physics"
+      },
+      {
+        "term": "scan time",
+        "category": "signal_processing"
+      },
+      {
+        "term": "equations",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "calculating radioactivity from decay counts",
+      "relating activity to half-life and the number of nuclei",
+      "analyzing how the signal-to-noise ratio changes with dose and scan time",
+      "modeling the technetium generator with parent-daughter decay equations"
+    ]
+  }
+}

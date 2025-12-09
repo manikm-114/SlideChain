@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"spiral CT\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"densely\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"with spiral CT, you can select longitudinal positions as densely as you want.\"\n    },\n    {\n      \"s\": \"reconstructed slices\",\n      \"p\": \"produces\",\n      \"o\": \"better contrast resolution and visibility\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"One of the reconstructed slices is likely to contain the tumor fully, providing much better contrast resolution and visibility.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "spiral CT",
+        "p": "reconstructs_with",
+        "o": "densely",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "with spiral CT, you can select longitudinal positions as densely as you want."
+      },
+      {
+        "s": "reconstructed slices",
+        "p": "produces",
+        "o": "better contrast resolution and visibility",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "One of the reconstructed slices is likely to contain the tumor fully, providing much better contrast resolution and visibility."
+      }
+    ]
+  }
+}

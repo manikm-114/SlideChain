@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T23:11:38.638199+00:00",
+  "text_length": 1204,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at the same function from a completely different angle — instead of seeing it as a sum of impulses, imagine it as a sum of waves.\n\nHere, we’re working with a periodic function — meaning it repeats itself over time. Let’s just focus on one complete cycle of that function. The rest are just copies.\nThe key idea is this: a periodic function like this can be broken down into many sine and cosine waves — we call these sinusoidal components. These waves can vary in three ways: their frequency, which tells us how fast they oscillate; their amplitude, which tells us how tall they are; and their phase, which tells us where each wave starts.\n\nSo what’s the trick? We want to find the right combination of amplitudes, frequencies, and phases — so that when we add up all these sine and cosine waves, we recover the original function.\nAt first, this might sound abstract, but conceptually it’s not that difficult. You’re just looking at the same function in a different way.\nEarlier, we saw a kind of particle view — slicing the function into sharp impulses. Now we’re seeing a wave view — smoothing it into oscillating signals.\nAnd this wave-based view is the foundation for Fourier analysis.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"a periodic function\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"sinusoidal components\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"frequency\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"amplitude\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"phase\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"Fourier analysis\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"a periodic function like this can be broken down into many sine and cosine waves — we call these sinusoidal components.\",\n    \"These waves can vary in three ways: their frequency, which tells us how fast they oscillate; their amplitude, which tells us how tall they are; and their phase, which tells us where each wave starts.\",\n    \"And this wave-based view is the foundation for Fourier analysis.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "a periodic function",
+        "category": "mathematics"
+      },
+      {
+        "term": "sinusoidal components",
+        "category": "mathematics"
+      },
+      {
+        "term": "frequency",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "amplitude",
+        "category": "mathematics"
+      },
+      {
+        "term": "phase",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "a periodic function like this can be broken down into many sine and cosine waves - we call these sinusoidal components.",
+      "These waves can vary in three ways: their frequency, which tells us how fast they oscillate; their amplitude, which tells us how tall they are; and their phase, which tells us where each wave starts.",
+      "And this wave-based view is the foundation for Fourier analysis."
+    ]
+  }
+}

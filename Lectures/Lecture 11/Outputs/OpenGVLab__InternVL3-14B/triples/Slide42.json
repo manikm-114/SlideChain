@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide42",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Ideal Case\",\n      \"p\": \"represents\",\n      \"o\": \"non-diseased population\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here we have two groups: on the left, the non-diseased population, shown in red\"\n    },\n    {\n      \"s\": \"Ideal Case\",\n      \"p\": \"represents\",\n      \"o\": \"diseased population\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"on the right, the diseased population, shown in green\"\n    },\n    {\n      \"s\": \"threshold\",\n      \"p\": \"depends_on\",\n      \"o\": \"distributions of healthy and diseased cases\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"With this perfect separation, we can place a threshold right between the two distributions\"\n    },\n    {\n      \"s\": \"diagnostic test\",\n      \"p\": \"produces\",\n      \"o\": \"flawless diagnosis\",",
+  "parsed": {
+    "s": "threshold",
+    "p": "depends_on",
+    "o": "distributions of healthy and diseased cases",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "With this perfect separation, we can place a threshold right between the two distributions"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide36",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:36:47.813395+00:00",
+  "text_length": 713,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn this course, you’ll have access to a complete set of digital resources to support your learning.\n\nWe’ve included professionally recorded video lectures, so you can review key concepts anytime. All PowerPoint slides used in the course are also available for download and review.\n\nFor the modality sections, the textbook is available as hardcopy and PDF, making it easy to follow along even to search specific topics digitally. The course schedule follows a well-structured plan from previous offerings, with minor updates to reflect some latest progress in imaging science.\n\nThese materials are here to help you succeed—use them actively as we explore the foundation materials and modalities of medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"professionally recorded video lectures\",\n      \"category\": \"communication\"\n    },\n    {\n      \"term\": \"PowerPoint slides\",\n      \"category\": \"communication\"\n    },\n    {\n      \"term\": \"textbook\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"course schedule\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"modality sections\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"imaging science\",\n      \"category\": \"physics\"\n    }\n  ],\n  \"evidence\": [\n    \"you’ll have access to a complete set of digital resources to support your learning.\",\n    \"We’ve included professionally recorded video lectures, so you can review key concepts anytime.\",\n    \"All PowerPoint slides used in the course are also available for download and review.\",\n    \"For the modality sections, the textbook is available as hardcopy and PDF, making it easy to follow along even to search specific topics digitally.\",\n    \"The course schedule follows a well-structured plan from previous offerings, with minor updates to reflect some latest progress in imaging science.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "professionally recorded video lectures",
+        "category": "communication"
+      },
+      {
+        "term": "PowerPoint slides",
+        "category": "communication"
+      },
+      {
+        "term": "textbook",
+        "category": "modality"
+      },
+      {
+        "term": "course schedule",
+        "category": "workflow"
+      },
+      {
+        "term": "modality sections",
+        "category": "modality"
+      },
+      {
+        "term": "imaging science",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "you'll have access to a complete set of digital resources to support your learning.",
+      "We've included professionally recorded video lectures, so you can review key concepts anytime.",
+      "All PowerPoint slides used in the course are also available for download and review.",
+      "For the modality sections, the textbook is available as hardcopy and PDF, making it easy to follow along even to search specific topics digitally.",
+      "The course schedule follows a well-structured plan from previous offerings, with minor updates to reflect some latest progress in imaging science."
+    ]
+  }
+}

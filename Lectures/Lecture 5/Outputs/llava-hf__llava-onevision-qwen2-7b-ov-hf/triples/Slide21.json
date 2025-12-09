@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThis representation makes that idea visual and intuitive.\n\nHere, each person is holding a different sine wave — each wave has a different frequency or amplitude. When we add these waves together, we get a more complex waveform — something that might look jagged, or smooth, or anything in between.\n\nAnd this is the foundation of the Fourier series. It tells us that any reasonable function — smooth or sharp — can be represented as a weighted sum of sine and cosine waves. These sinusoidal components differ in frequency, phase, and amplitude. But together, they can recreate signals of almost any shape.\n\nSo, just like we saw earlier that a function could be built from impulses, here we’re seeing that a function can also be built from waves. These are two complementary viewpoints — both valid, both powerful.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Fourier series\", \"p\":\"represents\",\n     \"o\":\"function\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"It tells us that any reasonable function — smooth or sharp — can be represented as a weighted sum of sine and cosine waves.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "It tells us that any reasonable function - smooth or sharp - can be represented as a weighted sum of sine and cosine waves."
+      }
+    ]
+  }
+}

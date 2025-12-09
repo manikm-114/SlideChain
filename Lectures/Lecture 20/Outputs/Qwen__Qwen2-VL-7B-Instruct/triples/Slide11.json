@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T16:25:20.156084+00:00",
+  "text_length": 2450,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s connect this idea to the actual gradient coils used in MRI scanners. The linear field that we just discussed is formed between two opposing magnetic fields created by the left and right coil pairs. That configuration generates the Z-gradient field.\n\nHowever, for the X and Y gradients, we can’t arrange the coils in the same way—because the patient needs to pass through the tunnel of the magnet. So, the coil design must be adjusted while keeping the same physical principle.\n\nFor the Y-gradient, the setup uses a top coil and a bottom coil. Each coil forms what’s called a saddle-shaped loop, but it still maintains a closed current path. The magnetic field from the top coil points downward, while the field from the bottom coil points upward. In the middle, these two fields cancel each other, creating a region of zero field. As you move upward, the downward field weakens and the upward field strengthens, forming a linear Y-gradient.\nIf we rotate this entire configuration by ninety degrees, we can generate the X-gradient using exactly the same concept.\n\nWhen all these coil systems—the X, Y, and Z gradients—are combined, we can generate any arbitrary gradient field, often represented as G-X, G-Y, and G-Z. By carefully controlling the current in each set of coils, we can produce gradients in any direction or combination needed for imaging.\nIn practice, the gradient coils are designed in multiple layers, and additional shim coils are included to fine-tune the magnetic field so it remains as linear as possible within the imaging region.\n\nAlthough the engineering details are complex, the fundamental idea is simple. Using Maxwell’s equations—just four equations that describe how electric and magnetic fields behave—we can simulate the magnetic field using finite element computation. By adjusting coil shapes, adding new loops, and fine-tuning current paths, engineers can iteratively refine the field design until it achieves excellent linearity.\nSo even though the hardware looks complicated, the underlying physics is straightforward: we excite the coils in such a way that their combined fields produce the precise gradient patterns required for MRI imaging.\n\nAnd one final point—during imaging, these gradient coils rapidly switch on and off, producing mechanical stress that makes the loud knocking sounds we hear during MRI scans.\nThat’s the practical side of how gradient coils work—both physically and acoustically.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Gradient Coils\", \"p\":\"uses\", \"o\":\"MRI scanner\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Gradient Coils are used in MRI scanners to generate the X, Y, and Z gradient fields.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gradient Coils",
+        "p": "uses",
+        "o": "MRI scanner",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Gradient Coils are used in MRI scanners to generate the X, Y, and Z gradient fields."
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+Let’s now revisit the concept of a shift-invariant linear system, which we introduced earlier in the course. This diagram gives us a step-by-step breakdown of how such systems behave — and how the inner product plays a central role.
+
+Here’s the key idea: once you're given the impulse response of a system — that is, how it reacts to a single impulse — and you know the system is both linear and shift-invariant, then you can compute the system’s output for any input signal.
+This is exactly where convolution comes into play.
+
+As shown in the diagram, the input signal x of n can be represented as a weighted sum of shifted delta functions.That is, x of n equals the sum over k, from negative infinity to infinity, of x of k times delta of n minus k.
+
+Now, for each of those shifted deltas — delta of n minus k — the system responds with a shifted impulse response:h of n minus k.
+And this response is scaled by the input value at that shift, which is x of k.
+
+So what do we do next?
+We add up all those scaled responses. The result is:x of n equals the sum over k, from minus infinity to infinity, of x of k times h of n minus k.
+That’s the standard convolution formula.
+
+But here’s what’s really important:When you compute the convolution at a particular time n, you are essentially performing an inner product.
+You take the input signal and the flipped, shifted impulse response — multiply them element by element — and sum the result.
+This process is just like computing the dot product of two vectors.
+This same concept is used in matched filtering — like in radar signal processing.
+In this process, we take a known pattern — which we refer to as the filter — and slide it across the incoming signal.When the filter aligns well with a portion of the signal, the inner product reaches a maximum value.This peak indicates that a strong match has been detected.
+
+Whether we call it convolution or cross-correlation, the operation always boils down to computing inner products.
+So once again, the inner product isn’t just a nice-to-have mathematical idea.It is the fundamental engine behind convolution, filtering, correlation, and soon, our study of Fourier analysis.

@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide29",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNext, let’s see how to keep a record of your work using the diary command.\nStart with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file. Once you’re done, stop the recording by typing diary off.\nThis is great for tracking your workflow, recording sessions, or saving what you’ve done for future reference or reporting.\nNow, another useful tool is timing. If you want to measure how long your code takes to run, just put tic before the commands, and toc after them. MATLAB will show you the elapsed time in seconds.\nThis helps you compare different methods and optimize performance.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"diary\", \"category\": \"software\"},\n    {\"term\": \"tic\", \"category\": \"software\"},\n    {\"term\": \"toc\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Start with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file.\", \"This is great for tracking your workflow, recording sessions, or saving what you’ve done for future reference or reporting.\", \"If you want to measure how long your code takes to run, just put tic before the commands, and toc after them. MATLAB will show you the elapsed time in seconds.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "diary",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Start with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file.",
+      "This is great for tracking your workflow, recording sessions, or saving what you’ve done for future reference or reporting.",
+      "If you want to measure how long your code takes to run, just put tic before the commands, and toc after them. MATLAB will show you the elapsed time in seconds."
+    ]
+  }
+}

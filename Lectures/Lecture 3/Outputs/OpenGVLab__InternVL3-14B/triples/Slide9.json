@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"engineers\", \"p\":\"use\", \"o\":\"mathematical operators\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"As engineers, we often think of the world in terms of systems. We use mathematical operators—like L or O—to describe how a system transforms an input into an output.\"},\n    {\"s\":\"system\", \"p\":\"produces\", \"o\":\"output\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If you feed an input signal, V, into a system, the output, W, represents how that signal is modified.\"},\n    {\"s\":\"CT scanners\", \"p\":\"transforms\", \"o\":\"physical signals into diagnostic images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In medical imaging, we apply this thinking to devices like CT scanners, where the entire system transforms physical signals into diagnostic images.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "system",
+        "p": "produces",
+        "o": "output",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If you feed an input signal, V, into a system, the output, W, represents how that signal is modified."
+      }
+    ]
+  }
+}

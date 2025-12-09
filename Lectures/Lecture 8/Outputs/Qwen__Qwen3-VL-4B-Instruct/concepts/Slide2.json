@@ -1,0 +1,12 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T01:01:16.411306+00:00",
+  "text_length": 471,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe’re moving along right on track in our journey through this course.\u000b\nIf you’ve had the chance to preview the reading materials for today, that’s great — it will help you connect the concepts more quickly. If not, that’s fine too.\n\nJust follow along closely, and make time afterward to review the main ideas. Building this habit of reinforcing concepts as we go will make your understanding stronger and more intuitive, especially as the topics become more mathematical.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [],\n  \"evidence\": []\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": []
+  }
+}

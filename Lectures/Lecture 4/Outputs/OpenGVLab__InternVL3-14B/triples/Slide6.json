@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"impulse\",\n      \"p\": \"produces\",\n      \"o\": \"change\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"an impulse causes change\"\n    },\n    {\n      \"s\": \"system analysis\",\n      \"p\": \"depends_on\",\n      \"o\": \"impulse response\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we’re interested in how a system responds over time after receiving an impulse\"\n    },\n    {\n      \"s\": \"impulse response\",\n      \"p\": \"uses\",\n      \"o\": \"convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we can use convolution to determine the system’s output for any more complex input signal\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "impulse",
+        "p": "produces",
+        "o": "change",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "an impulse causes change"
+      },
+      {
+        "s": "system analysis",
+        "p": "depends_on",
+        "o": "impulse response",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we’re interested in how a system responds over time after receiving an impulse"
+      },
+      {
+        "s": "impulse response",
+        "p": "uses",
+        "o": "convolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we can use convolution to determine the system’s output for any more complex input signal"
+      }
+    ]
+  }
+}

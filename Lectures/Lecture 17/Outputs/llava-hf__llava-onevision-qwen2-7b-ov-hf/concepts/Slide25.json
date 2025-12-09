@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide25",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis example shows patient reconstruction results. When using filtered back projection, the images clearly display streak artifacts and significant noise. These issues appear across all views—coronal, transaxial, and sagittal. Overall, the images produced by filtered back projection are noisy and contain strong artifacts that reduce clarity and diagnostic value.\n\nIn contrast, maximum likelihood iterative reconstruction directly incorporates statistical knowledge into the reconstruction process. This approach produces images that are both visually and quantitatively improved. Noise is greatly reduced, artifacts are minimized, and the resulting images are more accurate and reliable for clinical use.\nThe side-by-side comparison highlights the advantage of maximum likelihood iterative reconstruction over traditional filtered back projection. In real patient data, the iterative approach delivers superior image quality, both in appearance and in diagnostic accuracy.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"filtered back projection\", \"category\": \"reconstruction\"},\n    {\"term\": \"maximum likelihood iterative reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"streak artifacts\", \"category\": \"reconstruction\"},\n    {\"term\": \"noise\", \"category\": \"reconstruction\"},\n    {\"term\": \"diagnostic value\", \"category\": \"reconstruction\"},\n    {\"term\": \"image quality\", \"category\": \"reconstruction\"},\n    {\"term\": \"diagnostic accuracy\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"These issues appear across all views—coronal, transaxial, and sagittal.\", \"Noise is greatly reduced, artifacts are minimized, and the resulting images are more accurate and reliable for clinical use.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "filtered back projection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "maximum likelihood iterative reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "streak artifacts",
+        "category": "reconstruction"
+      },
+      {
+        "term": "noise",
+        "category": "reconstruction"
+      },
+      {
+        "term": "diagnostic value",
+        "category": "reconstruction"
+      },
+      {
+        "term": "image quality",
+        "category": "reconstruction"
+      },
+      {
+        "term": "diagnostic accuracy",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "These issues appear across all views-coronal, transaxial, and sagittal.",
+      "Noise is greatly reduced, artifacts are minimized, and the resulting images are more accurate and reliable for clinical use."
+    ]
+  }
+}

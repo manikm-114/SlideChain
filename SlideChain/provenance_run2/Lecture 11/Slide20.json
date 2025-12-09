@@ -1,0 +1,154 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "contrast comparison"
+          },
+          {
+            "category": "mathematics",
+            "term": "standard deviation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "dynamic range"
+          },
+          {
+            "category": "signal_processing",
+            "term": "contrast masking"
+          },
+          {
+            "category": "signal_processing",
+            "term": "structural similarity"
+          }
+        ],
+        "evidence": [
+          "The second component of SSIM is the contrast comparison.",
+          "We use the standard deviation of pixel values - sigma-X for image X and sigma-Y for image Y.",
+          "C2 is defined as K2 times L squared, where L is the dynamic range of the image.",
+          "The formula reflects this effect, sometimes called contrast masking.",
+          "So contrast is the second pillar of structural similarity - it ensures that two images not only have the same average brightness but also the same level of variation around that average.",
+          "This is consistent with the contrast-masking feature of the HVS."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "contrast comparison"
+          },
+          {
+            "category": "mathematics",
+            "term": "standard deviation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sigma-X"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sigma-Y"
+          },
+          {
+            "category": "signal_processing",
+            "term": "dynamic range"
+          },
+          {
+            "category": "signal_processing",
+            "term": "contrast masking"
+          },
+          {
+            "category": "signal_processing",
+            "term": "structural similarity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "human visual system"
+          }
+        ],
+        "evidence": [
+          "The formula for contrast comparison looks very similar to the one we used for luminance.",
+          "This design is also consistent with how the human visual system works.",
+          "The formula reflects this effect, sometimes called contrast masking."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "If the two images have the same standard deviation, meaning their contrasts are the same, then the numerator and denominator match, and the contrast comparison equals 1."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The contrast comparison function takes a similar form ... where C2 = (K2L)\u00b2, and K2 << 1. This definition again satisfies the three properties listed above. An important feature of this function is that with the same amount of contrast change \u0394\u03c3 = \u03c3y \u2212 \u03c3x, this measure is less sensitive to the case of high base contrast \u03c3x than low base contrast. This is consistent with the contrast-masking feature of the HVS."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "standard deviation of pixel values",
+        "p": "uses",
+        "s": "contrast comparison function"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "contrast"
+          },
+          {
+            "category": "mathematics",
+            "term": "standard deviation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "luminance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "dynamic range"
+          },
+          {
+            "category": "signal_processing",
+            "term": "contrast comparison"
+          },
+          {
+            "category": "quality_metric",
+            "term": "structural similarity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "structural comparison"
+          }
+        ],
+        "evidence": [
+          "The second component of SSIM is the contrast comparison.",
+          "Even if two images have the same average brightness, they may still look very different if their contrast is not the same.",
+          "The formula for contrast comparison looks very similar to the one we used for luminance.",
+          "The formula reflects this effect, sometimes called contrast masking."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

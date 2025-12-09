@@ -1,0 +1,13 @@
+Let’s now take a look at the result of the Fourier transform of the triangle function.
+
+If we go through the steps — plugging the triangle function into the Fourier transform formula and carrying out the integration — we end up with a very elegant result. The Fourier transform turns out to be the square of the sinc function.
+That is, we get sinc squared.
+
+You might remember that the Fourier transform of the gate function gave us a sinc function. So this result — sinc squared — is not just a coincidence.
+There’s actually a deeper reason behind it.
+It’s related to an operation called convolution. We saw this in the context of the Fourier series, and we’ll explore it again in more depth when we talk about properties of the Fourier transform.
+
+But the key takeaway here is this: the triangle function is, in a way, the convolution of two gate functions. And in the frequency domain, convolution in time corresponds to multiplication in frequency. That’s why the sinc function — from the gate — becomes sinc squared for the triangle.
+
+And down at the bottom, we can see the graph of sinc squared. It has the same overall shape as sinc — a central peak and decaying ripples — but now the oscillations are all positive and fall off more smoothly.
+So, this example shows another beautiful connection between shapes in the time domain and their patterns in the frequency domain.

@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T23:11:28.572376+00:00",
+  "text_length": 1145,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s break things down to a very basic and powerful idea.\n\nSuppose we have a function — let’s call it f of t — a one-dimensional function that varies over time. You can think of it as a smooth, continuous curve. That’s the usual way we look at functions.\nBut here’s a different perspective — instead of seeing f of t as one continuous piece, imagine it as a sum of impulses. Yes — a collection of sharp, narrow spikes, each carrying a little bit of information about the function at a specific time.\n\nThis is where the Dirac delta function, or delta for short, comes in. From linear systems theory, we know that any continuous function can be viewed as the convolution of that function with a train of delta functions.\n\nWhat does this mean, intuitively? It means you can imagine slicing the original function into many tiny segments. Each segment becomes a small impulse — and when you add up all those impulses, you reconstruct the full function.\nSo, this is one way to represent a function — not as a smooth line, but as a weighted sum of sharp impulses. And this idea is going to be very helpful as we move toward the Fourier transform.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"as a sum of impulses\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"dirac delta function\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"convolution\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"weighted sum of sharp impulses\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"reconstruct the full function\",\n      \"category\": \"reconstruction\"\n    }\n  ],\n  \"evidence\": [\n    \"As a Sum of Impulses\",\n    \"a collection of sharp, narrow spikes\",\n    \"From linear systems theory, we know that any continuous function can be viewed as the convolution of that function with a train of delta functions.\",\n    \"So, this is one way to represent a function — not as a smooth line, but as a weighted sum of sharp impulses.\",\n    \"And this idea is going to be very helpful as we move toward the Fourier transform.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "as a sum of impulses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "dirac delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "weighted sum of sharp impulses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstruct the full function",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "As a Sum of Impulses",
+      "a collection of sharp, narrow spikes",
+      "From linear systems theory, we know that any continuous function can be viewed as the convolution of that function with a train of delta functions.",
+      "So, this is one way to represent a function - not as a smooth line, but as a weighted sum of sharp impulses.",
+      "And this idea is going to be very helpful as we move toward the Fourier transform."
+    ]
+  }
+}

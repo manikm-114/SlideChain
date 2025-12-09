@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide22",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:50:32.545176+00:00",
+  "text_length": 1152,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at MATLAB’s fanbeam function.\n\nIn this geometry, the X-rays don’t travel in parallel lines like before. Instead, they spread out in a fan shape from a single point called the beam vertex. You can see that illustrated here: the source is at the top, and the rays diverge outward, passing through the sample.\nOn the opposite side, we have the detector array that records how much of the X-rays make it through.\n\nThere’s also an important parameter here called D. This is the distance from the fan-beam vertex—that is, the source position—to the center of rotation of the sample. For something simple, like a square phantom, D might just be the length of the diagonal. For a human body, D would be the distance from the source to the center of the patient.\nAs in parallel-beam CT, both the source and detector rotate together around the object at different angles, which we denote by theta. By sweeping through all these angles, we collect the fan-beam projection data needed for reconstruction.\n\nSo, the fanbeam function in MATLAB allows us to simulate this geometry directly, bringing us closer to how modern CT scanners actually operate.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fan-beam\", \"category\": \"modality\"},\n    {\"term\": \"Fan-beam vertex\", \"category\": \"modality\"},\n    {\"term\": \"D\", \"category\": \"modality\"},\n    {\"term\": \"Fan Rotation angle\", \"category\": \"modality\"},\n    {\"term\": \"Source\", \"category\": \"modality\"},\n    {\"term\": \"Detector\", \"category\": \"modality\"},\n    {\"term\": \"Fan-beam projection data\", \"category\": \"modality\"},\n    {\"term\": \"Fanbeam function\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"Fan-beam function in MATLAB allows us to simulate this geometry directly, bringing us closer to how modern CT scanners actually operate.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fan-beam",
+        "category": "modality"
+      },
+      {
+        "term": "Fan-beam vertex",
+        "category": "modality"
+      },
+      {
+        "term": "Source",
+        "category": "modality"
+      },
+      {
+        "term": "Detector",
+        "category": "modality"
+      },
+      {
+        "term": "Fan-beam projection data",
+        "category": "modality"
+      },
+      {
+        "term": "Fanbeam function",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Fan-beam function in MATLAB allows us to simulate this geometry directly, bringing us closer to how modern CT scanners actually operate."
+    ]
+  }
+}

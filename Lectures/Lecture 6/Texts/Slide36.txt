@@ -1,0 +1,12 @@
+Let’s now look at a powerful application of the 2D Fourier transform — noise suppression.
+Take a look at the image on the left. It’s a noisy version of a familiar test image — lots of random graininess, especially in the background and darker areas.
+
+Now, if we perform a 2D Fourier transform — which we indicate here by "F T" — we move from the spatial domain to the frequency domain. The result is this bottom-left image, which shows the frequency spectrum of the noisy image.
+Notice something important: most of the meaningful image information is concentrated around the center, which corresponds to the low-frequency components. But the noise is spread out — especially toward the edges — as high-frequency speckles.
+And this gives us an idea.
+
+What if we simply suppress or remove those high-frequency components? That’s what we’re doing on the bottom-right: we apply a mask — setting the noisy high-frequency regions to zero, while keeping only the central, low-frequency region.
+
+Then we perform the inverse Fourier transform — marked here as "I F T" — to convert back to the spatial domain.
+And just like that, we get a much cleaner version of the original image. Most of the noise is gone, and the essential structure is preserved.
+This is one of the key strengths of working in the frequency domain. Certain operations — like filtering or noise removal — can be done more easily, more effectively, and sometimes more intuitively after transformation.

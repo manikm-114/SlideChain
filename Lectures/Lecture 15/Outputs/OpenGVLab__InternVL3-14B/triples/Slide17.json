@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sinogram\",\n      \"p\": \"represents\",\n      \"o\": \"truncated\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The sinogram is truncated (only part of sample is scanned)\"\n    },\n    {\n      \"s\": \"reconstruction\",\n      \"p\": \"depends_on\",\n      \"o\": \"projections from 0 to 45 degrees\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "sinogram",
+        "p": "represents",
+        "o": "truncated",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The sinogram is truncated (only part of sample is scanned)"
+      },
+      {
+        "s": "reconstruction",
+        "p": "depends_on",
+        "o": "projections from 0 to 45 degrees",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information."
+      }
+    ]
+  }
+}

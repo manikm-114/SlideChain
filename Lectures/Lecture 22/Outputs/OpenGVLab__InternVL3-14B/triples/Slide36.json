@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"time-gain compensation\",\n      \"p\": \"uses\",\n      \"o\": \"amplification factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"To correct for this loss, we apply what’s called time-gain compensation, or TGC. The idea is simple: as the echo arrives later in time—which corresponds to greater depth—you gradually increase the amplification factor.\"\n    },\n    {\n      \"s\": \"time-gain compensation\",\n      \"p\": \"produces\",\n      \"o\": \"more uniform image brightness\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When you multiply the received signal by this depth-dependent gain, the resulting image becomes more uniform in brightness.\"\n    },\n    {\n      \"s\": \"time-gain compensation\",\n      \"p\": \"depends_on\",\n      \"o\": \"depth-dependent gain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The idea is simple: as the echo arrives later in time—which corresponds to greater depth—you gradually increase the ampl",
+  "parsed": {
+    "s": "time-gain compensation",
+    "p": "produces",
+    "o": "more uniform image brightness",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "When you multiply the received signal by this depth-dependent gain, the resulting image becomes more uniform in brightness."
+    ]
+  }
+}

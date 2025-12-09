@@ -1,0 +1,156 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "radiation dose"
+          },
+          {
+            "category": "physics",
+            "term": "dose profile"
+          },
+          {
+            "category": "modality",
+            "term": "circular scans"
+          },
+          {
+            "category": "physics",
+            "term": "dose distribution"
+          },
+          {
+            "category": "workflow",
+            "term": "multiple scans"
+          },
+          {
+            "category": "physics",
+            "term": "total radiation dose"
+          }
+        ],
+        "evidence": [
+          "radiation dose",
+          "dose profile",
+          "circular scans",
+          "dose distribution",
+          "multiple scans",
+          "total radiation dose"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Another way to think about radiation dose is through the dose profile measured over multiple circular scans.",
+            "modalities": [
+              "text"
+            ],
+            "o": "dose profile",
+            "p": "measures",
+            "s": "Radiation dose"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When multiple scans are performed, each scan adds its own dose profile. These multiple dose profiles overlap, contributing to the total radiation dose the patient receives.",
+            "modalities": [
+              "text"
+            ],
+            "o": "total radiation dose",
+            "p": "produces",
+            "s": "Multiple scans"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "radiation dose"
+          },
+          {
+            "category": "physics",
+            "term": "dose profile"
+          },
+          {
+            "category": "workflow",
+            "term": "multiple scans"
+          },
+          {
+            "category": "mathematics",
+            "term": "overlap"
+          },
+          {
+            "category": "physics",
+            "term": "total radiation dose"
+          }
+        ],
+        "evidence": [
+          "These multiple dose profiles overlap, contributing to the total radiation dose the patient receives."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "These multiple dose profiles overlap, contributing to the total radiation dose the patient receives."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "dose profile"
+          },
+          {
+            "category": "workflow",
+            "term": "multiple scans"
+          },
+          {
+            "category": "physics",
+            "term": "total radiation dose"
+          },
+          {
+            "category": "workflow",
+            "term": "patient receives"
+          }
+        ],
+        "evidence": [
+          "Another way to think about radiation dose is through the dose profile measured over multiple circular scans.",
+          "When you perform one circular scan, you get a certain dose distribution.",
+          "If you then do a second circular scan, you\u2019ll get a similar dose profile again.",
+          "When multiple scans are performed, each scan adds its own dose profile.",
+          "These multiple dose profiles overlap, contributing to the total radiation dose the patient receives."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "SLIDE_TEXT: Another way to think about radiation dose is through the dose profile measured over multiple circular scans.",
+            "modalities": [
+              "text"
+            ],
+            "o": "dose profile",
+            "p": "measures",
+            "s": "radiation dose"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide53.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide53.txt"
+  },
+  "slide_id": "Slide53"
+}

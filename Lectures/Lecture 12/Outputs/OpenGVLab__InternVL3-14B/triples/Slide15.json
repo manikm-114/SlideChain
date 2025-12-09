@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"X-ray source\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays.\"\n    },\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"uses\",\n      \"o\": \"X-ray detector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, once you have both the X-ray source and the detector, you can build an imaging system.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray imaging",
+        "p": "depends_on",
+        "o": "X-ray source",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays."
+      }
+    ]
+  }
+}

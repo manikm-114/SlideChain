@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"extends\",\n      \"o\": \"natural vision\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"It extends our natural vision, allowing us to explore what’s hidden\"\n    },\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"measures\",\n      \"o\": \"physiological function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"doctors can measure physiological function\"\n    },\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"detects\",\n      \"o\": \"disease\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"detect disease\"\n    },\n    {\n      \"s\": \"medical imaging\",\n      \"p\": \"provides\",\n      \"o\": \"treatment\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"provide treatment that can ease suffering or even save lives\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "medical imaging",
+        "p": "measures",
+        "o": "physiological function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "doctors can measure physiological function"
+      }
+    ]
+  }
+}

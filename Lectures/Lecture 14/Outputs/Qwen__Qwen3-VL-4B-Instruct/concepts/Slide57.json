@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide57",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:37:16.229488+00:00",
+  "text_length": 356,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet me share some evidence that supports this approach.\n\nSeveral experts, including myself a few years ago, co-authored a landmark article.\nThis article mapped out strategies and technologies aimed at achieving routine sub-millisievert CT scanning.\nIt addresses how low-dose CT scans can be effectively performed while maintaining diagnostic image quality.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"strategies and technologies aimed at achieving routine sub-millisievert CT scanning\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"low-dose CT scans can be effectively performed while maintaining diagnostic image quality\",\n      \"category\": \"quality_metric\"\n    }\n  ],\n  \"evidence\": [\n    \"This article mapped out strategies and technologies aimed at achieving routine sub-millisievert CT scanning.\",\n    \"It addresses how low-dose CT scans can be effectively performed while maintaining diagnostic image quality.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "strategies and technologies aimed at achieving routine sub-millisievert CT scanning",
+        "category": "instrumentation"
+      },
+      {
+        "term": "low-dose CT scans can be effectively performed while maintaining diagnostic image quality",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "This article mapped out strategies and technologies aimed at achieving routine sub-millisievert CT scanning.",
+      "It addresses how low-dose CT scans can be effectively performed while maintaining diagnostic image quality."
+    ]
+  }
+}

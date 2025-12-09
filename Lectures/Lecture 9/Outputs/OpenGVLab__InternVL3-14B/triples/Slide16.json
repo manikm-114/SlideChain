@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"sampling frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MATLAB, we first set the sampling frequency, F s, to one thousand hertz.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"time vector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Next, we create the time vector, t.\"\n    },\n    {\n      \"s\": \"signal x\",\n      \"p\": \"produces\",\n      \"o\": \"combined oscillations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we add these two waveforms together, we get x, which contains both frequencies.\"\n    },\n    {\n      \"s\": \"signal x\",\n      \"p\": \"represents\",\n      \"o\": \"two different pure tones\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"",
+  "parsed": {
+    "s": "signal x",
+    "p": "produces",
+    "o": "combined oscillations",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "When we add these two waveforms together, we get x, which contains both frequencies."
+    ]
+  }
+}

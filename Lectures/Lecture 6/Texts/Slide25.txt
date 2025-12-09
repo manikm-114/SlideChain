@@ -1,0 +1,14 @@
+Now let’s look at another important idea in Fourier analysis — the shift property, also called the translation property.
+
+This property explains what happens when we shift a function in time. Suppose we have a function, f of t, and we shift it by some constant b. That means our new function is f of t minus b. So what happens to its Fourier transform?
+The answer is: the shape of the spectrum stays the same, but we multiply it by a phase factor. Specifically, we multiply it by e to the power minus 2 pi i s b. In other words, shifting the function in time causes a rotation in the phase of the frequency spectrum.
+
+Let’s go through why that’s true.
+We start with the definition of the Fourier transform of f of t minus b. Inside the integral, we make a substitution: we let u equal t minus b. That’s just a change of variable — and it doesn’t affect the limits of the integral, which still go from negative infinity to positive infinity.
+
+Now, when we rewrite the integral in terms of u, something interesting happens. The exponential term splits into two parts. One part depends on u, and the other depends on b. The part with b is just a constant, so we can pull it outside the integral.
+What remains inside is the same integral we started with — the Fourier transform of the original function, f of t.
+So in the end, we have the original spectrum, multiplied by this exponential phase term.
+
+That’s the core idea of the shift property:When you shift a function in time, it introduces a phase shift in the frequency domain.
+This is an extremely useful result when working with signals that are delayed or moved in time — it tells you exactly how the spectrum changes, and helps preserve the full mathematical relationship between time and frequency.

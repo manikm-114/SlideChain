@@ -1,0 +1,9 @@
+Now let’s experiment with sensor spacing in fan-beam CT.
+
+In our code, this is the D sensor value on line 26. By default, we set it to 1. But what happens if we change it?
+On the left, we set D sensor equals 0.5. This means the detectors are closer together, giving us finer sampling. The result is higher resolution—you can clearly see the square shape, with only minor artifacts.
+In the middle, we keep the D sensor equal to 1, the default value. The reconstruction is still decent, but not quite as sharp as when we used the smaller spacing.
+On the right, we set D sensor equals 5. Now the detector spacing is wide, so we lose a lot of detail. The reconstruction looks blurred and distorted—the square shape is almost unrecognizable, more like a rounded blob.
+
+So the key point here is: resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution.
+In practice, of course, reducing sensor spacing increases data size and computational load. But if the spacing is too large, the resolution drops too much to be useful. Finding the right balance is part of designing and operating a CT system.

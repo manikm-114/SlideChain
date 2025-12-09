@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide22",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T11:46:29.514630+00:00",
+  "text_length": 1288,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo this is nothing but a vertical integral. A vertical integral is the projection profile when theta equals zero. So that is a vertical integral—you get this.\n\nNow, in two-dimensional Fourier analysis, F of u, zero—F of u, zero—the vertical integral is p at theta equals zero of x. Put this part into the bracket, and then you have this expression.\nSo this is two-dimensional Fourier analysis along the u-axis when v equals zero—this is the u-axis. And here is the vertical integral. The vertical integral is a function of x in the x–y plane. And this part is one-dimensional Fourier analysis with respect to the variable x. So this is the one-dimensional Fourier transform. You can write it as the one-dimensional Fourier transform when theta equals zero, and the variable is u.\n\nThis is the one-dimensional Fourier transform in the general case for an arbitrary angle theta. So this is a special case of what I called the Fourier slice theorem. If you have a vertical projection profile, and you perform one-dimensional Fourier analysis, you get a one-dimensional Fourier spectrum—you got a one-dimensional Fourier spectrum. It is nothing but the projection profile in the two-dimensional Fourier-transform space along the u-axis. So this is a special case of the Fourier slice theorem.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"F(u, 0)\",\n      \"p\": \"represents\",\n      \"o\": \"the one-dimensional Fourier transform of the projection P_{θ=0}\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"The right-hand side of this equation represents the one-dimensional Fourier transform of the projection P_{θ=0}; thus we have the following relationship between the vertical projection and the 2-D transform of the object function: F(u, 0) = S_{θ=0}(u).\"\n    },\n    {\n      \"s\": \"F(u, 0)\",\n      \"p\": \"produces\",\n      \"o\": \"a one-dimensional Fourier spectrum\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"So this is two-dimensional Fourier analysis along the u-axis when v equals zero—this is the u-axis. And here is the vertical integral. The vertical integral is a function of x in the x–y plane. And this part is one-dimensional Fourier analysis with respect to the variable x. So this",
+  "parsed": {
+    "s": "F(u, 0)",
+    "p": "represents",
+    "o": "the one-dimensional Fourier transform of the projection P_{θ=0}",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "The right-hand side of this equation represents the one-dimensional Fourier transform of the projection P_{θ=0}; thus we have the following relationship between the vertical projection and the 2-D transform of the object function: F(u, 0) = S_{θ=0}(u)."
+    ]
+  }
+}

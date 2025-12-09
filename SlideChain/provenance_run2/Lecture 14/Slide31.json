@@ -1,0 +1,169 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "image artifacts"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "signal_processing",
+            "term": "noise"
+          },
+          {
+            "category": "quality_metric",
+            "term": "streaks"
+          },
+          {
+            "category": "quality_metric",
+            "term": "stripes"
+          }
+        ],
+        "evidence": [
+          "These false structures are what we call image artifacts.",
+          "We\u2019ll discuss CT image quality considerations next, which include how artifacts impact the overall image quality.",
+          "Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body.",
+          "If there\u2019s no real structure present, what you see might just be noise."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "These false structures are what we call image artifacts.",
+            "modalities": [
+              "text"
+            ],
+            "o": "false structures",
+            "p": "represents",
+            "s": "image artifacts"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "image artifacts"
+          },
+          {
+            "category": "signal_processing",
+            "term": "CT image quality"
+          }
+        ],
+        "evidence": [
+          "Tomographic images are meant to reveal the true underlying anatomical structure. However, for various reasons, the images sometimes show structures that aren't actually present. These false structures are what we call image artifacts.",
+          "Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body. They are just artifacts."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "image artifacts"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "modality",
+            "term": "tomographic images"
+          },
+          {
+            "category": "modality",
+            "term": "false structures"
+          },
+          {
+            "category": "signal_processing",
+            "term": "noise"
+          },
+          {
+            "category": "signal_processing",
+            "term": "streaks or stripes"
+          }
+        ],
+        "evidence": [
+          "Tomographic images are meant to reveal the true underlying anatomical structure.",
+          "These false structures are what we call image artifacts.",
+          "If there's no real structure present, what you see might just be noise.",
+          "Sometimes, artifacts show up as streaks or stripes in the image",
+          "We'll discuss CT image quality considerations next, which include how artifacts impact the overall image quality."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "These false structures are what we call image artifacts.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "false structures",
+            "p": "represents",
+            "s": "image artifacts"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "Sometimes, artifacts show up as streaks or stripes in the image",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "streaks or stripes",
+            "p": "produces",
+            "s": "image artifacts"
+          },
+          {
+            "confidence": 0.7,
+            "evidence": "If there's no real structure present, what you see might just be noise.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "no real structure present",
+            "p": "depends_on",
+            "s": "image artifacts"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "tomographic images"
+          }
+        ],
+        "evidence": [
+          "These false structures are what we call image artifacts.",
+          "If there\u2019s no real structure present, what you see might just be noise.",
+          "Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body. They are just artifacts."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide31.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide31.txt"
+  },
+  "slide_id": "Slide31"
+}

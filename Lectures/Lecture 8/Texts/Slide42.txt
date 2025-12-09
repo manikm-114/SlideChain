@@ -1,0 +1,8 @@
+This idea connects to the famous wheat and chessboard problem, which is a classic example of exponential growth.
+
+Imagine a chessboard with sixty-four squares. On the first square, you place one grain of wheat. On the next square, you double it — two grains. On the third square, you double it again — four grains. Then eight, sixteen, thirty-two, and so on. By the time you fill all the squares, the total number of grains becomes unimaginably large — enough to cover the Earth with a thick layer of wheat.
+This illustrates how quickly exponential growth can get out of control.
+
+Now, in our Fourier problem, for our approximation trick to work, the leftover terms — those tiny contributions from far-away frequencies — must shrink faster than one divided by the position number. That means the function must be smooth enough so that its spectrum decays quickly.
+
+In fact, for most practical functions, after some pre-processing and smoothing, the decay is even faster — often like one divided by the position number squared. And in that case, adding up all the small contributions still gives you a small total. This is what allows our approach to work.

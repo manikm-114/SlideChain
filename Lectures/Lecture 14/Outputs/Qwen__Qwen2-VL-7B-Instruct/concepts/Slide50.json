@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T09:08:57.884688+00:00",
+  "text_length": 907,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let me explain three key concepts related to radiation dose.\nFirst, the absorbed dose. This represents the energy deposited by ionizing radiation into the body’s tissues. It is a purely physical measure.\nSecond, the effective dose accounts for the sensitivity of different organs and tissues to radiation. This is where weighting factors come into play.\n\nFor example, certain organs involved in reproduction or rapid cell regeneration are much more sensitive to radiation. We want to protect children and younger women, especially from high doses. While adults may be less sensitive, it is still prudent to minimize exposure.\nThe dose equivalent combines dose with information about the type of radiation. Some radiation types cause more damage per unit energy than others.\n\nHowever, when discussing CT scans, the radiation type factor is effectively one, so it generally does not alter dose estimates.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Absorbed Dose\", \"category\": \"physics\"},\n    {\"term\": \"Effective Dose\", \"category\": \"physics\"},\n    {\"term\": \"Dose Equivalent\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"This represents the energy deposited by ionizing radiation into the body’s tissues.\",\n    \"This is where weighting factors come into play.\",\n    \"Some radiation types cause more damage per unit energy than others.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Absorbed Dose",
+        "category": "physics"
+      },
+      {
+        "term": "Effective Dose",
+        "category": "physics"
+      },
+      {
+        "term": "Dose Equivalent",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "This represents the energy deposited by ionizing radiation into the body's tissues.",
+      "This is where weighting factors come into play.",
+      "Some radiation types cause more damage per unit energy than others."
+    ]
+  }
+}

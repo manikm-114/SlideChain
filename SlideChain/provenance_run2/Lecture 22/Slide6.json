@@ -1,0 +1,78 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "two-dimensional image"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "the vertical axis represents depth - just like a typical A-mode"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "depth",
+        "p": "represents",
+        "s": "M-mode"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "beating heart"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In M-mode, however, you stay at the same location - the same angle - and you repeatedly collect ultrasound signals over time.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "ultrasound signals",
+            "p": "uses",
+            "s": "M-mode"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "The vertical axis represents depth - just like a typical A-mode - and the horizontal axis represents time."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The vertical axis represents depth - just like a typical A-mode."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "depth",
+        "p": "represents",
+        "s": "M-mode"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "time"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

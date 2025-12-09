@@ -1,0 +1,30 @@
+Now we arrive at a full summary of the real form of the Fourier series.
+What we’ve seen so far is that many well-behaved functions — especially those that are continuous and square-integrable — can be expressed as a weighted sum of sine and cosine waves.And this formula at the top captures that structure precisely.
+
+We start with the function f of t.Then we write it as the sum of three components:
+First, the DC component, which is a naught over 2. That’s the constant or average value of the function — the non-oscillating part.
+Next comes the cosine sum, where each term involves a coefficient a n times cosine of 2 pi n t.
+And finally, we have the sine sum, where each term includes b n times sine of 2 pi n t.
+These coefficients — a naught, a n, and b n — are what determine how much of each sine or cosine wave contributes to the reconstruction of f of t.
+So how do we find them?
+
+Well, we already know the answer from earlier in the lecture: we compute inner products.That is, we take the integral of the product of our function f of t with each basis function, over the interval from 0 to 1.
+For the constant term, a naught over 2, we simply integrate f of t from 0 to 1.
+To get a n, we multiply f of t by the cosine of 2 pi n t and integrate.
+For b n, we do the same with the sine of 2 pi n t.
+
+Once you have these values, you plug them back into the series.And when you sum it all up — the constants, the cosines, and the sines — you recreate your original function, or at least approximate it very closely.
+It’s almost magical.You could be working with a smooth parabola, or a sharp triangular wave, or even a jagged, piecewise function — and yet, you can reconstruct it entirely using just sine and cosine waves. That’s the power of the Fourier series.
+
+Now, remember earlier in the course we looked at functions in terms of discrete particles or impulses — like pixel-based representations. That gave us a kind of particle view of functions.
+But this approach gives us a wave-based view — continuous, smooth, and grounded in frequency content.
+Both are valid. And each is powerful in its own context.
+
+But here’s a question worth asking:Why would we ever want to use the complex form of the Fourier series?
+Well, look at this real version. It’s elegant, yes — but it involves three separate types of terms: one for the DC component, one for cosine, and one for sine.
+By switching to the complex form, we can merge all of this into a single sum using Euler’s formula, where complex exponentials capture both sine and cosine behavior simultaneously.
+This makes the whole formulation more compact and symmetrical.
+The math becomes cleaner. The algebra gets easier. And in engineering applications, it often leads to more efficient computations.
+So while the real form gives us intuitive clarity, the complex form offers analytical elegance.
+That’s exactly where we’re headed next.
+Let’s now explore how complex numbers help us take the Fourier series to the next level.

@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"convolution\",\n      \"p\": \"represents\",\n      \"o\": \"sum over all k of x of k multiplied by h of n minus k\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The formula in the middle tells us what convolution is in mathematical terms: we take the sum over all k of x of k multiplied by h of n minus k.\"\n    },\n    {\n      \"s\": \"red arrows\",\n      \"p\": \"shows\",\n      \"o\": \"f of k\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the top left, the red arrows show f of k, our first discrete signal.\"\n    },\n    {\n      \"s\": \"green arrows\",\n      \"p\": \"shows\",\n      \"o\": \"g of negative k\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the bottom left, the green arrows show g of negative k, which means we have flipped the second signal in time.\"\n    },",
+  "parsed": {
+    "s": "green arrows",
+    "p": "shows",
+    "o": "g of negative k",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "On the bottom left, the green arrows show g of negative k, which means we have flipped the second signal in time."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"tetrahedron-based inhomogeneous Monte Carlo optical simulator\",\n      \"p\": \"uses\",\n      \"o\": \"small tetrahedral elements\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we used a mesh made of small tetrahedral elements to simulate photon transport in realistic biological tissue\"\n    },\n    {\n      \"s\": \"simulated mouse model\",\n      \"p\": \"represents\",\n      \"o\": \"heart, lungs, liver, stomach, spleen, and kidneys\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You can see the heart, lungs, liver, stomach, spleen, and kidneys, all represented as separate organs with different optical properties\"\n    },\n    {\n      \"s\": \"simulated fluence maps\",\n      \"p\": \"produces\",\n      \"o\": \"photon density\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can see the simulated fluence maps, color-coded to show photon density",
+  "parsed": {
+    "s": "simulated mouse model",
+    "p": "represents",
+    "o": "heart, lungs, liver, stomach, spleen, and kidneys",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "You can see the heart, lungs, liver, stomach, spleen, and kidneys, all represented as separate organs with different optical properties"
+    ]
+  }
+}

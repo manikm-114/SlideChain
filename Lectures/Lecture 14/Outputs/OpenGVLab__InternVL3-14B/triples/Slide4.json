@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"2D image reconstruction\",\n      \"p\": \"depends_on\",\n      \"o\": \"X-ray measurements along every line passing through the region of interest\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To achieve this, you need to have X-ray measurements along every line passing through the region of interest.\"\n    },\n    {\n      \"s\": \"X-ray measurements\",\n      \"p\": \"measures\",\n      \"o\": \"line integral—the total attenuation along that path\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For each X-ray, you want to record the line integral—the total attenuation along that path.\"\n    },\n    {\n      \"s\": \"complete data\",\n      \"p\": \"ensures\",\n      \"o\": \"accurate reconstruction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This ensures you have complete data for accurate reconstruction.\"\n    },\n    {\n      \"s\": \"unimpeded data acquisition\",\n      \"p\": \"requires\",\n      \"o\": \"at",
+  "parsed": {
+    "s": "complete data",
+    "p": "ensures",
+    "o": "accurate reconstruction",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This ensures you have complete data for accurate reconstruction."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+Now let’s look at the fanbeam function in MATLAB in more detail.
+
+This function calculates projection data for a specified fan-beam geometry. Unlike the parallel-beam case, here the rotation angles are fixed from 0 to 360 degrees. That means you can’t restrict the scan to only half a circle, like 0 to 180, or just 0 to 45. The fanbeam function always assumes a full rotation.
+
+Here’s what the function looks like:
+F1, sensor pos 1, fan rot angles 1] equals fan beam P, D, ‘Fan Sensor Spacing', dsensor1;
+Let’s break it down:
+F1 is the fan-beam projection data, the main output you need.
+Sensor pos 1 gives the positions of the detectors.
+Fan rot angles 1 lists the rotation angles used.
+P is your input image, or phantom.
+D is the distance from the source vertex to the object’s center of rotation.
+‘Fan Sensor Spacing' is a property name, which tells MATLAB you’re specifying the spacing between detectors.
+Dsensor 1 is the actual spacing value.
+
+Those last two inputs are optional. You can run the function with just the image and the distance, and MATLAB will use default detector spacing. But if you want more control—say, to change the resolution or field of view—you can specify these additional arguments.
+So in short: fanbeam gives you projection data over a full 360 degrees, with flexibility to adjust sensor spacing if needed.

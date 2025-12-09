@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:14:53.408489+00:00",
+  "text_length": 580,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSuppose we define:\u000bv as a row vector equals negative two, three, zero, four point five, and negative one point five.\u000bTo make it a column, we write: v equals v prime — using the transpose.\nTo access elements:\u000bv of one gives the first,\u000bv of two to four gives the second to fourth,\u000band v of three and five gives just those two.\nYou can also create sequences.\u000bFor example: v equals four to two, stepping by negative one — gives four, three, two.\nAnd combining vectors is easy.\u000bIf a equals one to three, and b equals two to three,\u000bthen c equals a b — gives one, two, three, two, three.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"row vector\", \"category\": \"mathematics\"},\n    {\"term\": \"column vector\", \"category\": \"mathematics\"},\n    {\"term\": \"transpose\", \"category\": \"mathematics\"},\n    {\"term\": \"accessing elements\", \"category\": \"mathematics\"},\n    {\"term\": \"sequences\", \"category\": \"mathematics\"},\n    {\"term\": \"combining vectors\", \"category\": \"mathematics\"},\n    {\"term\": \"linspace\", \"category\": \"mathematics\"},\n    {\"term\": \"logspace\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix\", \"category\": \"mathematics\"},\n    {\"term\": \"element\", \"category\": \"mathematics\"},\n    {\"term\": \"column\", \"category\": \"mathematics\"},\n    {\"term\": \"row\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"defines a row vector\",\n    \"transposes a vector\",\n    \"accesses elements of a vector\",\n    \"creates a sequence\",\n    \"combines vectors\",\n    \"creates a matrix\",\n    \"accesses elements of a matrix\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "row vector",
+        "category": "mathematics"
+      },
+      {
+        "term": "transpose",
+        "category": "mathematics"
+      },
+      {
+        "term": "sequences",
+        "category": "mathematics"
+      },
+      {
+        "term": "combining vectors",
+        "category": "mathematics"
+      },
+      {
+        "term": "element",
+        "category": "mathematics"
+      },
+      {
+        "term": "column",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "defines a row vector",
+      "transposes a vector",
+      "accesses elements of a vector",
+      "creates a sequence",
+      "combines vectors",
+      "creates a matrix",
+      "accesses elements of a matrix"
+    ]
+  }
+}

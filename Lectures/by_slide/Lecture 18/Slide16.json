@@ -1,0 +1,192 @@
+{
+  "lecture": "Lecture 18",
+  "slide_id": "Slide16",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide16.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "electric fields",
+              "category": "physics"
+            },
+            {
+              "term": "magnetic fields",
+              "category": "physics"
+            },
+            {
+              "term": "charges",
+              "category": "physics"
+            },
+            {
+              "term": "currents",
+              "category": "physics"
+            },
+            {
+              "term": "divergence",
+              "category": "mathematics"
+            },
+            {
+              "term": "curl",
+              "category": "mathematics"
+            },
+            {
+              "term": "field lines",
+              "category": "physics"
+            },
+            {
+              "term": "electromagnetic fields",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Maxwell's equations\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"electric fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"magnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"charges\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"currents\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"divergence\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"curl\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"field lines\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"electromagnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"unification\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"foundations\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"electric fields\", \"category\": \"physics\"}, {\"term\": \"magnetic fields\", \"category\": \"physics\"}, {\"term\": \"charges\", \"category\": \"physics\"}, {\"term\": \"currents\", \"category\": \"physics\"}, {\"term\": \"divergence\", \"category\": \"mathematics\"}, {\"term\": \"curl\", \"category\": \"mathematics\"}, {\"term\": \"field lines\", \"category\": \"physics\"}, {\"term\": \"electromagnetic fields\", \"category\": \"physics\"}], \"evidence\": [\"Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"James Clerk Maxwell\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Maxwell's equations\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Maxwell equations",
+              "category": "physics"
+            },
+            {
+              "term": "electric fields",
+              "category": "physics"
+            },
+            {
+              "term": "magnetic fields",
+              "category": "physics"
+            },
+            {
+              "term": "dot product",
+              "category": "mathematics"
+            },
+            {
+              "term": "cross product",
+              "category": "mathematics"
+            },
+            {
+              "term": "divergence",
+              "category": "mathematics"
+            },
+            {
+              "term": "curl",
+              "category": "mathematics"
+            },
+            {
+              "term": "electromagnetic fields",
+              "category": "physics"
+            },
+            {
+              "term": "MRI physics",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "formulating the four Maxwell equations",
+            "charges producing electric fields",
+            "magnetic fields produced by currents",
+            "the deep connection between electricity and magnetism",
+            "dot product is used to describe divergence",
+            "cross product is used to describe curl",
+            "Maxwell captured the full behavior of electromagnetic fields",
+            "Maxwell’s equations are the foundation of all electromagnetic interactions",
+            "framework that underlies MRI physics"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Maxwell equations\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"electric fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"magnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"dot product\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"cross product\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"divergence\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"curl\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"electromagnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"MRI physics\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"formulating the four Maxwell equations\\\",\\n    \\\"charges producing electric fields\\\",\\n    \\\"magnetic fields produced by currents\\\",\\n    \\\"the deep connection between electricity and magnetism\\\",\\n    \\\"dot product is used to describe divergence\\\",\\n    \\\"cross product is used to describe curl\\\",\\n    \\\"Maxwell captured the full behavior of electromagnetic fields\\\",\\n    \\\"Maxwell’s equations are the foundation of all electromagnetic interactions\\\",\\n    \\\"framework that underlies MRI physics\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Maxwell equations\", \"category\": \"physics\"}, {\"term\": \"electric fields\", \"category\": \"physics\"}, {\"term\": \"magnetic fields\", \"category\": \"physics\"}, {\"term\": \"dot product\", \"category\": \"mathematics\"}, {\"term\": \"cross product\", \"category\": \"mathematics\"}, {\"term\": \"divergence\", \"category\": \"mathematics\"}, {\"term\": \"curl\", \"category\": \"mathematics\"}, {\"term\": \"electromagnetic fields\", \"category\": \"physics\"}, {\"term\": \"MRI physics\", \"category\": \"modality\"}], \"evidence\": [\"formulating the four Maxwell equations\", \"charges producing electric fields\", \"magnetic fields produced by currents\", \"the deep connection between electricity and magnetism\", \"dot product is used to describe divergence\", \"cross product is used to describe curl\", \"Maxwell captured the full behavior of electromagnetic fields\", \"Maxwell’s equations are the foundation of all electromagnetic interactions\", \"framework that underlies MRI physics\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Maxwell's equations\\\",\\n      \\\"p\\\": \\\"represent\\\",\\n      \\\"o\\\": \\\"electromagnetic interactions\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Maxwell’s equations are the foundation of all electromagnetic interactions.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Maxwell's equations\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"dot product\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The dot product is used to describe divergence—how field lines flow in or out of a point.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Maxwell's equations\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"cross product\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The cross product is used to describe curl—how field lines twist or circulate.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "divergence",
+              "category": "mathematics"
+            },
+            {
+              "term": "curl",
+              "category": "mathematics"
+            },
+            {
+              "term": "electric fields",
+              "category": "physics"
+            },
+            {
+              "term": "magnetic fields",
+              "category": "physics"
+            },
+            {
+              "term": "electromagnetic fields",
+              "category": "physics"
+            },
+            {
+              "term": "MRI physics",
+              "category": "instrumentation"
+            },
+            {
+              "term": "modern science and engineering",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Maxwell's equations are the foundation of all electromagnetic interactions.",
+            "They are the framework that underlies MRI physics and many other technologies in modern science and engineering."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T12:41:37.403274+00:00\", \"text_length\": 1094, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Maxwell's equations\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"divergence\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"curl\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"electric fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"magnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"electromagnetic fields\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"MRI physics\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"modern science and engineering\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Maxwell's equations are the foundation of all electromagnetic interactions.\\\",\\n    \\\"They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"divergence\", \"category\": \"mathematics\"}, {\"term\": \"curl\", \"category\": \"mathematics\"}, {\"term\": \"electric fields\", \"category\": \"physics\"}, {\"term\": \"magnetic fields\", \"category\": \"physics\"}, {\"term\": \"electromagnetic fields\", \"category\": \"physics\"}, {\"term\": \"MRI physics\", \"category\": \"instrumentation\"}, {\"term\": \"modern science and engineering\", \"category\": \"software\"}], \"evidence\": [\"Maxwell's equations are the foundation of all electromagnetic interactions.\", \"They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T13:54:35.124638+00:00\", \"text_length\": 1094, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"James Clerk Maxwell\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Maxwell's equations\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide16.json",
+        "parsed": {
+          "term": "they are the framework that underlies mri physics",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T12:03:04.126880+00:00\", \"text_length\": 1094, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"four maxwell equations\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"dot product is used to describe divergence\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"cross product is used to describe curl\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"maxwell’s equations are the foundation of all electromagnetic interactions\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"they unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"they are the framework that underlies mri physics\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"his major contribution was formulating the four maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\\",\\n    \\\"with just these two mathematical operations, maxwell captured the full behavior of electromagnetic fields.\\\",\\n    \\\"so at a basic level, remember this: maxwell’s equations are the foundation of all electromagnetic interactions.\\\",\", \"parsed\": {\"term\": \"they are the framework that underlies mri physics\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:10:47.681138+00:00\", \"text_length\": 1094, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring everything together with Maxwell. Alongside Newton and Einstein, James Clerk Maxwell is regarded as one of the greatest physicists. His major contribution was formulating the four Maxwell equations, which elegantly describe how electric and magnetic fields behave and interact.\\n\\nI don’t expect you to master these equations right now, but it is important to recognize their role. They unite everything we have talked about: charges producing electric fields, magnetic fields produced by currents, and the deep connection between electricity and magnetism.\\nIn these equations, the dot product is used to describe divergence—how field lines flow in or out of a point. The cross product is used to describe curl—how field lines twist or circulate. With just these two mathematical operations, Maxwell captured the full behavior of electromagnetic fields.\\n\\nSo at a basic level, remember this: Maxwell’s equations are the foundation of all electromagnetic interactions. They are the framework that underlies MRI physics and many other technologies in modern science and engineering.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide41",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T00:17:55.638563+00:00",
+  "text_length": 1391,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nMaybe you'll enjoy this little logo — it’s a compact way to capture the spirit of what we've been discussing.\nOn the left, we see the Greek letter delta. That symbolizes the delta function, which represents the particle-like, pointwise nature of signals — sharp, localized, discrete. It's our way of representing structure in the spatial or time domain.\n\nNext to it is e to the power i-theta, a complex exponential. This captures the wave nature — smooth, oscillating, continuous. It represents sinusoids, and it's central to how we describe frequency, phase, rotation, and oscilation in the complex plane, describing wave propagation.\n\nSo together, delta and e to the i-theta — one representing particles, the other waves — form a kind of duality. And this duality runs throughout everything we’ve covered: convolution, linear systems, Fourier series, and Fourier transforms.\nThe real power of Fourier analysis is in how it unifies these two views. A signal can be described by where things happen — using delta functions — or by how things oscillate — using sinusoids. This interplay is what makes the field so rich and so widely applicable.\n\nThat’s why I like this little symbol. It’s simple, but it reflects deep ideas that are at the heart of signal processing and medical imaging.  We will understand this logo more and more as we unravel its meaning in this and next several lectures.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"complex exponential\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"duality\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear systems\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier series\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transforms\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"represents the particle-like, pointwise nature of signals\",\n    \"captures the wave nature\",\n    \"unifies these two views\",\n    \"one representing particles, the other waves\",\n    \"interplay is what makes the field so rich and so widely applicable\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "complex exponential",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "duality",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier series",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transforms",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "represents the particle-like, pointwise nature of signals",
+      "captures the wave nature",
+      "unifies these two views",
+      "one representing particles, the other waves",
+      "interplay is what makes the field so rich and so widely applicable"
+    ]
+  }
+}

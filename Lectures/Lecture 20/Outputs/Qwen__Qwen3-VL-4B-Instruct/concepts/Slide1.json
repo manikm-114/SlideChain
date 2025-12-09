@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T14:16:45.811940+00:00",
+  "text_length": 761,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHello my students!\nToday we’ll wrap up our MRI part by explaining pulse sequences. Although the title highlights pulse sequences, we’ll also review the overall architecture of an MRI scanner and a few related concepts that tie everything together.\nToward the end of the lecture, I’ll introduce some recent brain-initiative projects and a few emerging ideas in MRI research.\u000bThe main emphasis today follows the green book chapter, so I strongly encourage you to read that section carefully. If you fully understand the ideas we cover in this lecture, you’ll find the final exam easier.\nOf course, I’ll also share a few extra details and insights that go beyond the textbook—these will help you develop a deeper and more practical understanding of MRI as a whole.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"pulse sequences\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"MRI scanner\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"brain-initiative projects\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"emerging ideas in MRI research\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"green book chapter\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"Today we’ll wrap up our MRI part by explaining pulse sequences.\",\n    \"we’ll also review the overall architecture of an MRI scanner\",\n    \"I’ll introduce some recent brain-initiative projects and a few emerging ideas in MRI research.\",\n    \"The main emphasis today follows the green book chapter\",\n    \"If you fully understand the ideas we cover in this lecture, you’ll find the final exam easier.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "pulse sequences",
+        "category": "modality"
+      },
+      {
+        "term": "MRI scanner",
+        "category": "instrumentation"
+      },
+      {
+        "term": "brain-initiative projects",
+        "category": "modality"
+      },
+      {
+        "term": "emerging ideas in MRI research",
+        "category": "modality"
+      },
+      {
+        "term": "green book chapter",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Today we'll wrap up our MRI part by explaining pulse sequences.",
+      "we'll also review the overall architecture of an MRI scanner",
+      "I'll introduce some recent brain-initiative projects and a few emerging ideas in MRI research.",
+      "The main emphasis today follows the green book chapter",
+      "If you fully understand the ideas we cover in this lecture, you'll find the final exam easier."
+    ]
+  }
+}

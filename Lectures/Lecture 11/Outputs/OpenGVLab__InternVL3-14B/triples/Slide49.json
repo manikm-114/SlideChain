@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide49",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"ROC curve\", \"p\":\"measures\", \"o\":\"diagnostic performance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The receiver operating characteristic, or ROC curve, gives us a full picture of diagnostic performance across different decision thresholds.\"},\n    {\"s\":\"AUC\", \"p\":\"represents\", \"o\":\"area under the ROC curve\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"That’s where the area under the ROC curve, or AUC, comes in.\"},\n    {\"s\":\"AUC\", \"p\":\"measures\", \"o\":\"predictive value\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If the curve falls along the diagonal, the area is 0.5. That means the test has no predictive value — you’re essentially flipping a coin.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ROC curve",
+        "p": "measures",
+        "o": "diagnostic performance",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The receiver operating characteristic, or ROC curve, gives us a full picture of diagnostic performance across different decision thresholds."
+      },
+      {
+        "s": "AUC",
+        "p": "represents",
+        "o": "area under the ROC curve",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "That’s where the area under the ROC curve, or AUC, comes in."
+      },
+      {
+        "s": "AUC",
+        "p": "measures",
+        "o": "predictive value",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If the curve falls along the diagonal, the area is 0.5. That means the test has no predictive value - you’re essentially flipping a coin."
+      }
+    ]
+  }
+}

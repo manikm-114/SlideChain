@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide5",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s begin with one of the most basic and widely used quality measures: the Mean Squared Error, or MSE.\nSuppose we have two images: the true image, which we’ll call y, and the reconstructed image, which we’ll call y-hat. Each image is made up of many pixels, indexed by i. If the image is 512 by 512, then the total number of pixels, n, is over 260,000.\n\nThe formula for MSE is simple:\u000bMSE equals one over n, times the sum from i equals one to n, of the difference between y-sub-i and y-hat-sub-i, squared.\nIn words, this means we compare the two images pixel by pixel. At each pixel, we take the difference, square it so that positive and negative errors don’t cancel out, and then average over all pixels. That gives us the mean squared error.\nNow, let’s go a bit deeper. When we estimate a parameter — say theta — we often write the estimate as theta-hat. The error between theta-hat and the true value theta can be analyzed in expectation, meaning averaged over many trials. When you expand the algebra, you find that the mean squared error naturally splits into two parts.\n\nThe first part is the variance. This tells us how much our estimates fluctuate around their average value. You can think of variance as a measure of random scatter.\n\nThe second part is the bias squared. This measures the difference between the average of our estimates and the true value. If our method consistently overshoots or undershoots, that’s bias.\n\nSo, in summary: MSE equals variance plus bias squared. Variance captures random error, bias captures systematic error, and together they define the total error.\n\nThis decomposition is very useful. It reminds us that an algorithm might have low variance but high bias, or vice versa. Understanding both helps us judge the quality of an estimator or an image reconstruction method.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"MSE\", \"p\":\"measures\",\n     \"o\":\"y-hat\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"MSE equals one over n, times the sum from i equals one to n, of the difference between y-sub-i and y-hat-sub-i, squared.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MSE",
+        "p": "measures",
+        "o": "y-hat",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "MSE equals one over n, times the sum from i equals one to n, of the difference between y-sub-i and y-hat-sub-i, squared."
+      }
+    ]
+  }
+}

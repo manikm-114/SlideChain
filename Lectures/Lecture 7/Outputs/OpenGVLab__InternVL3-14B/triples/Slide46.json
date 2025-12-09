@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"signal processing\",\n      \"p\": \"uses\",\n      \"o\": \"Nyquist sampling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Traditionally, signal processing has focused on signals that are band-limited — which means their frequencies don’t go beyond a certain point. Based on that assumption, we rely on Nyquist sampling: sample at least twice the maximum frequency, and you can perfectly reconstruct the signal.\"\n    },\n    {\n      \"s\": \"modern theory\",\n      \"p\": \"assumes\",\n      \"o\": \"sparsity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Modern theory says: you don’t always need to sample that densely. Instead of requiring a signal to be band-limited, we assume that it’s sparse in some domain.\"\n    },\n    {\n      \"s\": \"images\",\n      \"p\": \"represent\",\n      \"o\": \"sparsity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Think about images. They may look complex, but",
+  "parsed": {
+    "s": "modern theory",
+    "p": "assumes",
+    "o": "sparsity",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Modern theory says: you don’t always need to sample that densely. Instead of requiring a signal to be band-limited, we assume that it’s sparse in some domain."
+    ]
+  }
+}

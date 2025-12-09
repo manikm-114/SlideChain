@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"pulsed wave Doppler\",\n      \"p\": \"measures\",\n      \"o\": \"motion at a specific depth\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"it allows us to measure motion at a specific depth\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"converts\",\n      \"o\": \"time-domain signal into a frequency-domain representation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This mathematical operation converts the time-domain signal into a frequency-domain representation\"\n    },\n    {\n      \"s\": \"Doppler frequency\",\n      \"p\": \"represents\",\n      \"o\": \"motion or velocity of the surface or fluid\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "pulsed wave Doppler",
+        "p": "measures",
+        "o": "motion at a specific depth",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "it allows us to measure motion at a specific depth"
+      },
+      {
+        "s": "Doppler frequency",
+        "p": "represents",
+        "o": "motion or velocity of the surface or fluid",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid"
+      }
+    ]
+  }
+}

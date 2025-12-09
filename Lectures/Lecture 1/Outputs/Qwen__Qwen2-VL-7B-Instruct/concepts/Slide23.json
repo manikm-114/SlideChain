@@ -1,0 +1,58 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:13:05.824864+00:00",
+  "text_length": 756,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWhen it comes to imaging modalities, CT and MRI continue to lead in market share and clinical use.\n\nThat’s no surprise—both are incredibly versatile and widely used across medical specialties. CT scans are fast and great for detailed anatomical views. MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.\n\nYou might be surprised, though, that nuclear imaging—like PET and SPECT—is also a major player. These techniques are critical for functional imaging and cancer imaging. They are becoming more popular as we move toward personalized and molecular medicine.\n\nEach year, investment in these technologies grows. The message is clear: the field is fast evolving, and there’s a strong momentum behind it.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"CT scan\", \"category\": \"modality\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"nuclear imaging\", \"category\": \"modality\"},\n    {\"term\": \"PET\", \"category\": \"modality\"},\n    {\"term\": \"SPECT\", \"category\": \"modality\"},\n    {\"term\": \"functional imaging\", \"category\": \"modality\"},\n    {\"term\": \"cancer imaging\", \"category\": \"modality\"},\n    {\"term\": \"personalized medicine\", \"category\": \"modality\"},\n    {\"term\": \"molecular medicine\", \"category\": \"modality\"},\n    {\"term\": \"investment\", \"category\": \"software\"},\n    {\"term\": \"field evolving\", \"category\": \"software\"},\n    {\"term\": \"momentum\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"CT scans are fast and great for detailed anatomical views.\",\n    \"MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.\",\n    \"These techniques are critical for functional imaging and cancer imaging.\",\n    \"Each year, investment in these technologies grows.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT scan",
+        "category": "modality"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "nuclear imaging",
+        "category": "modality"
+      },
+      {
+        "term": "PET",
+        "category": "modality"
+      },
+      {
+        "term": "SPECT",
+        "category": "modality"
+      },
+      {
+        "term": "functional imaging",
+        "category": "modality"
+      },
+      {
+        "term": "cancer imaging",
+        "category": "modality"
+      },
+      {
+        "term": "molecular medicine",
+        "category": "modality"
+      },
+      {
+        "term": "investment",
+        "category": "software"
+      },
+      {
+        "term": "momentum",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "CT scans are fast and great for detailed anatomical views.",
+      "MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.",
+      "These techniques are critical for functional imaging and cancer imaging.",
+      "Each year, investment in these technologies grows."
+    ]
+  }
+}

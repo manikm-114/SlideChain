@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"2D Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"sinc functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So the full 2D Fourier transform ends up as the product of these two sinc functions\"\n    },\n    {\n      \"s\": \"2D Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"magnitude of the Fourier transform\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now if you look at the plot here, you’ll see a 3D surface that shows the magnitude of the Fourier transform\"\n    },\n    {\n      \"s\": \"rectangular function\",\n      \"p\": \"transforms to\",\n      \"o\": \"sinc function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Because it mirrors the result we saw earlier: when a rectangular function is defined in one domain — here it’s the spatial domain — its transform becomes a sinc function in the other domain\"\n    }",
+  "parsed": {
+    "s": "rectangular function",
+    "p": "transforms to",
+    "o": "sinc function",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Because it mirrors the result we saw earlier: when a rectangular function is defined in one domain - here it’s the spatial domain - its transform becomes a sinc function in the other domain"
+    ]
+  }
+}

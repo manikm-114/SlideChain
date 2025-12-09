@@ -1,0 +1,119 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "tomographic imaging"
+          },
+          {
+            "category": "algorithm",
+            "term": "inversion"
+          },
+          {
+            "category": "mathematics",
+            "term": "inverse problem"
+          },
+          {
+            "category": "mathematics",
+            "term": "forward problem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "cross-sectional image"
+          }
+        ],
+        "evidence": [
+          "tomographic imaging is different",
+          "to get a cross-sectional image, we need to do something called inversion",
+          "It\u2019s different from the more familiar forward problem",
+          "you collect data from many different angles, and that data is a kind of indirect measurement-a projection of what's inside",
+          "think of boiling an egg",
+          "what if someone gave you a boiled egg and said, \u201cUnboil it\u201d"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "to get a cross-sectional image, we need to do something called inversion.",
+            "modalities": [
+              "text"
+            ],
+            "o": "inversion",
+            "p": "uses",
+            "s": "tomographic imaging"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "It\u2019s different from the more familiar forward problem, where you know all the inputs, and a forward model, and calculate the outcome.",
+            "modalities": [
+              "text"
+            ],
+            "o": "inverse problem",
+            "p": "represents",
+            "s": "inversion"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "think of boiling an egg. That\u2019s a straightforward process.",
+            "modalities": [
+              "text"
+            ],
+            "o": "forward problem",
+            "p": "represents",
+            "s": "boiling an egg"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "exciting"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "you see the outcome-the measurement-and you ask: what could have caused this?"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "In tomography, it's the opposite. You see the outcome-the measurement-and you ask: what could have caused this?"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "outcome",
+        "p": "measures",
+        "s": "inversion"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "analogy",
+        "term": "unboil"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

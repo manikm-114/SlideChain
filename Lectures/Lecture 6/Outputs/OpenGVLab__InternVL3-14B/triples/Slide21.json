@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform of the triangle function\",\n      \"p\": \"produces\",\n      \"o\": \"sinc squared\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Fourier transform turns out to be the square of the sinc function.\"\n    },\n    {\n      \"s\": \"Fourier transform of the gate function\",\n      \"p\": \"produces\",\n      \"o\": \"sinc function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the Fourier transform of the gate function gave us a sinc function.\"\n    },\n    {\n      \"s\": \"triangle function\",\n      \"p\": \"depends_on\",\n      \"o\": \"convolution of two gate functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the triangle function is, in a way, the convolution of two gate functions.\"\n    },\n    {\n      \"s\": \"convolution in time\",\n      \"p\": \"corresponds_to\",\n      \"o\": \"multiplication in frequency\",\n      \"modalities\":",
+  "parsed": {
+    "s": "triangle function",
+    "p": "depends_on",
+    "o": "convolution of two gate functions",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "the triangle function is, in a way, the convolution of two gate functions."
+    ]
+  }
+}

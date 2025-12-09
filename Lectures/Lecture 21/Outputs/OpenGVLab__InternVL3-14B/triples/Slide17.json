@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Ultrasound Imaging\",\n      \"p\": \"uses\",\n      \"o\": \"decibel scale\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Pressure intensity is expressed in dB scale in US\"\n    },\n    {\n      \"s\": \"Relative Intensity\",\n      \"p\": \"represents\",\n      \"o\": \"10 log of I2 over I1\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Relative Intensity (dB) = 10 log (I2 / I1)\"\n    },\n    {\n      \"s\": \"Relative Power\",\n      \"p\": \"represents\",\n      \"o\": \"20 log of P2 over P1\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Relative Power (dB) = 20 log (P2 / P1)\"\n    },\n    {\n      \"s\": \"10 dB change\",\n      \"p\": \"corresponds to\",\n      \"o\": \"one order magnitude (1",
+  "parsed": {
+    "s": "Relative Power",
+    "p": "represents",
+    "o": "20 log of P2 over P1",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Relative Power (dB) = 20 log (P2 / P1)"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transforms\",\n      \"p\": \"uses\",\n      \"o\": \"low-pass filtering\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We’ve just seen how Fourier transforms can be used to remove noise.\"\n    },\n    {\n      \"s\": \"Fourier transforms\",\n      \"p\": \"uses\",\n      \"o\": \"high-pass filtering\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We’ve just seen how Fourier transforms can be used to remove noise.\"\n    },\n    {\n      \"s\": \"low-pass filter\",\n      \"p\": \"produces\",\n      \"o\": \"blurred image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we want to blur the image or remove fine details, we apply a low-pass filter.\"\n    },\n    {\n      \"s\": \"high-pass filter\",\n      \"p\": \"produces\",\n      \"o\": \"emphasizes edges and textures\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1",
+  "parsed": {
+    "s": "low-pass filter",
+    "p": "produces",
+    "o": "blurred image",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "If we want to blur the image or remove fine details, we apply a low-pass filter."
+    ]
+  }
+}

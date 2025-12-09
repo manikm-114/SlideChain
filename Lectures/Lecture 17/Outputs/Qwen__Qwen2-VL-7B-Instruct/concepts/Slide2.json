@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:24:49.535361+00:00",
+  "text_length": 289,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs you can see from the course schedule, we are right on track. Today’s lecture focuses on SPECT and PET. After this, we will proceed to MRI, ultrasound, and optical imaging, before concluding the course with the final exam.\n\nSo far so good, and everything is proceeding according to plan.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"SPECT\", \"category\": \"modality\"},\n    {\"term\": \"PET\", \"category\": \"modality\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"ultrasound\", \"category\": \"modality\"},\n    {\"term\": \"optical imaging\", \"category\": \"modality\"},\n    {\"term\": \"final exam\", \"category\": \"workflow\"}\n  ],\n  \"evidence\": [\"Today’s lecture focuses on SPECT and PET. After this, we will proceed to MRI, ultrasound, and optical imaging, before concluding the course with the final exam.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "SPECT",
+        "category": "modality"
+      },
+      {
+        "term": "PET",
+        "category": "modality"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "ultrasound",
+        "category": "modality"
+      },
+      {
+        "term": "optical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "final exam",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Today's lecture focuses on SPECT and PET. After this, we will proceed to MRI, ultrasound, and optical imaging, before concluding the course with the final exam."
+    ]
+  }
+}

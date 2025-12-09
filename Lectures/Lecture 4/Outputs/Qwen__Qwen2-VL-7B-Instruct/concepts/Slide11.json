@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:17:47.422838+00:00",
+  "text_length": 1295,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a moment to reflect on why the limiting process is essential when defining an impulse.\nYou might wonder — if we already know an impulse gives us the desired effect, like setting a golf ball in motion, why go through the trouble of idealizing it mathematically? The reason lies in precision. By applying the limiting process, we create a perfect, universal model of an impulse, one that’s as rigorous as the definition of a derivative in calculus.\nThink of how we define a derivative: we take a small change, and by letting that change approach zero, we achieve an exact result. We’re doing something similar here with the Dirac delta function.\n\nNow, regarding the shape of the delta function — does it matter? In fact, no. What matters is the area under the curve, not how the curve looks. It’s like receiving payment: whether it comes in one sum or in smaller installments, the total value is what counts.\n\nInterestingly, if you start worrying about the exact shape without measuring it, you’re in uncertain territory. Without measurement, all shapes are possible — a bit like the probabilistic world of quantum mechanics! Only when we observe or measure do we know what’s truly there. This connection offers a fascinating lens on how we idealize and model impulses in system theory.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"limiting process\", \"category\": \"mathematics\"},\n    {\"term\": \"Dirac delta function\", \"category\": \"mathematics\"},\n    {\"term\": \"area under the curve\", \"category\": \"mathematics\"},\n    {\"term\": \"quantum mechanics\", \"category\": \"physics\"},\n    {\"term\": \"measurement\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"By applying the limiting process, we create a perfect, universal model of an impulse, one that's as rigorous as the definition of a derivative in calculus.\",\n    \"What matters is the area under the curve, not how the curve looks.\",\n    \"Without measurement, all shapes are possible — a bit like the probabilistic world of quantum mechanics!\",\n    \"Only when we observe or measure do we know what's truly there.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "limiting process",
+        "category": "mathematics"
+      },
+      {
+        "term": "Dirac delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "area under the curve",
+        "category": "mathematics"
+      },
+      {
+        "term": "quantum mechanics",
+        "category": "physics"
+      },
+      {
+        "term": "measurement",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "By applying the limiting process, we create a perfect, universal model of an impulse, one that's as rigorous as the definition of a derivative in calculus.",
+      "What matters is the area under the curve, not how the curve looks.",
+      "Without measurement, all shapes are possible - a bit like the probabilistic world of quantum mechanics!",
+      "Only when we observe or measure do we know what's truly there."
+    ]
+  }
+}

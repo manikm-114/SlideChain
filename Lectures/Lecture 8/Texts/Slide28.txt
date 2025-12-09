@@ -1,0 +1,19 @@
+What we see here is just another way to write the discrete Fourier transform and its inverse — same math, just different symbols. You’ll often see different papers or books use different notations, so it’s important to recognize that they all mean the same thing.
+
+Let’s say we have N data points in the time domain. We’ll call them h k, where k runs from zero to N minus one. These are our measured samples — they could represent anything, such as temperature values taken at different times.
+
+To get the frequency-domain representation, we compute H n, the Fourier coefficients, using the formula:
+H n equals the sum from k equals zero to N minus one of h k times e to the power of minus j, two pi, k n divided by N.
+This is the forward discrete Fourier transform. The minus sign in the exponent tells us we’re rotating our coordinates in one direction in this N-dimensional space.
+
+The inverse transform takes us back from the frequency coefficients H n to the time samples h k:
+h k equals one over N, times the sum from n equals zero to N minus one of H n times e to the power of plus j, two pi, k n divided by N.
+Here, the plus sign in the exponent means we’re rotating back, and the factor of one over N is the scaling we discussed earlier — it accounts for the sampling steps in both time and frequency. Some definitions split the scaling evenly between the forward and inverse transforms to make them look perfectly symmetric, but that’s just a matter of convention.
+
+The key points:
+We have N samples, so we only need N orthogonal basis functions.
+Those basis functions are harmonics whose frequencies differ by a constant increment.
+The forward and inverse transforms are nearly symmetric — the main difference is the sign in the exponent and where we put the scaling factor.
+
+From a computational point of view, each row of the Fourier transform matrix has N elements. To compute one Fourier coefficient, we do N multiplications and N additions. Since we have N coefficients to compute, the total work is proportional to N-squared.
+This N-squared growth in computations was a big deal in the early days of signal processing, when N could be very large. That’s why the development of the Fast Fourier Transform, or FFT, was such a breakthrough — it reduced this cost dramatically.

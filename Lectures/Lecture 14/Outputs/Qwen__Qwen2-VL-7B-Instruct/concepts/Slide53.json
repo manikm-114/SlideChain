@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide53",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T09:13:22.212085+00:00",
+  "text_length": 436,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnother way to think about radiation dose is through the dose profile measured over multiple circular scans.\n\nWhen you perform one circular scan, you get a certain dose distribution.\nIf you then do a second circular scan, you’ll get a similar dose profile again.\nWhen multiple scans are performed, each scan adds its own dose profile.\n\nThese multiple dose profiles overlap, contributing to the total radiation dose the patient receives.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"radiation dose\", \"category\": \"physics\"},\n    {\"term\": \"dose profile\", \"category\": \"physics\"},\n    {\"term\": \"multiple scans\", \"category\": \"workflow\"},\n    {\"term\": \"overlap\", \"category\": \"mathematics\"},\n    {\"term\": \"total radiation dose\", \"category\": \"physics\"},\n    {\"term\": \"patient\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\"These multiple dose profiles overlap, contributing to the total radiation dose the patient receives.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radiation dose",
+        "category": "physics"
+      },
+      {
+        "term": "dose profile",
+        "category": "physics"
+      },
+      {
+        "term": "multiple scans",
+        "category": "workflow"
+      },
+      {
+        "term": "overlap",
+        "category": "mathematics"
+      },
+      {
+        "term": "total radiation dose",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "These multiple dose profiles overlap, contributing to the total radiation dose the patient receives."
+    ]
+  }
+}

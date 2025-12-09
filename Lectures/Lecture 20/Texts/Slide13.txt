@@ -1,0 +1,13 @@
+Now, let’s take a closer look at how the birdcage coil produces a uniform B-one field. If you consider the two cross-sections shown here, the idea is quite intuitive. When the current in one connecting wire flows in a particular direction, it generates a local magnetic field pointing downward. To produce a local field pointing upward, the current in the adjacent wire must flow in the opposite direction, forming a closed loop.
+
+This basic configuration—currents flowing in opposite directions through adjacent loops—creates magnetic fields that point downward in some regions and upward in others. When multiple loops or cross-sections are added around the cylinder, these individual magnetic fields combine to form a uniform field across the entire region inside the coil.
+
+Mathematically, this can be shown by modulating the current as a sinusoidal function of the angular position, which we call phi. If you plot the current intensity as a function of the phi angle, it varies like a sine wave—starting from zero at phi equals zero degrees, reaching a maximum at ninety degrees, and then becoming negative at one hundred eighty degrees. This sinusoidal modulation ensures that the magnetic field intensity remains uniform across the cross-section.
+
+To make the B-one field rotate in space, the current itself is also modulated over time, so that the maximum and minimum of the field continuously move around the coil. As a result, the B-one field rotates smoothly, allowing it to flip the magnetization vector, M, in a controlled and consistent way during excitation.
+
+In essence, this is how we achieve a uniform rotating magnetic field that interacts with the main B-zero field. Together, the B-zero field, B-one field, and the three gradient fields—G-sub-X, G-sub-Y, and G-sub-Z—form the complete electromagnetic environment of the MRI system.
+What’s truly fascinating is that all of these ideas—the generation of magnetic fields, their directions, and the way they add up—can actually be explained using high school physics: Ampère’s law, the right-hand rule, and the principle of superposition.
+
+Of course, for real MRI coil design, we need precise optimization to make sure the fields are uniform and stable. That’s done through finite element analysis, a numerical technique that lets engineers compute the detailed magnetic field distribution and fine-tune the geometry of the coil.
+So, while the physical concept is beautifully simple, the practical realization requires sophisticated computation and engineering.

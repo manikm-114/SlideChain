@@ -1,0 +1,84 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "loops"
+          },
+          {
+            "category": "mathematics",
+            "term": "nodes"
+          },
+          {
+            "category": "mathematics",
+            "term": "unique solution"
+          },
+          {
+            "category": "mathematics",
+            "term": "network"
+          },
+          {
+            "category": "mathematics",
+            "term": "unknowns"
+          },
+          {
+            "category": "mathematics",
+            "term": "independent equations"
+          },
+          {
+            "category": "mathematics",
+            "term": "electrical network"
+          }
+        ],
+        "evidence": [
+          "KCL + KVL = Unique Solution",
+          "no matter how you expand the network, KCL and KVL together give you exactly the number of independent equations you need to solve for all the unknown currents and voltages"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "no matter how you expand the network, KCL and KVL together give you exactly the number of independent equations you need to solve for all the unknown currents and voltages"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "unique solution"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "Each time you add a node, you also introduce a new unknown; however, KCL provides the additional equation needed"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "KCL",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "network"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-14T14:40:32.414377+00:00",
+  "text_length": 756,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen it comes to imaging modalities, CT and MRI continue to lead in market share and clinical use.\n\nThat’s no surprise—both are incredibly versatile and widely used across medical specialties. CT scans are fast and great for detailed anatomical views. MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.\n\nYou might be surprised, though, that nuclear imaging—like PET and SPECT—is also a major player. These techniques are critical for functional imaging and cancer imaging. They are becoming more popular as we move toward personalized and molecular medicine.\n\nEach year, investment in these technologies grows. The message is clear: the field is fast evolving, and there’s a strong momentum behind it.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": []\n}",
+  "parsed": {
+    "triples": []
+  }
+}

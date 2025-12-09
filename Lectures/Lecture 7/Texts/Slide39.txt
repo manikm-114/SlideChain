@@ -1,0 +1,25 @@
+Now, let’s continue line by line and see how each step connects.
+We’re now looking at this part of the derivation — specifically the fourth equation on the slide.
+
+Here, we have the product of two terms:
+a sinc function, written as sine of pi P t over pi P t,
+and the convolution with another function in square brackets.
+Let’s first focus on the sinc part. This comes from taking the inverse Fourier transform of the rectangular function in the frequency domain — the gate function we introduced earlier. When we take its inverse Fourier transform, we get a sinc function in the time domain. That’s because a rectangle in frequency always corresponds to a sinc in time. So that’s where this sine of pi P t over pi P t comes from — it’s our sinc kernel.
+
+Now, let’s turn to the function inside the brackets.
+Here, we’re performing an inverse Fourier transform on the product of two terms:
+the Fourier transform of our original function,
+and a periodic impulse train in frequency, with spacing capital P.
+By the convolution theorem, multiplying two functions in the frequency domain is equivalent to convolving their inverse transforms in the time domain. So we convolve the original function f of t with the inverse transform of this impulse train in the frequency domain.
+
+And what is the inverse transform of a periodic impulse train in frequency?
+It gives us another periodic impulse train — this time in time — with spacing equal to one over capital P. So this entire expression simplifies to f of t convolved with a sum of shifted delta functions, spaced by one over P.
+We can express that more clearly on the next line. The equation now becomes:
+f of t equals sinc of pi P t multiplied by the sum over all k from minus infinity to infinity of f of t times delta of t minus k over P.
+And because convolution with a delta function simply samples the function, this expression simplifies further — giving us the familiar formula for signal reconstruction.
+
+So finally, we arrive at the last equation on this slide:
+f of t equals the sum over k, from negative to positive infinity,of f evaluated at k over P,times sinc of pi times the quantity t minus k over P.
+This is the reconstruction formula for band-limited signals. It tells us that if the signal was sampled at or above the Nyquist rate — meaning no aliasing occurred — then we can recover the original continuous function perfectly by summing shifted sinc functions, each scaled by the sampled value.
+
+That’s the power of the sampling theorem. It doesn’t just allow us to digitize signals — it tells us exactly how to recover them.

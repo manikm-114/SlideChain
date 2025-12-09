@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"diffuse optical tomography\",\n      \"p\": \"measures\",\n      \"o\": \"hemoglobin concentration\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the reconstructed maps of hemoglobin concentration and oxygenation often agree with what’s seen in pathology\"\n    },\n    {\n      \"s\": \"diffuse optical tomography\",\n      \"p\": \"measures\",\n      \"o\": \"oxygen saturation\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the reconstructed maps of hemoglobin concentration and oxygenation often agree with what’s seen in pathology\"\n    },\n    {\n      \"s\": \"diffuse optical tomography\",\n      \"p\": \"measures\",\n      \"o\": \"water content\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"water content, fat content, and hemoglobin concentration — all these change when tissue becomes cancerous\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "diffuse optical tomography",
+        "p": "measures",
+        "o": "hemoglobin concentration",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.9,
+        "evidence": "the reconstructed maps of hemoglobin concentration and oxygenation often agree with what’s seen in pathology"
+      },
+      {
+        "s": "diffuse optical tomography",
+        "p": "measures",
+        "o": "water content",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.9,
+        "evidence": "water content, fat content, and hemoglobin concentration - all these change when tissue becomes cancerous"
+      }
+    ]
+  }
+}

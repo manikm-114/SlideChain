@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide6",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about the resolution of CT reconstruction.\n\nTwo key factors determine how sharp or detailed your reconstructed image will be.\nFirst, the number of rays, or the number of X-rays passing through the object at each angle. This directly affects the radial component of spatial resolution—that is, how finely we can distinguish details along a line from the center outward.\nSecond, the number of views, or the number of different angles, is often denoted by theta. This controls the circumferential component of resolution—how well we can distinguish details as we go around the circle.\nOn the cartoon CT slice shown here, you can see both components: the radial resolution going outward from the center, and the circumferential resolution wrapping around the image.\n\nSo, to summarize: the more rays you use, and the more views you collect, the higher the resolution of your reconstruction. On the other hand, using fewer rays or fewer views leads to blurrier images with less detail.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"rays\", \"category\": \"reconstruction\"},\n    {\"term\": \"views\", \"category\": \"reconstruction\"},\n    {\"term\": \"radial component\", \"category\": \"reconstruction\"},\n    {\"term\": \"circumferential component\", \"category\": \"reconstruction\"},\n    {\"term\": \"resolution\", \"category\": \"reconstruction\"},\n    {\"term\": \"blurrier images\", \"category\": \"reconstruction\"},\n    {\"term\": \"detail\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"Two key factors determine how sharp or detailed your reconstructed image will be.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "rays",
+        "category": "reconstruction"
+      },
+      {
+        "term": "views",
+        "category": "reconstruction"
+      },
+      {
+        "term": "radial component",
+        "category": "reconstruction"
+      },
+      {
+        "term": "circumferential component",
+        "category": "reconstruction"
+      },
+      {
+        "term": "resolution",
+        "category": "reconstruction"
+      },
+      {
+        "term": "blurrier images",
+        "category": "reconstruction"
+      },
+      {
+        "term": "detail",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Two key factors determine how sharp or detailed your reconstructed image will be."
+    ]
+  }
+}

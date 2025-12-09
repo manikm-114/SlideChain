@@ -1,0 +1,8 @@
+Now, let’s look at slice selection in more detail. In your textbook, you’ll find this figure, labeled as 4.16. Here, you see that slice selection can be performed using gradients along the x-axis, the y-axis, or the z-axis. That means you can select a coronal slice, an axial slice, or a sagittal slice, depending on which gradient you apply.
+And the beauty of MRI is that you are not limited to just these orthogonal planes. With the right gradient combinations, you can select slices at any orientation you like, even oblique slices at odd angles. This is one of the great flexibilities of MRI imaging.
+
+Now let’s think about why this matters. Before we introduced gradient fields, all we could do was measure T1 and T2 signals from the whole sample — essentially, we had no spatial specificity. We were only getting the overall relaxation properties averaged over the entire tissue volume. But now, with slice selection, we can be much more specific.
+
+We can tell the scanner: “Excite this slice only.” That means the signals we collect come from just that defined region. All the other spins, those outside of the slice — whether they’re above, below, or to the side — will not contribute. Because remember, resonance is only defined for those spins whose frequencies match the selected RF bandwidth, which corresponds to the gradient-defined slice.
+
+So in practice, the signals from outside the slice, those spins located elsewhere, remain silent. Only the spins inside that slice range are excited and measured. This is the principle of slice selection in MRI.

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"subplot command\",\n      \"p\": \"uses\",\n      \"o\": \"grid\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Use the subplot command to divide the figure into a grid.\"\n    },\n    {\n      \"s\": \"subplot 2, 3, 1\",\n      \"p\": \"creates\",\n      \"o\": \"two rows and three columns\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For example, subplot 2, 3, 1 creates two rows and three columns\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "subplot command",
+        "p": "uses",
+        "o": "grid",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Use the subplot command to divide the figure into a grid."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+Alright, let’s take a closer look at how the Fourier series works over one complete cycle — that is, over the interval from zero to one.
+As we’ve discussed, any well-behaved function on this interval — meaning it’s square-integrable — can be broken down into three types of components.
+First, we have what’s called the DC component — written as “a naught divided by two.”
+This term represents the average value of the function across the interval. It’s constant — it doesn’t vary or oscillate. You can think of it as the baseline level. For example, in an image, this might represent the overall brightness. In audio, it could be the steady background hum.
+
+Then we have the even parts — these are built using cosine waves.Each term looks like “a n times cosine of two pi n t,” where n is a positive integer: one, two, three, and so on.Cosine is symmetric — if you flip it left to right, it looks exactly the same. That’s why we call these even components — they preserve that mirror-like symmetry.
+Next come the odd parts — and these use sine waves.Each term is of the form “b n times sine of two pi n t.”Unlike cosine, sine flips sign when you reflect it, so it captures the antisymmetric — or odd — behavior of the function.
+So to sum up:We build the full function using a constant term, plus a sum of cosine waves for the even part, and a sum of sine waves for the odd part. All of these components are weighted by their respective coefficients — a naught, a n, and b n.
+
+And here’s the elegant part:Because we’re working with periodic functions, once you’ve reconstructed the signal over that one interval — from zero to one — the rest of the function just repeats automatically. It’s like tiling the pattern across the entire line.
+
+You can see that idea illustrated in the image at the bottom of the slide.The red waveform shows the reconstructed signal, and the lighter blue curves are the sine and cosine waves that contribute to it. When combined properly, they match the shape of the original function — and then extend it periodically to the left and right.
+This kind of decomposition isn’t just theoretical — it has real meaning.
+That constant term may represent a background level.
+The even parts can capture symmetric patterns in your data.
+And the odd parts can highlight asymmetries, like sharp edges or sudden transitions.
+
+So the Fourier series gives us a powerful, structured way to describe a function using just smooth, well-behaved waves — each one tied to a specific frequency and type of symmetry.
+Alright, now let’s move on and see how we can compute these coefficients — the values of a naught, a n, and b n — using projection. That’s coming next.

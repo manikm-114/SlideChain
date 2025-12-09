@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"smartphone\",\n      \"p\": \"measures\",\n      \"o\": \"oxygen levels through tissue\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Could it measure oxygen levels through tissue?\"\n    },\n    {\n      \"s\": \"smartphone\",\n      \"p\": \"measures\",\n      \"o\": \"glucose levels\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Could it monitor glucose levels?\"\n    },\n    {\n      \"s\": \"smartphone\",\n      \"p\": \"performs\",\n      \"o\": \"optical tomography\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Could it perform optical tomography?\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "smartphone",
+        "p": "measures",
+        "o": "oxygen levels through tissue",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Could it measure oxygen levels through tissue?"
+      },
+      {
+        "s": "smartphone",
+        "p": "measures",
+        "o": "glucose levels",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Could it monitor glucose levels?"
+      }
+    ]
+  }
+}

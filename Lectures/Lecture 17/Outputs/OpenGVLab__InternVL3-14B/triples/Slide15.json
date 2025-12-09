@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Earlier PET scanners\", \"p\":\"uses\", \"o\":\"mechanical collimators\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Earlier PET scanners used planar imaging mode, which meant you had mechanical collimators defining the imaging planes.\"},\n    {\"s\":\"Modern PET scanners\", \"p\":\"uses\", \"o\":\"3D electronic collimation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Modern PET scanners, though, have removed these mechanical collimators. Instead, you use coincidence detection in three dimensions.\"},\n    {\"s\":\"Mechanical collimators\", \"p\":\"represents\", \"o\":\"separating detector ring & defining imaging planes\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These collimators would shape the radioactivity that could reach the detectors, so the ring only collected signals from a thin slice, or plane, of the patient.\"},\n    {\"s\":\"Mechanical collimators\", \"p\":\"unavailable\", \"o\":\"relying on 3D electronic collimation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Modern PET scanners, though",
+  "parsed": {
+    "s": "Mechanical collimators",
+    "p": "represents",
+    "o": "separating detector ring & defining imaging planes",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "These collimators would shape the radioactivity that could reach the detectors, so the ring only collected signals from a thin slice, or plane, of the patient."
+    ]
+  }
+}

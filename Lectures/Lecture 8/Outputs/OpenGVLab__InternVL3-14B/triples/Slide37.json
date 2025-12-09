@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"uses\",\n      \"o\": \"FFT function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We take our signal x and compute its discrete Fourier transform using the FFT function.\"\n    },\n    {\n      \"s\": \"plot\",\n      \"p\": \"represents\",\n      \"o\": \"two peaks\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the plot, you see two peaks in blue.\"\n    },\n    {\n      \"s\": \"first peak\",\n      \"p\": \"measures\",\n      \"o\": \"one hundred hertz\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The first peak is at exactly one hundred hertz\"\n    },\n    {\n      \"s\": \"second component\",\n      \"p\": \"measures\",\n      \"o\": \"one hundred two point five hertz\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"e",
+  "parsed": {
+    "s": "first peak",
+    "p": "measures",
+    "o": "one hundred hertz",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The first peak is at exactly one hundred hertz"
+    ]
+  }
+}

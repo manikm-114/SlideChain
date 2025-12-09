@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T11:43:32.761373+00:00",
+  "text_length": 234,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s a sample Radon code you can run yourself. It generates an image with a white block, then produces the projection data. \n\nAfter that you apply the filtration. The red arrows simply point to figures that appear on the next slide.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Sample Radon Code\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"generates an image with a white block\",\n      \"category\": \"data_processing\"\n    },\n    {\n      \"term\": \"produces the projection data\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"apply the filtration\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"red arrows simply point to figures that appear on the next slide\",\n      \"category\": \"communication\"\n    }\n  ],\n  \"evidence\": [\n    \"Here’s a sample Radon code you can run yourself. It generates an image with a white block, then produces the projection data.\",\n    \"After that you apply the filtration.\",\n    \"The red arrows simply point to figures that appear on the next slide.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Sample Radon Code",
+        "category": "software"
+      },
+      {
+        "term": "generates an image with a white block",
+        "category": "data_processing"
+      },
+      {
+        "term": "produces the projection data",
+        "category": "signal_processing"
+      },
+      {
+        "term": "apply the filtration",
+        "category": "signal_processing"
+      },
+      {
+        "term": "red arrows simply point to figures that appear on the next slide",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "Here's a sample Radon code you can run yourself. It generates an image with a white block, then produces the projection data.",
+      "After that you apply the filtration.",
+      "The red arrows simply point to figures that appear on the next slide."
+    ]
+  }
+}

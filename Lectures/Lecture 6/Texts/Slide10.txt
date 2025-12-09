@@ -1,0 +1,21 @@
+
+
+You’ve actually seen this slide before — it’s a summary of what we covered in the last lecture, and now it serves as our starting point for deriving the Fourier transform.
+
+Let’s quickly revisit the main idea:
+We said that any arbitrary function can be treated as if it were periodic, defined over a fixed interval. In this case, we’re looking at a symmetric interval — from minus capital T over 2 to plus capital T over 2.
+
+Within this interval, we can represent the function f of t as a sum of sinusoidal components — specifically, complex exponentials of the form:
+e to the power i times 2 pi n, times t over T.
+This is a compact way to write sine and cosine waves using Euler’s formula. So even though the expression looks complex, it represents a mix of sine and cosine waves at various frequencies, where n runs from minus infinity to plus infinity.
+And just like before, each component has a corresponding coefficient, which tells us how much of that wave appears in the overall function.
+
+To compute the coefficient c n, we use the formula at the bottom:
+c n equals 1 over capital T, times the integral from minus T over 2 to T over 2, of e to the minus i 2 pi n t over T, times f of t, with respect to t.
+This is just an inner product — projecting f of t onto a complex exponential basis function. That projection gives us the weight, or the contribution, of that particular frequency.
+
+So, this slide wraps up all the key ideas from the Fourier series — including:
+Treating functions as periodic,
+Expressing them with complex exponentials,
+And computing coefficients through integration.
+With this solid foundation in place, we’re now ready to take the next step — and derive the Fourier transform, which generalizes everything we’ve done so far.

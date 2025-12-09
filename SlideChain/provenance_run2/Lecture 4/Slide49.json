@@ -1,0 +1,180 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "impulse response"
+          },
+          {
+            "category": "signal_processing",
+            "term": "unit step function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time constant"
+          }
+        ],
+        "evidence": [
+          "Use MATLAB to generate the plots",
+          "compute the convolution of the input signal with the system\u2019s impulse response",
+          "h of t equals R C times e to the power of minus t over R C, multiplied by the unit step function",
+          "Suppose the time constant RC equals 1 second"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Your goal is to compute the convolution of the input signal with the system\u2019s impulse response"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "convolution of the input signal with the system\u2019s impulse response",
+        "p": "produces",
+        "s": "MATLAB"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "impulse response"
+          },
+          {
+            "category": "mathematics",
+            "term": "time constant RC"
+          },
+          {
+            "category": "mathematics",
+            "term": "unit step function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "input signal"
+          },
+          {
+            "category": "data_processing",
+            "term": "plot"
+          },
+          {
+            "category": "data_processing",
+            "term": "Word document"
+          }
+        ],
+        "evidence": [
+          "Use MATLAB to generate the plots shown in the first row.",
+          "Your goal is to compute the convolution of the input signal with the system's impulse response.",
+          "Please submit: Your MATLAB script, The resulting figures, All combined in a Word document."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Focus on how the input signal and the impulse response interact to produce the output"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "h(t) = RC \u00b7 e^(-t/RC)u(t)"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "system's impulse response",
+        "p": "represents",
+        "s": "h(t) = RC \u00b7 e^(-t/RC)u(t)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time constant"
+          },
+          {
+            "category": "signal_processing",
+            "term": "impulse response"
+          },
+          {
+            "category": "signal_processing",
+            "term": "unit step function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "input signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "output"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB script"
+          },
+          {
+            "category": "software",
+            "term": "figures"
+          }
+        ],
+        "evidence": [
+          "Now it\u2019s time to apply what we\u2019ve learned.",
+          "Suppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.",
+          "Your goal is to compute the convolution of the input signal with the system\u2019s impulse response."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Suppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB",
+            "p": "uses",
+            "s": "MATLAB script"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide49.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide49.txt"
+  },
+  "slide_id": "Slide49"
+}

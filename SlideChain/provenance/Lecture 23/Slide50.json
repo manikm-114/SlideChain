@@ -1,0 +1,149 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "send and receive light"
+          },
+          {
+            "category": "physics",
+            "term": "polarized light"
+          },
+          {
+            "category": "physics",
+            "term": "detect fluorescence"
+          },
+          {
+            "category": "physics",
+            "term": "measure oxygen levels through tissue"
+          },
+          {
+            "category": "modality",
+            "term": "monitor glucose levels"
+          },
+          {
+            "category": "modality",
+            "term": "optical tomography"
+          }
+        ],
+        "evidence": [
+          "send and receive light in any way you want",
+          "emit polarized light",
+          "detect fluorescence",
+          "measure oxygen levels through tissue",
+          "monitor glucose levels",
+          "perform optical tomography"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Could it measure oxygen levels through tissue?",
+            "modalities": [
+              "text"
+            ],
+            "o": "oxygen levels through tissue",
+            "p": "measures",
+            "s": "smartphone"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Could it monitor glucose levels?",
+            "modalities": [
+              "text"
+            ],
+            "o": "glucose levels",
+            "p": "measures",
+            "s": "smartphone"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "tissue"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "stay within the limits of physics"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "medical imaging"
+          },
+          {
+            "category": "software",
+            "term": "review"
+          },
+          {
+            "category": "software",
+            "term": "transcribe"
+          },
+          {
+            "category": "communication",
+            "term": "creative thinking"
+          },
+          {
+            "category": "physics",
+            "term": "polarized light"
+          },
+          {
+            "category": "physics",
+            "term": "detect fluorescence"
+          },
+          {
+            "category": "physics",
+            "term": "measure oxygen levels"
+          },
+          {
+            "category": "modality",
+            "term": "monitor glucose levels"
+          },
+          {
+            "category": "modality",
+            "term": "perform optical tomography"
+          }
+        ],
+        "evidence": [
+          "SLIDE_TEXT"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Review carefully and summarize the key ideas.",
+            "modalities": [
+              "text"
+            ],
+            "o": "summary",
+            "p": "uses",
+            "s": "review"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide50.txt"
+  },
+  "slide_id": "Slide50"
+}

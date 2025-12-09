@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide22",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, if you keep adding more and more wavelength components — so many that they form a continuous spectrum — the math also changes. Instead of summing over discrete frequency components, we move into a limit where the summation becomes an integral. Each small intensity component contributes a little bit of energy within a narrow frequency band, and when you take the limit, the total becomes an integral over the full frequency range. \n\nMathematically, this looks like gamma of delta L equals two times I naught times the integral of S of nu times cosine of two pi delta L nu, d nu. Here, S of nu represents the power spectrum of the light source, describing how much energy each frequency contributes.\nNow, if this looks familiar, it should — because this integral is nothing but a Fourier transform. You might remember that in a standard Fourier transform, we use an exponential kernel, e to the power of j two pi something, but since cosine is an even function, this is essentially the real part of that transform. So, using only the cosine kernel still gives us the same kind of frequency-to-space relationship. If you were to include sine terms too, you’d have the full complex exponential, but for our optical system, the cosine component is enough.\n\nThis means that what the interferometer is really doing — physically — is performing a Fourier transform of the source spectrum. The detected interference pattern is the cosine transform of the spectral density. So, when you move the mirror and record how the intensity changes, you’re effectively mapping out the coherence function of the light. When the optical path difference matches within the coherence length of the source, you get visible fringes. As soon as you move beyond that range, the interference fades away because the different frequency components go out of sync. That’s why interference fringes are only observed when the two optical paths are matched within that coherence length.\n\nNow, think about how we use that in imaging. As the movable mirror scans back and forth, you collect this varying signal over time. Some parts of the sample are closer, some are deeper, so their reflected signals arrive at slightly different delays. When you record and reconstruct all those depth-dependent interference signals, you essentially form an image — one line of depth at a time. And by stacking those lines together, you can build a full cross-sectional image. That’s the basic principle of how optical coherence tomography captures structure in depth using interference.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"interferometer\", \"category\": \"instrumentation\"},\n    {\"term\": \"coherence function\", \"category\": \"physics\"},\n    {\"term\": \"optical path difference\", \"category\": \"physics\"},\n    {\"term\": \"coherence length\", \"category\": \"physics\"},\n    {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"cross-sectional image\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"...the interferometer is really doing — physically — is performing a Fourier transform of the source spectrum.\", \"The detected interference pattern is the cosine transform of the spectral density.\", \"When you move the mirror and record how the intensity changes, you’re effectively mapping out the coherence function of the light.\", \"As the movable mirror scans back and forth, you collect this varying signal over time.\", \"When you record and reconstruct all those depth-dependent interference signals, you essentially form an image — one line of depth at a time.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "interferometer",
+        "category": "instrumentation"
+      },
+      {
+        "term": "coherence function",
+        "category": "physics"
+      },
+      {
+        "term": "optical path difference",
+        "category": "physics"
+      },
+      {
+        "term": "coherence length",
+        "category": "physics"
+      },
+      {
+        "term": "cross-sectional image",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "...the interferometer is really doing - physically - is performing a Fourier transform of the source spectrum.",
+      "The detected interference pattern is the cosine transform of the spectral density.",
+      "When you move the mirror and record how the intensity changes, you’re effectively mapping out the coherence function of the light.",
+      "As the movable mirror scans back and forth, you collect this varying signal over time.",
+      "When you record and reconstruct all those depth-dependent interference signals, you essentially form an image - one line of depth at a time."
+    ]
+  }
+}

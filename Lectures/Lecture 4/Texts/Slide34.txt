@@ -1,0 +1,13 @@
+Now that you understand how 1D convolution works,it’s actually quite easy to extend the idea to two dimensions, especially when working with images.
+
+In 2D convolution, you’re essentially applying the same process —but now, instead of just one variable like t, you’re working with two:x and y in the discrete case, or tau one and tau two in the continuous case.
+
+Let’s take a look at the discrete form first.
+We can see the formula at the top of the slide:
+f of x, y convolved with g of x, y equals the double sumover n 1 and n 2 of f at n 1, n 2 times g at x minus n 1, y minus n 1.
+Just like in 1D, we flip the kernel, shift it, multiply, and sum —but now we do this across both rows and columns.
+In the continuous case, we do the same thing using integrals.We integrate over both variables — tau one and tau two —to compute the total area under the product.
+
+So the core principle stays the same:Flip, shift, multiply, and sum or integrate —but now it happens in two directions at once, across a 2D grid or surface.
+This extension is especially important in image processing and medical imaging,where we often apply filters, masks, or system responses across 2D signals like slices or projection data.
+Whether you’re summing or integrating,convolution gives you a systematic way to model how a signal transforms when passed through a system.

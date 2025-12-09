@@ -1,0 +1,206 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "fan-beam CT"
+          },
+          {
+            "category": "modality",
+            "term": "parallel-beam CT"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray beams"
+          },
+          {
+            "category": "instrumentation",
+            "term": "source point"
+          },
+          {
+            "category": "instrumentation",
+            "term": "rotates around the patient"
+          },
+          {
+            "category": "instrumentation",
+            "term": "fan-beam geometry"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "software",
+            "term": "dedicated functions"
+          }
+        ],
+        "evidence": [
+          "fan-beam CT",
+          "parallel-beam CT",
+          "X-ray beams",
+          "source point",
+          "rotates around the patient",
+          "fan-beam geometry",
+          "MATLAB",
+          "dedicated functions",
+          "reality simulations"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "MATLAB can simulate, which is fan-beam CT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "fan-beam CT",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This setup is much closer to how real CT scanners work today",
+            "modalities": [
+              "text"
+            ],
+            "o": "real CT scanners",
+            "p": "represents",
+            "s": "fan-beam CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "Fan-Beam CT"
+          },
+          {
+            "category": "modality",
+            "term": "parallel-beam CT"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray beams"
+          },
+          {
+            "category": "modality",
+            "term": "real CT scanners"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "modality",
+            "term": "fan-beam geometry"
+          },
+          {
+            "category": "mathematics",
+            "term": "additional considerations"
+          },
+          {
+            "category": "modality",
+            "term": "realistic simulations"
+          },
+          {
+            "category": "software",
+            "term": "dedicated functions"
+          }
+        ],
+        "evidence": [
+          "MATLAB can simulate fan-beam CT",
+          "fan-beam CT is closer to real CT scanners",
+          "MATLAB provides dedicated functions for fan-beam CT",
+          "fan-beam geometry introduces additional considerations",
+          "MATLAB simulations are more realistic"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "matlab provides dedicated functions to handle fan-beam ct"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.8,
+            "evidence": "Now let's turn to the second type of CT geometry that MATLAB can simulate, which is fan-beam CT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB",
+            "p": "uses",
+            "s": "Fan-Beam CT"
+          },
+          {
+            "confidence": 0.7,
+            "evidence": "This setup is much closer to how real CT scanners work today",
+            "modalities": [
+              "text"
+            ],
+            "o": "real CT scanners",
+            "p": "depends_on",
+            "s": "Fan-Beam CT"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "fan-beam CT"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "physics",
+            "term": "real CT scanners"
+          },
+          {
+            "category": "mathematics",
+            "term": "fan-beam geometry"
+          },
+          {
+            "category": "software",
+            "term": "additional considerations"
+          },
+          {
+            "category": "workflow",
+            "term": "realistic simulations"
+          },
+          {
+            "category": "software",
+            "term": "dedicated functions"
+          }
+        ],
+        "evidence": [
+          "Unlike parallel-beam CT, where all the X-ray beams are perfectly parallel, in fan-beam CT, the rays spread out from a single source point, forming a fan shape as they pass through the object.",
+          "MATLAB provides dedicated functions to handle fan-beam CT, which we\u2019ll look at in the next slides."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

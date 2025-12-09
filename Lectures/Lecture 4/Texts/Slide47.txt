@@ -1,0 +1,5 @@
+To detect edges effectively across all directions, we apply multiple convolution filters — each oriented differently.
+The image on the left shows the original grayscale input. On the right, we see the result of applying the Canny edge detector, one of the most widely used edge detection algorithms.
+What makes the Canny method powerful is its multi-stage approach. It starts with smoothing the image to suppress noise, then applies gradient-based filters in horizontal and vertical directions. From there, it calculates the gradient magnitude and direction at each pixel.
+The algorithm then performs non-maximum suppression to thin out the edges, and finally applies double thresholding and edge tracking by hysteresis to preserve only the most significant contours.
+The result is a crisp, binary edge map — like the one shown here — which highlights boundaries of objects and fine details.

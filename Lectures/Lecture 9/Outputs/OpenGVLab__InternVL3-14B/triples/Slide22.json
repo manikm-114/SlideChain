@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"bin-refine factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MATLAB, that means setting the bin-refine factor to four\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"FFT length\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"increasing the FFT length to four times the length of our original time vector\"\n    },\n    {\n      \"s\": \"frequency bin spacing\",\n      \"p\": \"changes to\",\n      \"o\": \"zero-point-two hertz\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"our frequency bin spacing changes from one hertz to zero-point-two hertz\"\n    },\n    {\n      \"s\": \"multi-component signal\",\n      \"p\": \"produces\",\n      \"o\": \"sharp, well-defined spike\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0",
+  "parsed": {
+    "s": "frequency bin spacing",
+    "p": "changes to",
+    "o": "zero-point-two hertz",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "our frequency bin spacing changes from one hertz to zero-point-two hertz"
+    ]
+  }
+}

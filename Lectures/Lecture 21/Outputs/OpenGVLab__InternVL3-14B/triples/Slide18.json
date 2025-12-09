@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound\",\n      \"p\": \"measures\",\n      \"o\": \"remaining intensity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We’ll look at how to calculate remaining intensity and half-value thickness for ultrasound.\"\n    },\n    {\n      \"s\": \"ultrasound\",\n      \"p\": \"represents\",\n      \"o\": \"half-value thickness\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The half-value thickness indicates the intensity is decreased by 50%\"\n    },\n    {\n      \"s\": \"decibel formula\",\n      \"p\": \"uses\",\n      \"o\": \"logarithms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Using the decibel formula again, we get 10 log of 0.5 equals negative 3 dB.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasound",
+        "p": "measures",
+        "o": "remaining intensity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We’ll look at how to calculate remaining intensity and half-value thickness for ultrasound."
+      },
+      {
+        "s": "ultrasound",
+        "p": "represents",
+        "o": "half-value thickness",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The half-value thickness indicates the intensity is decreased by 50%"
+      },
+      {
+        "s": "decibel formula",
+        "p": "uses",
+        "o": "logarithms",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using the decibel formula again, we get 10 log of 0.5 equals negative 3 dB."
+      }
+    ]
+  }
+}

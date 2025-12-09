@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MRI system\",\n      \"p\": \"uses\",\n      \"o\": \"demodulator\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The analog signal coming from the preamplifier is sent into a demodulator\"\n    },\n    {\n      \"s\": \"MRI system\",\n      \"p\": \"uses\",\n      \"o\": \"quadrature mixer\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"then through a quadrature mixer\"\n    },\n    {\n      \"s\": \"quadrature mixer\",\n      \"p\": \"separates\",\n      \"o\": \"real and imaginary signals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The quadrature mixer separates the signal into two parts—often labeled “I” for the in-phase component, and “Q” for the quadrature, or ninety-degree phase-shifted, component.\"\n    },\n    {\n      \"s\": \"signal\",\n      \"p\": \"produces\",\n      \"o\": \"",
+  "parsed": {
+    "s": "quadrature mixer",
+    "p": "separates",
+    "o": "real and imaginary signals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The quadrature mixer separates the signal into two parts-often labeled “I” for the in-phase component, and “Q” for the quadrature, or ninety-degree phase-shifted, component."
+    ]
+  }
+}

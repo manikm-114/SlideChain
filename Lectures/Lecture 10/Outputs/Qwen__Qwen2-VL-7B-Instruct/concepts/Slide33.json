@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:59:03.527783+00:00",
+  "text_length": 1131,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet me take you back to an event from several years ago. We organized a symposium at the AAAS Annual Meeting — that’s the American Association for the Advancement of Science. If you’re familiar with Science magazine, that’s actually the flagship publication of AAAS.\n\nThis meeting is one of the most important gatherings in the scientific community. It brings together experts from every field — medicine, engineering, mathematics, physics, education — you name it. The aim is not just to share research, but also to promote broad scientific understanding and collaboration.\nOur symposium was titled X-ray Imaging Innovations for Biomedicine. We discussed advances in CT technology, covering both hardware improvements and algorithmic innovations. We also looked at how imaging can play a more predictive and personalized role in medicine.\n\nThe meeting is structured into many symposiums running in parallel. We had our session, shared our work, exchanged ideas, and learned from other fields. It was a valuable experience — not only for presenting our research, but also for gaining perspectives from outside our immediate domain.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"X-ray Imaging Innovations for Biomedicine\", \"category\": \"modality\"},\n    {\"term\": \"CT technology\", \"category\": \"modality\"},\n    {\"term\": \"hardware improvements\", \"category\": \"instrumentation\"},\n    {\"term\": \"algorithmic innovations\", \"category\": \"algorithm\"},\n    {\"term\": \"predictive and personalized role in medicine\", \"category\": \"algorithm\"},\n    {\"term\": \"symposium\", \"category\": \"software\"},\n    {\"term\": \"exchange ideas\", \"category\": \"communication\"},\n    {\"term\": \"gained perspectives\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\n    \"We discussed advances in CT technology, covering both hardware improvements and algorithmic innovations.\",\n    \"We also looked at how imaging can play a more predictive and personalized role in medicine.\",\n    \"The meeting is structured into many symposiums running in parallel.\",\n    \"We had our session, shared our work, exchanged ideas, and learned from other fields.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray Imaging Innovations for Biomedicine",
+        "category": "modality"
+      },
+      {
+        "term": "CT technology",
+        "category": "modality"
+      },
+      {
+        "term": "hardware improvements",
+        "category": "instrumentation"
+      },
+      {
+        "term": "algorithmic innovations",
+        "category": "algorithm"
+      },
+      {
+        "term": "predictive and personalized role in medicine",
+        "category": "algorithm"
+      },
+      {
+        "term": "symposium",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "We discussed advances in CT technology, covering both hardware improvements and algorithmic innovations.",
+      "We also looked at how imaging can play a more predictive and personalized role in medicine.",
+      "The meeting is structured into many symposiums running in parallel.",
+      "We had our session, shared our work, exchanged ideas, and learned from other fields."
+    ]
+  }
+}

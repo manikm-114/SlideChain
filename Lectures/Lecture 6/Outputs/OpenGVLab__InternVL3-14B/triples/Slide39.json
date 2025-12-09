@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"rotation property\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if you rotate a two-dimensional function in space, then its Fourier transform also rotates\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"rotation matrix\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if we apply a rotation matrix — let’s call it R theta — to the spatial variable\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"rotated frequency spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the entire frequency spectrum also rotates by the exact same angle\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier transform",
+        "p": "represents",
+        "o": "rotation property",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "if you rotate a two-dimensional function in space, then its Fourier transform also rotates"
+      },
+      {
+        "s": "Fourier transform",
+        "p": "depends_on",
+        "o": "rotation matrix",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "if we apply a rotation matrix - let’s call it R theta - to the spatial variable"
+      }
+    ]
+  }
+}

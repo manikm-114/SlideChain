@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide36",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:33:07.183607+00:00",
+  "text_length": 713,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn this course, you’ll have access to a complete set of digital resources to support your learning.\n\nWe’ve included professionally recorded video lectures, so you can review key concepts anytime. All PowerPoint slides used in the course are also available for download and review.\n\nFor the modality sections, the textbook is available as hardcopy and PDF, making it easy to follow along even to search specific topics digitally. The course schedule follows a well-structured plan from previous offerings, with minor updates to reflect some latest progress in imaging science.\n\nThese materials are here to help you succeed—use them actively as we explore the foundation materials and modalities of medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"professionally recorded\", \"category\": \"signal_processing\"},\n    {\"term\": \"review\", \"category\": \"software\"},\n    {\"term\": \"PowerPoint slides\", \"category\": \"modality\"},\n    {\"term\": \"PDF\", \"category\": \"data_processing\"},\n    {\"term\": \"well-structured plan\", \"category\": \"workflow\"},\n    {\"term\": \"imaging science\", \"category\": \"physics\"},\n    {\"term\": \"success\", \"category\": \"communication\"},\n    {\"term\": \"foundation materials\", \"category\": \"algorithm\"},\n    {\"term\": \"modalities\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"professionally recorded video lectures\",\n    \"PowerPoint slides available for review\",\n    \"textbook available in PDF\",\n    \"well-structured plan from previous offerings\",\n    \"reflect some latest progress in imaging science\",\n    \"materials to help you succeed\",\n    \"explore the foundation materials\",\n    \"modalities of medical imaging\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "professionally recorded",
+        "category": "signal_processing"
+      },
+      {
+        "term": "review",
+        "category": "software"
+      },
+      {
+        "term": "PowerPoint slides",
+        "category": "modality"
+      },
+      {
+        "term": "well-structured plan",
+        "category": "workflow"
+      },
+      {
+        "term": "imaging science",
+        "category": "physics"
+      },
+      {
+        "term": "foundation materials",
+        "category": "algorithm"
+      },
+      {
+        "term": "modalities",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "professionally recorded video lectures",
+      "PowerPoint slides available for review",
+      "textbook available in PDF",
+      "well-structured plan from previous offerings",
+      "reflect some latest progress in imaging science",
+      "materials to help you succeed",
+      "explore the foundation materials",
+      "modalities of medical imaging"
+    ]
+  }
+}

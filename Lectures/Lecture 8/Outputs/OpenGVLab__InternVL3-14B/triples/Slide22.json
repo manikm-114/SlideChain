@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"uses\",\n      \"o\": \"integer indices\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Let us use the integer indices in the bracket to denote sampling points in the t- and Fourier domains respectively.\"\n    },\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"sum from n equals zero to N minus one of f of n, multiplied by e to the power of minus j, two pi, m times n divided by N\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"f-hat of m equals the sum from n equals zero to N minus one of f of n, multiplied by e to the power of minus j, two pi, m times n divided by N.\"\n    },\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"frequency samples\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\":",
+  "parsed": {
+    "s": "discrete Fourier transform",
+    "p": "represents",
+    "o": "sum from n equals zero to N minus one of f of n, multiplied by e to the power of minus j, two pi, m times n divided by N",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "f-hat of m equals the sum from n equals zero to N minus one of f of n, multiplied by e to the power of minus j, two pi, m times n divided by N."
+    ]
+  }
+}

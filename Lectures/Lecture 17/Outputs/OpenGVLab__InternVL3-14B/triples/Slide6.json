@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Gaussian distribution\", \"p\":\"represents\", \"o\":\"bell-shaped curve\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"The Gaussian distribution, also called the normal distribution, is your classic bell-shaped curve.\"},\n    {\"s\":\"Poisson distribution\", \"p\":\"represents\", \"o\":\"counts\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Poisson describes random variables that give you counts—like one, two, three, and so on—with different probabilities for each count.\"},\n    {\"s\":\"Gaussian distribution\", \"p\":\"depends_on\", \"o\":\"mean and variance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For the Gaussian, you have mean and variance, with variance noted as sigma squared.\"},\n    {\"s\":\"Poisson distribution\", \"p\":\"depends_on\", \"o\":\"mean\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For Poisson, both mean and variance are just lambda.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gaussian distribution",
+        "p": "represents",
+        "o": "bell-shaped curve",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The Gaussian distribution, also called the normal distribution, is your classic bell-shaped curve."
+      },
+      {
+        "s": "Poisson distribution",
+        "p": "represents",
+        "o": "counts",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The Poisson describes random variables that give you counts-like one, two, three, and so on-with different probabilities for each count."
+      },
+      {
+        "s": "Gaussian distribution",
+        "p": "depends_on",
+        "o": "mean and variance",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "For the Gaussian, you have mean and variance, with variance noted as sigma squared."
+      },
+      {
+        "s": "Poisson distribution",
+        "p": "depends_on",
+        "o": "mean",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "For Poisson, both mean and variance are just lambda."
+      }
+    ]
+  }
+}

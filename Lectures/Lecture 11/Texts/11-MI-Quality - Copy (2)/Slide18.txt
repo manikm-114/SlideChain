@@ -1,0 +1,15 @@
+So let’s begin with the first component of SSIM: the luminance comparison.
+
+Remember, luminance simply means the average brightness of an image. If two images have the same mean intensity, they should score highly on luminance similarity. If one image is much brighter or darker than the other, the similarity should be lower.
+
+Mathematically, the luminance comparison is written like this:
+L of X and Y equals two times mu-X times mu-Y, plus a constant C1, all divided by mu-X squared plus mu-Y squared, plus that same constant C1.
+Here, mu-X and mu-Y represent the average brightness of images X and Y. The constant C1 is added to make the formula stable — otherwise, if both means are very close to zero, the denominator becomes tiny and the ratio unstable.
+To choose C1, we take the square of K1 times L, where L is the dynamic range of pixel values. For an 8-bit grayscale image, L is 255. K1 is just a very small number, much less than one.
+
+Now, notice a few important properties:
+If the two means are equal, then the numerator and denominator are the same, so the luminance comparison equals 1, meaning perfect similarity.
+If the two means are very different, the numerator becomes small relative to the denominator, so the luminance comparison approaches 0, meaning poor similarity.
+
+This simple formula ensures that luminance similarity satisfies the three postulates we discussed earlier: it is symmetric, bounded between 0 and 1, and it reaches the maximum value of 1 only when the two images have identical mean brightness.
+So luminance is the first step in measuring structural similarity. Next, we’ll look at contrast comparison.

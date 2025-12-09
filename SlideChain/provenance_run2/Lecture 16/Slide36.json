@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "nuclear medicine"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "the system naturally seeks equilibrium, so the ratio between parent and daughter becomes constant",
+            "modalities": [
+              "text"
+            ],
+            "o": "technetium-99m",
+            "p": "produces",
+            "s": "radionuclide generator"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "On the right-hand graph, you see the practical outcome",
+            "modalities": [
+              "image"
+            ],
+            "o": "daily yield",
+            "p": "represents",
+            "s": "graph"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "exponential decay"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "after about a week, the parent has decayed so much that the yield becomes too low, and the generator must be replaced."
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "FIGURE 2.3. (Right) A graph of the radioactivity of 99mTc in the technetium generator in the case where the 99mTc is removed every 24 h."
+        ],
+        "modalities": [
+          "image"
+        ],
+        "o": "the radioactivity of 99mTc in the technetium generator",
+        "p": "represents",
+        "s": "the daily yield"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "nuclear medicine"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

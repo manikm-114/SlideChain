@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"frequency structure\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This function has a certain frequency structure, and that’s captured in its Fourier transform\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"wave components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When you sum up all these wave components, you reconstruct the original image\"\n    },\n    {\n      \"s\": \"rotated spatial function\",\n      \"p\": \"produces\",\n      \"o\": \"rotated frequency spectrum\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the rotated spatial function leads to a rotated frequency spectrum\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier transform",
+        "p": "represents",
+        "o": "frequency structure",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "This function has a certain frequency structure, and that’s captured in its Fourier transform"
+      },
+      {
+        "s": "Fourier transform",
+        "p": "reconstructs_with",
+        "o": "wave components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "When you sum up all these wave components, you reconstruct the original image"
+      },
+      {
+        "s": "rotated spatial function",
+        "p": "produces",
+        "o": "rotated frequency spectrum",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.9,
+        "evidence": "the rotated spatial function leads to a rotated frequency spectrum"
+      }
+    ]
+  }
+}

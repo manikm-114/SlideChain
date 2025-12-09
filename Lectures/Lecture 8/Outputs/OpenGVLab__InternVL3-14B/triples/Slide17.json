@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"N\",\n      \"p\": \"represents\",\n      \"o\": \"T multiplied by P\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"N = T / (1/P) = TP\"\n    },\n    {\n      \"s\": \"M\",\n      \"p\": \"represents\",\n      \"o\": \"T multiplied by P\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"M = N = P / (1/T) = PT\"\n    },\n    {\n      \"s\": \"1/N\",\n      \"p\": \"represents\",\n      \"o\": \"delta-t times delta-u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"1/N = 1/P * 1/T = delta-t delta-u\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "N",
+        "p": "represents",
+        "o": "T multiplied by P",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "N = T / (1/P) = TP"
+      },
+      {
+        "s": "M",
+        "p": "represents",
+        "o": "T multiplied by P",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "M = N = P / (1/T) = PT"
+      }
+    ]
+  }
+}

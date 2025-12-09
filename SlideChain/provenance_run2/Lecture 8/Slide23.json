@@ -1,0 +1,65 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "matrix form"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "f[n] = 1/N * sum_{m=0}^{N-1} f\u0302[m] * e^{j2\u03c0mn/N}, m = 0,1,\u2026,N\u22121."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "sum from m equals zero to N minus one of f-hat of m, multiplied by e to the power of plus j, two pi, m times n divided by N",
+        "p": "uses",
+        "s": "Inverse Discrete Fourier Transform"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "discretized frequency-domain spectrum"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "inverse of that matrix"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "Once you have these discrete Fourier components f\u02c6[ m ], m=0,1,\u2026,N\u22121, the original functional samples f[n], n=0,1,\u2026,N\u22121, can be recovered using the inverse discrete Fourier transform:"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the discrete Fourier components f\u02c6[ m ]",
+        "p": "uses",
+        "s": "the inverse discrete Fourier transform"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "no information loss"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

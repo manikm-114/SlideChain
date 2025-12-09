@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T09:48:21.812093+00:00",
+  "text_length": 794,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nDifferent body regions use different CT number windows for display. These windows are defined by minimum and maximum CT numbers, depending on the manufacturer or clinical application.\n\nFor instance, the full range of CT numbers might be mapped to 256 grayscale levels on a display, from white to black.\nThe human eye can typically distinguish about 50 shades within a window.\nIf too many shades are presented, subtle differences become difficult to see.\n\nFor lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value.\nWithin this window, 256 gray levels help render tissues clearly. Anything outside the window appears clipped and is not visible.\nThis windowing is critical to tailoring visualization to different clinical needs.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"CT number window\", \"p\":\"uses\", \"o\":\"human eye\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"The human eye can typically distinguish about 50 shades within a window.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT number window",
+        "p": "uses",
+        "o": "human eye",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.0,
+        "evidence": "The human eye can typically distinguish about 50 shades within a window."
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide18",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide18.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide18.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "for loop",
+              "category": "software"
+            },
+            {
+              "term": "while loop",
+              "category": "software"
+            },
+            {
+              "term": "break",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Start with a for loop. Use it when you know how many times you want to repeat something.",
+            "In this example: Start with x equal to 7. While x is greater than or equal to zero, subtract 2 each time. The loop stops when x becomes negative.",
+            "Just be careful - if the condition never becomes false, the loop won’t stop."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"for loop\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"while loop\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"break\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Start with a for loop. Use it when you know how many times you want to repeat something.\\\",\\n    \\\"In this example: Start with x equal to 7. While x is greater than or equal to zero, subtract 2 each time. The loop stops when x becomes negative.\\\",\\n    \\\"Just be careful — if the condition never becomes false, the loop won’t stop.\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"for loop\", \"category\": \"software\"}, {\"term\": \"while loop\", \"category\": \"software\"}, {\"term\": \"break\", \"category\": \"software\"}], \"evidence\": [\"Start with a for loop. Use it when you know how many times you want to repeat something.\", \"In this example: Start with x equal to 7. While x is greater than or equal to zero, subtract 2 each time. The loop stops when x becomes negative.\", \"Just be careful - if the condition never becomes false, the loop won’t stop.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide18.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "for loop",
+              "p": "uses",
+              "o": "known sequence",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "Set x to zero. Then, for i from 1 to 5 in steps of 2 - so, 1, 3, and 5 - we add i to x. At the end, x equals 9."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"for loop\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"known sequence\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.9, \\\"evidence\\\":\\\"Set x to zero. Then, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 — we add i to x. At the end, x equals 9.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"for loop\", \"p\": \"uses\", \"o\": \"known sequence\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"Set x to zero. Then, for i from 1 to 5 in steps of 2 - so, 1, 3, and 5 - we add i to x. At the end, x equals 9.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide18.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "for loop",
+              "category": "algorithm"
+            },
+            {
+              "term": "while loop",
+              "category": "algorithm"
+            },
+            {
+              "term": "break",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "Start with a for loop. Use it when you know how many times you want to repeat something.",
+            "Now, a while loop runs as long as a condition is true.",
+            "Finally, break lets you exit a loop early."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"for loop\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"while loop\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"break\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Start with a for loop. Use it when you know how many times you want to repeat something.\\\",\\n    \\\"Now, a while loop runs as long as a condition is true.\\\",\\n    \\\"Finally, break lets you exit a loop early.\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"for loop\", \"category\": \"algorithm\"}, {\"term\": \"while loop\", \"category\": \"algorithm\"}, {\"term\": \"break\", \"category\": \"algorithm\"}], \"evidence\": [\"Start with a for loop. Use it when you know how many times you want to repeat something.\", \"Now, a while loop runs as long as a condition is true.\", \"Finally, break lets you exit a loop early.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide18.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "for loops",
+              "p": "uses",
+              "o": "known sequence",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "for loops are useful when working through a known sequence."
+            },
+            {
+              "s": "break",
+              "p": "produces",
+              "o": "exit a loop early",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Finally, break lets you exit a loop early."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"for loops\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"known sequence\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"for loops are useful when working through a known sequence.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"while loops\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"condition\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Now, a while loop runs as long as a condition is true.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"break\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"exit a loop early\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Finally, break lets you exit a loop early.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"for loops\", \"p\": \"uses\", \"o\": \"known sequence\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"for loops are useful when working through a known sequence.\"}, {\"s\": \"break\", \"p\": \"produces\", \"o\": \"exit a loop early\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Finally, break lets you exit a loop early.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide18.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "for loops",
+              "category": "software"
+            },
+            {
+              "term": "break",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "for loops are useful when working through a known sequence.",
+            "while loops run as long as a condition is true.",
+            "break lets you exit a loop early."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:23:59.900139+00:00\", \"text_length\": 813, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"for loops\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"while loops\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"break\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"for loops are useful when working through a known sequence.\\\",\\n    \\\"while loops run as long as a condition is true.\\\",\\n    \\\"break lets you exit a loop early.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"for loops\", \"category\": \"software\"}, {\"term\": \"break\", \"category\": \"software\"}], \"evidence\": [\"for loops are useful when working through a known sequence.\", \"while loops run as long as a condition is true.\", \"break lets you exit a loop early.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide18.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:25:58.662783+00:00\", \"text_length\": 813, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"for loops\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim subject>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide18.json",
+        "parsed": {
+          "term": "use it wisely - don't skip steps that still matter",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:36:29.212883+00:00\", \"text_length\": 813, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"for loop\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"while loop\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"break\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"use it when you know how many times you want to repeat something\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"runs as long as a condition is true\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"exit a loop early\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"in nested loops, it only exits the innermost one\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"use it wisely — don’t skip steps that still matter\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Start with a for loop. Use it when you know how many times you want to repeat something.\\\",\\n    \\\"Now, a while loop runs as long as a condition is true.\\\",\\n    \\\"Finally, break lets you exit a loop early.\\\",\\n    \\\"In\", \"parsed\": {\"term\": \"use it wisely - don't skip steps that still matter\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide18.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide18\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:52:17.465370+00:00\", \"text_length\": 813, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about control flow — specifically, loops.\\nStart with a for loop. Use it when you know how many times you want to repeat something.\\nFor example:\\u000bSet x to zero.\\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\\u000bwe add i to x.\\u000bAt the end, x equals 9.\\nfor loops are useful when working through a known sequence.\\nNow, a while loop runs as long as a condition is true.\\nIn this example:\\u000bStart with x equal to 7.\\u000bWhile x is greater than or equal to zero, subtract 2 each time.\\u000bThe loop stops when x becomes negative.\\nJust be careful — if the condition never becomes false, the loop won’t stop.\\nFinally, break lets you exit a loop early.\\u000bIt’s useful if you find what you need before the loop finishes.\\u000bIn nested loops, it only exits the innermost one.\\u000bUse it wisely — don’t skip steps that still matter.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

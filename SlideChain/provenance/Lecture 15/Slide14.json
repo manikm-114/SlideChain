@@ -1,0 +1,104 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "radon function"
+          },
+          {
+            "category": "modality",
+            "term": "parallel-beam CT"
+          },
+          {
+            "category": "data_processing",
+            "term": "projection values"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector positions"
+          },
+          {
+            "category": "data_processing",
+            "term": "input image"
+          },
+          {
+            "category": "mathematics",
+            "term": "rotation angles"
+          },
+          {
+            "category": "signal_processing",
+            "term": "parallel-beam projections"
+          }
+        ],
+        "evidence": [
+          "MATLAB\u2019s radon function",
+          "parallel-beam CT",
+          "projection values",
+          "detector positions",
+          "input image",
+          "rotation angles",
+          "sweeping through many angles",
+          "parallel-beam projections",
+          "simulates what the parallel-beam projections would look like"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The amount of rotation is controlled by the angle theta, which we provide as an input to the function."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "rotation angles",
+        "p": "depends_on",
+        "s": "MATLAB's radon function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "input image"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "R is the result-it contains the projection values"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "I equals input image"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "I",
+        "p": "uses",
+        "s": "radon(I, theta)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "phantom"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

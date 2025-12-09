@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide41",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:56:17.851820+00:00",
+  "text_length": 424,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at a real-world scientific task — measuring how stars move.\nWe start with spectral data from a star. It includes many wavelengths, evenly spaced. The key is to find a feature called the Hydrogen-alpha line. If that line shifts, the star is moving — either away or toward us.\nWith MATLAB, we’ll identify that line, calculate how much it’s shifted, and then use the Doppler formula to estimate the star’s speed.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"spectral data\", \"category\": \"signal_processing\"},\n    {\"term\": \"Hydrogen-alpha line\", \"category\": \"physics\"},\n    {\"term\": \"Doppler formula\", \"category\": \"physics\"},\n    {\"term\": \"star's speed\", \"category\": \"physics\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"We start with spectral data from a star. It includes many wavelengths, evenly spaced.\",\n    \"With MATLAB, we’ll identify that line, calculate how much it’s shifted, and then use the Doppler formula to estimate the star’s speed.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "spectral data",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Hydrogen-alpha line",
+        "category": "physics"
+      },
+      {
+        "term": "Doppler formula",
+        "category": "physics"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "We start with spectral data from a star. It includes many wavelengths, evenly spaced.",
+      "With MATLAB, we'll identify that line, calculate how much it's shifted, and then use the Doppler formula to estimate the star's speed."
+    ]
+  }
+}

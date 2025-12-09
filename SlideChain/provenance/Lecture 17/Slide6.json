@@ -1,0 +1,107 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The Gaussian distribution, also called the normal distribution, is your classic bell-shaped curve.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "bell-shaped curve",
+            "p": "represents",
+            "s": "Gaussian distribution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The Poisson describes random variables that give you counts-like one, two, three, and so on-with different probabilities for each count.",
+            "modalities": [
+              "text"
+            ],
+            "o": "counts",
+            "p": "represents",
+            "s": "Poisson distribution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "For the Gaussian, you have mean and variance, with variance noted as sigma squared.",
+            "modalities": [
+              "text"
+            ],
+            "o": "mean and variance",
+            "p": "depends_on",
+            "s": "Gaussian distribution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "For Poisson, both mean and variance are just lambda.",
+            "modalities": [
+              "text"
+            ],
+            "o": "mean",
+            "p": "depends_on",
+            "s": "Poisson distribution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Poisson noise"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "random variables that give you counts"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "For the Gaussian, you have mean and variance, with variance noted as sigma squared."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "mean and variance",
+        "p": "uses",
+        "s": "Gaussian & Poisson Noise"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "lambda"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "It\u2019s controlled by the mean, which we call lambda"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "random variables that give you counts-like one, two, three, and so on-with different probabilities for each count",
+        "p": "represents",
+        "s": "Poisson distribution"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

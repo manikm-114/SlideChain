@@ -1,0 +1,143 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "periodically"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "overlap"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wrapping-around effect"
+          }
+        ],
+        "evidence": [
+          "Here, with circular convolution, the situation is different.",
+          "Earlier, with linear convolution, we had just one pair of signals sliding past each other.",
+          "The signal is treated as if it repeats periodically",
+          "If we don\u2019t want those overlaps to distort our result, we need to use zero-padding",
+          "This wrapping-around effect is exactly what creates the edge overlaps we saw earlier."
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "That means parts of the signal from the end overlap with parts from the beginning. This wrapping-around effect is exactly what creates the edge overlaps we saw earlier."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "wrapping-around effect",
+        "p": "depends_on",
+        "s": "circular convolution"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Circular Convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Linear Convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Edge Overlaps"
+          }
+        ],
+        "evidence": [
+          "Now let's think about circular convolution.",
+          "In this hand analogy, that meant one top hand and one bottom hand.",
+          "So instead of one top hand, we now have several copies in a row, as shown here with three hands.",
+          "That means parts of the signal from the end overlap with parts from the beginning.",
+          "This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.",
+          "If we don't want those overlaps to distort our result, we need to use zero-padding before performing the convolution."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "edge overlaps"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "In the picture, you can see that the fingers from the lower hands are overlapping with the fingers from the upper hands - not just in the middle, but also across the boundaries. This wrapping-around effect is exactly what creates the edge overlaps we saw earlier."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "edge overlaps",
+        "p": "produces",
+        "s": "circular convolution"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "edge overlaps"
+          }
+        ],
+        "evidence": [
+          "Earlier, with linear convolution, we had just one pair of signals sliding past each other. In this hand analogy, that meant one top hand and one bottom hand.",
+          "Here, with circular convolution, the situation is different. The signal is treated as if it repeats periodically - just like in our earlier example from Wikipedia.",
+          "That means parts of the signal from the end overlap with parts from the beginning.",
+          "This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.",
+          "If we don\u2019t want those overlaps to distort our result, we need to use zero-padding before performing the convolution."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide10.txt"
+  },
+  "slide_id": "Slide10"
+}

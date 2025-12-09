@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide32",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:12:14.178972+00:00",
+  "text_length": 419,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo the continuous-domain expression can be expressed in terms of discrete data points. You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering. \n\nYou can read more if you are interested, but anyway, these are practical implementation details about high-pass filtering for filtered backprojection. What I have explained here is only the two-dimensional case.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"digital filtration\", \"category\": \"signal_processing\"},\n    {\"term\": \"filtered backprojection\", \"category\": \"reconstruction\"},\n    {\"term\": \"band-limited high-pass filtering\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampled data points\", \"category\": \"data_processing\"},\n    {\"term\": \"practical implementation details\", \"category\": \"software\"},\n    {\"term\": \"two-dimensional case\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"The continuous-domain expression can be expressed in terms of discrete data points.\",\n    \"You get the filtered projection profile in terms of sampled data points.\",\n    \"This is the band-limited high-pass filtering.\",\n    \"You can read more if you are interested, but anyway, these are practical implementation details about high-pass filtering for filtered backprojection.\",\n    \"What I have explained here is only the two-dimensional case.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "filtered backprojection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "band-limited high-pass filtering",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampled data points",
+        "category": "data_processing"
+      },
+      {
+        "term": "practical implementation details",
+        "category": "software"
+      },
+      {
+        "term": "two-dimensional case",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "The continuous-domain expression can be expressed in terms of discrete data points.",
+      "You get the filtered projection profile in terms of sampled data points.",
+      "This is the band-limited high-pass filtering.",
+      "You can read more if you are interested, but anyway, these are practical implementation details about high-pass filtering for filtered backprojection.",
+      "What I have explained here is only the two-dimensional case."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"dot\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MATLAB, you can do both matrix and element-wise operations — and the difference is all in the dot.\"\n    },\n    {\n      \"s\": \"A times B\",\n      \"p\": \"represents\",\n      \"o\": \"matrix multiplication\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"\\\"A times B\\\" — with a single star — means matrix multiplication.\"\n    },\n    {\n      \"s\": \"A dot star B\",\n      \"p\": \"represents\",\n      \"o\": \"element-wise multiplication\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"\\\"A dot star B\\\" — with a dot — means multiply element by element.\"\n    },\n    {\n      \"s\": \"A caret 2\",\n      \"p\": \"represents\",\n      \"o\": \"matrix power\",\n      \"modalities\": [\"text\"],\n      \"confidence",
+  "parsed": {
+    "s": "A dot star B",
+    "p": "represents",
+    "o": "element-wise multiplication",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "\"A dot star B\" - with a dot - means multiply element by element."
+    ]
+  }
+}

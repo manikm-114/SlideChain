@@ -1,0 +1,24 @@
+Let’s now talk about one of the most powerful tools in the Fourier world — the convolution theorem.
+
+In plain terms, the convolution theorem says this:
+Convolution in the time domain becomes multiplication in the frequency domain.
+
+Let me say that again, but clearly:If you have two functions — let’s call them f of t and g of t — and you convolve them together, then their Fourier transform is simply the product of their individual transforms.
+So:If the Fourier transform of f of t is capital F of s,and the transform of g of t is capital G of s,then the transform of f convolved with g is F of s times G of s.
+That’s the core idea.
+
+Now why does this matter?
+Because convolution — though useful — is often hard to compute directly.It involves flipping one function, shifting it, multiplying, and integrating. That’s a lot of work!
+But thanks to this theorem, we can skip all that.Instead, we go to the frequency domain, multiply two functions — much simpler — and then just come back to the time domain using an inverse transform.
+
+Let’s walk through a concrete example.
+Think about a gate function — also called a rectangular pulse. Its Fourier transform is a sinc function — which looks like a smooth wave with side ripples.
+Now, if we take two gate functions and convolve them in time, we get a triangle function.
+
+So what happens in the frequency domain?
+Each gate becomes a sinc function. When we multiply the two sinc functions together, we get sinc squared.
+That is — sinc of s times sinc of s gives you sinc squared of s.
+
+So the triangle function — which was a convolution of two gates — has a Fourier transform equal to sinc squared.
+That’s a beautiful result, and it all comes from the convolution theorem.
+It also shows how Fourier analysis turns complicated operations into simpler ones, especially in engineering, signal processing, and physics.

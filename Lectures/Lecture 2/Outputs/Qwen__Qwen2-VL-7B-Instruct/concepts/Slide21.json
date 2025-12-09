@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide21",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:27:17.761175+00:00",
+  "text_length": 519,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s look at how MATLAB handles basic plots.\nStart by generating x values from minus one to one using linspace. Then take the sine of x to get y.\nUse plot x and y to create a basic line graph.\nTo change the appearance, you can specify style and color. For example, plot x, y, black line draws the line in black.\nUse hold on if you want to overlay another plot on the same figure.\u000bUse figure to open a new figure window for a separate plot.\nPlotting helps visualize data — and it’s built into MATLAB as a core strength.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"linspace\", \"category\": \"mathematics\"},\n    {\"term\": \"sin\", \"category\": \"mathematics\"},\n    {\"term\": \"plot\", \"category\": \"software\"},\n    {\"term\": \"hold on\", \"category\": \"software\"},\n    {\"term\": \"figure\", \"category\": \"software\"},\n    {\"term\": \"plotting\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Start by generating x values from minus one to one using linspace.\", \"Then take the sine of x to get y.\", \"Use plot x and y to create a basic line graph.\", \"To change the appearance, you can specify style and color.\", \"Use hold on if you want to overlay another plot on the same figure.\", \"Use figure to open a new figure window for a separate plot.\", \"Plotting helps visualize data — and it’s built into MATLAB as a core strength.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linspace",
+        "category": "mathematics"
+      },
+      {
+        "term": "plot",
+        "category": "software"
+      },
+      {
+        "term": "hold on",
+        "category": "software"
+      },
+      {
+        "term": "figure",
+        "category": "software"
+      },
+      {
+        "term": "plotting",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Start by generating x values from minus one to one using linspace.",
+      "Then take the sine of x to get y.",
+      "Use plot x and y to create a basic line graph.",
+      "To change the appearance, you can specify style and color.",
+      "Use hold on if you want to overlay another plot on the same figure.",
+      "Use figure to open a new figure window for a separate plot.",
+      "Plotting helps visualize data - and it's built into MATLAB as a core strength."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"parallel-beam CT\", \"p\":\"uses\", \"o\":\"Radon transform function\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In MATLAB, the main tool for simulating this is the Radon transform function, simply called radon.\"},\n    {\"s\":\"parallel-beam CT\", \"p\":\"produces\", \"o\":\"sinogram\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So when you hear me say “parallel-beam CT,” think of it as collecting straight, evenly spaced rays, rotating around the object, and storing all of that information in a sinogram.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "parallel-beam CT",
+        "p": "uses",
+        "o": "Radon transform function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In MATLAB, the main tool for simulating this is the Radon transform function, simply called radon."
+      },
+      {
+        "s": "parallel-beam CT",
+        "p": "produces",
+        "o": "sinogram",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So when you hear me say “parallel-beam CT,” think of it as collecting straight, evenly spaced rays, rotating around the object, and storing all of that information in a sinogram."
+      }
+    ]
+  }
+}

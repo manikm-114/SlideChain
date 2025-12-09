@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"luminance term\",\n      \"p\": \"depends_on\",\n      \"o\": \"mean brightness of image Y\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the luminance term is maximized when the two images have the same mean brightness\"\n    },\n    {\n      \"s\": \"luminance term\",\n      \"p\": \"depends_on\",\n      \"o\": \"mean brightness of image X\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the luminance term is maximized when the two images have the same mean brightness\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "luminance term",
+        "p": "depends_on",
+        "o": "mean brightness of image Y",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the luminance term is maximized when the two images have the same mean brightness"
+      },
+      {
+        "s": "luminance term",
+        "p": "depends_on",
+        "o": "mean brightness of image X",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the luminance term is maximized when the two images have the same mean brightness"
+      }
+    ]
+  }
+}

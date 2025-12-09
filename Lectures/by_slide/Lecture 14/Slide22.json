@@ -1,0 +1,164 @@
+{
+  "lecture": "Lecture 14",
+  "slide_id": "Slide22",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide22.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide22.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide22.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "exact helical cone beam algorithm",
+              "category": "algorithm"
+            },
+            {
+              "term": "filtered backprojection",
+              "category": "signal_processing"
+            },
+            {
+              "term": "longitudinally truncated data",
+              "category": "data_processing"
+            },
+            {
+              "term": "mathematician",
+              "category": "mathematics"
+            },
+            {
+              "term": "modern CT theory",
+              "category": "physics"
+            },
+            {
+              "term": "helical CT",
+              "category": "modality"
+            },
+            {
+              "term": "truncation",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "It then took over a decade for the field to develop what is called the exact helical cone beam algorithm.",
+            "This algorithm still uses the filtered backprojection framework but is mathematically exact.",
+            "Earlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"exact helical cone beam algorithm\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"filtered backprojection\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"longitudinally truncated data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"mathematician\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"modern CT theory\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"helical CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"truncation\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm.\\\", \\\"This algorithm still uses the filtered backprojection framework but is mathematically exact.\\\", \\\"Earlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"exact helical cone beam algorithm\", \"category\": \"algorithm\"}, {\"term\": \"filtered backprojection\", \"category\": \"signal_processing\"}, {\"term\": \"longitudinally truncated data\", \"category\": \"data_processing\"}, {\"term\": \"mathematician\", \"category\": \"mathematics\"}, {\"term\": \"modern CT theory\", \"category\": \"physics\"}, {\"term\": \"helical CT\", \"category\": \"modality\"}, {\"term\": \"truncation\", \"category\": \"data_processing\"}], \"evidence\": [\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm.\", \"This algorithm still uses the filtered backprojection framework but is mathematically exact.\", \"Earlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide22.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"helical cone beam algorithm\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"exact helical cone beam algorithm\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide22.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "exact helical cone beam algorithm",
+              "category": "algorithm"
+            },
+            {
+              "term": "filtered backprojection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "longitudinally truncated data",
+              "category": "data_processing"
+            },
+            {
+              "term": "transversely",
+              "category": "data_processing"
+            },
+            {
+              "term": "helical CT",
+              "category": "modality"
+            },
+            {
+              "term": "mathematically exact",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "exact helical cone beam algorithm",
+            "filtered backprojection framework",
+            "longitudinally truncated data",
+            "transversely",
+            "helical CT",
+            "mathematically exact"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"exact helical cone beam algorithm\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"filtered backprojection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"longitudinally truncated data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"transversely\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"helical CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"mathematically exact\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"exact helical cone beam algorithm\\\",\\n    \\\"filtered backprojection framework\\\",\\n    \\\"longitudinally truncated data\\\",\\n    \\\"transversely\\\",\\n    \\\"helical CT\\\",\\n    \\\"mathematically exact\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"exact helical cone beam algorithm\", \"category\": \"algorithm\"}, {\"term\": \"filtered backprojection\", \"category\": \"reconstruction\"}, {\"term\": \"longitudinally truncated data\", \"category\": \"data_processing\"}, {\"term\": \"transversely\", \"category\": \"data_processing\"}, {\"term\": \"helical CT\", \"category\": \"modality\"}, {\"term\": \"mathematically exact\", \"category\": \"mathematics\"}], \"evidence\": [\"exact helical cone beam algorithm\", \"filtered backprojection framework\", \"longitudinally truncated data\", \"transversely\", \"helical CT\", \"mathematically exact\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide22.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "exact helical cone beam algorithm",
+              "p": "uses",
+              "o": "filtered backprojection framework",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "This algorithm still uses the filtered backprojection framework but is mathematically exact."
+            },
+            {
+              "s": "exact helical cone beam algorithm",
+              "p": "reconstructs_with",
+              "o": "longitudinally truncated data",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "it demonstrates that modern CT theory can effectively handle longitudinally truncated data."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"exact helical cone beam algorithm\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"filtered backprojection framework\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"This algorithm still uses the filtered backprojection framework but is mathematically exact.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"exact helical cone beam algorithm\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"longitudinally truncated data\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"exact helical cone beam algorithm\", \"p\": \"uses\", \"o\": \"filtered backprojection framework\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"This algorithm still uses the filtered backprojection framework but is mathematically exact.\"}, {\"s\": \"exact helical cone beam algorithm\", \"p\": \"reconstructs_with\", \"o\": \"longitudinally truncated data\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide22.json",
+        "parsed": {
+          "term": "Symmetric problem",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:18:07.833966+00:00\", \"text_length\": 624, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Exact helical cone beam algorithm\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"Filtered backprojection framework\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"Longitudinally truncated data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"Helical CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Dr. Katsevich\\\", \\\"category\\\": \\\"person\\\"},\\n    {\\\"term\\\": \\\"Modern CT theory\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"Transversely truncated data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"Longitudinal data truncation\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"Symmetric problem\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm.\\\",\\n    \\\"This algorithm still uses the filtered backprojection framework but is mathematically exact.\\\",\\n    \\\"Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students.\\\",\\n    \\\"Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\\",\", \"parsed\": {\"term\": \"Symmetric problem\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide22.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:40:36.614369+00:00\", \"text_length\": 624, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Exact Spiral Cone-beam CT\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"filtered backprojection framework\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide22.json",
+        "parsed": {
+          "term": "symmetric problem",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T07:31:37.214656+00:00\", \"text_length\": 624, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"exact helical cone beam algorithm\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"filtered backprojection framework\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"mathematically exact\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Dr. Katsevich\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"modern CT theory\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"longitudinally truncated data\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"transversely\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"longitudinal data truncation\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"symmetric problem\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"It then took over a decade for the field to develop what is called the exact helical cone beam algorithm.\\\",\\n    \\\"This algorithm still uses the filtered backprojection framework but is mathematically exact\", \"parsed\": {\"term\": \"symmetric problem\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide22.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide22\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:39:12.011500+00:00\", \"text_length\": 624, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIt then took over a decade for the field to develop what is called the exact helical cone beam algorithm. This algorithm still uses the filtered backprojection framework but is mathematically exact.\\n\\nThe author, Dr. Katsevich, is a mathematician, so the paper is quite dense and challenging for most engineering students. Nonetheless, it demonstrates that modern CT theory can effectively handle longitudinally truncated data.\\n\\nEarlier, I mentioned that in the second generation, data truncation happens transversely, while helical CT mainly deals with longitudinal data truncation, which can be seen as a symmetric problem.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

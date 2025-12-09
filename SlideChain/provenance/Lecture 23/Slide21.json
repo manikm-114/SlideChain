@@ -1,0 +1,122 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "coherence envelope"
+          },
+          {
+            "category": "physics",
+            "term": "interference pattern"
+          },
+          {
+            "category": "mathematics",
+            "term": "Gaussian-shaped profile"
+          },
+          {
+            "category": "physics",
+            "term": "partial coherence"
+          },
+          {
+            "category": "physics",
+            "term": "coherence length"
+          },
+          {
+            "category": "physics",
+            "term": "wavelength components"
+          },
+          {
+            "category": "physics",
+            "term": "oscillations"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "envelope pattern"
+          }
+        ],
+        "evidence": [
+          "envelope pattern - a burst that looks like a Gaussian-shaped profile",
+          "interference pattern becomes confined in space",
+          "The more wavelengths you combine, the shorter the coherence length",
+          "several sine-wave components of different colors, each slightly different in frequency",
+          "oscillations clearly",
+          "interference fringes appear only within that small region",
+          "slightly different in frequency",
+          "envelope pattern"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Add seven components, and now the oscillations begin to cluster and fade away at the edges, forming a smooth, localized shape."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "number of components",
+        "p": "depends_on",
+        "s": "oscillations"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "combination of wavelengths"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "the more wavelengths you combine, the shorter the coherence length becomes, and the interference fringes appear only within that small region"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Add three components, and the interference gets tighter."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "case of partially coherent light",
+        "p": "represents",
+        "s": "\u0393(\u0394L,v1,v2,v3)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "smooth, localized shape"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The result no longer looks like a clean, single-frequency wave. Instead, you start to see an envelope pattern - a burst that looks like a Gaussian-shaped profile, or what we often call a coherence envelope.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Gaussian-shaped profile",
+            "p": "represents",
+            "s": "coherence envelope"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"zero-padding\",\n      \"p\": \"produces\",\n      \"o\": \"correct, undistorted result\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.\"\n    },\n    {\n      \"s\": \"FFT method\",\n      \"p\": \"depends_on\",\n      \"o\": \"zero-padding\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if you’re using the FFT method to compute convolution, always add enough zero-padding\"\n    },\n    {\n      \"s\": \"zero-padded circular convolution\",\n      \"p\": \"lies on top of\",\n      \"o\": \"linear convolution\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the zero-padded circular convolution — shown in blue — lies exactly on top of the linear convolution — shown in red.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "zero-padding",
+        "p": "produces",
+        "o": "correct, undistorted result",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result."
+      },
+      {
+        "s": "FFT method",
+        "p": "depends_on",
+        "o": "zero-padding",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "if you’re using the FFT method to compute convolution, always add enough zero-padding"
+      }
+    ]
+  }
+}

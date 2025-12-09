@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Case 1\",\n      \"p\": \"represents\",\n      \"o\": \"No overlap\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"No overlap means no contribution to the integral, and the output is zero.\"\n    },\n    {\n      \"s\": \"Case 2\",\n      \"p\": \"represents\",\n      \"o\": \"g(t) partially overlaps f(t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now we begin to see partial overlap.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"produces\",\n      \"o\": \"parabolic curve\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So the convolution result in this case is a parabolic curve, rising as t approaches zero.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Case 1",
+        "p": "represents",
+        "o": "No overlap",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "No overlap means no contribution to the integral, and the output is zero."
+      },
+      {
+        "s": "Convolution",
+        "p": "produces",
+        "o": "parabolic curve",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So the convolution result in this case is a parabolic curve, rising as t approaches zero."
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "four linear equations"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "shoot a ray along the diagonal direction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray measurements"
+          },
+          {
+            "category": "modality",
+            "term": "n by n image"
+          },
+          {
+            "category": "mathematics",
+            "term": "n by n unknowns"
+          },
+          {
+            "category": "mathematics",
+            "term": "independent"
+          },
+          {
+            "category": "physics",
+            "term": "diagonal direction"
+          },
+          {
+            "category": "mathematics",
+            "term": "independent equations"
+          },
+          {
+            "category": "mathematics",
+            "term": "enough independent equations"
+          }
+        ],
+        "evidence": [
+          "With X-ray measurements, you can write a number of equations. Solve the equations and you get the unknowns-that\u2019s the idea.",
+          "It\u2019s a little tricky, but the point is that these four equations are not totally independent.",
+          "From three of them you can derive the last one.",
+          "So you should shoot a ray along the diagonal direction. Then you may get \u201cthis one plus this one plus this one plus this one,\u201d and you will have enough independent equations to solve uniquely."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Suppose you shoot X-rays this way. As I explained, an X-ray measurement gives you a ray-sum. From the earlier slide: if you do not send X-rays through these two pixels, you will not be able to say what mu one and mu two are. But you do know the sum of these two pixels: mu one plus mu two equals seven. From this, you still do not know mu one and mu two, but you know the sum is seven. Likewise, take a vertical ray: you get mu two plus mu four equals four.",
+            "modalities": [
+              "text"
+            ],
+            "o": "mu one plus mu two equals seven",
+            "p": "measures",
+            "s": "X-ray measurement"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide2",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSeems like we are going as per our schedule.\n\nIn some courses or textbooks, you might be handed a formula for Fourier analysis and told to apply it mechanically. And sure — you might be able to follow the steps, plug in numbers, and get the right answer. But that kind of approach often leaves you without a real understanding of what’s happening under the hood.\n\nHere, we’re going to do things differently. Instead of just giving you the equations, we’ll take the time to explore the why and how behind them. What does the Fourier series represent? Why does it work? And how does it help us understand complex signals?\n\nThis deeper understanding is especially important in a field like medical imaging, where you’re not just solving math problems — you’re working with real-world data that affects real people. So, our goal is not just to teach you the tools, but to help you develop a solid intuition for how and why they work.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier series\", \"category\": \"signal_processing\"},\n    {\"term\": \"complex signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"real-world data\", \"category\": \"data_processing\"},\n    {\"term\": \"real people\", \"category\": \"anatomy\"},\n    {\"term\": \"solid intuition\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\"Here, we’re going to do things differently. Instead of just giving you the equations, we’ll take the time to explore the why and how behind them. What does the Fourier series represent? Why does it work? And how does it help us understand complex signals?\", \"This deeper understanding is especially important in a field like medical imaging, where you’re not just solving math problems — you’re working with real-world data that affects real people. So, our goal is not just to teach you the tools, but to help you develop a solid intuition for how and why they work.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier series",
+        "category": "signal_processing"
+      },
+      {
+        "term": "complex signals",
+        "category": "signal_processing"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "real-world data",
+        "category": "data_processing"
+      },
+      {
+        "term": "solid intuition",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Here, we’re going to do things differently. Instead of just giving you the equations, we’ll take the time to explore the why and how behind them. What does the Fourier series represent? Why does it work? And how does it help us understand complex signals?",
+      "This deeper understanding is especially important in a field like medical imaging, where you’re not just solving math problems - you’re working with real-world data that affects real people. So, our goal is not just to teach you the tools, but to help you develop a solid intuition for how and why they work."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide41",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet me give you a simple example to show why “getting smaller” isn’t always enough.\n\nImagine a curve where the height at any point is equal to one divided by the position along the horizontal axis. As you move farther to the right, the values get smaller and smaller — for example, at position one the value is one, at position two it’s one-half, at position three it’s one-third, at position four it’s one-fourth, and so on.\n\nYou might think: “These numbers are tiny — if we keep adding them, the total should stay small.”\nBut here’s the surprising fact: even if you start far out, like at one over one million, and then keep adding one over two million, one over three million, and so on, the total will still grow without limit.\n\nIn other words, an infinite number of tiny contributions can still add up to something infinitely large.\nAnd this is exactly the kind of situation we face in Fourier analysis: very small contributions from infinitely many frequency copies can still combine into something significant.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"infinite series\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"tiny contributions\", \"category\": \"signal_processing\"},\n    {\"term\": \"infinitely large\", \"category\": \"signal_processing\"},\n    {\"term\": \"significant\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"even if you start far out, like at one over one million, and then keep adding one over two million, one over three million, and so on, the total will still grow without limit.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "tiny contributions",
+        "category": "signal_processing"
+      },
+      {
+        "term": "infinitely large",
+        "category": "signal_processing"
+      },
+      {
+        "term": "significant",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "even if you start far out, like at one over one million, and then keep adding one over two million, one over three million, and so on, the total will still grow without limit."
+    ]
+  }
+}

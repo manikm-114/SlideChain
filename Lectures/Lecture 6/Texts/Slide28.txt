@@ -1,0 +1,16 @@
+Now let’s talk about a beautiful and surprising property of the Fourier transform — its connection to derivatives.
+Suppose we start with a function, f of t, and its Fourier transform is capital F of s.
+
+Now you might ask:What happens if we take the derivative of f — that is, f prime of t — and then perform the Fourier transform?
+The answer is elegant:Taking a derivative in time becomes multiplication in the frequency domain.
+
+More precisely,The Fourier transform of f ' of t is just 2 pi i s times the Fourier transform of f.So again, taking a derivative becomes a simple multiplication — and the factor depends on frequency.
+There’s also a second version of this rule:If you take the derivative of the Fourier transform itself with respect to s,That’s the same as applying -2 pi i t to f of t — and then transforming it.
+
+So in summary:
+Derivatives in one domain correspond to multiplications in the other domain.
+And this duality works both ways — from time to frequency, or frequency to time.
+This relationship is incredibly useful in practice, especially in physics and engineering, where differentiation often pops up in systems and signals.
+
+And best of all, it’s not magic — you can prove this directly from the Fourier transform formula, just by carefully taking the derivative under the integral.
+So this derivative property really adds to our collection of powerful tools in the Fourier toolbox.

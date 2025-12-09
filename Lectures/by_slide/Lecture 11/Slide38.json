@@ -1,0 +1,203 @@
+{
+  "lecture": "Lecture 11",
+  "slide_id": "Slide38",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide38.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Positive Predictive Value (PPV)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "Negative Predictive Value (NPV)",
+              "category": "quality_metric"
+            }
+          ],
+          "evidence": [
+            "PPV equals True Positives over (True Positives plus False Positives).",
+            "NPV equals True Negatives over (True Negatives plus False Negatives)."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Positive Predictive Value (PPV)\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"Negative Predictive Value (NPV)\\\", \\\"category\\\": \\\"quality_metric\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"PPV equals True Positives over (True Positives plus False Positives).\\\", \\\"NPV equals True Negatives over (True Negatives plus False Negatives).\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Positive Predictive Value (PPV)\", \"category\": \"quality_metric\"}, {\"term\": \"Negative Predictive Value (NPV)\", \"category\": \"quality_metric\"}], \"evidence\": [\"PPV equals True Positives over (True Positives plus False Positives).\", \"NPV equals True Negatives over (True Negatives plus False Negatives).\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide38.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Positive predictive value (PPV)",
+              "p": "measures",
+              "o": "True Positives over (True Positives plus False Positives)",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Positive predictive value (PPV)\\\", \\\"p\\\":\\\"measures\\\",\\n     \\\"o\\\":\\\"True Positives over (True Positives plus False Positives)\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Positive predictive value (PPV)\", \"p\": \"measures\", \"o\": \"True Positives over (True Positives plus False Positives)\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "positive predictive value (PPV)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "negative predictive value (NPV)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "True Positives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "False Positives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "True Negatives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "False Negatives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "sensitivity",
+              "category": "quality_metric"
+            },
+            {
+              "term": "specificity",
+              "category": "quality_metric"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "PPV equals True Positives over (True Positives plus False Positives).",
+            "NPV equals True Negatives over (True Negatives plus False Negatives).",
+            "sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.",
+            "Suppose we are using CT to detect a tumor."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"positive predictive value (PPV)\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"negative predictive value (NPV)\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"True Positives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"False Positives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"True Negatives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"False Negatives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"specificity\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"tumor\\\", \\\"category\\\": \\\"anatomy\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"PPV equals True Positives over (True Positives plus False Positives).\\\",\\n    \\\"NPV equals True Negatives over (True Negatives plus False Negatives).\\\",\\n    \\\"sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.\\\",\\n    \\\"Suppose we are using CT to detect a tumor.\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"positive predictive value (PPV)\", \"category\": \"quality_metric\"}, {\"term\": \"negative predictive value (NPV)\", \"category\": \"quality_metric\"}, {\"term\": \"True Positives\", \"category\": \"quality_metric\"}, {\"term\": \"False Positives\", \"category\": \"quality_metric\"}, {\"term\": \"True Negatives\", \"category\": \"quality_metric\"}, {\"term\": \"False Negatives\", \"category\": \"quality_metric\"}, {\"term\": \"sensitivity\", \"category\": \"quality_metric\"}, {\"term\": \"specificity\", \"category\": \"quality_metric\"}, {\"term\": \"CT\", \"category\": \"modality\"}], \"evidence\": [\"PPV equals True Positives over (True Positives plus False Positives).\", \"NPV equals True Negatives over (True Negatives plus False Negatives).\", \"sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.\", \"Suppose we are using CT to detect a tumor.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"PPV\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"fraction of patients whose medical imaging calls abnormal actually have disease\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"PPV equals True Positives over (True Positives plus False Positives)\\\"},\\n    {\\\"s\\\":\\\"NPV\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"fraction of patients whose medical imaging calls Normal and do NOT have disease\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"NPV equals True Negatives over (True Negatives plus False Negatives)\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Positive Predictive Value (PPV)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "Negative Predictive Value (NPV)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "True Positives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "True Negatives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "False Positives",
+              "category": "quality_metric"
+            },
+            {
+              "term": "False Negatives",
+              "category": "quality_metric"
+            }
+          ],
+          "evidence": [
+            "If the imaging study says a patient is abnormal, how likely is it that they really have the disease?",
+            "If the imaging study says a patient is normal, how likely is it that they really are disease-free?",
+            "PPV tells us how likely it is that this really is a tumor and not just a false alarm.",
+            "If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T04:25:53.416926+00:00\", \"text_length\": 1346, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Positive Predictive Value (PPV)\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"Negative Predictive Value (NPV)\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"True Positives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"True Negatives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"False Positives\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"False Negatives\\\", \\\"category\\\": \\\"quality_metric\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"If the imaging study says a patient is abnormal, how likely is it that they really have the disease?\\\",\\n    \\\"If the imaging study says a patient is normal, how likely is it that they really are disease-free?\\\",\\n    \\\"PPV tells us how likely it is that this really is a tumor and not just a false alarm.\\\",\\n    \\\"If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Positive Predictive Value (PPV)\", \"category\": \"quality_metric\"}, {\"term\": \"Negative Predictive Value (NPV)\", \"category\": \"quality_metric\"}, {\"term\": \"True Positives\", \"category\": \"quality_metric\"}, {\"term\": \"True Negatives\", \"category\": \"quality_metric\"}, {\"term\": \"False Positives\", \"category\": \"quality_metric\"}, {\"term\": \"False Negatives\", \"category\": \"quality_metric\"}], \"evidence\": [\"If the imaging study says a patient is abnormal, how likely is it that they really have the disease?\", \"If the imaging study says a patient is normal, how likely is it that they really are disease-free?\", \"PPV tells us how likely it is that this really is a tumor and not just a false alarm.\", \"If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:44:37.755744+00:00\", \"text_length\": 1346, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Positive Predictive Value (PPV)\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"fraction of patients whose medical imaging calls abnormal actually have disease\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Positive Predictive Value (PPV): fraction of patients whose medical imaging calls abnormal actually have disease\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "positive predictive value (ppv)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "negative predictive value (npv)",
+              "category": "quality_metric"
+            },
+            {
+              "term": "true positives",
+              "category": "mathematics"
+            },
+            {
+              "term": "false positives",
+              "category": "mathematics"
+            },
+            {
+              "term": "true negatives",
+              "category": "mathematics"
+            },
+            {
+              "term": "false negatives",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "positive predictive value (ppv): fraction of patients whose medical imaging calls abnormal actually have disease",
+            "negative predictive value (npv): fraction of patients whose medical imaging calls Normal and do NOT have disease.",
+            "ppv equals true positives over (true positives plus false positives).",
+            "npv equals true negatives over (true negatives plus false negatives)."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T03:06:12.439864+00:00\", \"text_length\": 1346, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"positive predictive value (ppv)\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"negative predictive value (npv)\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"true positives\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"false positives\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"true negatives\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"false negatives\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"positive predictive value (ppv): fraction of patients whose medical imaging calls abnormal actually have disease\\\",\\n    \\\"negative predictive value (npv): fraction of patients whose medical imaging calls Normal and do NOT have disease.\\\",\\n    \\\"ppv equals true positives over (true positives plus false positives).\\\",\\n    \\\"npv equals true negatives over (true negatives plus false negatives).\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"positive predictive value (ppv)\", \"category\": \"quality_metric\"}, {\"term\": \"negative predictive value (npv)\", \"category\": \"quality_metric\"}, {\"term\": \"true positives\", \"category\": \"mathematics\"}, {\"term\": \"false positives\", \"category\": \"mathematics\"}, {\"term\": \"true negatives\", \"category\": \"mathematics\"}, {\"term\": \"false negatives\", \"category\": \"mathematics\"}], \"evidence\": [\"positive predictive value (ppv): fraction of patients whose medical imaging calls abnormal actually have disease\", \"negative predictive value (npv): fraction of patients whose medical imaging calls Normal and do NOT have disease.\", \"ppv equals true positives over (true positives plus false positives).\", \"npv equals true negatives over (true negatives plus false negatives).\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T03:14:58.905576+00:00\", \"text_length\": 1346, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\\n\\nThe formula is:\\nPPV equals True Positives over (True Positives plus False Positives).\\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\\n\\nThe formula is:\\nNPV equals True Negatives over (True Negatives plus False Negatives).\\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\\n\\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Positive Predictive Value (PPV)\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"fraction of patients whose medical imaging calls abnormal actually have disease\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.98,\\n      \\\"evidence\\\": \\\"Positive Predictive Value (PPV): fraction of patients whose medical imaging calls abnormal actually have disease\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Negative Predictive Value (NPV)\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"fraction of patients whose medical imaging calls Normal and do NOT have disease\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.98,\\n      \\\"evidence\\\": \\\"Negative Predictive Value (NPV): fraction of patients whose medical imaging calls Normal and do NOT have disease.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

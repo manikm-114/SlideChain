@@ -1,0 +1,181 @@
+{
+  "lecture": "Lecture 3",
+  "slide_id": "Slide35",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide35.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide35.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide35.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "logistic map",
+              "category": "mathematics"
+            },
+            {
+              "term": "nonlinear system",
+              "category": "mathematics"
+            },
+            {
+              "term": "growth rate",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population-say, of rabbits-evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.",
+            "When the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows-resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"logistic map\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"population dynamics\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nonlinear system\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"growth rate\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"environmental limits\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"regulation\\\", \\\"category\\\": \\\"biology\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\\", \\\"When the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"logistic map\", \"category\": \"mathematics\"}, {\"term\": \"nonlinear system\", \"category\": \"mathematics\"}, {\"term\": \"growth rate\", \"category\": \"mathematics\"}], \"evidence\": [\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population-say, of rabbits-evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\", \"When the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows-resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide35.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"logistic map\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"population of rabbits\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide35.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "nonlinear system",
+              "category": "mathematics"
+            },
+            {
+              "term": "logistic map",
+              "category": "mathematics"
+            },
+            {
+              "term": "population",
+              "category": "mathematics"
+            },
+            {
+              "term": "growth rate",
+              "category": "mathematics"
+            },
+            {
+              "term": "nonlinear term",
+              "category": "mathematics"
+            },
+            {
+              "term": "environment’s limits",
+              "category": "mathematics"
+            },
+            {
+              "term": "resources",
+              "category": "mathematics"
+            },
+            {
+              "term": "stabilizes",
+              "category": "mathematics"
+            },
+            {
+              "term": "declines",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "One famous example of a nonlinear system is the logistic map",
+            "describes how a population-say, of rabbits-evolves over time",
+            "next year’s population depends on this year’s population and a growth rate factor, r",
+            "because of the nonlinear term involving the population itself",
+            "the system’s behavior changes dramatically depending on the value of r",
+            "growth slows-resources become scarce, and the population stabilizes or even declines"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"nonlinear system\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"logistic map\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"population\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"growth rate\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nonlinear term\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"environment’s limits\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"resources\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"stabilizes\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"declines\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"One famous example of a nonlinear system is the logistic map\\\",\\n    \\\"describes how a population—say, of rabbits—evolves over time\\\",\\n    \\\"next year’s population depends on this year’s population and a growth rate factor, r\\\",\\n    \\\"because of the nonlinear term involving the population itself\\\",\\n    \\\"the system’s behavior changes dramatically depending on the value of r\\\",\\n    \\\"growth slows—resources become scarce, and the population stabilizes or even declines\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"nonlinear system\", \"category\": \"mathematics\"}, {\"term\": \"logistic map\", \"category\": \"mathematics\"}, {\"term\": \"population\", \"category\": \"mathematics\"}, {\"term\": \"growth rate\", \"category\": \"mathematics\"}, {\"term\": \"nonlinear term\", \"category\": \"mathematics\"}, {\"term\": \"environment’s limits\", \"category\": \"mathematics\"}, {\"term\": \"resources\", \"category\": \"mathematics\"}, {\"term\": \"stabilizes\", \"category\": \"mathematics\"}, {\"term\": \"declines\", \"category\": \"mathematics\"}], \"evidence\": [\"One famous example of a nonlinear system is the logistic map\", \"describes how a population-say, of rabbits-evolves over time\", \"next year’s population depends on this year’s population and a growth rate factor, r\", \"because of the nonlinear term involving the population itself\", \"the system’s behavior changes dramatically depending on the value of r\", \"growth slows-resources become scarce, and the population stabilizes or even declines\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide35.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "logistic map",
+              "p": "depends_on",
+              "o": "growth rate factor",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "next year’s population depends on this year’s population and a growth rate factor, r."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"logistic map\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"population evolution\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"logistic map\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"growth rate factor\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"next year’s population depends on this year’s population and a growth rate factor, r.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"logistic map\", \"p\": \"depends_on\", \"o\": \"growth rate factor\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"next year’s population depends on this year’s population and a growth rate factor, r.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide35.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "logistic map",
+              "category": "mathematics"
+            },
+            {
+              "term": "population",
+              "category": "mathematics"
+            },
+            {
+              "term": "growth rate",
+              "category": "mathematics"
+            },
+            {
+              "term": "nonlinear system",
+              "category": "mathematics"
+            },
+            {
+              "term": "nature regulates itself",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population-say, of rabbits-evolves over time. The equation looks straightforward: next year's population depends on this year's population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system's behavior changes dramatically depending on the value of r. When the population is small, growth is nearly linear. But as the population approaches the environment's limits, growth slows-resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T20:35:05.344102+00:00\", \"text_length\": 685, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"logistic map\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"population\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"growth rate\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nonlinear system\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"environment's limits\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nature regulates itself\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r. When the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"logistic map\", \"category\": \"mathematics\"}, {\"term\": \"population\", \"category\": \"mathematics\"}, {\"term\": \"growth rate\", \"category\": \"mathematics\"}, {\"term\": \"nonlinear system\", \"category\": \"mathematics\"}, {\"term\": \"nature regulates itself\", \"category\": \"mathematics\"}], \"evidence\": [\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population-say, of rabbits-evolves over time. The equation looks straightforward: next year's population depends on this year's population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system's behavior changes dramatically depending on the value of r. When the population is small, growth is nearly linear. But as the population approaches the environment's limits, growth slows-resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide35.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T21:07:43.307938+00:00\", \"text_length\": 685, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Logistic Map\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"population of rabbits\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The system status (a number in the simplest case) will evolve in discrete steps according to x_{n+1} = r x_n (1 - x_n). One explanation: x - Normalized population (0,1); r - Growth rate. A group of rabbits is shown, representing the population of rabbits.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide35.json",
+        "parsed": {
+          "term": "this simple model reflects how nature regulates itself",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T22:14:54.052304+00:00\", \"text_length\": 685, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"one famous example of a nonlinear system is the logistic map\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"logistic map, a simple but powerful mathematical model\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"next year’s population depends on this year’s population and a growth rate factor, r\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"because of the nonlinear term involving the population itself\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the system’s behavior changes dramatically depending on the value of r\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"when the population is small, growth is nearly linear\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"this simple model reflects how nature regulates itself\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"\", \"parsed\": {\"term\": \"this simple model reflects how nature regulates itself\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide35.json",
+        "parsed": {
+          "s": "logistic map",
+          "p": "uses",
+          "o": "growth rate factor, r",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.95,
+          "evidence": [
+            "next year's population depends on this year's population and a growth rate factor, r."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide35\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T22:16:57.342583+00:00\", \"text_length\": 685, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOne famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time. The equation looks straightforward: next year’s population depends on this year’s population and a growth rate factor, r. But because of the nonlinear term involving the population itself, the system’s behavior changes dramatically depending on the value of r.\\nWhen the population is small, growth is nearly linear. But as the population approaches the environment’s limits, growth slows—resources become scarce, and the population stabilizes or even declines. This simple model reflects how nature regulates itself.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"logistic map\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"population evolution\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"next year’s population\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"this year’s population\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"next year’s population depends on this year’s population and a growth rate factor, r.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"logistic map\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"growth rate factor, r\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"next year’s population depends on this year’s population and a growth rate factor, r.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"logistic map\\\",\\n      \\\"p\", \"parsed\": {\"s\": \"logistic map\", \"p\": \"uses\", \"o\": \"growth rate factor, r\", \"modalities\": [\"text\"], \"confidence\": 0.95, \"evidence\": [\"next year's population depends on this year's population and a growth rate factor, r.\"]}}"
+      }
+    }
+  }
+}

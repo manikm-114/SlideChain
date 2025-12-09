@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"textread\", \"category\": \"software\"},\n    {\"term\": \"headerlines\", \"category\": \"software\"},\n    {\"term\": \"indexed data\", \"category\": \"data_processing\"},\n    {\"term\": \"debugging\", \"category\": \"workflow\"},\n    {\"term\": \"sampling\", \"category\": \"data_processing\"}\n  ],\n  \"evidence\": [\n    \"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\",\n    \"This lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "textread",
+        "category": "software"
+      },
+      {
+        "term": "indexed data",
+        "category": "data_processing"
+      },
+      {
+        "term": "debugging",
+        "category": "workflow"
+      },
+      {
+        "term": "sampling",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+      "This lets you directly target a record without loading everything - useful for indexed data, or when you’re debugging or sampling from a large file."
+    ]
+  }
+}

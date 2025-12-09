@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"product key\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"During the installation, you’ll be asked to enter a product key to activate the software.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"via\",\n      \"o\": \"dotcio.rpi.edu/services/software-labs\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "product key",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "During the installation, you’ll be asked to enter a product key to activate the software."
+      },
+      {
+        "s": "MATLAB",
+        "p": "via",
+        "o": "dotcio.rpi.edu/services/software-labs",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs."
+      }
+    ]
+  }
+}

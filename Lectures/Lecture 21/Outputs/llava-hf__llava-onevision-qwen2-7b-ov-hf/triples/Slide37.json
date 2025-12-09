@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide37",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, this slide explains the concept of lateral resolution — sometimes called cross-beam resolution — and it’s illustrated again by a figure from your textbook. Remember earlier, we talked about the beam profile and how it has a certain width, which we describe using the full width at half maximum, or F-W-H-M. Ideally, we want this width to be as small as possible, because that determines how well we can distinguish two objects that are side by side.\n\nIf two scatterers in the body — say, two small reflecting points — are separated by a distance smaller than the beam width, their echoes will overlap when received by the transducer. When that happens, the signals blend, and we can’t tell them apart. That’s what you see on the right side of the figure: the two curves merge into one, and the system records them as a single echo.\n\nOn the other hand, if the two scatterers are separated by a distance greater than the beam width — specifically, greater than the full width at half maximum — then the two echoes appear as two distinct peaks. That’s what we want. So the smaller the F-W-H-M, the better your lateral resolution, because you can separate two adjacent points in space.\n\nSo in summary, lateral resolution is determined primarily by the beam width. Narrow beams resolve closely spaced objects; wide beams cause overlap. This concept applies directly to your image sharpness — particularly in the direction perpendicular to the beam path.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"lateral resolution\", \"p\":\"depends_on\", \"o\":\"beam width\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The lateral resolution is determined primarily by the beam width.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "lateral resolution",
+        "p": "depends_on",
+        "o": "beam width",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The lateral resolution is determined primarily by the beam width."
+      }
+    ]
+  }
+}

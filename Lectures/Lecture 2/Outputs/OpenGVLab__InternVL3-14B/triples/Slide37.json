@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"circle function\",\n      \"p\": \"produces\",\n      \"o\": \"area and circumference of a circle\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"function [area,circum] = circle(r) and circumference of a circle with radius r.\"\n    },\n    {\n      \"s\": \"myscript.m\",\n      \"p\": \"uses\",\n      \"o\": \"circle function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"call our circle function.\"\n    },\n    {\n      \"s\": \"circle function\",\n      \"p\": \"depends_on\",\n      \"o\": \"radius\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"takes one input: the radius\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": []
+  }
+}

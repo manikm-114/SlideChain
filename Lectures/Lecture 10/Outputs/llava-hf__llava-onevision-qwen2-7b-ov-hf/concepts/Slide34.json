@@ -1,0 +1,25 @@
+{
+  "slide_id": "Slide34",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe day after our own symposium, I found myself free for the afternoon, so I decided to attend another session titled The Technology of Artificial Intelligence. It was led by Demis Hassabis, the co-founder and CEO of DeepMind — one of the world’s leading AI companies, later acquired by Google.\n\nI listened to several fascinating presentations. The speakers shared breakthroughs in AI research, from neuroscience-inspired architectures to game-playing systems that were pushing the limits of machine learning. The atmosphere was electric — you could feel that this was more than just incremental progress.\n\nThat afternoon convinced me of something important: AI had truly entered a revolutionary stage. The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind. It was clear that an exciting new era was unfolding.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Artificial Intelligence\", \"category\": \"ai_ml\"},\n    {\"term\": \"Machine Learning\", \"category\": \"ai_ml\"},\n    {\"term\": \"Neural Networks\", \"category\": \"ai_ml\"},\n    {\"term\": \"Game Playing Systems\", \"category\": \"ai_ml\"},\n    {\"term\": \"Machine Learning Breakthroughs\", \"category\": \"ai_ml\"},\n    {\"term\": \"Transformative Potential\", \"category\": \"ai_ml\"},\n    {\"term\": \"Impact on Science and Healthcare\", \"category\": \"ai_ml\"},\n    {\"term\": \"Understanding the Human Mind\", \"category\": \"ai_ml\"}\n  ],\n  \"evidence\": [\"The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Artificial Intelligence",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Machine Learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Transformative Potential",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind."
+    ]
+  }
+}

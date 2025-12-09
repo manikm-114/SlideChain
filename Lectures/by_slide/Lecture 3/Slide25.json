@@ -1,0 +1,173 @@
+{
+  "lecture": "Lecture 3",
+  "slide_id": "Slide25",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide25.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "additivity",
+              "category": "mathematics"
+            },
+            {
+              "term": "homogeneity",
+              "category": "mathematics"
+            },
+            {
+              "term": "superposition principle",
+              "category": "mathematics"
+            },
+            {
+              "term": "linear systems",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise linear systems",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Together, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.",
+            "Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"additivity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"homogeneity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"superposition principle\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"linear systems\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise linear systems\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"approximation\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Together, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\\", \\\"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"additivity\", \"category\": \"mathematics\"}, {\"term\": \"homogeneity\", \"category\": \"mathematics\"}, {\"term\": \"superposition principle\", \"category\": \"mathematics\"}, {\"term\": \"linear systems\", \"category\": \"signal_processing\"}, {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise linear systems\", \"category\": \"signal_processing\"}], \"evidence\": [\"Together, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\", \"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"additivity\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"homogeneity\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Together, additivity and homogeneity form what we call the superposition principle.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "additivity",
+              "category": "mathematics"
+            },
+            {
+              "term": "homogeneity",
+              "category": "mathematics"
+            },
+            {
+              "term": "superposition principle",
+              "category": "mathematics"
+            },
+            {
+              "term": "linear systems",
+              "category": "mathematics"
+            },
+            {
+              "term": "nonlinear systems",
+              "category": "mathematics"
+            },
+            {
+              "term": "Fourier analysis",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise linear systems",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "Together, additivity and homogeneity form what we call the superposition principle.",
+            "Linear systems are easier to work with than nonlinear ones",
+            "tools like Fourier analysis and convolution give us powerful ways to study them",
+            "even nonlinear systems can often be approximated as a collection of piecewise linear systems"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"additivity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"homogeneity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"superposition principle\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"linear systems\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"nonlinear systems\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise linear systems\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Together, additivity and homogeneity form what we call the superposition principle.\\\",\\n    \\\"Linear systems are easier to work with than nonlinear ones\\\",\\n    \\\"tools like Fourier analysis and convolution give us powerful ways to study them\\\",\\n    \\\"even nonlinear systems can often be approximated as a collection of piecewise linear systems\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"additivity\", \"category\": \"mathematics\"}, {\"term\": \"homogeneity\", \"category\": \"mathematics\"}, {\"term\": \"superposition principle\", \"category\": \"mathematics\"}, {\"term\": \"linear systems\", \"category\": \"mathematics\"}, {\"term\": \"nonlinear systems\", \"category\": \"mathematics\"}, {\"term\": \"Fourier analysis\", \"category\": \"frequency_domain\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise linear systems\", \"category\": \"mathematics\"}], \"evidence\": [\"Together, additivity and homogeneity form what we call the superposition principle.\", \"Linear systems are easier to work with than nonlinear ones\", \"tools like Fourier analysis and convolution give us powerful ways to study them\", \"even nonlinear systems can often be approximated as a collection of piecewise linear systems\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": []\\n}\\n```\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "superposition principle",
+              "category": "mathematics"
+            },
+            {
+              "term": "linear systems",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise linear systems",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Together, additivity and homogeneity form what we call the superposition principle.",
+            "Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them.",
+            "Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T20:21:22.805594+00:00\", \"text_length\": 542, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"superposition principle\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"linear systems\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise linear systems\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Together, additivity and homogeneity form what we call the superposition principle.\\\",\\n    \\\"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them.\\\",\\n    \\\"Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"superposition principle\", \"category\": \"mathematics\"}, {\"term\": \"linear systems\", \"category\": \"signal_processing\"}, {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise linear systems\", \"category\": \"signal_processing\"}], \"evidence\": [\"Together, additivity and homogeneity form what we call the superposition principle.\", \"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them.\", \"Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T21:00:34.867535+00:00\", \"text_length\": 542, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"superposition principle\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"complex inputs\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Together, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "term": "Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations.",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T22:13:41.788755+00:00\", \"text_length\": 542, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"Together, additivity and homogeneity form what we call the superposition principle.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them.\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Together, additivity and homogeneity form what we call the superposition principle.\\\",\\n    \\\"This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\\",\\n    \\\"Linear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them.\\\",\\n    \\\"Importantly, even\", \"parsed\": {\"term\": \"Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems-so mastering linear systems lays the groundwork for handling more complex situations.\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T22:16:26.688149+00:00\", \"text_length\": 542, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTogether, additivity and homogeneity form what we call the superposition principle. This principle allows us to break down complex inputs and predict how the system will respond by summing simpler outputs.\\nLinear systems are easier to work with than nonlinear ones, and tools like Fourier analysis and convolution give us powerful ways to study them. Importantly, even nonlinear systems can often be approximated as a collection of piecewise linear systems—so mastering linear systems lays the groundwork for handling more complex situations.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

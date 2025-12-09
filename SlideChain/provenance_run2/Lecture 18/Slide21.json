@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "angular momentum"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "gyromagnetic ratio"
+          },
+          {
+            "category": "physics",
+            "term": "spin quantum number"
+          },
+          {
+            "category": "physics",
+            "term": "quantum mechanics"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          }
+        ],
+        "evidence": [
+          "angular momentum describes the rotation of a particle-in this case, the proton.",
+          "its magnetic behavior is summarized by the magnetic moment",
+          "miu equals gamma times P, where gamma is a constant called the gyromagnetic ratio",
+          "angular momentum cannot take on any arbitrary value but is quantized",
+          "angular momentum is expressed in terms of the spin quantum number",
+          "the proton\u2019s mechanical rotation and its electromagnetic behavior are tied together",
+          "This link forms the basis of how MRI exploits proton spins to generate signals"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "angular momentum describes the rotation of a particle-in this case, the proton.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rotation of a particle",
+            "p": "represents",
+            "s": "angular momentum"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Its magnetic behavior is summarized by the magnetic moment \u03bc.",
+            "modalities": [
+              "text"
+            ],
+            "o": "magnetic behavior",
+            "p": "represents",
+            "s": "magnetic moment"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "angular momentum"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "gyromagnetic ratio"
+          },
+          {
+            "category": "physics",
+            "term": "spin quantum number"
+          },
+          {
+            "category": "physics",
+            "term": "proton"
+          },
+          {
+            "category": "physics",
+            "term": "quantum mechanics"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          }
+        ],
+        "evidence": [
+          "angular momentum describes the rotation of a particle-in this case, the proton.",
+          "The magnetic behavior is summarized by the magnetic moment miu.",
+          "The relationship is miu equals gamma times P, where gamma is a constant called the gyromagnetic ratio.",
+          "Quantum mechanics adds one more layer: angular momentum cannot take on any arbitrary value but is quantized.",
+          "The main takeaway is this: the proton's mechanical rotation and its electromagnetic behavior are tied together in a very simple and elegant way. This link forms the basis of how MRI exploits proton spins to generate signals."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI exploits proton spins to generate signals"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "But unlike a simple spinning top, the proton also carries an electric charge. Because of this, it has not only mechanical properties but also electromagnetic ones. Its magnetic behavior is summarized by the magnetic moment miu."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "electromagnetic behavior",
+        "p": "represents",
+        "s": "magnetic moment miu"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

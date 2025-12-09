@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"phase factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the shape of the spectrum stays the same, but we multiply it by a phase factor\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"exponential phase term\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"we have the original spectrum, multiplied by this exponential phase term\"\n    },\n    {\n      \"s\": \"shift property\",\n      \"p\": \"represents\",\n      \"o\": \"phase shift in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That’s the core idea of the shift property: When you shift a function in time, it introduces a phase shift in the frequency domain.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier transform",
+        "p": "produces",
+        "o": "phase factor",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "the shape of the spectrum stays the same, but we multiply it by a phase factor"
+      },
+      {
+        "s": "Fourier transform",
+        "p": "depends_on",
+        "o": "exponential phase term",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "we have the original spectrum, multiplied by this exponential phase term"
+      },
+      {
+        "s": "shift property",
+        "p": "represents",
+        "o": "phase shift in the frequency domain",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "That’s the core idea of the shift property: When you shift a function in time, it introduces a phase shift in the frequency domain."
+      }
+    ]
+  }
+}

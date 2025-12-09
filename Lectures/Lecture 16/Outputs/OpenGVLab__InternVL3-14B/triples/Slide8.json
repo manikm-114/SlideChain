@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"parallel-hole collimator\", \"p\":\"uses\", \"o\":\"gamma camera\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here we see the use of a parallel-hole collimator.\"},\n    {\"s\":\"gamma photon\", \"p\":\"passes through\", \"o\":\"parallel-hole collimator\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Once the gamma photon passes through the collimator...\"},\n    {\"s\":\"scintillation crystal\", \"p\":\"converts\", \"o\":\"gamma photon\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The crystal converts that high-energy photon into visible light.\"},\n    {\"s\":\"photomultiplier tubes\", \"p\":\"converts\", \"o\":\"visible light\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Then the photomultiplier tubes convert the light into an electrical signal...\"},\n    {\"s\":\"nuclear imaging\", \"p\":\"depends_on\", \"o\":\"radioactive tracer\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Now, notice what happens after a radioactive tracer",
+  "parsed": {
+    "s": "photomultiplier tubes",
+    "p": "converts",
+    "o": "visible light",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Then the photomultiplier tubes convert the light into an electrical signal..."
+    ]
+  }
+}

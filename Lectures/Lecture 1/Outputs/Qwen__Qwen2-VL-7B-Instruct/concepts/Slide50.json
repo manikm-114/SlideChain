@@ -1,0 +1,59 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:55:09.669948+00:00",
+  "text_length": 1032,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\n\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\n\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\n\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"integrated imaging\", \"category\": \"modality\"},\n    {\"term\": \"precise diagnostics\", \"category\": \"algorithm\"},\n    {\"term\": \"personalized treatment\", \"category\": \"algorithm\"},\n    {\"term\": \"advanced medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"machine learning\", \"category\": \"ai_ml\"},\n    {\"term\": \"robotics\", \"category\": \"ai_ml\"},\n    {\"term\": \"future innovations\", \"category\": \"ai_ml\"},\n    {\"term\": \"perfect healthcare\", \"category\": \"algorithm\"},\n    {\"term\": \"invention of our future\", \"category\": \"ai_ml\"}\n  ],\n  \"evidence\": [\n    \"integrated imaging\",\n    \"precise diagnostics\",\n    \"personalized treatment\",\n    \"advanced medical imaging\",\n    \"machine learning\",\n    \"robotics\",\n    \"future innovations\",\n    \"perfect healthcare\",\n    \"invention of our future\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "integrated imaging",
+        "category": "modality"
+      },
+      {
+        "term": "precise diagnostics",
+        "category": "algorithm"
+      },
+      {
+        "term": "personalized treatment",
+        "category": "algorithm"
+      },
+      {
+        "term": "advanced medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "machine learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "robotics",
+        "category": "ai_ml"
+      },
+      {
+        "term": "future innovations",
+        "category": "ai_ml"
+      },
+      {
+        "term": "perfect healthcare",
+        "category": "algorithm"
+      },
+      {
+        "term": "invention of our future",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "integrated imaging",
+      "precise diagnostics",
+      "personalized treatment",
+      "advanced medical imaging",
+      "machine learning",
+      "robotics",
+      "future innovations",
+      "perfect healthcare",
+      "invention of our future"
+    ]
+  }
+}

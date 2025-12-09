@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide29",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T21:42:34.208989+00:00",
+  "text_length": 658,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNext, let’s see how to keep a record of your work using the diary command.\nStart with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file. Once you’re done, stop the recording by typing diary off.\nThis is great for tracking your workflow, recording sessions, or saving what you’ve done for future reference or reporting.\nNow, another useful tool is timing. If you want to measure how long your code takes to run, just put tic before the commands, and toc after them. MATLAB will show you the elapsed time in seconds.\nThis helps you compare different methods and optimize performance.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"diary command\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"tic, toc\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"keep a record of your work\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"measure how long your code takes to run\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"elapsed time\",\n      \"category\": \"workflow\"\n    }\n  ],\n  \"evidence\": [\n    \"Start with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file.\",\n    \"If you want to measure how long your code takes to run, just put tic before the commands, and toc after them.\",\n    \"This helps you compare different methods and optimize performance.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "diary command",
+        "category": "workflow"
+      },
+      {
+        "term": "keep a record of your work",
+        "category": "workflow"
+      },
+      {
+        "term": "measure how long your code takes to run",
+        "category": "workflow"
+      },
+      {
+        "term": "elapsed time",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Start with diary followed by a filename. From that point on, everything you type and everything MATLAB prints will be saved in a log file.",
+      "If you want to measure how long your code takes to run, just put tic before the commands, and toc after them.",
+      "This helps you compare different methods and optimize performance."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Under-sampled signal\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"aliasing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This is known as aliasing — when a high-frequency signal gets misinterpreted as something much lower in frequency, simply because it was sampled too slowly.\"\n    },\n    {\n      \"s\": \"sampling rate\",\n      \"p\": \"depends_on\",\n      \"o\": \"Nyquist rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Next, let’s talk about the theoretical limit — the Nyquist rate — and how it protects us from this problem.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "sampling rate",
+        "p": "depends_on",
+        "o": "Nyquist rate",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Next, let’s talk about the theoretical limit - the Nyquist rate - and how it protects us from this problem."
+      }
+    ]
+  }
+}

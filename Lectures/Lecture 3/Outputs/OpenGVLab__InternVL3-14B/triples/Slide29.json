@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"inductor\",\n      \"p\": \"depends_on\",\n      \"o\": \"integral of voltage over time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"current depending on the integral of voltage over time\"\n    },\n    {\n      \"s\": \"voltage\",\n      \"p\": \"depends_on\",\n      \"o\": \"derivative of current\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"voltage depending on the derivative of current\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "inductor",
+        "p": "depends_on",
+        "o": "integral of voltage over time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "current depending on the integral of voltage over time"
+      },
+      {
+        "s": "voltage",
+        "p": "depends_on",
+        "o": "derivative of current",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "voltage depending on the derivative of current"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide47",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"pulse height analyzer\",\n      \"p\": \"uses\",\n      \"o\": \"energy discrimination\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The solution is to use the pulse height analyzer. Since the amplitude of the electronic signal from the photomultiplier tube is proportional to the photon’s energy, we can set acceptance windows.\"\n    },\n    {\n      \"s\": \"pulse height analyzer\",\n      \"p\": \"produces\",\n      \"o\": \"clear image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This energy discrimination is what gives nuclear imaging its clarity\"\n    },\n    {\n      \"s\": \"gamma-ray energy spectrum\",\n      \"p\": \"represents\",\n      \"o\": \"technetium-99m\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Energy spectra of 99mTc γ-rays detected by the scintillation crystal.\"\n    },\n    {\n      \"s\": \"broadened spectrum\",\n      \"p\": \"",
+  "parsed": {
+    "s": "gamma-ray energy spectrum",
+    "p": "represents",
+    "o": "technetium-99m",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Energy spectra of 99mTc γ-rays detected by the scintillation crystal."
+    ]
+  }
+}

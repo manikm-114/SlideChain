@@ -1,0 +1,9 @@
+Now, here’s a really important idea — something we call the aliasing problem.
+
+Remember, we just said that sampling needs to be dense enough? But what does that mean?
+Take a look at the curve on the left. It’s a complex, high-frequency signal — lots of rapid changes and fine details. If we don’t sample it frequently enough — meaning, we don’t take enough points per second — we miss those small peaks and dips.
+In the middle, you see the result of sparse sampling. We’re only picking up a few values. And when we try to reconstruct the signal, shown on the right, we get something much smoother and simpler than the original. It might even look okay at first glance, but it’s actually wrong.
+
+All that detail — all the fast oscillations — is lost. Even worse, the reconstructed version can look like a completely different signal, with a false shape or even the wrong frequency.
+This is what we call aliasing. It happens when the sampling rate is too low to capture the higher-frequency components. And once they’re lost, you can’t recover them from the sampled data.
+That’s why choosing the right sampling rate is so critical in signal processing.

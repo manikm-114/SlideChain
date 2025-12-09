@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide47",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s take a closer look at the role of the pulse height analyzer by examining the gamma-ray energy spectrum.\n\nOn the left, you see the spectrum of technetium-99m when the camera is exposed without a patient in front of it. The dominant feature here is a sharp photopeak, centered around the expected emission energy. There are also smaller features, such as the iodine escape peak and signals from Compton scatter or lead X-rays. These arise from interactions within the detector itself.\n\nBut once you place a patient between the source and the detector, the spectrum changes, as shown on the right. Now the clean photopeak is broadened, and the lower-energy region is filled in. Why? Because inside the patient, photons undergo Compton scattering. Each scattering event deflects the photon and reduces its energy. The larger the scattering angle, the lower the photon’s energy when it finally emerges. As a result, the detector sees not only the original full-energy photons but also a cloud of degraded, lower-energy ones.\n\nThis is a problem because those scattered photons don’t carry accurate positional information—they blur the image. The solution is to use the pulse height analyzer. Since the amplitude of the electronic signal from the photomultiplier tube is proportional to the photon’s energy, we can set acceptance windows. Only signals that fall within a narrow energy range around the true photopeak—for example, around 140 keV for technetium-99m—are accepted. Signals that are too low, likely coming from scattered photons, are rejected.\n\nThis energy discrimination is what gives nuclear imaging its clarity, much like how anti-scatter grids improve X-ray imaging. By gating and filtering the signals in this way, we make sure that the image is formed primarily from primary, unscattered photons, preserving both resolution and contrast.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"technetium-99m\", \"p\":\"measures\", \"o\":\"pulse height analyzer\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The pulse height analyzer is used to measure the gamma-ray energy spectrum.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "technetium-99m",
+        "p": "measures",
+        "o": "pulse height analyzer",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The pulse height analyzer is used to measure the gamma-ray energy spectrum."
+      }
+    ]
+  }
+}

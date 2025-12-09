@@ -1,0 +1,115 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "slice selection"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "modality",
+            "term": "MRI imaging"
+          }
+        ],
+        "evidence": [
+          "Revisit How to Model T1 & T2 How to Measure T1 & T2",
+          "Slice Selection Gradient Field Along One Axis Slice Thickness & Re-phasing",
+          "Sampling in the k-Space Phase Encoding Frequency Encoding k-Theorem",
+          "MRI Scanners"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "T1 and T2 are intrinsic properties of tissues. They vary with tissue type, and they are very important for functional and even molecular imaging. You need to understand how the MRI signal changes under the influence of T1 and T2, and how these quantities can be measured.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MRI signal",
+            "p": "measures",
+            "s": "T1 and T2"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "MRI scanners"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "When you do this properly, you can create multi-contrast MRI images, such as proton-density-weighted, T1-weighted, and T2-weighted images."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "multi-contrast MRI images",
+        "p": "produces",
+        "s": "T1 & T2"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 and T2"
+          },
+          {
+            "category": "physics",
+            "term": "proton density"
+          },
+          {
+            "category": "physics",
+            "term": "M vector"
+          },
+          {
+            "category": "modality",
+            "term": "multi-contrast MRI images"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray"
+          },
+          {
+            "category": "workflow",
+            "term": "slice selection"
+          },
+          {
+            "category": "workflow",
+            "term": "k-space sampling"
+          }
+        ],
+        "evidence": [
+          "The key point is to model and understand T1 and T2, which are critical relaxation parameters.",
+          "Once you begin to manipulate this M vector, you immediately see the effects of T1 and T2.",
+          "In X-ray, the main parameter is the linear attenuation coefficient.",
+          "These steps allow us to extract MRI signals from the sample, or from the patient, in a spatially specific way.",
+          "Now we will extend that foundation and see how it translates into actual imaging techniques."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide3.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide3.txt"
+  },
+  "slide_id": "Slide3"
+}

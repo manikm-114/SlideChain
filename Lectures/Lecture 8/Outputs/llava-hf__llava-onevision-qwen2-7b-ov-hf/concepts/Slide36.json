@@ -1,0 +1,34 @@
+{
+  "slide_id": "Slide36",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nOur second example is spectral analysis.\nHere, we use an important relationship: one divided by capital N is equal to delta t multiplied by delta nu.\u000bIn words, delta t is the sampling interval in the time domain, and delta nu — sometimes called delta u — is the spacing between frequency samples in the Fourier domain.\n\nWhat this tells us is that if we keep delta t fixed and the total number of samples N fixed, then our frequency spacing delta nu is also fixed. That means, if a signal contains two frequencies that are very close together, the spectrum may not have enough resolution to separate them.\n\nOne way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller — giving us a finer frequency grid and better spectral resolution.\n\nIn this MATLAB example, we create a signal by adding two sinusoids.\u000bThe first term is the cosine of two times pi times one hundred times t.\u000bThe second term is the sine of two times pi times two-hundred two point five times t.\nWe sample t from zero to one second in steps of zero point zero zero one seconds, which corresponds to a sampling frequency of one kilohertz.\u000bWithout zero padding, the frequency step size may be too large to clearly separate the peaks at one hundred hertz and one-hundred two point five hertz.\u000bWith zero padding, the peaks become distinct.\n\nIf you want the full MATLAB walkthrough, you can follow the link at the bottom of the slide.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"zero padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"},\n    {\"term\": \"spectrum\", \"category\": \"signal_processing\"},\n    {\"term\": \"resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"In this MATLAB example, we create a signal by adding two sinusoids.\", \"One way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller — giving us a finer frequency grid and better spectral resolution.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "zero padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency domain",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "spectrum",
+        "category": "signal_processing"
+      },
+      {
+        "term": "resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "In this MATLAB example, we create a signal by adding two sinusoids.",
+      "One way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller - giving us a finer frequency grid and better spectral resolution."
+    ]
+  }
+}

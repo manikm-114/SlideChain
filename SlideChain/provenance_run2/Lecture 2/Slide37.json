@@ -1,0 +1,120 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "function"
+          },
+          {
+            "category": "software",
+            "term": "scripts"
+          },
+          {
+            "category": "mathematics",
+            "term": "area"
+          },
+          {
+            "category": "mathematics",
+            "term": "circumference"
+          },
+          {
+            "category": "mathematics",
+            "term": "radius"
+          },
+          {
+            "category": "software",
+            "term": "disp"
+          }
+        ],
+        "evidence": [
+          "function [area,circum] = circle(r)",
+          "M-file scripts:",
+          "area = pi*r^2;",
+          "circum = 2*pi*r;",
+          "disp([\u2018The area of a circle having radius \u2018 num2str(r) \u2018 is \u2018 num2str(area)])"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "myscript dot m"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "Save the file as myscript.m."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "function"
+          },
+          {
+            "category": "software",
+            "term": "script"
+          },
+          {
+            "category": "mathematics",
+            "term": "radius"
+          },
+          {
+            "category": "mathematics",
+            "term": "area"
+          },
+          {
+            "category": "mathematics",
+            "term": "circumference"
+          },
+          {
+            "category": "software",
+            "term": "disp"
+          }
+        ],
+        "evidence": [
+          "Here\u2019s a basic function example - one that calculates the area and circumference of a circle.",
+          "We define a function called circle that takes one input: the radius. Inside, we calculate the area as pi times radius squared, and the circumference as two times pi times the radius.",
+          "Save this in a file named circle dot m.",
+          "Now, to use this function, we write a script. For example, if the radius is 7, we call the function with that value and display the result using disp.",
+          "You\u2019d save this script as myscript dot m.",
+          "This is how functions and scripts work together. You build reusable tools with functions and run them from scripts."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "takes one input: the radius",
+            "modalities": [
+              "text"
+            ],
+            "o": "radius",
+            "p": "uses",
+            "s": "circle"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

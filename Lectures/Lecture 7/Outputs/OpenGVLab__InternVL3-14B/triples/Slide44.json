@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"convolution\", \"p\":\"uses\", \"o\":\"delta functions\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"convolution with delta functions results in replicated versions of a signal\"},\n    {\"s\":\"Fourier transform\", \"p\":\"represents\", \"o\":\"frequency domain\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Fourier transform of the original block function, f of x, becomes a smooth sinc-like curve, F of k\"},\n    {\"s\":\"convolution\", \"p\":\"produces\", \"o\":\"shifted copies of the original function\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"when we convolve f of x with h of x, the result — g of x — is essentially just two shifted copies of the original function\"},\n    {\"s\":\"sampling theorem\", \"p\":\"depends_on\", \"o\":\"sampling rate\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If we sample fast enough — meaning at more than twice the highest frequency in the original signal\"},\n    {\"s\":\"sinc function\", \"p\":\"reconstructs",
+  "parsed": {
+    "s": "sampling theorem",
+    "p": "depends_on",
+    "o": "sampling rate",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "If we sample fast enough - meaning at more than twice the highest frequency in the original signal"
+    ]
+  }
+}

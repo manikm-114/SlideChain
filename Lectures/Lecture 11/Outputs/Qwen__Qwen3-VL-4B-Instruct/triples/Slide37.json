@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide37",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T03:14:50.985739+00:00",
+  "text_length": 1570,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow that we’ve defined the four possible outcomes — true positives, true negatives, false positives, and false negatives — we can formally define sensitivity and specificity.\n\nSensitivity is the proportion of true positives among all actual positive cases. In formula form, it is:\nSensitivity equals TP over TP plus FN.\n\nIn other words, sensitivity answers the question: “If the patient really has the disease, how likely are we to detect it?”\nFor example, suppose 100 patients truly have lung cancer. If our system correctly detects 50 of them, but misses the other 50, then the sensitivity is 50%. Sensitivity is essentially a measure of how confident we are when we say “Yes, disease is present.”\nNow let’s move to specificity.\nSpecificity is the proportion of true negatives among all actual negative cases. The formula is:\nSpecificity equals TN over TN plus FP.\n\nThis answers the question: “If the patient really does not have the disease, how likely are we to correctly say no?”\nFor example, if 100 healthy people are scanned, and 95 are correctly reported as negative while 5 are mistakenly labeled as positive, the specificity is 95%. Specificity is essentially a measure of how confident we are when we say “No, there is no disease.”\n\nSo, in summary:\nSensitivity tells us how good we are at catching disease cases.\nSpecificity tells us how good we are at avoiding false alarms.\n\nBoth are critical in clinical imaging. High sensitivity ensures we don’t miss disease, while high specificity ensures we don’t overwhelm patients with unnecessary worry or treatment.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Sensitivity=TP/(TP+FN)\",\n      \"p\": \"measures\",\n      \"o\": \"likelihood of a positive case\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Sensitivity=TP/(TP+FN) Likelihood of a positive case\"\n    },\n    {\n      \"s\": \"Specificity =TN/(TN+FP)\",\n      \"p\": \"measures\",\n      \"o\": \"likelihood of a negative case\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Specificity =TN/(TN+FP) Likelihood of a negative case\"\n    },\n    {\n      \"s\": \"Sensitivity=TP/(TP+FN)\",\n      \"p\": \"represents\",\n      \"o\": \"how sure we say YES\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Sensitivity=TP/(TP+FN) How sure we",
+  "parsed": {
+    "s": "Specificity =TN/(TN+FP)",
+    "p": "measures",
+    "o": "likelihood of a negative case",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "Specificity =TN/(TN+FP) Likelihood of a negative case"
+    ]
+  }
+}

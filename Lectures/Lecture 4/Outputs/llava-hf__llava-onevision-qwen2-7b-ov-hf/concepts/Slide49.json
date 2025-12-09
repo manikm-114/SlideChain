@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide49",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow it’s time to apply what we’ve learned.\nSuppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.\nYour goal is to compute the convolution of the input signal with the system’s impulse response:\n h of t equals R C times e to the power of minus t over R C, multiplied by the unit step function\nFocus on how the input signal and the impulse response interact to produce the output.\nPlease submit:\n– Your MATLAB script\u000b– The resulting figures\u000b– All combined in a Word document\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"RC\", \"category\": \"signal_processing\"},\n    {\"term\": \"time constant\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse response\", \"category\": \"signal_processing\"},\n    {\"term\": \"unit step function\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"input signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"output\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB script\", \"category\": \"software\"},\n    {\"term\": \"figures\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Now it’s time to apply what we’ve learned.\", \"Suppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.\", \"Your goal is to compute the convolution of the input signal with the system’s impulse response.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "time constant",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "unit step function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "input signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "output",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB script",
+        "category": "software"
+      },
+      {
+        "term": "figures",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Now it’s time to apply what we’ve learned.",
+      "Suppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.",
+      "Your goal is to compute the convolution of the input signal with the system’s impulse response."
+    ]
+  }
+}

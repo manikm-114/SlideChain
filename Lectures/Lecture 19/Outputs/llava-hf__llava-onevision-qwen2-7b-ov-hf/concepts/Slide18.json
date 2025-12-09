@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide18",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow here comes the great idea — introducing a gradient field on top of the background field B-naught. This was such an important idea that it led to a Nobel Prize.\nSo why is this so important? Because this is the key step that allows us to encode spatial information.\n\nIn the main field B-naught, the processional frequency of all spins would be the same. That would not allow us to distinguish one location from another.\nBut if we apply a gradient field, we change the situation. The magnetic field strength will now depend on position. For example, the larger the z-coordinate, the stronger the field. As a result, the processional frequency will also depend on position.\n\nSo now, instead of all spins having the same frequency, their frequency varies with location. At z equals zero, the frequency is the original B-naught frequency. But away from zero, it becomes stronger or weaker depending on the gradient.\nThis is the concept of a field gradient.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"gradient field\", \"category\": \"physics\"},\n    {\"term\": \"background field B-naught\", \"category\": \"physics\"},\n    {\"term\": \"spatial information\", \"category\": \"signal_processing\"},\n    {\"term\": \"processional frequency\", \"category\": \"signal_processing\"},\n    {\"term\": \"position-dependent\", \"category\": \"physics\"},\n    {\"term\": \"z-coordinate\", \"category\": \"physics\"},\n    {\"term\": \"field gradient\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"This was such an important idea that it led to a Nobel Prize.\", \"So why is this so important? Because this is the key step that allows us to encode spatial information.\", \"In the main field B-naught, the processional frequency of all spins would be the same. That would not allow us to distinguish one location from another.\", \"But if we apply a gradient field, we change the situation. The magnetic field strength will now depend on position.\", \"So now, instead of all spins having the same frequency, their frequency varies with location.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "gradient field",
+        "category": "physics"
+      },
+      {
+        "term": "background field B-naught",
+        "category": "physics"
+      },
+      {
+        "term": "spatial information",
+        "category": "signal_processing"
+      },
+      {
+        "term": "processional frequency",
+        "category": "signal_processing"
+      },
+      {
+        "term": "z-coordinate",
+        "category": "physics"
+      },
+      {
+        "term": "field gradient",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "This was such an important idea that it led to a Nobel Prize.",
+      "So why is this so important? Because this is the key step that allows us to encode spatial information.",
+      "In the main field B-naught, the processional frequency of all spins would be the same. That would not allow us to distinguish one location from another.",
+      "But if we apply a gradient field, we change the situation. The magnetic field strength will now depend on position.",
+      "So now, instead of all spins having the same frequency, their frequency varies with location."
+    ]
+  }
+}

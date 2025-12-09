@@ -1,0 +1,31 @@
+Now that we’ve covered the basics of the Fourier series and transform, let’s talk about a very important result: the Convolution Theorem.
+This theorem creates a beautiful bridge between two worlds — the time domain and the frequency domain.
+
+Here’s what it says:Convolution in the time domain becomes multiplication in the frequency domain.
+In simple terms, if you have a linear, time-invariant system, the output is the convolution of the input signal with the system’s impulse response.But instead of computing that convolution directly — which can be messy — you can switch to the frequency domain, where it becomes much easier.
+
+So, let’s say:
+f of t is your input signal,
+g of t is the system’s impulse response,
+and f star g means the convolution of f and g.
+Then, in the frequency domain, their Fourier transforms — call them F of s and G of s — satisfy this simple rule:
+The Fourier transform of the convolution equals the product of the individual Fourier transforms.
+
+Or in math:Fourier of f star g equals F of s times G of s.
+That means you now have two ways to compute the system’s output:
+You can do convolution in the time domain.
+Or — you can transform both the input and the impulse response into the frequency domain, multiply them there, and then take the inverse Fourier transform to go back to the time domain.
+Now, let’s look at a simple example.
+
+Suppose you convolve two rectangular functions, also called gate functions. Each one looks like a block or a box.
+To compute the convolution, you flip one function, shift it, multiply the overlapping parts, and add the result.
+When the two rectangles perfectly overlap, the area under the curve reaches its maximum. As they move apart, the overlapping area decreases linearly — and what you get is a triangle-shaped function.
+So, two rectangles convolved give you a triangle.
+
+Now let’s look at this in the frequency domain.
+We know the Fourier transform of a rectangular function is a sinc function — that’s sinc of s, which comes from sine of pi s over pi s.
+So when we convolve two rectangles in the time domain, we get a triangle. That means, in the frequency domain, we multiply two sinc functions — and we get sinc squared.
+So: Triangle in time domain means sinc squared in frequency domain.
+
+This is a powerful example that helps you visualize the convolution theorem in action. It shows how the shapes in time relate to the shapes in frequency — and why this theorem is such a key tool for signal processing and systems analysis.
+Keep this visual and mathematical link in mind — it will come up again and again.

@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T13:32:58.861075+00:00",
+  "text_length": 462,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nGraphically, we can show this as you see on the slide.\nThe gradient field creates a range of resonance frequencies along the z-axis. When you send an RF pulse with a defined frequency range, only the spins within that frequency range — and therefore within a specific z-range — are excited.\n\nThat z-range corresponds to the slice thickness. So this is how we select a slice in MRI.\nWhat we’ve explained here is the principle for slice selection along the z-axis.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"The gradient field creates a range of resonance frequencies along the z-axis\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"When you send an RF pulse with a defined frequency range, only the spins within that frequency range — and therefore within a specific z-range — are excited\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"That z-range corresponds to the slice thickness\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"So this is how we select a slice in MRI\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"What we’ve explained here is the principle for slice selection along the z-axis\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"Graphically, we can show this as you see on the slide.\",\n    \"That z-range corresponds to the slice thickness. So this is how we select a slice in MRI.\",\n    \"What we’ve explained here is the principle for slice selection along the z-axis.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "The gradient field creates a range of resonance frequencies along the z-axis",
+        "category": "physics"
+      },
+      {
+        "term": "That z-range corresponds to the slice thickness",
+        "category": "modality"
+      },
+      {
+        "term": "So this is how we select a slice in MRI",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Graphically, we can show this as you see on the slide.",
+      "That z-range corresponds to the slice thickness. So this is how we select a slice in MRI.",
+      "What we've explained here is the principle for slice selection along the z-axis."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"SPECT\", \"p\":\"uses\", \"o\":\"single photon emission\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In SPECT, which uses single photon emission\"},\n    {\"s\":\"SPECT\", \"p\":\"measures\", \"o\":\"concentration of the radiotracer squared\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When you multiply the measured signals, you end up with the concentration of the radiotracer squared\"},\n    {\"s\":\"SPECT\", \"p\":\"depends_on\", \"o\":\"source position\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You’ll notice I put a green button here, and what I want to show is how you can eliminate the location dependence—meaning the weighting factor no longer depends on the source position\"},\n    {\"s\":\"SPECT\", \"p\":\"reconstructs_with\", \"o\":\"constant weighting factor\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So it seems, at first glance, like SPECT imaging can have a constant weighting factor for these combined measurements\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "SPECT",
+        "p": "uses",
+        "o": "single photon emission",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In SPECT, which uses single photon emission"
+      },
+      {
+        "s": "SPECT",
+        "p": "measures",
+        "o": "concentration of the radiotracer squared",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When you multiply the measured signals, you end up with the concentration of the radiotracer squared"
+      },
+      {
+        "s": "SPECT",
+        "p": "depends_on",
+        "o": "source position",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You’ll notice I put a green button here, and what I want to show is how you can eliminate the location dependence-meaning the weighting factor no longer depends on the source position"
+      },
+      {
+        "s": "SPECT",
+        "p": "reconstructs_with",
+        "o": "constant weighting factor",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So it seems, at first glance, like SPECT imaging can have a constant weighting factor for these combined measurements"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"lectures\",\n      \"p\": \"uses\",\n      \"o\": \"textbook\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In preparing these lectures, I’ve drawn from multiple resources — including this excellent textbook...\"\n    },\n    {\n      \"s\": \"lectures\",\n      \"p\": \"uses\",\n      \"o\": \"own insights and examples\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"as well as my own insights and examples.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "lectures",
+        "p": "uses",
+        "o": "textbook",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In preparing these lectures, I’ve drawn from multiple resources - including this excellent textbook..."
+      },
+      {
+        "s": "lectures",
+        "p": "uses",
+        "o": "own insights and examples",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "as well as my own insights and examples."
+      }
+    ]
+  }
+}

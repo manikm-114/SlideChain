@@ -1,0 +1,20 @@
+We’ve talked a lot about vectors — and how to compute their inner productby multiplying corresponding components and then adding them up.That’s the basic operation in vector space.
+
+Mathematically, for vectors A and B, the inner product is written as:A dot B equals the sum from i equals minus infinity to infinityof a i times b i.
+
+Now, let’s extend this idea to functions.In functional space, instead of dealing with discrete components,we’re dealing with continuous values defined over time or space.
+So, instead of a summation, we use an integral.The inner product of two functions, A of t and B of t, is defined as the integral from minus infinity to infinityof A of t times B of t, d t.
+That’s our functional equivalent of the vector dot product.The interpretation is exactly the same:we’re measuring how much two signals align —whether they point in similar directions in an infinite-dimensional space.
+
+Now here comes the big question:Can we find a basis for functions, just like we do in vector spaces?
+And the answer is yes.One powerful basis uses something called the Dirac delta function —written as delta of x minus a.
+
+Let me explain.
+There’s a key identity in signal processing that says:f of t equals the integral from minus infinity to infinityof delta of tau minus t, times f of tau, d tau.
+
+What does this mean?
+Well, the delta function is like a mathematical spike —It’s zero everywhere, except at a single point.So when we multiply f of tau by delta of tau minus t,We’re isolating the value of f right at tau equals t.And by integrating over all tau, we’re reconstructing the full functionby sweeping this spike across the domain.
+Think of it this way:each delta function — centered at a point a —acts like a basis vector.And each one is scaled by f of a —the value of the function at that location.
+This is just like saying:v equals v one times e one plus v two times e two, and so on.
+So yes, even in this continuous, infinite-dimensional space,we’re still using the same principle:Basis functions times coefficients gives you the full object.
+And this paves the way for what’s coming next —Fourier series, where instead of spikes,we’ll use smooth, oscillating waves as our basis functions.

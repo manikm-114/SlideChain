@@ -1,0 +1,136 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "proton"
+          },
+          {
+            "category": "physics",
+            "term": "spin"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "current loop"
+          },
+          {
+            "category": "physics",
+            "term": "external magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "alignment"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          }
+        ],
+        "evidence": [
+          "A proton is a positively charged particle, and one of its most important properties is spin.",
+          "Because the proton is both spinning and charged, it behaves like a little current loop.",
+          "any current loop produces a magnetic field.",
+          "a spinning proton has a magnetic moment.",
+          "acts like a tiny magnet.",
+          "in the absence of an external magnetic field, their magnetic moments point in random directions.",
+          "when we apply a strong external magnetic field, something very interesting happens.",
+          "These magnetic moments begin to align, and that alignment is what MRI relies on generating signals."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "it acts like a tiny magnet"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "tiny magnet",
+        "p": "acts as",
+        "s": "spinning proton"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "spin"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "bar magnet"
+          },
+          {
+            "category": "physics",
+            "term": "external magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "alignment"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          }
+        ],
+        "evidence": [
+          "A spinning proton possesses a magnetic moment \u03bc and acts as a small magnet with a north and a south pole.",
+          "In the absence of an external, imposed magnetic field, the orientations of the magnetic moments are random. There is therefore zero net magnetic moment in any given direction.",
+          "However, when we apply a strong external magnetic field, something very interesting happens. These magnetic moments begin to align, and that alignment is what MRI relies on generating signals."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "in the body, we have countless protons, and in the absence of an external magnetic field, their magnetic moments point in random directions"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "FIGURE 4.2. (Right) In the absence of an external, imposed magnetic field, the orientations of the magnetic moments are random."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "in the absence of an external, imposed magnetic field",
+        "p": "the orientations of the magnetic moments are random",
+        "s": "in the absence of an external, imposed magnetic field"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "overall magnetic effect"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

@@ -1,0 +1,11 @@
+Now let’s talk about a more practical — but less perfect — alternative: the cheap sampling filter.
+
+Suppose we switch things around. Instead of applying a gate function in the frequency domain, we use a sinc function there. In that case, its counterpart in the time domain is a rectangular function.
+
+This rectangle acts like a local averaging window — it smooths the signal by averaging values over a small time interval. You can think of it as performing a moving average across discrete sample points to approximate the original continuous signal.
+
+It’s a simple, easy-to-implement method — and that’s why we call it "cheap." But here's the tradeoff: it’s far from ideal.
+In the frequency domain, we’re no longer cleanly cutting off frequencies beyond a certain band. The sinc function doesn’t have sharp boundaries, so it doesn’t isolate frequencies as cleanly as the gate function would. That means the resulting reconstruction may lose some fidelity or allow unwanted frequency components to leak in.
+
+So yes — this filter is convenient and fast, but it comes at the cost of precision.
+Next, we’ll explore how filtering in the spatial domain can help improve this.

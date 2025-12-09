@@ -1,0 +1,28 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"visible light\", \"category\": \"physics\"},\n    {\"term\": \"physiological function\", \"category\": \"anatomy\"},\n    {\"term\": \"disease\", \"category\": \"anatomy\"},\n    {\"term\": \"inner vision\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"medical imaging comes in. It gives us the ability to look beyond the surface—to see inside the human body without making a single incision.\",\n    \"our vision is tied to visible light\",\n    \"measure physiological function, detect disease\",\n    \"the inner vision of modern medicine\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "visible light",
+        "category": "physics"
+      },
+      {
+        "term": "inner vision",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "medical imaging comes in. It gives us the ability to look beyond the surface-to see inside the human body without making a single incision.",
+      "our vision is tied to visible light",
+      "measure physiological function, detect disease",
+      "the inner vision of modern medicine"
+    ]
+  }
+}

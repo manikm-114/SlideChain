@@ -1,0 +1,52 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:06:09.616937+00:00",
+  "text_length": 986,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s see how zero-padding helps us fix the edge effect problem we saw with circular convolution.\n\nIn the earlier example, the red and green lines — representing the start and end of the main region we care about — were very close together. This caused the signal to wrap around and overlap in places we didn’t want.\nZero-padding means we insert extra zeros at the ends of our signals before performing the convolution. In this hand analogy, adding zero-padding is like putting some extra space between the hands. The top and bottom hands are now farther apart before they start overlapping.\n\nAs a result, the main section we care about — here marked in red — remains untouched by unwanted overlaps. The green section, which previously had interference from wrapping, now stays clean.\n\nThis is exactly how we prevent the distortion seen in the Wikipedia example: by padding with enough zeros, the circular convolution result becomes identical to the true linear convolution result.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"edge effect problem\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"interference\", \"category\": \"signal_processing\"},\n    {\"term\": \"distortion\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Zero-padding helps fix the edge effect problem we saw with circular convolution.\",\n    \"Zero-padding means we insert extra zeros at the ends of our signals before performing the convolution.\",\n    \"Adding zero-padding is like putting some extra space between the hands.\",\n    \"The main section we care about remains untouched by unwanted overlaps.\",\n    \"The green section, which previously had interference from wrapping, now stays clean.\",\n    \"This is exactly how we prevent the distortion seen in the Wikipedia example.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "edge effect problem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "interference",
+        "category": "signal_processing"
+      },
+      {
+        "term": "distortion",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Zero-padding helps fix the edge effect problem we saw with circular convolution.",
+      "Zero-padding means we insert extra zeros at the ends of our signals before performing the convolution.",
+      "Adding zero-padding is like putting some extra space between the hands.",
+      "The main section we care about remains untouched by unwanted overlaps.",
+      "The green section, which previously had interference from wrapping, now stays clean.",
+      "This is exactly how we prevent the distortion seen in the Wikipedia example."
+    ]
+  }
+}

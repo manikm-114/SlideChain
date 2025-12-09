@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide19",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T20:56:19.515787+00:00",
+  "text_length": 547,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow consider homogeneity, or the scaling property. If a system produces output K1 for input F1, then scaling the input—multiplying it by some factor—should scale the output by the same factor. For example, if we double the brightness of an image input, the output image should also be twice as bright.\nThese two properties—additivity and homogeneity—are at the heart of linear systems. Understanding them clearly is essential, because they allow us to predict how systems behave, simplify complex problems, and build reliable imaging technologies.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Homogeneity\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"linear operator\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"For an operator H to be a linear operator, for a class of inputs {f(x)} we must have\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

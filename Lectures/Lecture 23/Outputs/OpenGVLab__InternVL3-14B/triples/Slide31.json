@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"mean free path\",\n      \"p\": \"measures\",\n      \"o\": \"average distance a photon travels before being scattered\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The mean free path is the average distance a photon travels before being scattered.\"\n    },\n    {\n      \"s\": \"transport mean free path\",\n      \"p\": \"represents\",\n      \"o\": \"distance after which a photon's direction is randomized\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"After traveling one transport mean free path, the photon’s direction has essentially been randomized.\"\n    },\n    {\n      \"s\": \"ballistic region\",\n      \"p\": \"depends_on\",\n      \"o\": \"distance below mean free path\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Below that distance, we say the photons are in the ballistic region — they travel almost straight, like X-rays, without scattering much.\"\n    },\n    {\n      \"s\": \"random walk\",\n      \"p\": \"depends_on",
+  "parsed": {
+    "s": "ballistic region",
+    "p": "depends_on",
+    "o": "distance below mean free path",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Below that distance, we say the photons are in the ballistic region - they travel almost straight, like X-rays, without scattering much."
+    ]
+  }
+}

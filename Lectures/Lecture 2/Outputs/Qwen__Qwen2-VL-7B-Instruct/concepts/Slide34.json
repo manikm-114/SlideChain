@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:47:32.440499+00:00",
+  "text_length": 505,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s how we morph faces using matrix tools.\nWe warp two face images using interpolation on each color channel. Then blend them using a weighted average — with alpha controlling the mix.\nTo detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color.\nNext, we create a binary mask by thresholding the distance, and apply a median filter to clean it up.\nIt’s a compact example of how MATLAB combines image warping, statistics, and filtering — all with matrices.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"image morphing\", \"category\": \"algorithm\"},\n    {\"term\": \"interpolation\", \"category\": \"mathematics\"},\n    {\"term\": \"weighted average\", \"category\": \"algorithm\"},\n    {\"term\": \"Mahalanobis distance\", \"category\": \"mathematics\"},\n    {\"term\": \"binary mask\", \"category\": \"signal_processing\"},\n    {\"term\": \"median filter\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Here’s how we morph faces using matrix tools.\", \"We warp two face images using interpolation on each color channel.\", \"Then blend them using a weighted average — with alpha controlling the mix.\", \"To detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color.\", \"Next, we create a binary mask by thresholding the distance, and apply a median filter to clean it up.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "interpolation",
+        "category": "mathematics"
+      },
+      {
+        "term": "weighted average",
+        "category": "algorithm"
+      },
+      {
+        "term": "Mahalanobis distance",
+        "category": "mathematics"
+      },
+      {
+        "term": "binary mask",
+        "category": "signal_processing"
+      },
+      {
+        "term": "median filter",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Here's how we morph faces using matrix tools.",
+      "We warp two face images using interpolation on each color channel.",
+      "Then blend them using a weighted average - with alpha controlling the mix.",
+      "To detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color.",
+      "Next, we create a binary mask by thresholding the distance, and apply a median filter to clean it up."
+    ]
+  }
+}

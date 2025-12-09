@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"function\",\n      \"p\": \"uses\",\n      \"o\": \"different slopes\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Imagine a function that applies one slope if the input is rational and another slope if it’s irrational.\"\n    },\n    {\n      \"s\": \"homogeneity\",\n      \"p\": \"depends_on\",\n      \"o\": \"rational scalar\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Scaling works consistently because multiplying by a rational scalar preserves the input’s type (rational or irrational), so homogeneity holds.\"\n    },\n    {\n      \"s\": \"additivity\",\n      \"p\": \"breaks down\",\n      \"o\": \"adding irrational inputs\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"But if you add two irrational inputs that sum to a rational number, the slopes change—and additivity breaks down.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "homogeneity",
+        "p": "depends_on",
+        "o": "rational scalar",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Scaling works consistently because multiplying by a rational scalar preserves the input’s type (rational or irrational), so homogeneity holds."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ROC curve\",\n      \"p\": \"represents\",\n      \"o\": \"balance between sensitivity and specificity\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the ROC curve, this decision strategy places us near the top-right portion — very sensitive, but much less specific.\"\n    },\n    {\n      \"s\": \"threshold\",\n      \"p\": \"produces\",\n      \"o\": \"sensitivity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"By moving the cutoff further to the left, we dramatically reduce the chance of missing diseased patients. Almost everyone with the disease is now flagged as positive. That means our sensitivity is very high — close to 100%.\"\n    },\n    {\n      \"s\": \"threshold\",\n      \"p\": \"produces\",\n      \"o\": \"false positive fraction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"With the threshold this low, about half of the non-diseased population also falls into the positive range.",
+  "parsed": {
+    "s": "threshold",
+    "p": "produces",
+    "o": "sensitivity",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "By moving the cutoff further to the left, we dramatically reduce the chance of missing diseased patients. Almost everyone with the disease is now flagged as positive. That means our sensitivity is very high - close to 100%."
+    ]
+  }
+}

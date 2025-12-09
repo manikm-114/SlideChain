@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Full-scan projection data\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"complete set of projection data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Full-scan projection data can be interpolated into a complete set of projection data on an imaging plane such as the x-y plane.\"\n    },\n    {\n      \"s\": \"Helical scanning\",\n      \"p\": \"uses\",\n      \"o\": \"linear interpolation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To compensate for missing data, we perform linear interpolation between the upper and lower rays, which are available.\"\n    },\n    {\n      \"s\": \"Helical scanning\",\n      \"p\": \"depends_on\",\n      \"o\": \"continuous table motion\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Helical scanning benefits from continuous table motion without stops or accelerations.\"\n    },\n    {\n      \"s\": \"filtered back-projection algorithms\",\n      \"p\": \"uses\",\n      \"o\": \"",
+  "parsed": {
+    "s": "Helical scanning",
+    "p": "depends_on",
+    "o": "continuous table motion",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Helical scanning benefits from continuous table motion without stops or accelerations."
+    ]
+  }
+}

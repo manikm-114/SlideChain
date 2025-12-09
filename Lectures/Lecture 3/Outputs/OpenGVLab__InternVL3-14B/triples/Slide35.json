@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"logistic map\",\n      \"p\": \"represents\",\n      \"o\": \"population evolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"One famous example of a nonlinear system is the logistic map, a simple but powerful mathematical model. It describes how a population—say, of rabbits—evolves over time.\"\n    },\n    {\n      \"s\": \"logistic map\",\n      \"p\": \"depends_on\",\n      \"o\": \"growth rate factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"next year’s population depends on this year’s population and a growth rate factor, r.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "logistic map",
+        "p": "depends_on",
+        "o": "growth rate factor",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "next year’s population depends on this year’s population and a growth rate factor, r."
+      }
+    ]
+  }
+}

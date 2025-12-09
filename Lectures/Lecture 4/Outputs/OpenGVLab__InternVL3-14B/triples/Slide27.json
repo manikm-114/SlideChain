@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"gamma camera\", \"p\":\"measures\", \"o\":\"impulse response\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"the measured output at the gamma camera becomes a sum of all these delayed responses\"},\n    {\"s\":\"gamma camera\", \"p\":\"produces\", \"o\":\"convolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the system’s output is a convolution of the injected input with the system’s impulse response\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "gamma camera",
+        "p": "measures",
+        "o": "impulse response",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "the measured output at the gamma camera becomes a sum of all these delayed responses"
+      },
+      {
+        "s": "gamma camera",
+        "p": "produces",
+        "o": "convolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the system’s output is a convolution of the injected input with the system’s impulse response"
+      }
+    ]
+  }
+}

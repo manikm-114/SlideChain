@@ -1,0 +1,8 @@
+In reality, the contrast isn’t delivered as a perfect impulse —it’s injected over a period of time, with more at the start and less later, forming a time curve.
+We can think of this non-ideal input as a sum of small impulses occurring at different times —each one representing a fraction of the total injected dose.
+For each of these small impulses, we already know the system’s response —that’s the impulse response we’ve discussed.
+So what do we do?
+We scale each impulse response based on how much contrast was injected at that moment,shift it in time according to when it was injected,and then add all the individual responses together.
+What we get is the system’s total response — the final signal that’s measured by the detector.
+This is a perfect visualization of discrete convolution in a real-world setting.It shows how imaging systems handle non-ideal, time-varying inputs using the exact same principles we’ve learned.
+It may take some time for these ideas to fully sink in,but they form the foundation for understanding how imaging systems process signals and generate useful images.

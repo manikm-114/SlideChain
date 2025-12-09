@@ -1,0 +1,10 @@
+Now let’s look at how the Structural Similarity Index, or SSIM, is actually computed.
+Suppose we have two images, which we’ll call signal X and signal Y. The first step is to look at their luminance, which simply means the average brightness level. We measure the mean intensity of each image and make sure we are comparing them on the same scale.
+
+Next, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean. A high standard deviation means strong contrast, while a low standard deviation means the image looks flat or washed out. So we compute the standard deviation for each image to quantify its contrast.
+
+After normalizing for luminance and contrast, we focus on the most important part: the structure. This step captures how patterns of pixels in one image relate to patterns in the other — whether the edges, textures, and fine details line up.
+
+Finally, SSIM combines all three comparisons — luminance, contrast, and structure — into a single value between zero and one. A score of one means the images are structurally identical. A lower score means important structural information has been lost.
+
+So, in summary: SSIM works by checking three things — do the images have the same brightness, the same contrast, and the same structural patterns? When all three align, we say the images are very similar.

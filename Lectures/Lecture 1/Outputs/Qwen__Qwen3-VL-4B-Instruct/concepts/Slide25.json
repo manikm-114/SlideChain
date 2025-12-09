@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide25",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:35:17.370052+00:00",
+  "text_length": 804,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSpeaking of innovation—let’s talk about one of the major players in the field: General Electric, or GE, in the neighborhood of Rensselaer Polytechnic Institute.\n\nThis is a company with a deep history of technological contributions, not just in medical imaging, but across many industries. And interestingly, “GE” also happens to be my initials—but theirs is with a capital E. So, no confusion!\n\nGE was founded back in 1892, not long after X-rays were discovered. And Rensselaer Polytechnic Institute was founded even earlier. So these two organizations have grown side by side, both focused on pushing the boundaries of science and technology.\n\nGE has been part of some most transformative developments in imaging—from early X-ray machines to advanced MR scanners. They’ve really helped shape this field.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"GE\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"Rensselaer Polytechnic Institute\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"X-rays\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"medical imaging\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"MR scanners\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"GE was founded back in 1892, not long after X-rays were discovered.\",\n    \"GE has been part of some most transformative developments in imaging—from early X-ray machines to advanced MR scanners.\",\n    \"This is a company with a deep history of technological contributions, not just in medical imaging, but across many industries.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Rensselaer Polytechnic Institute",
+        "category": "modality"
+      },
+      {
+        "term": "X-rays",
+        "category": "physics"
+      },
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "MR scanners",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "GE was founded back in 1892, not long after X-rays were discovered.",
+      "GE has been part of some most transformative developments in imaging-from early X-ray machines to advanced MR scanners.",
+      "This is a company with a deep history of technological contributions, not just in medical imaging, but across many industries."
+    ]
+  }
+}

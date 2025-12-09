@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "confocal microscopy"
+          },
+          {
+            "category": "modality",
+            "term": "fluorescent markers"
+          },
+          {
+            "category": "modality",
+            "term": "optical imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "confocal microscope"
+          },
+          {
+            "category": "physics",
+            "term": "optical precision"
+          },
+          {
+            "category": "reconstruction",
+            "term": "computational reconstruction"
+          }
+        ],
+        "evidence": [
+          "image captured using the confocal microscopy principle",
+          "red-colored regions represent the nuclei",
+          "specific fluorescent markers",
+          "optical imaging",
+          "confocal microscope",
+          "optical precision",
+          "computational reconstruction",
+          "cell dividing"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The image clearly shows living cells dividing, and the red-colored regions represent the nuclei or specific fluorescent markers that have been tagged so we can visualize the process in real time."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "living cells dividing",
+        "p": "represents",
+        "s": "confocal microscopy"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "confocal microscopy principle"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "crisp, high-resolution images"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "The image clearly shows living cells dividing, and the red-colored regions represent the nuclei or specific fluorescent markers that have been tagged so we can visualize the process in real time.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "the nuclei or specific fluorescent markers",
+            "p": "represents",
+            "s": "the red-colored regions"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "innovation",
+        "term": "elegant engineering"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

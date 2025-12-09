@@ -1,0 +1,52 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"positive predictive value (PPV)\", \"category\": \"quality_metric\"},\n    {\"term\": \"negative predictive value (NPV)\", \"category\": \"quality_metric\"},\n    {\"term\": \"True Positives\", \"category\": \"quality_metric\"},\n    {\"term\": \"False Positives\", \"category\": \"quality_metric\"},\n    {\"term\": \"True Negatives\", \"category\": \"quality_metric\"},\n    {\"term\": \"False Negatives\", \"category\": \"quality_metric\"},\n    {\"term\": \"sensitivity\", \"category\": \"quality_metric\"},\n    {\"term\": \"specificity\", \"category\": \"quality_metric\"},\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"tumor\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\n    \"PPV equals True Positives over (True Positives plus False Positives).\",\n    \"NPV equals True Negatives over (True Negatives plus False Negatives).\",\n    \"sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.\",\n    \"Suppose we are using CT to detect a tumor.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "positive predictive value (PPV)",
+        "category": "quality_metric"
+      },
+      {
+        "term": "negative predictive value (NPV)",
+        "category": "quality_metric"
+      },
+      {
+        "term": "True Positives",
+        "category": "quality_metric"
+      },
+      {
+        "term": "False Positives",
+        "category": "quality_metric"
+      },
+      {
+        "term": "True Negatives",
+        "category": "quality_metric"
+      },
+      {
+        "term": "False Negatives",
+        "category": "quality_metric"
+      },
+      {
+        "term": "sensitivity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "specificity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "CT",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "PPV equals True Positives over (True Positives plus False Positives).",
+      "NPV equals True Negatives over (True Negatives plus False Negatives).",
+      "sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.",
+      "Suppose we are using CT to detect a tumor."
+    ]
+  }
+}

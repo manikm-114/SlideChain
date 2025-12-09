@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "back-projection"
+          },
+          {
+            "category": "data_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "data_processing",
+            "term": "projection data"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructing CT slices"
+          }
+        ],
+        "evidence": [
+          "The next key idea is back-projection, which is the standard method for reconstructing CT slices.",
+          "we start with the sinogram, which contains all the projection data.",
+          "we back-project it-that means we spread that projection back across the image space",
+          "When we combine them, the overlap starts to suggest the locations",
+          "combine back-projections gradually approximate the true shapes"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Standard method of reconstructing CT slices",
+            "modalities": [
+              "text"
+            ],
+            "o": "CT slices",
+            "p": "reconstructs_with",
+            "s": "Back-projection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": null,
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "with enough views, the reconstruction recovers the original sample very accurately"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "Standard method of reconstructing CT slices",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "CT slices",
+            "p": "reconstructs_with",
+            "s": "back-projection"
+          },
+          {
+            "confidence": 0.85,
+            "evidence": "When we back-project this data, we get a blurry reconstruction along that one angle.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "blurry reconstruction",
+            "p": "produces",
+            "s": "back-projection"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "accurate reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

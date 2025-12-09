@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound focusing\",\n      \"p\": \"uses\",\n      \"o\": \"F-number\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, in both optics and acoustics, we use a quantity called the F-number, or F-ratio, to describe focusing strength.\"\n    },\n    {\n      \"s\": \"F-number\",\n      \"p\": \"represents\",\n      \"o\": \"focusing strength\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, in both optics and acoustics, we use a quantity called the F-number, or F-ratio, to describe focusing strength.\"\n    },\n    {\n      \"s\": \"F-number\",\n      \"p\": \"measures\",\n      \"o\": \"radius of curvature divided by twice the aperture radius\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The F-number is defined as the radius of curvature divided by twice the aperture radius.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasound focusing",
+        "p": "uses",
+        "o": "F-number",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now, in both optics and acoustics, we use a quantity called the F-number, or F-ratio, to describe focusing strength."
+      },
+      {
+        "s": "F-number",
+        "p": "represents",
+        "o": "focusing strength",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now, in both optics and acoustics, we use a quantity called the F-number, or F-ratio, to describe focusing strength."
+      },
+      {
+        "s": "F-number",
+        "p": "measures",
+        "o": "radius of curvature divided by twice the aperture radius",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The F-number is defined as the radius of curvature divided by twice the aperture radius."
+      }
+    ]
+  }
+}

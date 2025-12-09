@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier analysis\",\n      \"p\": \"uses\",\n      \"o\": \"sine and cosine terms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In Fourier analysis, you’ll often see expressions involving both sine and cosine terms.\"\n    },\n    {\n      \"s\": \"A sine theta plus B cosine theta\",\n      \"p\": \"represents\",\n      \"o\": \"periodic signals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This is a common way to write periodic signals, using a mix of sines and cosines.\"\n    },\n    {\n      \"s\": \"A sine theta plus B cosine theta\",\n      \"p\": \"can be rewritten as\",\n      \"o\": \"R sine theta plus alpha\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"this combination can actually be rewritten as a single sine function — with an amplitude and a phase.\"\n    },\n    {\n      \"s\": \"R sine theta plus alpha\",\n      \"p\": \"rep",
+  "parsed": {
+    "s": "A sine theta plus B cosine theta",
+    "p": "can be rewritten as",
+    "o": "R sine theta plus alpha",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "this combination can actually be rewritten as a single sine function - with an amplitude and a phase."
+    ]
+  }
+}

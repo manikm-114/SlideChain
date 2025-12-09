@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"matrix multiplication\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise multiplication\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix power\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise power\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix division\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise division\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"A times B — with a single star — means matrix multiplication.\",\n    \"A dot star B — with a dot — means multiply element by element.\",\n    \"A caret 2 raises the matrix to a power.\",\n    \"A dot caret 2 squares each element.\",\n    \"A divided by B solves equations, while A dot slash B divides element-wise.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "matrix multiplication",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "A times B - with a single star - means matrix multiplication.",
+      "A dot star B - with a dot - means multiply element by element.",
+      "A caret 2 raises the matrix to a power.",
+      "A dot caret 2 squares each element.",
+      "A divided by B solves equations, while A dot slash B divides element-wise."
+    ]
+  }
+}

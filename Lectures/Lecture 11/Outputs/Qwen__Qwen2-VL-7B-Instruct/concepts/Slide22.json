@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide22",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:57:13.013042+00:00",
+  "text_length": 1053,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s a simple example of a changeover background.\n\nLook at the first column on the left. The top image has about 10 dots, while the bottom has about 20 dots. The difference is 10. When you compare them, it’s very obvious that the bottom one has more dots than the top one.\nNow look at the second column. The top image has about 110 dots, and the bottom has about 120 dots. Again, the difference is 10. But this time, it’s much harder to notice the difference.\n\nWhy? Because the background level — the total number of dots — is so much higher. A change of 10 is a large fraction when the background is only 10, but it’s a tiny fraction when the background is already 110.\nThis illustrates the principle we just discussed: what our visual system detects is not the absolute change, but the relative change — delta divided by the background.\n\nSo, when we design a similarity measure, we want it to reflect this property of human vision. And that’s exactly what the contrast comparison in SSIM does. It behaves in a way that is consistent with how we see.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"changeover background\", \"category\": \"signal_processing\"},\n    {\"term\": \"visual system\", \"category\": \"psychology\"},\n    {\"term\": \"relative change\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta\", \"category\": \"signal_processing\"},\n    {\"term\": \"background level\", \"category\": \"signal_processing\"},\n    {\"term\": \"human vision\", \"category\": \"psychology\"},\n    {\"term\": \"contrast comparison\", \"category\": \"signal_processing\"},\n    {\"term\": \"SSIM\", \"category\": \"signal_processing\"},\n    {\"term\": \"similarity measure\", \"category\": \"signal_processing\"},\n    {\"term\": \"human perception\", \"category\": \"psychology\"}\n  ],\n  \"evidence\": [\n    \"what our visual system detects is not the absolute change, but the relative change — delta divided by the background.\",\n    \"So, when we design a similarity measure, we want it to reflect this property of human vision. And that’s exactly what the contrast comparison in SSIM does. It behaves in a way that is consistent with how we see.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "changeover background",
+        "category": "signal_processing"
+      },
+      {
+        "term": "relative change",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta",
+        "category": "signal_processing"
+      },
+      {
+        "term": "background level",
+        "category": "signal_processing"
+      },
+      {
+        "term": "contrast comparison",
+        "category": "signal_processing"
+      },
+      {
+        "term": "SSIM",
+        "category": "signal_processing"
+      },
+      {
+        "term": "similarity measure",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "what our visual system detects is not the absolute change, but the relative change - delta divided by the background.",
+      "So, when we design a similarity measure, we want it to reflect this property of human vision. And that's exactly what the contrast comparison in SSIM does. It behaves in a way that is consistent with how we see."
+    ]
+  }
+}

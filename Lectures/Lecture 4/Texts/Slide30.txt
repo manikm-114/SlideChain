@@ -1,0 +1,19 @@
+👉 Case 1: When t is less than –2
+At this stage, the flipped and shifted version of g, written as g of t minus tau,is positioned so far to the left that it does not overlap with f of tau at all.
+That means the product of the two functions is zero everywhere,so the convolution result y of t is also zero.
+This is our first insight:No overlap means no contribution to the integral, and the output is zero.
+
+
+ Case 2: When t is between –2 and 0
+Now we begin to see partial overlap.
+As g of t minus tau slides to the right, part of it starts to enter the region where f of tau is non-zero.
+Let’s break this down mathematically:
+Over the region where they overlap, f of tau is defined asf of tau equals negative tau plus 2, valid from tau equals 0 to tau equals 2.
+And the flipped rectangle, g of t minus tau, still has a constant height of 3 wherever it overlaps.
+So we’re integrating the product of these two functions across the overlapping interval.
+
+The simplifies convolution becomes:3 times the integral of (–tau + 2), from 0 to 2 plus t.
+If you evaluate this integral, you get:y of t equals negative three-halves t squared plus 6.
+So the convolution result in this case is a parabolic curve, rising as t approaches zero.
+
+This illustrates an important idea:Convolution is constructed from slices of overlapping areas —and in each case, we’re summing the product over those intervals of overlap.

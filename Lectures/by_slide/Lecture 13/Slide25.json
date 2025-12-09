@@ -1,0 +1,163 @@
+{
+  "lecture": "Lecture 13",
+  "slide_id": "Slide25",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide25.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "two-dimensional Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Fourier slice theorem",
+              "category": "signal_processing"
+            },
+            {
+              "term": "w cosine theta",
+              "category": "signal_processing"
+            },
+            {
+              "term": "w sine theta",
+              "category": "signal_processing"
+            },
+            {
+              "term": "x u plus y v",
+              "category": "signal_processing"
+            },
+            {
+              "term": "w cosine theta, w sine theta",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Then you change the transform back from the t, s system to the x, y coordinate system.",
+            "You can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"two-dimensional Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Fourier slice theorem\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"w cosine theta\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"w sine theta\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"x u plus y v\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"w cosine theta, w sine theta\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Then you change the transform back from the t, s system to the x, y coordinate system.\\\", \\\"You can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"two-dimensional Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"Fourier slice theorem\", \"category\": \"signal_processing\"}, {\"term\": \"w cosine theta\", \"category\": \"signal_processing\"}, {\"term\": \"w sine theta\", \"category\": \"signal_processing\"}, {\"term\": \"x u plus y v\", \"category\": \"signal_processing\"}, {\"term\": \"w cosine theta, w sine theta\", \"category\": \"signal_processing\"}], \"evidence\": [\"Then you change the transform back from the t, s system to the x, y coordinate system.\", \"You can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Fourier transform\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Mathematical derivation\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide25.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"\", \"parsed\": null}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide25.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"\", \"parsed\": null}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier Slice Theorem",
+              "category": "mathematics"
+            },
+            {
+              "term": "two-dimensional Fourier transform",
+              "category": "mathematics"
+            },
+            {
+              "term": "u component",
+              "category": "mathematics"
+            },
+            {
+              "term": "v component",
+              "category": "mathematics"
+            },
+            {
+              "term": "w cosine theta",
+              "category": "mathematics"
+            },
+            {
+              "term": "w sine theta",
+              "category": "mathematics"
+            },
+            {
+              "term": "F of open parenthesis w cosine theta, w sine theta close parenthesis",
+              "category": "mathematics"
+            },
+            {
+              "term": "Fourier slice theorem",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "This is the essence of straight ray tomography and proves the Fourier Slice Theorem.",
+            "This is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T07:00:30.197103+00:00\", \"text_length\": 668, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier Slice Theorem\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"two-dimensional Fourier transform\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"u component\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"v component\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"w cosine theta\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"w sine theta\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"F of open parenthesis w cosine theta, w sine theta close parenthesis\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Fourier slice theorem\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This is the essence of straight ray tomography and proves the Fourier Slice Theorem.\\\",\\n    \\\"This is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier Slice Theorem\", \"category\": \"mathematics\"}, {\"term\": \"two-dimensional Fourier transform\", \"category\": \"mathematics\"}, {\"term\": \"u component\", \"category\": \"mathematics\"}, {\"term\": \"v component\", \"category\": \"mathematics\"}, {\"term\": \"w cosine theta\", \"category\": \"mathematics\"}, {\"term\": \"w sine theta\", \"category\": \"mathematics\"}, {\"term\": \"F of open parenthesis w cosine theta, w sine theta close parenthesis\", \"category\": \"mathematics\"}, {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"}], \"evidence\": [\"This is the essence of straight ray tomography and proves the Fourier Slice Theorem.\", \"This is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:50:15.235954+00:00\", \"text_length\": 668, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide25.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.",
+              "category": "mathematics"
+            },
+            {
+              "term": "two-dimensional Fourier transform",
+              "category": "mathematics"
+            },
+            {
+              "term": "u component is w cosine theta, and the v component is w sine theta.",
+              "category": "mathematics"
+            },
+            {
+              "term": "the general form of the Fourier slice theorem",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.",
+            "two-dimensional Fourier transform",
+            "u component is w cosine theta, and the v component is w sine theta.",
+            "the general form of the Fourier slice theorem"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T11:40:25.176441+00:00\", \"text_length\": 668, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"two-dimensional Fourier transform\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"u component is w cosine theta, and the v component is w sine theta.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the general form of the Fourier slice theorem\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\\",\\n    \\\"two-dimensional Fourier transform\\\",\\n    \\\"u component is w cosine theta, and the v component is w sine theta.\\\",\\n    \\\"the general form of the Fourier slice theorem\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\", \"category\": \"mathematics\"}, {\"term\": \"two-dimensional Fourier transform\", \"category\": \"mathematics\"}, {\"term\": \"u component is w cosine theta, and the v component is w sine theta.\", \"category\": \"mathematics\"}, {\"term\": \"the general form of the Fourier slice theorem\", \"category\": \"mathematics\"}], \"evidence\": [\"S theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\", \"two-dimensional Fourier transform\", \"u component is w cosine theta, and the v component is w sine theta.\", \"the general form of the Fourier slice theorem\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide25.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide25\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T11:46:36.566919+00:00\", \"text_length\": 668, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThen you change the transform back from the t, s system to the x, y coordinate system.\\u000b\\nYou can express it this way. Rearranging a little, it can be expressed as a two-dimensional Fourier transform, capital F. The u component is w cosine theta, and the v component is w sine theta. Because in the two-dimensional Fourier transform you have x u plus y v, the factor w is redistributed back, giving this relationship.\\n\\nS theta of w equals F of open parenthesis w cosine theta, w sine theta close parenthesis.\\nThis is nothing but the general form of the Fourier slice theorem. This is the mathematical derivation. You can review it yourself and check Chapter 3 if needed.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"S_θ(w)\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"F(w, θ)=F(w cos θ, w sin θ)\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"The right-hand side of this equation now represents the two-dimensional Fourier transform at a spatial frequency of (u = w cos θ, v = w sin θ) or S_θ(w)=F(w, θ)=F(w cos θ, w sin θ).\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

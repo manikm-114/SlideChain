@@ -1,0 +1,12 @@
+Let’s assign specific numbers to this example.
+Suppose on your left hand, your thumb has value 5, your index finger is 4,then 3, 2, and 1 for the middle, ring, and little fingers.
+On your right hand, the values go the other way — your little finger is 1, ring finger is 2,and it increases up to 5 at the thumb.
+Now, flip the right hand — just like we flip h of n in the convolution process —then slide it across the left hand, computing the pairwise products at each shift,and summing them to get each value of the output.
+This is exactly what’s happening in the MATLAB code shown on the slide.
+We define x as the vector [5, 4, 3, 2, 1]and h as [1, 2, 3, 4, 5].
+Then we call y equals conv of x and hand finally, we plot the result.
+The plot shows a symmetric peak, just as we expect — the center point reflects full overlap between the two sequences,and the values decrease symmetrically as they slide past each other.
+Also remember: when you convolve two sequences of lengths n 1 and n 2,the result will have a length of n 1 plus n 1 minus one.
+Practicing with simple examples like this helps you visualize and internalize the convolution process —flipping, shifting, multiplying, and adding.
+And in imaging systems, which are designed to be linear and shift-invariant,convolution defines how the system responds to any input.
+That’s why mastering this operation is essential.

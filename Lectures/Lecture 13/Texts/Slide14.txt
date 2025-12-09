@@ -1,0 +1,13 @@
+Now, let me give you a numerical example.
+In practice, the image can be five hundred twelve by five hundred twelve, but for teaching purposes, I’ll use a two by two image. This is a simple case, but the essential idea is already there.
+
+You have pixel values one, two, three, four—very simple—but you don’t know these; this is just something I set up. What you are allowed to probe is with X-rays. I told you X-rays cannot pinpoint a single pixel. If you had a magic pen that could read out a point one pixel like a photograph, you would not need tomographic reconstruction—that would be too simple.
+
+With X-ray measurements, we can get some information. Suppose you shoot X-rays this way. As I explained, an X-ray measurement gives you a ray-sum. From the earlier slide: if you do not send X-rays through these two pixels, you will not be able to say what mu one and mu two are. But you do know the sum of these two pixels: mu one plus mu two equals seven. From this, you still do not know mu one and mu two, but you know the sum is seven. Likewise, take a vertical ray: you get mu two plus mu four equals four.
+With X-ray measurements, you can write a number of equations. Solve the equations and you get the unknowns—that’s the idea. Normally, for an n by n image, you have n by n unknowns. Here, for two by two, you have four unknowns, so you need to shoot four rays and get four measurements: four linear equations, four unknowns. It looks perfect, right? Not that simple.
+
+Look at this: if you shoot these two rays, the first two equations added together give a right-hand side of ten, and the last two equations added together are also ten. So if you subtract one equation from the sum, you get the remaining one. It’s a little tricky, but the point is that these four equations are not totally independent. From three of them you can derive the last one.
+The trick is that “number of equations equals number of unknowns” only works under the condition that each equation provides new information—they must be independent. If they are not independent, you do not have enough equations to solve the problem.
+
+So you should shoot a ray along the diagonal direction. Then you may get “this one plus this one plus this one plus this one,” and you will have enough independent equations to solve uniquely.
+Anyway, remember: “number of equations equals number of unknowns” is under the assumption that all equations are independent. Otherwise, you do not have enough equations.

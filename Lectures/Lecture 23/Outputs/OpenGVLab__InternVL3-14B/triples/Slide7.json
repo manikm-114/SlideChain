@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"proteins\", \"p\":\"uses\", \"o\":\"fluorescent proteins\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"proteins can be tagged with fluorescent proteins\"},\n    {\"s\":\"green fluorescent protein\", \"p\":\"produces\", \"o\":\"green light\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"green fluorescent protein converts blue light (488nm) into green light\"},\n    {\"s\":\"GFP\", \"p\":\"represents\", \"o\":\"fluorescent reporter\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"GFP serves as the fluorescent reporter\"},\n    {\"s\":\"fluorescence imaging\", \"p\":\"measures\", \"o\":\"spatial distribution of biological target\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"by detecting the emitted fluorescence, you can infer the spatial distribution of your biological target\"},\n    {\"s\":\"fluorescence imaging\", \"p\":\"depends_on\", \"o\":\"emitted fluorescence\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This is the basic",
+  "parsed": {
+    "s": "fluorescence imaging",
+    "p": "measures",
+    "o": "spatial distribution of biological target",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "by detecting the emitted fluorescence, you can infer the spatial distribution of your biological target"
+    ]
+  }
+}

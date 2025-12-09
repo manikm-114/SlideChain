@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide49",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"PSF\",\n      \"p\": \"represents\",\n      \"o\": \"Gaussian-shaped distribution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In practice, because of the intrinsic resolution of the scintillation crystal, the photomultiplier tubes, and the electronics, the point source becomes blurred into a Gaussian-shaped distribution.\"\n    },\n    {\n      \"s\": \"Compton scattering\",\n      \"p\": \"adds\",\n      \"o\": \"long tail\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Compton scattering adds a complication. Many photons scatter inside the body before reaching the detector, and those scattered photons broaden the distribution. Instead of a neat Gaussian, the PSF develops a long tail.\"\n    },\n    {\n      \"s\": \"PSF\",\n      \"p\": \"depends_on\",\n      \"o\": \"gamma camera and collimator\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That Gaussian curve is what you would expect from the use of the camera and coll",
+  "parsed": {
+    "s": "Compton scattering",
+    "p": "adds",
+    "o": "long tail",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Compton scattering adds a complication. Many photons scatter inside the body before reaching the detector, and those scattered photons broaden the distribution. Instead of a neat Gaussian, the PSF develops a long tail."
+    ]
+  }
+}

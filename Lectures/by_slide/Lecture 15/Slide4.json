@@ -1,0 +1,225 @@
+{
+  "lecture": "Lecture 15",
+  "slide_id": "Slide4",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide4.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide4.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-ray projections",
+              "category": "signal_processing"
+            },
+            {
+              "term": "reconstructing what’s inside the body",
+              "category": "reconstruction"
+            },
+            {
+              "term": "dense tissues like bone attenuate more",
+              "category": "physics"
+            },
+            {
+              "term": "soft tissues attenuate less",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "The basic idea is this: CT uses X-ray projections taken from many different angles around the body.",
+            "As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+            "By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"Computed Tomography (CT)\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray projections\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"reconstructing what’s inside the body\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"dense tissues like bone attenuate more\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"soft tissues attenuate less\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The basic idea is this: CT uses X-ray projections taken from many different angles around the body.\\\", \\\"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\", \\\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"X-ray projections\", \"category\": \"signal_processing\"}, {\"term\": \"reconstructing what’s inside the body\", \"category\": \"reconstruction\"}, {\"term\": \"dense tissues like bone attenuate more\", \"category\": \"physics\"}, {\"term\": \"soft tissues attenuate less\", \"category\": \"physics\"}], \"evidence\": [\"The basic idea is this: CT uses X-ray projections taken from many different angles around the body.\", \"As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.\", \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide4.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"X-rays\\\", \\\"p\\\":\\\"attenuates\\\",\\n     \\\"o\\\":\\\"tissues\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide4.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "CT",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray projections",
+              "category": "physics"
+            },
+            {
+              "term": "attenuated",
+              "category": "physics"
+            },
+            {
+              "term": "tissues",
+              "category": "anatomy"
+            },
+            {
+              "term": "reconstructing",
+              "category": "reconstruction"
+            },
+            {
+              "term": "computed tomography",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "CT uses X-ray projections taken from many different angles around the body.",
+            "they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+            "Dense tissues like bone attenuate more, while soft tissues attenuate less.",
+            "we build up enough information to start reconstructing what’s inside the body.",
+            "That’s the foundation of computed tomography."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray projections\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"attenuated\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"tissues\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"reconstructing\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"computed tomography\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"CT uses X-ray projections taken from many different angles around the body.\\\",\\n    \\\"they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\",\\n    \\\"Dense tissues like bone attenuate more, while soft tissues attenuate less.\\\",\\n    \\\"we build up enough information to start reconstructing what’s inside the body.\\\",\\n    \\\"That’s the foundation of computed tomography.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"CT\", \"category\": \"modality\"}, {\"term\": \"X-ray projections\", \"category\": \"physics\"}, {\"term\": \"attenuated\", \"category\": \"physics\"}, {\"term\": \"tissues\", \"category\": \"anatomy\"}, {\"term\": \"reconstructing\", \"category\": \"reconstruction\"}, {\"term\": \"computed tomography\", \"category\": \"modality\"}], \"evidence\": [\"CT uses X-ray projections taken from many different angles around the body.\", \"they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.\", \"Dense tissues like bone attenuate more, while soft tissues attenuate less.\", \"we build up enough information to start reconstructing what’s inside the body.\", \"That’s the foundation of computed tomography.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide4.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "CT",
+              "p": "uses",
+              "o": "X-ray projections",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "CT uses X-ray projections taken from many different angles around the body."
+            },
+            {
+              "s": "CT",
+              "p": "reconstructs_with",
+              "o": "projections from multiple views",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"CT\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"X-ray projections\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"CT uses X-ray projections taken from many different angles around the body.\\\"},\\n    {\\\"s\\\":\\\"CT\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"attenuation\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\"},\\n    {\\\"s\\\":\\\"CT\\\", \\\"p\\\":\\\"reconstructs_with\\\", \\\"o\\\":\\\"projections from multiple views\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"CT\", \"p\": \"uses\", \"o\": \"X-ray projections\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"CT uses X-ray projections taken from many different angles around the body.\"}, {\"s\": \"CT\", \"p\": \"reconstructs_with\", \"o\": \"projections from multiple views\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide4.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "CT",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray projections",
+              "category": "instrumentation"
+            },
+            {
+              "term": "computed tomography",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "CT uses X-ray projections taken from many different angles around the body.",
+            "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:22:43.078098+00:00\", \"text_length\": 660, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray projections\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"computed tomography\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"CT uses X-ray projections taken from many different angles around the body.\\\", \\\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"CT\", \"category\": \"modality\"}, {\"term\": \"X-ray projections\", \"category\": \"instrumentation\"}, {\"term\": \"computed tomography\", \"category\": \"modality\"}], \"evidence\": [\"CT uses X-ray projections taken from many different angles around the body.\", \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide4.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "CT",
+              "p": "uses",
+              "o": "X-ray projections",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 1.0,
+              "evidence": "CT uses X-ray projections taken from many different angles around the body."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:05:12.903581+00:00\", \"text_length\": 660, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"CT\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"X-ray projections\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"CT uses X-ray projections taken from many different angles around the body.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"CT\", \"p\": \"uses\", \"o\": \"X-ray projections\", \"modalities\": [\"text\", \"image\"], \"confidence\": 1.0, \"evidence\": \"CT uses X-ray projections taken from many different angles around the body.\"}]}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide4.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "CT",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray projections",
+              "category": "physics"
+            },
+            {
+              "term": "attenuated",
+              "category": "physics"
+            },
+            {
+              "term": "reconstructing",
+              "category": "reconstruction"
+            },
+            {
+              "term": "computed tomography",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "CT uses X-ray projections taken from many different angles around the body.",
+            "As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+            "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body. That's the foundation of computed tomography."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:08:53.016045+00:00\", \"text_length\": 660, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"CT\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"X-ray projections\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"attenuated\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reconstructing\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"computed tomography\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"CT uses X-ray projections taken from many different angles around the body.\\\",\\n    \\\"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\",\\n    \\\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"CT\", \"category\": \"modality\"}, {\"term\": \"X-ray projections\", \"category\": \"physics\"}, {\"term\": \"attenuated\", \"category\": \"physics\"}, {\"term\": \"reconstructing\", \"category\": \"reconstruction\"}, {\"term\": \"computed tomography\", \"category\": \"modality\"}], \"evidence\": [\"CT uses X-ray projections taken from many different angles around the body.\", \"As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.\", \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body. That's the foundation of computed tomography.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide4.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "CT",
+              "p": "uses",
+              "o": "X-ray projections",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "CT uses X-ray projections taken from many different angles around the body."
+            },
+            {
+              "s": "CT",
+              "p": "reconstructs_with",
+              "o": "projections from multiple views",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide4\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T08:13:42.276873+00:00\", \"text_length\": 660, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s step into the theory of CT.\\u000b\\nWhat I’ll give you here is a general overview, much of which should feel like a review from our earlier classes.\\n\\nThe basic idea is this: CT uses X-ray projections taken from many different angles around the body. As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through. Dense tissues like bone attenuate more, while soft tissues attenuate less.\\n\\nBy collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body. That’s the foundation of computed tomography.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"CT\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"X-ray projections\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"CT uses X-ray projections taken from many different angles around the body.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"X-rays\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"attenuation of tissues\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"CT\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"projections from multiple views\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"CT\", \"p\": \"uses\", \"o\": \"X-ray projections\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"CT uses X-ray projections taken from many different angles around the body.\"}, {\"s\": \"CT\", \"p\": \"reconstructs_with\", \"o\": \"projections from multiple views\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body.\"}]}}"
+      }
+    }
+  }
+}

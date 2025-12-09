@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"reading and writing data files\",\n      \"p\": \"uses\",\n      \"o\": \"fopen\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To open a file, use fopen\"\n    },\n    {\n      \"s\": \"reading and writing data files\",\n      \"p\": \"uses\",\n      \"o\": \"fscanf\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Use fscanf to read numbers from the file\"\n    },\n    {\n      \"s\": \"reading and writing data files\",\n      \"p\": \"uses\",\n      \"o\": \"fclose\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When you're done, always close the file using fclose\"\n    },\n    {\n      \"s\": \"formatted read\",\n      \"p\": \"uses\",\n      \"o\": \"help textread\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If you need formatting help, use help textread",
+  "parsed": {
+    "s": "reading and writing data files",
+    "p": "uses",
+    "o": "fclose",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "When you're done, always close the file using fclose"
+    ]
+  }
+}

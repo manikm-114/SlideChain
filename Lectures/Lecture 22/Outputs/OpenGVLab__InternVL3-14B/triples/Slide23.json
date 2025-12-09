@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Transducer\",\n      \"p\": \"produces\",\n      \"o\": \"ultrasound waves\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The transducer sends out ultrasound waves at the speed of c toward a stationary object.\"\n    },\n    {\n      \"s\": \"Speed c\",\n      \"p\": \"equals\",\n      \"o\": \"Frequency*Wavelength\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Speed c = Frequency*Wavelength\"\n    },\n    {\n      \"s\": \"Moving Object\",\n      \"p\": \"measures\",\n      \"o\": \"apparent frequency change\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"when the object is moving, you will see the apparent frequency change.\"\n    },\n    {\n      \"s\": \"Doppler effect\",\n      \"p\": \"represents\",\n      \"o\": \"difference between the stationary and moving cases\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"e",
+  "parsed": {
+    "s": "Moving Object",
+    "p": "measures",
+    "o": "apparent frequency change",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "when the object is moving, you will see the apparent frequency change."
+    ]
+  }
+}

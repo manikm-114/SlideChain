@@ -1,0 +1,8 @@
+Now, let’s see how zero-padding helps us fix the edge effect problem we saw with circular convolution.
+
+In the earlier example, the red and green lines — representing the start and end of the main region we care about — were very close together. This caused the signal to wrap around and overlap in places we didn’t want.
+Zero-padding means we insert extra zeros at the ends of our signals before performing the convolution. In this hand analogy, adding zero-padding is like putting some extra space between the hands. The top and bottom hands are now farther apart before they start overlapping.
+
+As a result, the main section we care about — here marked in red — remains untouched by unwanted overlaps. The green section, which previously had interference from wrapping, now stays clean.
+
+This is exactly how we prevent the distortion seen in the Wikipedia example: by padding with enough zeros, the circular convolution result becomes identical to the true linear convolution result.

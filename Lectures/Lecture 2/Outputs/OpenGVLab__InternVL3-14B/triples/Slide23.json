@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"plot3(x,y,z)\", \"p\":\"uses\", \"o\":\"3D line plot of x, y, z data.\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Use plot 3 of x, y, z to make a 3D line plot.\"},\n    {\"s\":\"mesh(x_ax,y_ax,z_mat)\", \"p\":\"represents\", \"o\":\"surface plot.\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For surfaces, use the mesh command — it draws a grid over the surface defined by z values.\"},\n    {\"s\":\"contour(z_mat)\", \"p\":\"represents\", \"o\":\"contour plot of z.\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If you want a contour plot — use contour z matrix.\"},\n    {\"s\":\"axis([xmin xmax ymin ymax])\", \"p\":\"uses\", \"o\":\"change axes\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You can also control the axis limits with axis.\"},\n    {\"s\":\"title('My title')\", \"p\":\"uses\", \"o\":\"add",
+  "parsed": {
+    "s": "axis([xmin xmax ymin ymax])",
+    "p": "uses",
+    "o": "change axes",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "You can also control the axis limits with axis."
+    ]
+  }
+}

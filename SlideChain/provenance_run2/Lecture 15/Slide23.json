@@ -1,0 +1,114 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "fanbeam function"
+          },
+          {
+            "category": "data_processing",
+            "term": "projection data"
+          },
+          {
+            "category": "modality",
+            "term": "fan-beam geometry"
+          },
+          {
+            "category": "instrumentation",
+            "term": "rotation angles"
+          },
+          {
+            "category": "data_processing",
+            "term": "input image"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector spacing"
+          },
+          {
+            "category": "workflow",
+            "term": "full rotation"
+          }
+        ],
+        "evidence": [
+          "This function calculates projection data for a specified fan-beam geometry.",
+          "Rotation angles (\u03b8) fixed at 0 to 360 degrees",
+          "sensor positions",
+          "input image",
+          "distance to object",
+          "spacing between sensors",
+          "always assumes a full rotation"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "D is the distance from the source vertex to the object\u2019s center of rotation."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "distance to object (D)",
+        "p": "uses",
+        "s": "fanbeam function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "flexibility to adjust sensor spacing"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Calculates projection data for a specified fan beam geometry",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "projection data",
+            "p": "uses",
+            "s": "fanbeam"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "FanSensorSpacing, dsensor1 are optional"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "D - distance to object"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "distance to object",
+        "p": "uses",
+        "s": "fanbeam"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "scanner geometry"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

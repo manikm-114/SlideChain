@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"low-pass filtering\",\n      \"p\": \"produces\",\n      \"o\": \"smoothed version of the original\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here, we’ve applied a low-pass filter. That means we kept only the low-frequency components — those near the center of the Fourier spectrum — and removed the rest. You can see the filtered spectrum just below. The result, shown in the middle image above, is a smoothed version of the original — the fine details are gone, and only the broad, soft structures remain.\"\n    },\n    {\n      \"s\": \"high-pass filtering\",\n      \"p\": \"produces\",\n      \"o\": \"edges\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This time we’ve done the opposite. We removed the low frequencies and kept only a selected band of high-frequency components. You can see that in the frequency plot — a ring where the center is zeroed out. The corresponding spatial image above now reveals only the edges — the sharp transitions in intensity.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "high-pass filtering",
+        "p": "produces",
+        "o": "edges",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This time we’ve done the opposite. We removed the low frequencies and kept only a selected band of high-frequency components. You can see that in the frequency plot - a ring where the center is zeroed out. The corresponding spatial image above now reveals only the edges - the sharp transitions in intensity."
+      }
+    ]
+  }
+}

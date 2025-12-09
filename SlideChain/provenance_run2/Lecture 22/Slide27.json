@@ -1,0 +1,185 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "pulsed wave Doppler"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta functions"
+          },
+          {
+            "category": "physics",
+            "term": "echo"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "pulse"
+          },
+          {
+            "category": "anatomy",
+            "term": "tissue"
+          },
+          {
+            "category": "physics",
+            "term": "motion"
+          },
+          {
+            "category": "physics",
+            "term": "flow"
+          }
+        ],
+        "evidence": [
+          "The second mode we use is called pulsed wave Doppler.",
+          "almost like delta functions",
+          "echo back",
+          "transmit a series of short pulses",
+          "tissue",
+          "measure motion and flow",
+          "flow at specific depths within the body"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses",
+            "modalities": [
+              "text"
+            ],
+            "o": "series of short pulses",
+            "p": "uses",
+            "s": "Pulsed wave Doppler"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "to measure motion and flow at specific depths within the body",
+            "modalities": [
+              "text"
+            ],
+            "o": "motion and flow",
+            "p": "measures",
+            "s": "Pulsed wave Doppler"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "specific depths"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "pulsed wave Doppler"
+          },
+          {
+            "category": "workflow",
+            "term": "transmit a series of short pulses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "almost like delta functions"
+          },
+          {
+            "category": "workflow",
+            "term": "separated in time"
+          },
+          {
+            "category": "physics",
+            "term": "each pulse travels into the tissue, reflects from structures, and returns to the transducer"
+          },
+          {
+            "category": "physics",
+            "term": "measure motion and flow at specific depths within the body"
+          }
+        ],
+        "evidence": [
+          "The second mode we use is called pulsed wave Doppler.",
+          "In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses - almost like delta functions - separated in time.",
+          "Each pulse travels into the tissue, reflects from structures, and returns to the transducer.",
+          "to measure motion and flow at specific depths within the body"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Pulsed wave Doppler"
+          },
+          {
+            "category": "signal_processing",
+            "term": "short pulses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "series of short pulses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "pulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echo"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "mathematics",
+            "term": "time axis"
+          },
+          {
+            "category": "signal_processing",
+            "term": "repeats again and again"
+          }
+        ],
+        "evidence": [
+          "In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses - almost like delta functions - separated in time.",
+          "Each pulse travels into the tissue, reflects from structures, and returns to the transducer. The process repeats again and again, one pulse at a time, to measure motion and flow at specific depths within the body."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this mode, we do not send ultrasound continuously. Instead, we transmit a series of short pulses - almost like delta functions - separated in time.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Ultrasound",
+            "p": "uses",
+            "s": "Pulsed wave Doppler"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

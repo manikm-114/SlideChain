@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T16:36:12.152517+00:00",
+  "text_length": 1381,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOnce we start driving one side of the material — continuously pushing and pulling — the wave begins to propagate through the medium.\nEach small element of the tissue responds a little later than the one before it. So, if you look along the depth of the tissue, every point is moving up and down in the same pattern, but with a small phase delay.\n\nThat delay is what makes the wave travel forward. You still see the same waveform shape, but each point along the medium is slightly out of sync — slightly shifted in phase.\n\nThat’s what we call wave propagation — the motion is passed from one particle to the next, not instantaneously, but through a sequence of tiny, delayed reactions.\nIf the material were completely rigid, like a solid stick, every part would move together at once, and there would be no wave. But because biological tissue is elastic, parts of it move at slightly different times — and that’s exactly what allows the wave to form and travel.\n\nMathematically, if we focus on one physical quantity — say displacement w, or pressure p — and express all the other variables, like acceleration and velocity, in terms of that single variable, we can combine them into a single second-order differential equation.\n\nThat equation is called the wave equation, and it beautifully describes how the disturbance moves through the medium as a function of both space and time.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"acceleration\", \"p\":\"depends_on\", \"o\":\"displacement\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "acceleration",
+        "p": "depends_on",
+        "o": "displacement",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "<short quote from SLIDE_TEXT>"
+      }
+    ]
+  }
+}

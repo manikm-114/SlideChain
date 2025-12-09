@@ -1,0 +1,171 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "precess"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "energy state"
+          },
+          {
+            "category": "physics",
+            "term": "net magnetization vector"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "magnetization"
+          }
+        ],
+        "evidence": [
+          "Each proton carries a magnetic moment",
+          "these moments precess around the external magnetic field",
+          "aligned parallel to the magnetic field",
+          "slightly more occupy the lower-energy state",
+          "net magnetization vector",
+          "We can treat it as a classical vector that can tilt, rotate, or precess",
+          "So, magnetization is the bridge from the microscopic quantum world of spins to the macroscopic signals we use in MRI"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This is what we call the net magnetization vector, often denoted as M.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "net vector pointing along the direction of the magnetic field",
+            "p": "represents",
+            "s": "magnetization"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Because the magnetic moments are vectors, those that are opposite to each other will cancel out in the transverse plane.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "magnetic moments",
+            "p": "depends_on",
+            "s": "net magnetization vector"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "So, magnetization is the bridge from the microscopic quantum world of spins to the macroscopic signals we use in MRI.",
+            "modalities": [
+              "text"
+            ],
+            "o": "macroscopic signals",
+            "p": "produces",
+            "s": "magnetization"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The vector sum of all of the magnetic moments only has a z (longitudinal) component, with no component in the xy (transverse) plane.",
+            "modalities": [
+              "text"
+            ],
+            "o": "net magnetization",
+            "p": "represents",
+            "s": "net magnetization vector"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "when we add up all of their contributions, we obtain a single net vector pointing along the direction of the magnetic field"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The vector sum of all of the magnetic moments only has a z (longitudinal) component, with no component in the xy (transverse) plane."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "magnetic moments of protons",
+        "p": "uses",
+        "s": "net magnetization"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "magnetization"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "net magnetization vector"
+          },
+          {
+            "category": "physics",
+            "term": "collective magnetization vector"
+          },
+          {
+            "category": "physics",
+            "term": "classical vector"
+          },
+          {
+            "category": "physics",
+            "term": "quantum world"
+          },
+          {
+            "category": "physics",
+            "term": "macroscopic signals"
+          }
+        ],
+        "evidence": [
+          "Each proton carries a magnetic moment, and as we have discussed, these moments precess around the external magnetic field.",
+          "In the population of protons, slightly more occupy the lower-energy state, aligned parallel to the magnetic field, while slightly fewer are in the higher-energy, anti-parallel state.",
+          "This imbalance, even though very small, is crucial.",
+          "So, magnetization is the bridge from the microscopic quantum world of spins to the macroscopic signals we use in MRI."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

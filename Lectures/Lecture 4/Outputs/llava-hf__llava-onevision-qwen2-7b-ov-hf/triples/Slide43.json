@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide43",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s take a closer look at the graphical differences between convolution, cross-correlation, and autocorrelation.\nOn the left, we see convolution.\u000bFunction f is in blue, and function g is in red.\u000bIn convolution, g is first flipped horizontally, then shifted, multiplied with f, and finally integrated or summed.\u000bAs g slides across f, the overlapping area is computed at each step — producing the black output curve below.\nIn the middle, we have cross-correlation.\u000bIt follows the same steps as convolution, except there’s no flipping of g.\u000bWe simply shift g across f, multiply at each point, and accumulate the result.\u000bSo visually, the shapes are the same, but the symmetry is different — this matters in pattern alignment and signal comparison.\nOn the right, we see autocorrelation.\u000bThis is a special case of cross-correlation where the same function is compared with itself.\u000bSo g and f are the same, and we measure how well the signal matches its own shifted versions.\u000bThe result usually peaks at zero shift — showing maximum similarity with itself — and falls off on either side.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"convolution\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"function f and function g\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"Function f is in blue, and function g is in red. In convolution, g is first flipped horizontally, then shifted, multiplied with f, and finally integrated or summed.\"}\n  ],\n  \"triples\": [\n    {\"s\":\"cross-correlation\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"function f and function g\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"It follows the same steps as convolution, except there’s no flipping of g. We simply shift g across f, multiply at each point, and accumulate the result.\"}\n  ],\n  \"triples\": [\n    {\"s\":\"autocorrelation\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"function f and function g",
+  "parsed": {
+    "s": "cross-correlation",
+    "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+    "o": "function f and function g",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "It follows the same steps as convolution, except there’s no flipping of g. We simply shift g across f, multiply at each point, and accumulate the result."
+    ]
+  }
+}

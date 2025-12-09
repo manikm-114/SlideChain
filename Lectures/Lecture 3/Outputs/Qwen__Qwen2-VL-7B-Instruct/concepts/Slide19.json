@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide19",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:12:20.533287+00:00",
+  "text_length": 547,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow consider homogeneity, or the scaling property. If a system produces output K1 for input F1, then scaling the input—multiplying it by some factor—should scale the output by the same factor. For example, if we double the brightness of an image input, the output image should also be twice as bright.\nThese two properties—additivity and homogeneity—are at the heart of linear systems. Understanding them clearly is essential, because they allow us to predict how systems behave, simplify complex problems, and build reliable imaging technologies.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Homogeneity\", \"category\": \"signal_processing\"},\n    {\"term\": \"Scaling property\", \"category\": \"signal_processing\"},\n    {\"term\": \"Linear systems\", \"category\": \"signal_processing\"},\n    {\"term\": \"Additivity\", \"category\": \"signal_processing\"},\n    {\"term\": \"Output scaling\", \"category\": \"signal_processing\"},\n    {\"term\": \"Brightness scaling\", \"category\": \"signal_processing\"},\n    {\"term\": \"Predicting system behavior\", \"category\": \"signal_processing\"},\n    {\"term\": \"Simplifying complex problems\", \"category\": \"signal_processing\"},\n    {\"term\": \"Building reliable imaging technologies\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"These two properties—additivity and homogeneity—are at the heart of linear systems.\",\n    \"Understanding them clearly is essential, because they allow us to predict how systems behave, simplify complex problems, and build reliable imaging technologies.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Homogeneity",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Scaling property",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Linear systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Additivity",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "These two properties-additivity and homogeneity-are at the heart of linear systems.",
+      "Understanding them clearly is essential, because they allow us to predict how systems behave, simplify complex problems, and build reliable imaging technologies."
+    ]
+  }
+}

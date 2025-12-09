@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide38",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).\nPositive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”\n\nThe formula is:\nPPV equals True Positives over (True Positives plus False Positives).\nSo, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\nOn the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”\n\nThe formula is:\nNPV equals True Negatives over (True Negatives plus False Negatives).\nSo, among all the patients labeled as normal, NPV is the fraction who truly have no disease.\nLet’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.\n\nSo, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Positive predictive value (PPV)\", \"p\":\"measures\",\n     \"o\":\"True Positives over (True Positives plus False Positives)\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Positive predictive value (PPV)",
+        "p": "measures",
+        "o": "True Positives over (True Positives plus False Positives)",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease."
+      }
+    ]
+  }
+}

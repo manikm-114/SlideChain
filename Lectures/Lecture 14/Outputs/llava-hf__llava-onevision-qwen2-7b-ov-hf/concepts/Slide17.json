@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide17",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nBuilding on this heuristic idea, we performed a rigorous linear system analysis and published a journal paper in Medical Physics. We performed modeling the signal response of the CT system to compare the two scanning modes as I mentioned earlier in the lecture; that is, multiple scanning circles versus a spiral or helical scanning trajectory.\n\nOur key theoretical conclusion is that, for a given X-ray dose, meaning a fixed number of total incident photons, you can choose to scan in either the conventional step-and-shoot mode or helical mode to have multiple scanning circles or a single helical trajectory. Given the same X-ray dose, helical CT offers substantially better longitudinal resolution than conventional step-and-shoot.\nThis improvement comes from the inherent capability of helical CT to perform retrospective reconstruction—that is, reconstructed overlapping slices along the longitudinal axis.\n\nIn our papers, we specifically recommended reconstructing roughly three to four slices per helical turn for the best results.\nThus, helical CT not only improves temporal resolution but also enhances longitudinal resolution, so there’s no loss in image quality. This important finding helps explain why helical scanning is so beneficial.\n\nSome believe that you gain temporal resolution with helical scanning but lose longitudinal resolution. However, with proper overlapping reconstruction, both temporal and longitudinal resolution can be improved. This is a key insight from our earlier work and kind of a free-lunch in clinical practice.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"helical CT\", \"category\": \"reconstruction\"},\n    {\"term\": \"longitudinal resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"X-ray dose\", \"category\": \"physics\"},\n    {\"term\": \"step-and-shoot mode\", \"category\": \"modality\"},\n    {\"term\": \"helical scanning\", \"category\": \"modality\"},\n    {\"term\": \"retrospective reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"temporal resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"image quality\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction—that is, reconstructed overlapping slices along the longitudinal axis.\", \"Thus, helical CT not only improves temporal resolution but also enhances longitudinal resolution, so there’s no loss in image quality.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "helical CT",
+        "category": "reconstruction"
+      },
+      {
+        "term": "longitudinal resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "X-ray dose",
+        "category": "physics"
+      },
+      {
+        "term": "step-and-shoot mode",
+        "category": "modality"
+      },
+      {
+        "term": "helical scanning",
+        "category": "modality"
+      },
+      {
+        "term": "retrospective reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "temporal resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "image quality",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction-that is, reconstructed overlapping slices along the longitudinal axis.",
+      "Thus, helical CT not only improves temporal resolution but also enhances longitudinal resolution, so there’s no loss in image quality."
+    ]
+  }
+}

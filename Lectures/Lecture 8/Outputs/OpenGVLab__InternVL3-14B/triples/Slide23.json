@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Inverse Discrete Fourier Transform\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original functional samples f[n]\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Once you have these discrete Fourier components f̂[m], m = 0,1,…,N−1, the original functional samples f[n], n = 0,1,…,N−1, can be recovered using the inverse discrete Fourier transform:\"\n    },\n    {\n      \"s\": \"Inverse Discrete Fourier Transform\",\n      \"p\": \"uses\",\n      \"o\": \"sum from m equals zero to N minus one of f-hat of m, multiplied by e to the power of plus j, two pi, m times n divided by N\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"f[n] = 1/N * sum_{m=0}^{N-1} f̂[m] * e^{j2πmn/N}, m = 0,1,…,N−1.\"\n    },\n    {\n      \"",
+  "parsed": {
+    "s": "Inverse Discrete Fourier Transform",
+    "p": "uses",
+    "o": "sum from m equals zero to N minus one of f-hat of m, multiplied by e to the power of plus j, two pi, m times n divided by N",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "f[n] = 1/N * sum_{m=0}^{N-1} f̂[m] * e^{j2πmn/N}, m = 0,1,…,N−1."
+    ]
+  }
+}

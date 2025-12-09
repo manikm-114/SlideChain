@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide35",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis example shows how plot resolution affects curve smoothness.\nIn a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.\nWe plot each result in a subplot grid, with labels and titles showing the resolution.\nWith each pause, you can see the graph getting smoother — a great way to visualize the impact of sampling density.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"plot resolution\", \"category\": \"software\"},\n    {\"term\": \"curve smoothness\", \"category\": \"mathematics\"},\n    {\"term\": \"linspace\", \"category\": \"software\"},\n    {\"term\": \"x over one plus x squared\", \"category\": \"mathematics\"},\n    {\"term\": \"subplot grid\", \"category\": \"software\"},\n    {\"term\": \"pause\", \"category\": \"software\"},\n    {\"term\": \"graph getting smoother\", \"category\": \"software\"},\n    {\"term\": \"sampling density\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"This example shows how plot resolution affects curve smoothness.\", \"In a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.\", \"We plot each result in a subplot grid, with labels and titles showing the resolution.\", \"With each pause, you can see the graph getting smoother — a great way to visualize the impact of sampling density.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "plot resolution",
+        "category": "software"
+      },
+      {
+        "term": "curve smoothness",
+        "category": "mathematics"
+      },
+      {
+        "term": "linspace",
+        "category": "software"
+      },
+      {
+        "term": "x over one plus x squared",
+        "category": "mathematics"
+      },
+      {
+        "term": "subplot grid",
+        "category": "software"
+      },
+      {
+        "term": "pause",
+        "category": "software"
+      },
+      {
+        "term": "graph getting smoother",
+        "category": "software"
+      },
+      {
+        "term": "sampling density",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This example shows how plot resolution affects curve smoothness.",
+      "In a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.",
+      "We plot each result in a subplot grid, with labels and titles showing the resolution.",
+      "With each pause, you can see the graph getting smoother - a great way to visualize the impact of sampling density."
+    ]
+  }
+}

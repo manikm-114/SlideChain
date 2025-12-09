@@ -1,0 +1,13 @@
+Let’s take a step back now and look at how analog signals are converted to digital.
+At the top, we have a smooth, continuous signal — this is your analog signal — represented here as f of t, where t is time.
+
+Now, to digitize this signal, we begin with the process of sampling. In the middle plot, you see a train of delta functions — these are evenly spaced impulses in time. Each one of them marks a point where we will sample the analog signal.
+
+Next, what do we do?
+We multiply the continuous signal by this train of impulses. That’s shown in the bottom figure.
+This multiplication essentially picks out the values of the original signal at those discrete time points — and sets everything else to zero. In other words, it’s like punching holes in the continuous function, keeping only the values at regular intervals.
+The result is a series of weighted impulses, where the height of each spike corresponds to the signal’s value at that instant.
+And this is the essence of analog-to-digital conversion.
+
+We’ve turned a smooth, continuous-time signal into a discrete-time representation — something that can now be stored, processed, and transmitted digitally.
+This is the first key step in digital signal processing — and it's entirely grounded in the mathematics of the sampling theorem we just discussed.

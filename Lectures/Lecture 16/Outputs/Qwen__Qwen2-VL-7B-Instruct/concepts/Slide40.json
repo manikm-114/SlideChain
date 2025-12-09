@@ -1,0 +1,12 @@
+{
+  "slide_id": "Slide40",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T10:50:21.009980+00:00",
+  "text_length": 0,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\n\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"gamma-ray\", \"category\": \"physics\"},\n    {\"term\": \"photoelectric interactions\", \"category\": \"physics\"},\n    {\"term\": \"radionuclides\", \"category\": \"physics\"},\n    {\"term\": \"collimator\", \"category\": \"instrumentation\"},\n    {\"term\": \"gamma-camera\", \"category\": \"instrumentation\"},\n    {\"term\": \"scattered gamma-rays\", \"category\": \"physics\"},\n    {\"term\": \"energy of gamma-ray\", \"category\": \"physics\"},\n    {\"term\": \"100 keV\", \"category\": \"physics\"},\n    {\"term\": \"200 keV\", \"category\": \"physics\"},\n    {\"term\": \"ideal energy for imaging\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"The energy of the emitted gamma-ray is 140 keV.\",\n    \"Below an energy of 100 keV most gamma-rays are absorbed in the body via photoelectric interactions.\",\n    \"Above an energy of 200 keV, gamma-rays penetrate the thin collimator septa used in gamma cameras to reject unwanted, scattered gamma-rays.\",\n    \"Therefore, the ideal energy",
+  "parsed": {
+    "term": "ideal energy for imaging",
+    "category": "physics"
+  }
+}

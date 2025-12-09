@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide32",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo the continuous-domain expression can be expressed in terms of discrete data points. You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering. \n\nYou can read more if you are interested, but anyway, these are practical implementation details about high-pass filtering for filtered backprojection. What I have explained here is only the two-dimensional case.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"filtered projection profile\", \"p\":\"produces\",\n     \"o\":\"sampled data points\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "filtered projection profile",
+        "p": "produces",
+        "o": "sampled data points",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering."
+      }
+    ]
+  }
+}

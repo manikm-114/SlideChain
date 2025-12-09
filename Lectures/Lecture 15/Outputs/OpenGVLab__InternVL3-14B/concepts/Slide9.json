@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"back-projection\", \"category\": \"reconstruction\"},\n    {\"term\": \"sinogram\", \"category\": \"data_processing\"},\n    {\"term\": \"projection data\", \"category\": \"data_processing\"},\n    {\"term\": \"reconstructing CT slices\", \"category\": \"reconstruction\"},\n    {\"term\": \"combine back projections\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"The next key idea is back-projection, which is the standard method for reconstructing CT slices.\",\n    \"we start with the sinogram, which contains all the projection data.\",\n    \"we back-project it—that means we spread that projection back across the image space\",\n    \"When we combine them, the overlap starts to suggest the locations\",\n    \"combine back-projections gradually approximate the true shapes\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "back-projection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "sinogram",
+        "category": "data_processing"
+      },
+      {
+        "term": "projection data",
+        "category": "data_processing"
+      },
+      {
+        "term": "reconstructing CT slices",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "The next key idea is back-projection, which is the standard method for reconstructing CT slices.",
+      "we start with the sinogram, which contains all the projection data.",
+      "we back-project it-that means we spread that projection back across the image space",
+      "When we combine them, the overlap starts to suggest the locations",
+      "combine back-projections gradually approximate the true shapes"
+    ]
+  }
+}

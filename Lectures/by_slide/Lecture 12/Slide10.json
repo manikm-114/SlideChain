@@ -1,0 +1,189 @@
+{
+  "lecture": "Lecture 12",
+  "slide_id": "Slide10",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide10.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide10.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "portable",
+              "category": "instrumentation"
+            },
+            {
+              "term": "compact",
+              "category": "instrumentation"
+            },
+            {
+              "term": "X-ray device",
+              "category": "instrumentation"
+            },
+            {
+              "term": "Scotch tape",
+              "category": "physics"
+            },
+            {
+              "term": "generate X-rays",
+              "category": "physics"
+            },
+            {
+              "term": "cheap and convenient",
+              "category": "software"
+            },
+            {
+              "term": "X-ray imaging",
+              "category": "modality"
+            },
+            {
+              "term": "integrated into a smartphone",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Imagine carrying a powerful but compact X-ray device - perhaps even something integrated into a smartphone.",
+            "Nothing is stopping us from thinking outside the box.",
+            "If you’re curious, you can look up this fascinating idea."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"portable\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"compact\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"X-ray device\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"Scotch tape\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"generate X-rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"cheap and convenient\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"X-ray imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"portable X-ray device\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"integrated into a smartphone\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone.\\\", \\\"Nothing is stopping us from thinking outside the box.\\\", \\\"If you’re curious, you can look up this fascinating idea.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"portable\", \"category\": \"instrumentation\"}, {\"term\": \"compact\", \"category\": \"instrumentation\"}, {\"term\": \"X-ray device\", \"category\": \"instrumentation\"}, {\"term\": \"Scotch tape\", \"category\": \"physics\"}, {\"term\": \"generate X-rays\", \"category\": \"physics\"}, {\"term\": \"cheap and convenient\", \"category\": \"software\"}, {\"term\": \"X-ray imaging\", \"category\": \"modality\"}, {\"term\": \"integrated into a smartphone\", \"category\": \"software\"}], \"evidence\": [\"Imagine carrying a powerful but compact X-ray device - perhaps even something integrated into a smartphone.\", \"Nothing is stopping us from thinking outside the box.\", \"If you’re curious, you can look up this fascinating idea.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide10.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"portable X-ray device\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"compact X-ray device\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide10.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-ray imaging",
+              "category": "modality"
+            },
+            {
+              "term": "portable",
+              "category": "instrumentation"
+            },
+            {
+              "term": "compact",
+              "category": "instrumentation"
+            },
+            {
+              "term": "Scotch tape",
+              "category": "instrumentation"
+            },
+            {
+              "term": "generate X-rays",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "Looking into the future, X-ray imaging may become far more portable and accessible.",
+            "Imagine carrying a powerful but compact X-ray device",
+            "there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.",
+            "how to make X-ray imaging as cheap and convenient as possible"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"portable\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"compact\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"Scotch tape\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"generate X-rays\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Looking into the future, X-ray imaging may become far more portable and accessible.\\\",\\n    \\\"Imagine carrying a powerful but compact X-ray device\\\",\\n    \\\"there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\\\",\\n    \\\"how to make X-ray imaging as cheap and convenient as possible\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"X-ray imaging\", \"category\": \"modality\"}, {\"term\": \"portable\", \"category\": \"instrumentation\"}, {\"term\": \"compact\", \"category\": \"instrumentation\"}, {\"term\": \"Scotch tape\", \"category\": \"instrumentation\"}, {\"term\": \"generate X-rays\", \"category\": \"physics\"}], \"evidence\": [\"Looking into the future, X-ray imaging may become far more portable and accessible.\", \"Imagine carrying a powerful but compact X-ray device\", \"there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\", \"how to make X-ray imaging as cheap and convenient as possible\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide10.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "X-ray imaging",
+              "p": "produces",
+              "o": "X-rays",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"X-ray imaging\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"future portable and accessible technology\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.9, \\\"evidence\\\":\\\"Looking into the future, X-ray imaging may become far more portable and accessible.\\\"},\\n    {\\\"s\\\":\\\"X-ray imaging\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"X-rays\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.9, \\\"evidence\\\":\\\"there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"X-ray imaging\", \"p\": \"produces\", \"o\": \"X-rays\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide10.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-ray imaging",
+              "category": "modality"
+            },
+            {
+              "term": "portable",
+              "category": "software"
+            },
+            {
+              "term": "smartphone",
+              "category": "instrumentation"
+            },
+            {
+              "term": "Scotch tape",
+              "category": "signal_processing"
+            },
+            {
+              "term": "X-rays",
+              "category": "physics"
+            },
+            {
+              "term": "future",
+              "category": "algorithm"
+            },
+            {
+              "term": "medicine",
+              "category": "modality"
+            },
+            {
+              "term": "technology",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "X-ray imaging may become far more portable and accessible.",
+            "Imagine carrying a powerful but compact X-ray device - perhaps even something integrated into a smartphone.",
+            "There are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:35:01.587683+00:00\", \"text_length\": 781, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"portable\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"accessibility\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"smartphone\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"Scotch tape\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"future\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"medicine\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"technology\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"X-ray imaging may become far more portable and accessible.\\\",\\n    \\\"Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone.\\\",\\n    \\\"There are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"X-ray imaging\", \"category\": \"modality\"}, {\"term\": \"portable\", \"category\": \"software\"}, {\"term\": \"smartphone\", \"category\": \"instrumentation\"}, {\"term\": \"Scotch tape\", \"category\": \"signal_processing\"}, {\"term\": \"X-rays\", \"category\": \"physics\"}, {\"term\": \"future\", \"category\": \"algorithm\"}, {\"term\": \"medicine\", \"category\": \"modality\"}, {\"term\": \"technology\", \"category\": \"modality\"}], \"evidence\": [\"X-ray imaging may become far more portable and accessible.\", \"Imagine carrying a powerful but compact X-ray device - perhaps even something integrated into a smartphone.\", \"There are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide10.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T06:58:50.054638+00:00\", \"text_length\": 781, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide10.json",
+        "parsed": {
+          "term": "new ideas like these could turn out to be very important for both medicine and technology",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:01:43.741075+00:00\", \"text_length\": 781, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"X-ray imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"X-ray imaging may become far more portable and accessible\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"X-ray device\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"integrated into a smartphone\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"peeling Scotch tape can generate X-rays under certain conditions\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"new ideas like these could turn out to be very important for both medicine and technology\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Looking into the future, X-ray imaging may become far more portable and accessible.\\\",\\n    \\\"Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone.\\\",\\n    \\\"Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\\\",\\n    \\\"New ideas like these could turn out to be very important for both medicine and technology.\\\"\", \"parsed\": {\"term\": \"new ideas like these could turn out to be very important for both medicine and technology\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide10.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide10\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:09:32.296400+00:00\", \"text_length\": 781, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLooking into the future, X-ray imaging may become far more portable and accessible. Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone. It may sound futuristic, but nothing is stopping us from thinking outside the box.\\n\\nOne open question is how to make X-ray imaging as cheap and convenient as possible. Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions. If you’re curious, you can look up this fascinating idea.\\nSo while today we use large, expensive machines, the future may bring surprising and creative ways to generate and use X-rays. New ideas like these could turn out to be very important for both medicine and technology.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"X-ray imaging\\\",\\n      \\\"p\\\": \\\"may become\\\",\\n      \\\"o\\\": \\\"far more portable and accessible\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Looking into the future, X-ray imaging may become far more portable and accessible.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"X-ray imaging\\\",\\n      \\\"p\\\": \\\"may be integrated into\\\",\\n      \\\"o\\\": \\\"a smartphone\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.8,\\n      \\\"evidence\\\": \\\"Imagine carrying a powerful but compact X-ray device — perhaps even something integrated into a smartphone.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Scotch tape\\\",\\n      \\\"p\\\": \\\"can generate\\\",\\n      \\\"o\\\": \\\"X-rays\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.7,\\n      \\\"evidence\\\": \\\"Believe it or not, there are papers suggesting that even something as simple as peeling Scotch tape can generate X-rays under certain conditions.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

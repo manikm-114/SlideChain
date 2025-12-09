@@ -1,0 +1,11 @@
+Now let’s talk about loops — and more specifically, independent loops.
+
+A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once. But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.
+
+In this example, we have three independent loops:
+Loop 1 includes the voltage source, resistor R 1, and resistor R 2.
+Loop 2 includes resistor R 2 and resistor R 3.
+Loop 3 includes resistor R 3 and the current source.
+You might notice that other closed paths exist — for example, one that goes all the way around the outside — but these can be derived from combinations of the independent loops. They don’t give us any new information.
+
+The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff’s Voltage Law. These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor.

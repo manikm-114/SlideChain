@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide1",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"GE’s “Revolution CT”\",\n      \"p\": \"produces\",\n      \"o\": \"high-resolution images\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This technology allows us to capture extremely high-resolution images of the human body.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"CT image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we will give the last MatLab lecture to explore how it can be used to demonstrate CT image reconstruction\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "reconstructs_with",
+        "o": "CT image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we will give the last MatLab lecture to explore how it can be used to demonstrate CT image reconstruction"
+      }
+    ]
+  }
+}

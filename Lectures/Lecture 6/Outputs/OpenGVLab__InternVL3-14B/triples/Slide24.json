@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transformation\",\n      \"p\": \"represents\",\n      \"o\": \"additivity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So this is just, again, this part copied from the Stanford textbook. So you have a function f and g. There are Fourier transformations. So you have Fourier transformation. You have this summation, the summation of the original function. Then you perform Fourier transformation. The result is the same as the summation of the Fourier transformation of f and the Fourier transformation of g. So this is additivity.\"\n    },\n    {\n      \"s\": \"Fourier transformation\",\n      \"p\": \"represents\",\n      \"o\": \"scaling or homogeneity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"How about the scaling or homogeneity? So if f is scaled by alpha, then we perform Fourier transform. That's the same as performing the Fourier transform of f. Then you scale the result by the same scaling factor.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier transformation",
+        "p": "represents",
+        "o": "additivity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "So this is just, again, this part copied from the Stanford textbook. So you have a function f and g. There are Fourier transformations. So you have Fourier transformation. You have this summation, the summation of the original function. Then you perform Fourier transformation. The result is the same as the summation of the Fourier transformation of f and the Fourier transformation of g. So this is additivity."
+      },
+      {
+        "s": "Fourier transformation",
+        "p": "represents",
+        "o": "scaling or homogeneity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "How about the scaling or homogeneity? So if f is scaled by alpha, then we perform Fourier transform. That's the same as performing the Fourier transform of f. Then you scale the result by the same scaling factor."
+      }
+    ]
+  }
+}

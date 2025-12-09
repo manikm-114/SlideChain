@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide24",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere is a summary of the different types of X-ray interactions with matter. For medical X-rays, the two dominant processes are the photoelectric effect and Compton scattering.\nScattering can be divided into Compton and coherent (or Rayleigh) scattering. But in practice, coherent scattering contributes only a very small portion and is usually not considered important for medical imaging.\n\nNow, in clinical X-ray systems, we typically operate with tube voltages up to about 140 kilovolts peak, or kVp. When the energy is below about 80 kVp, the photoelectric effect is the dominant interaction. Above 80 kVp, Compton scattering becomes more significant. This is why, in diagnostic imaging, we see a transition in the relative contributions of these two effects.\n\nTraditionally, scattering was treated mainly as a nuisance because it reduces image contrast. But modern research shows that small-angle Compton scattering actually carries valuable information. In fact, subtle differences in scattering patterns may help distinguish benign from malignant tumors. However, detecting and analyzing this information requires specialized techniques, which go beyond the scope of our class.\n\nIn addition to these, there are two higher-energy interactions: pair production and photodisintegration. These processes become relevant only when the photon energy is very high, well above the diagnostic range. For example, in radiation therapy, where high-energy X-rays or proton beams are directed at tumors, pair production and photodisintegration play important roles. In that context, the goal is not diagnosis, but treatment — essentially using radiation to destroy tumor tissue.\n\nSo to summarize: in diagnostic radiology, photoelectric absorption and Compton scattering are the key effects. For therapeutic applications at higher energies, pair production and photodisintegration also come into play.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"photoelectric effect\", \"category\": \"physics\"},\n    {\"term\": \"Compton scattering\", \"category\": \"physics\"},\n    {\"term\": \"X-ray interactions with matter\", \"category\": \"physics\"},\n    {\"term\": \"tube voltage\", \"category\": \"instrumentation\"},\n    {\"term\": \"diagnostic imaging\", \"category\": \"modality\"},\n    {\"term\": \"scattering\", \"category\": \"physics\"},\n    {\"term\": \"pair production\", \"category\": \"physics\"},\n    {\"term\": \"photodisintegration\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"For medical X-rays, the two dominant processes are the photoelectric effect and Compton scattering.\", \"Traditionally, scattering was treated mainly as a nuisance because it reduces image contrast.\", \"In diagnostic radiology, photoelectric absorption and Compton scattering are the key effects.\", \"For therapeutic applications at higher energies, pair production and photodisintegration also come into play.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "photoelectric effect",
+        "category": "physics"
+      },
+      {
+        "term": "Compton scattering",
+        "category": "physics"
+      },
+      {
+        "term": "X-ray interactions with matter",
+        "category": "physics"
+      },
+      {
+        "term": "tube voltage",
+        "category": "instrumentation"
+      },
+      {
+        "term": "diagnostic imaging",
+        "category": "modality"
+      },
+      {
+        "term": "scattering",
+        "category": "physics"
+      },
+      {
+        "term": "pair production",
+        "category": "physics"
+      },
+      {
+        "term": "photodisintegration",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "For medical X-rays, the two dominant processes are the photoelectric effect and Compton scattering.",
+      "Traditionally, scattering was treated mainly as a nuisance because it reduces image contrast.",
+      "In diagnostic radiology, photoelectric absorption and Compton scattering are the key effects.",
+      "For therapeutic applications at higher energies, pair production and photodisintegration also come into play."
+    ]
+  }
+}

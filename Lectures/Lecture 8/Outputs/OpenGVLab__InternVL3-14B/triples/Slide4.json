@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Nyquist rate\",\n      \"p\": \"measures\",\n      \"o\": \"twice the maximum frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we sample at exactly twice that frequency — so at 2 hertz — we meet the Nyquist rate exactly.\"\n    },\n    {\n      \"s\": \"sampling at exactly 2 w\",\n      \"p\": \"produces\",\n      \"o\": \"aliasing problem\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That’s why, in practice, sampling exactly at 2 w is risky. To be safe, we require PPP — the spacing between repeated spectra in frequency — to be slightly greater than 2 w.\"\n    },\n    {\n      \"s\": \"pure sinusoid\",\n      \"p\": \"depends_on\",\n      \"o\": \"two unknowns\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For a pure sinusoid, two unknowns fully describe it: the amplitude and the phase.\"\n    }",
+  "parsed": {
+    "s": "pure sinusoid",
+    "p": "depends_on",
+    "o": "two unknowns",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "For a pure sinusoid, two unknowns fully describe it: the amplitude and the phase."
+    ]
+  }
+}

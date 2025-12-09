@@ -1,0 +1,19 @@
+Up to this point, everything we’ve talked about has been in one dimension. But in real-world applications—especially in imaging—we usually work with two-dimensional data. Think about a photograph, a CT slice, or an MRI frame. These are functions of two variables, not just one.
+So, does the Fourier series still apply? Absolutely. In fact, the transition to two dimensions is very smooth and intuitive.
+
+Let’s start with the formula at the top. This is the 2D Fourier transform, or more precisely, the 2D discrete Fourier series. It converts a spatial domain function into a frequency domain representation.
+
+We begin with a function f of m and n. Here, m and n are the spatial coordinates, like pixel row and column indices.
+Then we compute the capital F of x and y, which is the frequency-domain representation of the image. We get it using a double summation—from m equals 0 to M minus 1, and from n equals 0 to N minus 1.
+Each term in the sum includes f of m and n, multiplied by a complex exponential:e to the power negative j 2 pi times x times m over M plus y times n over N.
+This is just the 2D extension of what we did before in 1D—now applied along both spatial directions.
+
+Next, let’s look at the inverse transform—the formula at the bottom.
+Here, we reconstruct the original image, f of m and n, from its frequency components, F of x and y. Again, we use a double summation ranging from 0 to M minus 1 and N minus 1.
+And we add a normalization factor of 1 divided by M times N.
+The exponential now becomes:e to the power positive j 2 pi times x times m over M plus y times n over N.
+
+So once again, we’re projecting onto a set of complex exponential basis functions—just like in the 1D case, but now expanded to two dimensions.
+This idea even extends naturally to three dimensions, which is useful for things like volumetric imaging, 3D scans, or dynamic time-sequence data in medical imaging.
+
+So to summarize: the 2D Fourier series gives us a powerful way to analyze images in terms of spatial frequencies. It's conceptually the same as the 1D case—just applied in two directions simultaneously.

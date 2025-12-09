@@ -1,0 +1,153 @@
+{
+  "lecture": "Lecture 14",
+  "slide_id": "Slide24",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide24.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide24.json",
+        "parsed": {
+          "term": " Siemens scanner",
+          "category": "instrumentation"
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sub-region\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"piecewise polynomials\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"band-limited signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"ROI\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"chest CT scan\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\" Siemens scanner\\\", \\\"category\\\": \\\"instrumentation\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"In the new approach, we assume there is no known sub-region. Instead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\\", \\\"With this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\\", \\\"For example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\\", \\\"Here is a real dataset scanned on a Siemens scanner demonstrating this.\\\", \\\"Interior tomography is no longer a mathematical curiosity but delivers practically good reconstruction\", \"parsed\": {\"term\": \" Siemens scanner\", \"category\": \"instrumentation\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide24.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "ROI",
+              "p": "represents",
+              "o": "sub-regions",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"ROI\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"sub-regions\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"ROI\", \"p\": \"represents\", \"o\": \"sub-regions\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide24.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "piecewise polynomials",
+              "category": "mathematics"
+            },
+            {
+              "term": "band-limited signals",
+              "category": "signal_processing"
+            },
+            {
+              "term": "sparsity-based model",
+              "category": "algorithm"
+            },
+            {
+              "term": "interior reconstruction problem",
+              "category": "reconstruction"
+            },
+            {
+              "term": "chest CT scan",
+              "category": "modality"
+            },
+            {
+              "term": "Siemens scanner",
+              "category": "instrumentation"
+            }
+          ],
+          "evidence": [
+            "piecewise polynomials",
+            "band-limited signals",
+            "sparsity-based model",
+            "interior reconstruction problem",
+            "ROI",
+            "chest CT scan",
+            "Siemens scanner"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"piecewise polynomials\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"band-limited signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sparsity-based model\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"interior reconstruction problem\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"ROI\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"chest CT scan\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Siemens scanner\\\", \\\"category\\\": \\\"instrumentation\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"piecewise polynomials\\\",\\n    \\\"band-limited signals\\\",\\n    \\\"sparsity-based model\\\",\\n    \\\"interior reconstruction problem\\\",\\n    \\\"ROI\\\",\\n    \\\"chest CT scan\\\",\\n    \\\"Siemens scanner\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"piecewise polynomials\", \"category\": \"mathematics\"}, {\"term\": \"band-limited signals\", \"category\": \"signal_processing\"}, {\"term\": \"sparsity-based model\", \"category\": \"algorithm\"}, {\"term\": \"interior reconstruction problem\", \"category\": \"reconstruction\"}, {\"term\": \"chest CT scan\", \"category\": \"modality\"}, {\"term\": \"Siemens scanner\", \"category\": \"instrumentation\"}], \"evidence\": [\"piecewise polynomials\", \"band-limited signals\", \"sparsity-based model\", \"interior reconstruction problem\", \"ROI\", \"chest CT scan\", \"Siemens scanner\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide24.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Interior tomography",
+              "p": "reconstructs_with",
+              "o": "piecewise polynomials",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials."
+            },
+            {
+              "s": "Interior tomography",
+              "p": "reconstructs_with",
+              "o": "all data",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "you can reconstruct the whole chest from all data"
+            },
+            {
+              "s": "Interior tomography",
+              "p": "reconstructs_with",
+              "o": "truncated data",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Interior tomography\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"piecewise polynomials\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Interior tomography\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"all data\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"you can reconstruct the whole chest from all data\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Interior tomography\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"truncated data\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Interior tomography\", \"p\": \"reconstructs_with\", \"o\": \"piecewise polynomials\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\"}, {\"s\": \"Interior tomography\", \"p\": \"reconstructs_with\", \"o\": \"all data\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"you can reconstruct the whole chest from all data\"}, {\"s\": \"Interior tomography\", \"p\": \"reconstructs_with\", \"o\": \"truncated data\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide24.json",
+        "parsed": {
+          "term": "practically good reconstruction results",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:21:52.266427+00:00\", \"text_length\": 902, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"interior reconstruction problem\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"sparsity-based model\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"ROI (Region of Interest)\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"piecewise polynomials\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"band-limited signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"ROI decomposition\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"chest CT scan\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"interior tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"practically good reconstruction results\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\\",\\n    \\\"With this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\\",\\n    \\\"For example, in a chest CT scan, you can reconstruct the whole chest from all data or\", \"parsed\": {\"term\": \"practically good reconstruction results\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide24.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:41:54.170750+00:00\", \"text_length\": 902, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide24.json",
+        "parsed": {
+          "term": "interior reconstruction problem becomes solvable",
+          "category": "reconstruction"
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T07:31:57.736684+00:00\", \"text_length\": 902, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"there is no known sub-region\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"model the region of interest as composed of finitely many sub-regions\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"each modeled by piecewise polynomials\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"boundaries of these sub-regions need not be known in advance\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"this assumption matches the idea of band-limited signals from sampling theory\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sparsity-based model\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"interior reconstruction problem becomes solvable\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reconstruct the whole chest from all data or just from truncated data\", \"parsed\": {\"term\": \"interior reconstruction problem becomes solvable\", \"category\": \"reconstruction\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide24.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:39:29.021693+00:00\", \"text_length\": 902, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIn the new approach, we assume there is no known sub-region.\\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\\n\\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\\nThis assumption matches the idea of band-limited signals from sampling theory.\\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\\n\\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"The Region of Interest (ROI)\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"piecewise polynomial\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"The Region of Interest (ROI) is Piecewise Polynomial, or\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"interior tomography\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"all data or truncated data\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

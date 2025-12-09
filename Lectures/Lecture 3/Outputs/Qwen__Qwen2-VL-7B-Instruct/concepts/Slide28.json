@@ -1,0 +1,15 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:25:28.925381+00:00",
+  "text_length": 352,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nA capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition. If we focus on the relative change—the change from that initial state—the system behaves linearly. This shows how initial conditions affect our view of linearity, and why considering relative changes can be so useful.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"V-I Relationship for Capacitor\", \"category\": \"physics\"},\n    {\"term\": \"Dielectric\", \"category\": \"physics\"},\n    {\"term\": \"Individual Plates\", \"category\": \"physics\"},\n    {\"term\": \"Plate A\", \"category\": \"physics\"},\n    {\"term\": \"Plate B\", \"category\": \"physics\"},\n    {\"term\": \"8 mini capacitors in one\", \"category\": \"physics\"},\n    {\"term\": \"v = 1/C ∫i dt + v(t0)\", \"category\": \"mathematics\"},\n    {\"term\": \"i = C dv/dt\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"A capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition.\",\n    \"If we focus on the relative change—the change from that initial state—the system behaves linearly.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "A capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition.",
+      "If we focus on the relative change-the change from that initial state-the system behaves linearly."
+    ]
+  }
+}

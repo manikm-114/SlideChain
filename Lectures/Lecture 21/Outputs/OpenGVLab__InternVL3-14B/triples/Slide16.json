@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"particle velocity\", \"p\":\"measures\", \"o\":\"displacement\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"The particle velocity in the z direction u_z is given by the time derivative of the particle displacement: u_z = dW/dt\"},\n    {\"s\":\"pressure\", \"p\":\"measures\", \"o\":\"ultrasound wave\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"The pressure p, measured in Pa, of the ultrasound wave at a particular point in the z direction is given by p = ρc u_z\"},\n    {\"s\":\"intensity\", \"p\":\"represents\", \"o\":\"power per unit area\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"If you multiply pressure (which is force per area) by velocity (which is displacement over time), what you get is power per unit area, and that’s exactly what intensity represents\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "particle velocity",
+        "p": "measures",
+        "o": "displacement",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "The particle velocity in the z direction u_z is given by the time derivative of the particle displacement: u_z = dW/dt"
+      },
+      {
+        "s": "intensity",
+        "p": "represents",
+        "o": "power per unit area",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "If you multiply pressure (which is force per area) by velocity (which is displacement over time), what you get is power per unit area, and that’s exactly what intensity represents"
+      }
+    ]
+  }
+}

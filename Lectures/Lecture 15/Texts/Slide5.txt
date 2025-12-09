@@ -1,0 +1,11 @@
+So, let’s look a little closer at the general theory of CT.
+
+When X-rays pass through the body, different tissues attenuate the beam in different ways. For example, bone blocks attenuate X-rays much more strongly than muscle or soft tissue. This difference is exactly what gives us useful information.
+
+Now, the challenge is that each X-ray image we take is really just a 2D projection. You can see that in the picture on the left. If we only had this single projection, we would miss most of the information about what lies behind or to the side of the structures.
+So what do we do? We take projections from many different angles—like the images you see in the middle. Each projection adds a different piece of information.
+
+Then comes the key step: we solve what’s called an inverse problem. Mathematically, this is done using the Radon transform and its inverse. By combining all of those projections through the inverse Radon transform, we can reconstruct a detailed image of the body’s interior. 
+
+That’s what you see on the right: a 3D CT reconstruction where bones and tissues are highlighted in different colors.
+In this class, to keep things simpler, we will mostly work with 2D imaging cases when applying the Radon transform in MATLAB. But remember, the same principle extends to full 3D CT in clinical practice.

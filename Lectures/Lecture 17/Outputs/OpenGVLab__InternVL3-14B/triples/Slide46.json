@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Whole-body CT\", \"p\":\"uses\", \"o\":\"X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Whole-body CT uses a significant amount of radiation, since it scans the entire patient with X-rays.\"},\n    {\"s\":\"Whole-body PET\", \"p\":\"represents\", \"o\":\"no space to easily position the X-ray components completely around the patient\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In contrast, with whole-body PET, as shown in the figure, there is no space to easily position the X-ray components completely around the patient in the same way as traditional CT.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Whole-body CT",
+        "p": "uses",
+        "o": "X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Whole-body CT uses a significant amount of radiation, since it scans the entire patient with X-rays."
+      },
+      {
+        "s": "Whole-body PET",
+        "p": "represents",
+        "o": "no space to easily position the X-ray components completely around the patient",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In contrast, with whole-body PET, as shown in the figure, there is no space to easily position the X-ray components completely around the patient in the same way as traditional CT."
+      }
+    ]
+  }
+}

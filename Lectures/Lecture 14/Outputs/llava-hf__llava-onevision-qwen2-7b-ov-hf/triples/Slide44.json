@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide44",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThe last topic I’m going to explain is motion artifacts. Imagine you have a phantom object, like this one, viewed at angle zero. The phantom has a taiji pattern, a yin-yang shape.\nAs you slowly increase the projection angle, the X-ray source rotates around the phantom.\nOver time, the data you collect changes. When the angle reaches 90 degrees, the phantom appears compressed, shrunk to a minimum in the projection.\n\nAs the source continues rotating, at 180 degrees, the phantom appears expanded again.\nThis back-and-forth pattern creates a sinusoidal oscillation in the data.\nThis example illustrates what happens when the object isn’t stationary, but moves periodically.\nYou gather projection data while the object moves according to this periodic motion.\nIf you then apply filtered backprojection to reconstruct images from this data, you get motion artifacts—blurring or distortion caused by the object’s movement during acquisition.\n\nHowever, if you know the object’s motion trajectory, you can incorporate that information into iterative reconstruction algorithms.\nWith this additional information, it is possible to recover accurate images despite motion.\nTomographic reconstruction remains feasible, provided you have either explicit knowledge of motion or use algorithms that infer motion implicitly.\nDue to time constraints in this lecture, we won’t delve deeply into motion artifact correction algorithms.\nFor cardiac imaging, one way to reduce motion artifacts is through hardware: performing ultra-fast scanning so the heart doesn’t have significant motion during image acquisition.\n\nThis instantaneous imaging “freezes” the cardiac structure, minimizing motion blur.\nAnother way is through smart computational algorithms that predict motion and correct for it during reconstruction.\nOften, cardiac CT patients are given beta blockers to slow the heart rate, reducing motion during scanning.\nAdditionally, CT acquisition can be synchronized with the ECG signal, coupling image data with specific cardiac phases.\nThe ECG indicates when the heart is largest or smallest. You can select data segments corresponding to the heart’s maximum volume and reconstruct images at that phase.\n\nSimilarly, you regroup data segments for the minimum volume phase and reconstruct images accordingly.\nThis approach allows reconstruction of a beating heart in different cardiac phases.\nThis gives a rough idea of how motion artifacts are managed in dynamic organ imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"phantom\", \"p\":\"represents\", \"o\":\"taiji pattern\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The phantom has a taiji pattern, a yin-yang shape.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "phantom",
+        "p": "represents",
+        "o": "taiji pattern",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The phantom has a taiji pattern, a yin-yang shape."
+      }
+    ]
+  }
+}

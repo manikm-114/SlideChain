@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "hybrid system"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The setup uses a series of gratings - a source grating, a phase grating, and an analyzer grating"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "analyzer grating",
+        "p": "uses",
+        "s": "grating-based phase-contrast tomography system"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "optical-X-ray fusion"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "And they achieved beautiful soft-tissue visualization, something you simply can't get from normal X-ray attenuation imaging."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "beautiful soft-tissue visualization",
+        "p": "produces",
+        "s": "grating-based phase-contrast tomography"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "phase-contrast tomography"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray phase-contrast CT"
+          },
+          {
+            "category": "anatomy",
+            "term": "soft-tissue visualization"
+          },
+          {
+            "category": "modality",
+            "term": "contrast agents"
+          },
+          {
+            "category": "workflow",
+            "term": "optical-X-ray fusion"
+          },
+          {
+            "category": "software",
+            "term": "hybrid system"
+          },
+          {
+            "category": "quality_metric",
+            "term": "anatomical detail"
+          }
+        ],
+        "evidence": [
+          "...they achieved beautiful soft-tissue visualization, something you simply can\u2019t get from normal X-ray attenuation imaging.",
+          "It\u2019s a big step forward for optical-X-ray fusion, because now the X-ray side of the hybrid system provides much richer anatomical detail to guide and constrain the optical reconstruction."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "scanned small animals - typically mice - sometimes for an entire day, to acquire very high-quality data",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "grating-based X-ray phase-contrast CT",
+            "p": "uses",
+            "s": "animal"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide41.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide41.txt"
+  },
+  "slide_id": "Slide41"
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide1",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Lecture 16\",\n      \"p\": \"represents\",\n      \"o\": \"Nuclear Physics\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Welcome to Lecture 16 on Nuclear Physics.\"\n    },\n    {\n      \"s\": \"course\",\n      \"p\": \"focuses on\",\n      \"o\": \"nuclear physics in the context of biomedical imaging\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In this course, we focus on understanding nuclear physics in the context of biomedical imaging.\"\n    },\n    {\n      \"s\": \"material\",\n      \"p\": \"depends_on\",\n      \"o\": \"repetition\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The key to learn this material is to go through it more than once — first by following the lecture, and then by reviewing the textbook or slides afterward.\"\n    },\n    {\n      \"s\": \"lecture\",\n      \"p\": \"uses\",\n      \"o\": \"visual markers\",",
+  "parsed": {
+    "s": "material",
+    "p": "depends_on",
+    "o": "repetition",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The key to learn this material is to go through it more than once - first by following the lecture, and then by reviewing the textbook or slides afterward."
+    ]
+  }
+}

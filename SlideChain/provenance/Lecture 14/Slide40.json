@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "beam hardening"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This process \u201chardens\u201d the beam-increasing its average energy."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "average energy",
+        "p": "increases",
+        "s": "Beam hardening"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Beam hardening artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray beams"
+          },
+          {
+            "category": "physics",
+            "term": "Polychromatic beam"
+          },
+          {
+            "category": "mathematics",
+            "term": "Line integral"
+          },
+          {
+            "category": "algorithm",
+            "term": "Reconstruction algorithms"
+          },
+          {
+            "category": "physics",
+            "term": "Linear attenuation coefficient"
+          },
+          {
+            "category": "algorithm",
+            "term": "Correction methods"
+          }
+        ],
+        "evidence": [
+          "Beam hardening artifacts occur when X-ray beams pass through an object, resulting in changes in beam energy distribution that affect image quality.",
+          "X-ray beams are polychromatic, meaning they contain photons of various energies, forming a spectrum.",
+          "Higher-energy photons are less easily blocked, the beam becomes more penetrating along longer paths.",
+          "Proper correction methods and models that account for beam hardening are necessary to reduce these artifacts and improve image quality."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "X-ray beams are polychromatic, meaning they contain photons of various energies, forming a spectrum.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "polychromatic",
+            "p": "uses",
+            "s": "X-ray beams"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "many reconstruction algorithms assume a monochromatic beam, leading to errors."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "artifacts",
+        "term": "streaks and cupping"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide40.txt"
+  },
+  "slide_id": "Slide40"
+}

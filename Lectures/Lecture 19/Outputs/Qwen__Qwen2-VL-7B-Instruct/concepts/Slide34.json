@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:54:53.714609+00:00",
+  "text_length": 791,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAt this point, you might be wondering — have you understood this, or are you confused? Honestly, if you have never studied this carefully before, it is very natural to be confused. Even for me, when I first studied this, I had to go through it several times, very carefully, before I felt I understood it clearly.\n\nSo let’s check ourselves. If you basically follow the logical flow so far, you can feel confident. If you are quite confused, that’s also expected — because these concepts are tricky and require repeated review. If you’re somewhere in between, that’s normal too. The important thing is not to get discouraged. What I will do now is go over the same ideas again, but from a slightly different angle, with more detail and more illustrations, so that the picture becomes clearer.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"understood\", \"category\": \"communication\"},\n    {\"term\": \"confused\", \"category\": \"communication\"},\n    {\"term\": \"logical flow\", \"category\": \"algorithm\"},\n    {\"term\": \"review\", \"category\": \"data_processing\"},\n    {\"term\": \"tricky\", \"category\": \"algorithm\"},\n    {\"term\": \"clearer\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\n    \"If you basically follow the logical flow so far, you can feel confident.\",\n    \"If you are quite confused, that’s also expected — because these concepts are tricky and require repeated review.\",\n    \"If you’re somewhere in between, that’s normal too. The important thing is not to get discouraged.\",\n    \"What I will do now is go over the same ideas again, but from a slightly different angle, with more detail and more illustrations, so that the picture becomes clearer.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "understood",
+        "category": "communication"
+      },
+      {
+        "term": "confused",
+        "category": "communication"
+      },
+      {
+        "term": "logical flow",
+        "category": "algorithm"
+      },
+      {
+        "term": "review",
+        "category": "data_processing"
+      },
+      {
+        "term": "tricky",
+        "category": "algorithm"
+      },
+      {
+        "term": "clearer",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "If you basically follow the logical flow so far, you can feel confident.",
+      "If you are quite confused, that's also expected - because these concepts are tricky and require repeated review.",
+      "If you're somewhere in between, that's normal too. The important thing is not to get discouraged.",
+      "What I will do now is go over the same ideas again, but from a slightly different angle, with more detail and more illustrations, so that the picture becomes clearer."
+    ]
+  }
+}

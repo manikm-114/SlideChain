@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"displacement\", \"p\":\"produces\", \"o\":\"velocity\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"The acceleration then changes the velocity, denoted by u, and as the velocity builds up, the displacement w also changes further.\"},\n    {\"s\":\"velocity\", \"p\":\"produces\", \"o\":\"acceleration\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"By Newton’s second law, the net force generates acceleration, which we call a.\"},\n    {\"s\":\"acceleration\", \"p\":\"produces\", \"o\":\"pressure\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"That higher pressure creates a net force on neighboring elements, pushing them forward.\"},\n    {\"s\":\"displacement\", \"p\":\"produces\", \"o\":\"pressure\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"When we push it, the volume of that little element decreases because the particles are squeezed closer together. According to the conservation of mass, the total amount of material inside that voxel stays the same — but the pressure inside increases.\"},\n    {\"s\":\"displacement",
+  "parsed": {
+    "s": "displacement",
+    "p": "produces",
+    "o": "pressure",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "When we push it, the volume of that little element decreases because the particles are squeezed closer together. According to the conservation of mass, the total amount of material inside that voxel stays the same - but the pressure inside increases."
+    ]
+  }
+}

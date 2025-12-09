@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"refining frequency bins\",\n      \"p\": \"uses\",\n      \"o\": \"bin-refine factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, let’s refine our frequency bins by a factor of two — the same idea we used earlier when going from one-hertz bins to zero-point-five-hertz bins.\"\n    },\n    {\n      \"s\": \"FFT length\",\n      \"p\": \"produces\",\n      \"o\": \"improved resolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we plot the result, the improvement is clear: the frequency at two hundred two point five hertz is now well resolved, showing a sharp and distinct peak.\"\n    },\n    {\n      \"s\": \"frequency at 445.8 hertz\",\n      \"p\": \"is not\",\n      \"o\": \"well resolved\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"However, notice that the frequency at four hundred forty-five point eight hertz",
+  "parsed": {
+    "s": "FFT length",
+    "p": "produces",
+    "o": "improved resolution",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "When we plot the result, the improvement is clear: the frequency at two hundred two point five hertz is now well resolved, showing a sharp and distinct peak."
+    ]
+  }
+}

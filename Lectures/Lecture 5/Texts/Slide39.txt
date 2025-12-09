@@ -1,0 +1,26 @@
+All right, now that we've got a solid understanding of complex numbers, let’s talk about one of the most beautiful and powerful results in mathematics—Euler’s Formula.
+
+Let’s start with the exponential function. You might remember that the exponential of a number can be written as an infinite series. For any complex number z, we can write:
+“e to the z equals one, plus z over one factorial, plus z squared over two factorial, plus z cubed over three factorial, and so on.”
+In math terms, that’s:
+  e to the z equals the sum from n equals zero to infinity of z to the n over n factorial.
+This series works not only for real numbers, but also for complex numbers. And that’s important.
+How do we know this infinite sum still makes sense when z is complex? Well, there’s something called the ratio test, which shows that this series converges no matter what complex number we use. In other words, it always gives a valid result. That’s why we can define e to the z for any complex number z. That’s a big deal.
+
+Now, here’s where things get really exciting.
+What if we plug in a purely imaginary number, like i times theta, into this exponential?
+It turns out that:
+  e to the i theta equals cosine theta plus i times sine theta.
+That’s Euler’s formula.
+
+This equation is incredibly elegant. It shows how exponential functions and trigonometric functions—two ideas that seem totally different—are actually deeply connected.
+And here’s something even more useful. If you rearrange Euler’s formula a bit, you can write cosine and sine in terms of complex exponentials.
+
+Specifically:
+  Cosine theta equals e to the i theta plus e to the minus i theta, divided by two.
+  Sine theta equals e to the i theta minus e to the minus i theta, divided by two i.
+These two identities are incredibly helpful, especially in signal processing and Fourier analysis. They let us replace sines and cosines with exponentials, which makes the math much cleaner and often easier to compute.
+
+So to sum up:
+Euler’s formula is a bridge between the world of waves—like sine and cosine—and the world of exponentials. And as we’ll see next, that bridge is exactly what we need to rewrite the Fourier series in a compact, exponential form.
+Let’s move forward and take a look at that next.

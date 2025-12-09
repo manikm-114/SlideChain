@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide30",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T09:03:13.019032+00:00",
+  "text_length": 530,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnd with that, we’ll wrap up today’s session.\nThank you all for joining the class and following along. We’ve covered a lot—from the basic theory of CT, to the Radon transform, back-projection, filtered back-projection, and finally MATLAB implementations for both parallel-beam and fan-beam geometries.\n\nPlease remember to finish your homework assignments and, if you’re interested, explore the optional design project for something creative.\n\nThat’s all for today. Once again—thank you, and I look forward to seeing you next time.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"Radon transform\", \"category\": \"mathematics\"},\n    {\"term\": \"filtered back-projection\", \"category\": \"reconstruction\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"parallel-beam\", \"category\": \"algorithm\"},\n    {\"term\": \"fan-beam\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"covered a lot—from the basic theory of CT, to the Radon transform, back-projection, filtered back-projection, and finally MATLAB implementations for both parallel-beam and fan-beam geometries.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT",
+        "category": "modality"
+      },
+      {
+        "term": "Radon transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "filtered back-projection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "parallel-beam",
+        "category": "algorithm"
+      },
+      {
+        "term": "fan-beam",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "covered a lot-from the basic theory of CT, to the Radon transform, back-projection, filtered back-projection, and finally MATLAB implementations for both parallel-beam and fan-beam geometries."
+    ]
+  }
+}

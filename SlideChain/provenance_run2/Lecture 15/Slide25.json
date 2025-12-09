@@ -1,0 +1,104 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "Dsensor"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Dsensor is set to 1 (Line 26)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "1",
+        "p": "is set to",
+        "s": "Dsensor (Line 26)"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "p_type (Line 5)"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "diagonal streaks or artifacts around the edges"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Dsensor is set to 1 (Line 26)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "spacing between detector elements",
+        "p": "measures",
+        "s": "Dsensor (Line 26)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "reconstruction",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction artifacts"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered back-projection"
+          },
+          {
+            "category": "modality",
+            "term": "fan-beam"
+          },
+          {
+            "category": "modality",
+            "term": "CT imaging"
+          }
+        ],
+        "evidence": [
+          "For more complex phantoms, the sinogram looks similar to what we saw in earlier examples, but extended over a full 0 to 360 degrees.",
+          "The reconstructions in those cases often show diagonal streaks or artifacts around the edges. Even so, the important structural information inside the phantom-like the outlines of shapes-remains fairly accurate.",
+          "So, fan-beam CT in MATLAB gives us realistic results, but it also shows us that no reconstruction is perfect. Artifacts are always a part of the process, and learning how to recognize and minimize them is a big part of CT imaging."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Inside the code, at line 25, there\u2019s a parameter called D. By convention, D is set to be slightly larger than half the diagonal length of the image. Then, at line 26, the D sensor value is set to 1, which specifies the spacing between detector elements.",
+            "modalities": [
+              "text"
+            ],
+            "o": "script E x 3 fan beam dot m",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide25.txt"
+  },
+  "slide_id": "Slide25"
+}

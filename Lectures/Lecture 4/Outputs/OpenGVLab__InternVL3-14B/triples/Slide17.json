@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discrete delta functions\",\n      \"p\": \"represent\",\n      \"o\": \"arbitrary discrete function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can use discrete delta functions to represent any arbitrary discrete function.\"\n    },\n    {\n      \"s\": \"each value of the function\",\n      \"p\": \"represents\",\n      \"o\": \"scaled delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Each value of the function can be represented as a scaled delta function at that point.\"\n    },\n    {\n      \"s\": \"sum of scaled delta functions\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original discrete function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we sum these scaled delta functions, we reconstruct the original discrete function.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "each value of the function",
+        "p": "represents",
+        "o": "scaled delta function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Each value of the function can be represented as a scaled delta function at that point."
+      }
+    ]
+  }
+}

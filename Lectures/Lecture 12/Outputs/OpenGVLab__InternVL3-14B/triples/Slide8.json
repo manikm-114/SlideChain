@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"X-ray radiograph\", \"p\":\"produces\", \"o\":\"two-dimensional projection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This is a standard X-ray radiograph — in this case, a chest X-ray. It’s a single two-dimensional projection of the body, captured on film or in digital form.\"},\n    {\"s\":\"X-ray radiograph\", \"p\":\"represents\", \"o\":\"heart, lungs, ribs\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"What you see here is everything superimposed: the heart, the lungs, the ribs — all layered on top of each other in the same image.\"},\n    {\"s\":\"radiography\", \"p\":\"measures\", \"o\":\"broken bone, foreign object\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For example, if a patient has a broken bone or if there is a foreign object like a bullet, it shows up immediately.\"},\n    {\"s\":\"radiography\", \"p\":\"depends_on\", \"o\":\"projection imaging\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"",
+  "parsed": {
+    "s": "radiography",
+    "p": "measures",
+    "o": "broken bone, foreign object",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "For example, if a patient has a broken bone or if there is a foreign object like a bullet, it shows up immediately."
+    ]
+  }
+}

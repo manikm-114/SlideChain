@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MRI scanner\", \"p\":\"uses\", \"o\":\"gradient coils\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The MRI scanner uses three separate gradient coils, which produce fields we call B-X, B-Y, and B-Z.\"},\n    {\"s\":\"gradient coils\", \"p\":\"produces\", \"o\":\"B-X, B-Y, and B-Z fields\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Each of these gradients corresponds to one of the three spatial directions: X, Y, and Z.\"},\n    {\"s\":\"gradient coils\", \"p\":\"represents\", \"o\":\"linearly varying magnetic fields\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"when we wind the coils in a certain configuration, the resulting magnetic field changes linearly in space\"},\n    {\"s\":\"B-zero field\", \"p\":\"provides\", \"o\":\"uniform background alignment\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The large superconducting magnet provides the strong, uniform B-zero field—that’s our background magnetic field.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MRI scanner",
+        "p": "uses",
+        "o": "gradient coils",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The MRI scanner uses three separate gradient coils, which produce fields we call B-X, B-Y, and B-Z."
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Now let’s look at another important issue in nuclear imaging systems—dead time.
+
+When a gamma photon interacts with the scintillation crystal, it produces a pulse of light. That pulse has a finite width; it takes some recovery time before the system is ready to register the next event. If two or more photons arrive too close together in time, the system cannot distinguish them. Instead of recording two events, it may only record one, or in some cases, none at all. This limitation is called dead time. It reflects the fact that every detector and its electronics need a short period to reset after each event. If the incoming rate of photons is too high, the detector simply cannot keep up.
+
+Think of it like catching candies falling from the ceiling. If they fall slowly, you can catch and count them one by one. But if they start raining down too quickly, you can’t separate them anymore—you miss some. That’s exactly what happens here with gamma photons.
+Mathematically, we can describe this with the true count rate, denoted by capital N, which is the number of gamma interactions that really happen. Then there’s the observed count rate, lowercase n, which is what the detector actually records. Because of dead time losses, n is always less than N.
+
+The system dead time, usually written as the Greek letter tau, can be expressed as the difference between the reciprocal of these two rates:tau equals one over n minus one over N. This formula tells us how much recovery time the system effectively needs between two detected events. In practical gamma cameras, dead time losses are usually not a big problem unless the injected activity is very high—but it’s an important limitation to be aware of.

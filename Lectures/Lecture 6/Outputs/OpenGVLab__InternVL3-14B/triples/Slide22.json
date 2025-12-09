@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Gaussian function\",\n      \"p\": \"represents\",\n      \"o\": \"e to the power negative pi t squared\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"First, we have the Gaussian function. In the time domain, it’s written as e to the power negative pi t squared.\"\n    },\n    {\n      \"s\": \"Fourier transform of Gaussian function\",\n      \"p\": \"represents\",\n      \"o\": \"e to the power negative pi u squared\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"What’s remarkable is that its Fourier transform is also a Gaussian — e to the power negative pi u squared.\"\n    },\n    {\n      \"s\": \"Fourier transform of a constant function\",\n      \"p\": \"represents\",\n      \"o\": \"c times delta of u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"And it turns out the Fourier transform of a constant is a scaled delta function — specifically, c times delta of u.\"",
+  "parsed": {
+    "s": "Fourier transform of Gaussian function",
+    "p": "represents",
+    "o": "e to the power negative pi u squared",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "What’s remarkable is that its Fourier transform is also a Gaussian - e to the power negative pi u squared."
+    ]
+  }
+}

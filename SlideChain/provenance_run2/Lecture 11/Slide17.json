@@ -1,0 +1,154 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "similarity measure"
+          },
+          {
+            "category": "mathematics",
+            "term": "symmetry"
+          },
+          {
+            "category": "mathematics",
+            "term": "boundedness"
+          },
+          {
+            "category": "mathematics",
+            "term": "unique maximum"
+          },
+          {
+            "category": "algorithm",
+            "term": "SSIM"
+          }
+        ],
+        "evidence": [
+          "the goal is to capture not just how different two images are, but how similar they are",
+          "The similarity between X and Y should be the same as the similarity between Y and X",
+          "The similarity value should always be between zero and one",
+          "The similarity should only reach the maximum value of one if the two images are exactly the same",
+          "SSIM is designed to satisfy all of these postulates"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "symmetry"
+          },
+          {
+            "category": "mathematics",
+            "term": "boundedness"
+          },
+          {
+            "category": "mathematics",
+            "term": "unique maximum"
+          },
+          {
+            "category": "algorithm",
+            "term": "SSIM"
+          }
+        ],
+        "evidence": [
+          "The goal is to capture not just how different two images are, but how similar they are.",
+          "The similarity between X and Y should be the same as the similarity between Y and X.",
+          "The similarity value should always be between zero and one.",
+          "The similarity should only reach the maximum value of one if the two images are exactly the same, pixel for pixel."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Symmetry: S(x, y) = S(y, x).",
+            "modalities": [
+              "text"
+            ],
+            "o": "postulate",
+            "p": "uses",
+            "s": "symmetry"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "symmetry"
+          },
+          {
+            "category": "quality_metric",
+            "term": "boundedness"
+          },
+          {
+            "category": "quality_metric",
+            "term": "unique maximum"
+          }
+        ],
+        "evidence": [
+          "When we construct a similarity measure, the goal is to capture not just how different two images are, but how similar they are.",
+          "First, symmetry. The similarity between X and Y should be the same as the similarity between Y and X.",
+          "Second, boundedness. The similarity value should always be between zero and one.",
+          "Third, a unique maximum. The similarity should only reach the maximum value of one if the two images are exactly the same, pixel for pixel."
+        ]
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Boundedness: S(x, y) \u2264 1."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "S(x, y) \u2264 1",
+        "p": "represents",
+        "s": "boundedness"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "symmetry"
+          },
+          {
+            "category": "mathematics",
+            "term": "boundedness"
+          },
+          {
+            "category": "mathematics",
+            "term": "unique maximum"
+          },
+          {
+            "category": "quality_metric",
+            "term": "SSIM"
+          }
+        ],
+        "evidence": [
+          "The similarity between X and Y should be the same as the similarity between Y and X.",
+          "The similarity value should always be between zero and one.",
+          "The similarity should only reach the maximum value of one if the two images are exactly the same, pixel for pixel."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

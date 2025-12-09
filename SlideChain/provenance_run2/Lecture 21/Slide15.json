@@ -1,0 +1,97 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "ultrasound coupling"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "the speed depends entirely on the material properties - how dense and how stiff the material is.",
+            "modalities": [
+              "text"
+            ],
+            "o": "material properties",
+            "p": "depends_on",
+            "s": "speed of sound"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the constant c represents the speed of sound in the medium.",
+            "modalities": [
+              "text"
+            ],
+            "o": "constant c",
+            "p": "represents",
+            "s": "speed of sound"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The speed of sound depends entirely on the material properties - how dense and how stiff the material is.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Material properties",
+            "p": "depends_on",
+            "s": "Speed of sound"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "it helps determine both resolution and penetration in imaging"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "And this speed depends entirely on the material properties - how dense and how stiff the material is."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the material properties - how dense and how stiff the material is",
+        "p": "depends_on",
+        "s": "the speed of sound"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "bone"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "the speed of sound in bone"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "bone",
+        "p": "measures",
+        "s": "speed of sound"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

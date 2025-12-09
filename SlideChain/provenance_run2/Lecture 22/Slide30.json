@@ -1,0 +1,123 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "pulsed wave Doppler"
+          },
+          {
+            "category": "mathematics",
+            "term": "delta function"
+          },
+          {
+            "category": "physics",
+            "term": "echo"
+          },
+          {
+            "category": "physics",
+            "term": "backscattered echo"
+          },
+          {
+            "category": "instrumentation",
+            "term": "range gate"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          }
+        ],
+        "evidence": [
+          "pulsed wave Doppler mode",
+          "behaves like one in time",
+          "send out a pulse into the tissue, and after a short delay, you receive the echo back",
+          "interacts with the structures, and returns as a backscattered echo",
+          "measure reflections from specific depths-what we call the range gate",
+          "The transducer then captures this echo signal"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "pulsed wave Doppler"
+          },
+          {
+            "category": "mathematics",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "range gate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echo signal"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "backscattered echo"
+          },
+          {
+            "category": "signal_processing",
+            "term": "depth"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echo signal"
+          }
+        ],
+        "evidence": [
+          "In this method, we don't use a continuous wave. Instead, we send out short, separated pulses-each one acting somewhat like a delta function.",
+          "Each pulse travels into the tissue, interacts with the structures, and returns as a backscattered echo. The transducer then captures this echo signal, allowing you to measure reflections from specific depths-what we call the range gate."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the transducer then captures this echo signal, allowing you to measure reflections from specific depths-what we call the range gate"
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "The transducer then captures this echo signal, allowing you to measure reflections from specific depths-what we call the range gate."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "reflections from specific depths",
+        "p": "measures",
+        "s": "Pulsed Wave (PW) Doppler"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "measures reflections"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

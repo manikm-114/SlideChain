@@ -1,0 +1,7 @@
+Now let’s look at an even more aggressive threshold.
+
+By moving the cutoff further to the left, we dramatically reduce the chance of missing diseased patients. Almost everyone with the disease is now flagged as positive. That means our sensitivity is very high — close to 100%.
+But the price is steep. With the threshold this low, about half of the non-diseased population also falls into the positive range. In other words, the false positive fraction climbs to nearly 50%. Many healthy patients would be told they might have a problem, leading to unnecessary worry and follow-up tests.
+
+On the ROC curve, this decision strategy places us near the top-right portion — very sensitive, but much less specific.
+So, if you imagine sliding this threshold back and forth, you’re really tracing out the ROC curve. Different thresholds give you different balances between catching true positives and avoiding false alarms. And as I’ll show you next, the quality of the diagnostic test itself is reflected in how far this ROC curve bends toward the upper-left corner.

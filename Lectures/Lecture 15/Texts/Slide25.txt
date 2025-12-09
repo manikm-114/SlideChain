@@ -1,0 +1,9 @@
+Now let’s move to Example 3: Fan-beam CT.
+
+If you run the script E x 3 fan beam dot m, you’ll see how MATLAB handles this geometry. Inside the code, at line 25, there’s a parameter called D. By convention, D is set to be slightly larger than half the diagonal length of the image. Then, at line 26, the D sensor value is set to 1, which specifies the spacing between detector elements.
+
+On the left, you can see the fan-beam sinogram for a simple square phantom. On the right, you see the reconstruction using filtered back-projection. The square shape is clear and recognizable, but you may also notice small dots or speckles near the corners. These are reconstruction artifacts, and if you run this code on your own computer, you’ll probably see them more clearly.
+For more complex phantoms, the sinogram looks similar to what we saw in earlier examples, but extended over a full 0 to 360 degrees. 
+
+The reconstructions in those cases often show diagonal streaks or artifacts around the edges. Even so, the important structural information inside the phantom—like the outlines of shapes—remains fairly accurate.
+So, fan-beam CT in MATLAB gives us realistic results, but it also shows us that no reconstruction is perfect. Artifacts are always a part of the process, and learning how to recognize and minimize them is a big part of CT imaging.

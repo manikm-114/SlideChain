@@ -1,0 +1,8 @@
+Here we observe the plan for CT reconstruction. We will connect data space—the set of X-ray line integrals—to image space—the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object.
+
+We’ll compare two families of methods:
+Algebraic approach.We model the scanner with linear equations: A times x equals b.This viewpoint helps us reason about solution uniqueness—for example, when A has full column rank—and about data independence and sufficiency, meaning we need enough non-redundant views and detector samples to determine x stably. Regularization can be added to handle noise or limited angles.
+
+Analytic approach.
+This relies on Fourier analysis. By the Fourier Slice Theorem, the one-dimensional Fourier transform of a projection at angle theta equals a radial slice through the two-dimensional Fourier transform of the object at the same angle. 
+From this principle, we derive filtered back-projection (FBP): first apply a frequency-domain ramp filter—magnitude of omega—to each projection, then smear, or back-project, the filtered data across the image grid. FBP is fast and remains the standard for many clinical workflows.

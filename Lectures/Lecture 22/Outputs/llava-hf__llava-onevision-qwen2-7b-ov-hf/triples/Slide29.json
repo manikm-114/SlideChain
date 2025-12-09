@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide29",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s imagine we send a pulse to a stationary target — say, a student sitting still. The pulse travels to that target and comes back after a certain time. Suppose it takes exactly one hundred milliseconds for the sound to make the round trip. If we send a second pulse after one second, that second echo will return at the same delay — one hundred milliseconds — if the target hasn’t moved. Both echoes will look identical, because the distance hasn’t changed.\n\nBut now, if that student moves slightly toward us, the second echo will arrive a bit earlier — the return time becomes shorter. The peak of the echo signal shifts forward in time. This small timing change, or phase shift, tells us that motion has occurred. If the target moves rhythmically — for example, the surface is oscillating — the measured signal amplitude will fluctuate up and down around the average line.\n\nWe record this oscillating signal over time and then perform a Fourier transform on it. This mathematical operation converts the time-domain signal into a frequency-domain representation. The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid. Usually, the motion is not perfectly uniform but has some periodic pattern. By analyzing these Doppler frequencies, we can quantify that motion precisely.\n\nSo, this is the basic idea behind pulsed wave Doppler. It’s slightly more complex than continuous wave Doppler, but it has a major advantage — it allows us to measure motion at a specific depth. We’ll look at some examples and waveforms shortly to illustrate how this works in practice.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"pulse\", \"p\":\"measures\", \"o\":\"motion\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"The peak of the echo signal shifts forward in time. This small timing change, or phase shift, tells us that motion has occurred.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "pulse",
+        "p": "measures",
+        "o": "motion",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "The peak of the echo signal shifts forward in time. This small timing change, or phase shift, tells us that motion has occurred."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"shift-invariant linear system\",\n      \"p\": \"produces\",\n      \"o\": \"sinusoidal output at the same frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"For a shift-invariant linear system, a sinusoidal input will only generate a sinusoidal output at the same frequency.\"\n    },\n    {\n      \"s\": \"impulse response\",\n      \"p\": \"represents\",\n      \"o\": \"delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Suppose the impulse response of the system is a delta function.\"\n    },\n    {\n      \"s\": \"Fourier transform of a delta function\",\n      \"p\": \"is\",\n      \"o\": \"constant\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Well, we know that the Fourier transform of a delta function is a constant — it's just one everywhere.\"\n    },\n    {\n      \"s\": \"general shift-invariant linear system\",\n      \"p\": \"produces",
+  "parsed": {
+    "s": "Fourier transform of a delta function",
+    "p": "is",
+    "o": "constant",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Well, we know that the Fourier transform of a delta function is a constant - it's just one everywhere."
+    ]
+  }
+}

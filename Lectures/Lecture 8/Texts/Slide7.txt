@@ -1,0 +1,8 @@
+Now, here’s a bad case — when the sampling rate is too low.
+
+The black curve is again our original, continuous signal. The blue points are where we took our samples. And the red curve is what we get when we try to reconstruct the signal from those samples.
+At the sample locations, the reconstructed red curve passes exactly through the blue points — so it matches the original at those specific spots. But between the sample points, the red curve drifts far away from the true black signal.
+
+This mismatch is caused by aliasing. Because our sampling rate is less than twice the maximum frequency in the signal, the repeated spectra in the frequency domain overlap. That overlap distorts the information, and once it happens, no amount of interpolation can recover the original shape.
+
+So, while the reconstruction looks fine exactly at the sampled points, the continuous waveform in between is completely wrong. This is why respecting the sampling theorem is essential — if you don’t sample fast enough, the damage is permanent.

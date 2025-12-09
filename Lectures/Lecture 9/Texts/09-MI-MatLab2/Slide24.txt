@@ -1,0 +1,12 @@
+Here we see the concept of the two-dimensional Fourier transform.
+
+The equations at the top describe two processes:
+The forward 2D Fourier transform, which takes a spatial-domain function — something that varies in the x and y directions — and expresses it in terms of its spatial frequency components.
+The inverse 2D Fourier transform takes that frequency-domain representation and reconstructs the original spatial-domain function.
+
+In our example, the starting function is shown as a sideways rectangle in the spatial domain. When we perform the 2D Fourier transform, we obtain a frequency-domain representation — shown here in the rainbow-colored plot. The colors represent the amplitude of different spatial frequency components, and the values can be complex, with both real and imaginary parts.
+Just as in the one-dimensional case, the Fourier transform lets us switch back and forth between two perspectives:
+In the spatial domain, we see shapes and patterns directly.
+
+In the frequency domain, we see how much of each spatial frequency is present in the image.
+Understanding this relationship is essential for image processing, because many operations — such as filtering, noise removal, and edge detection — can be performed more effectively in the frequency domain.

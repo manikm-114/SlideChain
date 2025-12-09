@@ -1,0 +1,17 @@
+Let’s look at our first example: how to compute convolution using the Fast Fourier Transform, or FFT.
+
+You already know the direct method — the one we practiced in class. You take one sequence, flip it, shift it, multiply corresponding terms, and sum them up. Then you repeat for each shift. This gives the convolution directly in the time domain.
+If the first sequence has length n and the second has length m, the convolution result has n plus m minus 1 points. That’s how many shifts we need to perform. And in terms of computation, this direct method takes time proportional to n squares, where n is roughly the size of the data.
+But there’s a much faster, indirect method. Instead of doing the convolution directly in the time domain, we switch to the frequency domain using the FFT.
+
+Here’s the MATLAB approach:
+First, compute the FFT of x — that gives us its frequency spectrum.
+Then, compute the FFT of y — the spectrum of the filter or second sequence.
+In the frequency domain, convolution turns into multiplication. So we simply multiply the two spectra, element by element.
+Finally, apply the inverse FFT to that product to return to the time domain.
+This works because of the convolution theorem — it says convolution in the time domain is equivalent to multiplication in the frequency domain.
+If you compare the results from the direct method and the FFT-based method in MATLAB, you’ll see they match exactly. The key difference is efficiency:
+
+Direct convolution: about N square operations.
+FFT-based convolution: about n log n operations — much faster for large n.
+One small detail: in discrete Fourier analysis, both the time domain and the frequency domain are treated as periodic. That means this FFT-based convolution actually performs circular convolution unless you handle padding carefully.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"N\", \"p\":\"depends_on\", \"o\":\"T and P\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The total number of samples in the time domain — call it N — is simply the total duration T divided by delta-t. Since delta-t is one over P.\"},\n    {\"s\":\"M\", \"p\":\"depends_on\", \"o\":\"P and T\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The total number of samples in frequency over one period — call it M — is the total span P divided by delta-u. That’s again P multiplied by T.\"},\n    {\"s\":\"N\", \"p\":\"equals\", \"o\":\"TP\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We can write: N equals T multiplied by P.\"},\n    {\"s\":\"M\", \"p\":\"equals\", \"o\":\"PT\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"That’s again P multiplied by T.\"},\n    {\"s\":\"delta-t\", \"p\":\"equals\", \"o\":\"1/P\", \"modalities\":[\"text\"], \"confidence",
+  "parsed": {
+    "s": "M",
+    "p": "equals",
+    "o": "PT",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "That’s again P multiplied by T."
+    ]
+  }
+}

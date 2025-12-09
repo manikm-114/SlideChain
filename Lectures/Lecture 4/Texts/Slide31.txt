@@ -1,0 +1,24 @@
+Case 3: When t is between 0 and 2
+In this case, the flipped and shifted version of g, that is, g of t minus tau,completely overlaps the triangular function f of tau.
+This means we integrate across the entire support of f of tau,from tau equals 0 to 2.
+Within this interval:
+f of tau equals negative tau plus 2
+g of t minus tau is constant at 3
+So the convolution becomes:y of t equals the integral from 0 to 2 of 3 times (–tau + 2), d tau
+When we evaluate this, we get:y of t equals 6
+So, for t between 0 and 2, the convolution gives a flat region with a constant value of 6.This happens because the area under the product is the same across the entire interval.
+
+ Case 4: When t is between 2 and 4
+Now, f of tau begins to slide out of the rectangular window of g of t minus tau.
+We’re back to a partial overlap, but this time on the opposite side —the right edge of g is moving past f.
+The new overlapping interval runs fromtau equals t minus 2 to tau equals 2
+Again, we use:
+f of tau equals negative tau plus 2
+g of t minus tau equals 3
+So the convolution becomes:y of t equals the integral from t minus 2 to 2 of 3 times (–tau + 2), d tau
+Evaluating this gives:y of t equals three-halves t squared minus twelve t plus 24
+This result traces out the descending part of the convolution curve,as the overlap shrinks toward zero.
+
+ Case 5: When t is greater than or equal to 4
+At this point, g of t minus tau has completely moved past f of tau.
+There is no overlap between the two functions,so the convolution result once again becomes:y of t equals 0

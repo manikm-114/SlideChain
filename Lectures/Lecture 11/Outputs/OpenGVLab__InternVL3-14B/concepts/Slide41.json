@@ -1,0 +1,10 @@
+{
+  "slide_id": "Slide41",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"true positive fraction\", \"category\": \"quality_metric\"},\n    {\"term\": \"false positive fraction\", \"category\": \"quality_metric\"},\n    {\"term\": \"sensitivity\", \"category\": \"quality_metric\"},\n    {\"term\": \"specificity\", \"category\": \"quality_metric\"},\n    {\"term\": \"ROC curve\", \"category\": \"quality_metric\"},\n    {\"term\": \"diagnostic performance\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"The true positive fraction is simply the sensitivity: among all real disease cases, what fraction we detect correctly.\",\n    \"The false positive fraction is equal to one minus specificity: among all healthy cases, what fraction we mistakenly call positive.\",\n    \"When we plot sensitivity on the vertical axis against 1 – specificity on the horizontal axis, we get the ROC curve.\",\n    \"If the curve lies along the diagonal dashed line, it means the test is performing no better than random guessing — the true positive fraction increases at the same rate as the false positive fraction.\",\n    \"But if the curve bends upward toward the top-left corner, that indicates good diagnostic performance: we are capturing many true positives while keeping false positives relatively low.\"\n  ]",
+  "parsed": {
+    "term": "diagnostic performance",
+    "category": "quality_metric"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide12",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOkay. With X-rays, we can measure parallel-beam projections as shown here. Along each X-ray, each datum gives you one linear system equation. If you have a parallel beam at projection angle theta, and you have, say, one hundred rays or five hundred rays, then you have one hundred or five hundred linear system equations.\n\nOne view is not enough, because you cannot resolve superimposed structures—you see two things on top of each other, and you do not know which one is on top and which one is beneath. So you need to keep changing theta.\nThe original function f of x, y is converted to a new two-dimensional function p of theta, t. Theta is the angle; t is the coordinate. Using X-ray measurements, you perform a physical or mathematical transform from f of x, y to p of theta, t.\n\nFor example, if you have a bright, small disk, it will trace a sinusoidal curve. That is why we call the data-domain representation a sinogram. We also call it a Radon transform—Radon was a mathematician many years ago. So this is a projection, one view; the sinogram puts all the views together.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"X-ray measurements\", \"p\":\"measures\",\n     \"o\":\"linear system equations\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"If you have a parallel beam at projection angle theta, and you have, say, one hundred rays or five hundred rays, then you have one hundred or five hundred linear system equations.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray measurements",
+        "p": "measures",
+        "o": "linear system equations",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "If you have a parallel beam at projection angle theta, and you have, say, one hundred rays or five hundred rays, then you have one hundred or five hundred linear system equations."
+      }
+    ]
+  }
+}

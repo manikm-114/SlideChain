@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide4",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere we observe the plan for CT reconstruction. We will connect data space—the set of X-ray line integrals—to image space—the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object.\n\nWe’ll compare two families of methods:\nAlgebraic approach.\u000bWe model the scanner with linear equations: A times x equals b.\u000bThis viewpoint helps us reason about solution uniqueness—for example, when A has full column rank—and about data independence and sufficiency, meaning we need enough non-redundant views and detector samples to determine x stably. Regularization can be added to handle noise or limited angles.\n\nAnalytic approach.\nThis relies on Fourier analysis. By the Fourier Slice Theorem, the one-dimensional Fourier transform of a projection at angle theta equals a radial slice through the two-dimensional Fourier transform of the object at the same angle. \u000b\nFrom this principle, we derive filtered back-projection (FBP): first apply a frequency-domain ramp filter—magnitude of omega—to each projection, then smear, or back-project, the filtered data across the image grid. FBP is fast and remains the standard for many clinical workflows.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"scanner\", \"p\":\"uses\", \"o\":\"linear equations\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"A times x equals b\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "scanner",
+        "p": "uses",
+        "o": "linear equations",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "A times x equals b"
+      }
+    ]
+  }
+}

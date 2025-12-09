@@ -1,0 +1,12 @@
+Mutual information, which we just discussed, is actually defined in terms of another very fundamental concept: entropy.
+
+So, what is entropy in this context? Think of it as a measure of uncertainty. If you have a probability distribution that is very spread out and uniform, then you have a lot of uncertainty — you don’t really know what the outcome will be. That means the entropy is high.
+On the other hand, if the distribution is sharply peaked — like a delta function, where one outcome is guaranteed — then there is no uncertainty. In that case, the entropy is very low, even zero.
+
+So entropy tells us how much information, or how much unpredictability, is contained in a random variable. In information theory, this is a central concept because information itself is really about reducing uncertainty.
+Now, mutual information can be written as the difference between two entropies: the entropy of Y by itself, minus the entropy of Y given X. In other words, it measures how much uncertainty about Y is reduced when you know X. That’s exactly what we mean by “how much does X tell us about Y.”
+Again, you don’t need to get bogged down in the formulas here. The key point is: entropy captures uncertainty, and mutual information measures how two variables share or reduce that uncertainty.
+
+For our purposes, I just want you to know that these information-theoretic measures — KL divergence, mutual information, and entropy — are very powerful, but they are more advanced than what we need right now. Think of them as tools in the background, which complement the simpler measures like mean squared error.
+
+And with that, we will soon return to the more practical measures that are directly used in image quality assessment.

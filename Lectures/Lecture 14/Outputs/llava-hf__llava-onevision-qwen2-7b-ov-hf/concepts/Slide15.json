@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide15",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe analyzed helical CT scanning modes further. Traditional step-and-shoot CT uses multiple circular scans. For each scan, you reconstruct one CT slice, repeating many times for full coverage.\nIn helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.\n\nYou can reconstruct images at many arbitrary longitudinal positions along the patient, generating a large number of slices computationally. This technique is called retrospective reconstruction.\nRetrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.\n\nWith retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"helical CT\", \"category\": \"reconstruction\"},\n    {\"term\": \"retrospective reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"synthetic data points\", \"category\": \"signal_processing\"},\n    {\"term\": \"dense sampled slices\", \"category\": \"reconstruction\"},\n    {\"term\": \"tumor detection\", \"category\": \"anatomy\"},\n    {\"term\": \"diagnostic accuracy\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"We analyzed helical CT scanning modes further.\", \n               \"Traditional step-and-shoot CT uses multiple circular scans. For each scan, you reconstruct one CT slice, repeating many times for full coverage.\", \n               \"In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.\", \n               \"Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.\", \n               \"With retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "helical CT",
+        "category": "reconstruction"
+      },
+      {
+        "term": "retrospective reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "synthetic data points",
+        "category": "signal_processing"
+      },
+      {
+        "term": "diagnostic accuracy",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "We analyzed helical CT scanning modes further.",
+      "Traditional step-and-shoot CT uses multiple circular scans. For each scan, you reconstruct one CT slice, repeating many times for full coverage.",
+      "In helical CT, instead of discrete circular scans, you have one continuous helical acquisition. For each helical rotation, interpolation creates synthetic data points.",
+      "Retrospective reconstruction has a significant clinical advantage. For example, in tumor detection, a lesion may fall between two slices in traditional scanning and go undetected.",
+      "With retrospective reconstruction, densely sampled slices mean one slice will include the tumor, improving detection confidence and diagnostic accuracy."
+    ]
+  }
+}

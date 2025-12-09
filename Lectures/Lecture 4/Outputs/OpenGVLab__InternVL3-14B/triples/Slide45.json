@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide45",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Matched filtering\",\n      \"p\": \"uses\",\n      \"o\": \"cross-correlation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here we observe a practical example of cross-correlation in action — a technique known as matched filtering, widely used in signal detection.\"\n    },\n    {\n      \"s\": \"Matched filtering\",\n      \"p\": \"represents\",\n      \"o\": \"reference copy of the signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The red curve represents the matched filter — a reference copy of the signal we’re trying to detect.\"\n    },\n    {\n      \"s\": \"Cross-correlation output\",\n      \"p\": \"produces\",\n      \"o\": \"sharp peak\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The bottom plot shows the cross-correlation output. Notice the sharp peak centered around one second — this is where the received signal best aligns with the matched filter.\"\n    },\n    {\n      \"s\": \"Matched filtering",
+  "parsed": {
+    "s": "Cross-correlation output",
+    "p": "produces",
+    "o": "sharp peak",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The bottom plot shows the cross-correlation output. Notice the sharp peak centered around one second - this is where the received signal best aligns with the matched filter."
+    ]
+  }
+}

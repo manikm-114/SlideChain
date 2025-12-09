@@ -1,0 +1,184 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "ultrasound imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "send sound"
+          },
+          {
+            "category": "instrumentation",
+            "term": "receive echoes"
+          },
+          {
+            "category": "workflow",
+            "term": "clinical tasks"
+          }
+        ],
+        "evidence": [
+          "how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this lecture, we will be more specific about how we can form different kinds of ultrasound images.",
+            "modalities": [
+              "text"
+            ],
+            "o": "different kinds of ultrasound images",
+            "p": "produces",
+            "s": "ultrasound imaging"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Last time, we explained to you the physical and mathematical principles for ultrasound imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "physical and mathematical principles",
+            "p": "depends_on",
+            "s": "ultrasound imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "ultrasound imaging"
+          },
+          {
+            "category": "physics",
+            "term": "physical and mathematical principles"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sound"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echoes"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound images"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sound"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echoes"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound images"
+          }
+        ],
+        "evidence": [
+          "explained physical and mathematical principles for ultrasound imaging",
+          "moving from principles to practice",
+          "how we send sound, receive echoes, and turn those echoes into different image types",
+          "various clinical tasks"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "physical and mathematical principles for ultrasound imaging"
+          },
+          {
+            "category": "modality",
+            "term": "how we can form different kinds of ultrasound images"
+          },
+          {
+            "category": "workflow",
+            "term": "how we send sound, receive echoes, and turn those echoes into the different image types"
+          }
+        ],
+        "evidence": [
+          "Last time, we explained to you the physical and mathematical principles for ultrasound imaging.",
+          "In this lecture, we will be more specific about how we can form different kinds of ultrasound images.",
+          "We're moving from principles to practice-how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "In this lecture, we will be more specific about how we can form different kinds of ultrasound images.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "different kinds of ultrasound images",
+            "p": "produces",
+            "s": "ultrasound imaging"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "Ultrasound imaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Echoes"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Image types"
+          },
+          {
+            "category": "workflow",
+            "term": "Clinical tasks"
+          }
+        ],
+        "evidence": [
+          "We\u2019re moving from principles to practice-how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "We\u2019re moving from principles to practice-how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "ultrasound imaging",
+            "p": "uses",
+            "s": "sound"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide1.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide1.txt"
+  },
+  "slide_id": "Slide1"
+}

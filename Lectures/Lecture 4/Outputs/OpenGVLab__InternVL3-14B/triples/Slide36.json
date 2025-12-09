@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"imaging systems\",\n      \"p\": \"depends_on\",\n      \"o\": \"physical limitations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"blurring arises naturally in imaging systems — not just from digital filters, but from physical limitations.\"\n    },\n    {\n      \"s\": \"point spread function (PSF)\",\n      \"p\": \"represents\",\n      \"o\": \"impulse response in two dimensions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Here we observe a key concept in optics called the point spread function, or PSF. [...] This is the system’s impulse response in two dimensions.\"\n    },\n    {\n      \"s\": \"point spread function (PSF)\",\n      \"p\": \"produces\",\n      \"o\": \"Airy disk\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In reality, that point gets blurred into a small disk — often called an Airy disk — because of how light diffracts through the lens system.\"",
+  "parsed": {
+    "s": "point spread function (PSF)",
+    "p": "represents",
+    "o": "impulse response in two dimensions",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Here we observe a key concept in optics called the point spread function, or PSF. [...] This is the system’s impulse response in two dimensions."
+    ]
+  }
+}

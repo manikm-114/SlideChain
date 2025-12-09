@@ -1,0 +1,111 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "noise averaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Using a phased array transducer, you can steer the ultrasound beams toward the left side, collect multiple image lines-each one similar to an A-mode line-and combine them to form a B-mode image over the region of interest.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "phased array transducer",
+            "p": "uses",
+            "s": "compound imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "ultrasound beam combination"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "You can sweep the ultrasound beam from left to right, and when you perform ultrasound imaging, you can use this sweeping approach to create what we call compound imaging.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "ultrasound beams",
+            "p": "uses",
+            "s": "phased array transducer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "average the results across those angles"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A compound image, formed from nine separate scans, of an abnormal thyroid"
+        ],
+        "modalities": [
+          "image"
+        ],
+        "o": "a compound image",
+        "p": "produces",
+        "s": "compound imaging"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "compound imaging"
+          },
+          {
+            "category": "physics",
+            "term": "Huygens\u2019 principle"
+          },
+          {
+            "category": "instrumentation",
+            "term": "one- or two-dimensional transducer arrays"
+          },
+          {
+            "category": "modality",
+            "term": "A-mode, B-mode, or C-mode"
+          },
+          {
+            "category": "signal_processing",
+            "term": "noise reduction technique"
+          },
+          {
+            "category": "signal_processing",
+            "term": "noise averaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "multi-angle integration"
+          }
+        ],
+        "evidence": [
+          "You can sweep the ultrasound beam from left to right, and when you perform ultrasound imaging, you can use this sweeping approach to create what we call compound imaging.",
+          "The benefit is that the underlying structures-like the organs or tissues-stay consistent across frames, but the speckle noise and random scattering patterns vary from one angle to another. When you sum them together, the random noise cancels out while the consistent features are reinforced, giving you a much smoother, clearer image with reduced artifacts."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

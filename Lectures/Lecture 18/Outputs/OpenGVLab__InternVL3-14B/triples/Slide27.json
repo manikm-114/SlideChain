@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"torque\",\n      \"p\": \"produces\",\n      \"o\": \"precession\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When the torque is perpendicular, it doesn’t stop the motion or flip the top over directly. Instead, it causes a small change, delta L, that is also perpendicular to the original angular momentum. This sideways change makes the tip of the angular momentum vector trace out a circle.\"\n    },\n    {\n      \"s\": \"MRI\",\n      \"p\": \"depends_on\",\n      \"o\": \"precession\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is the same principle that applies in MRI when the magnetic moment of protons precesses in a magnetic field.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "torque",
+        "p": "produces",
+        "o": "precession",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When the torque is perpendicular, it doesn’t stop the motion or flip the top over directly. Instead, it causes a small change, delta L, that is also perpendicular to the original angular momentum. This sideways change makes the tip of the angular momentum vector trace out a circle."
+      },
+      {
+        "s": "MRI",
+        "p": "depends_on",
+        "o": "precession",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This is the same principle that applies in MRI when the magnetic moment of protons precesses in a magnetic field."
+      }
+    ]
+  }
+}

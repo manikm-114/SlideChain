@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide4",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nFirst, let’s step back and look at the big picture. Up to this point, we have studied CT and nuclear imaging. These are already used together in hybrid imaging. CT provides us with detailed structural and anatomical information, while nuclear imaging methods, such as PET and SPECT, provide functional information by tracking radioactive tracers that participate in biochemical reactions within the body.\n\nBecause these two types of information are highly complementary, combining them makes the results much more powerful. That is why PET/CT scanners have become standard in many hospitals, especially in radiation oncology. More recently, companies like Siemens and GE have developed PET/MRI systems. However, CT and MRI have not yet been commercially combined, although research is moving in that direction.\n\nThe long-term vision is to bring CT, MRI, and nuclear imaging together into one unified system, giving us structural, functional, and biochemical information at the same time. This is the major trend in imaging—moving from individual modalities to hybrid and, eventually, fully integrated scanners.\nNow, with that context, let us move to our next imaging modality, MRI, which is unique in that it can provide both anatomical and functional information in a single technique.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n```json\n{\n  \"triples\": [\n    {\"s\":\"CT\", \"p\":\"uses\", \"o\":\"nuclear imaging\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"CT provides us with detailed structural and anatomical information, while nuclear imaging methods, such as PET and SPECT, provide functional information by tracking radioactive tracers that participate in biochemical reactions within the body.\"}\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT",
+        "p": "uses",
+        "o": "nuclear imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "CT provides us with detailed structural and anatomical information, while nuclear imaging methods, such as PET and SPECT, provide functional information by tracking radioactive tracers that participate in biochemical reactions within the body."
+      }
+    ]
+  }
+}

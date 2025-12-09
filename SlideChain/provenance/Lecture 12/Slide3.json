@@ -1,0 +1,119 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "X-ray source"
+          },
+          {
+            "category": "physics",
+            "term": "contrast"
+          },
+          {
+            "category": "physics",
+            "term": "interaction with the body"
+          },
+          {
+            "category": "workflow",
+            "term": "imaging chain"
+          },
+          {
+            "category": "physics",
+            "term": "partial absorption"
+          }
+        ],
+        "evidence": [
+          "First, you need an X-ray source.",
+          "those X-rays must interact with the human body.",
+          "Finally, we need a detector to capture that information.",
+          "That difference creates contrast.",
+          "The imaging chain has three main parts: the source, the interaction with the body, and the detector.",
+          "different tissues absorb X-rays to different degrees."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "We will cover three fundamental aspects: the source, the attenuation, and the detector."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "X-ray detector",
+        "p": "uses",
+        "s": "X-ray imaging"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray Source"
+          },
+          {
+            "category": "physics",
+            "term": "Absorption"
+          }
+        ],
+        "evidence": [
+          "Working Principle",
+          "General, Characteristic",
+          "Coherent, Incoherent",
+          "Absorption (K-edge)",
+          "Energy-integrating (Dual-energy imaging)",
+          "Photon-counting"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "contrast"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Next, those X-rays must interact with the human body. If there is no interaction, the photons just pass through like air, and we gain no information."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "X-ray Attenuation",
+        "p": "depends_on",
+        "s": "X-ray imaging"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Without a source, nothing begins - it\u2019s like trying to cook without rice.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray imaging",
+            "p": "uses",
+            "s": "X-ray source"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide3.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide3.txt"
+  },
+  "slide_id": "Slide3"
+}

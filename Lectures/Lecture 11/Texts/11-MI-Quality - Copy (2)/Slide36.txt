@@ -1,0 +1,14 @@
+Let’s make this idea of task-specific measures more concrete with a simple example.
+
+Imagine you are doing edge detection on an image — for instance, outlining the Eiffel Tower. Each pixel can belong to one of two classes: edge or non-edge. Similarly, in medical imaging, each case can be classified as disease present or disease absent.
+
+This gives us four possible outcomes:
+True Positive: The patient has a tumor, and the system or doctor correctly identifies it.
+True Negative: The patient is healthy, and the report correctly says no tumor.
+False Positive: The patient is healthy, but the system says there is a tumor. This can cause unnecessary anxiety, follow-up scans, or even invasive procedures.
+False Negative: The patient does have a tumor, but the system or doctor misses it. This is often the most serious error, because it can delay diagnosis and treatment.
+
+In clinical practice, both types of errors matter. False positives burden patients emotionally and financially, while false negatives can cost lives by missing opportunities for early treatment.
+That’s why doctors and imaging researchers often talk about sensitivity and specificity. Sensitivity reflects how good a system is at detecting true positives — catching disease when it is really there. Specificity reflects how good a system is at avoiding false alarms — correctly identifying when disease is not present.
+
+These terms can be confusing at first, but they are central to evaluating diagnostic imaging systems. They shift the focus away from just image sharpness or resolution and toward what really matters: whether the imaging system can support accurate medical decisions.

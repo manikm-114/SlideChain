@@ -1,0 +1,54 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:49:07.522796+00:00",
+  "text_length": 376,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis example shows how plot resolution affects curve smoothness.\nIn a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.\nWe plot each result in a subplot grid, with labels and titles showing the resolution.\nWith each pause, you can see the graph getting smoother — a great way to visualize the impact of sampling density.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"plot resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"curve smoothness\", \"category\": \"signal_processing\"},\n    {\"term\": \"linspace\", \"category\": \"mathematics\"},\n    {\"term\": \"sampling density\", \"category\": \"signal_processing\"},\n    {\"term\": \"plot\", \"category\": \"software\"},\n    {\"term\": \"subplot\", \"category\": \"software\"},\n    {\"term\": \"labels\", \"category\": \"software\"},\n    {\"term\": \"titles\", \"category\": \"software\"},\n    {\"term\": \"pause\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"This example shows how plot resolution affects curve smoothness.\",\n    \"In a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.\",\n    \"We plot each result in a subplot grid, with labels and titles showing the resolution.\",\n    \"With each pause, you can see the graph getting smoother — a great way to visualize the impact of sampling density.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "plot resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "curve smoothness",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linspace",
+        "category": "mathematics"
+      },
+      {
+        "term": "sampling density",
+        "category": "signal_processing"
+      },
+      {
+        "term": "plot",
+        "category": "software"
+      },
+      {
+        "term": "subplot",
+        "category": "software"
+      },
+      {
+        "term": "labels",
+        "category": "software"
+      },
+      {
+        "term": "titles",
+        "category": "software"
+      },
+      {
+        "term": "pause",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "This example shows how plot resolution affects curve smoothness.",
+      "In a loop, we increase the number of x-values using linspace, then compute y equals x over one plus x squared.",
+      "We plot each result in a subplot grid, with labels and titles showing the resolution.",
+      "With each pause, you can see the graph getting smoother - a great way to visualize the impact of sampling density."
+    ]
+  }
+}

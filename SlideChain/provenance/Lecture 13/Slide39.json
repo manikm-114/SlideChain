@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "Filtered Backprojection"
+          },
+          {
+            "category": "signal_processing",
+            "term": "High-pass filter"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Kernel H"
+          },
+          {
+            "category": "algorithm",
+            "term": "Filtered backprojection"
+          }
+        ],
+        "evidence": [
+          "You don't just smear it back. First, apply a high-pass filter with kernel H.",
+          "After filtering, you get a high-pass-filtered projection profile, called P-prime of theta, t.",
+          "Then you perform backprojection. That's filtered backprojection: filter each projection with H, and backproject every filtered projection profile."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "high-pass filter with kernel H"
+          },
+          {
+            "category": "algorithm",
+            "term": "filtered backprojection"
+          }
+        ],
+        "evidence": [
+          "convolve projections with a filter",
+          "backproject filtered projections",
+          "high-pass filter with kernel H",
+          "filtered backprojection",
+          "P'(\u03b8,t)",
+          "P(\u03b8,t)"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "After filtering, you get a high-pass-filtered projection profile, called P-prime of theta, t."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a high-pass-filtered projection profile",
+        "p": "produces",
+        "s": "P'(\u03b8,t)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "high-pass filter"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered backprojection"
+          },
+          {
+            "category": "modality",
+            "term": "projection profile"
+          },
+          {
+            "category": "mathematics",
+            "term": "kernel"
+          }
+        ],
+        "evidence": [
+          "You don\u2019t just smear it back. First, apply a high-pass filter with kernel H. After filtering, you get a high-pass-filtered projection profile, called P-prime of theta, t.",
+          "Then you perform backprojection. That\u2019s filtered backprojection: filter each projection with H, and backproject every filtered projection profile."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide39.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide39.txt"
+  },
+  "slide_id": "Slide39"
+}

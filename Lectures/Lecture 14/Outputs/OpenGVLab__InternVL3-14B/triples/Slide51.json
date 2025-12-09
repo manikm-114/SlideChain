@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide51",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"circular CT scan\", \"p\":\"reconstructs_with\", \"o\":\"XY plane\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This scanning method reconstructs images within a single plane, called the XY plane.\"},\n    {\"s\":\"X-ray beam\", \"p\":\"represents\", \"o\":\"neat rectangular region\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Ideally, the X-ray beam would be finely collimated so that all photons are confined within the slice thickness, represented as a neat rectangular region\"},\n    {\"s\":\"actual radiation dose profile\", \"p\":\"follows\", \"o\":\"curve\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Therefore, the actual radiation dose profile follows a curve, often shown as a blue curve\"},\n    {\"s\":\"dose\", \"p\":\"extends\", \"o\":\"beyond the intended slice area\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This means that, even though you intend to irradiate only the slice thickness, some dose extends beyond this region\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "circular CT scan",
+        "p": "reconstructs_with",
+        "o": "XY plane",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This scanning method reconstructs images within a single plane, called the XY plane."
+      },
+      {
+        "s": "X-ray beam",
+        "p": "represents",
+        "o": "neat rectangular region",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Ideally, the X-ray beam would be finely collimated so that all photons are confined within the slice thickness, represented as a neat rectangular region"
+      }
+    ]
+  }
+}

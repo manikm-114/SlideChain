@@ -1,0 +1,11 @@
+Now let’s look at a specific example of artifacts — in this case, metal artifacts in CT imaging.
+
+Suppose a patient has a hip fracture and receives metal implants. When we take X-rays or CT scans, the metal is so dense that it blocks or severely distorts the X-ray beams. The reconstruction algorithm, however, assumes it has complete and accurate data along every path. It doesn’t “know” that some of the information is missing or corrupted.
+
+As a result, the system produces streaks and bands radiating from the metal. These bright and dark lines are not real anatomical structures — they are purely computational artifacts caused by missing or distorted data.
+In the figure here, the first column shows uncorrected CT images with severe streak artifacts. The last column shows the ground truth, what the anatomy should look like.
+
+Researchers have developed various ways to reduce these artifacts. One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat. More recently, deep learning methods, such as convolutional neural networks, have been applied to further clean up the image and recover structures hidden by artifacts.
+You can see that the CNN results are closer to the ground truth, with clearer anatomy and fewer streaks.
+
+The key point here is that artifacts are not real structures, but they can easily confuse interpretation. They depend on the imaging modality, the reconstruction algorithm, and the clinical situation. That’s why recognizing artifacts — and knowing how to reduce them — is so important in medical imaging.

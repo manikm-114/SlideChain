@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T13:33:27.533211+00:00",
+  "text_length": 1232,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow we move to the next major step: sampling in k-space.\n\nThis is probably the most important concept in MRI. And I’ll be honest, it’s also one of the trickiest. So I strongly encourage you to review this multiple times, both in the textbook and in these lectures.\nThe idea is this: when we add gradient encoding — both phase encoding and frequency encoding — the MRI signal we measure naturally corresponds to a Fourier transform of the object we’re imaging.\n\nSo the scanner doesn’t measure an image directly. Instead, it measures data in k-space, which is essentially the Fourier space of the image. Then, by applying the Fourier transform, we reconstruct the actual image in spatial coordinates.\nThis concept is formalized in what we call the k-space theorem. And as you’ll see, the k-space theorem in MRI is directly analogous to the Fourier slice theorem we studied earlier for X-ray computed tomography.\n\nSo, in summary: slice selection gave us spatial specificity along one axis. Rephasing gradients fixed the signal within that slice. And now, sampling in k-space gives us the ability to encode and reconstruct every pixel inside the slice. This is the final piece that allows us to turn raw MR signals into detailed images.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"sampling in the k-space\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"phase encoding\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"frequency encoding\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"k-theorem\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"Fourier transform\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"Fourier slice theorem\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"reconstruction\",\n      \"category\": \"reconstruction\"\n    }\n  ],\n  \"evidence\": [\n    \"sampling in k-space\",\n    \"phase encoding\",\n    \"frequency encoding\",\n    \"k-theorem\",\n    \"Fourier transform\",\n    \"Fourier slice theorem\",\n    \"reconstruction\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "phase encoding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency encoding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "sampling in k-space",
+      "phase encoding",
+      "frequency encoding",
+      "k-theorem",
+      "Fourier transform",
+      "Fourier slice theorem",
+      "reconstruction"
+    ]
+  }
+}

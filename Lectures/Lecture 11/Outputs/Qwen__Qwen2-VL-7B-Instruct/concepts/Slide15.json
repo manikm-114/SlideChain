@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:45:36.967012+00:00",
+  "text_length": 1376,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at how the Structural Similarity Index, or SSIM, is actually computed.\nSuppose we have two images, which we’ll call signal X and signal Y. The first step is to look at their luminance, which simply means the average brightness level. We measure the mean intensity of each image and make sure we are comparing them on the same scale.\n\nNext, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean. A high standard deviation means strong contrast, while a low standard deviation means the image looks flat or washed out. So we compute the standard deviation for each image to quantify its contrast.\n\nAfter normalizing for luminance and contrast, we focus on the most important part: the structure. This step captures how patterns of pixels in one image relate to patterns in the other — whether the edges, textures, and fine details line up.\n\nFinally, SSIM combines all three comparisons — luminance, contrast, and structure — into a single value between zero and one. A score of one means the images are structurally identical. A lower score means important structural information has been lost.\n\nSo, in summary: SSIM works by checking three things — do the images have the same brightness, the same contrast, and the same structural patterns? When all three align, we say the images are very similar.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Structural Similarity Index\", \"category\": \"quality_metric\"},\n    {\"term\": \"Luminance\", \"category\": \"signal_processing\"},\n    {\"term\": \"Contrast\", \"category\": \"signal_processing\"},\n    {\"term\": \"Standard Deviation\", \"category\": \"mathematics\"},\n    {\"term\": \"Structure\", \"category\": \"signal_processing\"},\n    {\"term\": \"Normalization\", \"category\": \"signal_processing\"},\n    {\"term\": \"SSIM\", \"category\": \"quality_metric\"},\n    {\"term\": \"Similarity Measure\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"The first step is to look at their luminance, which simply means the average brightness level.\",\n    \"Next, we look at the contrast. This is captured by the standard deviation — how much the pixel values vary around the mean.\",\n    \"After normalizing for luminance and contrast, we focus on the most important part: the structure.\",\n    \"Finally, SSIM combines all three comparisons — luminance, contrast, and structure — into a single value between zero and one.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Structural Similarity Index",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Luminance",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Contrast",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Standard Deviation",
+        "category": "mathematics"
+      },
+      {
+        "term": "Structure",
+        "category": "signal_processing"
+      },
+      {
+        "term": "SSIM",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "The first step is to look at their luminance, which simply means the average brightness level.",
+      "Next, we look at the contrast. This is captured by the standard deviation - how much the pixel values vary around the mean.",
+      "After normalizing for luminance and contrast, we focus on the most important part: the structure.",
+      "Finally, SSIM combines all three comparisons - luminance, contrast, and structure - into a single value between zero and one."
+    ]
+  }
+}

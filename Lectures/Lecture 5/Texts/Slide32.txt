@@ -1,0 +1,19 @@
+Let’s now walk through a concrete example to see how Fourier coefficients are actually computed in practice.
+
+Suppose you’re interested in finding a particular coefficient from the Fourier series — let’s say the coefficient b 3.This is the number that scales the sine term with frequency 3 — in other words, sine of 2 pi times 3 t.
+
+So the question is:How much of this specific sine wave is present in the function f of t?
+To answer this, we use a technique we've now seen several times — the inner product.
+
+Here’s what we do:We take the inner product of f of t with sine of 2 pi times 3 t.
+Now keep in mind — this sine function is one of our basis elements.It’s a fixed, known waveform. The function f of t is the one we’re analyzing.And because the basis functions are orthonormal, a wonderful thing happens:
+
+When we take this inner product, it acts like a filter.
+It scans across the entire Fourier series of f of t, and picks out just the piece that exactly matches sine of 2 pi times 3 t.
+All the other terms — the constant term, the cosine terms, and the sine terms with different frequencies likesine of 2 pi t, or sine of 2 pi times 2 t, or sine of 2 pi times 4 t —all of those vanish. Their inner products are zero, because they’re orthogonal to sine of 2 pi times 3 t.
+The only term that survives is the one we care about — the one that involves b 3.
+So this inner product tells us, precisely and cleanly, what b 3 must be.
+And this isn’t just a lucky trick.
+It’s a fundamental feature of the Fourier basis —Orthogonality ensures that each coefficient can be extracted independently, with no interference from the others.
+In short:To find any Fourier coefficient — whether it’s a n or b n —You simply project the function onto the corresponding sine or cosine basis function.That’s it.
+And this is what makes the Fourier series so powerful.It gives us a systematic, elegant way to peel apart the frequency content of a signal — one layer at a time.

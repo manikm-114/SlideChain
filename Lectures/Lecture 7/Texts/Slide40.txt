@@ -1,0 +1,25 @@
+Now let’s take a moment to talk about an important concept in signal processing — the comb function and how it behaves under the Fourier transform.
+
+Let’s start with this equation at the top. It says:
+s of t equals the sum over all n of delta of t minus n times capital T.
+This is what we call a delta train or comb function in the time domain. It’s a series of impulses, evenly spaced by T units.
+Now, when we take the Fourier transform of this comb, something very elegant happens.
+It becomes another comb — but in the frequency domain.
+
+Specifically, the transform is:
+s of f equals one over capital T times the sum over all n of delta of f minus n over capital T.
+So, in words, a comb in time with spacing T becomes a comb in frequency with spacing 1 over T. And we get a scaling factor of 1 over T in front.
+This is a fundamental symmetry in Fourier analysis: when a signal is periodic in time, its spectrum is discrete in frequency — and vice versa.
+
+Now look at the plots in the middle of the slide.
+On the left side, we see a train of impulses spaced T apart along the time axis. On the right, we have the corresponding Fourier transform — another train of impulses but now spaced 1 over T along the frequency axis.
+So there’s this beautiful reciprocal relationship: if your delta train is spaced T in time, its Fourier counterpart is spaced 1 over T in frequency.
+And this brings us to the red box at the bottom of the slide. These equations generalize the idea.
+
+Let’s say you have a sum of delta functions shifted by n over P. That’s a comb with spacing 1 over P.
+Then, its Fourier transform becomes P times a sum of delta functions spaced P apart. The scaling factor flips — one becomes P, and the spacing flips from 1 over P to P.
+And if we put a scaling factor of 1 over P in front of the comb, then the Fourier transform is simply a comb with spacing P, with no extra scaling factor.
+So again, delta trains are their own Fourier transforms — up to a scaling and spacing change.
+
+This property is essential when we talk about sampling, because whenever we sample a signal, we’re essentially multiplying it by a comb function in time. And that multiplication creates repeated spectra in the frequency domain — spaced according to the sampling rate.
+So that’s the comb and its mirror — one of the most powerful dualities in Fourier theory.

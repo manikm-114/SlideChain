@@ -1,0 +1,12 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:32:40.009451+00:00",
+  "text_length": 234,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s a sample Radon code you can run yourself. It generates an image with a white block, then produces the projection data. \n\nAfter that you apply the filtration. The red arrows simply point to figures that appear on the next slide.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"radon\", \"category\": \"algorithm\"},\n    {\"term\": \"projection data\", \"category\": \"signal_processing\"},\n    {\"term\": \"filtration\", \"category\": \"signal_processing\"},\n    {\"term\": \"white block\", \"category\": \"anatomy\"},\n    {\"term\": \"image\", \"category\": \"modality\"},\n    {\"term\": \"projection\", \"category\": \"signal_processing\"},\n    {\"term\": \"radon transform\", \"category\": \"algorithm\"},\n    {\"term\": \"theta\", \"category\": \"mathematics\"},\n    {\"term\": \"degrees\", \"category\": \"mathematics\"},\n    {\"term\": \"X'prime\", \"category\": \"mathematics\"},\n    {\"term\": \"imagesc\", \"category\": \"software\"},\n    {\"term\": \"title\", \"category\": \"software\"},\n    {\"term\": \"xlabel\", \"category\": \"software\"},\n    {\"term\": \"ylabel\", \"category\": \"software\"},\n    {\"term\": \"set\", \"category\": \"software\"},\n    {\"term\": \"colormap\", \"category\": \"software\"},\n    {\"term\": \"colorbar\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Here",
+  "parsed": {
+    "term": "colorbar",
+    "category": "software"
+  }
+}

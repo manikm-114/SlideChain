@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide35",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let us connect the generator process to mathematical modeling. To properly describe the production and decay of technetium-99m, we need three first-order differential equations. These equations track the parent isotope molybdenum-99, the daughter isotope technetium-99m, and finally the stable granddaughter technetium-99.\n\nThe first equation describes the parent: it decays exponentially at a constant rate, as we already studied. The second equation describes the daughter, technetium-99m. This one is more interesting because it has two contributions: one positive term, which comes from the decay of the parent feeding into the daughter, and one negative term, which accounts for the daughter decaying further. Finally, the third equation describes the granddaughter, which only has a positive contribution coming from the decay of the daughter.\n\nIf you look closely, you will see that the daughter equation is not purely exponential—it is influenced by both the parent and its own decay. To solve this type of system, we use standard methods for ordinary differential equations. Specifically, the daughter solution is expressed as the sum of two parts: a homogeneous solution, which describes the natural decay, and a particular solution, which accounts for the contribution from the parent. These two components combine to give the real physical solution.\n\nThe important point here is not to get lost in the algebra, but to recognize the principle: exponential decay chains can be modeled systematically, and by solving these equations, we can predict the time course of technetium-99m production and availability in a generator. This is crucial in practice, because it tells us how much tracer will be available at a given time and when to perform elution for maximum yield.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"technetium-99m\", \"p\":\"depends_on\", \"o\":\"technetium-99\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"The second equation describes the daughter, technetium-99m. This one is more interesting because it has two contributions: one positive term, which comes from the decay of the parent feeding into the daughter, and one negative term, which accounts for the daughter decaying further.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "technetium-99m",
+        "p": "depends_on",
+        "o": "technetium-99",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "The second equation describes the daughter, technetium-99m. This one is more interesting because it has two contributions: one positive term, which comes from the decay of the parent feeding into the daughter, and one negative term, which accounts for the daughter decaying further."
+      }
+    ]
+  }
+}

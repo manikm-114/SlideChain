@@ -1,0 +1,58 @@
+{
+  "slide_id": "Slide9",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at the cross product. When you take two vectors, say vector a and vector b, their cross product is not a scalar like the dot product, but instead a new vector. The magnitude of this vector is equal to the length of a times the length of b times the sine of the angle between them. The direction of the result is perpendicular to the plane formed by a and b, determined by the right-hand rule.\n\nSo while the dot product gives us a projection, the cross product gives us an orthogonal vector that carries both magnitude and direction. This operation is not just a mathematical trick—it has deep physical meaning. In MRI physics, cross products appear naturally when we describe torques, angular momentum, and precession, making them essential to understanding the behavior of magnetic moments in an external field.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"cross product\", \"category\": \"mathematics\"},\n    {\"term\": \"vector\", \"category\": \"mathematics\"},\n    {\"term\": \"magnitude\", \"category\": \"mathematics\"},\n    {\"term\": \"direction\", \"category\": \"mathematics\"},\n    {\"term\": \"perpendicular\", \"category\": \"mathematics\"},\n    {\"term\": \"right-hand rule\", \"category\": \"mathematics\"},\n    {\"term\": \"torque\", \"category\": \"physics\"},\n    {\"term\": \"angular momentum\", \"category\": \"physics\"},\n    {\"term\": \"precession\", \"category\": \"physics\"},\n    {\"term\": \"magnetic moments\", \"category\": \"physics\"},\n    {\"term\": \"external field\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"The cross product gives us an orthogonal vector that carries both magnitude and direction.\", \"Cross products appear naturally when we describe torques, angular momentum, and precession, making them essential to understanding the behavior of magnetic moments in an external field.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "cross product",
+        "category": "mathematics"
+      },
+      {
+        "term": "vector",
+        "category": "mathematics"
+      },
+      {
+        "term": "magnitude",
+        "category": "mathematics"
+      },
+      {
+        "term": "direction",
+        "category": "mathematics"
+      },
+      {
+        "term": "perpendicular",
+        "category": "mathematics"
+      },
+      {
+        "term": "right-hand rule",
+        "category": "mathematics"
+      },
+      {
+        "term": "torque",
+        "category": "physics"
+      },
+      {
+        "term": "angular momentum",
+        "category": "physics"
+      },
+      {
+        "term": "precession",
+        "category": "physics"
+      },
+      {
+        "term": "magnetic moments",
+        "category": "physics"
+      },
+      {
+        "term": "external field",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The cross product gives us an orthogonal vector that carries both magnitude and direction.",
+      "Cross products appear naturally when we describe torques, angular momentum, and precession, making them essential to understanding the behavior of magnetic moments in an external field."
+    ]
+  }
+}

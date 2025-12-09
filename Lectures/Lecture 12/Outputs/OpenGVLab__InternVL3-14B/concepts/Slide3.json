@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"X-ray source\", \"category\": \"instrumentation\"},\n    {\"term\": \"X-ray attenuation\", \"category\": \"physics\"},\n    {\"term\": \"X-ray detector\", \"category\": \"instrumentation\"},\n    {\"term\": \"contrast\", \"category\": \"physics\"},\n    {\"term\": \"interaction with the body\", \"category\": \"physics\"},\n    {\"term\": \"imaging chain\", \"category\": \"workflow\"},\n    {\"term\": \"partial absorption\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"First, you need an X-ray source.\",\n    \"those X-rays must interact with the human body.\",\n    \"Finally, we need a detector to capture that information.\",\n    \"That difference creates contrast.\",\n    \"The imaging chain has three main parts: the source, the interaction with the body, and the detector.\",\n    \"different tissues absorb X-rays to different degrees.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray source",
+        "category": "instrumentation"
+      },
+      {
+        "term": "contrast",
+        "category": "physics"
+      },
+      {
+        "term": "interaction with the body",
+        "category": "physics"
+      },
+      {
+        "term": "imaging chain",
+        "category": "workflow"
+      },
+      {
+        "term": "partial absorption",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "First, you need an X-ray source.",
+      "those X-rays must interact with the human body.",
+      "Finally, we need a detector to capture that information.",
+      "That difference creates contrast.",
+      "The imaging chain has three main parts: the source, the interaction with the body, and the detector.",
+      "different tissues absorb X-rays to different degrees."
+    ]
+  }
+}

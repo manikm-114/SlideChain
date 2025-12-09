@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"OCT interferometer\", \"p\":\"measures\", \"o\":\"intensity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"What we can measure is intensity.\"},\n    {\"s\":\"intensity\", \"p\":\"depends_on\", \"o\":\"amplitude\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Intensity is proportional to the square of the amplitude.\"},\n    {\"s\":\"phase change\", \"p\":\"produces\", \"o\":\"change in amplitude\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"a phase change directly changes the amplitude we measure\"},\n    {\"s\":\"I\", \"p\":\"equals\", \"o\":\"4 I naught cosine squared phi over two\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"I equals four I naught cosine squared phi over two\"},\n    {\"s\":\"cosine squared x\", \"p\":\"equals\", \"o\":\"1/2 (1 + cos(2x))\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"cos^2 x = 1/2 (1 +",
+  "parsed": {
+    "s": "I",
+    "p": "equals",
+    "o": "4 I naught cosine squared phi over two",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "I equals four I naught cosine squared phi over two"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+Now, let’s introduce the idea of the ideal observer.
+In the context of binary classification, the ideal observer is defined as the one who makes use of all the statistical information available in order to maximize task performance. In other words, it’s the absolute gold standard — the best decision-maker you could have, whether human or machine.
+
+How does it work? Imagine you have an image, which we’ll call g. For this image, there are two possible explanations:
+Hypothesis zero says it comes from a normal case, with no abnormality.
+Hypothesis one says it comes from an abnormal case, where a signal, such as a tumor, is present.
+
+The ideal observer looks at both possibilities and asks: given the data I see, how likely is it that it came from the normal case, and how likely is it that it came from the abnormal case?
+The decision is then based on whichever likelihood is greater. If the abnormal case is more likely, the observer calls it abnormal; if the normal case is more likely, the observer calls it normal.
+
+This simple but powerful rule — often called the likelihood ratio test — provides an upper bound on performance. No other observer, whether it’s another model or even an expert human reader, can systematically do better.
+That’s why the ideal observer always produces the highest possible ROC curve for the task. It gives us a theoretical benchmark — a way to measure how close or how far real systems and real doctors are from perfection.

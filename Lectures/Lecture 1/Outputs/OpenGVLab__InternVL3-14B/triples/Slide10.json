@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Gamma rays\", \"p\":\"uses\", \"o\":\"nuclear imaging\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Gamma rays are used in nuclear imaging, like PET and SPECT\"},\n    {\"s\":\"Radio waves\", \"p\":\"uses\", \"o\":\"MRI\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Radio waves are instrumental in MRI\"},\n    {\"s\":\"Visible and infrared light\", \"p\":\"uses\", \"o\":\"optical imaging\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Visible and infrared light are for optical imaging\"},\n    {\"s\":\"Ultrasound\", \"p\":\"uses\", \"o\":\"ultrasound imaging\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Ultrasound, though not part of the EM spectrum, gives us mechanical wave-based imaging, referred to as ultrasound imaging\"},\n    {\"s\":\"X-rays\", \"p\":\"uses\", \"o\":\"CT/X-Ray\", \"modalities\":[\"image\"], \"confidence\":1.0, \"evidence\":\"CT/X-Ray\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gamma rays",
+        "p": "uses",
+        "o": "nuclear imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Gamma rays are used in nuclear imaging, like PET and SPECT"
+      },
+      {
+        "s": "Radio waves",
+        "p": "uses",
+        "o": "MRI",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Radio waves are instrumental in MRI"
+      },
+      {
+        "s": "Visible and infrared light",
+        "p": "uses",
+        "o": "optical imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Visible and infrared light are for optical imaging"
+      },
+      {
+        "s": "Ultrasound",
+        "p": "uses",
+        "o": "ultrasound imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Ultrasound, though not part of the EM spectrum, gives us mechanical wave-based imaging, referred to as ultrasound imaging"
+      }
+    ]
+  }
+}

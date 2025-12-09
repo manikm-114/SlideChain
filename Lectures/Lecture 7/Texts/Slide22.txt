@@ -1,0 +1,13 @@
+Now let’s move to the frequency domain and see what sampling looks like there.
+Earlier, we saw that sampling in the spatial or time domain means multiplying the signal by an impulse train. In the frequency domain, that multiplication becomes a convolution.
+
+Here’s what happens:
+On the left, we have the original signal’s spectrum — a smooth curve that shows how the energy is spread across different frequencies.
+In the center, we see a train of delta functions. These represent the periodic sampling pattern in the time domain.
+When we convolve the original spectrum with this delta train, what we get is shown on the right: multiple shifted copies of the original spectrum. One in the center, and others repeated at regular intervals to the left and right. These are called spectral replicas.
+
+Now, this setup is fine if the copies don’t overlap. But in the case shown here, the original spectrum is wide — it spreads across many frequencies — and the spacing between these delta peaks is not large enough. So the replicas overlap, and this overlap is what causes aliasing.
+
+Aliasing is when different frequency components get mixed together. It’s like solving the equation x plus y equals 10,  you can't tell how much is x and how much is y. Similarly, when spectra overlap, you lose the ability to tell which part of the signal came from which frequency. That’s a problem.
+
+So to avoid aliasing, we need to space those spectral copies far enough apart — which means we need a high enough sampling rate in the time domain. That ensures each frequency copy stays separate, and the original signal can be recovered accurately.

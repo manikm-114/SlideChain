@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"integral mean value theorem\",\n      \"p\": \"represents\",\n      \"o\": \"average value over a short interval\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This concept of 'average value over a short interval' will help us understand how the delta function works when it comes to sampling a continuous function.\"\n    },\n    {\n      \"s\": \"mean value theorem\",\n      \"p\": \"measures\",\n      \"o\": \"area under the curve\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Somewhere between a and b, there’s at least one point, which we’ll call c, where the height of the function at that point — f of c — multiplied by the width of the interval, gives you the same area as the one under the curve.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "integral mean value theorem",
+        "p": "represents",
+        "o": "average value over a short interval",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This concept of 'average value over a short interval' will help us understand how the delta function works when it comes to sampling a continuous function."
+      },
+      {
+        "s": "mean value theorem",
+        "p": "measures",
+        "o": "area under the curve",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Somewhere between a and b, there’s at least one point, which we’ll call c, where the height of the function at that point - f of c - multiplied by the width of the interval, gives you the same area as the one under the curve."
+      }
+    ]
+  }
+}

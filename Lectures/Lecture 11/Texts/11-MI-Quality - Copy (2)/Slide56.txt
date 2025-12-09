@@ -1,0 +1,9 @@
+The ideal observer, as we just discussed, requires complete statistical knowledge of the problem. But in practice, we almost never have that luxury. So, instead, we turn to simplified models.
+
+One of the most important of these is the Hotelling Observer.
+The idea is straightforward: rather than using all the complex statistics of the image, we take the image data and apply a linear template to it. In other words, we reduce the entire image into a single number — a test statistic. That number is then used to decide whether the case is more likely normal or abnormal.
+
+The Hotelling Observer is designed to be the best possible linear observer. What does “best” mean here? It means the observer chooses its template in a way that maximizes the signal-to-noise ratio — the separation between the diseased and non-diseased cases. The larger the separation, the easier the decision becomes.
+This is why the Hotelling Observer is so widely studied. It strikes a balance: not as powerful as the ideal observer, but still mathematically optimal within the class of linear decision rules.
+
+And if we don’t even want to use all the image data, we can go a step further. We might only use selected features or specific channels of the image, instead of the full dataset. That gives us the Channelized Hotelling Observer — a practical simplification that still works well in many real-world medical imaging problems.

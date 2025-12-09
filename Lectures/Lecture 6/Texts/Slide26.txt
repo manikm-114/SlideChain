@@ -1,0 +1,20 @@
+Let’s take a closer look at the scaling property of the Fourier transform.
+Here’s the idea. Suppose we have a function, f of t. And now, instead of f of t, we look at f of a times t, where a is just some constant — not zero.
+
+We’re changing the time scale. The question is: what happens to its Fourier transform?
+Well, this depends on whether a is positive or negative. But in both cases, something interesting happens.
+First, let’s say a is greater than zero.
+We plug f of a t into the Fourier transform formula. If you do the math — which involves changing variables and rearranging terms — you end up with this:
+The Fourier transform of f of a t becomesone divided by a, times F of s divided by a.
+
+So what does that mean?
+If we stretch the function in time — that is, make it slower — its frequency content gets compressed.And if we squeeze it in time — make it faster — the frequency content stretches out.
+
+Now, what if a is less than zero?
+In that case, the same formula still works, but with a minus sign that comes from flipping the limits of integration.
+
+So we just take the absolute value of a, and the final result becomes:
+The Fourier transform of f of a t equalsone over the absolute value of a, times F of s over a.
+
+So in short:Scaling in time causes the opposite effect in frequency.That’s the scaling property.
+And this is one more way to see how time and frequency are tightly connected in the Fourier world.

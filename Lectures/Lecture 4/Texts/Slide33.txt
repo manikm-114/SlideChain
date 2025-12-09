@@ -1,0 +1,12 @@
+Now, let’s look at a practical example that ties all of this together — the RC circuit.
+If you’re not familiar with electrical circuits, don’t worry.For our purposes, you can think of this setup as a black box.The input is a signal, and the output depends on the system’s behavior — specifically, its impulse response.
+In this circuit, we have a resistor R and a capacitor C connected in series.The voltage signal going in is x of t, and the voltage across the capacitor is the output y of t.
+Now here’s the key point:If we apply a delta function as the input — meaning a sharp, instantaneous impulse —the output is the circuit’s impulse response, denoted h of t.
+
+The h of t of the RC circuit is a decaying exponential. It tells us how the circuit reacts over time after a sudden input.
+But what happens if we apply a more general input — like a square pulse or a step function?
+Well, just like we learned, we can decompose that input into a sum of small impulse components.Each tiny impulse generates a scaled copy of the impulse response, and the total output is the convolution of the input and h of t.
+
+We can see this visually on the right:Different inputs — like short pulses or longer ones — are convolved with h of t,and the resulting output curves smoothly reflect how the circuit responds over time.
+Try experimenting with this in MATLAB or Python.Decompose the signal, apply convolution, and see how the shape of the output curve emerges naturally.
+This kind of modeling is not just useful for circuits — it’s a powerful tool in medical imaging, signal filtering, and physiological modeling, where systems respond to inputs in time-dependent ways.

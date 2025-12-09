@@ -1,0 +1,168 @@
+{
+  "lecture": "Lecture 3",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "control system"
+          },
+          {
+            "category": "instrumentation",
+            "term": "feedback loop"
+          },
+          {
+            "category": "instrumentation",
+            "term": "adjust the input"
+          },
+          {
+            "category": "instrumentation",
+            "term": "radar tracking"
+          }
+        ],
+        "evidence": [
+          "Another type of system is the control system.",
+          "Control systems don\u2019t just generate an output-they use that output as feedback to adjust the input or the system\u2019s behavior.",
+          "For instance, think of a radar tracking an airplane.",
+          "The radar detects the plane\u2019s position and adjusts itself to keep the target within view."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Unlike simple measurement systems, control systems don\u2019t just generate an output-they use that output as feedback to adjust the input or the system\u2019s behavior.",
+            "modalities": [
+              "text"
+            ],
+            "o": "feedback",
+            "p": "uses",
+            "s": "control systems"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "Radar"
+          },
+          {
+            "category": "algorithm",
+            "term": "Tracking"
+          }
+        ],
+        "evidence": [
+          "control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+          "think of a radar tracking an airplane. The radar detects the plane's position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "control system"
+          },
+          {
+            "category": "instrumentation",
+            "term": "feedback"
+          },
+          {
+            "category": "instrumentation",
+            "term": "output"
+          },
+          {
+            "category": "instrumentation",
+            "term": "input"
+          },
+          {
+            "category": "instrumentation",
+            "term": "real time"
+          }
+        ],
+        "evidence": [
+          "Another type of system is the control system.",
+          "Unlike simple measurement systems, control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+          "This feedback loop helps the system achieve its goal, even as conditions change.",
+          "Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+            "modalities": [
+              "text"
+            ],
+            "o": "feedback",
+            "p": "uses",
+            "s": "Control System"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Control System... generates an output",
+            "modalities": [
+              "text"
+            ],
+            "o": "output",
+            "p": "produces",
+            "s": "Control System"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+            "modalities": [
+              "text"
+            ],
+            "o": "feedback",
+            "p": "depends_on",
+            "s": "Control System"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "control system"
+          },
+          {
+            "category": "signal_processing",
+            "term": "feedback loop"
+          },
+          {
+            "category": "algorithm",
+            "term": "adapt or correct"
+          },
+          {
+            "category": "communication",
+            "term": "real time"
+          }
+        ],
+        "evidence": [
+          "Unlike simple measurement systems, control systems don\u2019t just generate an output-they use that output as feedback to adjust the input or the system\u2019s behavior.",
+          "Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

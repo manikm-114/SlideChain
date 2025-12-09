@@ -1,0 +1,14 @@
+Now, to make things even more interesting, we introduce two more important concepts: positive predictive value (PPV) and negative predictive value (NPV).
+Positive predictive value, or PPV, tells us: “If the imaging study says a patient is abnormal, how likely is it that they really have the disease?”
+
+The formula is:
+PPV equals True Positives over (True Positives plus False Positives).
+So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.
+On the other hand, negative predictive value, or NPV, tells us: “If the imaging study says a patient is normal, how likely is it that they really are disease-free?”
+
+The formula is:
+NPV equals True Negatives over (True Negatives plus False Negatives).
+So, among all the patients labeled as normal, NPV is the fraction who truly have no disease.
+Let’s put this in clinical terms. Suppose we are using CT to detect a tumor. If the scan flags a suspicious spot, PPV tells us how likely it is that this really is a tumor and not just a false alarm. If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor.
+
+So, sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth. PPV and NPV tell us what the test result actually means for the patient sitting in front of us.

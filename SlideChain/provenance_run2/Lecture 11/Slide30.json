@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "spatial resolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "delta function"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier analysis"
+          }
+        ],
+        "evidence": [
+          "Spatial Resolution = Full Width at Half Maximum (FWHM) of PSF",
+          "Mathematically, we describe each of those points as a delta function",
+          "This blur is called the point spread function, or PSF",
+          "The critical threshold is defined by the full width at half maximum, or FWHM",
+          "Another way to analyze resolution - which we\u2019ll get to shortly - is through the modulation transfer function, or MTF",
+          "which uses Fourier analysis to quantify how well different spatial frequencies are preserved in the image"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This is why we say spatial resolution is the minimum separation at which two objects can still be seen as distinct.",
+            "modalities": [
+              "text"
+            ],
+            "o": "minimum separation at which two objects can still be seen as distinct",
+            "p": "depends_on",
+            "s": "Spatial Resolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "Image Quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "modulation transfer function, or mtf"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "image quality"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The critical threshold is defined by the full width at half maximum, or FWHM, of the point spread function. In other words, when the distance between the two points is equal to the width of the blur at half its height, that\u2019s about the limit of what the imaging system can resolve. Any closer, and the system can no longer distinguish the two points. This is why we say spatial resolution is the minimum separation at which two objects can still be seen as distinct. Often, when people talk about \u201cresolution\u201d in imaging, this is what they mean: the ability to resolve fine detail.",
+            "modalities": [
+              "text"
+            ],
+            "o": "minimum separation at which two objects can still be seen as distinct",
+            "p": "measures",
+            "s": "spatial resolution"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

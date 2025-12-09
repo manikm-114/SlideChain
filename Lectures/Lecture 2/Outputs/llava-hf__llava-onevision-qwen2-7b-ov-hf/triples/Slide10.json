@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide10",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOnce you start writing code in MATLAB, you’ll be creating and manipulating variables — and the workspace is used to hold them.\nThe who and whos commands show you what variables are currently stored. who gives you a simple list, while whos gives more detail — like size, type, and memory usage.\nYou can save all your current variables to a file using the save command and later bring them back with load. If you want to start fresh, clear all wipes out everything in the workspace, clc clears the command window, and close all shuts any open figures.\nThese are simple but essential tools. Once you know how to manage your workspace, you’ll find MATLAB easier and more enjoyable to use.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"workspace\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"Once you start writing code in MATLAB, you’ll be creating and manipulating variables — and the workspace is used to hold them.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "workspace",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Once you start writing code in MATLAB, you’ll be creating and manipulating variables - and the workspace is used to hold them."
+      }
+    ]
+  }
+}

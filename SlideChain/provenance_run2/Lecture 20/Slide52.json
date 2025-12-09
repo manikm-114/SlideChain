@@ -1,0 +1,99 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this setup, you can selectively activate or turn on any voxel or pixel by controlling the magnetic gradients and RF pulses we just discussed.",
+            "modalities": [
+              "text"
+            ],
+            "o": "magnetic gradients and RF pulses",
+            "p": "uses",
+            "s": "system design"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The surrounding detectors collect the emitted gamma photons.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gamma photons",
+            "p": "measures",
+            "s": "polarized nucleus"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "So, depending on which gradient and RF pulse combination you apply, you can excite a specific spatial region, measure its response, and reconstruct the image point by point.",
+            "modalities": [
+              "text"
+            ],
+            "o": "image",
+            "p": "reconstructs_with",
+            "s": "system"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "magnetic resonance encoding"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Each polarized nucleus-such as xenon or krypton-can be individually manipulated using precise gradient fields in the x, y, and z directions. The coils you see here generate those magnetic field gradients, while the surrounding detectors collect the emitted gamma photons.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "precise gradient fields",
+            "p": "uses",
+            "s": "magnetic gradients"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "This concept essentially merges nuclear emission detection with MRI-style spin control, enabling us to perform polarized nuclear imaging in a controlled and highly selective way."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "while the surrounding detectors collect the emitted gamma photons."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "emitted gamma photons",
+        "p": "measures",
+        "s": "The surrounding detectors"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "highly selective way"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide52.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide52.txt"
+  },
+  "slide_id": "Slide52"
+}

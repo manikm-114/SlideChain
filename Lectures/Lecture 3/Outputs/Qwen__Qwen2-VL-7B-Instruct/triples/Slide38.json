@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide38",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T21:10:18.877312+00:00",
+  "text_length": 536,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen we connect these artificial neurons in layers, we create a neural network. With many layers, we have what’s called a deep neural network—the foundation of modern deep learning.\nIn these networks, the lower layers detect simple features, like edges or corners, while higher layers learn more abstract patterns, like faces or traffic signs. Deep neural networks now drive advances in fields from facial recognition to self-driving cars. This is a powerful example of combining linear and nonlinear elements to solve complex problems.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Deep Neural Network (DNN)\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"Deep neural networks learn hierarchical feature representations\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"Deep neural networks learn hierarchical feature representations\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

@@ -1,0 +1,8 @@
+Here’s a simple MATLAB example you can try for yourself.
+
+We start by defining two discrete signals — or vectors in MATLAB — x and h. In this case:x equals 5,4,3,2,1h equals 1,2,3,4,5
+Next, we perform a convolution using MATLAB’s built-in conv function:y equals conv x, h;
+Finally, we plot the result:plot y; ylim 0 to 100;
+
+What do we see? A clean triangular shape. This is exactly what we expect when we linearly convolve two finite sequences that look like ramps in opposite directions. The convolution produces a sequence that starts small, rises to a peak — here at the center — and then falls symmetrically.
+This simple example is a good reminder that convolution is not mysterious. It’s just a systematic way of multiplying and summing overlapping parts of two signals. And MATLAB makes it easy to visualize.

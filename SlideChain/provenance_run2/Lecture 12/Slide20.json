@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "liquid metal anode"
+          },
+          {
+            "category": "instrumentation",
+            "term": "electron beam"
+          },
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "physics",
+            "term": "Bremsstrahlung radiation"
+          },
+          {
+            "category": "physics",
+            "term": "conservation laws"
+          },
+          {
+            "category": "physics",
+            "term": "electromagnetic theory"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration of charge"
+          },
+          {
+            "category": "physics",
+            "term": "higher intensity"
+          },
+          {
+            "category": "physics",
+            "term": "higher flux"
+          }
+        ],
+        "evidence": [
+          "liquid metal anode",
+          "electron beam",
+          "X-rays",
+          "Bremsstrahlung radiation",
+          "conservation laws",
+          "electromagnetic theory",
+          "acceleration of charge",
+          "higher intensity",
+          "higher flux"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Instead of using a solid tungsten anode, this design uses a liquid metal anode.",
+            "modalities": [
+              "text"
+            ],
+            "o": "liquid metal anode",
+            "p": "uses",
+            "s": "new type of X-ray tube"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The interaction between the electrons and the liquid target produces X-rays.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-rays",
+            "p": "produces",
+            "s": "liquid metal anode"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "this design represents a more advanced and expensive technology.",
+            "modalities": [
+              "text"
+            ],
+            "o": "advanced and expensive technology",
+            "p": "represents",
+            "s": "new type of X-ray tube"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "X-ray technology advancement"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "conservation laws and electromagnetic theory"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Let me briefly mention a new type of X-ray tube, which represents a more advanced and expensive technology."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "more advanced and expensive technology",
+        "p": "represents",
+        "s": "new type of X-ray tube"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "connect them with the underlying physics"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This design uses a liquid metal anode.",
+            "modalities": [
+              "text"
+            ],
+            "o": "liquid metal",
+            "p": "uses",
+            "s": "X-ray tube"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"signal\",\n      \"p\": \"produces\",\n      \"o\": \"discrete values\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the top row, you see our original continuous-time signal on the left. On the right, it’s been sampled — we now have a series of discrete values at regular time intervals.\"\n    },\n    {\n      \"s\": \"spectrum\",\n      \"p\": \"represents\",\n      \"o\": \"original spectrum\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max.\"\n    },\n    {\n      \"s\": \"sampled spectrum\",\n      \"p\": \"represents\",\n      \"o\": \"multiple, non-overlapping copies\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the right is the sampled spectrum — multiple, non-overlapping copies",
+  "parsed": {
+    "s": "spectrum",
+    "p": "represents",
+    "o": "original spectrum",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "On the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max."
+    ]
+  }
+}

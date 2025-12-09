@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MRI scans\", \"p\":\"measures\", \"o\":\"brain activity\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"The MRI scans you see here show how the brain reacts differently in each case.\"},\n    {\"s\":\"BOLD effect\", \"p\":\"depends_on\", \"o\":\"oxygen-rich blood flow\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This mechanism is called the BOLD effect, short for Blood Oxygen Level Dependent contrast.\"},\n    {\"s\":\"advanced image analysis and machine learning\", \"p\":\"reconstructs_with\", \"o\":\"visual information\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Using advanced image analysis and machine learning, they can now reconstruct, with rough resolution, what a person is actually seeing\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MRI scans",
+        "p": "measures",
+        "o": "brain activity",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The MRI scans you see here show how the brain reacts differently in each case."
+      },
+      {
+        "s": "BOLD effect",
+        "p": "depends_on",
+        "o": "oxygen-rich blood flow",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This mechanism is called the BOLD effect, short for Blood Oxygen Level Dependent contrast."
+      },
+      {
+        "s": "advanced image analysis and machine learning",
+        "p": "reconstructs_with",
+        "o": "visual information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using advanced image analysis and machine learning, they can now reconstruct, with rough resolution, what a person is actually seeing"
+      }
+    ]
+  }
+}

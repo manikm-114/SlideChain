@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"X-ray spectrum\", \"p\":\"produces\", \"o\":\"Bremsstrahlung radiation\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"First, notice the broad, continuous curve — this comes from Bremsstrahlung radiation.\"},\n    {\"s\":\"X-ray spectrum\", \"p\":\"produces\", \"o\":\"Characteristic X-rays\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Next, at higher energies — around 70 kilo-electron-volts and above, for tungsten — you start to see sharp peaks. These are the characteristic X-rays, labeled here as K-alpha and K-beta.\"},\n    {\"s\":\"X-ray spectrum\", \"p\":\"depends_on\", \"o\":\"tube voltage\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The maximum X-ray energy you can obtain is determined by the tube voltage.\"},\n    {\"s\":\"X-ray spectrum\", \"p\":\"depends_on\", \"o\":\"tube current\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Finally, the intensity of the spectrum — meaning the number",
+  "parsed": {
+    "s": "X-ray spectrum",
+    "p": "depends_on",
+    "o": "tube voltage",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The maximum X-ray energy you can obtain is determined by the tube voltage."
+    ]
+  }
+}

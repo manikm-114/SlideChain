@@ -1,0 +1,13 @@
+Now here’s something truly fascinating—and unavoidable—when working with Fourier series. It’s known as the Gibbs effect.
+
+Let’s revisit what we saw on the previous slide. When we try to approximate a function with a sudden jump, like our square wave, the Fourier series doesn’t quite nail the jump. Instead, it creates an oscillatory overshoot near the point of discontinuity. You can see these ripples in the red-highlighted regions on this plot.
+
+What’s important to understand here is that this overshoot doesn’t disappear—even if we use hundreds or thousands of terms. Yes, the oscillations become more tightly packed, clustering closer to the jump. But the height of the overshoot—the peak error—does not go away.
+It approaches a fixed value—about 9 percent of the jump in the function. That’s the defining feature of the Gibbs effect.
+
+So why does this happen? Well, the Fourier series is built from smooth, continuous waves—like sines and cosines or complex exponentials. But when we try to represent a sharp edge—a discontinuity—using only smooth components, we hit a fundamental limit. There’s no perfect way to form a step out of waves.
+This mismatch creates those persistent ripples. It’s not a bug in the method—it’s a deep mathematical truth.
+
+So even though the Fourier approximation converges pointwise almost everywhere, and even in the sense of least squares, it never perfectly resolves a jump. This is especially important in applications like signal processing or image reconstruction, where sharp edges and sudden transitions often appear.
+The takeaway is: when you see these ringing effects around edges in a Fourier approximation, you're witnessing the Gibbs effect in action.
+Let’s now bring all this together with a final reflection on what we’ve learned from the square wave example.

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide56",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s talk about some general guidelines regarding CT dose.\n\nRadiation dose measured during multiple scans is roughly proportional to the tube current, or mA. Higher tube current means more photons emitted, resulting in a higher radiation dose.\nLonger scan times also increase dose, as the patient is exposed for a longer period.\nIncreasing the tube voltage, or kVp, raises photon energy, which also influences dose. Although higher energy photons are more penetrating, they tend to cause slightly higher patient dose.\n\nWhen you reduce slice thickness—that is, make the X-ray beam narrower—you increase spatial resolution. But thinner slices require more photons since the beam is less focused, which can slightly increase the dose due to some photon wastage.\nMany factors affect dose increase or decrease, including patient size or phantom size. For a standard head phantom, the dose at the center and periphery is roughly the same.\n\nFor larger phantoms, like the whole body, the central dose may be lower due to increased attenuation, with a higher dose in peripheral regions.\nIn extreme cases, like imagining irradiating the Earth, the very center would receive almost no photons, so the central dose would be very low, while peripheral areas get a higher dose.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"tube current\", \"p\":\"measures\", \"o\":\"radiation dose\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Higher tube current means more photons emitted, resulting in a higher radiation dose.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "tube current",
+        "p": "measures",
+        "o": "radiation dose",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Higher tube current means more photons emitted, resulting in a higher radiation dose."
+      }
+    ]
+  }
+}

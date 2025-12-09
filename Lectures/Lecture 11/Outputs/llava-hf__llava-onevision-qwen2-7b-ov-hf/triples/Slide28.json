@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide28",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow we move into the second part of our lecture: system-specific measures.\n\nSo far, we’ve discussed general mathematical ways of comparing images — measures like mean squared error, KL divergence, and SSIM. These are important, but they don’t tell the whole story, because image quality also depends heavily on the imaging system itself.\nEvery imaging system — whether it’s an X-ray detector, an MRI scanner, or an ultrasound probe — has its own characteristics and limitations. To assess the quality of images produced by a system, we need to look at metrics that reflect the system’s performance.\n\nThis includes measures such as:\nNoise, and the related quantities signal-to-noise ratio (SNR) and contrast-to-noise ratio (CNR).\nResolution, which can be spatial, contrast, temporal, or spectral, depending on what aspect of the system we are evaluating.\nAnd finally, artifacts, which are false or misleading structures that appear in the image because of imperfections in the imaging process.\nTogether, these system-specific measures tell us how good a given imaging device is at capturing and representing reality.\n\nSo let’s begin this section with one of the most important system-specific measures: the signal-to-noise ratio, or SNR.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"signal-to-noise ratio\", \"p\":\"measures\",\n     \"o\":\"image quality\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"SNR is an important system-specific measure that reflects the imaging system's performance.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "signal-to-noise ratio",
+        "p": "measures",
+        "o": "image quality",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.0,
+        "evidence": "SNR is an important system-specific measure that reflects the imaging system's performance."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide64",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nFinally, here is your homework. You will use the MATLAB code available online to compute the Structural Similarity Index, or SSIM, between two images. SSIM is a perceptual metric that compares luminance, contrast, and structure.\n\nYour task is two-fold. First, compute SSIM for a pair of images—either the ones shown here or another pair of your choice. Second, design an example where sensitivity is 90% and specificity is 80%, and show your calculations.\n\nThis exercise is meant to reinforce your understanding of both image quality metrics and diagnostic performance measures. The due date is one week later, so please manage your time accordingly.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"SSIM\", \"p\":\"measures\",\n     \"o\":\"image\", \"modalities\":[\"image\"], \"confidence\":1.0, \"evidence\":\"SSIM is a perceptual metric that compares luminance, contrast, and structure.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "SSIM",
+        "p": "measures",
+        "o": "image",
+        "modalities": [
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "SSIM is a perceptual metric that compares luminance, contrast, and structure."
+      }
+    ]
+  }
+}

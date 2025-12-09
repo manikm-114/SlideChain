@@ -1,0 +1,65 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "communication",
+        "term": "clinical decisions"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The top 20 radiologists perform extremely well - their ROC curve stays high, close to the upper-left corner."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "extremely well",
+        "p": "performs",
+        "s": "top 20 radiologists"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "clinical decisions"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "task-specific measures"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "In contrast, the bottom 20 radiologists struggle. Their ROC curve lies much closer to the diagonal, which means their decisions are only a little better than chance."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "ROC curve lies much closer to the diagonal",
+        "p": "represents",
+        "s": "Bottom 20 Radiologists"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "communication",
+        "term": "accurate clinical decisions"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide51.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide51.txt"
+  },
+  "slide_id": "Slide51"
+}

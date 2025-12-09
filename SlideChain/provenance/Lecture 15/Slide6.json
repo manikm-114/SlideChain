@@ -1,0 +1,149 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "physics",
+            "term": "rays"
+          },
+          {
+            "category": "reconstruction",
+            "term": "views"
+          },
+          {
+            "category": "quality_metric",
+            "term": "radial component"
+          },
+          {
+            "category": "quality_metric",
+            "term": "circumferential component"
+          },
+          {
+            "category": "reconstruction",
+            "term": "CT reconstruction"
+          },
+          {
+            "category": "physics",
+            "term": "X-rays"
+          }
+        ],
+        "evidence": [
+          "the resolution of CT reconstruction",
+          "number of rays",
+          "number of views",
+          "radial component of spatial resolution",
+          "circumferential component of resolution",
+          "CT reconstruction",
+          "X-rays passing through the object"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "less detail"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Number of rays affects the radial component of spatial resolution",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "radial component of spatial resolution",
+            "p": "uses",
+            "s": "Number of rays"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "circumferential resolution"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.98,
+            "evidence": "Number of rays affects the radial component of spatial resolution",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "radial component of spatial resolution",
+            "p": "depends_on",
+            "s": "Number of rays"
+          },
+          {
+            "confidence": 0.98,
+            "evidence": "Number of views affects the circumferential component of resolution",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "circumferential component of resolution",
+            "p": "depends_on",
+            "s": "Number of views"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "rays"
+          },
+          {
+            "category": "reconstruction",
+            "term": "views"
+          },
+          {
+            "category": "reconstruction",
+            "term": "radial component"
+          },
+          {
+            "category": "reconstruction",
+            "term": "circumferential component"
+          },
+          {
+            "category": "reconstruction",
+            "term": "resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "blurrier images"
+          },
+          {
+            "category": "reconstruction",
+            "term": "detail"
+          }
+        ],
+        "evidence": [
+          "Two key factors determine how sharp or detailed your reconstructed image will be."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

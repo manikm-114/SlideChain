@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"collimator\",\n      \"p\": \"represents\",\n      \"o\": \"hexagonal geometry lead collimator\",\n      \"modalities\": [\"image\", \"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"FIGURE 2.5. (Left) A top view of a hexagonal geometry lead collimator placed directly on the surface of the scintillation crystal.\"\n    },\n    {\n      \"s\": \"collimator\",\n      \"p\": \"depends_on\",\n      \"o\": \"values of L, l, d, and z\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the values of L, l, d, and z determine the closest separation R at which two sources of radactivity can be resolved.\"\n    },\n    {\n      \"s\": \"γ-rays\",\n      \"p\": \"absorbed in\",\n      \"o\": \"body\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Below an energy of 100 keV most γ-rays are absorbed in the body via photoelectric interactions",
+  "parsed": {
+    "s": "collimator",
+    "p": "depends_on",
+    "o": "values of L, l, d, and z",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "the values of L, l, d, and z determine the closest separation R at which two sources of radactivity can be resolved."
+    ]
+  }
+}

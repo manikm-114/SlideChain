@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound wave\",\n      \"p\": \"represents\",\n      \"o\": \"longitudinal wave\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This alternating process of compression and rarefaction creates a longitudinal wave that travels through the medium.\"\n    },\n    {\n      \"s\": \"transducer\",\n      \"p\": \"produces\",\n      \"o\": \"compression\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When the transducer pushes the molecules forward, they become compressed\"\n    },\n    {\n      \"s\": \"transducer\",\n      \"p\": \"produces\",\n      \"o\": \"rarefaction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"when it pulls back, they spread apart\"\n    },\n    {\n      \"s\": \"ultrasound wave\",\n      \"p\": \"depends_on\",\n      \"o\": \"molecules\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the medium —",
+  "parsed": {
+    "s": "transducer",
+    "p": "produces",
+    "o": "rarefaction",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "when it pulls back, they spread apart"
+    ]
+  }
+}

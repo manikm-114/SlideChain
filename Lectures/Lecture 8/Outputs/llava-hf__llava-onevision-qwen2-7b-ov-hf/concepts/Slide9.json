@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide9",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSignal sampling is a fundamental concept, but it can be confusing if you only look at it quickly. So let’s slow down and really understand it.\nAt the top, we have our continuous signal, f x. This is defined for every value of x and could represent anything — a sound wave, an image profile, or a measured signal.\n\nNext, we have what’s called a Shah function, or an impulse train. This is simply a series of delta functions, each spaced t units apart. Mathematically, it’s written as the sum of delta functions, where each one is located at x equals n T, with n being an integer. You can think of this impulse train as a ruler that marks the exact points where we’ll take our samples.\n\nWhen we multiply the continuous signal f of x by this impulse train, we get the sampled function. This multiplication is done point-by-point: at each delta function’s location, we keep the value of f of x; everywhere else, the result is zero.\nSo the sampled signal is really the original signal’s values, “attached” to the impulses in the train. The impulses mark the positions, and the heights of the impulses carry the signal’s values at those positions.\n\nIn other words, the sampled function is just the original function, but only at discrete, regularly spaced points. This is the first step in moving from the continuous world to the digital world.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"signal sampling\", \"category\": \"signal_processing\"},\n    {\"term\": \"continuous signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"Shah function\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse train\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampled function\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete, regularly spaced points\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"At the top, we have our continuous signal, f x. This is defined for every value of x and could represent anything — a sound wave, an image profile, or a measured signal.\", \"Next, we have what’s called a Shah function, or an impulse Train. This is simply a series of delta functions, each spaced t units apart.\", \"When we multiply the continuous signal f of x by this impulse train, we get the sampled function.\", \"So the sampled signal is really the original signal’s values, “attached” to the impulses in the train. The impulses mark the positions, and the heights of the impulses carry the signal’s values at those positions.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "signal sampling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Shah function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse train",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampled function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete, regularly spaced points",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "At the top, we have our continuous signal, f x. This is defined for every value of x and could represent anything - a sound wave, an image profile, or a measured signal.",
+      "Next, we have what’s called a Shah function, or an impulse Train. This is simply a series of delta functions, each spaced t units apart.",
+      "When we multiply the continuous signal f of x by this impulse train, we get the sampled function.",
+      "So the sampled signal is really the original signal’s values, “attached” to the impulses in the train. The impulses mark the positions, and the heights of the impulses carry the signal’s values at those positions."
+    ]
+  }
+}

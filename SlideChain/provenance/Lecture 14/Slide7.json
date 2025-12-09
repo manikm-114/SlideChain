@@ -1,0 +1,169 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "data truncation"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "projection profile"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct images"
+          }
+        ],
+        "evidence": [
+          "the issue of data truncation",
+          "Fourier slice theorem",
+          "projection profile",
+          "Fourier transformation",
+          "reconstruct images"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Fourier slice theorem",
+            "p": "depends_on",
+            "s": "data truncation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "data truncation"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "data_processing",
+            "term": "data truncation problem"
+          }
+        ],
+        "evidence": [
+          "This leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "data truncation"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "projection profile"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct images"
+          }
+        ],
+        "evidence": [
+          "This leads us to the issue of data truncation.",
+          "If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly.",
+          "This is called the data truncation problem.",
+          "Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly.",
+            "modalities": [
+              "text"
+            ],
+            "o": "full projection profile",
+            "p": "depends_on",
+            "s": "Fourier slice theorem"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data.",
+            "modalities": [
+              "text"
+            ],
+            "o": "images",
+            "p": "reconstructs_with",
+            "s": "data truncation problem"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "data_processing",
+            "term": "data truncation"
+          },
+          {
+            "category": "physics",
+            "term": "projection profile"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transformation"
+          }
+        ],
+        "evidence": [
+          "This leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide7.txt"
+  },
+  "slide_id": "Slide7"
+}

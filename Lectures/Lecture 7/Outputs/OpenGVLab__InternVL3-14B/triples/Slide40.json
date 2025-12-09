@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"comb in frequency\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"when we take the Fourier transform of this comb, something very elegant happens. It becomes another comb — but in the frequency domain.\"\n    },\n    {\n      \"s\": \"comb function\",\n      \"p\": \"represents\",\n      \"o\": \"delta train\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"s of t equals the sum over all n of delta of t minus n times capital T. This is what we call a delta train or comb function in the time domain.\"\n    },\n    {\n      \"s\": \"sampling\",\n      \"p\": \"uses\",\n      \"o\": \"comb function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This property is essential when we talk about sampling, because whenever we sample a signal, we’re essentially multiplying it by a comb function in time",
+  "parsed": {
+    "s": "comb function",
+    "p": "represents",
+    "o": "delta train",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "s of t equals the sum over all n of delta of t minus n times capital T. This is what we call a delta train or comb function in the time domain."
+    ]
+  }
+}

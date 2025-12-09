@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original continuous signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"if certain conditions are met, we can reconstruct the original continuous signal from these samples without losing any information.\"\n    },\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"depends_on\",\n      \"o\": \"band-limited signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the theorem guarantees perfect recovery. But this only works if the original signal’s Fourier transform is band-limited.\"\n    },\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"uses\",\n      \"o\": \"Nyquist rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"P must be at least 2 W. This ensures there is no overlap between the repeated copies of the spectrum in the frequency domain.\"\n    },\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"produces\",\n      \"o",
+  "parsed": {
+    "s": "sampling theorem",
+    "p": "uses",
+    "o": "Nyquist rate",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "P must be at least 2 W. This ensures there is no overlap between the repeated copies of the spectrum in the frequency domain."
+    ]
+  }
+}

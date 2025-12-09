@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide21",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T16:04:14.093244+00:00",
+  "text_length": 1285,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo now, let’s think about what happens if we have not just a few components, but many, many wavelength components all mixed together — just like a rainbow of light. Imagine several sine-wave components of different colors, each slightly different in frequency. When we add them together, the result no longer looks like a clean, single-frequency wave.\n\nInstead, you start to see an envelope pattern — a burst that looks like a Gaussian-shaped profile, or what we often call a coherence envelope. The more components you add — red, orange, green, blue, all slightly shifted — the narrower and sharper that envelope becomes. This figure visually shows exactly that. With two components, you can still see the oscillations clearly. Add three components, and the interference gets tighter. Add seven components, and now the oscillations begin to cluster and fade away at the edges, forming a smooth, localized shape. \n\nSo, if you keep increasing the number of wavelengths, the interference pattern becomes confined in space — like a short pulse — and its overall shape starts resembling a Gaussian curve. That’s the idea behind partial coherence. The more wavelengths you combine, the shorter the coherence length becomes, and the interference fringes appear only within that small region.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Γ(ΔL,v1,v2)\",\n      \"p\": \"represents\",\n      \"o\": \"case of partially coherent light\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"The figure visually shows exactly that. With two components, you can still see the oscillations clearly.\"\n    },\n    {\n      \"s\": \"Γ(ΔL,v1,v2,v3)\",\n      \"p\": \"represents\",\n      \"o\": \"case of partially coherent light\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Add three components, and the interference gets tighter.\"\n    },\n    {\n      \"s\": \"Γ(ΔL,v1,v2,...,v7)\",\n      \"p\": \"represents\",\n      \"o\": \"case of partially coherent light\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Add seven components, and now the oscillations begin to",
+  "parsed": {
+    "s": "Γ(ΔL,v1,v2,v3)",
+    "p": "represents",
+    "o": "case of partially coherent light",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Add three components, and the interference gets tighter."
+    ]
+  }
+}

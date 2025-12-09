@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide19",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:13:04.917245+00:00",
+  "text_length": 380,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn the early 1990s, I wrote a paper called the General Cone Beam Reconstruction Algorithm. \n\nIt explains that for cone beam helical scanning—where the beam geometry is divergent—you cannot simply apply linear interpolation to reconstruct images.\n\nThe mathematics involved is more complicated, requiring specialized algorithms to handle data truncation and beam geometry correctly.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"General Cone Beam Reconstruction Algorithm\", \"category\": \"algorithm\"},\n    {\"term\": \"Cone beam helical scanning\", \"category\": \"reconstruction\"},\n    {\"term\": \"Data truncation\", \"category\": \"mathematics\"},\n    {\"term\": \"Beam geometry\", \"category\": \"mathematics\"},\n    {\"term\": \"Linear interpolation\", \"category\": \"mathematics\"},\n    {\"term\": \"Specialized algorithms\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"For cone beam helical scanning—where the beam geometry is divergent—you cannot simply apply linear interpolation to reconstruct images.\",\n    \"The mathematics involved is more complicated, requiring specialized algorithms to handle data truncation and beam geometry correctly.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "General Cone Beam Reconstruction Algorithm",
+        "category": "algorithm"
+      },
+      {
+        "term": "Cone beam helical scanning",
+        "category": "reconstruction"
+      },
+      {
+        "term": "Data truncation",
+        "category": "mathematics"
+      },
+      {
+        "term": "Beam geometry",
+        "category": "mathematics"
+      },
+      {
+        "term": "Linear interpolation",
+        "category": "mathematics"
+      },
+      {
+        "term": "Specialized algorithms",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "For cone beam helical scanning-where the beam geometry is divergent-you cannot simply apply linear interpolation to reconstruct images.",
+      "The mathematics involved is more complicated, requiring specialized algorithms to handle data truncation and beam geometry correctly."
+    ]
+  }
+}

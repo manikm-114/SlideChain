@@ -1,0 +1,27 @@
+{
+  "slide_id": "Slide38",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:52:29.610705+00:00",
+  "text_length": 478,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s try a simple numerical task: summing one over i squared, from i equals 1 to 10.\nWe can do this two ways — forward, starting from i equals 1, or backward, starting from i equals 10.\nThe code is nearly identical, just with the loop going in reverse.\nNow, in theory, both results should be the same. But because of floating-point rounding, the order can make a small difference. This is a great example of how numerical stability matters — especially in scientific computing.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"floating-point rounding\", \"category\": \"mathematics\"},\n    {\"term\": \"numerical stability\", \"category\": \"mathematics\"},\n    {\"term\": \"scientific computing\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"This is a great example of how numerical stability matters — especially in scientific computing.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "floating-point rounding",
+        "category": "mathematics"
+      },
+      {
+        "term": "numerical stability",
+        "category": "mathematics"
+      },
+      {
+        "term": "scientific computing",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "This is a great example of how numerical stability matters - especially in scientific computing."
+    ]
+  }
+}

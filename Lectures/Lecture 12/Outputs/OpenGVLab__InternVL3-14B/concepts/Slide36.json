@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"anti-scatter grid\", \"category\": \"instrumentation\"},\n    {\"term\": \"anatomical structures\", \"category\": \"anatomy\"},\n    {\"term\": \"scattered photons\", \"category\": \"physics\"},\n    {\"term\": \"contrast\", \"category\": \"quality_metric\"},\n    {\"term\": \"low-contrast tumors\", \"category\": \"anatomy\"},\n    {\"term\": \"scatter\", \"category\": \"physics\"},\n    {\"term\": \"X-ray photons\", \"category\": \"physics\"},\n    {\"term\": \"image\", \"category\": \"modality\"},\n    {\"term\": \"disease detection\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"difference between using an anti-scatter grid and not using one\",\n    \"anatomical structures are much sharper\",\n    \"scattered photons\",\n    \"scatter washes out important details and reduces contrast\",\n    \"low-contrast tumors\",\n    \"scattered X-ray photons\",\n    \"image looks more foggy\",\n    \"detecting a disease early\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "anti-scatter grid",
+        "category": "instrumentation"
+      },
+      {
+        "term": "scattered photons",
+        "category": "physics"
+      },
+      {
+        "term": "contrast",
+        "category": "quality_metric"
+      },
+      {
+        "term": "scatter",
+        "category": "physics"
+      },
+      {
+        "term": "X-ray photons",
+        "category": "physics"
+      },
+      {
+        "term": "image",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "difference between using an anti-scatter grid and not using one",
+      "anatomical structures are much sharper",
+      "scattered photons",
+      "scatter washes out important details and reduces contrast",
+      "low-contrast tumors",
+      "scattered X-ray photons",
+      "image looks more foggy",
+      "detecting a disease early"
+    ]
+  }
+}

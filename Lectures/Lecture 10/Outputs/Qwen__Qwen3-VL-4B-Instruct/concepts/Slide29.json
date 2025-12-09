@@ -1,0 +1,26 @@
+{
+  "slide_id": "Slide29",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T02:30:58.726742+00:00",
+  "text_length": 902,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nEven though an operational amplifier is an active component, the basic circuit laws still apply — Kirchhoff’s Current Law and Kirchhoff’s Voltage Law always hold.\n\nBut for op amps, we have two special rules that make analysis much easier:\nRule one: The two input terminals are at the same voltage.\u000bThis happens because the op amp’s gain is extremely large. Even the tiniest difference between the inputs is amplified so much that the output adjusts to make the two inputs essentially equal in voltage.\nRule two: No current flows into either input terminal.\u000bThe input impedance of an op amp is extremely high — ideally infinite — so no measurable current enters the inputs.\n\nThese two rules are the foundation for almost all op amp circuit analysis. They let us treat the inputs as if they are at the same voltage and as if they draw no current, which simplifies solving even complex amplifier circuits.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"the two input terminals are at the same voltage\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"no current flows into either of the two input terminals\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Kirchhoff’s Current Law\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Kirchhoff’s Voltage Law\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"input impedance of an op amp is extremely high\",\n      \"category\": \"physics\"\n    }\n  ],\n  \"evidence\": [\n    \"Even though an operational amplifier is an active component, the basic circuit laws still apply — Kirchhoff’s Current Law and Kirchhoff’s Voltage Law always hold.\",\n    \"But for op amps, we have two special rules that make analysis much easier: Rule one: The two input terminals are at the same voltage.\",\n    \"Rule two: No current flows into either input terminal.\",\n    \"The input impedance of an op amp is extremely high — ideally infinite — so no measurable current enters the inputs.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "the two input terminals are at the same voltage",
+        "category": "physics"
+      },
+      {
+        "term": "input impedance of an op amp is extremely high",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "Even though an operational amplifier is an active component, the basic circuit laws still apply - Kirchhoff's Current Law and Kirchhoff's Voltage Law always hold.",
+      "But for op amps, we have two special rules that make analysis much easier: Rule one: The two input terminals are at the same voltage.",
+      "Rule two: No current flows into either input terminal.",
+      "The input impedance of an op amp is extremely high - ideally infinite - so no measurable current enters the inputs."
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide48",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nAnyway, so this is just for your information. The slide summarizes key concepts for SPECT and PET imaging: statistical distributions, how data is modeled with single and paired emissions, various reconstruction methods including attenuation compensation, deterministic, and statistical reconstruction, as well as the architecture of SPECT and PET scanners and scatter correction. \n\nFinally, it mentions the fully 3D approaches and highlights the importance of the conference and community in advancing this field.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n```json\n{\n  \"triples\": [\n    {\"s\":\"SPECT and PET imaging\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"Key concepts\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The slide summarizes key concepts for SPECT and PET imaging.\"}\n  ]\n}\n```",
+  "parsed": {
+    "triples": []
+  }
+}

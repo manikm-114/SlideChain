@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:00:50.673498+00:00",
+  "text_length": 455,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, we are still on schedule. If you look at the course outline, we have already covered topics such as Fourier series, signal processing, CT reconstruction, and nuclear imaging. \n\nNow, we are moving into MRI materials. Today’s focus is on MRI physics, which is the foundation for understanding how MRI systems generate and detect signals. This will prepare us for the next lectures, where we will go deeper into MRI techniques, systems, and applications.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Fourier series\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"signal processing\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"CT reconstruction\",\n      \"category\": \"reconstruction\"\n    },\n    {\n      \"term\": \"nuclear imaging\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"MRI physics\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"MRI techniques\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"MRI systems\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"MRI applications\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"we have already covered topics such as Fourier series, signal processing, CT reconstruction, and nuclear imaging.\",\n    \"Today’s focus is on MRI physics, which is the foundation for understanding how MRI systems generate and detect signals.\",\n    \"This will prepare us for the next lectures, where we will go deeper into MRI techniques, systems, and applications.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier series",
+        "category": "mathematics"
+      },
+      {
+        "term": "signal processing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "CT reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "nuclear imaging",
+        "category": "modality"
+      },
+      {
+        "term": "MRI physics",
+        "category": "physics"
+      },
+      {
+        "term": "MRI techniques",
+        "category": "modality"
+      },
+      {
+        "term": "MRI systems",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "we have already covered topics such as Fourier series, signal processing, CT reconstruction, and nuclear imaging.",
+      "Today's focus is on MRI physics, which is the foundation for understanding how MRI systems generate and detect signals.",
+      "This will prepare us for the next lectures, where we will go deeper into MRI techniques, systems, and applications."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+Let’s now take a look at a few more examples of Fourier transform pairs — some of them elegant, some of them a bit more abstract.
+
+First, we have the Gaussian function. In the time domain, it’s written as e to the power negative pi t squared. This is the familiar bell-shaped curve — smooth, centered, and decaying quickly. What’s remarkable is that its Fourier transform is also a Gaussian — e to the power negative pi u squared. The shape stays the same, just transformed into the frequency domain. The Gaussian is one of the few functions that’s unchanged, except for scaling — we say it’s self-Fourier.
+
+Next, let’s consider a constant function — just a flat value c across time. Now, technically this function is not square-integrable, meaning we can’t just apply the Fourier transform in the usual way. But in a generalized sense, we can still assign it a meaning. And it turns out the Fourier transform of a constant is a scaled delta function — specifically, c times delta of u. This makes intuitive sense: a constant signal has no frequency variation, so all its energy is concentrated at zero frequency.
+
+And finally, look at this interesting example: the shifted delta function delta of t minus a. If you perform the Fourier transform of this, you get a complex exponential — e to the power minus i 2 pi a u. This tells us that shifting a delta function in time introduces a phase shift in frequency. And that phase shift depends on the amount of translation — the value a — and also on the frequency u.
+
+Now, I should point out — when you’re working with generalized functions like constants and delta functions, the usual rules don’t always apply directly. These are not square-integrable functions. So we use the tools of distribution theory to handle them more rigorously. If you’re curious, I explain this in more detail in the book chapter.
+
+But for now, just keep in mind — even with these edge cases, the idea of expressing a signal in terms of wave components still holds.

@@ -1,0 +1,154 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "Energy-integrating detectors"
+          },
+          {
+            "category": "instrumentation",
+            "term": "Photon-counting detectors"
+          },
+          {
+            "category": "modality",
+            "term": "dual-energy imaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectral information"
+          },
+          {
+            "category": "signal_processing",
+            "term": "material decomposition"
+          },
+          {
+            "category": "physics",
+            "term": "K-edge imaging"
+          },
+          {
+            "category": "modality",
+            "term": "molecular-level X-ray imaging"
+          }
+        ],
+        "evidence": [
+          "This is the technology used in nearly all current CT scanners.",
+          "Instead of summing all energies together, photon-counting detectors measure each incoming photon individually and record its energy.",
+          "A variation of this is dual-energy imaging, where two different energy spectra are used to give some limited energy discrimination.",
+          "That means they can separate photons into different energy bins, giving us spectral information.",
+          "With this approach, we can do material decomposition, K-edge imaging, and molecular-level X-ray imaging."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "That gives us grayscale images - the kind you are familiar with in clinical CT."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "grayscale images",
+        "p": "produces",
+        "s": "Energy-integrating detectors"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "energy-integrating detectors"
+          },
+          {
+            "category": "instrumentation",
+            "term": "dual-energy imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "photon-counting detectors"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectral information"
+          },
+          {
+            "category": "signal_processing",
+            "term": "material decomposition"
+          },
+          {
+            "category": "signal_processing",
+            "term": "K-edge imaging"
+          },
+          {
+            "category": "signal_processing",
+            "term": "molecular-level X-ray imaging"
+          },
+          {
+            "category": "quality_metric",
+            "term": "higher resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "lower dose"
+          },
+          {
+            "category": "quality_metric",
+            "term": "richer information content"
+          }
+        ],
+        "evidence": [
+          "energy-integrating detectors are the current standard",
+          "photon-counting detectors represent the future",
+          "they promise higher resolution, lower dose, and much richer information content"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "richer information content"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "Instead of summing all energies together, photon-counting detectors measure each incoming photon individually and record its energy."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "each incoming photon individually",
+        "p": "measures",
+        "s": "Photon-counting detectors"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "richer information content"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "used in nearly all current CT scanners. They simply collect all the incoming photons and integrate their total energy. Whether a photon has high energy or low energy, the detector just sums them up. That gives us grayscale images - the kind you are familiar with in clinical CT. A variation of this is dual-energy imaging, where two different energy spectra are used to give some limited energy discrimination. Dual-energy CT is already widely applied, for example, to distinguish iodine contrast from calcium."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Energy-integrating detectors",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "X-ray detector"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide33.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide33.txt"
+  },
+  "slide_id": "Slide33"
+}

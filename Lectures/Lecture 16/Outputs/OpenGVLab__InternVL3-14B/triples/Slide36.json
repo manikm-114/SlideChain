@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"radionuclide generator\", \"p\":\"produces\", \"o\":\"technetium-99m\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the system naturally seeks equilibrium, so the ratio between parent and daughter becomes constant\"},\n    {\"s\":\"graph\", \"p\":\"represents\", \"o\":\"daily yield\", \"modalities\":[\"image\"], \"confidence\":1.0, \"evidence\":\"On the right-hand graph, you see the practical outcome\"},\n    {\"s\":\"elution\", \"p\":\"represents\", \"o\":\"harvesting technetium-99m\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Each spike represents an elution, where the daughter isotope is washed out of the generator for clinical use\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radionuclide generator",
+        "p": "produces",
+        "o": "technetium-99m",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the system naturally seeks equilibrium, so the ratio between parent and daughter becomes constant"
+      },
+      {
+        "s": "graph",
+        "p": "represents",
+        "o": "daily yield",
+        "modalities": [
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "On the right-hand graph, you see the practical outcome"
+      }
+    ]
+  }
+}

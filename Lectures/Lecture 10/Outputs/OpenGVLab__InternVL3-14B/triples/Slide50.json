@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sensitivity\",\n      \"p\": \"represents\",\n      \"o\": \"derivative of V_out with respect to x\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Sensitivity here is defined as the derivative of V out with respect to x\"\n    },\n    {\n      \"s\": \"circuit\",\n      \"p\": \"depends_on\",\n      \"o\": \"resistor values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You’ll be able to adjust both R L and R S\"\n    },\n    {\n      \"s\": \"sensitivity\",\n      \"p\": \"measures\",\n      \"o\": \"change in V_out\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if x changes just a little, we want V out to change as much as possible\"\n    },\n    {\n      \"s\": \"sensitivity\",\n      \"p\": \"produces\",\n      \"o\": \"maximum when the two resistances are equal\",\n      \"modalities\": [\"text",
+  "parsed": {
+    "s": "sensitivity",
+    "p": "measures",
+    "o": "change in V_out",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "if x changes just a little, we want V out to change as much as possible"
+    ]
+  }
+}

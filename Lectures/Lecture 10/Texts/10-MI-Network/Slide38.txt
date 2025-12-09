@@ -1,0 +1,7 @@
+Now, here is the simplest way to think about it.
+
+At the top, you see a biological neuron. It receives input through many branches, called dendrites. All of these signals are gathered in the main cell body, the soma. If the combined signal is strong enough, the neuron generates an electrical pulse that travels down the axon. Finally, it reaches the output interface — the synapse — where it passes the signal on to other neurons.
+Below that is the mathematical model we use for an artificial neuron. Each input is represented as a variable, and not all inputs carry the same importance, so we assign a weight to each one. Larger weights mean that input has a bigger influence; smaller weights mean less influence.
+
+The neuron first performs a linear operation — a weighted sum of all the inputs, which is essentially an inner product. But that’s not enough. Just like in biology, small random fluctuations — small “nudges” — are ignored. Only when the total input crosses a certain threshold does the neuron respond strongly. This is where the nonlinear transformation comes in, producing the actual output.
+So, in short: first we sum the inputs in a weighted way, then we pass the result through a nonlinear function that decides whether to respond — and how strongly.

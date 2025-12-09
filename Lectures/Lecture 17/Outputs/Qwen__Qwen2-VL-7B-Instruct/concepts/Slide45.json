@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide45",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:46:07.082511+00:00",
+  "text_length": 669,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe leading researchers in this field have developed a very large PET detector known as a whole body PET. By making the detector long enough to cover the entire body, the sensitivity is dramatically increased, allowing for even greater sensitivity than conventional PET systems. \n\nWith this approach, you can obtain a much more sensitive and comprehensive view of the entire body in a single scan. This technology offers the opportunity to capture detailed, global images of tracer distribution, potentially improving diagnostic capabilities and expanding what can be studied. It's a very interesting and innovative idea that's advancing the field of molecular imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"whole body PET\", \"category\": \"modality\"},\n    {\"term\": \"sensitivity\", \"category\": \"physics\"},\n    {\"term\": \"tracer distribution\", \"category\": \"anatomy\"},\n    {\"term\": \"diagnostic capabilities\", \"category\": \"algorithm\"},\n    {\"term\": \"molecular imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"The sensitivity is dramatically increased, allowing for even greater sensitivity than conventional PET systems.\",\n    \"This technology offers the opportunity to capture detailed, global images of tracer distribution, potentially improving diagnostic capabilities and expanding what can be studied.\",\n    \"It's a very interesting and innovative idea that's advancing the field of molecular imaging.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "whole body PET",
+        "category": "modality"
+      },
+      {
+        "term": "sensitivity",
+        "category": "physics"
+      },
+      {
+        "term": "diagnostic capabilities",
+        "category": "algorithm"
+      },
+      {
+        "term": "molecular imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "The sensitivity is dramatically increased, allowing for even greater sensitivity than conventional PET systems.",
+      "This technology offers the opportunity to capture detailed, global images of tracer distribution, potentially improving diagnostic capabilities and expanding what can be studied.",
+      "It's a very interesting and innovative idea that's advancing the field of molecular imaging."
+    ]
+  }
+}

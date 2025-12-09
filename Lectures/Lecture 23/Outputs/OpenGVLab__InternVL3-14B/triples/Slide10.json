@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Ray tracing\",\n      \"p\": \"uses\",\n      \"o\": \"rules\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, let’s summarize what we just discussed by looking at the rules for ray tracing.\"\n    },\n    {\n      \"s\": \"Ray tracing\",\n      \"p\": \"represents\",\n      \"o\": \"how light behaves when passing through a lens\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"There are a few simple but very important rules that describe how light behaves when passing through a lens.\"\n    },\n    {\n      \"s\": \"Rule 1\",\n      \"p\": \"represents\",\n      \"o\": \"rays passing through the center of a lens are unaffected by the lens\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Rule number one says that a ray passing through the center of a lens will not be deflected — it keeps its direction.\"\n    },\n    {\n      \"s\": \"Rule 2\",\n      \"p",
+  "parsed": {
+    "s": "Rule 1",
+    "p": "represents",
+    "o": "rays passing through the center of a lens are unaffected by the lens",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Rule number one says that a ray passing through the center of a lens will not be deflected - it keeps its direction."
+    ]
+  }
+}

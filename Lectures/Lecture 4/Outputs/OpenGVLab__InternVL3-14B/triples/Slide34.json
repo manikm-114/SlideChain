@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Discrete Convolution in 2D\",\n      \"p\": \"uses\",\n      \"o\": \"double sum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"f of x, y convolved with g of x, y equals the double sum over n 1 and n 2 of f at n 1, n 2 times g at x minus n 1, y minus n 1.\"\n    },\n    {\n      \"s\": \"Continuous Convolution in 2D\",\n      \"p\": \"uses\",\n      \"o\": \"integrals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the continuous case, we do the same thing using integrals.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"represents\",\n      \"o\": \"how a signal transforms when passed through a system\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"convolution gives you a systematic way to model how a signal transforms when passed through a system",
+  "parsed": {
+    "s": "Continuous Convolution in 2D",
+    "p": "uses",
+    "o": "integrals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In the continuous case, we do the same thing using integrals."
+    ]
+  }
+}

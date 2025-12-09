@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"luminance comparison\",\n      \"p\": \"uses\",\n      \"o\": \"constant C1\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"where the constant C1 is included to avoid instability when μx² + μy² is very close to zero.\"\n    },\n    {\n      \"s\": \"constant C1\",\n      \"p\": \"is\",\n      \"o\": \"(K1L)²\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"C1 = (K1L)²\"\n    },\n    {\n      \"s\": \"luminance comparison\",\n      \"p\": \"measures\",\n      \"o\": \"average brightness\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"luminance simply means the average brightness of an image.\"\n    },\n    {\n      \"s\": \"luminance comparison\",\n      \"p\": \"depends_on\",\n      \"o\": \"mean intensity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.",
+  "parsed": {
+    "s": "luminance comparison",
+    "p": "measures",
+    "o": "average brightness",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "luminance simply means the average brightness of an image."
+    ]
+  }
+}

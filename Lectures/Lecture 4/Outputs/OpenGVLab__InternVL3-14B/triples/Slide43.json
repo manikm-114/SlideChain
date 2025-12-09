@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Convolution\", \"p\":\"uses\", \"o\":\"flipping of g\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In convolution, g is first flipped horizontally, then shifted, multiplied with f, and finally integrated or summed.\"},\n    {\"s\":\"Cross-correlation\", \"p\":\"uses\", \"o\":\"shifting of g\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It follows the same steps as convolution, except there’s no flipping of g. We simply shift g across f, multiply at each point, and accumulate the result.\"},\n    {\"s\":\"Autocorrelation\", \"p\":\"represents\", \"o\":\"a special case of cross-correlation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This is a special case of cross-correlation where the same function is compared with itself.\"},\n    {\"s\":\"Autocorrelation\", \"p\":\"measures\", \"o\":\"how well the signal matches its own shifted versions\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So g and f are the same, and we measure how well",
+  "parsed": {
+    "s": "Autocorrelation",
+    "p": "represents",
+    "o": "a special case of cross-correlation",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This is a special case of cross-correlation where the same function is compared with itself."
+    ]
+  }
+}

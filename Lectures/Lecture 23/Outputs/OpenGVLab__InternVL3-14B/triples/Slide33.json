@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Diffuse Optical Tomography (DOT)\", \"p\":\"reconstructs_with\", \"o\":\"linear system equation\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"Now, how does this relate to the Beer–Lambert law? Let’s go back to that.\"},\n    {\"s\":\"Diffuse Optical Tomography (DOT)\", \"p\":\"measures\", \"o\":\"light scattering\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"When we send optical light into biological tissue, we still have all those local attenuation coefficients, all those mu’s — but the light doesn’t travel straight. It scatters everywhere.\"},\n    {\"s\":\"X-ray tomography\", \"p\":\"uses\", \"o\":\"pencil beam\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"In those systems, you send a pencil beam — a narrow, collimated beam — straight through the object.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray tomography",
+        "p": "uses",
+        "o": "pencil beam",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "In those systems, you send a pencil beam - a narrow, collimated beam - straight through the object."
+      }
+    ]
+  }
+}

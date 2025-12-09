@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"radiation protection\", \"p\":\"depends_on\", \"o\":\"lead shielding\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To minimize this risk, we use lead shielding, such as lead glass windows and lead aprons.\"},\n    {\"s\":\"X-rays\", \"p\":\"produces\", \"o\":\"Compton scattering\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When we use X-rays on a patient, most of the useful photons travel through the body and reach the detector to form the image. But many photons do not follow this direct path — instead, they are scattered in different directions. These scattered photons, especially those from Compton scattering, can expose people nearby.\"},\n    {\"s\":\"radiation protection\", \"p\":\"represents\", \"o\":\"Compton scattering\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Compton scattering has major implications for radiation protection.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radiation protection",
+        "p": "depends_on",
+        "o": "lead shielding",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "To minimize this risk, we use lead shielding, such as lead glass windows and lead aprons."
+      },
+      {
+        "s": "X-rays",
+        "p": "produces",
+        "o": "Compton scattering",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When we use X-rays on a patient, most of the useful photons travel through the body and reach the detector to form the image. But many photons do not follow this direct path - instead, they are scattered in different directions. These scattered photons, especially those from Compton scattering, can expose people nearby."
+      },
+      {
+        "s": "radiation protection",
+        "p": "represents",
+        "o": "Compton scattering",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Compton scattering has major implications for radiation protection."
+      }
+    ]
+  }
+}

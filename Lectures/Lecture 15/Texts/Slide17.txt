@@ -1,0 +1,8 @@
+Now let’s see what happens if we change the maximum theta value.
+
+Previously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?
+When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.
+
+What does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.
+
+So, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.

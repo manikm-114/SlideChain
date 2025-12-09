@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide45",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T04:18:44.184455+00:00",
+  "text_length": 704,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nOnce we define a loss function — the measure of difference between the network’s output and the ground truth — our goal is to reduce that difference step by step. We do this by adjusting the network’s parameters in a way that moves us downhill on the loss surface.\n\nYou can imagine this process like standing on a hilly landscape and trying to reach the lowest valley. At each step, we look around, find the steepest downward direction, and take a small move in that direction. This is the essence of gradient descent.\nOver time, with each update, the loss gets smaller and smaller until the network converges to a good solution — ideally, a point where further changes no longer improve the performance.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Gradient Descent\", \"category\": \"algorithm\"},\n    {\"term\": \"Loss Function\", \"category\": \"mathematics\"},\n    {\"term\": \"Network Parameters\", \"category\": \"algorithm\"},\n    {\"term\": \"Hilly Landscape\", \"category\": \"software\"},\n    {\"term\": \"Steepest Downward Direction\", \"category\": \"mathematics\"},\n    {\"term\": \"Convergence\", \"category\": \"algorithm\"},\n    {\"term\": \"Performance Improvement\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Once we define a loss function — the measure of difference between the network’s output and the ground truth — our goal is to reduce that difference step by step.\",\n    \"We do this by adjusting the network’s parameters in a way that moves us downhill on the loss surface.\",\n    \"This is the essence of gradient descent.\",\n    \"At each step, we look around, find the steepest downward direction, and take a small move in that direction.\",\n    \"Over time, with each update, the loss gets smaller and smaller until the network converges to a good solution — ideally, a point where further changes no longer improve the performance.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Gradient Descent",
+        "category": "algorithm"
+      },
+      {
+        "term": "Loss Function",
+        "category": "mathematics"
+      },
+      {
+        "term": "Hilly Landscape",
+        "category": "software"
+      },
+      {
+        "term": "Steepest Downward Direction",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "Once we define a loss function - the measure of difference between the network's output and the ground truth - our goal is to reduce that difference step by step.",
+      "We do this by adjusting the network's parameters in a way that moves us downhill on the loss surface.",
+      "This is the essence of gradient descent.",
+      "At each step, we look around, find the steepest downward direction, and take a small move in that direction.",
+      "Over time, with each update, the loss gets smaller and smaller until the network converges to a good solution - ideally, a point where further changes no longer improve the performance."
+    ]
+  }
+}

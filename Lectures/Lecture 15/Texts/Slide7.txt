@@ -1,0 +1,9 @@
+Now let’s talk about the Radon transform.
+
+The Radon transform is essentially a way to represent X-ray projection data, and the result is something called a sinogram. A sinogram is just an image that shows how the projections vary as we rotate around the object.
+This representation also tells us something about the characteristics of the sample. For example, objects that are closer to the center of the field of view show up as regions of higher amplitude in the sinogram.
+
+Here you can see the mathematical definition of the Radon transform. Don’t worry about memorizing the equation—what matters is understanding that it describes how the function f of x and y, our object, is projected along different angles, which we denote by theta.
+On the left, you see the same setup we discussed earlier, with X-rays passing through the object at angle theta. And on the right, you see an example sinogram. Notice the bright, wavy line: that corresponds to the yellow circular object in the field of view. Because it’s closer to the center, its contribution to the sinogram has a higher amplitude, and it traces this curve as the angle changes.
+
+So the sinogram is the bridge between the raw projection data we collect and the reconstructed CT image we want to build.

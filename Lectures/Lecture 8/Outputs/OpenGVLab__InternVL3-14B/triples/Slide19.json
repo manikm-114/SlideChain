@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"sinusoidal components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the time domain, a Fourier series is built from sinusoidal components — each one a sine or cosine wave.\"\n    },\n    {\n      \"s\": \"Fourier transform of a sampled signal\",\n      \"p\": \"produces\",\n      \"o\": \"periodic function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This tells us that in the frequency domain, we also get a periodic function.\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"depends_on\",\n      \"o\": \"periodic components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"by definition, each of these components is periodic.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "sinusoidal components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In the time domain, a Fourier series is built from sinusoidal components - each one a sine or cosine wave."
+      },
+      {
+        "s": "Fourier transform of a sampled signal",
+        "p": "produces",
+        "o": "periodic function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This tells us that in the frequency domain, we also get a periodic function."
+      }
+    ]
+  }
+}

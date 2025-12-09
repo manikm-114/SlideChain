@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Filtered Back-Projection (FBP)\", \"p\":\"uses\", \"o\":\"Ramp filter\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Filtration (Ramp filter) is required in the sinogram space\"},\n    {\"s\":\"Filtered Back-Projection (FBP)\", \"p\":\"reconstructs_with\", \"o\":\"sinogram\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Direct back-projection from a sinogram produces a blurry image\"},\n    {\"s\":\"Filtered Back-Projection (FBP)\", \"p\":\"produces\", \"o\":\"clearer image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the image is much clearer—you can actually see the circular structure with sharp edges\"},\n    {\"s\":\"Ram-Lak filter\", \"p\":\"adjusts\", \"o\":\"frequency content\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Each of these adjusts the frequency content of the sinogram differently\"},\n    {\"s\":\"Shepp-Logan filter\", \"p\":\"adjusts\", \"o\":\"frequency content\", \"modalities\":[\"",
+  "parsed": {
+    "s": "Ram-Lak filter",
+    "p": "adjusts",
+    "o": "frequency content",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Each of these adjusts the frequency content of the sinogram differently"
+    ]
+  }
+}

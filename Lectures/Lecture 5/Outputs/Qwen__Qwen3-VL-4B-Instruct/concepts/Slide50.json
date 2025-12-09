@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:54:39.126112+00:00",
+  "text_length": 885,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnd this brings us to your homework assignment.\n\nFirst, I’d like you to derive the formulas for the Fourier series coefficients using real-valued notation—just like we discussed today. Go through the reasoning step by step, and try to develop some familiarity with the structure of these expressions. Think of it as reinforcing what we’ve covered, not just repeating it.\nSecond, watch the YouTube video linked here, and use it as a guide to implement the square wave example we worked through. This will give you hands-on experience with how the Fourier series behaves—especially when approximating functions with sharp transitions. \n\nThis topic is a bit more involved than convolution, so I recommend reviewing the lecture carefully. But if you get the hang of it, you’ll find the transition to the Fourier transform much smoother in the next lecture.\nGood luck—and see you next time.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"derive the formulas for the Fourier series coefficients using real-valued notation\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"implement the square wave example\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"Fourier series coefficients\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"Fourier series\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"approximating functions with sharp transitions\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"transition to the Fourier transform\",\n      \"category\": \"frequency_domain\"\n    }\n  ],\n  \"evidence\": [\n    \"Derive the formulas for the Fourier series coefficients using real-valued notation—just like we discussed today.\",\n    \"implement the square wave example we worked through.\",\n    \"This will give you hands-on experience with how the Fourier series behaves—especially when approximating functions with sharp transitions.\",\n    \"I recommend reviewing the lecture carefully. But if you get the hang of it, you’ll find the transition to the Fourier transform much smoother in the next lecture.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "derive the formulas for the Fourier series coefficients using real-valued notation",
+        "category": "mathematics"
+      },
+      {
+        "term": "implement the square wave example",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier series coefficients",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier series",
+        "category": "mathematics"
+      },
+      {
+        "term": "approximating functions with sharp transitions",
+        "category": "signal_processing"
+      },
+      {
+        "term": "transition to the Fourier transform",
+        "category": "frequency_domain"
+      }
+    ],
+    "evidence": [
+      "Derive the formulas for the Fourier series coefficients using real-valued notation-just like we discussed today.",
+      "implement the square wave example we worked through.",
+      "This will give you hands-on experience with how the Fourier series behaves-especially when approximating functions with sharp transitions.",
+      "I recommend reviewing the lecture carefully. But if you get the hang of it, you'll find the transition to the Fourier transform much smoother in the next lecture."
+    ]
+  }
+}

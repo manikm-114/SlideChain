@@ -1,0 +1,8 @@
+Up to this point, we’ve been talking about aliasing and how to avoid it. Let’s now assume we’ve done that — our sampling rate is always high enough, and the spectra are well separated. Aliasing is no longer an issue.
+
+On the top row, you see our original continuous-time signal on the left. On the right, it’s been sampled — we now have a series of discrete values at regular time intervals.
+
+On the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max. On the right is the sampled spectrum — multiple, non-overlapping copies, spaced apart by the sampling frequency, which is one over capital T.
+
+So yes, the signal is now discrete in time, and its spectrum is nicely replicated without overlap. But our job isn’t finished yet. The spectrum is still continuous in frequency. And if we want to fully digitize the signal — so that both the time domain and the frequency domain are discrete — we still have another step to go.
+That step is discretizing the spectrum, which is exactly where we’re heading next.

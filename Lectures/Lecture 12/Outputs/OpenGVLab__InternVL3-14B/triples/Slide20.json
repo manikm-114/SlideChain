@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"new type of X-ray tube\", \"p\":\"uses\", \"o\":\"liquid metal anode\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Instead of using a solid tungsten anode, this design uses a liquid metal anode.\"},\n    {\"s\":\"liquid metal anode\", \"p\":\"produces\", \"o\":\"X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The interaction between the electrons and the liquid target produces X-rays.\"},\n    {\"s\":\"new type of X-ray tube\", \"p\":\"represents\", \"o\":\"advanced and expensive technology\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"this design represents a more advanced and expensive technology.\"},\n    {\"s\":\"liquid metal anode\", \"p\":\"absorbs and dissipates\", \"o\":\"heat\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the liquid metal can absorb and dissipate heat much more effectively than a solid target.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "new type of X-ray tube",
+        "p": "uses",
+        "o": "liquid metal anode",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Instead of using a solid tungsten anode, this design uses a liquid metal anode."
+      },
+      {
+        "s": "liquid metal anode",
+        "p": "produces",
+        "o": "X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The interaction between the electrons and the liquid target produces X-rays."
+      },
+      {
+        "s": "new type of X-ray tube",
+        "p": "represents",
+        "o": "advanced and expensive technology",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "this design represents a more advanced and expensive technology."
+      }
+    ]
+  }
+}

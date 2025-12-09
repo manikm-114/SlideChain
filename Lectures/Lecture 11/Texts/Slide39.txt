@@ -1,0 +1,17 @@
+Here’s a concrete example using tuberculosis screening with chest X-ray. In this study, nearly 2,000 people were tested, but only 30 actually had tuberculosis.
+
+Let’s break this down.
+Among the 30 true TB patients, 22 were correctly reported as positive, while 8 were missed.
+Among the 1,790 healthy individuals, 51 were incorrectly reported as positive, but the majority — 1,739 — were correctly classified as negative.
+
+Now, from this table, we can calculate the standard measures:
+Sensitivity: 22 out of 30 true TB cases were detected → about 73%. This means the system caught almost three-quarters of real cases.
+Specificity: 1,739 out of 1,790 healthy cases were correctly identified → about 97%. This shows the system rarely gave false alarms.
+Positive Predictive Value (PPV): 22 out of 73 reported positives were real TB cases → only 30%. This is much lower, meaning that when the system flagged a case as positive, it was wrong more often than it was right.
+Negative Predictive Value (NPV): 1,739 out of 1,747 reported negatives were truly healthy → nearly 99.5%. This means a negative result was highly reliable.
+Diagnostic Accuracy: The proportion of all correct results, positive and negative, was about 97%.
+Prevalence: Only 30 out of 1,820 people had TB → around 1.6%.
+
+Notice something important here: although accuracy and NPV are very high, the PPV is quite low. That’s because the disease is rare in this population — when prevalence is low, even a small number of false positives can outweigh the true positives.
+
+This example shows why we need to interpret these metrics carefully, especially in screening programs. Sensitivity, specificity, PPV, NPV, and prevalence all interact, and each tells us something different about how the test performs in real-world conditions.

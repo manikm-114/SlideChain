@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide44",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:29:50.060793+00:00",
+  "text_length": 165,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe setup looks like this: parallel-beam geometry with sensors on one side, a source on the other, and the system rotating by the angle theta to collect projections.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Parallel Beam Geometry\", \"category\": \"reconstruction\"},\n    {\"term\": \"Sensors\", \"category\": \"instrumentation\"},\n    {\"term\": \"Source\", \"category\": \"instrumentation\"},\n    {\"term\": \"Rotation angle theta\", \"category\": \"mathematics\"},\n    {\"term\": \"f(x,y)\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"parallel-beam geometry with sensors on one side, a source on the other, and the system rotating by the angle theta to collect projections.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Sensors",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Source",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "parallel-beam geometry with sensors on one side, a source on the other, and the system rotating by the angle theta to collect projections."
+    ]
+  }
+}

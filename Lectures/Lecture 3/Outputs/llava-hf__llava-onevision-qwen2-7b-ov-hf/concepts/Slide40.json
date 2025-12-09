@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide40",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIf a project doesn’t interest you, that’s perfectly fine—you can focus on the regular course structure of lectures, exams, and homework. Speaking of which, I’ll upload today’s homework assignment for you to download. Please submit your solutions by midnight next Tuesday. After the deadline, we’ll post the answers for your review.\nThank you for your attention today!\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"homework\", \"category\": \"software\"},\n    {\"term\": \"submission\", \"category\": \"software\"},\n    {\"term\": \"review\", \"category\": \"software\"},\n    {\"term\": \"answers\", \"category\": \"software\"},\n    {\"term\": \"next Tuesday\", \"category\": \"workflow\"},\n    {\"term\": \"upload\", \"category\": \"software\"},\n    {\"term\": \"download\", \"category\": \"software\"},\n    {\"term\": \"review\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Please submit your solutions by midnight next Tuesday.\", \"I’ll upload today’s homework assignment for you to download.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "homework",
+        "category": "software"
+      },
+      {
+        "term": "review",
+        "category": "software"
+      },
+      {
+        "term": "answers",
+        "category": "software"
+      },
+      {
+        "term": "next Tuesday",
+        "category": "workflow"
+      },
+      {
+        "term": "upload",
+        "category": "software"
+      },
+      {
+        "term": "download",
+        "category": "software"
+      },
+      {
+        "term": "review",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Please submit your solutions by midnight next Tuesday.",
+      "I’ll upload today’s homework assignment for you to download."
+    ]
+  }
+}

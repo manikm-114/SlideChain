@@ -1,0 +1,5 @@
+Now let’s talk about vectorization — one of the most important habits in MATLAB programming.
+Here’s the idea. Instead of looping through each element one by one, we apply an operation to the whole array at once.
+For example:Let’s say x is the vector — one, two, three.Using a loop, we would add five to each element, one at a time.But with vectorization, we just say: x equals x plus five — and MATLAB does it all at once.
+Same result, much faster, much cleaner.
+Whenever you can, avoid loops. Use vectorized operations. MATLAB is built for that.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"multi-slice imaging\",\n      \"p\": \"uses\",\n      \"o\": \"radio-frequency pulse\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"By sending in a radio-frequency pulse that matches the frequency range of one specific slice, we can flip the magnetization vector, M, only within that selected slice.\"\n    },\n    {\n      \"s\": \"multi-slice imaging\",\n      \"p\": \"uses\",\n      \"o\": \"echo time (T-E)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In the spin-echo sequence, the two key timing parameters are the echo time, T-E, and the repetition time, T-R.\"\n    },\n    {\n      \"s\": \"multi-slice imaging\",\n      \"p\": \"uses\",\n      \"o\": \"repetition time (T-R)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In the spin-echo sequence, the two key timing parameters are the echo time, T-E, and the repetition time, T",
+  "parsed": {
+    "s": "multi-slice imaging",
+    "p": "uses",
+    "o": "echo time (T-E)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "In the spin-echo sequence, the two key timing parameters are the echo time, T-E, and the repetition time, T-R."
+    ]
+  }
+}

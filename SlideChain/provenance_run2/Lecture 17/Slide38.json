@@ -1,0 +1,106 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "energy window"
+          },
+          {
+            "category": "physics",
+            "term": "photopeak"
+          },
+          {
+            "category": "physics",
+            "term": "scattered photons"
+          },
+          {
+            "category": "data_processing",
+            "term": "random events"
+          },
+          {
+            "category": "mathematics",
+            "term": "weights"
+          },
+          {
+            "category": "data_processing",
+            "term": "scattered background"
+          },
+          {
+            "category": "data_processing",
+            "term": "corrected signal"
+          },
+          {
+            "category": "data_processing",
+            "term": "scatter components"
+          }
+        ],
+        "evidence": [
+          "energy window around the main photopeak",
+          "scattered photons",
+          "random events",
+          "assign weights",
+          "estimate the scattered background",
+          "corrected signal",
+          "scatter components"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "you have a way to estimate the background scattering."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "scattered background",
+        "p": "measures",
+        "s": "Tri-windows for Scatter Correction"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "final image"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "By collecting data in both the lower and higher side windows, you have a way to estimate the background scattering."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "C_Scatter_corr. = C_Main - (C_Low + C_High) / (W_Low + W_High) * W_Main"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "C_Main - (C_Low + C_High) / (W_Low + W_High) * W_Main",
+        "p": "produces",
+        "s": "C_Scatter_corr."
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "final image"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

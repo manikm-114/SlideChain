@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"2D convolution\",\n      \"p\": \"produces\",\n      \"o\": \"blurred output value\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This operation is a 2D convolution: we slide the mask across the image, and at each position, we multiply corresponding elements, sum them up, and store the result in the center pixel of the output.\"\n    },\n    {\n      \"s\": \"2D convolution\",\n      \"p\": \"uses\",\n      \"o\": \"averaging mask\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the middle, we see a 3 by 3 averaging mask.\"\n    },\n    {\n      \"s\": \"2D convolution\",\n      \"p\": \"depends_on\",\n      \"o\": \"pixel intensities\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the left, we see an input image represented as a matrix of pixel intensities.\"\n    },\n    {\n      \"s\": \"2D convolution\",\n      \"p",
+  "parsed": {
+    "s": "2D convolution",
+    "p": "depends_on",
+    "o": "pixel intensities",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "On the left, we see an input image represented as a matrix of pixel intensities."
+    ]
+  }
+}

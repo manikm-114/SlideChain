@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide41",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T11:50:19.077367+00:00",
+  "text_length": 1581,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s take a closer look at the different collimator designs and how each one affects imaging performance.\n\nStarting with the parallel-hole collimator shown at the top left, this is the most commonly used design. In this case, the object and the image appear at the same scale. It’s simple, robust, and widely applied in routine nuclear medicine imaging.\n\nNext, on the top right, we have the diverging collimator. Here, the holes fan outward. The effect is that the image is smaller than the object. This type is useful when you need to fit a large object, like the entire body, onto a smaller detector field of view.\nAt the bottom left is the converging collimator. As the name suggests, the holes angle inward, producing a magnified image. This is helpful when you want to examine a small organ, like the heart or the thyroid, in greater detail while still using the same detector.\n\nFinally, at the bottom right, we see the pinhole collimator. This works like a camera obscura, creating a highly magnified but inverted image. Because the aperture is very small, spatial resolution can be excellent, but the downside is that sensitivity is poor—most photons are blocked.\nThe key idea is always a trade-off. If you make the holes or apertures smaller, you gain higher spatial resolution, but you lose sensitivity and the images become noisier. If you make them larger, you collect more photons, but the resolution decreases. Designing collimators is therefore about finding the right balance between resolution, sensitivity, and the clinical question you are trying to answer.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"parallel-hole collimator\", \"p\":\"uses\", \"o\":\"object\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"The object and the image appear at the same scale.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "parallel-hole collimator",
+        "p": "uses",
+        "o": "object",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The object and the image appear at the same scale."
+      }
+    ]
+  }
+}

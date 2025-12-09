@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide7",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide7.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide7.json",
+        "parsed": {
+          "term": "smoothly",
+          "category": "workflow"
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"activation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"product key\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"institution\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"campus software portal\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Windows\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"macOS\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Linux\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation instructions\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help center\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"office hours\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"smoothly\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The very first step is to install and activate MATLAB.\\\", \\n               \\\"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\\\", \\n               \\\"During the installation, you’ll be asked to enter a product key to\", \"parsed\": {\"term\": \"smoothly\", \"category\": \"workflow\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"RPI\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "installation",
+              "category": "workflow"
+            },
+            {
+              "term": "product key",
+              "category": "workflow"
+            },
+            {
+              "term": "activate",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "install and activate MATLAB",
+            "download MATLAB directly from the campus software portal",
+            "follow the installation instructions",
+            "enter a product key to activate the software"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"product key\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"activate\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"install and activate MATLAB\\\",\\n    \\\"download MATLAB directly from the campus software portal\\\",\\n    \\\"follow the installation instructions\\\",\\n    \\\"enter a product key to activate the software\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"installation\", \"category\": \"workflow\"}, {\"term\": \"product key\", \"category\": \"workflow\"}, {\"term\": \"activate\", \"category\": \"workflow\"}], \"evidence\": [\"install and activate MATLAB\", \"download MATLAB directly from the campus software portal\", \"follow the installation instructions\", \"enter a product key to activate the software\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide7.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "product key",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "During the installation, you’ll be asked to enter a product key to activate the software."
+            },
+            {
+              "s": "MATLAB",
+              "p": "via",
+              "o": "dotcio.rpi.edu/services/software-labs",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"product key\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"During the installation, you’ll be asked to enter a product key to activate the software.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"via\\\",\\n      \\\"o\\\": \\\"dotcio.rpi.edu/services/software-labs\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"product key\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"During the installation, you’ll be asked to enter a product key to activate the software.\"}, {\"s\": \"MATLAB\", \"p\": \"via\", \"o\": \"dotcio.rpi.edu/services/software-labs\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "term": "hands-on examples",
+          "category": "software"
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:07:11.050502+00:00\", \"text_length\": 786, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"product key\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"campus software portal\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Windows\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"macOS\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Linux\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation instructions\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"activation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"institution\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"setup\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"installation errors\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"activation trouble\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"help center\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"directly\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"smoothly\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"hands-on examples\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The very first step\", \"parsed\": {\"term\": \"hands-on examples\", \"category\": \"software\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:17:50.953727+00:00\", \"text_length\": 786, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "install and activate matlab",
+              "category": "software"
+            },
+            {
+              "term": "download matlab directly from the campus software portal: dotcio.rpi.edu/services/software-labs",
+              "category": "software"
+            },
+            {
+              "term": "follow the installation instructions that match your operating system",
+              "category": "software"
+            },
+            {
+              "term": "enter a product key to activate the software",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "The very first step is to install and activate MATLAB.",
+            "If you're at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.",
+            "Make sure to follow the installation instructions that match your operating system - whether you're on Windows, macOS, or Linux.",
+            "During the installation, you'll be asked to enter a product key to activate the software.",
+            "This key is provided by the institution, and it unlocks your licensed access."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:31:31.135901+00:00\", \"text_length\": 786, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"install and activate matlab\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"download matlab directly from the campus software portal: dotcio.rpi.edu/services/software-labs\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"follow the installation instructions that match your operating system\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"enter a product key to activate the software\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"product key is provided by the institution\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The very first step is to install and activate MATLAB.\\\",\\n    \\\"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\\\",\\n    \\\"Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\\",\\n    \\\"During the installation, you’ll be asked to enter a product key to activate the software.\\\",\\n    \\\"This key is provided by the institution, and it unlocks your licensed access.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"install and activate matlab\", \"category\": \"software\"}, {\"term\": \"download matlab directly from the campus software portal: dotcio.rpi.edu/services/software-labs\", \"category\": \"software\"}, {\"term\": \"follow the installation instructions that match your operating system\", \"category\": \"software\"}, {\"term\": \"enter a product key to activate the software\", \"category\": \"software\"}], \"evidence\": [\"The very first step is to install and activate MATLAB.\", \"If you're at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\", \"Make sure to follow the installation instructions that match your operating system - whether you're on Windows, macOS, or Linux.\", \"During the installation, you'll be asked to enter a product key to activate the software.\", \"This key is provided by the institution, and it unlocks your licensed access.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:50:55.725622+00:00\", \"text_length\": 786, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThe very first step is to install and activate MATLAB.\\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "FFT"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "In this MATLAB example, we create a signal by adding two sinusoids."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "signal by adding two sinusoids",
+        "p": "produces",
+        "s": "MATLAB example"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "peak separation"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "this means we add zeros to the end of the time-domain signal"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "delta nu - sometimes called delta u - is the spacing between frequency samples in the Fourier domain."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "spacing between frequency samples in the Fourier domain",
+        "p": "represents",
+        "s": "\u0394\u03bd"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero padding"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectrum"
+          },
+          {
+            "category": "signal_processing",
+            "term": "resolution"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "In this MATLAB example, we create a signal by adding two sinusoids.",
+          "One way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller - giving us a finer frequency grid and better spectral resolution."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

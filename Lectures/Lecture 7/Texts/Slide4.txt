@@ -1,0 +1,24 @@
+Now let’s talk more specifically about how a function can be represented using the Fourier series or the Fourier transform.
+
+At the top, we see a Fourier series representation. It tells us that a function of t — written as f of t — can be expressed as a sum over many terms.
+Mathematically, this is written as:
+f of t equals the sum from n equals negative infinity to positive infinity, of c  n times e to the power 2 pi i n t over capital T.
+Each term in the sum is a complex exponential — and each coefficient, c  n, tells us how much of that particular frequency component is present in the signal.
+
+Now how do we calculate these coefficients?
+We use the formula:
+c  n equals 1 over capital T, times the integral from 0 to capital T, of f of t multiplied by e to the power negative 2 pi i n t over capital T, d t.
+So what we’re doing here is projecting the function f of t onto a basis function — that basis is the complex exponential. This is very much like taking an inner product between vectors.
+
+You can think of the function as living in a high-dimensional space — in fact, infinitely many dimensions. Each basis function spans one of those directions. So when we compute c  n, we’re measuring how much f of t points in the direction of that basis function.
+Now, what if the function isn’t periodic, or the period becomes very large?
+That’s where the Fourier transform comes in.
+
+Instead of summing over discrete frequencies, we move to a continuous frequency variable, often called s.
+The Fourier transform of f of t is written as f hat of s, and it’s defined as:
+The integral from negative infinity to positive infinity, of f of t times e to the power negative 2 pi i s t, d t.
+To recover the original function, we use the inverse Fourier transform, which is:
+f of t equals the integral from negative infinity to positive infinity, of f hat of s times e to the power 2 pi i s t, d s.
+
+So you can see — when we move from a periodic function with period capital T, to a general function as T approaches infinity, the Fourier series becomes the Fourier transform.
+This is a very elegant transition — from a discrete sum to a continuous integral — and it forms the basis of much of signal processing.

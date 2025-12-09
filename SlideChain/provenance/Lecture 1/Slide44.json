@@ -1,0 +1,149 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "biomedical imaging"
+          },
+          {
+            "category": "data_processing",
+            "term": "bioinformatics"
+          },
+          {
+            "category": "workflow",
+            "term": "personalized medicine"
+          }
+        ],
+        "evidence": [
+          "observable characteristics of an individual",
+          "your genetic makeup-the DNA that gives rise to your traits",
+          "visualize and analyze the biological structures and functions",
+          "give us a lot of information about the genotype",
+          "linking genotype with phenotype"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Biomedical imaging plays a crucial role in studying the phenotype.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Phenotype",
+            "p": "measures",
+            "s": "Biomedical Imaging"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Bioinformatics and genetic profiling give us a lot of information about the genotype",
+            "modalities": [
+              "text"
+            ],
+            "o": "Genotype",
+            "p": "produces",
+            "s": "Bioinformatics"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "We can use biomedical imaging to observe and understand the effects of genetic factors on the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Genotype",
+            "p": "depends_on",
+            "s": "Biomedical Imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "biomedical imaging"
+          },
+          {
+            "category": "software",
+            "term": "bioinformatics"
+          },
+          {
+            "category": "algorithm",
+            "term": "personalized medicine"
+          }
+        ],
+        "evidence": [
+          "Biomedical imaging plays a crucial role in studying the phenotype.",
+          "We can use biomedical imaging to observe and understand the effects of genetic factors on the body.",
+          "Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "biomedical imaging"
+          },
+          {
+            "category": "data_processing",
+            "term": "bioinformatics"
+          }
+        ],
+        "evidence": [
+          "In understanding the human body, we often talk about two key concepts: phenotype and genotype.",
+          "Biomedical imaging plays a crucial role in studying the phenotype.",
+          "bioinformatics and genetic profiling give us a lot of information about the genotype",
+          "We can use biomedical imaging to observe and understand the effects of genetic factors on the body."
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Bioinformatics and genetic profiling give us a lot of information about the genotype-things like your genetic predispositions and variations."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Genotype",
+        "p": "depends_on",
+        "s": "Bioinformatics"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "diagnosis",
+        "term": "prediction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Genotype refers to your genetic makeup-the DNA that gives rise to your traits.",
+            "modalities": [
+              "text"
+            ],
+            "o": "genetic makeup",
+            "p": "represents",
+            "s": "genotype"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide44.txt"
+  },
+  "slide_id": "Slide44"
+}

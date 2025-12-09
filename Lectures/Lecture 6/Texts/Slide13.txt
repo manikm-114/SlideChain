@@ -1,0 +1,22 @@
+Alright — this slide is the heart of the lecture. Take a moment to follow this carefully, because here is where we formally derive the Fourier transform — and also see how we can recover the original function using the inverse transform.
+
+Let’s begin at the top.
+We’re starting with our expression for f of t, written as a Fourier series. We substitute the expression for c over n — the Fourier coefficient — right into this formula.
+
+Now remember, c over n contains an integral — and it includes a 1 over T term out front. Since T is constant, we pull it out of the sum.
+At this point, we apply a key idea we introduced earlier:Let T become very large, so large that we’re effectively dealing with a non-periodic function. When T approaches infinity, the spacing between the frequency samples, delta u equals to 1 over T, becomes tiny — almost zero.
+
+So what happens?
+Instead of summing over discrete frequencies, we move to a continuous frequency variable, which we call u — where u equals n divided by T.
+This transition lets us replace the sum with an integral.
+So now we’ve gone from a sum of discrete terms to an integral over a continuous range of frequencies. The inner product becomes f-hat of u, the Fourier transform of f of t. And the exponential term becomes e to the power i 2 pi u t — our new kernel in the transform.
+
+Let’s pause here and look at the final expression.
+You’ll notice two things:
+First, to compute f-hat of u, the Fourier transform, we integrate f of t multiplied by e to the minus i 2 pi u t. That’s the forward transform — moving from the time domain to the frequency domain.
+Second, to reconstruct f of t, we take f-hat of u, multiply it by e to the power i 2 pi u t, and integrate over all u. That’s the inverse transform — bringing us back from frequency to time.
+So these two formulas — the forward and inverse transforms — are the foundation of the Fourier transform.
+
+They let us take a non-periodic function and decompose it into a continuous spectrum of frequencies. And then, using that spectrum, we can reconstruct the original function with complete accuracy.
+This is what makes the Fourier transform so powerful — not just mathematically, but also practically — in fields like signal processing, image analysis, and, of course, medical imaging.
+From this point forward, we’re now working with non-periodic functions, and we’ve fully transitioned from Fourier series to the Fourier transform.

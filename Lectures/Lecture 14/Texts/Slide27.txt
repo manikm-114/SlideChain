@@ -1,0 +1,8 @@
+Now, let me explain CT scanner architecture. To reconstruct images, we rely on line integrals from X-ray projections, using filtered backprojection and Fourier transform-based reconstruction, or interior tomography for region-of-interest reconstruction.
+To acquire this data, you need hardware: the CT scanner itself. This is a donut-shaped structure called the gantry, which is the framework holding all components.
+
+Inside, you find X-ray sources and collimators that shape the beam and filter out low-energy X-rays. Low-energy photons won’t penetrate the patient and only add an unwanted dose.
+Collimators also reject scattered radiation to ensure the measured signal corresponds closely to the direct line integrals.
+
+The scanner is a sophisticated device: you place the patient in the gantry, and from that, you acquire many images that resolve internal structures clearly.
+

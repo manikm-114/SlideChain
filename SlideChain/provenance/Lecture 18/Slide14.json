@@ -1,0 +1,166 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "electricity and magnetism"
+          },
+          {
+            "category": "physics",
+            "term": "electric current"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coil"
+          },
+          {
+            "category": "instrumentation",
+            "term": "electromagnet"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "instrumentation",
+            "term": "superconducting magnets"
+          }
+        ],
+        "evidence": [
+          "Electricity and magnetism are deeply connected.",
+          "Whenever an electric current flows through a wire, it generates a magnetic field around that wire.",
+          "If you coil the wire into loops, the magnetic fields from each loop add together, creating a much stronger overall magnetic field.",
+          "This is the principle behind an electromagnet.",
+          "The giant superconducting magnets used in MRI are essentially coils carrying current, producing extremely strong and stable magnetic fields needed for imaging."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The giant superconducting magnets used in MRI are essentially coils carrying current, producing extremely strong and stable magnetic fields needed for imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "giant superconducting magnets",
+            "p": "uses",
+            "s": "MRI"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The giant superconducting magnets used in MRI are essentially coils carrying current, producing extremely strong and stable magnetic fields needed for imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "extremely strong and stable magnetic fields",
+            "p": "produces",
+            "s": "giant superconducting magnets"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "stable magnetic fields"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Whenever an electric current flows through a wire, it generates a magnetic field around that wire.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "magnetic field",
+            "p": "produces",
+            "s": "electric current"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "the giant superconducting magnets used in MRI are essentially coils carrying current"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "This is the principle behind an electromagnet. By sending current through a coil, we can generate powerful magnetic fields",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "magnetic field",
+            "p": "produces",
+            "s": "electromagnet"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "This connection between electricity and magnetism is fundamental to MRI. The giant superconducting magnets used in MRI are essentially coils carrying current, producing extremely strong and stable magnetic fields needed for imaging.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "superconducting magnets",
+            "p": "depends_on",
+            "s": "MRI"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "electric current"
+          },
+          {
+            "category": "physics",
+            "term": "magnetic field"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coil"
+          },
+          {
+            "category": "instrumentation",
+            "term": "superconducting magnets"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "extremely strong and stable magnetic fields"
+          }
+        ],
+        "evidence": [
+          "Whenever an electric current flows through a wire, it generates a magnetic field around that wire.",
+          "This connection between electricity and magnetism is fundamental to MRI.",
+          "The giant superconducting magnets used in MRI are essentially coils carrying current, producing extremely strong and stable magnetic fields needed for imaging."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

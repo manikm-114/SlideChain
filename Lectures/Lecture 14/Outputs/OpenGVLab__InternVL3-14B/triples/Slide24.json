@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Interior tomography\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"piecewise polynomials\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\"\n    },\n    {\n      \"s\": \"Interior tomography\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"all data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can reconstruct the whole chest from all data\"\n    },\n    {\n      \"s\": \"Interior tomography\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"truncated data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Interior tomography",
+        "p": "reconstructs_with",
+        "o": "piecewise polynomials",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials."
+      },
+      {
+        "s": "Interior tomography",
+        "p": "reconstructs_with",
+        "o": "all data",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you can reconstruct the whole chest from all data"
+      },
+      {
+        "s": "Interior tomography",
+        "p": "reconstructs_with",
+        "o": "truncated data",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI"
+      }
+    ]
+  }
+}

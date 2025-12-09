@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"analog-to-digital conversion\",\n      \"p\": \"uses\",\n      \"o\": \"sampling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So we begin with the first major step: sampling, also called discretization in time.\"\n    },\n    {\n      \"s\": \"analog-to-digital conversion\",\n      \"p\": \"uses\",\n      \"o\": \"quantization\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now, the second step is quantization — converting the amplitude of each sample into a finite-precision value.\"\n    },\n    {\n      \"s\": \"computer\",\n      \"p\": \"produces\",\n      \"o\": \"discrete data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"But the computer can’t store that continuous curve — it needs discrete data.\"\n    },\n    {\n      \"s\": \"sampled signal\",\n      \"p\": \"represents\",\n      \"o\": \"series of impulses\",\n      \"modalities\": [\"text\",",
+  "parsed": {
+    "s": "computer",
+    "p": "produces",
+    "o": "discrete data",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "But the computer can’t store that continuous curve - it needs discrete data."
+    ]
+  }
+}

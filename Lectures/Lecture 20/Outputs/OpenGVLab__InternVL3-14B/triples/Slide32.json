@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Gd-DTPA\", \"p\":\"uses\", \"o\":\"gadolinium\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In this molecule, the gadolinium ion — which has seven unpaired electrons — is enclosed within a stable chelating cage.\"},\n    {\"s\":\"Gd-DTPA\", \"p\":\"produces\", \"o\":\"brighter signal on the MRI image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When water molecules come close to the contrast agent, they experience local magnetic field changes that speed up their T₁ relaxation, producing a brighter signal on the MRI image.\"},\n    {\"s\":\"brain MRI\", \"p\":\"measures\", \"o\":\"tumor\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Notice the bright region within the brain — this enhancement clearly reveals a tumor.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gd-DTPA",
+        "p": "uses",
+        "o": "gadolinium",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In this molecule, the gadolinium ion - which has seven unpaired electrons - is enclosed within a stable chelating cage."
+      },
+      {
+        "s": "Gd-DTPA",
+        "p": "produces",
+        "o": "brighter signal on the MRI image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When water molecules come close to the contrast agent, they experience local magnetic field changes that speed up their T₁ relaxation, producing a brighter signal on the MRI image."
+      },
+      {
+        "s": "brain MRI",
+        "p": "measures",
+        "o": "tumor",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Notice the bright region within the brain - this enhancement clearly reveals a tumor."
+      }
+    ]
+  }
+}

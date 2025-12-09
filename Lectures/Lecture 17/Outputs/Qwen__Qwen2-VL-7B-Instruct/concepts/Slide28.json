@@ -1,0 +1,27 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:15:33.114576+00:00",
+  "text_length": 334,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s move into the fourth part, where we discuss system architecture and scatter correction in SPECT and PET imaging. \n\nThis topic is pretty straightforward. We focus on how these imaging systems are built and the basic principles behind scatter correction, which is a major technical consideration for accurate image reconstruction.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"system architecture\", \"category\": \"instrumentation\"},\n    {\"term\": \"scatter correction\", \"category\": \"data_processing\"},\n    {\"term\": \"SPECT and PET imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"This topic is pretty straightforward. We focus on how these imaging systems are built and the basic principles behind scatter correction, which is a major technical consideration for accurate image reconstruction.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "system architecture",
+        "category": "instrumentation"
+      },
+      {
+        "term": "scatter correction",
+        "category": "data_processing"
+      },
+      {
+        "term": "SPECT and PET imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "This topic is pretty straightforward. We focus on how these imaging systems are built and the basic principles behind scatter correction, which is a major technical consideration for accurate image reconstruction."
+    ]
+  }
+}

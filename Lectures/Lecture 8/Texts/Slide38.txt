@@ -1,0 +1,7 @@
+Now, let’s see what happens when we use zero padding.
+We take our original signal and extend it in the time domain by adding a large number of zeros at the end.This does not change the actual information in the signal, but it does increase the total number of samples.
+When we compute the Fourier transform of this longer sequence, the frequency spacing between the points in the spectrum becomes smaller.
+This means we get a finer frequency grid — more points between zero and the Nyquist frequency.
+As a result, when we plot the spectrum, both peaks — the one at one hundred hertz and the one at one hundred two point five hertz — are now represented much more accurately.
+You can see that their amplitudes are correctly estimated, and the peaks are sharper.
+So, zero padding is a simple but powerful trick for improving the visual resolution of your spectrum.It doesn’t actually add new information, but it lets you see the frequency components more clearly.

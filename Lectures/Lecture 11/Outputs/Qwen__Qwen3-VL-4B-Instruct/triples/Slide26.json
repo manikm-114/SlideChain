@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T03:13:18.511321+00:00",
+  "text_length": 1606,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere’s another example that demonstrates the power of SSIM.\n\nThe image in the top left, marked (a), is the reference image — the ground truth. The other five images are distorted versions, each with a different type of degradation: contrast stretching, mean shift, JPEG compression, blurring, and salt-and-pepper noise.\nIf we were to use mean squared error, all of these distorted images would end up with roughly the same error value. But visually, they do not look equally bad. Some are close to the original, while others are clearly worse.\n\nNow look at the SSIM scores shown here. The contrast-stretched image has an SSIM close to 0.92, which makes sense because it looks fairly good. The mean-shifted version scores about 0.90, also quite close. But the JPEG-compressed version drops down to around 0.69, and the blurred version to 0.70. The salt-and-pepper noisy image scores about 0.77.\nIf you compare these numbers with what your eyes tell you, the agreement is clear. Images that look closer to the original score higher; images that look worse score lower.\n\nThis is why SSIM is so widely used. It captures the essential aspects of the human visual system — brightness, contrast, and structure — in a single number. And in practice, this means we can use SSIM to guide optimization. For example, when designing a communication channel or an imaging system, we can adjust the system parameters to maximize SSIM, ensuring that the images produced look good to the human eye.\n\nSo, SSIM is not just a theoretical measure — it is a practical tool that connects mathematics directly to human perception.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"SSIM\",\n      \"p\": \"measures\",\n      \"o\": \"the essential aspects of the human visual system — brightness, contrast, and structure\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"This is why SSIM is so widely used. It captures the essential aspects of the human visual system — brightness, contrast, and structure — in a single number.\"\n    },\n    {\n      \"s\": \"SSIM\",\n      \"p\": \"produces\",\n      \"o\": \"a single number\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"It captures the essential aspects of the human visual system — brightness, contrast, and structure — in a single number.\"\n    },\n    {\n      \"s\": \"SSIM\",\n      \"p\": \"uses\",\n      \"o\": \"to guide optimization\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.85,\n      \"evidence\": \"For",
+  "parsed": {
+    "s": "SSIM",
+    "p": "produces",
+    "o": "a single number",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "It captures the essential aspects of the human visual system - brightness, contrast, and structure - in a single number."
+    ]
+  }
+}

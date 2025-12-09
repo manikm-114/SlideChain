@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide17",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T02:28:04.302196+00:00",
+  "text_length": 1232,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s highlight the key variables and the important relationship between them.\n\nIn the time domain, the total number of samples is T times P. Here, capital T is the total duration of the signal, and capital P is the spacing in the frequency domain. So we have N equal to T multiplied by P.\nIn the frequency domain, we have the exact same number of samples, also T multiplied by P. We call this number M, and here P is the total span of one period in frequency, while T controls the sampling density in frequency.\n\nIf we take the reciprocal of N, we get a very useful relationship:\u000b1 over N equals delta-t times delta-u,\u000bwhere delta-t is the sampling step size in time, and delta-u is the sampling step size in frequency.\nThis is an expression of the duality between time and frequency. If we fix the total number of samples N, making delta-t smaller — meaning we sample more finely in time — will make delta-u larger, meaning the frequency samples are spaced farther apart. And the reverse is also true.\n\nIn simple terms: if you zoom in more on one domain, you automatically zoom out in the other. This balance is built into the mathematics of the Fourier transform and is something we’ll use later when we look at applications.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"N\", \"p\":\"depends_on\", \"o\":\"T\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"N = T / P = TP\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "N",
+        "p": "depends_on",
+        "o": "T",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.0,
+        "evidence": "N = T / P = TP"
+      }
+    ]
+  }
+}

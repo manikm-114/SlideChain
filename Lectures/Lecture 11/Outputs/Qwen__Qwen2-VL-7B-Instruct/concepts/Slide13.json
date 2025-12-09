@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide13",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:41:46.284943+00:00",
+  "text_length": 1212,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere we arrive at what I like to call an instant classic. This is the landmark 2004 paper by Zhou Wang, Alan Bovik, Hamid Sheikh, and Eero Simoncelli, titled Image Quality Assessment: From Error Visibility to Structural Similarity.\n\nBefore this work, most image quality measures focused on error visibility — essentially counting differences pixel by pixel, the way mean squared error does. What this paper introduced was a completely different perspective: instead of measuring errors, we should measure structural similarity.\nThe idea is built on the assumption that the human visual system is highly tuned to extract structural information from images. So rather than asking, “How many errors can we see?”, the SSIM framework asks, “How well is the structure of the image preserved?”\n\nThis shift in thinking turned out to be incredibly powerful. The paper has been cited tens of thousands of times, and SSIM quickly became a standard tool not only in image processing research but also in practical applications like video compression, image restoration, and medical imaging.\nSo, from this point forward, when we talk about perceptual image quality, we are really building on the foundation laid by this work.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Image Quality Assessment\", \"category\": \"quality_metric\"},\n    {\"term\": \"Structural Similarity Index (SSIM)\", \"category\": \"quality_metric\"},\n    {\"term\": \"Human Visual System\", \"category\": \"signal_processing\"},\n    {\"term\": \"Mean Squared Error\", \"category\": \"signal_processing\"},\n    {\"term\": \"Video Compression\", \"category\": \"communication\"},\n    {\"term\": \"Image Restoration\", \"category\": \"signal_processing\"},\n    {\"term\": \"Medical Imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"This paper introduced a completely different perspective: instead of measuring errors, we should measure structural similarity.\",\n    \"The paper has been cited tens of thousands of times, and SSIM quickly became a standard tool not only in image processing research but also in practical applications like video compression, image restoration, and medical imaging.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Image Quality Assessment",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Human Visual System",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Mean Squared Error",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Video Compression",
+        "category": "communication"
+      },
+      {
+        "term": "Image Restoration",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Medical Imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "This paper introduced a completely different perspective: instead of measuring errors, we should measure structural similarity.",
+      "The paper has been cited tens of thousands of times, and SSIM quickly became a standard tool not only in image processing research but also in practical applications like video compression, image restoration, and medical imaging."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Equation 3.8\",\n      \"p\": \"measures\",\n      \"o\": \"acoustic impedance\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Equation 3.8 and the table shown here give you typical values.\"\n    },\n    {\n      \"s\": \"air\",\n      \"p\": \"has\",\n      \"o\": \"sound speed of 330 meters per second\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In air, the sound speed is only about 330 meters per second\"\n    },\n    {\n      \"s\": \"biological tissues\",\n      \"p\": \"has\",\n      \"o\": \"sound speed of 1,560 to 1,570 meters per second\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In biological tissues like the kidney or liver, the sound speed is much higher — around 1,560 to 1,570 meters per second\"\n    },",
+  "parsed": {
+    "s": "biological tissues",
+    "p": "has",
+    "o": "sound speed of 1,560 to 1,570 meters per second",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In biological tissues like the kidney or liver, the sound speed is much higher - around 1,560 to 1,570 meters per second"
+    ]
+  }
+}

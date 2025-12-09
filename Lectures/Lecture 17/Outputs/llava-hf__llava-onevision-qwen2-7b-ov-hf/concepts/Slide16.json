@@ -1,0 +1,58 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nVisually, you see that 3D PET systems have a clear benefit because they don’t use mechanical collimators. With no collimators blocking the gamma rays, you can capture a much greater number of photons, which raises the system’s sensitivity and improves image quality. The drawback is that, because the system has a wide opening, it can also pick up more scattered and random events. These unwanted signals can interfere with the data and reduce the quality of your images. \n\nLater, we’ll cover what scattered and random events actually are, and how we try to remove them in post-processing. For 2D PET imaging, where you have strict collimation, only photons from a certain plane are detected, and scattered photons from other directions are blocked. But in 3D PET, you let in more data, and while that's a benefit for sensitivity, it can also make noise and unwanted signals more of a problem.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"collimator\", \"category\": \"instrumentation\"},\n    {\"term\": \"gamma rays\", \"category\": \"physics\"},\n    {\"term\": \"sensitivity\", \"category\": \"signal_processing\"},\n    {\"term\": \"image quality\", \"category\": \"quality_metric\"},\n    {\"term\": \"scattered and random events\", \"category\": \"signal_processing\"},\n    {\"term\": \"post-processing\", \"category\": \"software\"},\n    {\"term\": \"2D PET imaging\", \"category\": \"modality\"},\n    {\"term\": \"3D PET\", \"category\": \"modality\"},\n    {\"term\": \"data\", \"category\": \"data_processing\"},\n    {\"term\": \"noise\", \"category\": \"signal_processing\"},\n    {\"term\": \"unwanted signals\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"With no collimators blocking the gamma rays, you can capture a much greater number of photons, which raises the system’s sensitivity and improves image quality.\", \"But in 3D PET, you let in more data, and while that's a benefit for sensitivity, it can also make noise and unwanted signals more of a problem.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "collimator",
+        "category": "instrumentation"
+      },
+      {
+        "term": "gamma rays",
+        "category": "physics"
+      },
+      {
+        "term": "sensitivity",
+        "category": "signal_processing"
+      },
+      {
+        "term": "image quality",
+        "category": "quality_metric"
+      },
+      {
+        "term": "scattered and random events",
+        "category": "signal_processing"
+      },
+      {
+        "term": "post-processing",
+        "category": "software"
+      },
+      {
+        "term": "2D PET imaging",
+        "category": "modality"
+      },
+      {
+        "term": "3D PET",
+        "category": "modality"
+      },
+      {
+        "term": "data",
+        "category": "data_processing"
+      },
+      {
+        "term": "noise",
+        "category": "signal_processing"
+      },
+      {
+        "term": "unwanted signals",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "With no collimators blocking the gamma rays, you can capture a much greater number of photons, which raises the system’s sensitivity and improves image quality.",
+      "But in 3D PET, you let in more data, and while that's a benefit for sensitivity, it can also make noise and unwanted signals more of a problem."
+    ]
+  }
+}

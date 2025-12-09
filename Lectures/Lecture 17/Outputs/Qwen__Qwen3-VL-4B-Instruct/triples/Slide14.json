@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-12T19:16:45.322026+00:00",
+  "text_length": 907,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen we use a ring detector in PET, the key is to perform coincidence detection. This means we’re looking for events where two detectors on opposite sides register gamma photons at the same time—those photons come from an annihilation happening somewhere inside the ring. You can determine a line integral along the green line shown here, or along the blue line for different angles. By rotating the ring or changing the projection angle, you can collect projections from multiple directions. \n\nWhen you arrange all these projections by angle, you get what’s called a sinogram, very similar to what you see in CT. As long as you know the attenuation and apply the correct compensation factors, you can accumulate your data into these line integrals. That’s the essential idea behind PET and SPECT data acquisition—grouping your measurements along lines of response and sorting them by angle into a sinogram.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"PET\",\n      \"p\": \"uses\",\n      \"o\": \"ring detector\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When we use a ring detector in PET, the key is to perform coincidence detection.\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"produces\",\n      \"o\": \"sinogram\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When you arrange all these projections by angle, you get what’s called a sinogram\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"measures\",\n      \"o\": \"line integral along the green line\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.8,\n      \"evidence\": \"You can determine a line integral along the green line shown here\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"measures\",\n      \"o\": \"line integral along the blue line\",\n      \"modalities\": [\"text\", \"image",
+  "parsed": {
+    "s": "PET",
+    "p": "measures",
+    "o": "line integral along the green line",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.8,
+    "evidence": [
+      "You can determine a line integral along the green line shown here"
+    ]
+  }
+}

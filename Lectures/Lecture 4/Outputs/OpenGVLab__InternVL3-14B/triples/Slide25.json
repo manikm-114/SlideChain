@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"hands\",\n      \"p\": \"represents\",\n      \"o\": \"discrete functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now imagine holding out both hands: your left hand represents one function — let’s call it x of n, and your right hand represents the other — this will be h of n, the impulse response.\"\n    },\n    {\n      \"s\": \"flipping the right hand\",\n      \"p\": \"represents\",\n      \"o\": \"flipping the function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Because of that negative k in the convolution sum, one function needs to be flipped — think of it like flipping your right hand so you see the back of it.\"\n    },\n    {\n      \"s\": \"shifting the flipped function\",\n      \"p\": \"produces\",\n      \"o\": \"output y of n\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now we shift this flipped function across the input and calculate the output step",
+  "parsed": {
+    "s": "flipping the right hand",
+    "p": "represents",
+    "o": "flipping the function",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Because of that negative k in the convolution sum, one function needs to be flipped - think of it like flipping your right hand so you see the back of it."
+    ]
+  }
+}

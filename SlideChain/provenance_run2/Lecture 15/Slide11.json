@@ -1,0 +1,132 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "filtered back-projection"
+          },
+          {
+            "category": "data_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "back-projections"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "modality",
+            "term": "CT"
+          }
+        ],
+        "evidence": [
+          "filtered back-projection in progress",
+          "original sinogram",
+          "back-projections",
+          "reconstruction unfold",
+          "CT actually builds up an image"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.",
+            "modalities": [
+              "text"
+            ],
+            "o": "many projections",
+            "p": "reconstructs_with",
+            "s": "filtered back-projection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "filtered back-projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "back-projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "phantom"
+          },
+          {
+            "category": "modality",
+            "term": "CT"
+          },
+          {
+            "category": "reconstruction",
+            "term": "projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered back-projection"
+          }
+        ],
+        "evidence": [
+          "Filtered back-projection in progress",
+          "starts with the original sinogram",
+          "gradually added together",
+          "step by step, the image begins to take shape",
+          "almost like watching the reconstruction unfold in real time",
+          "not from a single snapshot, but from many projections combined through filtered back-projection"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "not from a single snapshot, but from many projections combined"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "As more and more views are included, the overlapping lines come together, and the original phantom-or the sample image we started with-slowly reappears.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "the original phantom",
+            "p": "reconstructs_with",
+            "s": "filtered back-projection"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "CT"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

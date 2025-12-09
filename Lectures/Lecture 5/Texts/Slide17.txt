@@ -1,0 +1,16 @@
+Let’s now revisit a powerful concept —representing a function as a sum of impulses.
+Here’s the idea:Instead of describing a function as one smooth continuous curve,we break it down into a series of impulses, or spikes.
+Each impulse is a shifted delta function —meaning, a very narrow spike placed at a specific time location.
+We scale each spike by the height of the function at that point.In other words, the amplitude of the spike equals the value of f of tat that specific time t.
+So we’re essentially saying:f of t equals the sum of delta functions,each multiplied by f at that location.
+
+Look at the diagram.The smooth gray curve represents the original function,and the red arrows show the delta spikes.Each spike points straight up, and its heightmatches the value of the function at that moment.
+
+Now, if you add all of these weighted impulses together —you recover the entire shape of the original function.
+This construction gives us a complete basis in one dimension.And we can take this idea further.
+In two dimensions, we use impulses defined over x and y.Think of image pixels — each pixel acts like a 2D delta function,placed at a specific location and scaled by intensity.
+In three dimensions — like with medical images or 3D scans —we build the signal from tiny volume elements, or voxels.Each voxel is just an impulse located at some point in 3D space,scaled by the value of the function there.
+
+So no matter the dimensionality —one D, two D, or three D —you can think of a signal, image, or volumeas being built from a grid of impulses.
+Each impulse contributes a small piece of the whole.And together, they form the complete function.
+That’s the power of thinking in terms of delta functions —they give us a clean, mathematical way to build upany function from the ground up, piece by piece.

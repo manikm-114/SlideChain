@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"centripetal force\",\n      \"p\": \"represents\",\n      \"o\": \"mass times velocity squared, divided by the radius\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Mathematically, the centripetal force is equal to mass times velocity squared, divided by the radius: F equals m v squared over r.\"\n    },\n    {\n      \"s\": \"change in a vector\",\n      \"p\": \"depends_on\",\n      \"o\": \"perpendicular change\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When the change in a vector is always perpendicular to the vector itself, the result is circular motion.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "centripetal force",
+        "p": "represents",
+        "o": "mass times velocity squared, divided by the radius",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Mathematically, the centripetal force is equal to mass times velocity squared, divided by the radius: F equals m v squared over r."
+      },
+      {
+        "s": "change in a vector",
+        "p": "depends_on",
+        "o": "perpendicular change",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When the change in a vector is always perpendicular to the vector itself, the result is circular motion."
+      }
+    ]
+  }
+}

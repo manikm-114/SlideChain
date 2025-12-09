@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide5",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T06:25:59.165852+00:00",
+  "text_length": 999,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a moment to underline the information. Like in physics, we have a particle property and a wave property. For image reconstruction, we can make an analogy. We can view the underlying image in two ways.\u000b\nFirst, we view the image as a collection of pixels if the image is two-dimensional, or as pixels for three-dimensional images—a collection of particles—here meaning picture elements; the pixels, the pixels (for 3-D, these are often called voxels).\u000b\nThe other way is complementary: we view the image as a superposition of waves. For a two-dimensional image, for example, think of the image as a summation of many waves propagating along different orientations. For a given orientation, the wave can be at different frequencies, and you have amplitude, frequency, and phase. If all these parameters are set correctly and you add all these waves together, you obtain the image. This is the basic, high-level idea—the particle and wave perspectives of the image and of image reconstruction.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Particle\", \"category\": \"physics\"},\n    {\"term\": \"Wave\", \"category\": \"physics\"},\n    {\"term\": \"Image = Collection of Pixels/Voxels\", \"category\": \"reconstruction\"},\n    {\"term\": \"Image = Superposition of Waves/Wavelets\", \"category\": \"reconstruction\"},\n    {\"term\": \"Particle and Wave Perspectives\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"Like in physics, we have a particle property and a wave property.\",\n    \"First, we view the image as a collection of pixels if the image is two-dimensional, or as pixels for three-dimensional images—a collection of particles—here meaning picture elements; the pixels, the pixels (for 3-D, these are often called voxels).\",\n    \"The other way is complementary: we view the image as a superposition of waves.\",\n    \"For a given orientation, the wave can be at different frequencies, and you have amplitude, frequency, and phase. If all these parameters are set correctly and you add all these waves together, you obtain the image.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Particle",
+        "category": "physics"
+      },
+      {
+        "term": "Wave",
+        "category": "physics"
+      },
+      {
+        "term": "Particle and Wave Perspectives",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Like in physics, we have a particle property and a wave property.",
+      "First, we view the image as a collection of pixels if the image is two-dimensional, or as pixels for three-dimensional images-a collection of particles-here meaning picture elements; the pixels, the pixels (for 3-D, these are often called voxels).",
+      "The other way is complementary: we view the image as a superposition of waves.",
+      "For a given orientation, the wave can be at different frequencies, and you have amplitude, frequency, and phase. If all these parameters are set correctly and you add all these waves together, you obtain the image."
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "MRI systems"
+          },
+          {
+            "category": "modality",
+            "term": "digital X-ray systems"
+          }
+        ],
+        "evidence": [
+          "in 1984, they played a critical role in the development of MRI systems",
+          "in 1999, digital X-ray systems came out of their labs"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In 1984, they played a critical role in the development of MRI systems.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MRI systems",
+            "p": "produces",
+            "s": "GE"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "And in 1999, digital X-ray systems came out of their labs.",
+            "modalities": [
+              "text"
+            ],
+            "o": "digital X-ray systems",
+            "p": "produces",
+            "s": "GE"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "company",
+        "term": "GE"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "cutting edge of innovation"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "In 1999, digital X-ray systems came out of their labs.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Digital X-ray",
+            "p": "produces",
+            "s": "Global Research Center"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "cutting edge of innovation"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide26.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide26.txt"
+  },
+  "slide_id": "Slide26"
+}

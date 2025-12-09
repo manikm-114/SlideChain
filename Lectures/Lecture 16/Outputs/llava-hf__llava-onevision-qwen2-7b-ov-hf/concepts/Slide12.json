@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide12",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe have now finished the general perspective, so let’s move on to radioactivity.\n\nRadioactivity is explained in several sections of the textbook. The reading itself is not especially difficult, but the terminology can feel confusing, especially if you don’t have a strong background in chemistry. I’ve had to go through these materials multiple times myself. Over time, it becomes clearer — what we are really dealing with are physical and chemical phenomena at the atomic level.\nSo why does radioactivity occur? The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process. The decay can follow different mechanisms, which we will study in detail.\n\nImportantly, radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations. Once you see the formulation, it’s not as difficult as it sounds. With some practice, the mathematics will become straightforward, and it provides a precise way to describe radioactive processes.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"radioactivity\", \"category\": \"physics\"},\n    {\"term\": \"isotopes\", \"category\": \"physics\"},\n    {\"term\": \"decay\", \"category\": \"physics\"},\n    {\"term\": \"exponential curve\", \"category\": \"mathematics\"},\n    {\"term\": \"ordinary differential equations\", \"category\": \"mathematics\"},\n    {\"term\": \"mathematics\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"The reading itself is not especially difficult, but the terminology can feel confusing, especially if you don’t have a strong background in chemistry. I’ve had to go through these materials multiple times myself. Over time, it becomes clearer — what we are really dealing with are physical and chemical phenomena at the atomic level.\", \"So why does radioactivity occur? The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process. The decay can follow different mechanisms, which we will study in detail.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radioactivity",
+        "category": "physics"
+      },
+      {
+        "term": "isotopes",
+        "category": "physics"
+      },
+      {
+        "term": "decay",
+        "category": "physics"
+      },
+      {
+        "term": "exponential curve",
+        "category": "mathematics"
+      },
+      {
+        "term": "ordinary differential equations",
+        "category": "mathematics"
+      },
+      {
+        "term": "mathematics",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "The reading itself is not especially difficult, but the terminology can feel confusing, especially if you don’t have a strong background in chemistry. I’ve had to go through these materials multiple times myself. Over time, it becomes clearer - what we are really dealing with are physical and chemical phenomena at the atomic level.",
+      "So why does radioactivity occur? The reason is that certain isotopes are unstable. These isotopes undergo decay, releasing radiation in the process. The decay can follow different mechanisms, which we will study in detail."
+    ]
+  }
+}

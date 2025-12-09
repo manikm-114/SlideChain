@@ -1,0 +1,139 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "projection image"
+          },
+          {
+            "category": "modality",
+            "term": "single projection"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray source"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector"
+          },
+          {
+            "category": "instrumentation",
+            "term": "patient table"
+          },
+          {
+            "category": "modality",
+            "term": "cross-sectional slices"
+          },
+          {
+            "category": "modality",
+            "term": "volumetric image"
+          },
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          },
+          {
+            "category": "modality",
+            "term": "three-dimensional representation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct"
+          }
+        ],
+        "evidence": [
+          "a single projection image",
+          "captures one view at a time",
+          "X-ray source",
+          "detector",
+          "patient table",
+          "cross-sectional slices",
+          "volumetric image",
+          "computed tomography",
+          "three-dimensional representation",
+          "reconstruct"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray.",
+            "modalities": [
+              "text"
+            ],
+            "o": "single projection image",
+            "p": "uses",
+            "s": "Medical X-ray imaging"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When these slices are stacked together, they form a volumetric image of the entire body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "volumetric image",
+            "p": "produces",
+            "s": "Medical X-ray imaging"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "computed tomography transforms those multiple views into a three-dimensional representation",
+            "modalities": [
+              "text"
+            ],
+            "o": "multiple views",
+            "p": "reconstructs_with",
+            "s": "Computed tomography"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "richer source of information"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "When these slices are stacked together, they form a volumetric image of the entire body."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When these slices are stacked together, they form a volumetric image of the entire body."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "volumetric image",
+        "p": "reconstructs_with",
+        "s": "cross-sectional slices"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "richer source of information"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

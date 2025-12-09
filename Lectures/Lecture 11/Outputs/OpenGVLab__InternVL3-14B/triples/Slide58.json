@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide58",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Four channels\",\n      \"p\": \"represents\",\n      \"o\": \"filters\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Each channel acts like a filter.\"\n    },\n    {\n      \"s\": \"Four channels\",\n      \"p\": \"uses\",\n      \"o\": \"frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here you see four channels illustrated both in the frequency domain...\"\n    },\n    {\n      \"s\": \"Four channels\",\n      \"p\": \"uses\",\n      \"o\": \"spatial domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"...and in the spatial domain...\"\n    },\n    {\n      \"s\": \"filters\",\n      \"p\": \"produces\",\n      \"o\": \"blurred or oscillatory patterns\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we transform them back into the spatial domain, they appear as blurred or oscillatory patterns.\"\n    },",
+  "parsed": {
+    "s": "filters",
+    "p": "produces",
+    "o": "blurred or oscillatory patterns",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "When we transform them back into the spatial domain, they appear as blurred or oscillatory patterns."
+    ]
+  }
+}

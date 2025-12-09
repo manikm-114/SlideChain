@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide10",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:04:13.766475+00:00",
+  "text_length": 1167,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s think about circular convolution.\n\nEarlier, with linear convolution, we had just one pair of signals sliding past each other. In this hand analogy, that meant one top hand and one bottom hand.\n\nHere, with circular convolution, the situation is different. The signal is treated as if it repeats periodically — just like in our earlier example from Wikipedia. So instead of one top hand, we now have several copies in a row, as shown here with three hands.\nWhen we slide the lower signal, we can’t “run out” of data on either end, because the pattern simply wraps around. That means parts of the signal from the end overlap with parts from the beginning.\n\nIn the picture, you can see that the fingers from the lower hands are overlapping with the fingers from the upper hands — not just in the middle, but also across the boundaries. This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.\nIf we don’t want those overlaps to distort our result, we need to use zero-padding before performing the convolution. That’s the key difference between the clean linear convolution result and the wrapped-around circular convolution result.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Circular Convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"Linear Convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"Zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"Edge Overlaps\", \"category\": \"signal_processing\"},\n    {\"term\": \"Wrapping Around\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Now let’s think about circular convolution.\",\n    \"In this hand analogy, that meant one top hand and one bottom hand.\",\n    \"So instead of one top hand, we now have several copies in a row, as shown here with three hands.\",\n    \"That means parts of the signal from the end overlap with parts from the beginning.\",\n    \"This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.\",\n    \"If we don’t want those overlaps to distort our result, we need to use zero-padding before performing the convolution.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Circular Convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Linear Convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Edge Overlaps",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Now let's think about circular convolution.",
+      "In this hand analogy, that meant one top hand and one bottom hand.",
+      "So instead of one top hand, we now have several copies in a row, as shown here with three hands.",
+      "That means parts of the signal from the end overlap with parts from the beginning.",
+      "This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.",
+      "If we don't want those overlaps to distort our result, we need to use zero-padding before performing the convolution."
+    ]
+  }
+}

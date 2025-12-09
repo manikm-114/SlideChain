@@ -1,0 +1,87 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "MRI Scanners"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "phase encoding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency encoding"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          }
+        ],
+        "evidence": [
+          "sampling in k-space",
+          "phase encoding",
+          "frequency encoding",
+          "k-theorem",
+          "Fourier transform",
+          "Fourier slice theorem",
+          "reconstruction"
+        ]
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Then, by applying the Fourier transform, we reconstruct the actual image in spatial coordinates."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "image",
+        "p": "reconstructs_with",
+        "s": "k-space"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "image_processing",
+        "term": "detail images"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The scanner doesn\u2019t measure an image directly. Instead, it measures data in k-space, which is essentially the Fourier space of the image. Then, by applying the Fourier transform, we reconstruct the actual image in spatial coordinates.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "image",
+            "p": "measures",
+            "s": "MR signal"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

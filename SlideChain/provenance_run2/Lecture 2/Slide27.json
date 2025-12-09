@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "textread"
+          },
+          {
+            "category": "data_processing",
+            "term": "indexed data"
+          },
+          {
+            "category": "workflow",
+            "term": "debugging"
+          },
+          {
+            "category": "data_processing",
+            "term": "sampling"
+          }
+        ],
+        "evidence": [
+          "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+          "This lets you directly target a record without loading everything - useful for indexed data, or when you\u2019re debugging or sampling from a large file."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+            "modalities": [
+              "text"
+            ],
+            "o": "textread",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "textread"
+          },
+          {
+            "category": "data_processing",
+            "term": "skip"
+          },
+          {
+            "category": "data_processing",
+            "term": "indexed data"
+          },
+          {
+            "category": "data_processing",
+            "term": "debugging"
+          },
+          {
+            "category": "data_processing",
+            "term": "sampling"
+          },
+          {
+            "category": "data_processing",
+            "term": "large file"
+          }
+        ],
+        "evidence": [
+          "In this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+          "This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file."
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+            "modalities": [
+              "text"
+            ],
+            "o": "two extra options",
+            "p": "uses",
+            "s": "textread"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "textread"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "software",
+            "term": "header lines"
+          },
+          {
+            "category": "data_processing",
+            "term": "indexed data"
+          },
+          {
+            "category": "software",
+            "term": "debugging"
+          },
+          {
+            "category": "data_processing",
+            "term": "large file"
+          }
+        ],
+        "evidence": [
+          "Sometimes you don\u2019t need the full file - you just want a specific line. Maybe line two contains Joe\u2019s entry, and that\u2019s all you care about.",
+          "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

@@ -1,0 +1,224 @@
+{
+  "lecture": "Lecture 1",
+  "slide_id": "Slide9",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide9.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide9.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-ray",
+              "category": "modality"
+            },
+            {
+              "term": "detected signals",
+              "category": "signal_processing"
+            },
+            {
+              "term": "cross-sectional image",
+              "category": "reconstruction"
+            },
+            {
+              "term": "PET",
+              "category": "modality"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "MRI",
+              "category": "modality"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”",
+            "It walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"production\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"interaction\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detected signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"cross-sectional image\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"PET\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"anatomy\\\", \\\"category\\\": \\\"anatomy\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\\", \\\"It walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"X-ray\", \"category\": \"modality\"}, {\"term\": \"detected signals\", \"category\": \"signal_processing\"}, {\"term\": \"cross-sectional image\", \"category\": \"reconstruction\"}, {\"term\": \"PET\", \"category\": \"modality\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"MRI\", \"category\": \"modality\"}, {\"term\": \"CT\", \"category\": \"modality\"}], \"evidence\": [\"Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\", \"It walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide9.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"X-ray technology\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Medical imaging\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide9.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-rays",
+              "category": "modality"
+            },
+            {
+              "term": "produced",
+              "category": "instrumentation"
+            },
+            {
+              "term": "interact with the body",
+              "category": "physics"
+            },
+            {
+              "term": "detected signals",
+              "category": "signal_processing"
+            },
+            {
+              "term": "cross-sectional image",
+              "category": "reconstruction"
+            },
+            {
+              "term": "PET",
+              "category": "modality"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "MRI",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "how X-rays are produced",
+            "how they interact with the body",
+            "detected signals are turned into a cross-sectional image",
+            "other types of imaging we’ll cover-like PET, SPECT, and MRI"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"produced\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"interact with the body\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detected signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"cross-sectional image\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"PET\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"how X-rays are produced\\\",\\n    \\\"how they interact with the body\\\",\\n    \\\"detected signals are turned into a cross-sectional image\\\",\\n    \\\"other types of imaging we’ll cover—like PET, SPECT, and MRI\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"X-rays\", \"category\": \"modality\"}, {\"term\": \"produced\", \"category\": \"instrumentation\"}, {\"term\": \"interact with the body\", \"category\": \"physics\"}, {\"term\": \"detected signals\", \"category\": \"signal_processing\"}, {\"term\": \"cross-sectional image\", \"category\": \"reconstruction\"}, {\"term\": \"PET\", \"category\": \"modality\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"MRI\", \"category\": \"modality\"}], \"evidence\": [\"how X-rays are produced\", \"how they interact with the body\", \"detected signals are turned into a cross-sectional image\", \"other types of imaging we’ll cover-like PET, SPECT, and MRI\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide9.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "X-rays",
+              "p": "produces",
+              "o": "cross-sectional image",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"X-rays\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"cross-sectional image\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"X-rays\", \"p\": \"produces\", \"o\": \"cross-sectional image\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide9.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-rays",
+              "category": "modality"
+            },
+            {
+              "term": "produce",
+              "category": "physics"
+            },
+            {
+              "term": "interact",
+              "category": "physics"
+            },
+            {
+              "term": "detected signals",
+              "category": "signal_processing"
+            },
+            {
+              "term": "cross-sectional image",
+              "category": "modality"
+            },
+            {
+              "term": "PET",
+              "category": "modality"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "MRI",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image",
+            "This technology became the foundation for other types of imaging we'll cover-like PET, SPECT, and MRI"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T17:52:36.263668+00:00\", \"text_length\": 610, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"produce\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"interact\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"body\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"detected signals\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"cross-sectional image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"PET\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image\\\",\\n    \\\"This technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"X-rays\", \"category\": \"modality\"}, {\"term\": \"produce\", \"category\": \"physics\"}, {\"term\": \"interact\", \"category\": \"physics\"}, {\"term\": \"detected signals\", \"category\": \"signal_processing\"}, {\"term\": \"cross-sectional image\", \"category\": \"modality\"}, {\"term\": \"PET\", \"category\": \"modality\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"MRI\", \"category\": \"modality\"}], \"evidence\": [\"walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image\", \"This technology became the foundation for other types of imaging we'll cover-like PET, SPECT, and MRI\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide9.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T19:00:52.758991+00:00\", \"text_length\": 610, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide9.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "how x-rays work",
+              "category": "modality"
+            },
+            {
+              "term": "how x-rays are produced",
+              "category": "physics"
+            },
+            {
+              "term": "how they interact with the body",
+              "category": "physics"
+            },
+            {
+              "term": "how detected signals are turned into a cross-sectional image",
+              "category": "signal_processing"
+            },
+            {
+              "term": "how this technology became the foundation for other types of imaging",
+              "category": "modality"
+            },
+            {
+              "term": "pet, spect, and mri",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "In just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.",
+            "It's a great refresher, especially if you're a visual learner.",
+            "You'll also see how this technology became the foundation for other types of imaging we'll cover-like PET, SPECT, and MRI."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-14T14:32:57.679434+00:00\", \"text_length\": 610, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"how x-rays work\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"how x-rays are produced\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"how they interact with the body\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"how detected signals are turned into a cross-sectional image\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"how this technology became the foundation for other types of imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"pet, spect, and mri\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"In just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\\\",\\n    \\\"It’s a great refresher, especially if you’re a visual learner.\\\",\\n    \\\"You’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"how x-rays work\", \"category\": \"modality\"}, {\"term\": \"how x-rays are produced\", \"category\": \"physics\"}, {\"term\": \"how they interact with the body\", \"category\": \"physics\"}, {\"term\": \"how detected signals are turned into a cross-sectional image\", \"category\": \"signal_processing\"}, {\"term\": \"how this technology became the foundation for other types of imaging\", \"category\": \"modality\"}, {\"term\": \"pet, spect, and mri\", \"category\": \"modality\"}], \"evidence\": [\"In just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\", \"It's a great refresher, especially if you're a visual learner.\", \"You'll also see how this technology became the foundation for other types of imaging we'll cover-like PET, SPECT, and MRI.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide9.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide9\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-14T14:39:42.848217+00:00\", \"text_length\": 610, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\\n\\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\\n\\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

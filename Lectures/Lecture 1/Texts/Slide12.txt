@@ -1,0 +1,13 @@
+Here’s another example that might feel a bit more familiar.
+
+Let’s say you take a photo with your phone, but it turns out a little blurry—maybe the camera shook, or the focus was off, or the camera is cheap and of poor quality. What you get is not the true image, but a version that’s been blurred in several ways.
+
+Now, how do we describe that blurring? In image processing, we model it using something called a point spread function—or PSF for short. This describes how a single point of light spreads out in the image.
+
+The process that causes blurring is called convolution. It’s a mathematical operation that combines the original image with the PSF. Convolution is sort of like multiplication—but in the so-called Fourier space that we will explain later in this course. Indeed, in the Fourier domain, convolution becomes regular multiplication. The Fourier transform is often performed using a fast algorithm, FFT in short. That simplifies a lot of computations.
+
+But now comes the hard part: what if all you have is the blurry image? Can you work backward and recover the original, sharp version?
+
+That’s another inverse problem. And just like with tomography, it’s tricky. You're trying to undo the effect of the blur, based on your knowledge of the system. It takes clever algorithms and good models—but it can be done. And that’s the kind of thinking we’ll develop throughout this course.
+
+

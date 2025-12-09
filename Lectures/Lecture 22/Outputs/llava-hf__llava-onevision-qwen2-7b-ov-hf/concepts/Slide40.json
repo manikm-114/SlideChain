@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide40",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe have a faculty member, Professor Pingkun Yan, who has done excellent work in collaboration with Philips, a leading medical imaging company. Their research focuses on combining ultrasound and MRI imaging for prostate cancer surgery. The idea is to use MRI before the operation and ultrasound during the operation, so you can merge or “fuse” the information from both modalities.\n\nMRI imaging provides excellent spatial resolution and sensitivity — it can clearly show anatomical and biological details, which makes it ideal for locating the tumor before surgery. However, MRI scanners are very expensive and not cost-effective for real-time surgical use. They also have slow temporal resolution, meaning it takes time to acquire the image. On the other hand, ultrasound imaging is fast, inexpensive, and easy to use in real time, but its spatial resolution and sensitivity are not as high.\n\nBy combining the two, surgeons can perform preoperative MRI imaging to identify the problem, and then, during the operation, use ultrasound as real-time guidance. Through image registration, or fusion, the live ultrasound image can be aligned with the preoperative MRI. This allows the surgeon to visualize the tumor location with both high spatial detail and real-time feedback. The fusion system developed by Dr. Yan’s group has produced very promising results in clinical trials.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"ultrasound\", \"category\": \"modality\"},\n    {\"term\": \"fusion\", \"category\": \"workflow\"},\n    {\"term\": \"image registration\", \"category\": \"software\"},\n    {\"term\": \"spatial resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"temporal resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"anatomical details\", \"category\": \"anatomy\"},\n    {\"term\": \"biological details\", \"category\": \"anatomy\"},\n    {\"term\": \"tumor location\", \"category\": \"anatomy\"},\n    {\"term\": \"high spatial detail\", \"category\": \"quality_metric\"},\n    {\"term\": \"real-time feedback\", \"category\": \"quality_metric\"},\n    {\"term\": \"preoperative MRI\", \"category\": \"workflow\"},\n    {\"term\": \"real-time surgical use\", \"category\": \"workflow\"},\n    {\"term\": \"very promising results\", \"category\": \"evidence\"}\n  ],\n  \"evidence\": [\"...the fusion system developed by Dr. Yan’s group has produced very promising results in clinical trials.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "ultrasound",
+        "category": "modality"
+      },
+      {
+        "term": "fusion",
+        "category": "workflow"
+      },
+      {
+        "term": "image registration",
+        "category": "software"
+      },
+      {
+        "term": "spatial resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "temporal resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "high spatial detail",
+        "category": "quality_metric"
+      },
+      {
+        "term": "real-time feedback",
+        "category": "quality_metric"
+      },
+      {
+        "term": "preoperative MRI",
+        "category": "workflow"
+      },
+      {
+        "term": "real-time surgical use",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "...the fusion system developed by Dr. Yan’s group has produced very promising results in clinical trials."
+    ]
+  }
+}

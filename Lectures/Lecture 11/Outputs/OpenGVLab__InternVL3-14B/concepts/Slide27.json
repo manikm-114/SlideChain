@@ -1,0 +1,54 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"color image quality assessment\", \"category\": \"quality_metric\"},\n    {\"term\": \"video quality assessment\", \"category\": \"quality_metric\"},\n    {\"term\": \"multi-scale SSIM\", \"category\": \"signal_processing\"},\n    {\"term\": \"complex wavelet SSIM\", \"category\": \"signal_processing\"},\n    {\"term\": \"luminance\", \"category\": \"signal_processing\"},\n    {\"term\": \"contrast\", \"category\": \"signal_processing\"},\n    {\"term\": \"structure\", \"category\": \"signal_processing\"},\n    {\"term\": \"mean\", \"category\": \"mathematics\"},\n    {\"term\": \"variation\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"adapt SSIM for color image quality assessment\",\n    \"SSIM is applied not just frame by frame, but also across time\",\n    \"evaluates images at different levels of resolution\",\n    \"can handle images that have complex values\",\n    \"comparing luminance, contrast, and structure\",\n    \"normalize by the mean and by the variation\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "color image quality assessment",
+        "category": "quality_metric"
+      },
+      {
+        "term": "video quality assessment",
+        "category": "quality_metric"
+      },
+      {
+        "term": "multi-scale SSIM",
+        "category": "signal_processing"
+      },
+      {
+        "term": "complex wavelet SSIM",
+        "category": "signal_processing"
+      },
+      {
+        "term": "luminance",
+        "category": "signal_processing"
+      },
+      {
+        "term": "contrast",
+        "category": "signal_processing"
+      },
+      {
+        "term": "structure",
+        "category": "signal_processing"
+      },
+      {
+        "term": "mean",
+        "category": "mathematics"
+      },
+      {
+        "term": "variation",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "adapt SSIM for color image quality assessment",
+      "SSIM is applied not just frame by frame, but also across time",
+      "evaluates images at different levels of resolution",
+      "can handle images that have complex values",
+      "comparing luminance, contrast, and structure",
+      "normalize by the mean and by the variation"
+    ]
+  }
+}

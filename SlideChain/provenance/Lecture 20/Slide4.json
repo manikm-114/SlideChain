@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "K-space theorem"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Determined by Proton Density \u03c1, T\u2081, & T\u2082 (Biological)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Proton Density \u03c1, T\u2081, & T\u2082 (Biological)",
+        "p": "depends_on",
+        "s": "Total Signal"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "K-space theorem"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Rotating Transverse Component of M Induces a Current in Quadrature Coils",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Quadrature coils",
+            "p": "uses",
+            "s": "Magnetization vector"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "in the rotating frame: s(t) = M_0 e^{-t/T_2}"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "s(t) = s_x(t) + i s_y(t) = M\u2080 e^(-t/T\u2082) e^(-i\u03c9\u2080t)"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "M\u2080 e^(-t/T\u2082) e^(-i\u03c9\u2080t)",
+        "p": "represents",
+        "s": "s(t)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "K-space theorem"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Once in the X-Y plane, the magnetization vector begins to rotate, or process, around the main magnetic field.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Main magnetic field",
+            "p": "depends_on",
+            "s": "Magnetization vector"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

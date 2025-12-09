@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"parallel-beam CT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MATLAB gives us two distinct simulation paths: parallel-beam CT and fan-beam CT.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"fan-beam CT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MATLAB gives us two distinct simulation paths: parallel-beam CT and fan-beam CT.\"\n    },\n    {\n      \"s\": \"Square-in-square phantom\",\n      \"p\": \"represents\",\n      \"o\": \"a small bright square centered inside a larger dark square\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Square-in-square phantom: a small bright square centered inside a larger dark square.\"\n    },\n    {\n      \"s\": \"Circle phantom with a nodule\",\n      \"p\": \"represents\",\n      \"o\": \"",
+  "parsed": {
+    "s": "Square-in-square phantom",
+    "p": "represents",
+    "o": "a small bright square centered inside a larger dark square",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Square-in-square phantom: a small bright square centered inside a larger dark square."
+    ]
+  }
+}

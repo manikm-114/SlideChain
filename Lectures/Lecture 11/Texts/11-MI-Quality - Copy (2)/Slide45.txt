@@ -1,0 +1,8 @@
+Now let’s look at a moderate threshold setting.
+
+This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.
+But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.
+
+On the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.
+
+This “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.

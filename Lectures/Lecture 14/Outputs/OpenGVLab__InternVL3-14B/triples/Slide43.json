@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Metal Parts\",\n      \"p\": \"cause\",\n      \"o\": \"Strong Beam-hardening and Severe Photon Starvation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Metal Parts Cause Strong Beam-hardening and Severe Photon Starvation (Few Photons Arriving at Detectors, Leading to a High Level of Statistical Noise).\"\n    },\n    {\n      \"s\": \"Filtered backprojection reconstruction\",\n      \"p\": \"produces\",\n      \"o\": \"stripe-like artifacts\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Filtered backprojection on such corrupted data generates stripe-like artifacts in the images, which is a typical manifestation of metal artifacts in CT.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Filtered backprojection reconstruction",
+        "p": "produces",
+        "o": "stripe-like artifacts",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Filtered backprojection on such corrupted data generates stripe-like artifacts in the images, which is a typical manifestation of metal artifacts in CT."
+      }
+    ]
+  }
+}

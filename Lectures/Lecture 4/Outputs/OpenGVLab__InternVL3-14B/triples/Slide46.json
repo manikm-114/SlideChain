@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"convolution\",\n      \"p\": \"uses\",\n      \"o\": \"Sobel filter\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Let’s take a look at how convolution helps with feature extraction — especially edge detection — which is fundamental in medical imaging and computer vision.\"\n    },\n    {\n      \"s\": \"Sobel filter\",\n      \"p\": \"represents\",\n      \"o\": \"3-by-3 matrix\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Sobel kernel, shown here as a 3-by-3 matrix, contains weights: negative one, zero, and positive one across columns — designed to emphasize horizontal changes.\"\n    },\n    {\n      \"s\": \"Sobel filter\",\n      \"p\": \"produces\",\n      \"o\": \"output for the corresponding destination pixel\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That value becomes the output for the corresponding destination pixel.\"\n    },\n    {\n      \"s\": \"convolution\",\n      \"p",
+  "parsed": {
+    "s": "Sobel filter",
+    "p": "produces",
+    "o": "output for the corresponding destination pixel",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "That value becomes the output for the corresponding destination pixel."
+    ]
+  }
+}

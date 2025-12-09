@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide36",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-07T23:16:27.011218+00:00",
+  "text_length": 1257,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s take a look at how blurring arises naturally in imaging systems — not just from digital filters, but from physical limitations.\nHere we observe a key concept in optics called the point spread function, or PSF.\nIn theory, if you image a perfect point of light, it should appear as a sharp dot on the detector.\u000bBut in reality, that point gets blurred into a small disk — often called an Airy disk —\u000bbecause of how light diffracts through the lens system.\nThis is the system’s impulse response in two dimensions.\nSo even if your input is just a single point — like a star in the night sky —\u000bthe output captured by your imaging system is a small, spread-out shape.\nAnd when two bright points are placed too close together,\u000btheir point spread functions begin to overlap.\u000bThis overlap makes it difficult — or even impossible — to tell them apart in the final image.\nThis phenomenon is at the core of what we call the resolution limit in optical systems.\nIn fact, PSFs are not just a curiosity —\u000bthey’re mathematically modeled and measured,\u000band they define how sharp or blurry every part of an image will be.\nSo in medical imaging, astronomy, microscopy —\u000bunderstanding the point spread function is essential to both image formation and image reconstruction.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"point spread function\",\n      \"p\": \"represents\",\n      \"o\": \"system's impulse response in two dimensions\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence\": \"This is the system’s impulse response in two dimensions.\"\n    },\n    {\n      \"s\": \"point spread function\",\n      \"p\": \"produces\",\n      \"o\": \"small, spread-out shape\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence\": \"So even if your input is just a single point — like a star in the night sky — the output captured by your imaging system is a small, spread-out shape.\"\n    },\n    {\n      \"s\": \"point spread function\",\n      \"p\": \"depends_on\",\n      \"o\": \"diffraction through the lens system\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence\": \"because of how light diffracts through the lens system.\"\n    },\n    {\n      \"s\": \"point spread function\",",
+  "parsed": {
+    "s": "point spread function",
+    "p": "depends_on",
+    "o": "diffraction through the lens system",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "because of how light diffracts through the lens system."
+    ]
+  }
+}

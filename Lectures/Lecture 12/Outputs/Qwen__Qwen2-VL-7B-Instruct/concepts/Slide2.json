@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T05:19:41.986541+00:00",
+  "text_length": 100,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nwe are right on schedule, and today marks the beginning of our detailed study of imaging modalities.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"imaging modalities\", \"category\": \"modality\"},\n    {\"term\": \"Fourier Transform\", \"category\": \"frequency_domain\"},\n    {\"term\": \"signal processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier Series\", \"category\": \"frequency_domain\"},\n    {\"term\": \"MatLab\", \"category\": \"software\"},\n    {\"term\": \"CT Scanner\", \"category\": \"instrumentation\"},\n    {\"term\": \"PET & SPECT\", \"category\": \"modality\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"Ultrasound\", \"category\": \"modality\"},\n    {\"term\": \"Optical Imaging\", \"category\": \"modality\"},\n    {\"term\": \"Deep Imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"we are right on schedule, and today marks the beginning of our detailed study of imaging modalities.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "imaging modalities",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "we are right on schedule, and today marks the beginning of our detailed study of imaging modalities."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Now let’s connect this with the equations from your textbook.
+
+As explained in the book, the phase factor is determined by the local processional angular frequency and the total time for which the phase-encoding gradient is applied. Mathematically, it’s the product of frequency and time. But remember, the local processional frequency is proportional to the local magnetic field. And the local magnetic field is not uniform — it’s linearly changing because of the applied gradient.
+
+So we can write the local field as gamma times G y, times y. That is, the gradient strength G y, multiplied by the coordinate y, times the gyromagnetic ratio gamma.
+This means the accumulated phase factor depends directly on position y. Spins at different y locations accumulate different phase shifts during the same encoding time. So after phase encoding, if you collect the signal, it still comes from the same slice, but now it’s modulated by this spatially dependent phase factor. That gives you extra information.
+
+To put it simply, now you can resolve the signal line by line across the slice. You’re no longer dealing with one lumped signal. Instead, you can tell which “row” in the slice contributed to the measured data. Of course, this is not yet a full tomographic image. What we want is pixel-wise resolution — knowing the value at every point in the slice. Phase encoding alone only gives us line-by-line information. To complete the picture, we’ll need to add frequency encoding on top of it. That’s what we’ll discuss next.

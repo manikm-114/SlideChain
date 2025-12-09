@@ -1,0 +1,184 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide14",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide14.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide14.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "diag",
+              "category": "software"
+            },
+            {
+              "term": "zeros",
+              "category": "software"
+            },
+            {
+              "term": "ones",
+              "category": "software"
+            },
+            {
+              "term": "special-purpose matrices",
+              "category": "mathematics"
+            },
+            {
+              "term": "diagonal matrix",
+              "category": "mathematics"
+            },
+            {
+              "term": "identity matrix",
+              "category": "mathematics"
+            },
+            {
+              "term": "initializing arrays",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.",
+            "For example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.",
+            "If you need an identity matrix - that’s a square matrix with ones on the diagonal and zeros elsewhere - just write eye of n.",
+            "To create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"diag\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"eye\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"zeros\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"ones\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"special-purpose matrices\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"diagonal matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"identity matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"initializing arrays\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\\", \\\"For example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\\", \\\"If you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\\", \\\"To create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"diag\", \"category\": \"software\"}, {\"term\": \"zeros\", \"category\": \"software\"}, {\"term\": \"ones\", \"category\": \"software\"}, {\"term\": \"special-purpose matrices\", \"category\": \"mathematics\"}, {\"term\": \"diagonal matrix\", \"category\": \"mathematics\"}, {\"term\": \"identity matrix\", \"category\": \"mathematics\"}, {\"term\": \"initializing arrays\", \"category\": \"data_processing\"}], \"evidence\": [\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\", \"For example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\", \"If you need an identity matrix - that’s a square matrix with ones on the diagonal and zeros elsewhere - just write eye of n.\", \"To create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide14.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "special-purpose matrices",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"special-purpose matrices\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"special-purpose matrices\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide14.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "special-purpose matrices",
+              "category": "mathematics"
+            },
+            {
+              "term": "diagonal matrix",
+              "category": "mathematics"
+            },
+            {
+              "term": "identity matrix",
+              "category": "mathematics"
+            },
+            {
+              "term": "initializing arrays",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "MATLAB also makes it easy to generate special-purpose matrices",
+            "diag of v creates a diagonal matrix from a vector",
+            "eye of n",
+            "zeros of m and n",
+            "ones of m and n",
+            "These kinds of matrices are especially useful when initializing arrays"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"special-purpose matrices\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"diagonal matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"identity matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"zeros matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"ones matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"initializing arrays\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"MATLAB also makes it easy to generate special-purpose matrices\\\",\\n    \\\"diag of v creates a diagonal matrix from a vector\\\",\\n    \\\"eye of n\\\",\\n    \\\"zeros of m and n\\\",\\n    \\\"ones of m and n\\\",\\n    \\\"These kinds of matrices are especially useful when initializing arrays\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"special-purpose matrices\", \"category\": \"mathematics\"}, {\"term\": \"diagonal matrix\", \"category\": \"mathematics\"}, {\"term\": \"identity matrix\", \"category\": \"mathematics\"}, {\"term\": \"initializing arrays\", \"category\": \"workflow\"}], \"evidence\": [\"MATLAB also makes it easy to generate special-purpose matrices\", \"diag of v creates a diagonal matrix from a vector\", \"eye of n\", \"zeros of m and n\", \"ones of m and n\", \"These kinds of matrices are especially useful when initializing arrays\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide14.json",
+        "parsed": {
+          "s": "MATLAB",
+          "p": "uses",
+          "o": "zeros(m,n)",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "To create a matrix full of zeros, use zeros of m and n."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"diag(v)\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms. For example, diag of v creates a diagonal matrix from a vector.\\\"},\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"diag(A)\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\\"},\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"eye(n)\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"If you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\\"},\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"zeros(m,n)\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"To create a matrix full of zeros, use zeros of m and n.\\\"},\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\",\", \"parsed\": {\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"zeros(m,n)\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"To create a matrix full of zeros, use zeros of m and n.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide14.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "diag",
+              "category": "mathematics"
+            },
+            {
+              "term": "zeros",
+              "category": "mathematics"
+            },
+            {
+              "term": "ones",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:17:29.636490+00:00\", \"text_length\": 615, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"diag\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"eye\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"zeros\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"ones\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"diag\", \"category\": \"mathematics\"}, {\"term\": \"zeros\", \"category\": \"mathematics\"}, {\"term\": \"ones\", \"category\": \"mathematics\"}], \"evidence\": [\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide14.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:23:30.797596+00:00\", \"text_length\": 615, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"diag(v)\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"diagonal matrix\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"% change a vector v to a diagonal matrix.\\\"},\\n    {\\\"s\\\":\\\"diag(A)\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"diagonal of A\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"% get diagonal of A.\\\"},\\n    {\\\"s\\\":\\\"eye(n)\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"identity matrix of size n\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"% identity matrix of size n.\\\"},\\n    {\\\"s\\\":\\\"zeros(m,n)\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"m-by-n zero matrix\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"% m-by-n zero matrix.\\\"},\\n    {\\\"s\\\":\\\"ones(m,n)\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"m*n matrix with all ones\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"% m*n matrix with all ones.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide14.json",
+        "parsed": {
+          "term": "These kinds of matrices are especially useful when initializing arrays before filling them with computed values",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:33:39.259243+00:00\", \"text_length\": 615, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"diag of v creates a diagonal matrix from a vector\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"diag of A pulls the diagonal elements from a matrix\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"eye of n\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"zeros of m and n\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"ones of m and n\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"These kinds of matrices are especially useful when initializing arrays before filling them with computed values\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\\",\\n    \\\"For example, diag of v creates a diagonal matrix from a vector.\\\",\\n    \\\"You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\\",\\n    \\\"If you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write\", \"parsed\": {\"term\": \"These kinds of matrices are especially useful when initializing arrays before filling them with computed values\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide14.json",
+        "parsed": {
+          "s": "zeros(m,n)",
+          "p": "produces",
+          "o": "an m-by-n zero matrix",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "% m-by-n zero matrix."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide14\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:51:49.967213+00:00\", \"text_length\": 615, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"diag(v)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"a diagonal matrix\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"% change a vector v to a diagonal matrix.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"diag(A)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"the diagonal of A\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"% get diagonal of A.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"eye(n)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"an identity matrix of size n\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"% identity matrix of size n.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"zeros(m,n)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"an m-by-n zero matrix\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"% m-by-n zero matrix.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"\", \"parsed\": {\"s\": \"zeros(m,n)\", \"p\": \"produces\", \"o\": \"an m-by-n zero matrix\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"% m-by-n zero matrix.\"]}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "Mean Squared Error"
+          },
+          {
+            "category": "mathematics",
+            "term": "Root Mean Squared Error"
+          },
+          {
+            "category": "mathematics",
+            "term": "Mean Absolute Error"
+          },
+          {
+            "category": "mathematics",
+            "term": "Mean Absolute Percentage Error"
+          }
+        ],
+        "evidence": [
+          "average of the squared differences between prediction and truth",
+          "square root of the mean squared error",
+          "take the absolute value of the difference at each pixel, then average",
+          "mean absolute error expressed as a percentage of the true value"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Instead of squaring, we take the absolute value of the difference at each pixel, then average."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "absolute value of the difference at each pixel",
+        "p": "measures",
+        "s": "Mean Absolute Error"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "Mean absolute percentage error"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "mean squared error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "root mean squared error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "mean absolute error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "mean absolute percentage error"
+          },
+          {
+            "category": "mathematics",
+            "term": "l1 norm"
+          },
+          {
+            "category": "mathematics",
+            "term": "l2 norm"
+          }
+        ],
+        "evidence": [
+          "mean squared error is the average of the squared differences between prediction and truth",
+          "root mean squared error is the square root of the mean squared error",
+          "mean absolute error is the average of the absolute value of the difference",
+          "mean absolute percentage error is the mean absolute error expressed as a percentage of the true value",
+          "l1 norm is the mean absolute error",
+          "l2 norm is associated with the mean squared error"
+        ]
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the square root of the mean squared error",
+        "p": "produces",
+        "s": "Root mean squared error"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "Mean Squared Error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Root Mean Squared Error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Mean Absolute Error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Mean Absolute Percentage Error"
+          }
+        ],
+        "evidence": [
+          "The first, which we\u2019ve already discussed, is the Mean Squared Error, or MSE. This is the average of the squared differences between prediction and truth.",
+          "A closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error.",
+          "Sometimes we want a measure that treats all errors more equally. That\u2019s where the Mean Absolute Error, or MAE, comes in.",
+          "Finally, we have the Mean Absolute Percentage Error, or MAPE. This is the mean absolute error expressed as a percentage of the true value."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

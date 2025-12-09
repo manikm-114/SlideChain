@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"beam geometry\",\n      \"p\": \"represents\",\n      \"o\": \"axial and lateral beam shapes from a single-crystal transducer\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A schematic diagram showing the axial and the lateral beam shapes from a single-crystal transducer.\"\n    },\n    {\n      \"s\": \"beam geometry\",\n      \"p\": \"measures\",\n      \"o\": \"first sidelobes of the main beam\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Also shown are the first side lobes of the main beam.\"\n    },\n    {\n      \"s\": \"divergence angle\",\n      \"p\": \"depends_on\",\n      \"o\": \"wavelength and transducer aperture\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This divergence angle, which we call theta, is determined by the wavelength lambda and the transducer aperture 'a'.\"\n    },\n    {\n      \"s\": \"FWHM\",",
+  "parsed": {
+    "s": "divergence angle",
+    "p": "depends_on",
+    "o": "wavelength and transducer aperture",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This divergence angle, which we call theta, is determined by the wavelength lambda and the transducer aperture 'a'."
+    ]
+  }
+}

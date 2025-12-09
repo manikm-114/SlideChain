@@ -1,0 +1,102 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "specificity"
+          },
+          {
+            "category": "algorithm",
+            "term": "ROC curve"
+          },
+          {
+            "category": "algorithm",
+            "term": "threshold"
+          },
+          {
+            "category": "quality_metric",
+            "term": "false positive rate"
+          },
+          {
+            "category": "quality_metric",
+            "term": "true positive rate"
+          },
+          {
+            "category": "quality_metric",
+            "term": "diagnostic accuracy"
+          }
+        ],
+        "evidence": [
+          "sensitivity and specificity are not fixed properties of a test",
+          "sweeping through all possible thresholds",
+          "On the x-axis, we plot 1 - specificity, which is the false positive rate",
+          "On the y-axis, we plot sensitivity, the true positive rate",
+          "the area under the ROC curve, or AUC, provides a single number to summarize diagnostic accuracy"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Here\u2019s the key idea: sensitivity and specificity are not fixed properties of a test.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sensitivity and specificity",
+            "p": "measures",
+            "s": "ROC curve"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "medical imaging research"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "An AUC of 0.5 - a diagonal line - means the test is no better than random guessing"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The area under the ROC curve, or AUC, provides a single number to summarize diagnostic accuracy."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "area under the ROC curve (AUC)",
+        "p": "produces",
+        "s": "ROC curve"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "medical imaging research"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide40.txt"
+  },
+  "slide_id": "Slide40"
+}

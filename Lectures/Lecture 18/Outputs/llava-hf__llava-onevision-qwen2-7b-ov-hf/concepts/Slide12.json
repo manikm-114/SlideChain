@@ -1,0 +1,56 @@
+{
+  "slide_id": "Slide12",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere we see the behavior of magnetic poles. Just like electric charges, magnets also interact depending on their polarity. Every magnet has two poles: a north pole and a south pole. Like poles repel each other, while opposite poles attract.\n\nThis is a simple but powerful analogy. You can think of it like teamwork: if two people have the same role, they may push against each other, but if they have complementary skills, they come together to form a stronger team. In the same way, the north and south poles naturally attract and stabilize one another.\nThese basic principles of magnetism, combined with the behavior of electric charges, are the foundation for understanding the electromagnetic interactions that drive MRI physics.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"magnetic poles\", \"category\": \"physics\"},\n    {\"term\": \"north pole\", \"category\": \"physics\"},\n    {\"term\": \"south pole\", \"category\": \"physics\"},\n    {\"term\": \"repel\", \"category\": \"physics\"},\n    {\"term\": \"attract\", \"category\": \"physics\"},\n    {\"term\": \"role\", \"category\": \"software\"},\n    {\"term\": \"complementary skills\", \"category\": \"software\"},\n    {\"term\": \"teamwork\", \"category\": \"software\"},\n    {\"term\": \"electromagnetic interactions\", \"category\": \"physics\"},\n    {\"term\": \"MRI physics\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"Just like electric charges, magnets also interact depending on their polarity.\", \"Every magnet has two poles: a north pole and a south pole.\", \"Like poles repel each other, while opposite poles attract.\", \"These basic principles of magnetism, combined with the behavior of electric charges, are the foundation for understanding the electromagnetic interactions that drive MRI physics.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "magnetic poles",
+        "category": "physics"
+      },
+      {
+        "term": "north pole",
+        "category": "physics"
+      },
+      {
+        "term": "south pole",
+        "category": "physics"
+      },
+      {
+        "term": "repel",
+        "category": "physics"
+      },
+      {
+        "term": "attract",
+        "category": "physics"
+      },
+      {
+        "term": "role",
+        "category": "software"
+      },
+      {
+        "term": "complementary skills",
+        "category": "software"
+      },
+      {
+        "term": "teamwork",
+        "category": "software"
+      },
+      {
+        "term": "electromagnetic interactions",
+        "category": "physics"
+      },
+      {
+        "term": "MRI physics",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Just like electric charges, magnets also interact depending on their polarity.",
+      "Every magnet has two poles: a north pole and a south pole.",
+      "Like poles repel each other, while opposite poles attract.",
+      "These basic principles of magnetism, combined with the behavior of electric charges, are the foundation for understanding the electromagnetic interactions that drive MRI physics."
+    ]
+  }
+}

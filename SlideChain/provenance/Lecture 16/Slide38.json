@@ -1,0 +1,141 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "gamma camera"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coincidence detection"
+          },
+          {
+            "category": "modality",
+            "term": "single-photon emission computed tomography"
+          },
+          {
+            "category": "modality",
+            "term": "positron emission tomography"
+          },
+          {
+            "category": "physics",
+            "term": "annihilation"
+          },
+          {
+            "category": "physics",
+            "term": "gamma-ray photons"
+          }
+        ],
+        "evidence": [
+          "gamma camera captures individual gamma-ray photons one by one",
+          "coincidence detection, which is the principle behind positron emission tomography",
+          "positron emission tomography, or PET",
+          "gamma-ray photons",
+          "annihilate, producing a pair of gamma photons"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "SPECT relies on detecting single photons with a gamma camera",
+            "modalities": [
+              "text"
+            ],
+            "o": "gamma camera",
+            "p": "uses",
+            "s": "SPECT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "PET relies on detecting photon pairs through coincidence detection",
+            "modalities": [
+              "text"
+            ],
+            "o": "coincidence detection",
+            "p": "uses",
+            "s": "PET"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "radioactivity"
+          },
+          {
+            "category": "physics",
+            "term": "tracer production"
+          },
+          {
+            "category": "instrumentation",
+            "term": "gamma camera"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coincidence detection"
+          }
+        ],
+        "evidence": [
+          "We learned about the four methods of producing radionuclides, with special focus on the third and fourth methods-cyclotrons for positron emission tomography, and radionuclide generators for single photon emission tomography.",
+          "The gamma camera captures individual gamma-ray photons one by one.",
+          "In this case, we don't just detect single photons; instead, we detect pairs of photons that are emitted simultaneously, traveling in opposite directions.",
+          "SPECT relies on detecting single photons with a gamma camera, while PET relies on detecting photon pairs through coincidence detection."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The gamma camera captures individual gamma-ray photons one by one. The gamma camera is used in single-photon emission computed tomography, or SPECT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "SPECT",
+            "p": "uses",
+            "s": "gamma camera"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "detecting single photons"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The second approach is coincidence detection, which is the principle behind positron emission tomography, or PET."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "positron emission tomography",
+        "p": "uses",
+        "s": "coincidence detection"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "image quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

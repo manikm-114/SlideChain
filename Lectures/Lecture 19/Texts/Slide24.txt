@@ -1,0 +1,13 @@
+Up to this point, we’ve been talking about signals coming from a whole slice. But instead of just getting a collective signal from all the protons in the selected slice, our goal is to resolve individual locations inside that slice.
+
+We want to know: what is the proton density, often called rho, at a given pixel location? What is the T1 relaxation time for that pixel? What is the T2 relaxation time for that pixel? Once you know all this information, pixel by pixel, you can construct a cross-sectional image. And that is the true purpose of tomographic imaging.
+
+So here’s the challenge. Let’s pause for a moment and think carefully. We have an equation — you can see it here — which tells us that the signal is proportional to the sum over all spins inside the slice. That’s already an improvement. It’s much more specific than before, when we were averaging over the whole volume. Now, the signal comes only from one slice.
+
+But here’s the puzzle: how can we take this equation, which only tells us the total signal from the slice, and somehow extract the spatial information pixel by pixel? How can we single out, for example, the value of rho, or T1, or T2, at a particular coordinate — say, x naught, y naught?
+I encourage you to really think about this problem. Imagine you are designing the experiment yourself. How would you go about resolving the spatial information? 
+
+How would you separate the contributions from different locations within the slice?
+There are actually multiple ways to approach this. The method I’m going to explain to you is very elegant and very efficient, but it’s not the only possibility. So think independently: if you were faced with this challenge, how would you do it?
+
+The solution we use in MRI is to introduce phase encoding and frequency encoding. These tricks allow us to separate the signals spatially. When you see how it works, you’ll realize it’s both clever and practical. And that’s what we’ll now begin to explain.

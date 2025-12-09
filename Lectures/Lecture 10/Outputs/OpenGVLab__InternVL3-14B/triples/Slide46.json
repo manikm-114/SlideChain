@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"neural network\",\n      \"p\": \"uses\",\n      \"o\": \"backpropagation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Backpropagation is the key idea behind this process.\"\n    },\n    {\n      \"s\": \"neural network\",\n      \"p\": \"measures\",\n      \"o\": \"error\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the network makes a guess, compares that guess to the correct answer, and measures the error.\"\n    },\n    {\n      \"s\": \"neural network\",\n      \"p\": \"adjusts\",\n      \"o\": \"parameters\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"it calculates how much each parameter contributed to that error. Using this information, it sends a correction signal backward through the layers, adjusting the parameters step by step.\"\n    },\n    {\n      \"s\": \"neural network\",\n      \"p\": \"reshapes\",\n      \"o\": \"decision boundaries\",\n      \"modalities\": [\"",
+  "parsed": {
+    "s": "neural network",
+    "p": "adjusts",
+    "o": "parameters",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "it calculates how much each parameter contributed to that error. Using this information, it sends a correction signal backward through the layers, adjusting the parameters step by step."
+    ]
+  }
+}

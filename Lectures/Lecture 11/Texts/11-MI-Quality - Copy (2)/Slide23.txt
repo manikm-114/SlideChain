@@ -1,0 +1,13 @@
+The third and final component of SSIM is the structural comparison.
+
+Here’s the idea. Once we normalize each image — removing its mean brightness and adjusting its contrast — what’s left is essentially its structure. This is where we ask: do the patterns, textures, and shapes in the two images align?
+Mathematically, this is captured using the cross-correlation between the two images. We call it sigma-X-Y, which measures how the variations in image X line up with the variations in image Y. To make the measure stable, we again introduce a constant, just like we did with luminance and contrast.
+
+Another way to think about this is in terms of vectors in high-dimensional space. Imagine each image as a vector, with each pixel value being one coordinate. The structural similarity is then like taking the inner product of these two vectors, normalized by their lengths. Geometrically, this is just the cosine of the angle between the two vectors.
+
+If the two vectors point in exactly the same direction — meaning the images are identical up to scaling — the angle is zero, and the similarity is maximized.
+If they are completely uncorrelated, the inner product is small, and the similarity is low.
+This is the same intuition we used when studying Fourier analysis: a Fourier coefficient is computed by projecting a signal onto a basis function. Here, we are projecting one image onto another and measuring how well they align.
+
+So, structural comparison boils down to asking: once brightness and contrast are accounted for, do the fine details and patterns of the two images still match?
+That completes the three pillars of SSIM: luminance, contrast, and structure. Next, we’ll see how they combine into the full similarity measure.

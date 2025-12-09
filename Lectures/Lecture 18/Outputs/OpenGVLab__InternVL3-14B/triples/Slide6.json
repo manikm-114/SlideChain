@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"superconducting magnet\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"At the center of the system, we have a large superconducting magnet.\"},\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"gradient coils\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Around it, we place gradient coils, which allow us to vary the magnetic field in different directions and make tomographic, or slice-by-slice, imaging possible.\"},\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"RF coils\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In addition, we use radiofrequency coils, or RF coils.\"},\n    {\"s\":\"RF coils\", \"p\":\"produces\", \"o\":\"radiofrequency signals\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These coils send radio waves to disturb the alignment of the protons in the body. When the protons are tipped away from alignment, they begin to precess, and in doing so, they emit their own radiofrequency signals.\"},",
+  "parsed": {
+    "s": "RF coils",
+    "p": "produces",
+    "o": "radiofrequency signals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "These coils send radio waves to disturb the alignment of the protons in the body. When the protons are tipped away from alignment, they begin to precess, and in doing so, they emit their own radiofrequency signals."
+    ]
+  }
+}

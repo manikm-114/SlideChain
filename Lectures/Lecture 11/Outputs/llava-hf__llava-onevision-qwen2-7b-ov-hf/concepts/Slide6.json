@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide6",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, the mean squared error is not the only way to measure differences. There are several variants, each with slightly different properties.\n\nThe first, which we’ve already discussed, is the Mean Squared Error, or MSE. This is the average of the squared differences between prediction and truth.\nA closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error. Why? Because this brings the units back to the same scale as the original measurement. For example, if we are measuring pixel intensities, RMSE will be expressed in the same units as those intensities, which makes it easier to interpret.\n\nOne important property of squaring is that it emphasizes larger errors much more strongly. If a difference is 100, squaring turns it into 10,000. That means MSE and RMSE heavily penalize large deviations.\nSometimes we want a measure that treats all errors more equally. That’s where the Mean Absolute Error, or MAE, comes in. Instead of squaring, we take the absolute value of the difference at each pixel, then average. This is also called the L1 norm, while MSE is associated with the L2 norm. The L1 norm is less sensitive to outliers compared to the L2 norm.\n\nFinally, we have the Mean Absolute Percentage Error, or MAPE. This is the mean absolute error expressed as a percentage of the true value. In other words, it’s MAE divided by the ground truth at each point, multiplied by 100 percent. This can be useful when we want to understand an error in relative terms — for example, saying “the error is 5 percent” rather than giving a raw number.\n\nSo, these different distance measures — MSE, RMSE, MAE, and MAPE — give us different perspectives on error. The choice depends on the problem: do we want to penalize large errors more, or do we care more about relative error percentages?\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Mean Squared Error\", \"category\": \"quality_metric\"},\n    {\"term\": \"Root Mean Squared Error\", \"category\": \"quality_metric\"},\n    {\"term\": \"Mean Absolute Error\", \"category\": \"quality_metric\"},\n    {\"term\": \"Mean Absolute Percentage Error\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"The first, which we’ve already discussed, is the Mean Squared Error, or MSE. This is the average of the squared differences between prediction and truth.\", \n             \"A closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error.\", \n             \"Sometimes we want a measure that treats all errors more equally. That’s where the Mean Absolute Error, or MAE, comes in.\", \n             \"Finally, we have the Mean Absolute Percentage Error, or MAPE. This is the mean absolute error expressed as a percentage of the true value.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Mean Squared Error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Root Mean Squared Error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Mean Absolute Error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Mean Absolute Percentage Error",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "The first, which we’ve already discussed, is the Mean Squared Error, or MSE. This is the average of the squared differences between prediction and truth.",
+      "A closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error.",
+      "Sometimes we want a measure that treats all errors more equally. That’s where the Mean Absolute Error, or MAE, comes in.",
+      "Finally, we have the Mean Absolute Percentage Error, or MAPE. This is the mean absolute error expressed as a percentage of the true value."
+    ]
+  }
+}

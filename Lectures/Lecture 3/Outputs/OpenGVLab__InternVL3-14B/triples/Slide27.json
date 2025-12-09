@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Resistor\",\n      \"p\": \"represents\",\n      \"o\": \"Ohm’s law\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A resistor follows Ohm’s law: V = IR.\"\n    },\n    {\n      \"s\": \"Ohm’s law\",\n      \"p\": \"uses\",\n      \"o\": \"V = IR\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A resistor follows Ohm’s law: V = IR.\"\n    },\n    {\n      \"s\": \"Ohm’s law\",\n      \"p\": \"uses\",\n      \"o\": \"I = V/R\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Whether we write V = IR or I = V/R, the linearity remains clear.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Resistor",
+        "p": "represents",
+        "o": "Ohm’s law",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A resistor follows Ohm’s law: V = IR."
+      },
+      {
+        "s": "Ohm’s law",
+        "p": "uses",
+        "o": "V = IR",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A resistor follows Ohm’s law: V = IR."
+      },
+      {
+        "s": "Ohm’s law",
+        "p": "uses",
+        "o": "I = V/R",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Whether we write V = IR or I = V/R, the linearity remains clear."
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide32",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo the continuous-domain expression can be expressed in terms of discrete data points. You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering. \n\nYou can read more if you are interested, but anyway, these are practical implementation details about high-pass filtering for filtered backprojection. What I have explained here is only the two-dimensional case.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"filtered backprojection\", \"category\": \"reconstruction\"},\n    {\"term\": \"high-pass filtering\", \"category\": \"signal_processing\"},\n    {\"term\": \"band-limited\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete data points\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampled data points\", \"category\": \"signal_processing\"},\n    {\"term\": \"two-dimensional case\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering.\", \"What I have explained here is only the two-dimensional case.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "filtered backprojection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "high-pass filtering",
+        "category": "signal_processing"
+      },
+      {
+        "term": "band-limited",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete data points",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampled data points",
+        "category": "signal_processing"
+      },
+      {
+        "term": "two-dimensional case",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "You get the filtered projection profile in terms of sampled data points. This is the band-limited high-pass filtering.",
+      "What I have explained here is only the two-dimensional case."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide62",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"nonlinear classifier\",\n      \"p\": \"uses\",\n      \"o\": \"curved boundary\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The nonlinear classifier can still learn a curved boundary that separates the classes reasonably well.\"\n    },\n    {\n      \"s\": \"nonlinear classifier\",\n      \"p\": \"depends_on\",\n      \"o\": \"complex, messy data\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"they can adapt to complex, messy data\"\n    },\n    {\n      \"s\": \"XOR problem\",\n      \"p\": \"represents\",\n      \"o\": \"noisy and overlapping data\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Here we see a fuzzier, more realistic version of the XOR problem. Instead of perfectly separable points, the data is noisy and overlaps.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "nonlinear classifier",
+        "p": "uses",
+        "o": "curved boundary",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "The nonlinear classifier can still learn a curved boundary that separates the classes reasonably well."
+      },
+      {
+        "s": "nonlinear classifier",
+        "p": "depends_on",
+        "o": "complex, messy data",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "they can adapt to complex, messy data"
+      }
+    ]
+  }
+}

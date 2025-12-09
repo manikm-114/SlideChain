@@ -1,0 +1,55 @@
+{
+  "slide_id": "Slide48",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T22:20:09.465549+00:00",
+  "text_length": 391,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo sum up:\u000bWe explored linear systems, especially shift-invariant systems.\u000bWe saw how convolution helps compute the system output.\u000bWe saw how cross-correlation relates to convolution and supports feature detection.\nWe learned how decomposing functions into impulses connects to these operations.\nConvolution can feel tricky at first, but with practice, it becomes a powerful, intuitive tool.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"linear system\", \"category\": \"signal_processing\"},\n    {\"term\": \"shift-invariant\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"cross-correlation\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse\", \"category\": \"signal_processing\"},\n    {\"term\": \"function\", \"category\": \"mathematics\"},\n    {\"term\": \"output\", \"category\": \"signal_processing\"},\n    {\"term\": \"feature detection\", \"category\": \"signal_processing\"},\n    {\"term\": \"decomposition\", \"category\": \"mathematics\"},\n    {\"term\": \"intuitive tool\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"We explored linear systems, especially shift-invariant systems.\",\n    \"We saw how convolution helps compute the system output.\",\n    \"We saw how cross-correlation relates to convolution and supports feature detection.\",\n    \"We learned how decomposing functions into impulses connects to these operations.\",\n    \"Convolution can feel tricky at first, but with practice, it becomes a powerful, intuitive tool.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear system",
+        "category": "signal_processing"
+      },
+      {
+        "term": "shift-invariant",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "cross-correlation",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse",
+        "category": "signal_processing"
+      },
+      {
+        "term": "function",
+        "category": "mathematics"
+      },
+      {
+        "term": "output",
+        "category": "signal_processing"
+      },
+      {
+        "term": "feature detection",
+        "category": "signal_processing"
+      },
+      {
+        "term": "intuitive tool",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "We explored linear systems, especially shift-invariant systems.",
+      "We saw how convolution helps compute the system output.",
+      "We saw how cross-correlation relates to convolution and supports feature detection.",
+      "We learned how decomposing functions into impulses connects to these operations.",
+      "Convolution can feel tricky at first, but with practice, it becomes a powerful, intuitive tool."
+    ]
+  }
+}

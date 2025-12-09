@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"script\",\n      \"p\": \"uses\",\n      \"o\": \"matrix_multiply function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.\"\n    },\n    {\n      \"s\": \"script\",\n      \"p\": \"uses\",\n      \"o\": \"MATLAB’s built-in multiplication\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You can also compare it to MATLAB’s built-in multiplication to check for accuracy.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "script",
+        "p": "uses",
+        "o": "matrix_multiply function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result."
+      },
+      {
+        "s": "script",
+        "p": "uses",
+        "o": "MATLAB’s built-in multiplication",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You can also compare it to MATLAB’s built-in multiplication to check for accuracy."
+      }
+    ]
+  }
+}

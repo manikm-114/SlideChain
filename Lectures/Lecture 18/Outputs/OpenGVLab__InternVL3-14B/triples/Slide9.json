@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide9",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"cross product\",\n      \"p\": \"produces\",\n      \"o\": \"new vector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When you take two vectors, say vector a and vector b, their cross product is not a scalar like the dot product, but instead a new vector.\"\n    },\n    {\n      \"s\": \"cross product\",\n      \"p\": \"measures\",\n      \"o\": \"magnitude equal to the length of a times the length of b times the sine of the angle between them\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The magnitude of this vector is equal to the length of a times the length of b times the sine of the angle between them.\"\n    },\n    {\n      \"s\": \"cross product\",\n      \"p\": \"represents\",\n      \"o\": \"orthogonal vector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So while the dot product gives us a projection, the cross product gives us an orthogonal vector that",
+  "parsed": {
+    "s": "cross product",
+    "p": "measures",
+    "o": "magnitude equal to the length of a times the length of b times the sine of the angle between them",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The magnitude of this vector is equal to the length of a times the length of b times the sine of the angle between them."
+    ]
+  }
+}

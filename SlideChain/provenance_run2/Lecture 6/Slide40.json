@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Fourier analysis"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "This function has a certain frequency structure, and that\u2019s captured in its Fourier transform",
+            "modalities": [
+              "text"
+            ],
+            "o": "frequency structure",
+            "p": "represents",
+            "s": "Fourier transform"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "When you sum up all these wave components, you reconstruct the original image",
+            "modalities": [
+              "text"
+            ],
+            "o": "wave components",
+            "p": "reconstructs_with",
+            "s": "Fourier transform"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "the rotated spatial function leads to a rotated frequency spectrum",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "rotated frequency spectrum",
+            "p": "produces",
+            "s": "rotated spatial function"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "understanding structure in terms of frequency"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Fourier analysis is the bridge between them"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "Suppose you have a 2D function - like the white rectangular bar you see on the top-left image.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "2D function",
+            "p": "represents",
+            "s": "white rectangular bar"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "As you can see in the second row, the rotated spatial function leads to a rotated frequency spectrum.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "rotated frequency spectrum",
+            "p": "reconstructs_with",
+            "s": "rotated spatial function"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide40.txt"
+  },
+  "slide_id": "Slide40"
+}

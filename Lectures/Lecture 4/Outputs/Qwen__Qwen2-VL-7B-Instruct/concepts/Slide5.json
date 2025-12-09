@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide5",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:07:54.260948+00:00",
+  "text_length": 603,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo understand convolution deeply, let’s frame it through a familiar story from physics.\nYou might recall the idea — sometimes attributed to Newton — that the universe began with a single impulse, a sort of divine kick that set everything into motion. Whether metaphor or mechanics, this idea captures something fundamental.\nIn physics, we often model this idea of an initial force as an impulse — a very short burst of energy that sets a system into motion. For instance, think of hitting a golf ball with a club. That brief push is an impulse, and the ball's subsequent motion is the system’s response.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"impulse\", \"category\": \"physics\"},\n    {\"term\": \"initial force\", \"category\": \"physics\"},\n    {\"term\": \"system's response\", \"category\": \"physics\"},\n    {\"term\": \"brief push\", \"category\": \"physics\"},\n    {\"term\": \"divine kick\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"To understand convolution deeply, let’s frame it through a familiar story from physics.\", \"This idea captures something fundamental.\", \"In physics, we often model this idea of an initial force as an impulse — a very short burst of energy that sets a system into motion.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "impulse",
+        "category": "physics"
+      },
+      {
+        "term": "initial force",
+        "category": "physics"
+      },
+      {
+        "term": "brief push",
+        "category": "physics"
+      },
+      {
+        "term": "divine kick",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "To understand convolution deeply, let's frame it through a familiar story from physics.",
+      "This idea captures something fundamental.",
+      "In physics, we often model this idea of an initial force as an impulse - a very short burst of energy that sets a system into motion."
+    ]
+  }
+}

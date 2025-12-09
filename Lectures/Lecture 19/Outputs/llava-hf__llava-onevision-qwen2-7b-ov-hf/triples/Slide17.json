@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide17",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, if you want to explore a little more detail, you can check the derivation for this mechanical precession of motion.\nIn this case, the angular frequency is proportional to the gravitational force. I’ve marked it in green on the slide. This is basically a physics analogy using a spinning top and torque.\n\nIf you’re interested, you can read it. Otherwise, don’t worry too much — it’s not essential for our discussion of MRI.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"gravitational force\", \"p\":\"depends_on\", \"o\":\"angular frequency\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"the angular frequency is proportional to the gravitational force\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "gravitational force",
+        "p": "depends_on",
+        "o": "angular frequency",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "the angular frequency is proportional to the gravitational force"
+      }
+    ]
+  }
+}

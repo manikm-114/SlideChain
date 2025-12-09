@@ -1,0 +1,135 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "matrix size"
+          },
+          {
+            "category": "algorithm",
+            "term": "matrix_multiply function"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB\u2019s built-in multiplication"
+          },
+          {
+            "category": "algorithm",
+            "term": "triple-loop method"
+          },
+          {
+            "category": "algorithm",
+            "term": "vectorized operations"
+          }
+        ],
+        "evidence": [
+          "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.",
+          "You can also compare it to MATLAB\u2019s built-in multiplication to check for accuracy.",
+          "this triple-loop method works, but it\u2019s not fast.",
+          "Later on, we\u2019ll talk about how to rewrite this using vectorized operations to make it much more efficient."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.",
+            "modalities": [
+              "text"
+            ],
+            "o": "matrix_multiply function",
+            "p": "uses",
+            "s": "script"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "You can also compare it to MATLAB\u2019s built-in multiplication to check for accuracy.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB\u2019s built-in multiplication",
+            "p": "uses",
+            "s": "script"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "matrix_multiply"
+          },
+          {
+            "category": "mathematics",
+            "term": "matrix"
+          },
+          {
+            "category": "mathematics",
+            "term": "random"
+          },
+          {
+            "category": "algorithm",
+            "term": "vectorized operations"
+          }
+        ],
+        "evidence": [
+          "call our matrix_multiply function to compute the result",
+          "this triple-loop method works, but it's not fast. Later on, we'll talk about how to rewrite this using vectorized operations to make it much more efficient."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "Later on, we'll talk about how to rewrite this using vectorized operations to make it much more efficient."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "matrix_multiply"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "software",
+            "term": "accuracy"
+          },
+          {
+            "category": "software",
+            "term": "vectorized operations"
+          }
+        ],
+        "evidence": [
+          "To test our new function, we write a quick script.",
+          "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.",
+          "You can also compare it to MATLAB\u2019s built-in multiplication to check for accuracy.",
+          "And here\u2019s something to think about - this triple-loop method works, but it\u2019s not fast. Later on, we\u2019ll talk about how to rewrite this using vectorized operations to make it much more efficient."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide40.txt"
+  },
+  "slide_id": "Slide40"
+}

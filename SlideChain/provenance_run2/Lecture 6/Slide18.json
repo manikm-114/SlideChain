@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gate function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinc function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaling property"
+          },
+          {
+            "category": "mathematics",
+            "term": "complex exponential"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          }
+        ],
+        "evidence": [
+          "Fourier transform of the gate function",
+          "rectangular function",
+          "sinc function",
+          "scaling property",
+          "frequency domain",
+          "complex exponential",
+          "integral"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "a rectangle in time turns into a sinc wave in frequency",
+            "modalities": [
+              "text"
+            ],
+            "o": "sinc function",
+            "p": "produces",
+            "s": "Fourier transform"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the gate function, also called the rectangular function",
+            "modalities": [
+              "text"
+            ],
+            "o": "rectangular function",
+            "p": "represents",
+            "s": "gate function"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "you could try computing it directly, or you could use a shortcut - the scaling property of the Fourier transform",
+            "modalities": [
+              "text"
+            ],
+            "o": "scaling property",
+            "p": "depends_on",
+            "s": "Fourier transform"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Fourier transform of a rectangular pulse"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "limit using calculus"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

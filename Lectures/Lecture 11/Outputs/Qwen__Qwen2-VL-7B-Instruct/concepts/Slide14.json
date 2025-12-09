@@ -1,0 +1,59 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:43:28.062012+00:00",
+  "text_length": 1198,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at an example to see how the Structural Similarity Index, or SSIM, actually works in practice.\nOn the top left, we have the reference image — the original, undistorted version. If we compare this image with itself, the SSIM score is exactly 1. That makes sense, because they are identical.\n\nNow, compare the original with the two images next to it. On the top row, both look quite similar to the original. One produces an SSIM value of 0.949, the other 0.989. These numbers are very close to one, reflecting the fact that the images are almost identical to our eyes.\nOn the bottom row, however, we see very different results. One image has been heavily pixelated, another blurred, and another corrupted with noise. When compared to the original, their SSIM values drop significantly — around 0.67, 0.69, and about 0.72. That means they retain only about two-thirds of the structural similarity.\n\nThe important thing here is that SSIM values line up with what we visually perceive. Images that look good to us score close to one. Images that look distorted or degraded score much lower. That is the power of SSIM — it bridges the gap between mathematical measurement and human vision.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Structural Similarity Index\", \"category\": \"quality_metric\"},\n    {\"term\": \"SSIM\", \"category\": \"quality_metric\"},\n    {\"term\": \"reference image\", \"category\": \"algorithm\"},\n    {\"term\": \"undistorted version\", \"category\": \"algorithm\"},\n    {\"term\": \"pixelated\", \"category\": \"signal_processing\"},\n    {\"term\": \"blurred\", \"category\": \"signal_processing\"},\n    {\"term\": \"corrupted with noise\", \"category\": \"signal_processing\"},\n    {\"term\": \"SSIM score\", \"category\": \"quality_metric\"},\n    {\"term\": \"human vision\", \"category\": \"quality_metric\"},\n    {\"term\": \"mathematical measurement\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"SSIM score is exactly 1\",\n    \"SSIM values are very close to one\",\n    \"SSIM values drop significantly\",\n    \"SSIM values line up with what we visually perceive\",\n    \"SSIM values bridge the gap between mathematical measurement and human vision\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Structural Similarity Index",
+        "category": "quality_metric"
+      },
+      {
+        "term": "SSIM",
+        "category": "quality_metric"
+      },
+      {
+        "term": "reference image",
+        "category": "algorithm"
+      },
+      {
+        "term": "undistorted version",
+        "category": "algorithm"
+      },
+      {
+        "term": "pixelated",
+        "category": "signal_processing"
+      },
+      {
+        "term": "blurred",
+        "category": "signal_processing"
+      },
+      {
+        "term": "corrupted with noise",
+        "category": "signal_processing"
+      },
+      {
+        "term": "SSIM score",
+        "category": "quality_metric"
+      },
+      {
+        "term": "human vision",
+        "category": "quality_metric"
+      },
+      {
+        "term": "mathematical measurement",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "SSIM score is exactly 1",
+      "SSIM values are very close to one",
+      "SSIM values drop significantly",
+      "SSIM values line up with what we visually perceive",
+      "SSIM values bridge the gap between mathematical measurement and human vision"
+    ]
+  }
+}

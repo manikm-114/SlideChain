@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Monochromatic Model\",\n      \"p\": \"represents\",\n      \"o\": \"Beer's law\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Here, we assume the X-ray beam consists of photons all having the same energy. That’s an idealization, but it helps us understand the basics. In this case, the incoming intensity, I naught, is attenuated according to Beer's law.\"\n    },\n    {\n      \"s\": \"Polychromatic Model\",\n      \"p\": \"depends_on\",\n      \"o\": \"integration over the entire energy spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In this case, we must integrate over the entire energy spectrum.\"\n    },\n    {\n      \"s\": \"Polychromatic Model\",\n      \"p\": \"measures\",\n      \"o\": \"weighted sum across the energy distribution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The result is still a single number — a grayscale intensity — but it is a weighted sum",
+  "parsed": {
+    "s": "Polychromatic Model",
+    "p": "depends_on",
+    "o": "integration over the entire energy spectrum",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "In this case, we must integrate over the entire energy spectrum."
+    ]
+  }
+}

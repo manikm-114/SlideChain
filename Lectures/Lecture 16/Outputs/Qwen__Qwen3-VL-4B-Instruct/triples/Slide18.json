@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-12T19:17:06.834552+00:00",
+  "text_length": 1502,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThe second major type of decay is called beta decay. There are two forms: beta-minus decay and beta-plus decay.\n\nIn beta-minus decay, a neutron inside the nucleus converts into a proton, releasing an electron — which we call a beta-minus particle — along with an antineutrino. This process changes the nucleus into a different element. Beta-minus particles can be damaging to tissue, and in some cases, this type of decay is used for therapy.\n\nIn beta-plus decay, a proton in the nucleus converts into a neutron, releasing a positron — which is a positively charged electron — along with a neutrino. The positron does not remain in the body for long. It quickly encounters a nearby electron, and when the two meet, they annihilate each other. This annihilation produces a pair of gamma photons.\n\nThese gamma photons do not emit randomly. They travel in opposite directions, almost exactly 180 degrees apart. This property is the basis for positron emission tomography, or PET. By detecting these pairs of photons and knowing they travel in straight, opposite directions, we can reconstruct images of where the tracer accumulated in the body.\n\nSome textbooks separate positron emission from beta decay and list it as a distinct process. Others group it under beta-plus decay. Either way, the important point is this: for imaging purposes, beta-plus decay and gamma decay are useful, while alpha decay and beta-minus decay are not. PET, in particular, relies on beta-plus decay and positron annihilation.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"beta-plus decay\",\n      \"p\": \"produces\",\n      \"o\": \"positron\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence\": \"In beta-plus decay, a proton in the nucleus converts into a neutron, releasing a positron — which is a positively charged electron — along with a neutrino.\"\n    },\n    {\n      \"s\": \"beta-plus decay\",\n      \"p\": \"depends_on\",\n      \"o\": \"positron annihilation\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence\": \"The positron does not remain in the body for long. It quickly encounters a nearby electron, and when the two meet, they annihilate each other. This annihilation produces a pair of gamma photons.\"\n    },\n    {\n      \"s\": \"positron emission tomography, or PET\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"pair of gamma photons\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.95,\n      \"evidence",
+  "parsed": {
+    "s": "beta-plus decay",
+    "p": "depends_on",
+    "o": "positron annihilation",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "The positron does not remain in the body for long. It quickly encounters a nearby electron, and when the two meet, they annihilate each other. This annihilation produces a pair of gamma photons."
+    ]
+  }
+}

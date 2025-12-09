@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "It\u2019s a mechanical wave, not electromagnetic.",
+            "modalities": [
+              "text"
+            ],
+            "o": "mechanical wave",
+            "p": "uses",
+            "s": "ultrasound"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "MRI, for example, uses radio-frequency (RF) signals",
+            "modalities": [
+              "text"
+            ],
+            "o": "radio-frequency (RF) signals",
+            "p": "uses",
+            "s": "MRI"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "X-ray and nuclear imaging use high-energy photons",
+            "modalities": [
+              "text"
+            ],
+            "o": "high-energy photons",
+            "p": "uses",
+            "s": "X-ray"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "our focus remains on diagnostic ultrasound imaging",
+            "modalities": [
+              "text"
+            ],
+            "o": "medical images",
+            "p": "produces",
+            "s": "ultrasound"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "ultrasound frequencies in diagnostic ultrasound imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "ultrasound is a mechanical wave, not electromagnetic.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "mechanical wave",
+            "p": "uses",
+            "s": "ultrasound"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "lower frequencies penetrate deeper but give lower resolution"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "tissue"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide5.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide5.txt"
+  },
+  "slide_id": "Slide5"
+}

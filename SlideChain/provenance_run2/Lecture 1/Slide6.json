@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "physics",
+            "term": "cathode rays"
+          },
+          {
+            "category": "physics",
+            "term": "radiation"
+          },
+          {
+            "category": "anatomy",
+            "term": "bones"
+          },
+          {
+            "category": "modality",
+            "term": "radiology"
+          },
+          {
+            "category": "physics",
+            "term": "Nobel Prize"
+          }
+        ],
+        "evidence": [
+          "invisible form of radiation",
+          "cathode rays",
+          "bones",
+          "radiology",
+          "Nobel Prize"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "To test his discovery, he took the first X-ray image-a picture of his wife\u2019s hand."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "first X-ray image",
+        "p": "produces",
+        "s": "Wilhelm Conrad Roentgen"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "medical imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "radiology"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Roentgen discovered something totally unexpected-an invisible form of radiation that could pass through solid objects. He called them X-rays because he didn't quite know what they were."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "X-rays",
+        "p": "produces",
+        "s": "Wilhelm Conrad Roentgen"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "SPECT"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

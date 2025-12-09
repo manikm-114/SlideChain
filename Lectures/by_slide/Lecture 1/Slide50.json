@@ -1,0 +1,219 @@
+{
+  "lecture": "Lecture 1",
+  "slide_id": "Slide50",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide50.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "medical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "artificial intelligence",
+              "category": "ai_ml"
+            },
+            {
+              "term": "robotics",
+              "category": "software"
+            },
+            {
+              "term": "machine learning",
+              "category": "ai_ml"
+            },
+            {
+              "term": "diagnostics",
+              "category": "workflow"
+            },
+            {
+              "term": "personalized treatment",
+              "category": "workflow"
+            },
+            {
+              "term": "integrated imaging",
+              "category": "workflow"
+            },
+            {
+              "term": "perfect healthcare",
+              "category": "software"
+            },
+            {
+              "term": "futuristic machine",
+              "category": "software"
+            },
+            {
+              "term": "Elysium",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "As we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.",
+            "Of course, today we aren’t there yet. But the ideas behind that machine-integrated imaging, precise diagnostics, personalized treatment-are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"artificial intelligence\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"robotics\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"machine learning\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"diagnostics\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"personalized treatment\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"integrated imaging\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"perfect healthcare\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"futuristic machine\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Elysium\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"As we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\\", \\\"Of course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"medical imaging\", \"category\": \"modality\"}, {\"term\": \"artificial intelligence\", \"category\": \"ai_ml\"}, {\"term\": \"robotics\", \"category\": \"software\"}, {\"term\": \"machine learning\", \"category\": \"ai_ml\"}, {\"term\": \"diagnostics\", \"category\": \"workflow\"}, {\"term\": \"personalized treatment\", \"category\": \"workflow\"}, {\"term\": \"integrated imaging\", \"category\": \"workflow\"}, {\"term\": \"perfect healthcare\", \"category\": \"software\"}, {\"term\": \"futuristic machine\", \"category\": \"software\"}, {\"term\": \"Elysium\", \"category\": \"software\"}], \"evidence\": [\"As we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\", \"Of course, today we aren’t there yet. But the ideas behind that machine-integrated imaging, precise diagnostics, personalized treatment-are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<medical imaging technology>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<integrated imaging system>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Advanced medical imaging, machine learning, and robotics are working toward integrated imaging, precise diagnostics, personalized treatment.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "integrated imaging",
+              "category": "modality"
+            },
+            {
+              "term": "precise diagnostics",
+              "category": "data_processing"
+            },
+            {
+              "term": "personalized treatment",
+              "category": "algorithm"
+            },
+            {
+              "term": "advanced medical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "machine learning",
+              "category": "ai_ml"
+            },
+            {
+              "term": "robotics",
+              "category": "instrumentation"
+            }
+          ],
+          "evidence": [
+            "integrated imaging, precise diagnostics, personalized treatment",
+            "advanced medical imaging, machine learning, and robotics"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"integrated imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"precise diagnostics\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"personalized treatment\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"advanced medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"machine learning\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"robotics\\\", \\\"category\\\": \\\"instrumentation\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"integrated imaging, precise diagnostics, personalized treatment\\\",\\n    \\\"advanced medical imaging, machine learning, and robotics\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"integrated imaging\", \"category\": \"modality\"}, {\"term\": \"precise diagnostics\", \"category\": \"data_processing\"}, {\"term\": \"personalized treatment\", \"category\": \"algorithm\"}, {\"term\": \"advanced medical imaging\", \"category\": \"modality\"}, {\"term\": \"machine learning\", \"category\": \"ai_ml\"}, {\"term\": \"robotics\", \"category\": \"instrumentation\"}], \"evidence\": [\"integrated imaging, precise diagnostics, personalized treatment\", \"advanced medical imaging, machine learning, and robotics\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide50.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Elysium",
+              "p": "represents",
+              "o": "futuristic machine",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 1.0,
+              "evidence": "In that film, there’s this futuristic machine-a kind of all-in-one medical scanner."
+            },
+            {
+              "s": "futuristic machine",
+              "p": "produces",
+              "o": "perfect healthcare",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Elysium\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"futuristic machine\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"In that film, there’s this futuristic machine—a kind of all-in-one medical scanner.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"futuristic machine\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"perfect healthcare\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"Elysium\", \"p\": \"represents\", \"o\": \"futuristic machine\", \"modalities\": [\"text\", \"image\"], \"confidence\": 1.0, \"evidence\": \"In that film, there’s this futuristic machine-a kind of all-in-one medical scanner.\"}, {\"s\": \"futuristic machine\", \"p\": \"produces\", \"o\": \"perfect healthcare\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "integrated imaging",
+              "category": "modality"
+            },
+            {
+              "term": "precise diagnostics",
+              "category": "algorithm"
+            },
+            {
+              "term": "personalized treatment",
+              "category": "algorithm"
+            },
+            {
+              "term": "advanced medical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "machine learning",
+              "category": "ai_ml"
+            },
+            {
+              "term": "robotics",
+              "category": "ai_ml"
+            },
+            {
+              "term": "future innovations",
+              "category": "ai_ml"
+            },
+            {
+              "term": "perfect healthcare",
+              "category": "algorithm"
+            },
+            {
+              "term": "invention of our future",
+              "category": "ai_ml"
+            }
+          ],
+          "evidence": [
+            "integrated imaging",
+            "precise diagnostics",
+            "personalized treatment",
+            "advanced medical imaging",
+            "machine learning",
+            "robotics",
+            "future innovations",
+            "perfect healthcare",
+            "invention of our future"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T18:55:09.669948+00:00\", \"text_length\": 1032, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"integrated imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"precise diagnostics\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"personalized treatment\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"advanced medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"machine learning\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"robotics\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"future innovations\\\", \\\"category\\\": \\\"ai_ml\\\"},\\n    {\\\"term\\\": \\\"perfect healthcare\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"invention of our future\\\", \\\"category\\\": \\\"ai_ml\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"integrated imaging\\\",\\n    \\\"precise diagnostics\\\",\\n    \\\"personalized treatment\\\",\\n    \\\"advanced medical imaging\\\",\\n    \\\"machine learning\\\",\\n    \\\"robotics\\\",\\n    \\\"future innovations\\\",\\n    \\\"perfect healthcare\\\",\\n    \\\"invention of our future\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"integrated imaging\", \"category\": \"modality\"}, {\"term\": \"precise diagnostics\", \"category\": \"algorithm\"}, {\"term\": \"personalized treatment\", \"category\": \"algorithm\"}, {\"term\": \"advanced medical imaging\", \"category\": \"modality\"}, {\"term\": \"machine learning\", \"category\": \"ai_ml\"}, {\"term\": \"robotics\", \"category\": \"ai_ml\"}, {\"term\": \"future innovations\", \"category\": \"ai_ml\"}, {\"term\": \"perfect healthcare\", \"category\": \"algorithm\"}, {\"term\": \"invention of our future\", \"category\": \"ai_ml\"}], \"evidence\": [\"integrated imaging\", \"precise diagnostics\", \"personalized treatment\", \"advanced medical imaging\", \"machine learning\", \"robotics\", \"future innovations\", \"perfect healthcare\", \"invention of our future\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T19:24:31.333925+00:00\", \"text_length\": 1032, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Elysium\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"futuristic medical scanner\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "term": "detect and treat any disease",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-14T14:38:57.377084+00:00\", \"text_length\": 1032, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"artificial intelligence\\\",\\n      \\\"category\\\": \\\"ai_ml\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"robotics\\\",\\n      \\\"category\\\": \\\"ai_ml\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"medical imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"integrated imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"precise diagnostics\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"personalized treatment\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"machine learning\\\",\\n      \\\"category\\\": \\\"ai_ml\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"advanced medical imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reconstruction\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reverse the aging process\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"detect and treat any disease\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"regenerate or even replace organs\\\",\\n      \\\"category\\\": \\\"\", \"parsed\": {\"term\": \"detect and treat any disease\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-14T14:42:45.122193+00:00\", \"text_length\": 1032, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\\n\\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\\n\\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\\n\\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

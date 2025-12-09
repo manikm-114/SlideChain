@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Nyquist theorem\",\n      \"p\": \"represents\",\n      \"o\": \"condition to avoid aliasing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"To avoid aliasing, we must make sure that the highest frequency in the signal — we call it u-max — is less than one divided by twice the sampling interval.\"\n    },\n    {\n      \"s\": \"Nyquist theorem\",\n      \"p\": \"produces\",\n      \"o\": \"sampling frequency must be greater than twice u-max\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In spoken terms, the sampling frequency must be greater than twice u-max.\"\n    },\n    {\n      \"s\": \"rectangular filter\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When the condition is satisfied, we can use a rectangular filter — often called a gate function — to select just the central copy of the spectrum. That single copy contains all",
+  "parsed": {
+    "s": "Nyquist theorem",
+    "p": "produces",
+    "o": "sampling frequency must be greater than twice u-max",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "In spoken terms, the sampling frequency must be greater than twice u-max."
+    ]
+  }
+}

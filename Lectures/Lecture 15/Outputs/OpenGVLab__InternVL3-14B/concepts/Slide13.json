@@ -1,0 +1,10 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"parallel-beam CT\", \"category\": \"modality\"},\n    {\"term\": \"Radon transform\", \"category\": \"mathematics\"},\n    {\"term\": \"projection\", \"category\": \"data_processing\"},\n    {\"term\": \"sinogram\", \"category\": \"data_processing\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"phantom\", \"category\": \"data_processing\"},\n    {\"term\": \"X-ray beams\", \"category\": \"physics\"},\n    {\"term\": \"detector\", \"category\": \"instrumentation\"},\n    {\"term\": \"backprojection\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"In MATLAB, the main tool for simulating this is the Radon transform function, simply called radon.\",\n    \"This function takes an image—our phantom—and generates its parallel-beam projections at different rotation angles.\",\n    \"In a parallel-beam setup, the X-ray beams are arranged so that they travel in perfectly parallel lines as they pass through the object and reach the detector.\",\n    \"Each projection corresponds to summing the values of the image pixels along those parallel paths.\",\n    \"So when you hear me",
+  "parsed": {
+    "term": "backprojection",
+    "category": "reconstruction"
+  }
+}

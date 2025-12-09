@@ -1,0 +1,17 @@
+Beam hardening artifacts occur when X-ray beams pass through an object, resulting in changes in beam energy distribution that affect image quality. Let me explain this in some detail.
+
+Imagine an X-ray beam going through the body in a certain direction, forming a parallel beam projection. This is a real and common setup.
+When using a medical X-ray tube and current detector technology, both measure the attenuated signals, resulting in what we call the line integral. However, if you reconstruct the image based on the uncorrected projection profile, the reconstruction may look distorted, often represented by a dotted projection line in diagrams.
+Why does this happen?
+
+It’s due to beam hardening. X-ray beams are polychromatic, meaning they contain photons of various energies, forming a spectrum. Initially, the beam may have many lower-energy photons that get attenuated more as the beam penetrates the object.
+Lower-energy photons have higher attenuation coefficients, so they are absorbed more readily in tissue.
+As the beam progresses into the body, the relative amount of higher-energy photons increases because they penetrate deeper. This process “hardens” the beam—increasing its average energy.
+
+Since higher-energy photons are less easily blocked, the beam becomes more penetrating along longer paths.
+Despite this, many reconstruction algorithms assume a monochromatic beam, leading to errors.
+This results in an underestimation of the linear attenuation coefficient mu because the beam appears to pass more easily than expected.
+Consequently, the computed line integrals and preprocessed data are based on a single energy assumption, but the reality is a changing, polychromatic beam.
+
+This discrepancy causes characteristic artifacts in images, such as streaks and cupping.
+Proper correction methods and models that account for beam hardening are necessary to reduce these artifacts and improve image quality.

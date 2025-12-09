@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide29",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen a magnetic moment is placed in an external magnetic field, it experiences a torque. This torque does not flip the magnetic moment directly into alignment with the field. Instead, it causes the moment to precess, meaning it rotates around the axis of the magnetic field, very much like a spinning top under the influence of gravity.\n\nThe rate of this precession is called the Larmor frequency. The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio, which is unique for each type of nucleus.\nMathematically, we write the Larmor frequency as omega zero equals gamma times B zero. Here, omega zero represents the precession frequency, gamma is the gyromagnetic ratio, and B zero is the strength of the magnetic field.\n\nThis relationship tells us that the stronger the field, the faster the precession. And this precession frequency is the key to MRI, because it sets the frequency at which protons respond to radiofrequency pulses and generate the measurable MRI signal.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"magnetic moment\", \"p\":\"depends_on\", \"o\":\"gamma\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio, which is unique for each type of nucleus.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "magnetic moment",
+        "p": "depends_on",
+        "o": "gamma",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio, which is unique for each type of nucleus."
+      }
+    ]
+  }
+}

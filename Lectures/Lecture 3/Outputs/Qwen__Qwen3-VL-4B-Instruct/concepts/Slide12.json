@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:11:49.405946+00:00",
+  "text_length": 544,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnother type of system is the control system. Unlike simple measurement systems, control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\nFor instance, think of a radar tracking an airplane. The radar detects the plane’s position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change. Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"control system\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"feedback\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"output\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"input\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"adjust the input or the system’s behavior\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"real time\",\n      \"category\": \"instrumentation\"\n    }\n  ],\n  \"evidence\": [\n    \"Another type of system is the control system.\",\n    \"Unlike simple measurement systems, control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\",\n    \"This feedback loop helps the system achieve its goal, even as conditions change.\",\n    \"Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "control system",
+        "category": "instrumentation"
+      },
+      {
+        "term": "feedback",
+        "category": "instrumentation"
+      },
+      {
+        "term": "output",
+        "category": "instrumentation"
+      },
+      {
+        "term": "input",
+        "category": "instrumentation"
+      },
+      {
+        "term": "real time",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "Another type of system is the control system.",
+      "Unlike simple measurement systems, control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+      "This feedback loop helps the system achieve its goal, even as conditions change.",
+      "Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time."
+    ]
+  }
+}

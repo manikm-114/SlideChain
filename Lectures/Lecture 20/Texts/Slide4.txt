@@ -1,0 +1,16 @@
+Now let’s take a closer look at the signal model for a ninety-degree pulse. When the magnetization vector — the M vector — is flipped by ninety degrees, it moves entirely into the X-Y plane. This gives us the maximum signal, because the transverse magnetization is now at its full strength.
+
+Once in the X-Y plane, the M vector begins to rotate, or process, around the main magnetic field. This motion induces an electric current in the nearby quadrature coils, and that’s the MRI signal we detect. Because the magnetization both rotates and decays, the signal has two parts — an amplitude and a phase — so we describe it as a phasor.
+
+Mathematically, we can write the two components like this:S-x of t equals M-naught times e to the power of negative t over T-two, times cosine of omega-naught times t.S-x of t equals M-naught times e to the power of negative t over T-two, times sine of omega-naught times t.
+
+If we combine these two into one complex expression, we get: S of t equals S-x of t plus i times S-y of t, which is equal to M-naught times e to the power of negative t over T-two times e to the power of negative i omega-naught t. This compact form represents both the magnitude and the phase of the signal together. If you prefer real numbers, you could keep the sine and cosine forms separately, but the complex expression makes the math much easier—especially once we introduce phase encoding and frequency encoding later.
+
+In the rotating reference frame, we remove the fast rotation caused by the main field B-zero, so the signal simplifies to: S of t equals M-naught times e to the power of negative t over T-two. This describes the exponential decay of the transverse magnetization—what we call T-two relaxation.
+When the sequence is repeated after a repetition time, or T-r, the magnetization recovers along the Z-axis following this relation: M-z of T-r equals M-naught times the quantity one minus e to the power of negative T-r over T-one.
+
+Now if we combine both effects—T-one recovery and T-two decay—the total signal becomes: S of t equals M-naught times the quantity one minus e to the power of negative T-r over T-one, all multiplied by e to the power of negative t over T-two. This signal depends on two groups of factors: biological parameters — proton density rho, T-one, and T-two — and technical parameters such as B-zero, T-r, T-e, and time t.
+
+What’s elegant here is how physics and mathematics come together. The sine and cosine functions we use are direct solutions of Maxwell’s equations, which describe electromagnetic fields. And when we add phase and frequency encoding, those same sinusoidal functions naturally form a Fourier representation—the mathematical tool we use to reconstruct MRI images.
+
+So, Maxwell’s equations describe the physical interaction, and Fourier analysis provides the mathematical framework. Together, they create what we call the K-space theorem—a beautiful harmony between physics and mathematics that makes MRI imaging possible.

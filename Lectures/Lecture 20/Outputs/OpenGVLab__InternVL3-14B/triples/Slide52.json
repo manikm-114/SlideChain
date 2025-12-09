@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide52",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"system design\", \"p\":\"uses\", \"o\":\"magnetic gradients and RF pulses\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In this setup, you can selectively activate or turn on any voxel or pixel by controlling the magnetic gradients and RF pulses we just discussed.\"},\n    {\"s\":\"polarized nucleus\", \"p\":\"measures\", \"o\":\"gamma photons\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The surrounding detectors collect the emitted gamma photons.\"},\n    {\"s\":\"system\", \"p\":\"reconstructs_with\", \"o\":\"image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So, depending on which gradient and RF pulse combination you apply, you can excite a specific spatial region, measure its response, and reconstruct the image point by point.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "system design",
+        "p": "uses",
+        "o": "magnetic gradients and RF pulses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In this setup, you can selectively activate or turn on any voxel or pixel by controlling the magnetic gradients and RF pulses we just discussed."
+      },
+      {
+        "s": "polarized nucleus",
+        "p": "measures",
+        "o": "gamma photons",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The surrounding detectors collect the emitted gamma photons."
+      },
+      {
+        "s": "system",
+        "p": "reconstructs_with",
+        "o": "image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So, depending on which gradient and RF pulse combination you apply, you can excite a specific spatial region, measure its response, and reconstruct the image point by point."
+      }
+    ]
+  }
+}

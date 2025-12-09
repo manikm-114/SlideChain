@@ -1,0 +1,9 @@
+So, the beam-forming idea is that you introduce time delays across the array. Imagine you have scatterers located at different positions, labeled E1, E2, and E3. These are the echoes or signals you receive from different points inside the tissue.
+
+On the receiver side, you receive all these signals and keep guiding or aligning them properly. If you add those signals together—but with individual delays as shown here—you can make them sum coherently. The tall bars in the diagram indicate a larger time delay. Different modulations of these delays determine which echo signal you want to detect.
+
+At this location, the phase difference between the central element and the peripheral elements will be large, so the relative delay will be large too. You take the signal from the central channel and keep it. Then, you take the signal from the outer element—it takes a longer time for the echo to reach that peripheral element. That longer time becomes the time delay.
+
+You add all the signals together, each with its own individualized time delay. When the time delays are properly distributed like this, and you add the five signals together, you form a strong echo—for example, for echo one. But if you use a uniform time delay for all, you are focusing to infinity—that’s a remote point. So, by changing the distribution of time delays, you can guide coherent echoes at different depths.
+
+This is the basic beam-forming idea. And of course, scanning and beam forming can be combined to achieve the best image quality and overall performance.

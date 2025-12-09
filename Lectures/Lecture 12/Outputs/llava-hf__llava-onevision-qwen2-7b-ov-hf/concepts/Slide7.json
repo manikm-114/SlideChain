@@ -1,0 +1,57 @@
+{
+  "slide_id": "Slide7",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\n\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\n\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\n\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"X-ray\", \"category\": \"physics\"},\n    {\"term\": \"wavelength\", \"category\": \"physics\"},\n    {\"term\": \"energy\", \"category\": \"physics\"},\n    {\"term\": \"hard X-rays\", \"category\": \"physics\"},\n    {\"term\": \"soft X-rays\", \"category\": \"physics\"},\n    {\"term\": \"mammography\", \"category\": \"modality\"},\n    {\"term\": \"airport security screening\", \"category\": \"modality\"},\n    {\"term\": \"energy above 100 kilo-electron-volts\", \"category\": \"physics\"},\n    {\"term\": \"relatively soft X-rays\", \"category\": \"physics\"},\n    {\"term\": \"dense objects\", \"category\": \"modality\"},\n    {\"term\": \"thicker parts of the body\", \"category\": \"modality\"},\n    {\"term\": \"useful for different applications\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"SLIDE_TEXT\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray",
+        "category": "physics"
+      },
+      {
+        "term": "wavelength",
+        "category": "physics"
+      },
+      {
+        "term": "energy",
+        "category": "physics"
+      },
+      {
+        "term": "hard X-rays",
+        "category": "physics"
+      },
+      {
+        "term": "soft X-rays",
+        "category": "physics"
+      },
+      {
+        "term": "mammography",
+        "category": "modality"
+      },
+      {
+        "term": "airport security screening",
+        "category": "modality"
+      },
+      {
+        "term": "relatively soft X-rays",
+        "category": "physics"
+      },
+      {
+        "term": "dense objects",
+        "category": "modality"
+      },
+      {
+        "term": "thicker parts of the body",
+        "category": "modality"
+      },
+      {
+        "term": "useful for different applications",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "SLIDE_TEXT"
+    ]
+  }
+}

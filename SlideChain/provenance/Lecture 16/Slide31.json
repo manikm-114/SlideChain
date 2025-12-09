@@ -1,0 +1,75 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "positron-emitting isotopes"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "When these high-energy particles strike a target material, nuclear reactions occur, and radionuclides are produced.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radionuclides",
+            "p": "produces",
+            "s": "cyclotron"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "fluorine-18"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "cyclotrons must be located relatively close to hospitals and imaging centers"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Because PET imaging requires very short-lived tracers like fluorine-18, cyclotrons must be located relatively close to hospitals and imaging centers."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "hospitals and imaging centers",
+        "p": "depends_on",
+        "s": "cyclotron"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "cyclotron facility"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "<One of the most well-known examples is the production of fluorodeoxyglucose, or FDG, which is widely used in PET imaging.>"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "PET imaging",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "cyclotron"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide31.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide31.txt"
+  },
+  "slide_id": "Slide31"
+}

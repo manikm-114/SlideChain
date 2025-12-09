@@ -1,0 +1,5 @@
+Alright, let’s shift gears and talk about solving systems of linear equations — something that comes up all the time in engineering, physics, and, yes, even in medical imaging.
+Suppose we’re working with a system like A times x equals b. Now, you might think — okay, just take the inverse of A and multiply it by b. So, x equals inv of A times b.
+And sure, that’s mathematically valid — but in practice, it’s a bad idea. It’s slow, it’s unstable, and it can lead to all kinds of numerical issues, especially with large or ill-conditioned matrices.
+Instead, MATLAB gives us a much better tool: the backslash operator. So we write x equals A backslash b. This tells MATLAB to choose the most efficient way to solve the system behind the scenes — no explicit inverse needed.
+Later on, we’ll learn how to implement our own solvers, but for now, this built-in method is what you should use. It’s clean, fast, and accurate — everything we want.

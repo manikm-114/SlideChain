@@ -1,0 +1,13 @@
+So far, we’ve seen how to use the forward Radon transform with MATLAB’s radon function. But to actually reconstruct an image, we need the inverse Radon transform, which in MATLAB is implemented as the function iradon.
+This function performs back-projection for parallel-beam sinograms, and it can also carry out filtered back-projection if we choose.
+
+Here’s the format of the function:I equals I radon R, theta, interp, filter;
+I is the reconstructed image, the output we want.
+R is the sinogram, the input data we’ve collected.
+theta is the set of rotation angles used.
+Interp is the interpolation method—this tells MATLAB how to fill in values between samples.
+The filter is the filter we want to apply for filtered back-projection.
+
+The last two arguments, interpolation and filter, are optional. That means you could just write I radon R, theta to perform simple, unfiltered back-projection. But if you include a filter, such as Ram-Lak or Shepp–Logan, MATLAB will automatically implement filtered back-projection, giving you a sharper and more accurate image.
+
+So, in short, radon simulates the projections, while iradon reconstructs the image from those projections. Together, they form the foundation of CT simulation in MATLAB.

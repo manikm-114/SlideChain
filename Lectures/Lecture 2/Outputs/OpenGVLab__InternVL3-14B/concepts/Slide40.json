@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"matrix size\", \"category\": \"mathematics\"},\n    {\"term\": \"random matrices\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix_multiply function\", \"category\": \"algorithm\"},\n    {\"term\": \"MATLAB’s built-in multiplication\", \"category\": \"software\"},\n    {\"term\": \"triple-loop method\", \"category\": \"algorithm\"},\n    {\"term\": \"vectorized operations\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.\",\n    \"You can also compare it to MATLAB’s built-in multiplication to check for accuracy.\",\n    \"this triple-loop method works, but it’s not fast.\",\n    \"Later on, we’ll talk about how to rewrite this using vectorized operations to make it much more efficient.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "matrix size",
+        "category": "mathematics"
+      },
+      {
+        "term": "matrix_multiply function",
+        "category": "algorithm"
+      },
+      {
+        "term": "MATLAB’s built-in multiplication",
+        "category": "software"
+      },
+      {
+        "term": "triple-loop method",
+        "category": "algorithm"
+      },
+      {
+        "term": "vectorized operations",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.",
+      "You can also compare it to MATLAB’s built-in multiplication to check for accuracy.",
+      "this triple-loop method works, but it’s not fast.",
+      "Later on, we’ll talk about how to rewrite this using vectorized operations to make it much more efficient."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:00:18.114229+00:00",
+  "text_length": 612,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let me address a common issue students often encounter early on — installation problems with MATLAB.\nHere’s a message I received from a student. He was unable to install MATLAB on his computer because of authentication issues with CAS — something that happens occasionally, especially at the beginning of the semester. The good news is that this is fixable, and you’re not alone.\nIf you experience something similar, please reach out early. Visit the RPI Help Center, and they’ll assist you with installing MATLAB. And of course, please feel free to contact me or the teaching assistant — we’re here to help.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"CAS\", \"category\": \"software\"},\n    {\"term\": \"authentication issues\", \"category\": \"software\"},\n    {\"term\": \"installation problems\", \"category\": \"software\"},\n    {\"term\": \"RPI Help Center\", \"category\": \"software\"},\n    {\"term\": \"teaching assistant\", \"category\": \"software\"},\n    {\"term\": \"contact\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"He was unable to install MATLAB on his computer because of authentication issues with CAS\", \"Please reach out early. Visit the RPI Help Center, and they’ll assist you with installing MATLAB\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "authentication issues",
+        "category": "software"
+      },
+      {
+        "term": "installation problems",
+        "category": "software"
+      },
+      {
+        "term": "RPI Help Center",
+        "category": "software"
+      },
+      {
+        "term": "teaching assistant",
+        "category": "software"
+      },
+      {
+        "term": "contact",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "He was unable to install MATLAB on his computer because of authentication issues with CAS",
+      "Please reach out early. Visit the RPI Help Center, and they'll assist you with installing MATLAB"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"prior knowledge\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"introducing prior knowledge allows exact reconstruction\"},\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"known sub-region\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"if you know a small sub-region of the ROI, such as air in the airway or blood in the aorta, you can use that known X-ray attenuation coefficient as a reference\"},\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"sparsity model\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Sparsity-based Interior Tomography\"},\n    {\"s\":\"interior tomography\", \"p\":\"reconstructs_with\", \"o\":\"landmark-based\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Landmark-based Interior Tomography\"},\n    {\"s\":\"Fourier slice theorem\", \"p\":\"no longer applies\", \"o\":\"transverse data truncation\", \"",
+  "parsed": {
+    "s": "interior tomography",
+    "p": "reconstructs_with",
+    "o": "landmark-based",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Landmark-based Interior Tomography"
+    ]
+  }
+}

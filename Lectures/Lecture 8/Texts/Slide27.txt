@@ -1,0 +1,12 @@
+Here we’re looking at a particular orthonormal basis used in Fourier analysis.
+
+Our basis functions have the form:
+e to the power of j, two pi, m times t divided by capital T
+where m is the frequency index.
+If we take two of these basis functions, one with index m and the other with index n, and compute their inner product — meaning we integrate the product of one and the complex conjugate of the other over the full interval from zero to capital T — two things can happen:
+
+If m and n are different, the integral is zero. That means the functions are orthogonal — they share no common component.
+If m and n are the same, the integral is one. That means each basis function has a unit norm, or length equal to one.
+This is exactly what “orthonormal” means: the functions are orthogonal to each other, and each one has length one.
+
+Because the Fourier basis has this orthonormal property, we can represent any signal as a sum of these basis functions without losing information. And we can go back and forth between the time-domain representation and the frequency-domain representation using the discrete Fourier transform and its inverse, knowing that the relationship is exact when the sampling theorem is satisfied.

@@ -1,0 +1,16 @@
+{
+  "slide_id": "Slide40",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:43:43.262190+00:00",
+  "text_length": 367,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIf a project doesn’t interest you, that’s perfectly fine—you can focus on the regular course structure of lectures, exams, and homework. Speaking of which, I’ll upload today’s homework assignment for you to download. Please submit your solutions by midnight next Tuesday. After the deadline, we’ll post the answers for your review.\nThank you for your attention today!\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"shift-invariant linear system\", \"category\": \"signal_processing\"},\n    {\"term\": \"additivity\", \"category\": \"signal_processing\"},\n    {\"term\": \"homogeneity\", \"category\": \"signal_processing\"},\n    {\"term\": \"nonlinear system\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Please give an example of a shift-invariant linear system and show that it satisfies the requirements.\",\n    \"Please give an example of a linear system and show that it satisfies additivity and homogeneity but it is not shift-invariant.\",\n    \"Please give an example of a nonlinear system that satisfies neither additivity and homogeneity.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Please give an example of a shift-invariant linear system and show that it satisfies the requirements.",
+      "Please give an example of a linear system and show that it satisfies additivity and homogeneity but it is not shift-invariant.",
+      "Please give an example of a nonlinear system that satisfies neither additivity and homogeneity."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide2",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"SPECT and PET\", \"p\":\"produces\", \"o\":\"MRI\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"we will proceed to MRI, ultrasound, and optical imaging\"},\n    {\"s\":\"SPECT and PET\", \"p\":\"produces\", \"o\":\"ultrasound\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"we will proceed to MRI, ultrasound, and optical imaging\"},\n    {\"s\":\"SPECT and PET\", \"p\":\"produces\", \"o\":\"optical imaging\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"we will proceed to MRI, ultrasound, and optical imaging\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "SPECT and PET",
+        "p": "produces",
+        "o": "MRI",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "we will proceed to MRI, ultrasound, and optical imaging"
+      },
+      {
+        "s": "SPECT and PET",
+        "p": "produces",
+        "o": "ultrasound",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "we will proceed to MRI, ultrasound, and optical imaging"
+      },
+      {
+        "s": "SPECT and PET",
+        "p": "produces",
+        "o": "optical imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "we will proceed to MRI, ultrasound, and optical imaging"
+      }
+    ]
+  }
+}

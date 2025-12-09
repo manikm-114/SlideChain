@@ -1,0 +1,85 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "three-dimensional reconstructions"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "It checks the energy of each detected photon and only accepts those within a narrow energy window around 511 keV."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "energy window",
+        "p": "depends_on",
+        "s": "coincidence detection"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "Three-dimensional reconstructions"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Pulse Height Analyzer checks the energy of each detected photon and only accepts those within a narrow energy window around 511 keV.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Pulse Height Analyzer",
+            "p": "uses",
+            "s": "Pulse Height Analyzer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "traveling in nearly opposite directions"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "the coincidence circuit recognizes them as a pair"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "them as a pair",
+        "p": "recognizes",
+        "s": "Coinc."
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "pulse height analyzer"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "giving us an electronic pulse"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "pulse height analyzer",
+        "p": "generated",
+        "s": "electronic pulse"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide52.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide52.txt"
+  },
+  "slide_id": "Slide52"
+}

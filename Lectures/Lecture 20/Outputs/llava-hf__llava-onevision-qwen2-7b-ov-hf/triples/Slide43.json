@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide43",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThis slide shows the next step — how we actually designed and integrated a CT–MRI scanner. The idea is to combine the strengths of both modalities within a single system.\n\nHere you can see the components that make this possible. On the left, we have the CT subsystem, including the X-ray source and detector arranged in a compact, quasi-stationary ring. On the right are the MRI components, with magnetic coils and gradient coils designed to fit around the same imaging volume. The two systems operate together — CT providing high-resolution structural information, while MRI provides soft-tissue contrast and functional details.\nAll these elements come together in the integrated setup shown at the bottom. This is a simultaneous CT–MRI scanner, designed so that both modalities can collect data at the same time without interference.\n\nFor those of you who are interested in learning more, you can look up our paper published in Medical Physics titled “Vision 20/20: Simultaneous CT–MRI — The Next Chapter of Multimodality Imaging.”\n\nIn addition to this high-end system, we are also exploring a low-cost version, aiming to make hybrid imaging more accessible for both research and educational purposes.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"CT subsystem\", \"p\":\"uses\", \"o\":\"X-ray source and detector\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"On the left, we have the CT subsystem, including the X-ray source and detector arranged in a compact, quasi-stationary ring.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT subsystem",
+        "p": "uses",
+        "o": "X-ray source and detector",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "On the left, we have the CT subsystem, including the X-ray source and detector arranged in a compact, quasi-stationary ring."
+      }
+    ]
+  }
+}

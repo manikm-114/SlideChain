@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"delta function\",\n      \"p\": \"represents\",\n      \"o\": \"comb\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In signal processing, the delta function plays a key role — especially when we have a series of delta functions lined up at regular intervals. We often call this a comb, because visually, it looks just like the teeth of a hair comb.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"comb in frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now, when you take the Fourier transform of this comb-shaped signal, something beautiful happens. You get another comb — but this time in the frequency domain.\"\n    },\n    {\n      \"s\": \"delta function\",\n      \"p\": \"simplifies via\",\n      \"o\": \"Fourier formula\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"And when you plug a delta function into the Fourier formula, it simpl",
+  "parsed": {
+    "s": "Fourier transform",
+    "p": "produces",
+    "o": "comb in frequency domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Now, when you take the Fourier transform of this comb-shaped signal, something beautiful happens. You get another comb - but this time in the frequency domain."
+    ]
+  }
+}

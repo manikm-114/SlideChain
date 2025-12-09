@@ -1,0 +1,28 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:00:56.145878+00:00",
+  "text_length": 472,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet me start by giving you both a preview and a review. The preview is like a big picture of what MRI physics is about. I will provide you with some basic knowledge and introductory ideas that will help you understand the more detailed content later. \n\nSo first, let’s take a look at this overall framework. We will begin with the physical foundation, then move on to signal generation, and finally discuss signal decay. This roadmap will guide us through today’s lecture.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"preview & review\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"physical foundation\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"signal generation\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"signal decay\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"Let me start by giving you both a preview and a review.\",\n    \"We will begin with the physical foundation, then move on to signal generation, and finally discuss signal decay.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "physical foundation",
+        "category": "physics"
+      },
+      {
+        "term": "signal generation",
+        "category": "signal_processing"
+      },
+      {
+        "term": "signal decay",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Let me start by giving you both a preview and a review.",
+      "We will begin with the physical foundation, then move on to signal generation, and finally discuss signal decay."
+    ]
+  }
+}

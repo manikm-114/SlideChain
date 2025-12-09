@@ -1,0 +1,129 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "open a file"
+          },
+          {
+            "category": "software",
+            "term": "write mode"
+          },
+          {
+            "category": "software",
+            "term": "fopen"
+          },
+          {
+            "category": "software",
+            "term": "fprintf"
+          },
+          {
+            "category": "software",
+            "term": "format the output line"
+          },
+          {
+            "category": "software",
+            "term": "fclose"
+          }
+        ],
+        "evidence": [
+          "open a file in write mode using fopen",
+          "use fprintf to format the output line",
+          "close the file with fclose"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "To write data out, open a file in write mode using fopen.",
+            "modalities": [
+              "text"
+            ],
+            "o": "fopen",
+            "p": "uses",
+            "s": "write data"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Then use fprintf to format the output line",
+            "modalities": [
+              "text"
+            ],
+            "o": "fprintf",
+            "p": "uses",
+            "s": "write data"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "once writing is done, make sure to close the file with fclose.",
+            "modalities": [
+              "text"
+            ],
+            "o": "fclose",
+            "p": "uses",
+            "s": "write data"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "software"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "very useful when preparing results for review, or generating output for other software to read"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "To write data out, open a file in write mode using fopen.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "write mode",
+            "p": "uses",
+            "s": "fopen"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "communication",
+        "term": "other software"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "To write data out, open a file in write mode using fopen.",
+            "modalities": [
+              "text"
+            ],
+            "o": "file",
+            "p": "uses",
+            "s": "fopen"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

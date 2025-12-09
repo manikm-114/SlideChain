@@ -1,0 +1,55 @@
+{
+  "slide_id": "Slide21",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:49:20.111678+00:00",
+  "text_length": 699,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s turn to the second type of CT geometry that MATLAB can simulate, which is fan-beam CT.\n\nUnlike parallel-beam CT, where all the X-ray beams are perfectly parallel, in fan-beam CT, the rays spread out from a single source point, forming a fan shape as they pass through the object. This setup is much closer to how real CT scanners work today, because the source rotates around the patient while the rays diverge outward.\n\nAs I mentioned in class, fan-beam geometry introduces some additional considerations compared to the parallel-beam case, but it also gives us more realistic simulations. MATLAB provides dedicated functions to handle fan-beam CT, which we’ll look at in the next slides.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fan-Beam CT\", \"category\": \"modality\"},\n    {\"term\": \"parallel-beam CT\", \"category\": \"modality\"},\n    {\"term\": \"X-ray beams\", \"category\": \"physics\"},\n    {\"term\": \"fan shape\", \"category\": \"geometry\"},\n    {\"term\": \"real CT scanners\", \"category\": \"modality\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"fan-beam geometry\", \"category\": \"modality\"},\n    {\"term\": \"additional considerations\", \"category\": \"mathematics\"},\n    {\"term\": \"realistic simulations\", \"category\": \"modality\"},\n    {\"term\": \"dedicated functions\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"MATLAB can simulate fan-beam CT\",\n    \"fan-beam CT is closer to real CT scanners\",\n    \"MATLAB provides dedicated functions for fan-beam CT\",\n    \"fan-beam geometry introduces additional considerations\",\n    \"MATLAB simulations are more realistic\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fan-Beam CT",
+        "category": "modality"
+      },
+      {
+        "term": "parallel-beam CT",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray beams",
+        "category": "physics"
+      },
+      {
+        "term": "real CT scanners",
+        "category": "modality"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "fan-beam geometry",
+        "category": "modality"
+      },
+      {
+        "term": "additional considerations",
+        "category": "mathematics"
+      },
+      {
+        "term": "realistic simulations",
+        "category": "modality"
+      },
+      {
+        "term": "dedicated functions",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "MATLAB can simulate fan-beam CT",
+      "fan-beam CT is closer to real CT scanners",
+      "MATLAB provides dedicated functions for fan-beam CT",
+      "fan-beam geometry introduces additional considerations",
+      "MATLAB simulations are more realistic"
+    ]
+  }
+}

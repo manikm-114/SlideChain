@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Color Doppler\", \"p\":\"uses\", \"o\":\"RGB scheme\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In color Doppler imaging, the motion is encoded using colors, typically the RGB scheme.\"},\n    {\"s\":\"Color Doppler\", \"p\":\"represents\", \"o\":\"velocity field\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"you can add the velocity field on top of it using color coding.\"},\n    {\"s\":\"Red\", \"p\":\"represents\", \"o\":\"towards transducer\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Motion toward the transducer is displayed in red\"},\n    {\"s\":\"Blue\", \"p\":\"represents\", \"o\":\"away from transducer\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Motion away from the transducer is shown in blue\"},\n    {\"s\":\"Green\", \"p\":\"represents\", \"o\":\"variance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Sometimes a green component is used to indicate the variance of the signal\"}",
+  "parsed": {
+    "s": "Green",
+    "p": "represents",
+    "o": "variance",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Sometimes a green component is used to indicate the variance of the signal"
+    ]
+  }
+}

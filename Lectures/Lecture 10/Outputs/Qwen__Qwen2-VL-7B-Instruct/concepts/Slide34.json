@@ -1,0 +1,52 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T04:00:36.846179+00:00",
+  "text_length": 953,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe day after our own symposium, I found myself free for the afternoon, so I decided to attend another session titled The Technology of Artificial Intelligence. It was led by Demis Hassabis, the co-founder and CEO of DeepMind — one of the world’s leading AI companies, later acquired by Google.\n\nI listened to several fascinating presentations. The speakers shared breakthroughs in AI research, from neuroscience-inspired architectures to game-playing systems that were pushing the limits of machine learning. The atmosphere was electric — you could feel that this was more than just incremental progress.\n\nThat afternoon convinced me of something important: AI had truly entered a revolutionary stage. The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind. It was clear that an exciting new era was unfolding.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Artificial Intelligence\", \"category\": \"ai_ml\"},\n    {\"term\": \"DeepMind\", \"category\": \"ai_ml\"},\n    {\"term\": \"Machine Learning\", \"category\": \"ai_ml\"},\n    {\"term\": \"Neuroscience\", \"category\": \"ai_ml\"},\n    {\"term\": \"Game-playing systems\", \"category\": \"ai_ml\"},\n    {\"term\": \"Machine learning\", \"category\": \"ai_ml\"},\n    {\"term\": \"Transformative potential\", \"category\": \"ai_ml\"},\n    {\"term\": \"Science\", \"category\": \"ai_ml\"},\n    {\"term\": \"Healthcare\", \"category\": \"ai_ml\"},\n    {\"term\": \"Human mind\", \"category\": \"ai_ml\"}\n  ],\n  \"evidence\": [\n    \"AI had truly entered a revolutionary stage.\",\n    \"The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Artificial Intelligence",
+        "category": "ai_ml"
+      },
+      {
+        "term": "DeepMind",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Machine Learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Neuroscience",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Game-playing systems",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Machine learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Transformative potential",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Healthcare",
+        "category": "ai_ml"
+      },
+      {
+        "term": "Human mind",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "AI had truly entered a revolutionary stage.",
+      "The technology was no longer just an academic curiosity; it was becoming a powerful tool with transformative potential, ready to impact science, healthcare, and our understanding of the human mind."
+    ]
+  }
+}

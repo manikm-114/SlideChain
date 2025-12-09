@@ -1,0 +1,146 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "SPECT-CT"
+          },
+          {
+            "category": "instrumentation",
+            "term": "SPECT cameras"
+          },
+          {
+            "category": "instrumentation",
+            "term": "planar gamma detector"
+          },
+          {
+            "category": "physics",
+            "term": "gamma photons"
+          },
+          {
+            "category": "modality",
+            "term": "CT part"
+          },
+          {
+            "category": "data_processing",
+            "term": "attenuation correction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "quantification"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "quality_metric",
+            "term": "diagnostic capability"
+          }
+        ],
+        "evidence": [
+          "SPECT-CT systems",
+          "two or even three SPECT cameras",
+          "one planar gamma detector",
+          "gamma photons",
+          "CT part of the system",
+          "attenuation correction",
+          "better quantification",
+          "improved image quality",
+          "superior diagnostic capability"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this setup, there can be two or even three SPECT cameras working at the same time to gather more data.",
+            "modalities": [
+              "text"
+            ],
+            "o": "two or even three SPECT cameras",
+            "p": "uses",
+            "s": "SPECT-CT systems"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The CT part of the system gives you precise anatomical information and helps provide accurate attenuation correction for the SPECT data.",
+            "modalities": [
+              "text"
+            ],
+            "o": "CT part",
+            "p": "uses",
+            "s": "SPECT-CT systems"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This means better quantification, improved image quality, and superior diagnostic capability through combined anatomical and functional information.",
+            "modalities": [
+              "text"
+            ],
+            "o": "better quantification, improved image quality, and superior diagnostic capability",
+            "p": "produces",
+            "s": "SPECT-CT systems"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "diagnostic capability"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "In this setup, there can be two or even three SPECT cameras working at the same time to gather more data.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "gamma photons",
+            "p": "uses",
+            "s": "SPECT-CT system"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "combined anatomical and functional information"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "This means better quantification, improved image quality, and superior diagnostic capability through combined anatomical and functional information."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "improved image quality",
+        "p": "produces",
+        "s": "SPECT-CT"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "combined anatomical and functional information"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

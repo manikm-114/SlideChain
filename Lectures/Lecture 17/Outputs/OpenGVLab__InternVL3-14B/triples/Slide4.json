@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"dead time\",\n      \"p\": \"represents\",\n      \"o\": \"tau\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The total dead time, which we call 'tau,' is given by this equation\"\n    },\n    {\n      \"s\": \"tau\",\n      \"p\": \"measures\",\n      \"o\": \"N - n / nN\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"tau equals capital N minus small n, divided by small n times capital N\"\n    },\n    {\n      \"s\": \"N\",\n      \"p\": \"represents\",\n      \"o\": \"true count rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"capital N is the true count rate, which means how many scintillations actually happen every second\"\n    },\n    {\n      \"s\": \"n\",\n      \"p\": \"represents\",\n      \"o\": \"observed count rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\":",
+  "parsed": {
+    "s": "N",
+    "p": "represents",
+    "o": "true count rate",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "capital N is the true count rate, which means how many scintillations actually happen every second"
+    ]
+  }
+}

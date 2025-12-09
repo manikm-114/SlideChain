@@ -1,0 +1,13 @@
+Let’s start our spectral analysis with a simple but quite subtle example.
+
+We’ll create a signal that contains two different pure tones — one at one hundred hertz and the other at two hundred two point five hertz.
+In MATLAB, we first set the sampling frequency, F s, to one thousand hertz. That means we take one thousand samples every second.
+Next, we create the time vector, t. It starts at zero seconds and increases in steps of zero, zero point zero zero one seconds — that’s one millisecond — until just before one second.
+
+Now, our signal x is built by adding two parts:
+First, a cosine wave with frequency one hundred hertz. In MATLAB, that’s written as: cosine of open parenthesis two times pi times one hundred times t close parenthesis.
+Second, a sine wave with frequency two hundred two point five hertz. In MATLAB, that’s: sine of open parenthesis two times pi times two hundred two point five times t close parenthesis.
+When we add these two waveforms together, we get x, which contains both frequencies.
+
+If we plot only the first one hundred samples, we can see the combined oscillations. Sometimes the waves reinforce each other, producing larger peaks; other times they partially cancel out, making smaller peaks.
+This is the time-domain view. Next, we’ll use the Fourier transform to find these frequencies in the frequency domain — and then we’ll explore how zero-padding can help us make those frequencies stand out more clearly.  It takes some effort to appreciate the benefit of zero-padding!

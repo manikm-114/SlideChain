@@ -1,0 +1,10 @@
+Now let’s test what happens when we change the parameter D in our fan-beam simulation.
+Remember, D is the distance from the fan-beam source vertex to the center of the object. In our code, this is set in line 28. The default value is 191, which is roughly half the diagonal length of the image.
+
+Here’s what happens:
+On the left, with D equals 191 (default), the reconstruction looks good. The square phantom is sharp, and the resolution is reasonable.
+In the middle, when we increase D to 300, the resolution decreases. The edges become less clear, and faint artifacts start to appear in the background.
+On the right, with D equals 500, the resolution drops significantly. The square no longer looks crisp—it appears distorted, and the background shows strong artifacts.
+So the rule here is: the farther away the source is from the object, the lower the reconstruction resolution.
+
+This simulation is useful not only for learning but also for system design. It shows that if we set the source too far from the patient, image resolution suffers. By keeping the source-object distance within a good range, we can achieve sharper reconstructions.

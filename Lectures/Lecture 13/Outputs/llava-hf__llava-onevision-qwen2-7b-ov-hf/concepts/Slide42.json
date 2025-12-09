@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide42",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nMATLAB has toolbox commands that implement projection, filtering, and filtered backprojection. \n\nThe keyword is radon. You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"radon\", \"category\": \"reconstruction\"},\n    {\"term\": \"image\", \"category\": \"modality\"},\n    {\"term\": \"theta\", \"category\": \"signal_processing\"},\n    {\"term\": \"projection\", \"category\": \"signal_processing\"},\n    {\"term\": \"filtering\", \"category\": \"signal_processing\"},\n    {\"term\": \"filtered backprojection\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection.\", \"The keyword is radon. You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radon",
+        "category": "reconstruction"
+      },
+      {
+        "term": "image",
+        "category": "modality"
+      },
+      {
+        "term": "theta",
+        "category": "signal_processing"
+      },
+      {
+        "term": "projection",
+        "category": "signal_processing"
+      },
+      {
+        "term": "filtering",
+        "category": "signal_processing"
+      },
+      {
+        "term": "filtered backprojection",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection.",
+      "The keyword is radon. You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections."
+    ]
+  }
+}

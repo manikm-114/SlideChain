@@ -1,0 +1,8 @@
+Let’s imagine the ideal case of diagnosis.
+
+Here we have two groups: on the left, the non-diseased population, shown in red; on the right, the diseased population, shown in green.
+Suppose we measure a certain feature — for example, the diameter of a vessel or the size of a tumor. In an ideal world, the distributions of healthy and diseased cases do not overlap at all. Healthy cases always fall into the red range, and diseased cases always fall into the green range.
+With this perfect separation, we can place a threshold right between the two distributions. Anything to the right is declared diseased, and anything to the left is declared healthy.
+
+In this situation, the diagnostic test is flawless. There are no false positives and no false negatives. Sensitivity and specificity are both 100%. The ROC curve would go straight up to the top-left corner and across the top — a perfect AUC of 1.0.
+Of course, this is rarely the case in real clinical imaging. Features usually overlap between healthy and diseased groups, which makes things more complicated. But this ideal case provides a useful reference point for understanding what we’re aiming for.

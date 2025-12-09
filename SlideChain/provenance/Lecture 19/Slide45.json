@@ -1,0 +1,127 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "signal_processing",
+            "term": "inverse Fourier transform"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray CT"
+          }
+        ],
+        "evidence": [
+          "under the three approximations we just discussed, we can measure the Fourier space information",
+          "the figure on the left shows what is recorded in k-space",
+          "the Fourier transform is a complex function. It has both amplitude and phase",
+          "the inverse Fourier transformation",
+          "we can reconstruct detailed cross-sectional anatomy",
+          "especially when you compare it with X-ray CT",
+          "MRI provides a completely different way of obtaining cross-sectional images, not from attenuation, but directly from signals in Fourier space"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "modulus of F(k_x, k_y)"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Then, if you apply an inverse Fourier transformation, you obtain the image on the right, which is a cross-sectional image of the brain."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "cross-sectional image of the brain",
+        "p": "produces",
+        "s": "Inverse FT of F(k_x, k_y)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "signal_processing",
+            "term": "inverse Fourier transform"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray CT"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier space"
+          }
+        ],
+        "evidence": [
+          "The Fourier transform is a complex function. It has both amplitude and phase.",
+          "It looks something like this, a distribution of intensities in k-space.",
+          "Then, if you apply an inverse Fourier transformation, you obtain the image on the right, which is a cross-sectional image of the brain.",
+          "So with MRI, by collecting data in k-space and applying an inverse Fourier transform, we can reconstruct detailed cross-sectional anatomy.",
+          "I think this is really an amazing achievement - especially when you compare it with X-ray CT."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The figure on the left shows what is recorded in k-space. Remember, the Fourier transform is a complex function. It has both amplitude and phase. But what we display here is only the amplitude. It looks something like this, a distribution of intensities in k-space.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "intensities in k-space",
+            "p": "measures",
+            "s": "Fourier space information"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide45.txt"
+  },
+  "slide_id": "Slide45"
+}

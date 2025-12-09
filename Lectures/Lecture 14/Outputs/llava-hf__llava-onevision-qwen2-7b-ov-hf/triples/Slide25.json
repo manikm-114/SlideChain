@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide25",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet me add some comparison between classic CT and interior tomography.\n\nAccording to classical theory, which we learned and which I explained in textbooks, you need to collect all data to satisfy the data sufficiency condition—usually a fan beam or cone beam that covers the entire cross-section or object.\nThe data must comprehensively cover the object for accurate reconstruction.\nInterior tomography, however, only requires partial data limited to the region of interest.\n\nThus, with filtered backprojection, classic CT reconstructs a global image, like a wholesale business covering the entire area.\nInterior tomography reconstructs a smaller, targeted area—like retail shopping.\nThis opens up new opportunities, providing flexibility and precision.\nYou only need to shoot X-rays through the important region, reducing dose and focusing on clinical needs.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"classical CT\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"global image\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"According to classical theory, which we learned and which I explained in textbooks, you need to collect all data to satisfy the data sufficiency condition—usually a fan beam or cone beam that covers the entire cross-section or object. The data must comprehensively cover the object for accurate reconstruction.\"}\n  ],\n    {\"s\":\"interior tomography\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"targeted area\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"Interior tomography, however, only requires partial data limited to the region of interest. Thus, with filtered backprojection, classic CT reconstructs a global image, like a wholesale business covering the entire area. Interior tomography reconstructs a smaller, targeted area—like retail shopping. This opens up new opportunities, providing flexibility and precision. You only need to",
+  "parsed": {
+    "s": "classical CT",
+    "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+    "o": "global image",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "According to classical theory, which we learned and which I explained in textbooks, you need to collect all data to satisfy the data sufficiency condition-usually a fan beam or cone beam that covers the entire cross-section or object. The data must comprehensively cover the object for accurate reconstruction."
+    ]
+  }
+}

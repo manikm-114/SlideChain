@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide48",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"diagnostic performance\", \"p\":\"depends_on\", \"o\":\"reader's skill\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"diagnostic performance is shaped by two things: the reader’s skill and the technology’s power.\"},\n    {\"s\":\"diagnostic performance\", \"p\":\"depends_on\", \"o\":\"technology’s power\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"diagnostic performance is shaped by two things: the reader’s skill and the technology’s power.\"},\n    {\"s\":\"ROC curve\", \"p\":\"represents\", \"o\":\"combined effect of technology and human expertise\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This is exactly what the ROC curve captures — the combined effect of technology and human expertise.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "diagnostic performance",
+        "p": "depends_on",
+        "o": "technology’s power",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "diagnostic performance is shaped by two things: the reader’s skill and the technology’s power."
+      },
+      {
+        "s": "ROC curve",
+        "p": "represents",
+        "o": "combined effect of technology and human expertise",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This is exactly what the ROC curve captures - the combined effect of technology and human expertise."
+      }
+    ]
+  }
+}

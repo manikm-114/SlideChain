@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"plot\",\n      \"p\": \"represents\",\n      \"o\": \"diagnostic performance of 108 radiologists\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This plot shows the diagnostic performance of 108 radiologists in the United States, taken from a study by Beam and colleagues.\"\n    },\n    {\n      \"s\": \"vertical axis\",\n      \"p\": \"measures\",\n      \"o\": \"true positive fraction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the vertical axis, you see the true positive fraction — in other words, sensitivity.\"\n    },\n    {\n      \"s\": \"horizontal axis\",\n      \"p\": \"measures\",\n      \"o\": \"false positive fraction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the horizontal axis, you see the false positive fraction — that is, one minus specificity.\"\n    },\n    {\n      \"s\": \"each point\",\n      \"p\": \"represents\",\n      \"",
+  "parsed": {
+    "s": "horizontal axis",
+    "p": "measures",
+    "o": "false positive fraction",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "On the horizontal axis, you see the false positive fraction - that is, one minus specificity."
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "imaging chain"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The most common type of RF coil used for transmitting the B-one field is called a birdcage coil.",
+            "modalities": [
+              "text"
+            ],
+            "o": "transmitting the B-one field",
+            "p": "uses",
+            "s": "birdcage coil"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The surface coil, shown in the middle, is used for imaging regions close to the surface of the body",
+            "modalities": [
+              "text"
+            ],
+            "o": "imaging regions close to the surface of the body",
+            "p": "uses",
+            "s": "surface coil"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "brain imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The most common type of RF coil used for transmitting the B-one field is called a birdcage coil, shown on the left. You can understand this coil design quite intuitively. It looks like the frame of a cylindrical cage - a circular structure with evenly spaced conducting bars connected at both ends by rings. When an alternating current flows through these bars, it creates a rotating magnetic field inside the bore. This rotating field is the B-one field, which is applied perpendicular to the main magnetic field B-zero. The B-one field is responsible for exciting the protons and flipping the magnetization vector, M, away from its alignment with B-zero.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "B-one field",
+            "p": "uses",
+            "s": "birdcage coil"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "transmitting the B-one field"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The surface coil, shown in the middle, is used for imaging regions close to the surface of the body..."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "imaging regions close to the surface of the body",
+        "p": "uses",
+        "s": "surface coil"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "image quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

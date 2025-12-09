@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T12:13:24.481405+00:00",
+  "text_length": 1780,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s see how the Bloch equation works in practice.\nFirst, consider precession. If the magnetization vector, capital M, is not parallel to the magnetic field B, then M will precess around B. On the other hand, if M is perfectly parallel to B, then the precession radius is zero. In that case, you do not see any visible precession, even though the vector is still technically circling like a single dot.\n\nNext, think about what happens when we flip M. Suppose M is rotated away from the z-axis into the transverse plane. Now the magnetization has a horizontal component, which we call M x y. This component will oscillate and produce an alternating magnetic field. That is the field that induces a measurable signal in the nearby coil.\nPhysically, you can imagine the magnetization vector as a magnetic bar. If you keep flipping or rotating this bar, the field it produces also keeps changing. That changing field drives current in the coil, which is exactly what we detect as the MR signal. The amplitude of this signal depends on proton density: the more protons available, the stronger the signal.\n\nNow, after the excitation pulse ends, the system will gradually return to equilibrium. The z-component of magnetization, M z, will recover to its steady-state value M zero. This recovery is governed by the T1 relaxation process, sometimes called spin-lattice relaxation. At the same time, the transverse component M x y will decay toward zero. This loss of coherence is governed by T2 relaxation, also called spin-spin relaxation.\nSo, to summarize:\nT1 describes how the longitudinal magnetization M z returns to equilibrium.\nT2 describes how the transverse magnetization M x y decays to zero.\n\nBoth of these effects are essential in shaping the MR signal we actually record.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"M not parallel to B\",\n      \"p\": \"uses\",\n      \"o\": \"precession\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"If M Not Parallel to B, Then M in Precession\"\n    },\n    {\n      \"s\": \"M parallel to B\",\n      \"p\": \"uses\",\n      \"o\": \"no (zero) precession\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"If M Parallel to B, Then No (Zero) Precession\"\n    },\n    {\n      \"s\": \"M not parallel to B\",\n      \"p\": \"uses\",\n      \"o\": \"oscillation of M_xy\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"If M Not Parallel to Be, Then M_xy in Oscillation\"\n    },\n    {\n      \"s\": \"M_z -> M_0\",\n      \"p\": \"depends_on\",\n      \"o\": \"T",
+  "parsed": {
+    "s": "M not parallel to B",
+    "p": "uses",
+    "o": "oscillation of M_xy",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "If M Not Parallel to Be, Then M_xy in Oscillation"
+    ]
+  }
+}

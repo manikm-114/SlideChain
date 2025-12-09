@@ -1,0 +1,5 @@
+Deep radiomics takes things one step further. Instead of manually extracting features, we use convolutional neural networks (CNNs) to learn them directly from the image data.
+
+In this workflow, random patches from images are used to train a CNN to recognize tumor regions. Multiple layers of convolution and pooling extract increasingly abstract features, from simple edges to complex patterns. The responses from the deep layers can then be aggregated across the whole image, forming high-dimensional feature maps.
+
+These learned features are then encoded and passed to classifiers for prediction tasks, such as distinguishing between tumor subtypes or predicting patient outcomes. Deep radiomics represents the cutting edge—combining the statistical rigor of radiomics with the power of deep learning to capture complex image biomarkers.

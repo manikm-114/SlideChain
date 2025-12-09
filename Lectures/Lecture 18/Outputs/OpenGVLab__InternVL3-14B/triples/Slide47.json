@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide47",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"T1\",\n      \"p\": \"measures\",\n      \"o\": \"how quickly a tissue’s magnetization realigns with the main magnetic field, B zero\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"T1 tells us how quickly a tissue’s magnetization realigns with the main magnetic field, B zero.\"\n    },\n    {\n      \"s\": \"T1 relaxation\",\n      \"p\": \"represents\",\n      \"o\": \"exponential recovery\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This exponential recovery is the hallmark of T1 relaxation.\"\n    },\n    {\n      \"s\": \"T1 times\",\n      \"p\": \"depends_on\",\n      \"o\": \"tissue type\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The recovery speed depends on the tissue type, because different tissues exchange energy with their environment—the so-called spin-lattice interaction—at different rates.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "T1",
+        "p": "measures",
+        "o": "how quickly a tissue’s magnetization realigns with the main magnetic field, B zero",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "T1 tells us how quickly a tissue’s magnetization realigns with the main magnetic field, B zero."
+      },
+      {
+        "s": "T1 relaxation",
+        "p": "represents",
+        "o": "exponential recovery",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This exponential recovery is the hallmark of T1 relaxation."
+      },
+      {
+        "s": "T1 times",
+        "p": "depends_on",
+        "o": "tissue type",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The recovery speed depends on the tissue type, because different tissues exchange energy with their environment-the so-called spin-lattice interaction-at different rates."
+      }
+    ]
+  }
+}

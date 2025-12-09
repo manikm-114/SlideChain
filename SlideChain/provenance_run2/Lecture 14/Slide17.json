@@ -1,0 +1,189 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "helical CT"
+          },
+          {
+            "category": "quality_metric",
+            "term": "longitudinal resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "retrospective reconstruction"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray dose"
+          },
+          {
+            "category": "modality",
+            "term": "step-and-shoot mode"
+          },
+          {
+            "category": "quality_metric",
+            "term": "temporal resolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal response"
+          }
+        ],
+        "evidence": [
+          "helical CT offers substantially better longitudinal resolution",
+          "retrospective reconstruction capability",
+          "for a given X-ray dose",
+          "conventional step-and-shoot mode",
+          "improves temporal resolution",
+          "modeling the signal response",
+          "reconstructed overlapping slices along the longitudinal axis"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "For a given X-ray dose, helical CT allows substantially better longitudinal resolution than conventional CT due to its inherent retrospective reconstruction capability.",
+            "modalities": [
+              "text"
+            ],
+            "o": "substantially better longitudinal resolution",
+            "p": "produces",
+            "s": "helical CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction-that is, reconstructed overlapping slices along the longitudinal axis.",
+            "modalities": [
+              "text"
+            ],
+            "o": "retrospective reconstruction",
+            "p": "reconstructs_with",
+            "s": "helical CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "helical CT"
+          },
+          {
+            "category": "modality",
+            "term": "conventional step-and-shoot mode"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray dose"
+          },
+          {
+            "category": "signal_processing",
+            "term": "longitudinal resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "retrospective reconstruction"
+          },
+          {
+            "category": "modality",
+            "term": "helical turn"
+          },
+          {
+            "category": "signal_processing",
+            "term": "temporal resolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "longitudinal resolution"
+          },
+          {
+            "category": "modality",
+            "term": "helical scanning"
+          },
+          {
+            "category": "communication",
+            "term": "clinical practice"
+          },
+          {
+            "category": "communication",
+            "term": "free-lunch"
+          }
+        ],
+        "evidence": [
+          "helical CT offers substantially better longitudinal resolution than conventional step-and-shoot.",
+          "helical CT not only improves temporal resolution but also enhances longitudinal resolution, so there's no loss in image quality.",
+          "With proper overlapping reconstruction, both temporal and longitudinal resolution can be improved."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "no loss in image quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "helical CT"
+          },
+          {
+            "category": "quality_metric",
+            "term": "longitudinal resolution"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray dose"
+          },
+          {
+            "category": "modality",
+            "term": "step-and-shoot mode"
+          },
+          {
+            "category": "modality",
+            "term": "helical scanning"
+          },
+          {
+            "category": "reconstruction",
+            "term": "retrospective reconstruction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "temporal resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          }
+        ],
+        "evidence": [
+          "This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction-that is, reconstructed overlapping slices along the longitudinal axis.",
+          "Thus, helical CT not only improves temporal resolution but also enhances longitudinal resolution, so there\u2019s no loss in image quality."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

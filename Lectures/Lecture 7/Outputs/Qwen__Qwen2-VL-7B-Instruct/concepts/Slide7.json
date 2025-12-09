@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T23:54:07.448068+00:00",
+  "text_length": 2639,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s now walk through an example to help us better understand why the convolution theorem works — especially when sinusoids are involved.\n\nWe’ll use a one-dimensional, shift-invariant linear system.\u000bIn such a system, the output — which we’ll call o of t — is the convolution of the system’s impulse response h of t with the input signal, i of t.\nSo we write:\no of t equals h of t convolved with i of t.\nAccording to the convolution theorem, when we take the Fourier transform of both sides, this convolution becomes multiplication.\nSo we have:\ncapital O of u equals capital H of u times capital I of u,\u000bwhere capital O, H, and I are the Fourier transforms of the output, impulse response, and input, respectively, and u is the frequency variable.\n\nNow, let’s suppose we feed the system a complex sinusoidal input.\u000bThat is:\u000bi of t equals e to the power i 2 pi u naught t,\u000bwhere u naught is the frequency of the sinusoid.\nAs we learned earlier, the Fourier transform of a pure sinusoidal signal is a delta function.\u000bSo, in the frequency domain:\ncapital I of u equals delta of u minus u naught.\nThis delta function tells us the signal contains only one frequency — u naught — and no others.\n\nNow, using the convolution theorem:\ncapital O of u equals capital H of u times delta of u minus u naught.\nMultiplying anything by a delta function simply picks out the value at that point.\u000bSo this simplifies to:\ncapital O of u equals H of u naught times delta of u minus u naught.\nThis tells us that the output, in the frequency domain, also consists of a single frequency — the same one as the input — and it’s just scaled by the system’s transfer function at that frequency, which is H of u naught.\nNow we go back to the time domain.\n\nIf the Fourier transform of the output is a scaled delta function in frequency, then the time-domain output must also be a sinusoid — at the same frequency.\nSo, we have:\no of t equals H of u naught times e to the power i 2 pi u naught t.\nThis shows that the output is still a complex sinusoid — same frequency as the input — but scaled by a factor, H of u naught, which may include amplitude and phase changes.\nThe key idea here is:\nThe frequency doesn't change.\nNo new frequencies are generated.\nThe output stays sinusoidal if the input was sinusoidal.\n\nThis confirms that a shift-invariant linear system preserves frequency when the input is a pure sinusoid.\nAnd we were able to demonstrate this clearly and quickly — thanks to the convolution theorem and the properties of the Fourier transform.\nIt’s a great example of how math gives us not just a result, but deep insight into how signals behave in systems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"shift-invariant linear system\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"sinusoidal input\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency domain\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse response\", \"category\": \"signal_processing\"},\n    {\"term\": \"transfer function\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency preservation\", \"category\": \"signal_processing\"},\n    {\"term\": \"mathematical insight\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"The convolution theorem works — especially when sinusoids are involved.\",\n    \"The frequency doesn't change.\",\n    \"No new frequencies are generated.\",\n    \"The output stays sinusoidal if the input was sinusoidal.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "shift-invariant linear system",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sinusoidal input",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency domain",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "transfer function",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The convolution theorem works - especially when sinusoids are involved.",
+      "The frequency doesn't change.",
+      "No new frequencies are generated.",
+      "The output stays sinusoidal if the input was sinusoidal."
+    ]
+  }
+}

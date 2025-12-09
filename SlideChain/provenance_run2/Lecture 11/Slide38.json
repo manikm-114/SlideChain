@@ -1,0 +1,171 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "positive predictive value (PPV)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "negative predictive value (NPV)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "True Positives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "False Positives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "True Negatives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "False Negatives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "specificity"
+          },
+          {
+            "category": "modality",
+            "term": "CT"
+          }
+        ],
+        "evidence": [
+          "PPV equals True Positives over (True Positives plus False Positives).",
+          "NPV equals True Negatives over (True Negatives plus False Negatives).",
+          "sensitivity and specificity tell us how the test performs in an abstract sense, relative to ground truth.",
+          "Suppose we are using CT to detect a tumor."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "Positive Predictive Value (PPV)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Negative Predictive Value (NPV)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "True Positives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "True Negatives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "False Positives"
+          },
+          {
+            "category": "quality_metric",
+            "term": "False Negatives"
+          }
+        ],
+        "evidence": [
+          "If the imaging study says a patient is abnormal, how likely is it that they really have the disease?",
+          "If the imaging study says a patient is normal, how likely is it that they really are disease-free?",
+          "PPV tells us how likely it is that this really is a tumor and not just a false alarm.",
+          "If the scan comes back clear, NPV tells us how confident we can be that the patient truly has no tumor."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "positive predictive value (ppv)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "negative predictive value (npv)"
+          },
+          {
+            "category": "mathematics",
+            "term": "true positives"
+          },
+          {
+            "category": "mathematics",
+            "term": "false positives"
+          },
+          {
+            "category": "mathematics",
+            "term": "true negatives"
+          },
+          {
+            "category": "mathematics",
+            "term": "false negatives"
+          }
+        ],
+        "evidence": [
+          "positive predictive value (ppv): fraction of patients whose medical imaging calls abnormal actually have disease",
+          "negative predictive value (npv): fraction of patients whose medical imaging calls Normal and do NOT have disease.",
+          "ppv equals true positives over (true positives plus false positives).",
+          "npv equals true negatives over (true negatives plus false negatives)."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "Positive Predictive Value (PPV)"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Negative Predictive Value (NPV)"
+          }
+        ],
+        "evidence": [
+          "PPV equals True Positives over (True Positives plus False Positives).",
+          "NPV equals True Negatives over (True Negatives plus False Negatives)."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "PPV equals True Positives over (True Positives plus False Positives). So, among all the patients labeled as abnormal, PPV is the fraction who actually do have the disease.",
+            "modalities": [
+              "text"
+            ],
+            "o": "True Positives over (True Positives plus False Positives)",
+            "p": "measures",
+            "s": "Positive predictive value (PPV)"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

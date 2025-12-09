@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"magnetization\",\n      \"p\": \"represents\",\n      \"o\": \"net vector pointing along the direction of the magnetic field\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is what we call the net magnetization vector, often denoted as M.\"\n    },\n    {\n      \"s\": \"net magnetization vector\",\n      \"p\": \"depends_on\",\n      \"o\": \"magnetic moments\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Because the magnetic moments are vectors, those that are opposite to each other will cancel out in the transverse plane.\"\n    },\n    {\n      \"s\": \"magnetization\",\n      \"p\": \"produces\",\n      \"o\": \"macroscopic signals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So, magnetization is the bridge from the microscopic quantum world of spins to the macroscopic signals we use in MRI.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "magnetization",
+        "p": "represents",
+        "o": "net vector pointing along the direction of the magnetic field",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "This is what we call the net magnetization vector, often denoted as M."
+      },
+      {
+        "s": "net magnetization vector",
+        "p": "depends_on",
+        "o": "magnetic moments",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Because the magnetic moments are vectors, those that are opposite to each other will cancel out in the transverse plane."
+      },
+      {
+        "s": "magnetization",
+        "p": "produces",
+        "o": "macroscopic signals",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So, magnetization is the bridge from the microscopic quantum world of spins to the macroscopic signals we use in MRI."
+      }
+    ]
+  }
+}

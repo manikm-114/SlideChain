@@ -1,0 +1,86 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "tomographic imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "the end result is three-dimensional, point-specific localization of the MR signal"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "phase angle"
+          },
+          {
+            "category": "instrumentation",
+            "term": "slice-selection gradient"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency encoding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "phase encoding"
+          },
+          {
+            "category": "modality",
+            "term": "tomographic imaging"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "point-wise information"
+          }
+        ],
+        "evidence": [
+          "The phase angle that you see here carries important spatial meaning.",
+          "To fully resolve the slice, we need to further encode along the other two directions: the y-direction for phase encoding, and the x-direction for frequency encoding.",
+          "The end result is three-dimensional, point-specific localization of the MR signal.",
+          "This is the mathematical backbone of MRI imaging.",
+          "The combined equation resembles a Fourier transformation.",
+          "This is exactly how the imaging sequence works."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "take care of the x-dimension"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "x-direction",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "frequency encoding gradient"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

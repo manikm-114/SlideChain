@@ -1,0 +1,233 @@
+{
+  "lecture": "Lecture 15",
+  "slide_id": "Slide3",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide3.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide3.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide3.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "Signal Processing Toolbox",
+              "category": "software"
+            },
+            {
+              "term": "Image Processing Toolbox",
+              "category": "software"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "If you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.",
+            "Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Signal Processing Toolbox\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Image Processing Toolbox\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"If you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\\", \\\"Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"Signal Processing Toolbox\", \"category\": \"software\"}, {\"term\": \"Image Processing Toolbox\", \"category\": \"software\"}, {\"term\": \"CT\", \"category\": \"modality\"}], \"evidence\": [\"If you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\", \"Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide3.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "Signal Processing Toolbox",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"MATLAB\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"Signal Processing Toolbox\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"Signal Processing Toolbox\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide3.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "Signal Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Image Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "zip file",
+              "category": "workflow"
+            },
+            {
+              "term": "extract",
+              "category": "workflow"
+            },
+            {
+              "term": "MATLAB folder",
+              "category": "workflow"
+            },
+            {
+              "term": "scripts",
+              "category": "workflow"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed",
+            "Download the zip file from LMS and extract all files into your MATLAB folder",
+            "Once that’s done, you’ll be ready to run the scripts",
+            "Let’s move on to the theory of CT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Signal Processing Toolbox\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Image Processing Toolbox\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"zip file\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"LMS\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"extract\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"MATLAB folder\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"scripts\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\",\\n    \\\"Download the zip file from LMS and extract all files into your MATLAB folder\\\",\\n    \\\"Once that’s done, you’ll be ready to run the scripts\\\",\\n    \\\"Let’s move on to the theory of CT\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"Signal Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"Image Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"zip file\", \"category\": \"workflow\"}, {\"term\": \"extract\", \"category\": \"workflow\"}, {\"term\": \"MATLAB folder\", \"category\": \"workflow\"}, {\"term\": \"scripts\", \"category\": \"workflow\"}, {\"term\": \"CT\", \"category\": \"modality\"}], \"evidence\": [\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\", \"Download the zip file from LMS and extract all files into your MATLAB folder\", \"Once that’s done, you’ll be ready to run the scripts\", \"Let’s move on to the theory of CT\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide3.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "Signal Processing Toolbox",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed"
+            },
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "Image Processing Toolbox",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"Signal Processing Toolbox\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"Image Processing Toolbox\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"Signal Processing Toolbox\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\"}, {\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"Image Processing Toolbox\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide3.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "Signal Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Image Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "zip file",
+              "category": "data_processing"
+            },
+            {
+              "term": "MATLAB folder",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed",
+            "Download the zip file from LMS and extract all files into your MATLAB folder"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:21:37.184966+00:00\", \"text_length\": 641, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Signal Processing Toolbox\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Image Processing Toolbox\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"LMS\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"zip file\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"MATLAB folder\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\", \\\"Download the zip file from LMS and extract all files into your MATLAB folder\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"Signal Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"Image Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"zip file\", \"category\": \"data_processing\"}, {\"term\": \"MATLAB folder\", \"category\": \"software\"}], \"evidence\": [\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\", \"Download the zip file from LMS and extract all files into your MATLAB folder\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide3.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:04:44.786232+00:00\", \"text_length\": 641, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide3.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "Signal Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Image Processing Toolbox",
+              "category": "signal_processing"
+            },
+            {
+              "term": "zip file",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed",
+            "Download the zip file from LMS and extract all files into your MATLAB folder"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:08:45.001166+00:00\", \"text_length\": 641, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"MATLAB\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Signal Processing Toolbox\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Image Processing Toolbox\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"zip file\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"extract all files into your MATLAB folder\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\",\\n    \\\"Download the zip file from LMS and extract all files into your MATLAB folder\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"Signal Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"Image Processing Toolbox\", \"category\": \"signal_processing\"}, {\"term\": \"zip file\", \"category\": \"workflow\"}], \"evidence\": [\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\", \"Download the zip file from LMS and extract all files into your MATLAB folder\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide3.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "depends_on",
+              "o": "Signal Processing Toolbox and the Image Processing Toolbox",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed"
+            },
+            {
+              "s": "the zip file",
+              "p": "via",
+              "o": "LMS",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "Download the zip file from LMS and extract all files into your MATLAB folder"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide3\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T08:13:32.948630+00:00\", \"text_length\": 641, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, before we dive into today’s material, just a quick reminder.\\u000b\\nIf you’d like to follow along with the examples, please make sure you have MATLAB installed, along with the Signal Processing Toolbox and the Image Processing Toolbox. These are essential for running the code.\\n\\nIf you haven’t set this up yet, don’t worry—it’s simple. Just download the zip file I’ve posted on LMS, extract all the files, and place them into your MATLAB folder. Once that’s done, you’ll be ready to run the scripts, either as we go through them in class or later on your own time at home.\\nAlright, with that setup in place, let’s move on to the theory of CT.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"Signal Processing Toolbox and the Image Processing Toolbox\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"the zip file\\\",\\n      \\\"p\\\": \\\"via\\\",\\n      \\\"o\\\": \\\"LMS\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Download the zip file from LMS and extract all files into your MATLAB folder\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"depends_on\", \"o\": \"Signal Processing Toolbox and the Image Processing Toolbox\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"Make sure you have MATLAB and the toolboxes (Signal Processing, Image Processing) installed\"}, {\"s\": \"the zip file\", \"p\": \"via\", \"o\": \"LMS\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"Download the zip file from LMS and extract all files into your MATLAB folder\"}]}}"
+      }
+    }
+  }
+}

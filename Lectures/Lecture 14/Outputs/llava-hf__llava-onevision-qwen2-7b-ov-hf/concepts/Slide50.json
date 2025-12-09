@@ -1,0 +1,27 @@
+{
+  "slide_id": "Slide50",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let me explain three key concepts related to radiation dose.\nFirst, the absorbed dose. This represents the energy deposited by ionizing radiation into the body’s tissues. It is a purely physical measure.\nSecond, the effective dose accounts for the sensitivity of different organs and tissues to radiation. This is where weighting factors come into play.\n\nFor example, certain organs involved in reproduction or rapid cell regeneration are much more sensitive to radiation. We want to protect children and younger women, especially from high doses. While adults may be less sensitive, it is still prudent to minimize exposure.\nThe dose equivalent combines dose with information about the type of radiation. Some radiation types cause more damage per unit energy than others.\n\nHowever, when discussing CT scans, the radiation type factor is effectively one, so it generally does not alter dose estimates.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"absorbed dose\", \"category\": \"physics\"},\n    {\"term\": \"effective dose\", \"category\": \"physics\"},\n    {\"term\": \"dose equivalent\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"This represents the energy deposited by ionizing radiation into the body’s tissues.\", \"accounts for the sensitivity of different organs and tissues to radiation.\", \"combine dose with information about the type of radiation.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "absorbed dose",
+        "category": "physics"
+      },
+      {
+        "term": "effective dose",
+        "category": "physics"
+      },
+      {
+        "term": "dose equivalent",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "This represents the energy deposited by ionizing radiation into the body’s tissues.",
+      "accounts for the sensitivity of different organs and tissues to radiation.",
+      "combine dose with information about the type of radiation."
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+Let’s now see what happens when we take everything we’ve learned and apply it to two-dimensional signals — like images.
+
+Here we have a famous example — a grayscale portrait of Albert Einstein. At first glance, it seems complex and highly detailed. But if we perform 2D Fourier analysis, something remarkable happens: we can decompose this image into a collection of smooth, sinusoidal wave patterns.
+
+In the middle panel, you see the amplitude spectrum — this tells us how much of each frequency is present in the image. Frequencies closer to the center are low — representing broad, smooth changes. As you move outward, the frequencies get higher — capturing fine details and edges.
+On the right, you see an example of one such component: a 2D sinusoidal wave. These are like ripples in water, traveling in various directions — horizontal, vertical, diagonal — and at different frequencies.
+
+Now if we zoom out, we can think of an image as a sum of many such 2D waves. That’s what the grid of small tiles on the bottom left represents — each one is a different sinusoidal basis function. Some capture coarse patterns; others capture fine textures.
+As we adjust the amplitudes and phases of these sinusoidal components just right — and add them all together — we reconstruct the original image.
+This is the essence of Fourier analysis in two dimensions:
+We take a complex image, and represent it using simple, smooth building blocks. The result is a completely new way to think about images — not as pixels, but as combinations of spatial frequencies.
+And this approach is not limited to images of Einstein. It works for any image — medical scans, photographs, microscopy, and beyond. That’s why Fourier methods are so foundational in signal processing, image analysis, and modern AI.

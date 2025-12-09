@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide43",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:29:01.792497+00:00",
+  "text_length": 153,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe inverse transformation is done with iradon. The projection beams are laid out line by line, and the default line spacing is one pixel—one unit apart.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"iradon\", \"category\": \"algorithm\"},\n    {\"term\": \"projection beams\", \"category\": \"mathematics\"},\n    {\"term\": \"line spacing\", \"category\": \"mathematics\"},\n    {\"term\": \"one pixel\", \"category\": \"mathematics\"},\n    {\"term\": \"one unit apart\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"The inverse transformation is done with iradon.\", \"The projection beams are laid out line by line, and the default line spacing is one pixel—one unit apart.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "iradon",
+        "category": "algorithm"
+      },
+      {
+        "term": "projection beams",
+        "category": "mathematics"
+      },
+      {
+        "term": "line spacing",
+        "category": "mathematics"
+      },
+      {
+        "term": "one pixel",
+        "category": "mathematics"
+      },
+      {
+        "term": "one unit apart",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "The inverse transformation is done with iradon.",
+      "The projection beams are laid out line by line, and the default line spacing is one pixel-one unit apart."
+    ]
+  }
+}

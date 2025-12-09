@@ -1,0 +1,8 @@
+Let’s now look at what’s happening in the spatial domain when we sample a signal.
+
+Imagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.
+These impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.
+
+In the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.
+And here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.
+Just as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.

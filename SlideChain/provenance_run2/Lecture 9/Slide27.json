@@ -1,0 +1,105 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "edge detection"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "In the spatial domain, it appears as a soft, bell-shaped pattern - bright in the middle, fading smoothly outward."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "spatial domain",
+        "p": "represents",
+        "s": "Gaussian Filter"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Edge Detection Filter"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Despite the name, this filter is used to sharpen images. It works by subtracting a blurred version of the image from the original, which enhances the edges. In the spatial domain, you can see the filter kernel - dark around the edges, light in the center - designed to emphasize changes in intensity.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Spatial Domain",
+            "p": "uses",
+            "s": "Unsharp Filter"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "subtract a blurred version of the image from the original"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This is an edge detection filter, which highlights regions of rapid intensity change."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "edge detection filter",
+        "p": "uses",
+        "s": "Sobel Filter"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Unsharp Filter"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Gaussian Filter"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Sobel Filter"
+          },
+          {
+            "category": "software",
+            "term": "fspecial"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "In image processing, we often use specialized filters to enhance certain features or to suppress unwanted information.",
+          "Despite the name, this filter is used to sharpen images.",
+          "This is a smoothing filter, which reduces noise and small details.",
+          "This is an edge detection filter, which highlights regions of rapid intensity change.",
+          "MATLAB provides built-in functions for these filters, including fspecial for 2D and fspecial3 for 3D filtering, as well as options to design your own custom kernels."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

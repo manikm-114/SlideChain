@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Scripts\",\n      \"p\": \"uses\",\n      \"o\": \"variables already in your workspace\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"They run a series of commands and use variables already in your workspace.\"\n    },\n    {\n      \"s\": \"Functions\",\n      \"p\": \"uses\",\n      \"o\": \"inputs\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You give them inputs, and they return outputs.\"\n    },\n    {\n      \"s\": \"Functions\",\n      \"p\": \"produces\",\n      \"o\": \"outputs\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You give them inputs, and they return outputs.\"\n    },\n    {\n      \"s\": \"Functions\",\n      \"p\": \"depends_on\",\n      \"o\": \"local variables\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Inside a function, all variables are local\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Scripts",
+        "p": "uses",
+        "o": "variables already in your workspace",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "They run a series of commands and use variables already in your workspace."
+      },
+      {
+        "s": "Functions",
+        "p": "uses",
+        "o": "inputs",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You give them inputs, and they return outputs."
+      },
+      {
+        "s": "Functions",
+        "p": "produces",
+        "o": "outputs",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You give them inputs, and they return outputs."
+      }
+    ]
+  }
+}

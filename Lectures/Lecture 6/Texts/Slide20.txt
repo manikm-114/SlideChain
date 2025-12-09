@@ -1,0 +1,12 @@
+Now let’s move on to our second example — the triangle function.
+
+This function, often called the triangular function, is shaped just like its name suggests — a triangle. It peaks at 1 when x equals 0, and then it decreases linearly to zero as x moves out to minus 1 and plus 1. Outside of that range, the value is zero.
+
+Mathematically, it’s defined like this: one minus the absolute value of x when x is between negative 1 and 1, and zero otherwise.
+So what we want to do now is find its Fourier transform.
+
+In other words, we want to express this smooth, non-periodic triangular function as a combination of infinitely many sinusoidal waves — just like we did with the gate function.
+
+We’ll add up all these waves — each with a different frequency and amplitude — and by doing so, we’ll be able to reconstruct this triangle shape exactly.
+That’s the idea behind Fourier transform: take a function, no matter how it looks, and rewrite it as a sum of wave components. Each component carries part of the shape — and when you combine them all, you get the original back.
+Let’s see what that looks like in this case.

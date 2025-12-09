@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide54",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:01:13.759138+00:00",
+  "text_length": 135,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Animation\", \"category\": \"software\"},\n    {\"term\": \"3D logo\", \"category\": \"software\"},\n    {\"term\": \"Fully3D'17\", \"category\": \"software\"},\n    {\"term\": \"movie\", \"category\": \"software\"},\n    {\"term\": \"elements\", \"category\": \"software\"},\n    {\"term\": \"spirit\", \"category\": \"software\"},\n    {\"term\": \"meeting\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"This movie of the 3D logo brings together all the elements for Fully3D'17 and represents the spirit of the meeting.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "3D logo",
+        "category": "software"
+      },
+      {
+        "term": "movie",
+        "category": "software"
+      },
+      {
+        "term": "elements",
+        "category": "software"
+      },
+      {
+        "term": "spirit",
+        "category": "software"
+      },
+      {
+        "term": "meeting",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "This movie of the 3D logo brings together all the elements for Fully3D'17 and represents the spirit of the meeting."
+    ]
+  }
+}

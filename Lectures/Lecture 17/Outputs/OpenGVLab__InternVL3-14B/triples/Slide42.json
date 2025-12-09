@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide42",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Total Counts\",\n      \"p\": \"represents\",\n      \"o\": \"overall measured signal or image\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The total counts—the overall measured signal or image—actually contain two main components.\"\n    },\n    {\n      \"s\": \"Total Counts\",\n      \"p\": \"contains\",\n      \"o\": \"scatter background\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The total counts—the overall measured signal or image—actually contain two main components. These two components are scatter background and random counts\"\n    },\n    {\n      \"s\": \"Total Counts\",\n      \"p\": \"contains\",\n      \"o\": \"random counts\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The total counts—the overall measured signal or image—actually contain two main components. These two components are scatter background and random counts\"\n    },\n    {\n      \"s\": \"random count\",\n      \"p\": \"estimated by\",",
+  "parsed": {
+    "s": "Total Counts",
+    "p": "contains",
+    "o": "random counts",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "The total counts-the overall measured signal or image-actually contain two main components. These two components are scatter background and random counts"
+    ]
+  }
+}

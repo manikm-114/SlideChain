@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"shift-invariant linear system\",\n      \"p\": \"produces\",\n      \"o\": \"sinusoidal output at the same frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For a shift-invariant linear system, a sinusoidal input will only generate a sinusoidal output at the same frequency.\"\n    },\n    {\n      \"s\": \"convolution theorem\",\n      \"p\": \"uses\",\n      \"o\": \"Fourier transform\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"According to the convolution theorem, when we take the Fourier transform of both sides, this convolution becomes multiplication.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"As we learned earlier, the Fourier transform of a pure sinusoidal signal is a delta function.\"\n    },\n    {\n      \"s\": \"output\",\n      \"p\": \"produces\",",
+  "parsed": {
+    "s": "Fourier transform",
+    "p": "represents",
+    "o": "delta function",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "As we learned earlier, the Fourier transform of a pure sinusoidal signal is a delta function."
+    ]
+  }
+}

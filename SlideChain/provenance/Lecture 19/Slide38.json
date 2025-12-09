@@ -1,0 +1,61 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "s(t) = M0 (1 - e^(-t/T1)) e^(-t/T2)"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "s(t) = Sx(t) + iSy(t) = M0 e^(-t/T2) e^(-i\u03c90t)"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "s(t) = s_x(t) + i s_y(t) = M_0 e^{-t/T2} e^{-i\u03c90t}"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "M0 e^{-t/T2} e^{-i\u03c90t}",
+        "p": "represents",
+        "s": "s(t)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "phase encoding"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "The magnetic field is used to collect a signal."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Signal",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "Magnetic field"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

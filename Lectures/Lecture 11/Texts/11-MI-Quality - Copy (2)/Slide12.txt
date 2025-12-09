@@ -1,0 +1,9 @@
+Now let’s think about this from the perspective of the human visual system, or HVS.
+
+The human eye does not look at images pixel by pixel, the way mean squared error does. MSE simply compares each pixel individually, treats every error the same, and then adds them up. That’s a bottom-up approach — starting from the smallest units and working upward.
+But our visual system works very differently. We are much more sensitive to structural information — the patterns, edges, and relationships that give an image its overall form. For example, even a small change in the background, or a shift in texture, is something we can notice right away. Our brains are highly adapted to detect these kinds of contextual changes.
+
+In the classical view, the focus was on error visibility: if you see a discrepancy, count it as an error. In the newer view, the focus shifts to structural distortion: what matters is whether the structure of the image has been preserved.
+This also connects to the way our vision system interprets images. Rather than starting with tiny details, many researchers argue that we first process the global structure — sometimes described in terms of topological features. These are high-level properties, such as whether objects are connected, how many distinct regions there are, or whether certain shapes remain intact. Importantly, these properties don’t change if the image is stretched, rotated, or rescaled.
+
+So here’s the philosophical shift: instead of measuring differences pixel by pixel, we want to measure how much of the structural information has been preserved. That is what structural similarity is all about, and it’s why it is far more aligned with how humans actually see images.

@@ -1,0 +1,10 @@
+Let’s take a closer look at the luminance term and see why it behaves the way we want.
+
+Here, we let mu-X, the mean of image X, be represented by the letter A. And we let mu-Y, the mean of image Y, be represented by the variable X. Now, the question is: as X changes, what value of X will maximize the luminance comparison?
+To answer this, we take the formula for the luminance term and compute its first derivative with respect to X. By setting that derivative equal to zero, we can find the point where the function reaches its maximum.
+
+When we go through the algebra, the conclusion is very clear: the maximum occurs when X equals A, in other words, when the mean brightness of image Y is equal to the mean brightness of image X. At that point, the luminance comparison reaches its maximum possible value, which is one.
+This confirms the intuition: two images will only be perfectly similar in luminance if their average brightness levels are the same. If one image is brighter or darker than the other, the luminance comparison will drop accordingly.
+
+So this mathematical exercise is really just a proof of what we already expect: the luminance term is maximized when the two images have the same mean brightness.
+That’s the first aspect of structural similarity. Next, we’ll move on to the second aspect: contrast comparison.

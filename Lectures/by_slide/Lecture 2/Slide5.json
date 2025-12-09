@@ -1,0 +1,134 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide5",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide5.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide5.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide5.json",
+        "parsed": {
+          "term": "foundational skills",
+          "category": "software"
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"octave\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"matlab\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"matrix operations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"plotting\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"scripts\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"reliable backup\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"MATLAB access\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"specialized toolboxes\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"image processing\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"foundational skills\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Octave is a scientific programming language that mirrors MATLAB’s syntax and functionality.\\\", \\n               \\\"It’s free, open-source, and available for Windows, macOS, and Linux.\\\", \\n               \\\"You can run it in the browser using Octave Online.\\\", \\n               \\\"The interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts.\\\", \\n               \\\"This makes Octave\", \"parsed\": {\"term\": \"foundational skills\", \"category\": \"software\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide5.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"octave\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"matlab\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Octave is a scientific programming language that mirrors MATLAB’s syntax and functionality.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide5.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Octave",
+              "category": "software"
+            },
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "syntax",
+              "category": "software"
+            },
+            {
+              "term": "matrix operations",
+              "category": "mathematics"
+            },
+            {
+              "term": "plotting",
+              "category": "data_processing"
+            },
+            {
+              "term": "scripts",
+              "category": "software"
+            },
+            {
+              "term": "toolboxes",
+              "category": "software"
+            },
+            {
+              "term": "image processing",
+              "category": "signal_processing"
+            },
+            {
+              "term": "foundational skills",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "scientific programming language",
+            "mirrors MATLAB’s syntax and functionality",
+            "free, open-source",
+            "basic matrix operations",
+            "plotting",
+            "simple scripts",
+            "specialized toolboxes",
+            "image processing features",
+            "building foundational skills"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Octave\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"syntax\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"matrix operations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"plotting\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"scripts\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"toolboxes\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"image processing\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"foundational skills\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"scientific programming language\\\",\\n    \\\"mirrors MATLAB’s syntax and functionality\\\",\\n    \\\"free, open-source\\\",\\n    \\\"basic matrix operations\\\",\\n    \\\"plotting\\\",\\n    \\\"simple scripts\\\",\\n    \\\"specialized toolboxes\\\",\\n    \\\"image processing features\\\",\\n    \\\"building foundational skills\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Octave\", \"category\": \"software\"}, {\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"syntax\", \"category\": \"software\"}, {\"term\": \"matrix operations\", \"category\": \"mathematics\"}, {\"term\": \"plotting\", \"category\": \"data_processing\"}, {\"term\": \"scripts\", \"category\": \"software\"}, {\"term\": \"toolboxes\", \"category\": \"software\"}, {\"term\": \"image processing\", \"category\": \"signal_processing\"}, {\"term\": \"foundational skills\", \"category\": \"workflow\"}], \"evidence\": [\"scientific programming language\", \"mirrors MATLAB’s syntax and functionality\", \"free, open-source\", \"basic matrix operations\", \"plotting\", \"simple scripts\", \"specialized toolboxes\", \"image processing features\", \"building foundational skills\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide5.json",
+        "parsed": {
+          "s": "Octave",
+          "p": "depends_on",
+          "o": "basic matrix operations, plotting, and simple scripts",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "under the hood, many of the same commands will work - especially those used for basic matrix operations, plotting, and simple scripts."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Octave\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"scientific programming language\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Octave is a scientific programming language that mirrors MATLAB’s syntax and functionality.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Octave\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"MATLAB’s syntax and functionality\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Octave is a scientific programming language that mirrors MATLAB’s syntax and functionality.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Octave\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"basic matrix operations, plotting, and simple scripts\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Octave\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"foundational skills\", \"parsed\": {\"s\": \"Octave\", \"p\": \"depends_on\", \"o\": \"basic matrix operations, plotting, and simple scripts\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"under the hood, many of the same commands will work - especially those used for basic matrix operations, plotting, and simple scripts.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide5.json",
+        "parsed": {
+          "term": "course",
+          "category": "software"
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:03:32.177260+00:00\", \"text_length\": 678, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"scientific programming language\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"syntax\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"functionality\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"free\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"open-source\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Windows\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"macOS\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Linux\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Octave Online\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"matrix operations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"plotting\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"simple scripts\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"reliable backup\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"specialized toolboxes\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"image processing features\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"course\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\":\", \"parsed\": {\"term\": \"course\", \"category\": \"software\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide5.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:16:41.593671+00:00\", \"text_length\": 678, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"GNU Octave\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"MatLab\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Octave: MatLab in Disguise\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide5.json",
+        "parsed": {
+          "term": "building foundational skills",
+          "category": "data_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:31:04.907726+00:00\", \"text_length\": 678, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"scientific programming language\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"mirrors MATLAB’s syntax and functionality\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"free, open-source\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"available for Windows, macOS, and Linux\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"run it in the browser using Octave Online\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"many of the same commands will work\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"basic matrix operations\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"plotting\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"simple scripts\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"more than enough for getting started\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"building foundational skills\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    }\\n  ],\", \"parsed\": {\"term\": \"building foundational skills\", \"category\": \"data_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide5.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide5\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:50:42.010073+00:00\", \"text_length\": 678, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s take a closer look at Octave.\\nOctave is a scientific programming language that mirrors MATLAB’s syntax and functionality. It’s free, open-source, and available for Windows, macOS, and Linux. You can run it in the browser using Octave Online.\\nThe interface looks different, but under the hood, many of the same commands will work — especially those used for basic matrix operations, plotting, and simple scripts. This makes Octave a reliable backup if MATLAB access is delayed or limited.\\nWhile it might not support all specialized toolboxes or image processing features, it’s more than enough for getting started and building foundational skills, at least for this course.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"inverse discrete Fourier transform\",\n      \"p\": \"uses\",\n      \"o\": \"1/N\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\"\n    },\n    {\n      \"s\": \"1/N\",\n      \"p\": \"equals\",\n      \"o\": \"delta-t times delta-u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Earlier, I mentioned that 1 over N is equal to delta-t times delta-u.\"\n    },\n    {\n      \"s\": \"original continuous function\",\n      \"p\": \"approximated as\",\n      \"o\": \"collection of rectangles\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles.\"\n    },",
+  "parsed": {
+    "s": "original continuous function",
+    "p": "approximated as",
+    "o": "collection of rectangles",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles."
+    ]
+  }
+}

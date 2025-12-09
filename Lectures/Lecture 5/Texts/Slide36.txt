@@ -1,0 +1,23 @@
+When we work with complex numbers, there are two very common ways to describe them:the Cartesian form and the polar form.Both are fully equivalent, and they each offer a different way of thinking about the same quantity.
+
+Let’s begin with the Cartesian form. This is what we’ve seen already:A complex number is written as x plus i times y, where x is the real part, and y is the imaginary part.So we’re essentially giving the horizontal and vertical coordinates of a point in the complex plane — just like specifying a location on a map.
+
+Now, in engineering, we often replace the symbol i with j to represent the imaginary unit. This is purely to avoid confusion — because in electrical engineering, i is usually reserved for current.But mathematically, i and j mean the same thing: they both satisfy the fundamental property that i squared equals negative one.
+The other way to describe a complex number is through polar coordinates.Instead of saying how far right and up the point is, we describe the number by its magnitude and angle.
+So what does that mean?
+
+We draw a line from the origin to the point — that’s the complex number — and call its length r. That’s the magnitude, or modulus, and it’s calculated using the Pythagorean theorem:r equals the square root of x squared plus y squared.This is also written as the absolute value of z.
+
+Next, we describe the angle that line makes with the positive real axis.That angle is called theta, and we compute it as the inverse tangent of y over x.So now, we have two pieces: r and theta — the magnitude and direction.
+With that, we can now express the same complex number in polar form.
+In place of x plus i y, we write:
+r times cosine theta plus i times r sine theta.Or, factoring out the r:r times the quantity cosine theta plus i sine theta.
+
+This is the foundation for something beautiful: Euler’s formula, which we’ll talk about in the next slide.Euler discovered that cosine theta plus i sine theta is equal to e to the i theta — giving us a powerful exponential representation of complex numbers.
+Before we leave this slide, here’s one more important result:If you multiply a complex number by its conjugate — in other words, z times z bar — you get a purely real number.
+
+Let’s walk through it:z is x plus i y, and its conjugate is x minus i y.When you multiply them together, you get x squared plus y squared, which is just the magnitude squared.
+This shows that the conjugate cancels out the imaginary part, leaving only a real value — something very useful in analysis and signal processing.
+So just like vectors, complex numbers let us switch back and forth between rectangular and polar systems.
+Each form brings its own advantages, and we’ll soon see how this flexibility pays off — especially when we start rewriting Fourier series using complex exponentials.
+Let’s move to Euler’s formula and take this further.

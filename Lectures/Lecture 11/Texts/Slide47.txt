@@ -1,0 +1,9 @@
+Now you see how the entire ROC curve is formed.
+
+At one extreme, if I simply call every patient “positive,” I would achieve 100% sensitivity — I would never miss a diseased case. But at the same time, I would also reach 100% false positive fraction, meaning every healthy patient is incorrectly flagged.
+At the other extreme, if I call everyone “negative,” I would achieve 100% specificity, but sensitivity would drop to zero.
+By moving the decision threshold step by step, we trace the ROC curve from the lower-left corner, where both sensitivity and false positives are low, toward the upper-right corner.
+
+An ideal diagnostic system bends sharply upward and hugs the left and top axes, giving an area under the curve, or AUC, close to 1. A poor test, on the other hand, falls close to the diagonal line, which is equivalent to flipping a coin — nothing more than random guessing.
+
+So, the ROC curve captures the complete balance between sensitivity and specificity across all thresholds. And the area under this curve provides a single, powerful number that summarizes diagnostic performance. That’s why ROC analysis has become such a central tool in medical imaging, in machine learning, and in clinical decision-making.

@@ -1,0 +1,11 @@
+Let’s walk through this functional example, which will connect directly to what we’ll do in MATLAB later.
+
+We start with h of n, shown in the first plot — a simple rectangular pulse. Then we have x of n in the second plot — think of it as three rectangular pulses in a row, one shown in red and the other two in blue.
+If we take these two signals and perform a linear convolution — shown in the third plot — we get a series of triangular shapes. This makes sense: convolving two rectangular pulses produces a triangle. Here we have three such triangles because x of n contains three rectangles.
+
+Now, in the fourth plot, something changes. We create x  N of n — this means x of n is now periodically extended with N samples per period. In other words, we’ve made it repeat over and over, which is why we call it circularly extended.
+In the fifth plot, we see the linear convolution of this periodic x  N of n with h of n. Notice what happens: instead of three clean, separate triangles, the edges wrap around, and the red and blue parts start overlapping. These are edge effects caused by the circular extension.
+Finally, the last plot shows the composite output. The green section in the middle is the portion unaffected by edge effects. This part matches the original linear convolution result and is what we actually want.
+
+The lesson here is important: to avoid these unwanted overlaps in circular convolution, we often use zero-padding — adding extra zeros to the signals before performing the convolution. This ensures that the result matches the true linear convolution without distortion at the edges.
+We’ll explore this zero-padding step in detail in a few slides, and you’ll see how MATLAB handles it.

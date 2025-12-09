@@ -1,0 +1,148 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "spectral data"
+          },
+          {
+            "category": "physics",
+            "term": "Hydrogen-alpha line"
+          },
+          {
+            "category": "physics",
+            "term": "Doppler formula"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "includes many wavelengths, evenly spaced",
+          "feature called the Hydrogen-alpha line",
+          "use the Doppler formula",
+          "with MATLAB"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "With MATLAB, we\u2019ll identify that line, calculate how much it\u2019s shifted, and then use the Doppler formula to estimate the star\u2019s speed.",
+            "modalities": [
+              "text"
+            ],
+            "o": "spectral data",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "With MATLAB, we\u2019ll identify that line, calculate how much it\u2019s shifted, and then use the Doppler formula to estimate the star\u2019s speed.",
+            "modalities": [
+              "text"
+            ],
+            "o": "star\u2019s speed",
+            "p": "measures",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "spectral data"
+          },
+          {
+            "category": "physics",
+            "term": "Hydrogen-alpha line"
+          },
+          {
+            "category": "physics",
+            "term": "Doppler formula"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "We start with spectral data from a star. It includes many wavelengths, evenly spaced.",
+          "With MATLAB, we'll identify that line, calculate how much it's shifted, and then use the Doppler formula to estimate the star's speed."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "use the Doppler formula to estimate the star's speed"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "physics",
+            "term": "Hydrogen-alpha line"
+          },
+          {
+            "category": "physics",
+            "term": "Doppler formula"
+          },
+          {
+            "category": "data_processing",
+            "term": "spectral data"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wavelengths"
+          },
+          {
+            "category": "signal_processing",
+            "term": "shifted"
+          }
+        ],
+        "evidence": [
+          "We start with spectral data from a star. It includes many wavelengths, evenly spaced. The key is to find a feature called the Hydrogen-alpha line. If that line shifts, the star is moving - either away or toward us.",
+          "With MATLAB, we\u2019ll identify that line, calculate how much it\u2019s shifted, and then use the Doppler formula to estimate the star\u2019s speed."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The key is to find a feature called the Hydrogen-alpha line.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Hydrogen-alpha line",
+            "p": "measures",
+            "s": "Spectral data"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide41.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide41.txt"
+  },
+  "slide_id": "Slide41"
+}

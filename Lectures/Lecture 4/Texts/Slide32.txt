@@ -1,0 +1,17 @@
+Now, let’s bring all the cases together to write the full piecewise definition of the convolution result.
+We’ve carefully stepped through five distinct intervals,each showing how the amount of overlap between f of t and g of t determines the value of the convolution.
+Putting everything together, we now have the complete solution.
+
+Each case — from full overlap, to partial overlap, to no overlap —contributes a segment of the final output.
+
+This leads to a piecewise-defined function, expressed as follows:
+y of t equals 0,          for t less than –2
+y of t equals –three-halves t squared plus 6, for t between –2 and 0
+y of t equals 6,             for t between 0 and 2
+y of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4
+y of t equals 0,          for t greater than or equal to 4
+When we plot these expressions, we get a smooth, continuous curve —it rises, flattens out in the middle, and then gradually falls again.It forms a kind of bump, which is exactly what we expectas g of t slides over and past f of t.
+
+This example gives us a complete, mathematical walkthrough of continuous convolution —from defining the problem, to analyzing it case by case, to combining all pieces into the final solution.
+It beautifully demonstrates how convolution is built:by accumulating the area under the product of two functions —each one flipped, shifted, multiplied, and then integrated, step by step.
+It’s a powerful blend of geometry and calculus,and it’s absolutely foundational in signal processing and medical imaging.

@@ -1,0 +1,99 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "primary beam efficiency"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Scattered photons, coming in at an angle, are blocked by the grid walls, which are made of dense materials such as lead.",
+            "modalities": [
+              "text"
+            ],
+            "o": "dense materials",
+            "p": "uses",
+            "s": "anti-scatter grid"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Only photons traveling in the correct direction, aligned with the primary X-ray beam, can pass through these channels and reach the detector.",
+            "modalities": [
+              "text"
+            ],
+            "o": "primary beam",
+            "p": "measures",
+            "s": "anti-scatter grid"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This dramatically improves image quality by reducing the effect of scatter.",
+            "modalities": [
+              "text"
+            ],
+            "o": "clearer and more reliable images",
+            "p": "produces",
+            "s": "anti-scatter grid"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "scattering"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Now let's talk about an important concept in X-ray imaging: the anti-scatter grid.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "X-ray imaging",
+            "p": "uses",
+            "s": "Anti-scatter Grid"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "contrast"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Scattered photons, coming in at an angle, are blocked by the grid walls, which are made of dense materials such as lead."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "scattered photons",
+        "p": "blocks",
+        "s": "anti-scatter grid"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "trade-offs"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide35.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide35.txt"
+  },
+  "slide_id": "Slide35"
+}

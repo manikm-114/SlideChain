@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, in your textbook, you have this diagram that shows how the Doppler shift occurs in flowing blood. Here, we are looking at a small vessel with red blood cells moving inside. The transducer sends ultrasound energy toward the blood vessel wall or directly into the blood stream. The wall or the moving red blood cells reflect the ultrasound energy back to the transducer.\n\nIf the wall or blood cells were perfectly stationary, the reflected frequency would be exactly the same as the incident frequency. However, since these scatterers are moving, the reflected frequency becomes slightly different. The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference. This component corresponds to the velocity of motion along the ultrasound beam direction.\n\nThe small difference between the transmitted and received frequencies is what we call the Doppler frequency shift. This effect is universal—it appears not only in ultrasound but also in optical and electromagnetic waves. The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Doppler shift\", \"category\": \"physics\"},\n    {\"term\": \"ultrasound\", \"category\": \"modality\"},\n    {\"term\": \"red blood cells\", \"category\": \"anatomy\"},\n    {\"term\": \"flowing blood\", \"category\": \"anatomy\"},\n    {\"term\": \"transducer\", \"category\": \"instrumentation\"},\n    {\"term\": \"ultrasound energy\", \"category\": \"signal_processing\"},\n    {\"term\": \"reflected frequency\", \"category\": \"signal_processing\"},\n    {\"term\": \"incident frequency\", \"category\": \"signal_processing\"},\n    {\"term\": \"Doppler frequency shift\", \"category\": \"signal_processing\"},\n    {\"term\": \"motion changes the observed frequency\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"The Doppler shift occurs in flowing blood.\", \"The reflected frequency becomes slightly different.\", \"The Doppler shift tells us how motion changes the observed frequency.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Doppler shift",
+        "category": "physics"
+      },
+      {
+        "term": "ultrasound",
+        "category": "modality"
+      },
+      {
+        "term": "transducer",
+        "category": "instrumentation"
+      },
+      {
+        "term": "ultrasound energy",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reflected frequency",
+        "category": "signal_processing"
+      },
+      {
+        "term": "incident frequency",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Doppler frequency shift",
+        "category": "signal_processing"
+      },
+      {
+        "term": "motion changes the observed frequency",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The Doppler shift occurs in flowing blood.",
+      "The reflected frequency becomes slightly different.",
+      "The Doppler shift tells us how motion changes the observed frequency."
+    ]
+  }
+}

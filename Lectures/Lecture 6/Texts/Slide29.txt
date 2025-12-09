@@ -1,0 +1,14 @@
+Now here's one of the most important Fourier transform pairs — the impulse train, also called the comb function.
+Think of it this way:
+We place delta functions at evenly spaced intervals — for example, every delta t along the time axis.This gives us a repeating sequence of sharp spikes — like the teeth of a comb — so we call it a comb function in time.
+Mathematically, we write this as the sum of delta of t minus n delta t, summed over all integers n.That just means we have delta functions at 0, at delta t, at 2 delta t, and so on, going both directions.
+
+Now here’s the key:When we take the Fourier transform of this comb in time, what do we get?
+Surprisingly, we get another comb — this time in the frequency domain.But the spacing changes — instead of delta t, the spikes are now spaced by 1 over delta t.
+So if we sample more tightly in time, the frequency comb spreads out.And if we stretch out the spacing in time, the frequency spikes get closer together.
+This is exactly the scaling property we saw earlier — a tight structure in one domain leads to a broad structure in the other.
+
+Now you might be wondering — how do we handle all these delta functions?They’re not ordinary functions — they’re distributions or generalized functions.And we’re dealing with an infinite sum of them.
+This touches on deeper mathematics — involving convergence and rigor — but for our purposes, this formula holds and is extremely useful.We’ll come back to this paired comb concept again in the next lecture, especially when we talk about sampling theory and the Fourier series.
+
+So just remember:A comb in time transforms to a comb in frequency.And their spacing is inversely related — one over the other.

@@ -1,0 +1,159 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray"
+          },
+          {
+            "category": "reconstruction",
+            "term": "cross-sectional image"
+          },
+          {
+            "category": "reconstruction",
+            "term": "slices"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "reconstruction",
+            "term": "computer"
+          },
+          {
+            "category": "quality_metric",
+            "term": "features smaller than a millimeter"
+          }
+        ],
+        "evidence": [
+          "computed tomography, or CT, allows us to do",
+          "X-ray radiographs",
+          "cross-sectional image",
+          "transverse sections",
+          "slices",
+          "X-ray projections",
+          "use a computer to reconstruct",
+          "resolve features smaller than a millimeter",
+          "attenuation"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "cross-sectional image",
+            "p": "produces",
+            "s": "computed tomography"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "computer",
+            "p": "reconstructs_with",
+            "s": "CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "scanning"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "slices of the body"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a computer",
+        "p": "reconstructs_with",
+        "s": "computed tomography"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray radiographs"
+          },
+          {
+            "category": "instrumentation",
+            "term": "CT scanners"
+          },
+          {
+            "category": "workflow",
+            "term": "drawing slices of the body"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "software",
+            "term": "computer to reconstruct"
+          },
+          {
+            "category": "quality_metric",
+            "term": "crystal-clear view"
+          },
+          {
+            "category": "signal_processing",
+            "term": "without overlapping tissues"
+          },
+          {
+            "category": "workflow",
+            "term": "scanning"
+          },
+          {
+            "category": "communication",
+            "term": "modern medicine"
+          }
+        ],
+        "evidence": [
+          "SLIDE_TEXT"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide8.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide8.txt"
+  },
+  "slide_id": "Slide8"
+}

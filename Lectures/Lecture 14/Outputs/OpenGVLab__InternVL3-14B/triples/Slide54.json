@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide54",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MSAD\", \"p\":\"measures\", \"o\":\"radiation dose\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MSAD is another classic measure of radiation dose in CT.\"},\n    {\"s\":\"MSAD\", \"p\":\"represents\", \"o\":\"multiple scan average dose\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This concept of multiple scan average dose, or MSAD, is defined by an integral calculation.\"},\n    {\"s\":\"MSAD\", \"p\":\"depends_on\", \"o\":\"number of adjacent scans\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The number of adjacent scans considered is represented by N.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MSAD",
+        "p": "measures",
+        "o": "radiation dose",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MSAD is another classic measure of radiation dose in CT."
+      },
+      {
+        "s": "MSAD",
+        "p": "represents",
+        "o": "multiple scan average dose",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This concept of multiple scan average dose, or MSAD, is defined by an integral calculation."
+      },
+      {
+        "s": "MSAD",
+        "p": "depends_on",
+        "o": "number of adjacent scans",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The number of adjacent scans considered is represented by N."
+      }
+    ]
+  }
+}

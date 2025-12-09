@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide2",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a quick look at our course schedule to see where we stand.\u000b\nAs you can see, we’ve been moving steadily through the topics—starting with the basics, like introduction, systems, and Fourier series, and then building up to signal processing and MATLAB practice.\n\nCurrently, we are on track with the section on computed tomography, or CT. This means you already have the mathematical and signal processing foundation, and now we are applying it directly to medical imaging.\nSo yes, we are on schedule, and today’s focus on MATLAB and CT fits exactly into the larger flow of the course.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"computed tomography\", \"category\": \"modality\"},\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"Fourier series\", \"category\": \"mathematics\"},\n    {\"term\": \"signal processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB practice\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"As you can see, we’ve been moving steadily through the topics—starting with the basics, like introduction, systems, and Fourier series, and then building up to signal processing and MATLAB practice.\", \"So yes, we are on schedule, and today’s focus on MATLAB and CT fits exactly into the larger flow of the course.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "computed tomography",
+        "category": "modality"
+      },
+      {
+        "term": "CT",
+        "category": "modality"
+      },
+      {
+        "term": "Fourier series",
+        "category": "mathematics"
+      },
+      {
+        "term": "signal processing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB practice",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "As you can see, we’ve been moving steadily through the topics-starting with the basics, like introduction, systems, and Fourier series, and then building up to signal processing and MATLAB practice.",
+      "So yes, we are on schedule, and today’s focus on MATLAB and CT fits exactly into the larger flow of the course."
+    ]
+  }
+}

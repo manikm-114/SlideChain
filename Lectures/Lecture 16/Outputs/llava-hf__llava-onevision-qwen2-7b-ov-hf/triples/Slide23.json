@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere is another way of classifying radioactive decay. In total, you can think of five types.\n\nFirst, alpha decay, which typically occurs among the heavier elements. Second, beta-minus decay. Third, positron emission, or beta-plus decay. Fourth, electron capture. And finally, spontaneous fission.\nFor our purposes, the first four are the most important. Spontaneous fission is more of a nuclear physics phenomenon and is not especially relevant to medical imaging.\n\nSo, depending on which textbook you consult, you may see these processes grouped slightly differently. But for this course, just keep in mind the essential ones: alpha, beta, gamma, and electron capture. Within beta decay, remember there are two cases — beta-minus and beta-plus.\nWith that, you now have a solid overview of the main decay mechanisms we will encounter in nuclear imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"alpha decay\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"radioactive decay\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"typically occurs among the heavier elements\"},\n    {\"s\":\"beta-minus decay\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"radioactive decay\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Second, beta-minus decay.\"},\n    {\"s\":\"positron emission\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"radioactive decay\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Third, positron emission, or beta-plus decay.\"},\n    {\"s\":\"electron capture\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"radioactive decay\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence",
+  "parsed": {
+    "s": "positron emission",
+    "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+    "o": "radioactive decay",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "Third, positron emission, or beta-plus decay."
+    ]
+  }
+}

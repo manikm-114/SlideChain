@@ -1,0 +1,171 @@
+{
+  "lecture": "Lecture 12",
+  "slide_id": "Slide13",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide13.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "richer source of information",
+          "category": "software"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"projection radiography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"computed tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"computed tomography (CT)\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"volumetric image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"single projection image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"single view\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"multiple views\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"three-dimensional representation\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"fast overview\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"richer source of information\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Medical X-ray imaging generally comes in two main forms.\\\", \\\"On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the\", \"parsed\": {\"term\": \"richer source of information\", \"category\": \"software\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide13.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Medical X-ray imaging\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Single projection image\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Captures one view at a time, and everything inside the body is superimposed together in that picture.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide13.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "projection image",
+              "category": "modality"
+            },
+            {
+              "term": "single projection",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray source",
+              "category": "instrumentation"
+            },
+            {
+              "term": "detector",
+              "category": "instrumentation"
+            },
+            {
+              "term": "patient table",
+              "category": "instrumentation"
+            },
+            {
+              "term": "cross-sectional slices",
+              "category": "modality"
+            },
+            {
+              "term": "volumetric image",
+              "category": "modality"
+            },
+            {
+              "term": "computed tomography",
+              "category": "modality"
+            },
+            {
+              "term": "three-dimensional representation",
+              "category": "modality"
+            },
+            {
+              "term": "reconstruct",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "a single projection image",
+            "captures one view at a time",
+            "X-ray source",
+            "detector",
+            "patient table",
+            "cross-sectional slices",
+            "volumetric image",
+            "computed tomography",
+            "three-dimensional representation",
+            "reconstruct"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"projection image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"single projection\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray source\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"detector\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"patient table\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"cross-sectional slices\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"volumetric image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"computed tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"three-dimensional representation\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruct\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"a single projection image\\\",\\n    \\\"captures one view at a time\\\",\\n    \\\"X-ray source\\\",\\n    \\\"detector\\\",\\n    \\\"patient table\\\",\\n    \\\"cross-sectional slices\\\",\\n    \\\"volumetric image\\\",\\n    \\\"computed tomography\\\",\\n    \\\"three-dimensional representation\\\",\\n    \\\"reconstruct\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"projection image\", \"category\": \"modality\"}, {\"term\": \"single projection\", \"category\": \"modality\"}, {\"term\": \"X-ray source\", \"category\": \"instrumentation\"}, {\"term\": \"detector\", \"category\": \"instrumentation\"}, {\"term\": \"patient table\", \"category\": \"instrumentation\"}, {\"term\": \"cross-sectional slices\", \"category\": \"modality\"}, {\"term\": \"volumetric image\", \"category\": \"modality\"}, {\"term\": \"computed tomography\", \"category\": \"modality\"}, {\"term\": \"three-dimensional representation\", \"category\": \"modality\"}, {\"term\": \"reconstruct\", \"category\": \"reconstruction\"}], \"evidence\": [\"a single projection image\", \"captures one view at a time\", \"X-ray source\", \"detector\", \"patient table\", \"cross-sectional slices\", \"volumetric image\", \"computed tomography\", \"three-dimensional representation\", \"reconstruct\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide13.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Medical X-ray imaging",
+              "p": "uses",
+              "o": "single projection image",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray."
+            },
+            {
+              "s": "Medical X-ray imaging",
+              "p": "produces",
+              "o": "volumetric image",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "When these slices are stacked together, they form a volumetric image of the entire body."
+            },
+            {
+              "s": "Computed tomography",
+              "p": "reconstructs_with",
+              "o": "multiple views",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "computed tomography transforms those multiple views into a three-dimensional representation"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Medical X-ray imaging\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"single projection image\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray.\\\"},\\n    {\\\"s\\\":\\\"Medical X-ray imaging\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"volumetric image\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"When these slices are stacked together, they form a volumetric image of the entire body.\\\"},\\n    {\\\"s\\\":\\\"Computed tomography\\\", \\\"p\\\":\\\"reconstructs_with\\\", \\\"o\\\":\\\"multiple views\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"computed tomography transforms those multiple views into a three-dimensional representation\\\"},\\n    {\\\"s\\\":\\\"X-ray Source\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"Beam\\\", \\\"modalities\\\":[\\\"image\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"X-ray Source\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Medical X-ray imaging\", \"p\": \"uses\", \"o\": \"single projection image\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray.\"}, {\"s\": \"Medical X-ray imaging\", \"p\": \"produces\", \"o\": \"volumetric image\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"When these slices are stacked together, they form a volumetric image of the entire body.\"}, {\"s\": \"Computed tomography\", \"p\": \"reconstructs_with\", \"o\": \"multiple views\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"computed tomography transforms those multiple views into a three-dimensional representation\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "richer source of information",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:42:17.101288+00:00\", \"text_length\": 947, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"projection radiography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"computed tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"three-dimensional representation\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"multiple views\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"volumetric image\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray source\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"detector\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"patient table\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"rotating\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"acquiring projections\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"reconstructing detailed cross-sectional slices\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"stacking slices\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"three-dimensional representation\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"richer source of information\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"projection radiography gives us a fast overview\\\",\\n    \\\"computed tomography transforms\", \"parsed\": {\"term\": \"richer source of information\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide13.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:00:45.715475+00:00\", \"text_length\": 947, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"projection radiography\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"single projection image\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "When these slices are stacked together, they form a volumetric image of the entire body.",
+          "category": "reconstruction"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:02:10.353201+00:00\", \"text_length\": 947, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"Medical X-ray imaging generally comes in two main forms.\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"a single projection image, like a chest X-ray.\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"captures one view at a time, and everything inside the body is superimposed together in that picture.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"At any single instant, you still record just one projection.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the X-ray source and detector rotate around the patient.\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the patient table can also move forward or backward.\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices.\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"When these slices are stacked together, they form a volumetric image of the entire body.\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\", \"parsed\": {\"term\": \"When these slices are stacked together, they form a volumetric image of the entire body.\", \"category\": \"reconstruction\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide13.json",
+        "parsed": {
+          "s": "cross-sectional slices",
+          "p": "reconstructs_with",
+          "o": "volumetric image",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "When these slices are stacked together, they form a volumetric image of the entire body."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:09:43.762414+00:00\", \"text_length\": 947, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nMedical X-ray imaging generally comes in two main forms.\\n\\nOn the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray. It captures one view at a time, and everything inside the body is superimposed together in that picture.\\nOn the right, the principle is extended. At any single instant, you still record just one projection. But instead of stopping there, the X-ray source and detector rotate around the patient. At the same time, the patient table can also move forward or backward. By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices. When these slices are stacked together, they form a volumetric image of the entire body.\\n\\nSo, while projection radiography gives us a fast overview, computed tomography transforms those multiple views into a three-dimensional representation — a much richer source of information.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"single projection image\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"chest X-ray\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"multiple views\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"cross-sectional slices\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"By acquiring projections from many different angles, we collect enough information to reconstruct detailed cross-sectional slices.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"cross-sectional slices\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"volumetric image\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"When these slices are stacked together, they form a volumetric image of the entire body.\\\"\\n    }\", \"parsed\": {\"s\": \"cross-sectional slices\", \"p\": \"reconstructs_with\", \"o\": \"volumetric image\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"When these slices are stacked together, they form a volumetric image of the entire body.\"]}}"
+      }
+    }
+  }
+}

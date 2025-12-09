@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide37",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s dive into dual-energy imaging, which is one of the most important developments in modern CT.\nAll the major CT manufacturers — Siemens, GE, Philips, and Toshiba — have worked on energy-sensitive imaging. While true multi-energy imaging is still a challenge, they have all developed practical approaches to perform dual-energy CT, which means collecting data using two different X-ray spectra.\n\nLet me explain the main strategies:\nSiemens uses dual-source CT. Here, the scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage. For example, one tube might run at 80 kilovolts, while the other runs at 140 kilovolts. This gives you two spectra simultaneously, which means excellent temporal resolution and minimal motion artifact.\n\nGE uses kVp switching. In this method, there is only one X-ray tube, but the tube rapidly alternates its voltage between high and low values — say, 140 and 80 kilovolts — from one projection to the next. As a result, you still get two distinct spectra, but collected sequentially.\nPhilips uses dual-layer detectors. Instead of modifying the tube, they modify the detector. The top layer absorbs most of the low-energy X-rays, while the second layer captures the higher-energy photons that pass through. This way, low- and high-energy data are naturally separated at the detector level.\n\nToshiba uses dual-scan mode. In this case, the scanner acquires two full scans of the same patient: one at high voltage and one at low voltage. While this is simpler in concept, it has drawbacks. It takes longer, and the patient may move between scans. Also, if contrast material is injected, its distribution may change between the two acquisitions, leading to misregistration.\nSo in practice, the first three technologies — dual-source, kVp switching, and dual-layer detectors — are more effective. They provide two sets of spectral information within the same exam, which can then be used to separate materials, improve contrast, and reduce artifacts.\n\nThis is why dual-energy imaging is now widely used in clinical practice. It gives radiologists much more information than standard CT and opens the door to advanced applications like material decomposition and virtual contrast imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n```json\n{\n  \"triples\": [\n    {\"s\":\"Siemens\", \"p\":\"uses\", \"o\":\"dual-source CT\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage.\"}\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Siemens",
+        "p": "uses",
+        "o": "dual-source CT",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage."
+      }
+    ]
+  }
+}

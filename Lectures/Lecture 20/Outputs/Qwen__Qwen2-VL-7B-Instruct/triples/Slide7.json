@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T16:22:55.230853+00:00",
+  "text_length": 2397,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s talk about the background magnetic field, often referred to as B-zero. There are three main ways to generate this magnetic field inside an MRI system.\n\nThe mainstream approach, used in nearly all modern MRI scanners, is to use a superconducting magnet. This magnet operates in an extremely cold environment—close to absolute zero—so that the wire inside becomes superconductive, meaning it has zero electrical resistance. That’s quite remarkable, because once current starts flowing in a superconducting loop, it can continue indefinitely without any energy loss.\nIf a superconducting magnet is not used, the second option is a permanent magnet. Permanent magnets can be very effective and relatively inexpensive when the total field strength is low—typically below about zero point three five tesla. These are often used in open MRI systems or low-end scanners, where high field strength is not essential.\n\nThe third method is to use electromagnets made from copper coils, where electric current is continuously injected to generate the magnetic field. However, this method has major drawbacks: running current through the coils produces heat, which leads to noise and energy loss, making it inefficient and less stable for imaging.\n\nSo, among the three methods, the superconducting magnet remains the primary choice for modern MRI scanners. It provides a strong, stable, and uniform B-zero field, which is essential for producing high-quality images.\n\nIf you look at the cross-sectional illustration in your textbook, you’ll see how the magnet is constructed. At the center, we have the room-temperature magnet bore, where the patient lies. Surrounding it are layers containing the superconducting windings, which are immersed in liquid helium to keep them cold enough to maintain superconductivity. Outside that, there are layers of vacuum insulation and liquid nitrogen to minimize heat transfer from the environment.\n\nThe resulting magnetic field, B-zero, is oriented along the Z direction in our coordinate system, with X and Y lying perpendicular to it.\n\nSo, to summarize:\u000bSuperconducting magnets are the standard in modern MRI systems,\u000bPermanent magnets are used for low-field or open designs, and\u000bResistive magnets using copper coils are mostly historical or experimental.\nThese are the key ways we generate the powerful and stable B-zero field that makes MRI imaging possible.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"superconducting magnet\", \"p\":\"uses\", \"o\":\"MRI scanner\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"The mainstream approach, used in nearly all modern MRI scanners, is to use a superconducting magnet.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "superconducting magnet",
+        "p": "uses",
+        "o": "MRI scanner",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The mainstream approach, used in nearly all modern MRI scanners, is to use a superconducting magnet."
+      }
+    ]
+  }
+}

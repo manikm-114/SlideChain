@@ -1,0 +1,170 @@
+{
+  "lecture": "Lecture 11",
+  "slide_id": "Slide57",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide57.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide57.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide57.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "channelized observer",
+              "category": "signal_processing"
+            },
+            {
+              "term": "high-dimensional image data",
+              "category": "signal_processing"
+            },
+            {
+              "term": "simplify",
+              "category": "signal_processing"
+            },
+            {
+              "term": "channels",
+              "category": "signal_processing"
+            },
+            {
+              "term": "filter",
+              "category": "signal_processing"
+            },
+            {
+              "term": "template",
+              "category": "signal_processing"
+            },
+            {
+              "term": "different ‘views’ or ‘features’",
+              "category": "signal_processing"
+            },
+            {
+              "term": "scalar responses",
+              "category": "signal_processing"
+            },
+            {
+              "term": "vector",
+              "category": "signal_processing"
+            },
+            {
+              "term": "simplify the computational task",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "The idea here is to simplify the problem of analyzing very high-dimensional image data.",
+            "Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"high-dimensional image data\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"simplify\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"break down\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"channels\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"filter\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"template\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"different ‘views’ or ‘features’\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"scalar responses\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"vector\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"simplify the computational task\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"retain the critical diagnostic features\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The idea here is to simplify the problem of analyzing very high-dimensional image data.\\\", \\\"Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"channelized observer\", \"category\": \"signal_processing\"}, {\"term\": \"high-dimensional image data\", \"category\": \"signal_processing\"}, {\"term\": \"simplify\", \"category\": \"signal_processing\"}, {\"term\": \"channels\", \"category\": \"signal_processing\"}, {\"term\": \"filter\", \"category\": \"signal_processing\"}, {\"term\": \"template\", \"category\": \"signal_processing\"}, {\"term\": \"different ‘views’ or ‘features’\", \"category\": \"signal_processing\"}, {\"term\": \"scalar responses\", \"category\": \"signal_processing\"}, {\"term\": \"vector\", \"category\": \"signal_processing\"}, {\"term\": \"simplify the computational task\", \"category\": \"signal_processing\"}], \"evidence\": [\"The idea here is to simplify the problem of analyzing very high-dimensional image data.\", \"Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide57.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"channelized observer\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"high-dimensional image data\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The idea here is to simplify the problem of analyzing very high-dimensional image data.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide57.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "channelized observer",
+              "category": "algorithm"
+            },
+            {
+              "term": "channels",
+              "category": "algorithm"
+            },
+            {
+              "term": "scalar responses",
+              "category": "signal_processing"
+            },
+            {
+              "term": "statistical analysis",
+              "category": "data_processing"
+            },
+            {
+              "term": "image quality",
+              "category": "quality_metric"
+            }
+          ],
+          "evidence": [
+            "simplify the problem of analyzing very high-dimensional image data",
+            "break the image down into a set of channels",
+            "series of scalar responses",
+            "channelized observer",
+            "reducing the dimensionality",
+            "perform statistical analysis more efficiently",
+            "judge image quality",
+            "detect a signal"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channels\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"scalar responses\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"dimensionality reduction\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"statistical analysis\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"image quality\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"signal detection\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"simplify the problem of analyzing very high-dimensional image data\\\",\\n    \\\"break the image down into a set of channels\\\",\\n    \\\"series of scalar responses\\\",\\n    \\\"channelized observer\\\",\\n    \\\"reducing the dimensionality\\\",\\n    \\\"perform statistical analysis more efficiently\\\",\\n    \\\"judge image quality\\\",\\n    \\\"detect a signal\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"channelized observer\", \"category\": \"algorithm\"}, {\"term\": \"channels\", \"category\": \"algorithm\"}, {\"term\": \"scalar responses\", \"category\": \"signal_processing\"}, {\"term\": \"statistical analysis\", \"category\": \"data_processing\"}, {\"term\": \"image quality\", \"category\": \"quality_metric\"}], \"evidence\": [\"simplify the problem of analyzing very high-dimensional image data\", \"break the image down into a set of channels\", \"series of scalar responses\", \"channelized observer\", \"reducing the dimensionality\", \"perform statistical analysis more efficiently\", \"judge image quality\", \"detect a signal\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide57.json",
+        "parsed": {
+          "s": "channelized observer",
+          "p": "produces",
+          "o": "scalar responses",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "When we apply these channels to the image, we get a series of scalar responses - simple numbers that summarize how the image looks under each channel."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"channelized observer\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"channels\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The idea here is to simplify the problem of analyzing very high-dimensional image data. Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"channelized observer\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"scalar responses\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"When we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"channelized observer\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"smaller vector\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data\", \"parsed\": {\"s\": \"channelized observer\", \"p\": \"produces\", \"o\": \"scalar responses\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"When we apply these channels to the image, we get a series of scalar responses - simple numbers that summarize how the image looks under each channel.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide57.json",
+        "parsed": {
+          "term": "channelized observer",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:02:45.198961+00:00\", \"text_length\": 1092, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channel\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"channel template\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"channelized data vector\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"channelized ideal observer (CIO)\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized Hotelling observer (CHO)\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized data vector\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"channelized observer\\\", \\\"category\\\": \\\"\", \"parsed\": {\"term\": \"channelized observer\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide57.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:59:41.707491+00:00\", \"text_length\": 1092, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"channelized observer\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"high-dimensional image data\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Now, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide57.json",
+        "parsed": {
+          "term": "strike a balance: they simplify the computational task but still capture the critical diagnostic features",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T03:09:28.562757+00:00\", \"text_length\": 1092, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"channelized observer\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"simplify the problem of analyzing very high-dimensional image data\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"break the image down into a set of channels\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"each channel acts like a filter or a template that extracts a particular aspect of the image\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"apply these channels to the image, we get a series of scalar responses\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"collect these responses into a much smaller vector\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reducing the dimensionality allows us to perform statistical analysis more efficiently\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"strike a balance: they simplify the computational task but still capture the critical diagnostic features\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Now, let’s talk\", \"parsed\": {\"term\": \"strike a balance: they simplify the computational task but still capture the critical diagnostic features\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide57.json",
+        "parsed": {
+          "s": "channelized observer",
+          "p": "produces",
+          "o": "channelized data vector v",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.95,
+          "evidence": [
+            "Stacking the channel responses together results in a channelized data vector v"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide57\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T03:17:54.767361+00:00\", \"text_length\": 1092, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\\n\\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\\n\\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"channelized ideal observer (cio) or channelized hotelling observer (cho)\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"channelized data vector v\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"A channelized ideal observer (cio) or channelized Hotelling observer (cho) is one that uses the channelized data vector v as the data instead of using the image vector g.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"channelized observer\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"channelized data vector v\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"Stacking the channel responses together results in a channelized data vector v\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"channelized observer\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"scalar responses\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"applying each channel vector to the image vector results\", \"parsed\": {\"s\": \"channelized observer\", \"p\": \"produces\", \"o\": \"channelized data vector v\", \"modalities\": [\"text\"], \"confidence\": 0.95, \"evidence\": [\"Stacking the channel responses together results in a channelized data vector v\"]}}"
+      }
+    }
+  }
+}

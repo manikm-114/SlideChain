@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide41",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"parallel-hole collimator\", \"p\":\"produces\", \"o\":\"same scale image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In this case, the object and the image appear at the same scale.\"},\n    {\"s\":\"diverging collimator\", \"p\":\"produces\", \"o\":\"smaller image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here, the image is smaller than the object.\"},\n    {\"s\":\"converging collimator\", \"p\":\"produces\", \"o\":\"magnified image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"producing a magnified image.\"},\n    {\"s\":\"pinhole collimator\", \"p\":\"produces\", \"o\":\"highly magnified inverted image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"creating a highly magnified but inverted image.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "converging collimator",
+        "p": "produces",
+        "o": "magnified image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "producing a magnified image."
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+When you do projection, they basically decompose a single pixel into a two-by-two matrix, then shoot rays through all these centers into the projection domain. 
+
+If a ray hits the center of a detector bin, that detector takes the full value. If it hits the boundary between two detector bins, the value is divided equally. If it hits at an arbitrary location, linear interpolation is used.

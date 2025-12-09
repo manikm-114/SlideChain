@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T10:17:28.100619+00:00",
+  "text_length": 853,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere is another way of classifying radioactive decay. In total, you can think of five types.\n\nFirst, alpha decay, which typically occurs among the heavier elements. Second, beta-minus decay. Third, positron emission, or beta-plus decay. Fourth, electron capture. And finally, spontaneous fission.\nFor our purposes, the first four are the most important. Spontaneous fission is more of a nuclear physics phenomenon and is not especially relevant to medical imaging.\n\nSo, depending on which textbook you consult, you may see these processes grouped slightly differently. But for this course, just keep in mind the essential ones: alpha, beta, gamma, and electron capture. Within beta decay, remember there are two cases — beta-minus and beta-plus.\nWith that, you now have a solid overview of the main decay mechanisms we will encounter in nuclear imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"alpha decay\", \"category\": \"physics\"},\n    {\"term\": \"beta-minus decay\", \"category\": \"physics\"},\n    {\"term\": \"positron emission\", \"category\": \"physics\"},\n    {\"term\": \"electron capture\", \"category\": \"physics\"},\n    {\"term\": \"spontaneous fission\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"For our purposes, the first four are the most important. Spontaneous fission is more of a nuclear physics phenomenon and is not especially relevant to medical imaging.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "alpha decay",
+        "category": "physics"
+      },
+      {
+        "term": "beta-minus decay",
+        "category": "physics"
+      },
+      {
+        "term": "positron emission",
+        "category": "physics"
+      },
+      {
+        "term": "electron capture",
+        "category": "physics"
+      },
+      {
+        "term": "spontaneous fission",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "For our purposes, the first four are the most important. Spontaneous fission is more of a nuclear physics phenomenon and is not especially relevant to medical imaging."
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "Ultrasound"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction.",
+            "modalities": [
+              "text"
+            ],
+            "o": "velocity component along the beam direction",
+            "p": "measures",
+            "s": "Doppler frequency shift"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the frequency reflected by the moving blood cell or boundary is given by Equation 3.40.",
+            "modalities": [
+              "text"
+            ],
+            "o": "frequency reflected by the moving blood cell or boundary",
+            "p": "represents",
+            "s": "Equation 3.40"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the term v cos \u03b8 represents the velocity component of motion in the direction of the beam.",
+            "modalities": [
+              "text"
+            ],
+            "o": "velocity component of motion in the direction of the beam",
+            "p": "represents",
+            "s": "v cos \u03b8"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "blood or tissue movement"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The \"apparent\" frequency f_RBC of ultrasound beam, as seen by the RBC, is given by"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the apparent frequency of ultrasound beam, as seen by the RBC",
+        "p": "produces",
+        "s": "f_RBC"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "moving target"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction. So, from the measured shift, you can infer how fast the blood or tissue is moving toward or away from the transducer.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "The velocity component along the beam direction",
+            "p": "measures",
+            "s": "The Doppler frequency shift"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide22.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide22.txt"
+  },
+  "slide_id": "Slide22"
+}

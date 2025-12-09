@@ -1,0 +1,110 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "generate signals"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct images"
+          },
+          {
+            "category": "data_processing",
+            "term": "analyze datasets"
+          }
+        ],
+        "evidence": [
+          "one of the most widely used computational platforms in science and engineering",
+          "generate signals",
+          "reconstruct images",
+          "analyze datasets"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "one of the most widely used computational platforms in science and engineering",
+            "modalities": [
+              "text"
+            ],
+            "o": "computational platform",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "use MATLAB to generate signals, reconstruct images",
+            "modalities": [
+              "text"
+            ],
+            "o": "images",
+            "p": "reconstructs_with",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "education",
+        "term": "basics"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "biomedical research"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "You'll use MATLAB to generate signals, reconstruct images, and analyze datasets - all key tasks in medical imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "real-world data",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "You'll use MATLAB to generate signals, reconstruct images, and analyze datasets - all key tasks in medical imaging.",
+            "modalities": [
+              "text"
+            ],
+            "o": "images",
+            "p": "reconstructs_with",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "clinical practice"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide1.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide1.txt"
+  },
+  "slide_id": "Slide1"
+}

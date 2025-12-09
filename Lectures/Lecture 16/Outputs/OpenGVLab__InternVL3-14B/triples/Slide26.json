@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"radioactive decay\",\n      \"p\": \"represents\",\n      \"o\": \"rate of change of the number of radioactive nuclei\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The key point is that the rate of change of the number of radioactive nuclei, which we call capital N, is proportional to how much material is still present.\"\n    },\n    {\n      \"s\": \"decay constant\",\n      \"p\": \"measures\",\n      \"o\": \"rate of change of the number of radioactive nuclei\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here, lambda is called the decay constant.\"\n    },\n    {\n      \"s\": \"half-life\",\n      \"p\": \"depends_on\",\n      \"o\": \"decay constant\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So the half-life depends only on the decay constant.\"\n    },\n    {\n      \"s\": \"effective half-life\",\n      \"p\": \"depends_on\",\n      \"o\": \"physical half-life and biological",
+  "parsed": {
+    "s": "half-life",
+    "p": "depends_on",
+    "o": "decay constant",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "So the half-life depends only on the decay constant."
+    ]
+  }
+}

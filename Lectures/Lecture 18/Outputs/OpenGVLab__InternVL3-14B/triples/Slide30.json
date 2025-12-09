@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"torque\",\n      \"p\": \"represents\",\n      \"o\": \"mu cross B zero\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"torque can be written as mu cross B zero\"\n    },\n    {\n      \"s\": \"torque\",\n      \"p\": \"equals\",\n      \"o\": \"dP by dt\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"torque equals the derivative of angular momentum with respect to time\"\n    },\n    {\n      \"s\": \"angular frequency of precession\",\n      \"p\": \"equals\",\n      \"o\": \"torque divided by the magnitude of angular momentum times sine theta\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the angular frequency of precession, written as omega, is equal to the torque divided by the magnitude of angular momentum times sine theta\"\n    },\n    {\n      \"s\": \"omega\",\n      \"p\": \"equals\",\n      \"o\": \"gamma times B zero\",\n      \"modalities",
+  "parsed": {
+    "s": "angular frequency of precession",
+    "p": "equals",
+    "o": "torque divided by the magnitude of angular momentum times sine theta",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "the angular frequency of precession, written as omega, is equal to the torque divided by the magnitude of angular momentum times sine theta"
+    ]
+  }
+}

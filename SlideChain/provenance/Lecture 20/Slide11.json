@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "loud knocking sounds"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Sounds Are Generated during Imaging due to Mechanical Stress within Gradient Coils",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Sounds",
+            "p": "produces",
+            "s": "Gradient Coils"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "we can generate any arbitrary gradient field, often represented as G-X, G-Y, and G-Z",
+            "modalities": [
+              "text"
+            ],
+            "o": "G-X, G-Y, and G-Z",
+            "p": "represents",
+            "s": "Gradient Coils"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Using Maxwell\u2019s equations-just four equations that describe how electric and magnetic fields behave-we can simulate the magnetic field using finite element computation",
+            "modalities": [
+              "text"
+            ],
+            "o": "Maxwell\u2019s equations",
+            "p": "depends_on",
+            "s": "Gradient Coils"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "knocking sounds"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Gradient Coils are used in MRI scanners to generate the X, Y, and Z gradient fields.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "MRI scanner",
+            "p": "uses",
+            "s": "Gradient Coils"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "Maxwell's equations"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When all these coil systems-the X, Y, and Z gradients-are combined, we can generate any arbitrary gradient field, often represented as G-X, G-Y, and G-Z."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "G-X, G-Y, and G-Z",
+        "p": "represents",
+        "s": "gradient coils"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "mechanical stress"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

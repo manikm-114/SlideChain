@@ -1,0 +1,26 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"mean squared error\", \"category\": \"quality_metric\"},\n    {\"term\": \"structural similarity\", \"category\": \"quality_metric\"},\n    {\"term\": \"MSE\", \"category\": \"quality_metric\"},\n    {\"term\": \"SSIM\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"mean squared error between the original image and each of these five degraded ones, the result is the same — two hundred and twenty-five.\",\n    \"we need a measure that better matches what humans actually see. That’s where structural similarity, or SSIM, comes in.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "mean squared error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "structural similarity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "SSIM",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "mean squared error between the original image and each of these five degraded ones, the result is the same - two hundred and twenty-five.",
+      "we need a measure that better matches what humans actually see. That’s where structural similarity, or SSIM, comes in."
+    ]
+  }
+}

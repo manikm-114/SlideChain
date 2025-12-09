@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T07:38:38.012363+00:00",
+  "text_length": 1271,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere we observe the plan for CT reconstruction. We will connect data space—the set of X-ray line integrals—to image space—the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object.\n\nWe’ll compare two families of methods:\nAlgebraic approach.\u000bWe model the scanner with linear equations: A times x equals b.\u000bThis viewpoint helps us reason about solution uniqueness—for example, when A has full column rank—and about data independence and sufficiency, meaning we need enough non-redundant views and detector samples to determine x stably. Regularization can be added to handle noise or limited angles.\n\nAnalytic approach.\nThis relies on Fourier analysis. By the Fourier Slice Theorem, the one-dimensional Fourier transform of a projection at angle theta equals a radial slice through the two-dimensional Fourier transform of the object at the same angle. \u000b\nFrom this principle, we derive filtered back-projection (FBP): first apply a frequency-domain ramp filter—magnitude of omega—to each projection, then smear, or back-project, the filtered data across the image grid. FBP is fast and remains the standard for many clinical workflows.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Duality of Information\", \"p\":\"uses\", \"o\":\"CT Reconstruction\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here we observe the plan for CT reconstruction. We will connect data space—the set of X-ray line integrals—to image space—the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Duality of Information",
+        "p": "uses",
+        "o": "CT Reconstruction",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Here we observe the plan for CT reconstruction. We will connect data space-the set of X-ray line integrals-to image space-the distribution of attenuation, usually written as mu of x, y. Think of this as a duality of information: each view in the sinogram encodes a different slice of information about the same object."
+      }
+    ]
+  }
+}

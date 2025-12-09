@@ -1,0 +1,111 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "frequency bins"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency resolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "magnitude"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete value"
+          },
+          {
+            "category": "physics",
+            "term": "energy"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectrum"
+          },
+          {
+            "category": "signal_processing",
+            "term": "bin spacing"
+          }
+        ],
+        "evidence": [
+          "FFT",
+          "frequency bins",
+          "zero-padding",
+          "frequency resolution",
+          "frequency domain",
+          "magnitude",
+          "discrete value",
+          "energy",
+          "spectrum",
+          "bin spacing"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "When we take the FFT and plot the magnitude against frequency in hertz...",
+            "modalities": [
+              "text"
+            ],
+            "o": "spectrum",
+            "p": "produces",
+            "s": "FFT"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "So, without zero-padding - and therefore without finer bin spacing - our frequency resolution is limited.",
+            "modalities": [
+              "text"
+            ],
+            "o": "bin spacing",
+            "p": "depends_on",
+            "s": "FFT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "refining bins"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "Look at forty-five hertz - this is a clean, discrete value, and it aligns perfectly with an FFT bin."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "clear detection"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

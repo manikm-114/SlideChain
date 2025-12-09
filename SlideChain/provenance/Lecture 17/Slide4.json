@@ -1,0 +1,132 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "dead time"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scintillation crystal"
+          },
+          {
+            "category": "instrumentation",
+            "term": "gamma camera"
+          },
+          {
+            "category": "data_processing",
+            "term": "count rate"
+          },
+          {
+            "category": "data_processing",
+            "term": "true count rate"
+          },
+          {
+            "category": "data_processing",
+            "term": "observed count rate"
+          },
+          {
+            "category": "physics",
+            "term": "gamma rays"
+          },
+          {
+            "category": "modality",
+            "term": "radiopharmaceutical"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scintillation events"
+          }
+        ],
+        "evidence": [
+          "the number of gamma rays hitting the scintillation crystal",
+          "gamma camera needs some time to recover between events",
+          "true count rate",
+          "observed count rate",
+          "tau equals capital N minus small n, divided by small n times capital N",
+          "gamma rays",
+          "radiopharmaceutical",
+          "scintillation events"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "capital N is the true count rate, which means how many scintillations actually happen every second"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "true count rate",
+        "p": "represents",
+        "s": "N"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "finding mistakes"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "tau equals capital N minus small n, divided by small n times capital N",
+            "modalities": [
+              "text"
+            ],
+            "o": "capital N minus small n, divided by small n times capital N",
+            "p": "measures",
+            "s": "tau"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "measurement is lost because of dead time"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "\u03c4 = (N - n) / (nN)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "capital N minus small n, divided by small n times capital N",
+        "p": "depends_on",
+        "s": "tau"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "missed events"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "tau equals capital N minus small n, divided by small n times capital N.",
+            "modalities": [
+              "text"
+            ],
+            "o": "tau",
+            "p": "measures",
+            "s": "dead time"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

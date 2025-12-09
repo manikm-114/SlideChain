@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide51",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ROC curves\",\n      \"p\": \"represents\",\n      \"o\": \"three groups\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"What you’re looking at are ROC curves comparing three groups: the top 20 radiologists, the bottom 20 radiologists, and a group of 71 radiology residents.\"\n    },\n    {\n      \"s\": \"top 20 radiologists\",\n      \"p\": \"performs\",\n      \"o\": \"extremely well\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The top 20 radiologists perform extremely well — their ROC curve stays high, close to the upper-left corner.\"\n    },\n    {\n      \"s\": \"bottom 20 radiologists\",\n      \"p\": \"struggle\",\n      \"o\": \"decisions are only a little better than chance\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In contrast, the bottom 20 radiologists struggle. Their ROC curve lies",
+  "parsed": {
+    "s": "top 20 radiologists",
+    "p": "performs",
+    "o": "extremely well",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The top 20 radiologists perform extremely well - their ROC curve stays high, close to the upper-left corner."
+    ]
+  }
+}

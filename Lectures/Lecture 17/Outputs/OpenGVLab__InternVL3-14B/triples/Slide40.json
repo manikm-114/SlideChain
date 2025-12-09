@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"random correction\",\n      \"p\": \"uses\",\n      \"o\": \"delay\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"for each part of the detector, we introduce a delay\"\n    },\n    {\n      \"s\": \"random correction\",\n      \"p\": \"measures\",\n      \"o\": \"random events\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can then use the measured random events from the delayed window\"\n    },\n    {\n      \"s\": \"delay\",\n      \"p\": \"produces\",\n      \"o\": \"same probability\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the probability of the random event with this result delay is the same as without the delay\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "random correction",
+        "p": "uses",
+        "o": "delay",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "for each part of the detector, we introduce a delay"
+      },
+      {
+        "s": "random correction",
+        "p": "measures",
+        "o": "random events",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you can then use the measured random events from the delayed window"
+      }
+    ]
+  }
+}

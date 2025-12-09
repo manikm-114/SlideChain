@@ -1,0 +1,86 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI sequences"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "T2 prime reflects field inhomogeneity and susceptibility effects.",
+            "modalities": [
+              "text"
+            ],
+            "o": "field inhomogeneity and susceptibility effects",
+            "p": "represents",
+            "s": "T2 prime"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "T2 star combines both, and it is the effective decay time we actually measure in many MRI sequences.",
+            "modalities": [
+              "text"
+            ],
+            "o": "effective decay time",
+            "p": "measures",
+            "s": "T2 star"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "magnetic field strength"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "one over T2 star equals one over T2 plus one over T2 prime"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The second contribution comes from spatial variations in the magnetic field strength inside the body... This additional contribution is represented by T2 prime."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "field inhomogeneity and susceptibility effects",
+        "p": "represents",
+        "s": "T2 prime"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "sum of rates"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The overall transverse relaxation time we observe is called T2 star. Mathematically, the rate of decay of T2 star is the sum of the rates of T2 and T2 prime."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "T2 prime",
+        "p": "depends_on",
+        "s": "T2"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide51.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide51.txt"
+  },
+  "slide_id": "Slide51"
+}

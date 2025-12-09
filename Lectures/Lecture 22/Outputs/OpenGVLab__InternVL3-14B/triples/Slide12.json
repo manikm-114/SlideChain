@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasonic transducer array\",\n      \"p\": \"uses\",\n      \"o\": \"two-dimensional acoustic transducer\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we use a two-dimensional acoustic transducer to recreate that same wave behavior\"\n    },\n    {\n      \"s\": \"2D Array\",\n      \"p\": \"represents\",\n      \"o\": \"wavefront\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"ultrasonic transducer array shown here inside the blue box\"\n    },\n    {\n      \"s\": \"2D Array\",\n      \"p\": \"produces\",\n      \"o\": \"wave behavior\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we can replace the natural wavefront with this 2D transducer array\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasonic transducer array",
+        "p": "uses",
+        "o": "two-dimensional acoustic transducer",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we use a two-dimensional acoustic transducer to recreate that same wave behavior"
+      }
+    ]
+  }
+}

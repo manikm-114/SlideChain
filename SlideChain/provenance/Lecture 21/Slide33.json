@@ -1,0 +1,115 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "ultrasound gel"
+          },
+          {
+            "category": "physics",
+            "term": "acoustic coupling medium"
+          },
+          {
+            "category": "physics",
+            "term": "air gap"
+          },
+          {
+            "category": "physics",
+            "term": "acoustic impedance"
+          },
+          {
+            "category": "instrumentation",
+            "term": "piezoelectric crystal"
+          },
+          {
+            "category": "instrumentation",
+            "term": "matching layer"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "physics",
+            "term": "sound waves"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "modality",
+            "term": "water-based polymer"
+          }
+        ],
+        "evidence": [
+          "acts as an acoustic coupling medium",
+          "helping to eliminate the air gap",
+          "extremely low acoustic impedance",
+          "piezoelectric crystal",
+          "matching layer",
+          "sound waves",
+          "improves image quality",
+          "water-based polymer"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "When the gel fills in the microscopic irregularities on the skin and removes any trapped air bubbles, it creates a smooth, continuous path for the sound waves to travel through."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "smooth, continuous path for sound waves",
+        "p": "produces",
+        "s": "ultrasound gel"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "ultrasound image quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "image quality"
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "The ultrasound gel is part of that same idea [matching layer]... It has an acoustic impedance value that lies roughly between the impedance of the transducer surface and that of the skin, just like a matching layer."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "matching layer",
+        "p": "depends_on",
+        "s": "ultrasound gel"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "communication",
+        "term": "warming"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide33.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide33.txt"
+  },
+  "slide_id": "Slide33"
+}

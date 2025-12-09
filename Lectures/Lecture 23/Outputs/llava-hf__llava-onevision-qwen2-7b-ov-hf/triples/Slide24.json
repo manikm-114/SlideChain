@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide24",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about the principle of OCT. It’s really the same idea as what we just discussed with the Michelson interferometer, but now applied to imaging. You can see here, we have a light beam that comes from a low-coherence light source — so not a pure single wavelength, but a broadband light with many wavelengths mixed together. This beam first passes through a collimation lens to make the light travel in a parallel direction. Then it reaches the beam splitter, where the light is divided into two paths. One part of the beam goes upward toward the reference mirror, and the other part travels sideways toward the sample under test.\n\nThe light going to the reference mirror bounces back after reflection and returns to the beam splitter. Meanwhile, the light that goes toward the sample also gets reflected — but from within the tissue itself. Think of this like sending the beam into the sample; it penetrates a little, hits various microstructures at different depths, and each layer reflects part of the light back. Those reflected signals travel back toward the beam splitter and are then combined with the reference beam.\n\nNow, depending on the phase difference between the reference signal and the reflected signal from the sample, the two waves interfere either constructively or destructively. This means that at each position — at each depth — the detector receives a slightly different intensity. You measure those variations point by point, and as the reference mirror scans along the axial direction, you record all the interference signals that come from different depths of the sample. Each point corresponds to a small reflection site inside the tissue.\n\nSo what happens next is that these interference signals are detected by the photodetector, digitized, and sent to a computer for processing. One depth scan gives you a one-dimensional line — we call that an A-scan. When you move the beam laterally across the sample — for example, in the x or y direction — you collect many A-scans side by side, building up a full cross-sectional image. That’s the essential idea of optical coherence tomography — measuring optical interference point by point, and reconstructing the internal microstructure of a sample in depth.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"light beam\", \"p\":\"uses\", \"o\":\" Michelson interferometer\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"It’s really the same idea as what we just discussed with the Michelson interferometer, but now applied to imaging.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "light beam",
+        "p": "uses",
+        "o": "Michelson interferometer",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "It’s really the same idea as what we just discussed with the Michelson interferometer, but now applied to imaging."
+      }
+    ]
+  }
+}

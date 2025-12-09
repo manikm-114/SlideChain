@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"reflection coefficients\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Reflection coefficients – implications\"\n    },\n    {\n      \"s\": \"ultrasound images of brain in vivo\",\n      \"p\": \"uses\",\n      \"o\": \"skull\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"No ultrasound images of brain in vivo; skull reflects ultrasound.\"\n    },\n    {\n      \"s\": \"images of the heart\",\n      \"p\": \"depends_on\",\n      \"o\": \"ribs\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Images of the heart have to be taken 'round' the ribs, which are also opaque.\"\n    },\n    {\n      \"s\": \"finding the right 'window' into the body\",\n      \"p\": \"is important\",\n      \"o\": \"ultrasound imaging\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"",
+  "parsed": {
+    "s": "images of the heart",
+    "p": "depends_on",
+    "o": "ribs",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Images of the heart have to be taken 'round' the ribs, which are also opaque."
+    ]
+  }
+}

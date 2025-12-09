@@ -1,0 +1,18 @@
+Let’s now take a moment to revisit a topic that you’ve likely seen before — linear systems.
+
+Here, we’re looking at the classic equation: A x equals b.That’s a system of linear equations, where A is your matrix, x is the unknown vector, and b is the observed result or measurement.
+Now, solving for x in this system is something you’ve probably done many times before — especially if you've worked through a textbook like Elementary Linear Algebra by Howard Anton, shown here.
+
+But here's the key question for us:What if the unknown vector x is sparse?
+In other words, what if most of the elements in x are actually zero — and only a few are nonzero?
+This situation comes up a lot in modern signal processing and imaging. We no longer assume that a signal is densely sampled or has energy spread all over. Instead, we often find that signals have a sparse structure, especially when we represent them in a suitable basis, like wavelets or gradients.
+
+Now, here’s where it gets really interesting — and this is where modern theory breaks free from traditional Nyquist sampling.
+Instead of sampling a signal very densely — at twice its maximum frequency — we can sample much more sparsely, and still recover the full signal.
+
+How?
+We change our assumption.Instead of assuming the signal is band-limited, we assume it's sparse in some transform domain. Maybe it's sparse in the wavelet domain, or maybe the total variation is small — meaning the signal changes smoothly, or only has a few sharp transitions.
+Then, among all possible solutions that match the measurements, we choose the sparsest one.
+
+This is the idea behind compressed sensing, and it has revolutionized the way we think about sampling and recovery.
+So that green button on the slide — it’s there to say: pause and think. This is a major shift in the traditional mindset. It opens the door to powerful new methods for signal reconstruction from limited data — especially in imaging and beyond.

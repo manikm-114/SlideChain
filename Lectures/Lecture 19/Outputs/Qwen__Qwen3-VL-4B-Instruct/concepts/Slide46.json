@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T13:37:12.228562+00:00",
+  "text_length": 888,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo now we come to the final part of this lecture. You see, we have obtained cross-sectional images using MRI. The last slides summarize the key points and also point to the MRI scanners themselves. I will not go into the engineering details of scanners here, since these are mostly descriptive and you can easily read them from the textbook. \n\nThe textbook straightforwardly explains the scanner components. If you read carefully, you will find it both easy and interesting to understand. You will also find additional material about spin echo sequences, gradient echo, and slice selection, which can deepen your understanding. These are not required for the core lecture, but they are excellent supplemental resources if you want to learn more. And finally, you will have some homework related to this lecture, so that you can review the key ideas and practice the concepts we discussed.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"MRI scanners\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"spin echo sequences\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"gradient echo\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"slice selection\",\n      \"category\": \"algorithm\"\n    }\n  ],\n  \"evidence\": [\n    \"The textbook straightforwardly explains the scanner components.\",\n    \"You will find additional material about spin echo sequences, gradient echo, and slice selection, which can deepen your understanding.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MRI scanners",
+        "category": "instrumentation"
+      },
+      {
+        "term": "spin echo sequences",
+        "category": "algorithm"
+      },
+      {
+        "term": "gradient echo",
+        "category": "algorithm"
+      },
+      {
+        "term": "slice selection",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "The textbook straightforwardly explains the scanner components.",
+      "You will find additional material about spin echo sequences, gradient echo, and slice selection, which can deepen your understanding."
+    ]
+  }
+}

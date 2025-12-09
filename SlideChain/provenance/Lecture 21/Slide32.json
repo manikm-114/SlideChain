@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "acoustic coupling medium"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The gel acts as an acoustic coupling medium that functions as part of the matching layer system.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gel",
+            "p": "uses",
+            "s": "matching layer"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "The ideal acoustic impedance of the matching layer, which we call Z M, is the geometric mean of the two adjacent impedances.",
+            "modalities": [
+              "text"
+            ],
+            "o": "acoustic impedance",
+            "p": "depends_on",
+            "s": "matching layer"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "The transmitted intensity between two media is proportional to the product of their impedances divided by the square of their sum.",
+            "modalities": [
+              "text"
+            ],
+            "o": "product of their impedances divided by the square of their sum",
+            "p": "depends_on",
+            "s": "transmitted intensity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "material",
+        "term": "acoustic coupling medium"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The transducer structure includes this special layer right in front of the piezoelectric crystal, and this layer is absolutely essential for getting ultrasound energy efficiently into the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "matching layer",
+            "p": "uses",
+            "s": "transducer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "ultrasound energy"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "the gel acts as an acoustic coupling medium that functions as part of the matching layer system."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "gel as coupling medium",
+        "p": "uses",
+        "s": "matching layer"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "artifacts"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "...the transducer structure includes this special layer right in front of the piezoelectric crystal, and this layer is absolutely essential for getting ultrasound energy efficiently into the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "matching layer",
+            "p": "depends_on",
+            "s": "ultrasound energy"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

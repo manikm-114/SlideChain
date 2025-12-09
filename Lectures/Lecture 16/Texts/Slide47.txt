@@ -1,0 +1,9 @@
+Now let’s take a closer look at the role of the pulse height analyzer by examining the gamma-ray energy spectrum.
+
+On the left, you see the spectrum of technetium-99m when the camera is exposed without a patient in front of it. The dominant feature here is a sharp photopeak, centered around the expected emission energy. There are also smaller features, such as the iodine escape peak and signals from Compton scatter or lead X-rays. These arise from interactions within the detector itself.
+
+But once you place a patient between the source and the detector, the spectrum changes, as shown on the right. Now the clean photopeak is broadened, and the lower-energy region is filled in. Why? Because inside the patient, photons undergo Compton scattering. Each scattering event deflects the photon and reduces its energy. The larger the scattering angle, the lower the photon’s energy when it finally emerges. As a result, the detector sees not only the original full-energy photons but also a cloud of degraded, lower-energy ones.
+
+This is a problem because those scattered photons don’t carry accurate positional information—they blur the image. The solution is to use the pulse height analyzer. Since the amplitude of the electronic signal from the photomultiplier tube is proportional to the photon’s energy, we can set acceptance windows. Only signals that fall within a narrow energy range around the true photopeak—for example, around 140 keV for technetium-99m—are accepted. Signals that are too low, likely coming from scattered photons, are rejected.
+
+This energy discrimination is what gives nuclear imaging its clarity, much like how anti-scatter grids improve X-ray imaging. By gating and filtering the signals in this way, we make sure that the image is formed primarily from primary, unscattered photons, preserving both resolution and contrast.

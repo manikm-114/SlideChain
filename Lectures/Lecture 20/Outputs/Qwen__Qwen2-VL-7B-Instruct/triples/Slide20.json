@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T16:32:50.115661+00:00",
+  "text_length": 2744,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at three-dimensional gradient echo imaging. In this method, we extend the basic idea of gradient echo imaging into three spatial dimensions by using two separate phase-encoding gradients and one frequency-encoding gradient. Here’s how it works: we begin with a radio-frequency pulse that flips the magnetization vector, M, by a small angle alpha, much less than ninety degrees. Then, the system applies the first phase-encoding gradient, labeled G phase one, followed by a frequency-encoding gradient, labeled G freq, and finally a second phase-encoding gradient, G phase two. This sequence allows us to encode spatial information along all three axes — x, y, and z — so the final data form a three-dimensional Fourier transform. Mathematically, the reconstructed signal can be expressed as a triple integral over kx, ky, and kz, that is, rho of x, y, z equals the integral of S of kx, ky, kz times e to the power of j two pi times (kx x plus ky y plus kz z), integrated over dkx, dky, and dkz.\n\nEach phase-encoding step changes the gradient strength slightly, producing a different k-space plane. When we collect all these planes and perform a three-dimensional inverse Fourier transform, we obtain a volumetric image of the scanned region. Because the signal is read out immediately after excitation, it decays rather quickly due to T-two-star relaxation. However, this approach allows for very rapid data acquisition, enabling high-resolution three-dimensional imaging in a relatively short time. Compared with spin-echo sequences, the signal-to-noise ratio is somewhat lower because gradient echo does not compensate for field inhomogeneities. But the speed advantage is substantial — scans can be completed much faster.\n\nTo achieve this balance, we use a small flip angle rather than a large one. If the flip angle is too large, the magnetization along the z-axis doesn’t have enough time to recover before the next excitation, and the signal from subsequent repetitions becomes weaker. By using a smaller flip angle and a short repetition time, or T-R, we can repeatedly excite and read out signals quickly, maintaining good image quality while minimizing scan duration. In short, three-dimensional gradient echo imaging sacrifices a bit of signal strength for a dramatic improvement in imaging speed. It is particularly useful for volumetric scans of the brain, heart, and other organs where time is critical.\n\nAnd if we push the concept even further, we arrive at echo planar imaging, which can acquire an entire image — or even a full volume — in just one or a few rapid readouts. Echo planar imaging is the foundation for real-time MRI and functional MRI studies, where both speed and temporal resolution are essential.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"radio-frequency pulse\", \"p\":\"uses\", \"o\":\"magnetization vector\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"radio-frequency pulse that flips the magnetization vector, M, by a small angle alpha, much less than ninety degrees.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radio-frequency pulse",
+        "p": "uses",
+        "o": "magnetization vector",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "radio-frequency pulse that flips the magnetization vector, M, by a small angle alpha, much less than ninety degrees."
+      }
+    ]
+  }
+}

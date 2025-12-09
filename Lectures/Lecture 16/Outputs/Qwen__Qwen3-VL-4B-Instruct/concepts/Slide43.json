@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide43",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:13:34.162127+00:00",
+  "text_length": 828,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWhen I visited companies or nuclear detector vendors, they often gave me these as small souvenirs—clear blocks that look just like glass. But these aren’t ordinary glass. They are specially manufactured scintillation crystals, the heart of gamma cameras.\n\nWhat makes them remarkable is that when an invisible gamma ray photon strikes the crystal, it produces a tiny flash of visible light. In other words, they convert high-energy radiation, which our eyes cannot see, into visible photons that we can detect.\n\nIf you continuously bombard the crystal with gamma rays, you’ll see flashes of light—very faint to the naked eye, but easily measurable with sensitive detectors. This conversion process is the critical first step in turning radioactive emissions inside the body into signals that we can ultimately form into an image.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"scintillation crystals\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"gamma rays\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"convert high-energy radiation, which our eyes cannot see, into visible photons that we can detect\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"flashes of visible light\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"turning radioactive emissions inside the body into signals that we can ultimately form into an image\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"They are specially manufactured scintillation crystals, the heart of gamma cameras.\",\n    \"when an invisible gamma ray photon strikes the crystal, it produces a tiny flash of visible light.\",\n    \"This conversion process is the critical first step in turning radioactive emissions inside the body into signals that we can ultimately form into an image.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "scintillation crystals",
+        "category": "instrumentation"
+      },
+      {
+        "term": "gamma rays",
+        "category": "physics"
+      },
+      {
+        "term": "convert high-energy radiation, which our eyes cannot see, into visible photons that we can detect",
+        "category": "physics"
+      },
+      {
+        "term": "turning radioactive emissions inside the body into signals that we can ultimately form into an image",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "They are specially manufactured scintillation crystals, the heart of gamma cameras.",
+      "when an invisible gamma ray photon strikes the crystal, it produces a tiny flash of visible light.",
+      "This conversion process is the critical first step in turning radioactive emissions inside the body into signals that we can ultimately form into an image."
+    ]
+  }
+}

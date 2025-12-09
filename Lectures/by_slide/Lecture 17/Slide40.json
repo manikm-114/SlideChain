@@ -1,0 +1,199 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide40",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide40.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide40.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "random correction",
+              "category": "signal_processing"
+            },
+            {
+              "term": "delay",
+              "category": "signal_processing"
+            },
+            {
+              "term": "probability",
+              "category": "mathematics"
+            },
+            {
+              "term": "gamma-ray activity",
+              "category": "physics"
+            },
+            {
+              "term": "random events",
+              "category": "signal_processing"
+            },
+            {
+              "term": "data processing",
+              "category": "data_processing"
+            },
+            {
+              "term": "quantitative results",
+              "category": "quality_metric"
+            }
+          ],
+          "evidence": [
+            "And for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.",
+            "By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn’t change that rate."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"random correction\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"delay\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"probability\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"gamma-ray activity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"random events\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"data processing\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"quantitative results\\\", \\\"category\\\": \\\"quality_metric\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"And for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\\", \\\"By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn’t change that rate.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"random correction\", \"category\": \"signal_processing\"}, {\"term\": \"delay\", \"category\": \"signal_processing\"}, {\"term\": \"probability\", \"category\": \"mathematics\"}, {\"term\": \"gamma-ray activity\", \"category\": \"physics\"}, {\"term\": \"random events\", \"category\": \"signal_processing\"}, {\"term\": \"data processing\", \"category\": \"data_processing\"}, {\"term\": \"quantitative results\", \"category\": \"quality_metric\"}], \"evidence\": [\"And for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\", \"By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn’t change that rate.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide40.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "random events",
+              "p": "depends_on",
+              "o": "gamma-ray activity",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"random events\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"gamma-ray activity\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.9, \\\"evidence\\\":\\\"the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"random events\", \"p\": \"depends_on\", \"o\": \"gamma-ray activity\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide40.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "random correction",
+              "category": "data_processing"
+            },
+            {
+              "term": "random events",
+              "category": "data_processing"
+            },
+            {
+              "term": "delay",
+              "category": "data_processing"
+            },
+            {
+              "term": "probability",
+              "category": "mathematics"
+            },
+            {
+              "term": "coincidence detection",
+              "category": "data_processing"
+            },
+            {
+              "term": "gamma-ray activity",
+              "category": "physics"
+            },
+            {
+              "term": "random coincidences",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "random correction",
+            "random events",
+            "delay",
+            "probability",
+            "coincidence detection",
+            "gamma-ray activity",
+            "random coincidences"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"random correction\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"random events\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"delay\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"probability\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"coincidence detection\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"gamma-ray activity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"random coincidences\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"random correction\\\",\\n    \\\"random events\\\",\\n    \\\"delay\\\",\\n    \\\"probability\\\",\\n    \\\"coincidence detection\\\",\\n    \\\"gamma-ray activity\\\",\\n    \\\"random coincidences\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"random correction\", \"category\": \"data_processing\"}, {\"term\": \"random events\", \"category\": \"data_processing\"}, {\"term\": \"delay\", \"category\": \"data_processing\"}, {\"term\": \"probability\", \"category\": \"mathematics\"}, {\"term\": \"coincidence detection\", \"category\": \"data_processing\"}, {\"term\": \"gamma-ray activity\", \"category\": \"physics\"}, {\"term\": \"random coincidences\", \"category\": \"data_processing\"}], \"evidence\": [\"random correction\", \"random events\", \"delay\", \"probability\", \"coincidence detection\", \"gamma-ray activity\", \"random coincidences\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide40.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "random correction",
+              "p": "uses",
+              "o": "delay",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "for each part of the detector, we introduce a delay"
+            },
+            {
+              "s": "random correction",
+              "p": "measures",
+              "o": "random events",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "you can then use the measured random events from the delayed window"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"random correction\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"delay\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"for each part of the detector, we introduce a delay\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"random correction\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"random events\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"you can then use the measured random events from the delayed window\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"delay\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"same probability\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"the probability of the random event with this result delay is the same as without the delay\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"random correction\", \"p\": \"uses\", \"o\": \"delay\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"for each part of the detector, we introduce a delay\"}, {\"s\": \"random correction\", \"p\": \"measures\", \"o\": \"random events\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"you can then use the measured random events from the delayed window\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide40.json",
+        "parsed": {
+          "term": "higher-quality, more quantitative results",
+          "category": "data_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T11:38:18.825919+00:00\", \"text_length\": 1042, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"random correction\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"delay\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"probability\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"random events\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detector\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"delayed window\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"random coincidence\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"gamma-ray activity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"random event contribution\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"true data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"higher-quality, more quantitative results\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"For random correction, this is a very clever idea.\\\",\\n    \\\"If it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay.\\\",\\n    \\\"By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray\", \"parsed\": {\"term\": \"higher-quality, more quantitative results\", \"category\": \"data_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide40.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "random events",
+              "p": "measures",
+              "o": "noise",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Random events introduce noise into your data."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:27:54.424108+00:00\", \"text_length\": 1042, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"random events\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"noise\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Random events introduce noise into your data.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"random events\", \"p\": \"measures\", \"o\": \"noise\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Random events introduce noise into your data.\"}]}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide40.json",
+        "parsed": {
+          "term": "This approach gives you higher-quality, more quantitative results.",
+          "category": "quality_metric"
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:13:16.913837+00:00\", \"text_length\": 1042, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"If you have random events being recorded, they introduce noise into your data.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"for each part of the detector, we introduce a delay.\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the probability of the random event with this result delay is the same as without the delay.\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the delay itself doesn't change that rate.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"you can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"This approach gives you higher-quality, more quantitative results.\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\\",\\n    \\\"If it’s a random coincidence, then the probability of the\", \"parsed\": {\"term\": \"This approach gives you higher-quality, more quantitative results.\", \"category\": \"quality_metric\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide40.json",
+        "parsed": {
+          "s": "Delayed window",
+          "p": "measures",
+          "o": "random events",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "You can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide40\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:20:29.877504+00:00\", \"text_length\": 1042, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd for random correction, this is a very clever idea. If you have random events being recorded, they introduce noise into your data. For usual data processing, these random events really complicate things. But we can address this purposely: for each part of the detector, we introduce a delay.\\n\\nIf it’s a random coincidence, then the probability of the random event with this result delay is the same as without the delay. This is the key statement—this is the important idea. By introducing a delay in the coincidence detection, the probability line for incident and delayed results is the same, because the random coincidences depend on the average gamma-ray activity, which is assumed to be more or less constant over time. The delay itself doesn't change that rate.\\n\\nYou can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data. This approach gives you higher-quality, more quantitative results. That’s the whole idea behind random correction\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Random events\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"noise into your data\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"For usual data processing, these random events really complicate things.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Random coincidences\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"average gamma-ray activity\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The delay itself doesn't change that rate.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Delayed window\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"random events\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"You can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Random correction\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"higher-quality, more quantitative\", \"parsed\": {\"s\": \"Delayed window\", \"p\": \"measures\", \"o\": \"random events\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"You can then use the measured random events from the delayed window to directly estimate and subtract out the random event contribution from your true data.\"]}}"
+      }
+    }
+  }
+}

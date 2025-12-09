@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"write data\",\n      \"p\": \"uses\",\n      \"o\": \"fopen\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To write data out, open a file in write mode using fopen.\"\n    },\n    {\n      \"s\": \"write data\",\n      \"p\": \"uses\",\n      \"o\": \"fprintf\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then use fprintf to format the output line\"\n    },\n    {\n      \"s\": \"write data\",\n      \"p\": \"uses\",\n      \"o\": \"fclose\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"once writing is done, make sure to close the file with fclose.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "write data",
+        "p": "uses",
+        "o": "fopen",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "To write data out, open a file in write mode using fopen."
+      },
+      {
+        "s": "write data",
+        "p": "uses",
+        "o": "fprintf",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Then use fprintf to format the output line"
+      },
+      {
+        "s": "write data",
+        "p": "uses",
+        "o": "fclose",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "once writing is done, make sure to close the file with fclose."
+      }
+    ]
+  }
+}

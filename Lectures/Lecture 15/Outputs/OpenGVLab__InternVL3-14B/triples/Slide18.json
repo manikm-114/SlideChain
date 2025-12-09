@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"iradon\", \"p\":\"uses\", \"o\":\"back-projection for parallel beam sinograms\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This function performs back-projection for parallel-beam sinograms\"},\n    {\"s\":\"iradon\", \"p\":\"can implement\", \"o\":\"filtered back-projection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"it can also carry out filtered back-projection if we choose\"},\n    {\"s\":\"iradon\", \"p\":\"produces\", \"o\":\"reconstructed image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"I is the reconstructed image, the output we want\"},\n    {\"s\":\"iradon\", \"p\":\"depends_on\", \"o\":\"sinogram\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"R is the sinogram, the input data we’ve collected\"},\n    {\"s\":\"iradon\", \"p\":\"depends_on\", \"o\":\"rotation angles\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"theta is the set of rotation",
+  "parsed": {
+    "s": "iradon",
+    "p": "depends_on",
+    "o": "sinogram",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "R is the sinogram, the input data we’ve collected"
+    ]
+  }
+}

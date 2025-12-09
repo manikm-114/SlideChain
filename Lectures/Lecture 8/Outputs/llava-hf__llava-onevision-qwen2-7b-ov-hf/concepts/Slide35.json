@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide35",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIf you’d like to explore these ideas further, MathWorks has some excellent tutorials and examples in its documentation.\n\nThis particular page walks through the relationship between linear and circular convolution in MATLAB. It explains the key conditions under which the two are equivalent, and shows how zero padding can be used to make circular convolution behave like linear convolution.\n\nYou’ll also find clear MATLAB examples here — creating vectors, padding them to the right length, applying the FFT, multiplying in the frequency domain, and using the inverse FFT to get back to the time domain.\nSo, if you want to reinforce what we’ve just covered or see it implemented step-by-step, this is a great place to start.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"FFT\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero padding\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"This particular page walks through the relationship between linear and circular convolution in MATLAB.\", \"It explains the key conditions under which the two are equivalent, and shows how zero padding can be used to make circular convolution behave like linear convolution.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "zero padding",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This particular page walks through the relationship between linear and circular convolution in MATLAB.",
+      "It explains the key conditions under which the two are equivalent, and shows how zero padding can be used to make circular convolution behave like linear convolution."
+    ]
+  }
+}

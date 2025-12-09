@@ -1,0 +1,17 @@
+Once we have a field gradient, we can apply an external rotating magnetic field to push the M vector at its resonant frequency — that is, its processional frequency.
+
+Now think back to the analogy from the previous lecture: remember the photograph of a lady pushing a rotating door? That’s the same idea. You have to push the door at just the right time to keep it moving smoothly. Similarly, you have to push the spins at just the right frequency to change their orientation.
+And even earlier, we watched a short video where the instructor explained how an MRI works in less than ten minutes. He said you simply send in an RF frequency signal. That RF signal, or RF pulse, is a form of electromagnetic wave. And electromagnetic waves are oscillating magnetic fields.
+
+So when you send in an RF pulse whose frequency is in resonance with the processional frequency of the spins, you are effectively pushing those tiny spinning tops — the protons — in a coordinated way. With each push, you tilt the magnetization vector a little more, and eventually you flip the M vector from its original orientation along the z-axis into one of the horizontal axes, like the x-axis or y-axis.
+
+Now, here’s the key: you don’t want to flip every proton in the body. You only want to flip the spins in a specific slice of tissue. To do that, you must use both the gradient field and the bandwidth of your RF pulse together.
+The frequency range of the RF pulse is centered at some frequency, call it omega-s, and it spans from omega-s minus delta-omega-s to omega-s plus delta-omega-s. So it has a certain bandwidth.
+
+In the time domain, this looks like a rectangular pulse — a signal that is “on” for a finite duration. When you take the Fourier transform, that rectangular pulse in the time domain becomes a sinc-shaped function in the frequency domain. So, in practice, even though you are sending an RF signal in the time domain that looks like a sinc function, in the frequency domain it corresponds to a rectangular function.
+
+This rectangular frequency band means that only those spins whose processional frequencies fall within that band will be excited. Now recall, because of the gradient field, the processional frequency depends on z-location. So different positions along the z-axis correspond to different resonance frequencies.
+Therefore, when you send in your RF pulse with its defined bandwidth, only the spins whose z-positions correspond to that frequency band will resonate and be flipped. Spins outside that band will not be affected — they simply won’t respond, because the RF pulse is not in resonance with them.
+
+So, the slice thickness directly corresponds to the frequency range of the RF pulse under the influence of the gradient field. If you make the bandwidth larger, the slice thickness increases. If you make the bandwidth smaller, the slice thickness decreases.
+To summarize: you apply a gradient field to make the processional frequency vary with z-location. Then you send in an RF pulse with a defined frequency band. Only those spins in the matching z-range — that slice — are excited and flipped. Everything outside remains untouched. That is how slice selection in MRI works

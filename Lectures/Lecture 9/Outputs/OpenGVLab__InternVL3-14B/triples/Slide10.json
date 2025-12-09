@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"circular convolution\",\n      \"p\": \"represents\",\n      \"o\": \"several copies in a row\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Here, with circular convolution, the situation is different. The signal is treated as if it repeats periodically — just like in our earlier example from Wikipedia. So instead of one top hand, we now have several copies in a row, as shown here with three hands.\"\n    },\n    {\n      \"s\": \"circular convolution\",\n      \"p\": \"depends_on\",\n      \"o\": \"wrapping-around effect\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That means parts of the signal from the end overlap with parts from the beginning. This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.\"\n    },\n    {\n      \"s\": \"circular convolution\",\n      \"p\": \"uses\",\n      \"o\": \"zero-padding\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If we don’t want those",
+  "parsed": {
+    "s": "circular convolution",
+    "p": "depends_on",
+    "o": "wrapping-around effect",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "That means parts of the signal from the end overlap with parts from the beginning. This wrapping-around effect is exactly what creates the edge overlaps we saw earlier."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slide_id": "Slide10",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, the very famous Huygens’ principle. This slide is to guide the idea. Once you have this idea clear, the different schemes for ultrasound scanning and beam forming with an array-type ultrasound transducer will become very clear to you. The so-called Huygens’ principle basically says: if you have a source—just a simple example—if you have a point source, it will generate a spherical wave. The wave will keep moving out, and at a certain time, you have a wavefront here.\n\nThink of the ultrasound wave: you have compressions and you have rarefactions. That boundary is the wavefront. The principle suggests that if you decompose the current wavefront into small elements, you get a small element here, a small element there—multiple small elements. Because the wavefield keeps vibrating—like an ultrasound wave—the small volume element keeps getting smaller and bigger, oscillating around a nominal volume; the pressure keeps changing, following a simple sinusoidal curve.\n\nBy this reasoning, if you view things individually, you isolate a small voxel—you see the voxel keep changing, vibrating, oscillating. You can think: OK, this voxel is a single, small, secondary ultrasound source—or for electromagnetic waves, a small secondary source. Treat that element as a source and ask: how do we predict or calculate the next wavefront?\n\nOne way is to solve the original wave equation and follow the whole propagation process. The other way—the Huygens way—is to forget the original source and say: at a given time, the current wavefront—shown here, A to A-prime—can be decomposed into many small segments. Each individual segment is regarded as a secondary small source. Each small source keeps changing, and each small source generates its own small spherical wave. The next wavefront is the superposition of all those secondary spherical waves added together, forming the new wavefront.\n\nSo this is Huygens’ principle. The current wavefront is decomposed into numerous small sources, and the next wavefront is computed from all these secondary sources. In words, we say: any current point on a wavefront is a new source—a secondary source. And all such new secondary sources, collectively, determine the future wavefront. All the subsequently generated waves added together will form the next wavefront. That is the idea.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Huygens’ principle\", \"category\": \"physics\"},\n    {\"term\": \"ultrasound wave\", \"category\": \"physics\"},\n    {\"term\": \"wavefront\", \"category\": \"physics\"},\n    {\"term\": \"secondary ultrasound source\", \"category\": \"physics\"},\n    {\"term\": \"secondary source\", \"category\": \"physics\"},\n    {\"term\": \"secondary spherical wave\", \"category\": \"physics\"},\n    {\"term\": \"superposition\", \"category\": \"mathematics\"},\n    {\"term\": \"secondary sources\", \"category\": \"physics\"},\n    {\"term\": \"wave equation\", \"category\": \"mathematics\"},\n    {\"term\": \"propagation process\", \"category\": \"physics\"},\n    {\"term\": \"decomposition\", \"category\": \"mathematics\"},\n    {\"term\": \"secondary wavefront\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"The principle suggests that if you decompose the current wavefront into small elements, you get a small element here, a small element there—multiple small elements.\", \"The next wavefront is the superposition of all those secondary spherical waves added together, forming the new wavefront.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Huygens’ principle",
+        "category": "physics"
+      },
+      {
+        "term": "ultrasound wave",
+        "category": "physics"
+      },
+      {
+        "term": "wavefront",
+        "category": "physics"
+      },
+      {
+        "term": "secondary ultrasound source",
+        "category": "physics"
+      },
+      {
+        "term": "secondary source",
+        "category": "physics"
+      },
+      {
+        "term": "secondary spherical wave",
+        "category": "physics"
+      },
+      {
+        "term": "superposition",
+        "category": "mathematics"
+      },
+      {
+        "term": "secondary sources",
+        "category": "physics"
+      },
+      {
+        "term": "wave equation",
+        "category": "mathematics"
+      },
+      {
+        "term": "propagation process",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The principle suggests that if you decompose the current wavefront into small elements, you get a small element here, a small element there-multiple small elements.",
+      "The next wavefront is the superposition of all those secondary spherical waves added together, forming the new wavefront."
+    ]
+  }
+}

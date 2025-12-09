@@ -1,0 +1,153 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "theta step"
+          },
+          {
+            "category": "data_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "data_processing",
+            "term": "angular views"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          }
+        ],
+        "evidence": [
+          "parameter called the theta step",
+          "sinogram becomes much coarser",
+          "lower resolution",
+          "many angular views",
+          "reconstruct an image"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "It means lower resolution."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "lower resolution",
+        "p": "reconstructs_with",
+        "s": "coarser sinogram"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "theta step"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "algorithm",
+            "term": "angular views"
+          },
+          {
+            "category": "algorithm",
+            "term": "fewer angles"
+          },
+          {
+            "category": "algorithm",
+            "term": "computation faster"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality suffers"
+          }
+        ],
+        "evidence": [
+          "The sinogram becomes much coarser.",
+          "The sinogram looks blocky, because we've skipped over many intermediate angles.",
+          "Fewer angles make the computation faster, but the image quality suffers."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "skipped over many intermediate angles"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "to get a high-resolution reconstruction, we want a small theta step, which gives us many angular views."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "many angular views",
+        "p": "produces",
+        "s": "a small theta step"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "theta step"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "angular information"
+          }
+        ],
+        "evidence": [
+          "The sinogram becomes much coarser. You can see it here for the square phantom: instead of smooth, continuous curves, the sinogram looks blocky, because we\u2019ve skipped over many intermediate angles.",
+          "So the takeaway is: to get a high-resolution reconstruction, we want a small theta step, which gives us many angular views. Fewer angles make the computation faster, but the image quality suffers."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

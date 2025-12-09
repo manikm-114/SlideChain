@@ -1,0 +1,9 @@
+So what does an ideal sampling filter look like?
+
+Let’s start in the frequency domain. If we want to keep only the part of the spectrum we care about, we can apply a rectangular window — often called a gate function. This simply means we multiply the spectrum by a box that passes certain frequencies and zeros out the rest. Everything outside the band is eliminated.
+
+Now here’s the important part: multiplication in the frequency domain corresponds to convolution in the spatial or time domain. So when we apply this gate in Fourier space, the corresponding operation in the spatial domain is convolution with the inverse Fourier transform of the rectangle. And that inverse transform is something we’ve seen before — it’s the sinc function.
+
+This sinc function has a sharp central peak and extends out forever with oscillating ripples. We say it has infinite support, and those ripples are often called ringing. So while the ideal filter works perfectly in theory, it’s not so practical in real applications. Why? Because we can’t build something with infinite extent. But conceptually, it’s extremely valuable — it helps us understand the limits of what’s possible in signal reconstruction.
+
+We’ll next look at what happens when we approximate this ideal.

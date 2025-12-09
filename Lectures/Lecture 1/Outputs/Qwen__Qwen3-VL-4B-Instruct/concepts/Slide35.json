@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:36:38.187836+00:00",
+  "text_length": 2371,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn addition to our course materials, I’d like to mention a particularly helpful supplementary resource that aligns well with the foundation we’re covering—especially Fourier transforms and linear systems.\n\nStanford University offers an excellent course titled 'EE261: The Fourier Transform and Its Applications'. It’s taught by Professor Brad Osgood, and the best part is that it is freely available online through Stanford’s SEE platform. You can access the full textbook there and watch high-quality lecture videos.\n\nNow, a quick word of caution: the Stanford course spans an entire semester. The book is over 400 pages long. Don’t feel overwhelmed. You absolutely do not need to cover all of it. Think of it as a reference companion to our course. In fact, for our purposes, reading even 80–100 pages from selected sections will be more than enough to reinforce your understanding.\n\nWhat makes this resource valuable is the clarity and consistency of its explanations and mathematical treatment. It builds the theory from the ground up, with elegant examples and a style that’s both rigorous and readable. If you ever find yourself puzzled by a concept I introduce—say, the derivation of the Fourier series, or the intuition behind convolution—this book can offer a second viewpoint. Sometimes, a slightly different presentation is all you need for clarity.\n\nHowever, please note that we will follow our own structured path in this course. For example, I introduce linear systems before Fourier transforms, because in imaging, systems thinking provides the conceptual grounding. The Stanford course takes the reverse order. Both are valid—but here, we start with linear systems to better prepare for their applications in imaging modalities like CT and MRI.\n\nPlease use this Stanford material as a valuable supplement, not a replacement. You’ll benefit most by following our course flow carefully and referring to the Stanford book only when you want to go deeper or review challenging topics.\n\nLastly, although I have reached out for formal permission, the material seems publicly accessible and openly shared for educational use. So, feel free to explore it from your own dorm room, your library, or anywhere you study.\n\nThis is an exciting time to learn these topics—tools like ChatGPT make it easier than ever to gain a deeper understanding. Let’s use them wisely.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"EE261: The Fourier Transform and Its Applications\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"Fourier transforms\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"linear systems\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"Fourier series\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"convolution\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"CT and MRI\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"ChatGPT\",\n      \"category\": \"ai_ml\"\n    }\n  ],\n  \"evidence\": [\n    \"Stanford University offers an excellent course titled 'EE261: The Fourier Transform and Its Applications'.\",\n    \"the foundation we’re covering—especially Fourier transforms and linear systems.\",\n    \"the derivation of the Fourier series, or the intuition behind convolution\",\n    \"in imaging modalities like CT and MRI\",\n    \"tools like ChatGPT make it easier than ever to gain a deeper understanding\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "EE261: The Fourier Transform and Its Applications",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transforms",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier series",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "CT and MRI",
+        "category": "modality"
+      },
+      {
+        "term": "ChatGPT",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "Stanford University offers an excellent course titled 'EE261: The Fourier Transform and Its Applications'.",
+      "the foundation we're covering-especially Fourier transforms and linear systems.",
+      "the derivation of the Fourier series, or the intuition behind convolution",
+      "in imaging modalities like CT and MRI",
+      "tools like ChatGPT make it easier than ever to gain a deeper understanding"
+    ]
+  }
+}

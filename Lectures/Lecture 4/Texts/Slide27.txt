@@ -1,0 +1,13 @@
+Let’s see another example — this time from medical imaging.
+Imagine you’re injecting a contrast agent, like iodine, into the bloodstream to highlight blood vessels in an X-ray image.
+Without contrast, the blood, vessels, and surrounding tissue can look very similar.But when you add contrast, the vessels light up more clearly, making them easier to detect and interpret.
+Now here’s the key part: as the iodine travels through the body, it moves along multiple paths.
+Some paths are fast — like major arteries. Others are slower — like capillaries or microvasculature.Each of these paths introduces a different delay before the contrast reaches the detector.
+If you could inject an ideal, instantaneous impulse of contrast — in other words, a perfect delta function —then what you would see is a collection of impulse responses, labeled here as H 1, H 2, H 3, and so on.
+
+Each of these responses corresponds to a different path, and each arrives at a different time.
+But in reality, injections are not perfect impulses. They take time.
+This means the actual contrast input is more spread out — and the measured output at the gamma camerabecomes a sum of all these delayed responses, weighted by how much contrast passes through each path.
+
+In other words, the system’s output is a convolution of the injected input with the system’s impulse response.
+This illustrates exactly why convolution is so important in medical imaging:it helps us model and interpret how signals — like contrast or radiation — travel through complex biological systems,and how we capture those signals with imaging devices like a gamma camera.

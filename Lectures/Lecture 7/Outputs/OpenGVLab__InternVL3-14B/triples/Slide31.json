@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sampling process\",\n      \"p\": \"uses\",\n      \"o\": \"uniform sampling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We take measurements at evenly spaced time intervals. This step is crucial, because without any prior knowledge about the signal, we don't know where we should sample more densely or more sparsely — so we just use uniform sampling.\"\n    },\n    {\n      \"s\": \"sampling process\",\n      \"p\": \"represents\",\n      \"o\": \"train of impulses\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We model this sampling process mathematically by multiplying the signal with a train of impulses — those red vertical lines spaced by delta t.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The original continuous signal, when transformed using the Fourier transform, gives us a spectrum — and here it's",
+  "parsed": {
+    "s": "sampling process",
+    "p": "represents",
+    "o": "train of impulses",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "We model this sampling process mathematically by multiplying the signal with a train of impulses - those red vertical lines spaced by delta t."
+    ]
+  }
+}

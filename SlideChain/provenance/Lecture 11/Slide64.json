@@ -1,0 +1,173 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "quality_metric",
+            "term": "SSIM"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "specificity"
+          }
+        ],
+        "evidence": [
+          "Use the MATLAB code",
+          "compute SSIM of the two photos",
+          "Compute sensitivity and specificity",
+          "Make an example so that sensitivity and specificity are 90% and 80% respectively"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "You will use the MATLAB code available online to compute the Structural Similarity Index, or SSIM, between two images.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB code",
+            "p": "uses",
+            "s": "homework"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Your task is two-fold. First, compute SSIM for a pair of images-either the ones shown here or another pair of your choice.",
+            "modalities": [
+              "text"
+            ],
+            "o": "SSIM",
+            "p": "measures",
+            "s": "homework"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "design an example where sensitivity is 90% and specificity is 80%, and show your calculations.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sensitivity",
+            "p": "measures",
+            "s": "homework"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "design an example where sensitivity is 90% and specificity is 80%, and show your calculations.",
+            "modalities": [
+              "text"
+            ],
+            "o": "specificity",
+            "p": "measures",
+            "s": "homework"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "medical image quality"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "perceptual metric"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "\u2022 Compute sensitivity and specificity"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "sensitivity and specificity",
+        "p": "measures",
+        "s": "Compute sensitivity and specificity"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "quality_metric",
+            "term": "SSIM"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality metrics"
+          },
+          {
+            "category": "quality_metric",
+            "term": "diagnostic performance measures"
+          },
+          {
+            "category": "quality_metric",
+            "term": "perceptual metric"
+          },
+          {
+            "category": "signal_processing",
+            "term": "luminance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "contrast"
+          },
+          {
+            "category": "signal_processing",
+            "term": "structure"
+          },
+          {
+            "category": "quality_metric",
+            "term": "sensitivity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "specificity"
+          }
+        ],
+        "evidence": [
+          "You will use the MATLAB code available online to compute the Structural Similarity Index, or SSIM, between two images.",
+          "SSIM is a perceptual metric that compares luminance, contrast, and structure."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "SSIM is a perceptual metric that compares luminance, contrast, and structure.",
+            "modalities": [
+              "image"
+            ],
+            "o": "image",
+            "p": "measures",
+            "s": "SSIM"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide64.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide64.txt"
+  },
+  "slide_id": "Slide64"
+}

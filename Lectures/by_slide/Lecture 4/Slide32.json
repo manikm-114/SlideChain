@@ -1,0 +1,201 @@
+{
+  "lecture": "Lecture 4",
+  "slide_id": "Slide32",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide32.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide32.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise-defined function",
+              "category": "mathematics"
+            },
+            {
+              "term": "foundational in signal processing and medical imaging",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Putting everything together, we now have the complete solution.",
+            "It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions - each one flipped, shifted, multiplied, and then integrated, step by step.",
+            "It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise-defined function\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"integral\\\", \\\"category\\\": \\\"calculus\\\"},\\n    {\\\"term\\\": \\\"area under the curve\\\", \\\"category\\\": \\\"calculus\\\"},\\n    {\\\"term\\\": \\\"accumulation\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"flip, shift, multiply, integrate\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"geometric and calculus blend\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"foundational in signal processing and medical imaging\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Putting everything together, we now have the complete solution.\\\", \\\"It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions — each one flipped, shifted, multiplied, and then integrated, step by step.\\\", \\\"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise-defined function\", \"category\": \"mathematics\"}, {\"term\": \"foundational in signal processing and medical imaging\", \"category\": \"signal_processing\"}], \"evidence\": [\"Putting everything together, we now have the complete solution.\", \"It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions - each one flipped, shifted, multiplied, and then integrated, step by step.\", \"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide32.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"convolution\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"continuous function\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Each case — from full overlap, to partial overlap, to no overlap — contributes a segment of the final output. This leads to a piecewise-defined function, expressed as follows:\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide32.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise-defined function",
+              "category": "mathematics"
+            },
+            {
+              "term": "continuous convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "accumulating the area under the product of two functions",
+              "category": "mathematics"
+            },
+            {
+              "term": "flipped, shifted, multiplied, and then integrated",
+              "category": "mathematics"
+            },
+            {
+              "term": "signal processing",
+              "category": "signal_processing"
+            },
+            {
+              "term": "medical imaging",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "convolution result",
+            "piecewise definition",
+            "continuous convolution",
+            "accumulating the area under the product of two functions",
+            "flipped, shifted, multiplied, and then integrated",
+            "signal processing and medical imaging"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise-defined function\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"continuous convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"accumulating the area under the product of two functions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"flipped, shifted, multiplied, and then integrated\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"signal processing\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"convolution result\\\",\\n    \\\"piecewise definition\\\",\\n    \\\"continuous convolution\\\",\\n    \\\"accumulating the area under the product of two functions\\\",\\n    \\\"flipped, shifted, multiplied, and then integrated\\\",\\n    \\\"signal processing and medical imaging\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise-defined function\", \"category\": \"mathematics\"}, {\"term\": \"continuous convolution\", \"category\": \"signal_processing\"}, {\"term\": \"accumulating the area under the product of two functions\", \"category\": \"mathematics\"}, {\"term\": \"flipped, shifted, multiplied, and then integrated\", \"category\": \"mathematics\"}, {\"term\": \"signal processing\", \"category\": \"signal_processing\"}, {\"term\": \"medical imaging\", \"category\": \"signal_processing\"}], \"evidence\": [\"convolution result\", \"piecewise definition\", \"continuous convolution\", \"accumulating the area under the product of two functions\", \"flipped, shifted, multiplied, and then integrated\", \"signal processing and medical imaging\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide32.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "convolution",
+              "p": "represents",
+              "o": "piecewise-defined function",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "This leads to a piecewise-defined function, expressed as follows:"
+            },
+            {
+              "s": "convolution",
+              "p": "produces",
+              "o": "smooth, continuous curve",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "When we plot these expressions, we get a smooth, continuous curve"
+            },
+            {
+              "s": "convolution",
+              "p": "depends_on",
+              "o": "accumulating the area under the product of two functions",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"convolution\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"piecewise-defined function\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"This leads to a piecewise-defined function, expressed as follows:\\\"},\\n    {\\\"s\\\":\\\"convolution\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"smooth, continuous curve\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"When we plot these expressions, we get a smooth, continuous curve\\\"},\\n    {\\\"s\\\":\\\"convolution\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"accumulating the area under the product of two functions\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"convolution\", \"p\": \"represents\", \"o\": \"piecewise-defined function\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"This leads to a piecewise-defined function, expressed as follows:\"}, {\"s\": \"convolution\", \"p\": \"produces\", \"o\": \"smooth, continuous curve\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"When we plot these expressions, we get a smooth, continuous curve\"}, {\"s\": \"convolution\", \"p\": \"depends_on\", \"o\": \"accumulating the area under the product of two functions\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide32.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "piecewise-defined function",
+              "category": "mathematics"
+            },
+            {
+              "term": "continuous convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "geometry and calculus",
+              "category": "mathematics"
+            },
+            {
+              "term": "signal processing",
+              "category": "signal_processing"
+            },
+            {
+              "term": "medical imaging",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "This example gives us a complete, mathematical walkthrough of continuous convolution",
+            "It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions",
+            "It's a powerful blend of geometry and calculus, and it's absolutely foundational in signal processing and medical imaging"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T21:53:24.598927+00:00\", \"text_length\": 1554, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"piecewise-defined function\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"continuous convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"accumulation of area\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"flipped, shifted, multiplied, and integrated\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"geometry and calculus\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"signal processing\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This example gives us a complete, mathematical walkthrough of continuous convolution\\\",\\n    \\\"It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions\\\",\\n    \\\"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"piecewise-defined function\", \"category\": \"mathematics\"}, {\"term\": \"continuous convolution\", \"category\": \"signal_processing\"}, {\"term\": \"geometry and calculus\", \"category\": \"mathematics\"}, {\"term\": \"signal processing\", \"category\": \"signal_processing\"}, {\"term\": \"medical imaging\", \"category\": \"signal_processing\"}], \"evidence\": [\"This example gives us a complete, mathematical walkthrough of continuous convolution\", \"It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions\", \"It's a powerful blend of geometry and calculus, and it's absolutely foundational in signal processing and medical imaging\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide32.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T22:44:09.615466+00:00\", \"text_length\": 1554, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Whole Solution\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim subject>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide32.json",
+        "parsed": {
+          "term": "geometry and calculus",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T23:08:56.701774+00:00\", \"text_length\": 1554, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"whole solution\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"piecewise-defined function\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"convolution result\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"overlap between f of t and g of t\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"area under the product of two functions\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"flipped, shifted, multiplied, and then integrated\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"smooth, continuous curve\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"bump\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"continuous convolution\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"signal processing and medical imaging\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"geometry and calculus\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\", \"parsed\": {\"term\": \"geometry and calculus\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide32.json",
+        "parsed": {
+          "s": "y(t) = f(t) * g(t)",
+          "p": "produces",
+          "o": "a piecewise-defined function",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.95,
+          "evidence": [
+            "The slide says: 'This leads to a piecewise-defined function, expressed as follows: y of t equals ...'."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide32\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T23:15:40.873899+00:00\", \"text_length\": 1554, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\\nWe’ve carefully stepped through five distinct intervals,\\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\\nPutting everything together, we now have the complete solution.\\n\\nEach case — from full overlap, to partial overlap, to no overlap —\\u000bcontributes a segment of the final output.\\n\\nThis leads to a piecewise-defined function, expressed as follows:\\ny of t equals 0,          for t less than –2\\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\\ny of t equals 6,             for t between 0 and 2\\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\\ny of t equals 0,          for t greater than or equal to 4\\nWhen we plot these expressions, we get a smooth, continuous curve —\\u000bit rises, flattens out in the middle, and then gradually falls again.\\u000bIt forms a kind of bump, which is exactly what we expect\\u000bas g of t slides over and past f of t.\\n\\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\\nIt beautifully demonstrates how convolution is built:\\u000bby accumulating the area under the product of two functions —\\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\\nIt’s a powerful blend of geometry and calculus,\\u000band it’s absolutely foundational in signal processing and medical imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"y(t) = f(t) * g(t)\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the whole solution\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"The slide explicitly states: 'y(t) = f(t) * g(t) = { ... }' and labels it 'Whole Solution'.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"y(t) = f(t) * g(t)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"a piecewise-defined function\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"The slide says: 'This leads to a piecewise-defined function, expressed as follows: y of t equals ...'.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"y(t) = f(t) * g(t)\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"a smooth, continuous curve\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\", \"parsed\": {\"s\": \"y(t) = f(t) * g(t)\", \"p\": \"produces\", \"o\": \"a piecewise-defined function\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.95, \"evidence\": [\"The slide says: 'This leads to a piecewise-defined function, expressed as follows: y of t equals ...'.\"]}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"optical systems\",\n      \"p\": \"uses\",\n      \"o\": \"lenses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here we can see some examples of actual lenses used in optical systems.\"\n    },\n    {\n      \"s\": \"lenses\",\n      \"p\": \"depends_on\",\n      \"o\": \"light refraction and focusing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Each type has a specific purpose, but all follow the same physical principles of light refraction and focusing.\"\n    },\n    {\n      \"s\": \"imaging technology\",\n      \"p\": \"depends_on\",\n      \"o\": \"optical principles\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Everything from microscopes to cameras to telescopes depends on these very same ideas of ray tracing and lens design.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "optical systems",
+        "p": "uses",
+        "o": "lenses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Here we can see some examples of actual lenses used in optical systems."
+      },
+      {
+        "s": "lenses",
+        "p": "depends_on",
+        "o": "light refraction and focusing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Each type has a specific purpose, but all follow the same physical principles of light refraction and focusing."
+      },
+      {
+        "s": "imaging technology",
+        "p": "depends_on",
+        "o": "optical principles",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Everything from microscopes to cameras to telescopes depends on these very same ideas of ray tracing and lens design."
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+Up to now, we’ve mostly talked about sampling in the time domain. But we can also sample directly in the Fourier domain.
+
+Let’s start with the Fourier transform of our signal, f-hat of u. If we multiply this spectrum by a train of delta functions in the frequency domain — just like we did earlier in the time domain — we get a sampled version of the spectrum. That means we only keep its values at certain frequency points, which we can label as u-zero, u-one, all the way up to u (N minus 1).
+Here, the spacing between these frequency samples is 1 over capital T, where capital T is the period in the time domain. The index m runs from zero to N minus one, just like it did in the time-domain case. And the total number of samples in the frequency domain is the same as in the time domain — both equal to capital N.
+
+Mathematically, we can write the sampled spectrum at position u m as a sum over all the time-domain samples f of n over P, multiplied by a complex exponential. The exponent has a nice symmetry: it’s e to the power of minus j, 2 pi, n times m, divided by capital N.
+
+This symmetry is important — it shows that sampling in the Fourier domain has exactly the same mathematical structure as sampling in the time domain. The formulas look almost identical, just with the roles of time and frequency swapped.
+
+This parallel is one of the reasons the discrete Fourier transform is so elegant — it’s the same process, whether you’re thinking in terms of time samples or frequency samples.

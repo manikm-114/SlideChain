@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T05:37:20.089466+00:00",
+  "text_length": 625,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nYou may remember this TED-Ed video, “How X-rays See Through Your Skin,” which I showed you earlier. When I first shared it, it already had a large number of views, and since then, the count has only grown. That tells you how many people around the world are curious about the history and the science of X-rays.\n\nIt’s a short, engaging explanation of how X-rays work, and I encourage you to watch it again after today’s lecture. With the background you now have, you may notice details you didn’t fully appreciate before. Revisiting resources like this, once you have more context, is a great way to deepen your understanding.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"X-rays\", \"category\": \"physics\"},\n    {\"term\": \"history\", \"category\": \"history\"},\n    {\"term\": \"science\", \"category\": \"science\"},\n    {\"term\": \"how X-rays work\", \"category\": \"physics\"},\n    {\"term\": \"TED-Ed video\", \"category\": \"education\"},\n    {\"term\": \"curious\", \"category\": \"education\"},\n    {\"term\": \"engaging\", \"category\": \"education\"},\n    {\"term\": \"details\", \"category\": \"education\"},\n    {\"term\": \"revisiting\", \"category\": \"education\"},\n    {\"term\": \"deeper understanding\", \"category\": \"education\"}\n  ],\n  \"evidence\": [\"It’s a short, engaging explanation of how X-rays work, and I encourage you to watch it again after today’s lecture. With the background you now have, you may notice details you didn’t fully appreciate before. Revisiting resources like this, once you have more context, is a great way to deepen your understanding.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-rays",
+        "category": "physics"
+      },
+      {
+        "term": "how X-rays work",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "It's a short, engaging explanation of how X-rays work, and I encourage you to watch it again after today's lecture. With the background you now have, you may notice details you didn't fully appreciate before. Revisiting resources like this, once you have more context, is a great way to deepen your understanding."
+    ]
+  }
+}

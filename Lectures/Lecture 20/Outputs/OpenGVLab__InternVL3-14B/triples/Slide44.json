@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"hybrid imaging system\", \"p\":\"uses\", \"o\":\"permanent magnetic field\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\"},\n    {\"s\":\"system\", \"p\":\"produces\", \"o\":\"MRI projection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\"},\n    {\"s\":\"system\", \"p\":\"produces\", \"o\":\"X-ray projection\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\"},\n    {\"s\":\"system\", \"p\":\"reconstructs_with\", \"o\":\"CT–MRI fusion\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\"}\n  ]",
+  "parsed": {
+    "s": "system",
+    "p": "reconstructs_with",
+    "o": "CT-MRI fusion",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "By rotating the system around the patient, you can reconstruct the images together - effectively achieving CT-MRI fusion in a single setup."
+    ]
+  }
+}

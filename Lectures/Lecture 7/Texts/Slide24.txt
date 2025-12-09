@@ -1,0 +1,10 @@
+Now let’s see why we’re often better off working in the frequency domain.
+Suppose we start with a nicely concentrated spectrum — something like the narrow peak shown on the left. This means our signal in the spatial domain is smooth and well-behaved.
+
+Now, when we sample the signal — which, in the frequency domain, corresponds to a convolution with a delta train — we generate copies of this spectrum. These appear periodically across the frequency axis. You can see a central copy and two others on either side.
+If the original spectrum is narrow enough, these copies won’t overlap — and that’s a key idea. No overlap means no aliasing. That’s good news.
+
+In this case, we can use a low-pass filter to isolate the central copy and discard the rest. This makes it possible to perfectly reconstruct the original signal from its samples.
+
+That’s why frequency domain analysis is so powerful — it gives us a clear way to understand, diagnose, and even fix sampling-related problems. And it’s where the idea of an ideal sampling filter comes in. This filter selects only what we need and suppresses what we don’t.
+We’ll explore this concept even further as we continue.

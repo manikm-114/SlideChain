@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T16:03:42.849979+00:00",
+  "text_length": 1509,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThat’s why next, we’re going to focus on Optical Coherence Tomography, or OCT — the green section in our outline.\u000bOCT is one of the most important and practically useful techniques in optical imaging. If you’ve been following the flow of this lecture — from optical microscopy to confocal microscopy — OCT is the next logical step. The last two topics in this lecture are more research-oriented, but OCT is something you’ll see everywhere, from biology labs to hospitals.\n\nSo what makes OCT different from the previous techniques? Well, if you think about it physically, traditional or confocal microscopy uses light to illuminate a sample and then collects the reflected or emitted light. But conceptually, it treats light as particles, or photons — bouncing around, scattering, and being absorbed.\n\nIn OCT, we take a different approach. Here, we treat light as a wave — a coherent electromagnetic wave, like a laser beam. This shift in perspective is key. Because once you treat light as a wave, you can use interference — the way waves combine when they meet — to extract incredibly fine details about the structure of the tissue.\n\nThis coherence-based approach allows OCT to perform precision measurements of distance and structure on the order of micrometers — even smaller than the wavelength of light itself. So, if confocal microscopy gives us sharp 2D optical sections, OCT goes further. It lets us measure depth and reconstruct 3D images of tissue layers, much like an optical version of ultrasound.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Optical Coherence Tomography\",\n      \"p\": \"measures\",\n      \"o\": \"distance and structure on the order of micrometers\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"This coherence-based approach allows OCT to perform precision measurements of distance and structure on the order of micrometers — even smaller than the wavelength of light itself.\"\n    },\n    {\n      \"s\": \"Optical Coherence Tomography\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"3D images of tissue layers\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"OCT lets us measure depth and reconstruct 3D images of tissue layers, much like an optical version of ultrasound.\"\n    },\n    {\n      \"s\": \"Optical Coherence Tomography\",\n      \"p\": \"uses\",\n      \"o\": \"coherent electromagnetic wave\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\":",
+  "parsed": {
+    "s": "Optical Coherence Tomography",
+    "p": "reconstructs_with",
+    "o": "3D images of tissue layers",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "OCT lets us measure depth and reconstruct 3D images of tissue layers, much like an optical version of ultrasound."
+    ]
+  }
+}

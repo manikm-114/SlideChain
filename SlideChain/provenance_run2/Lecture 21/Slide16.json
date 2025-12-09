@@ -1,0 +1,87 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "power"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The particle velocity in the z direction u_z is given by the time derivative of the particle displacement: u_z = dW/dt",
+            "modalities": [
+              "text"
+            ],
+            "o": "displacement",
+            "p": "measures",
+            "s": "particle velocity"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "If you multiply pressure (which is force per area) by velocity (which is displacement over time), what you get is power per unit area, and that\u2019s exactly what intensity represents",
+            "modalities": [
+              "text"
+            ],
+            "o": "power per unit area",
+            "p": "represents",
+            "s": "intensity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "rate of work"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The particle velocity in the z direction u_z is given by the time derivative of the particle displacement.",
+            "modalities": [
+              "text"
+            ],
+            "o": "particle velocity",
+            "p": "measures",
+            "s": "velocity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "velocity, u, is displacement per time"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The pressure p, measured in Pa, of the ultrasound wave at a particular point in the z direction is given by"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the pressure of the ultrasound wave at a particular point in the z direction",
+        "p": "measures",
+        "s": "p"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "power density"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

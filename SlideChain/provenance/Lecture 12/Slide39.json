@@ -1,0 +1,110 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray attenuation coefficient"
+          },
+          {
+            "category": "physics",
+            "term": "photoelectric effect"
+          },
+          {
+            "category": "physics",
+            "term": "Compton scattering"
+          },
+          {
+            "category": "modality",
+            "term": "dual-energy CT"
+          },
+          {
+            "category": "modality",
+            "term": "material-specific information"
+          },
+          {
+            "category": "modality",
+            "term": "two X-ray spectra"
+          }
+        ],
+        "evidence": [
+          "attenuation comes from two parts: one part is the photoelectric effect, and the other part is Compton scattering",
+          "the photoelectric effect is very strongly dependent on energy",
+          "Compton scattering term",
+          "Klein-Nishina function",
+          "foundation of dual-energy CT",
+          "we can get material-specific information",
+          "using two X-ray spectra"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The Compton scattering term, on the other hand, has a more gradual dependence on energy. It comes from what is called the Klein-Nishina function, which describes how photons scatter off electrons."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "how photons scatter off electrons",
+        "p": "describes",
+        "s": "Klein-Nishina function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "material-specific information"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The photoelectric effect is very strongly dependent on energy. In fact, as the X-ray energy increases, the contribution from the photoelectric effect drops very quickly - that's why low-energy X-rays are absorbed much more.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray energy",
+            "p": "depends_on",
+            "s": "photoelectric effect"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "we can predict how the material would behave at any other energy"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "bone"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The main idea is that attenuation comes from two parts: one part is the photoelectric effect, and the other part is Compton scattering. The photoelectric effect is very strongly dependent on energy.",
+            "modalities": [
+              "text"
+            ],
+            "o": "energy",
+            "p": "depends_on",
+            "s": "X-ray attenuation coefficient"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide39.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide39.txt"
+  },
+  "slide_id": "Slide39"
+}

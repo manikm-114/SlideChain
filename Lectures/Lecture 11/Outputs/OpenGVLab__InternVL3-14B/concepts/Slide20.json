@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"contrast comparison\", \"category\": \"signal_processing\"},\n    {\"term\": \"standard deviation\", \"category\": \"mathematics\"},\n    {\"term\": \"dynamic range\", \"category\": \"signal_processing\"},\n    {\"term\": \"contrast masking\", \"category\": \"signal_processing\"},\n    {\"term\": \"structural similarity\", \"category\": \"signal_processing\"},\n    {\"term\": \"human visual system\", \"category\": \"biology\"}\n  ],\n  \"evidence\": [\n    \"The second component of SSIM is the contrast comparison.\",\n    \"We use the standard deviation of pixel values — sigma-X for image X and sigma-Y for image Y.\",\n    \"C2 is defined as K2 times L squared, where L is the dynamic range of the image.\",\n    \"The formula reflects this effect, sometimes called contrast masking.\",\n    \"So contrast is the second pillar of structural similarity — it ensures that two images not only have the same average brightness but also the same level of variation around that average.\",\n    \"This is consistent with the contrast-masking feature of the HVS.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "contrast comparison",
+        "category": "signal_processing"
+      },
+      {
+        "term": "standard deviation",
+        "category": "mathematics"
+      },
+      {
+        "term": "dynamic range",
+        "category": "signal_processing"
+      },
+      {
+        "term": "contrast masking",
+        "category": "signal_processing"
+      },
+      {
+        "term": "structural similarity",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The second component of SSIM is the contrast comparison.",
+      "We use the standard deviation of pixel values - sigma-X for image X and sigma-Y for image Y.",
+      "C2 is defined as K2 times L squared, where L is the dynamic range of the image.",
+      "The formula reflects this effect, sometimes called contrast masking.",
+      "So contrast is the second pillar of structural similarity - it ensures that two images not only have the same average brightness but also the same level of variation around that average.",
+      "This is consistent with the contrast-masking feature of the HVS."
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fast Fourier Transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "algorithm",
+            "term": "direct method"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time domain"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT-based method"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "mathematics",
+            "term": "convolution theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          }
+        ],
+        "evidence": [
+          "compute convolution using the Fast Fourier Transform, or FFT",
+          "direct method - the one we practiced in class",
+          "switch to the frequency domain using the FFT",
+          "MATLAB approach",
+          "convolution theorem",
+          "FFT-based convolution actually performs circular convolution",
+          "FFT usage"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Finally, apply the inverse FFT to that product to return to the time domain.",
+            "modalities": [
+              "text"
+            ],
+            "o": "convolution in the time domain",
+            "p": "produces",
+            "s": "FFT-based convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This works because of the convolution theorem - it says convolution in the time domain is equivalent to multiplication in the frequency domain.",
+            "modalities": [
+              "text"
+            ],
+            "o": "convolution theorem",
+            "p": "depends_on",
+            "s": "FFT-based convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "discrete Fourier analysis"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "about n log n operations"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fast Fourier Transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT-based convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "direct convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "periodic"
+          }
+        ],
+        "evidence": [
+          "Let\u2019s look at our first example: how to compute convolution using the Fast Fourier Transform, or FFT.",
+          "If you compare the results from the direct method and the FFT-based method in MATLAB, you\u2019ll see they match exactly. The key difference is efficiency: Direct convolution: about N square operations. FFT-based convolution: about n log n operations - much faster for large n."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide31.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide31.txt"
+  },
+  "slide_id": "Slide31"
+}

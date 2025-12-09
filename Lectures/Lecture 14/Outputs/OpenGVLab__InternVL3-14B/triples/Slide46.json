@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide46",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"effective dose equivalent\", \"p\":\"represents\", \"o\":\"biological risk\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This calculation is summarized by a formula sometimes noted as equation 1.30 in radiation safety literature.\"},\n    {\"s\":\"absorbed dose\", \"p\":\"measures\", \"o\":\"energy per unit mass of tissue\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The absorbed dose is a physical measurement of energy per unit mass of tissue, expressed in grays.\"},\n    {\"s\":\"quality factor (QF)\", \"p\":\"accounts for\", \"o\":\"biological impact of different radiation types\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To account for this, a quality factor, QF, is applied to quantify the biological impact of different radiation types.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "effective dose equivalent",
+        "p": "represents",
+        "o": "biological risk",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This calculation is summarized by a formula sometimes noted as equation 1.30 in radiation safety literature."
+      },
+      {
+        "s": "absorbed dose",
+        "p": "measures",
+        "o": "energy per unit mass of tissue",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The absorbed dose is a physical measurement of energy per unit mass of tissue, expressed in grays."
+      }
+    ]
+  }
+}

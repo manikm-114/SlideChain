@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"function\",\n      \"p\": \"represents\",\n      \"o\": \"sum of impulses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"imagine it as a sum of impulses\"\n    },\n    {\n      \"s\": \"continuous function\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"train of delta functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"any continuous function can be viewed as the convolution of that function with a train of delta functions\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "function",
+        "p": "represents",
+        "o": "sum of impulses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "imagine it as a sum of impulses"
+      },
+      {
+        "s": "continuous function",
+        "p": "reconstructs_with",
+        "o": "train of delta functions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "any continuous function can be viewed as the convolution of that function with a train of delta functions"
+      }
+    ]
+  }
+}

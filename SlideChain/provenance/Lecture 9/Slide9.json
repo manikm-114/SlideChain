@@ -1,0 +1,128 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "symmetric"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Next, we perform a convolution using MATLAB\u2019s built-in conv function",
+            "modalities": [
+              "text"
+            ],
+            "o": "conv function",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "What do we see? A clean triangular shape.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "clean triangular shape",
+            "p": "produces",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "signal_processing",
+            "term": "conv function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "finite sequences"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ramps"
+          },
+          {
+            "category": "signal_processing",
+            "term": "symmetric"
+          },
+          {
+            "category": "mathematics",
+            "term": "multiplying and summing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "overlapping parts"
+          },
+          {
+            "category": "data_processing",
+            "term": "visualize"
+          }
+        ],
+        "evidence": [
+          "A clean triangular shape. This is exactly what we expect when we linearly convolve two finite sequences that look like ramps in opposite directions. The convolution produces a sequence that starts small, rises to a peak - here at the center - and then falls symmetrically."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "starts small, rises to a peak - here at the center - and then falls symmetrically"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "We start by defining two discrete signals - or vectors in MATLAB - x and h. In this case: h equals 1,2,3,4,5"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a discrete signal",
+        "p": "represents",
+        "s": "h=[1 2 3 4 5];"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "symmetrically"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "MATLAB makes it easy to visualize.",
+            "modalities": [
+              "text"
+            ],
+            "o": "convolution",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

@@ -1,0 +1,145 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "gradient field"
+          },
+          {
+            "category": "physics",
+            "term": "resonance frequencies"
+          },
+          {
+            "category": "signal_processing",
+            "term": "RF pulse"
+          },
+          {
+            "category": "physics",
+            "term": "slice thickness"
+          },
+          {
+            "category": "physics",
+            "term": "z-range"
+          },
+          {
+            "category": "modality",
+            "term": "slice selection"
+          }
+        ],
+        "evidence": [
+          "The gradient field creates a range of resonance frequencies along the z-axis.",
+          "When you send an RF pulse with a defined frequency range, only the spins within that frequency range - and therefore within a specific z-range - are excited.",
+          "That z-range corresponds to the slice thickness.",
+          "So this is how we select a slice in MRI."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "The gradient field creates a range of resonance frequencies along the z-axis"
+          },
+          {
+            "category": "modality",
+            "term": "That z-range corresponds to the slice thickness"
+          },
+          {
+            "category": "modality",
+            "term": "So this is how we select a slice in MRI"
+          }
+        ],
+        "evidence": [
+          "Graphically, we can show this as you see on the slide.",
+          "That z-range corresponds to the slice thickness. So this is how we select a slice in MRI.",
+          "What we've explained here is the principle for slice selection along the z-axis."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The gradient field creates a range of resonance frequencies along the z-axis.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "range of resonance frequencies along the z-axis",
+            "p": "produces",
+            "s": "gradient field"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "That z-range corresponds to the slice thickness.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "z-range",
+            "p": "represents",
+            "s": "slice thickness"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "slice selection"
+          },
+          {
+            "category": "modality",
+            "term": "z-axis"
+          },
+          {
+            "category": "signal_processing",
+            "term": "RF pulse"
+          },
+          {
+            "category": "physics",
+            "term": "resonance frequencies"
+          },
+          {
+            "category": "physics",
+            "term": "gradient field"
+          },
+          {
+            "category": "signal_processing",
+            "term": "z-range"
+          },
+          {
+            "category": "modality",
+            "term": "slice thickness"
+          }
+        ],
+        "evidence": [
+          "The gradient field creates a range of resonance frequencies along the z-axis.",
+          "When you send an RF pulse with a defined frequency range, only the spins within that frequency range - and therefore within a specific z-range - are excited.",
+          "So this is how we select a slice in MRI.",
+          "What we\u2019ve explained here is the principle for slice selection along the z-axis."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

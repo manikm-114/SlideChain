@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide23",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s apply the same idea in the continuous case.\nAgain, you’re given the system’s response to a delta function, which we call h of t.\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\nNext, we scale the input by x of tau.\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\nFinally, to build the full output for a general input signal,\u000bwe integrate over all time — summing these scaled and shifted responses.\nThis gives us the continuous-time convolution integral:\n\nYou can think of this as collecting all the weighted impulse responses across time,\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\nThis is how linear, shift-invariant systems behave in continuous time —\u000band this operation, convolution, lies at the heart of modeling and understanding them.\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"shift-invariance\", \"category\": \"signal_processing\"},\n    {\"term\": \"linearity\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"weighted impulse responses\", \"category\": \"signal_processing\"},\n    {\"term\": \"continuous-time convolution integral\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way — that’s shift-invariance.\", \"Because the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\", \"To build the full output for a general input signal, we integrate over all time — summing these scaled and shifted responses.\", \"This is how linear, shift-invariant systems behave in continuous time — and this operation, convolution, lies at the heart of modeling and understanding them.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "shift-invariance",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "weighted impulse responses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous-time convolution integral",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way - that’s shift-invariance.",
+      "Because the system is linear, the output also gets scaled - giving us x of tau times h of t minus tau.",
+      "To build the full output for a general input signal, we integrate over all time - summing these scaled and shifted responses.",
+      "This is how linear, shift-invariant systems behave in continuous time - and this operation, convolution, lies at the heart of modeling and understanding them."
+    ]
+  }
+}

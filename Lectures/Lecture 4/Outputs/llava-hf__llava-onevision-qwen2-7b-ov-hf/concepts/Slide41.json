@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide41",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe can even prove these properties. I won’t go through the full proof now, but it follows directly from how convolution is defined.\n\nHere, we start with the standard convolution definition:\u000by of n equals the sum over k of x of k times h of n minus k.\nBy substituting k equals n minus capital K,\u000bwe change the index of summation and rewrite the expression in reversed order.\nThis leads directly to:\u000bh convolved with x equals x convolved with h.\nSo, convolution is commutative — just like multiplication.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"commutative\", \"category\": \"signal_processing\"},\n    {\"term\": \"multiplication\", \"category\": \"signal_processing\"},\n    {\"term\": \"standard convolution definition\", \"category\": \"signal_processing\"},\n    {\"term\": \"sum over k\", \"category\": \"signal_processing\"},\n    {\"term\": \"substitute k equals n minus capital K\", \"category\": \"signal_processing\"},\n    {\"term\": \"change the index of summation\", \"category\": \"signal_processing\"},\n    {\"term\": \"rewrite the expression in reversed order\", \"category\": \"signal_processing\"},\n    {\"term\": \"h convolved with x equals x convolved with h\", \"category\": \"signal_processing\"},\n    {\"term\": \"commutative\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order. This leads directly to: h convolved with x equals x convolved with h. So, convolution is commutative — just like multiplication.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "commutative",
+        "category": "signal_processing"
+      },
+      {
+        "term": "multiplication",
+        "category": "signal_processing"
+      },
+      {
+        "term": "standard convolution definition",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sum over k",
+        "category": "signal_processing"
+      },
+      {
+        "term": "change the index of summation",
+        "category": "signal_processing"
+      },
+      {
+        "term": "rewrite the expression in reversed order",
+        "category": "signal_processing"
+      },
+      {
+        "term": "h convolved with x equals x convolved with h",
+        "category": "signal_processing"
+      },
+      {
+        "term": "commutative",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order. This leads directly to: h convolved with x equals x convolved with h. So, convolution is commutative - just like multiplication."
+    ]
+  }
+}

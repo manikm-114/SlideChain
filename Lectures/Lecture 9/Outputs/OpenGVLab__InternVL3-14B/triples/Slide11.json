@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"zero-padding\",\n      \"p\": \"uses\",\n      \"o\": \"extra zeros\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Zero-padding means we insert extra zeros at the ends of our signals before performing the convolution.\"\n    },\n    {\n      \"s\": \"zero-padding\",\n      \"p\": \"represents\",\n      \"o\": \"extra space between the hands\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"adding zero-padding is like putting some extra space between the hands.\"\n    },\n    {\n      \"s\": \"red and green lines\",\n      \"p\": \"represents\",\n      \"o\": \"start and end of the main region\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the red and green lines — representing the start and end of the main region we care about\"\n    },\n    {\n      \"s\": \"green section\",\n      \"p\": \"depends_on\",\n      \"o\": \"zero-padding\",\n      \"modalities\": [\"text\"],\n      \"confidence",
+  "parsed": {
+    "s": "red and green lines",
+    "p": "represents",
+    "o": "start and end of the main region",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "the red and green lines - representing the start and end of the main region we care about"
+    ]
+  }
+}

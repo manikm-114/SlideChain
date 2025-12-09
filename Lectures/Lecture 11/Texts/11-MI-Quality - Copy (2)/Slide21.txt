@@ -1,0 +1,10 @@
+Now let’s analyze the contrast term a bit more carefully.
+
+The key idea here is that the human visual system does not respond to absolute changes in brightness, but rather to relative changes. This is exactly what Weber’s law describes. It states that the smallest noticeable change in a stimulus is proportional to the background level of that stimulus.
+
+For example, if you are in a very dark room, even a tiny spot of light is noticeable right away. But if you are in a brightly lit room, the very same tiny light would be invisible. The background intensity is so high that the small change is masked.
+You’ve probably experienced this outdoors: at night, under a dark sky, you can see countless stars. But during the day, those same stars are still there — yet you can’t see them, because the bright background light overwhelms them.
+The same principle applies to hearing. In a quiet room, even a whisper can be heard. But in a noisy party, you need to shout for anyone to notice.
+
+Mathematically, this means that the sensitivity of the contrast measure depends on the ratio of the change, delta-X, to the baseline, X. If X is small, even a small delta makes a big difference. If X is large, the same delta hardly matters.
+So the contrast term in SSIM naturally captures this idea — it reflects the fact that our visual system is tuned to relative, not absolute, differences. This is why the measure agrees so well with human perception.

@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide47",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:33:01.695838+00:00",
+  "text_length": 45,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nYou get this projection profile—the sinogram.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"sinogram\", \"category\": \"reconstruction\"},\n    {\"term\": \"projection profile\", \"category\": \"data_processing\"}\n  ],\n  \"evidence\": [\"You get this projection profile—the sinogram.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sinogram",
+        "category": "reconstruction"
+      },
+      {
+        "term": "projection profile",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "You get this projection profile-the sinogram."
+    ]
+  }
+}

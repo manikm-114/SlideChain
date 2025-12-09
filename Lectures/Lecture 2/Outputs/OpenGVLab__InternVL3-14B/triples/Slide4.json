@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB Online\",\n      \"p\": \"via\",\n      \"o\": \"MathWorks\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"One solution is MATLAB Online, a browser-based version provided by MathWorks.\"\n    },\n    {\n      \"s\": \"Octave Online\",\n      \"p\": \"represents\",\n      \"o\": \"free, open-source alternative\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Another option is Octave Online. It’s a free, open-source alternative that supports many MATLAB commands.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB Online",
+        "p": "via",
+        "o": "MathWorks",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "One solution is MATLAB Online, a browser-based version provided by MathWorks."
+      },
+      {
+        "s": "Octave Online",
+        "p": "represents",
+        "o": "free, open-source alternative",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Another option is Octave Online. It’s a free, open-source alternative that supports many MATLAB commands."
+      }
+    ]
+  }
+}

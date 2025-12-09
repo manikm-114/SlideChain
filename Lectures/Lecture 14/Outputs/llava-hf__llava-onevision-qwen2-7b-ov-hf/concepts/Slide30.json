@@ -1,0 +1,61 @@
+{
+  "slide_id": "Slide30",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nI am especially excited about this project, collaborating with GE.\nCurrently, cardiac CT scanners mostly use third-generation geometry, but with cone beam helical scanning mode, which some call improved third generation or helical cone beam generation.\nThis system is already very fast, capable of rotating three to four times per second.\nThe mechanical acceleration involved is astonishing—much higher than what’s involved in launching a space shuttle.\nThe current best temporal and spatial resolution for cardiac CT is about 500 microns.\n\nBut according to cardiac surgeons I know, 100 micron resolution would solve many clinical challenges.\nImproving cardiac CT resolution requires higher imaging speed to freeze the heart’s rapid motion on this fine scale.\nHowever, as you increase rotation speed, the X-ray tube has less time to emit photons, limiting achievable image quality.\nOur out-of-the-box solution uses interior tomography. We designed a stationary ring scanner to boost X-ray flux by orders of magnitude.\n\nImagine a cardiac patient lying still while being scanned. You get immediate images.\nWhen higher resolution is needed, the patient or ring can be translated to focus precisely on the region of interest.\nThis stationary ring can move up, down, left, or right to align perfectly with conventional cardiac CT images.\nI believe this design is a promising way forward—an out-of-the-box solution for high-speed, high-resolution cardiac imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"helical cone beam geometry\", \"category\": \"modality\"},\n    {\"term\": \"cardiac CT scanners\", \"category\": \"modality\"},\n    {\"term\": \"third-generation geometry\", \"category\": \"modality\"},\n    {\"term\": \"cone beam helical scanning mode\", \"category\": \"modality\"},\n    {\"term\": \"improved third generation\", \"category\": \"modality\"},\n    {\"term\": \"500 microns\", \"category\": \"quality_metric\"},\n    {\"term\": \"100 micron resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"higher imaging speed\", \"category\": \"modality\"},\n    {\"term\": \"X-ray flux\", \"category\": \"physics\"},\n    {\"term\": \"stationary ring scanner\", \"category\": \"instrumentation\"},\n    {\"term\": \"orders of magnitude\", \"category\": \"mathematics\"},\n    {\"term\": \"out-of-the-box solution\", \"category\": \"software\"},\n    {\"term\": \"high-speed, high-resolution cardiac imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"SLIDE_TEXT\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "cardiac CT scanners",
+        "category": "modality"
+      },
+      {
+        "term": "third-generation geometry",
+        "category": "modality"
+      },
+      {
+        "term": "cone beam helical scanning mode",
+        "category": "modality"
+      },
+      {
+        "term": "improved third generation",
+        "category": "modality"
+      },
+      {
+        "term": "500 microns",
+        "category": "quality_metric"
+      },
+      {
+        "term": "100 micron resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "higher imaging speed",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray flux",
+        "category": "physics"
+      },
+      {
+        "term": "stationary ring scanner",
+        "category": "instrumentation"
+      },
+      {
+        "term": "orders of magnitude",
+        "category": "mathematics"
+      },
+      {
+        "term": "out-of-the-box solution",
+        "category": "software"
+      },
+      {
+        "term": "high-speed, high-resolution cardiac imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "SLIDE_TEXT"
+    ]
+  }
+}

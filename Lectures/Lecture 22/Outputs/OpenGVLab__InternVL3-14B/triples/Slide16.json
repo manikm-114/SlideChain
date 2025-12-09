@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"beam-forming\",\n      \"p\": \"uses\",\n      \"o\": \"time delays\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the beam-forming idea is that you introduce time delays across the array\"\n    },\n    {\n      \"s\": \"beam-forming\",\n      \"p\": \"produces\",\n      \"o\": \"strong echo\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you add the five signals together, you form a strong echo\"\n    },\n    {\n      \"s\": \"beam-forming\",\n      \"p\": \"depends_on\",\n      \"o\": \"distribution of time delays\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"by changing the distribution of time delays, you can guide coherent echoes at different depths\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "beam-forming",
+        "p": "uses",
+        "o": "time delays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the beam-forming idea is that you introduce time delays across the array"
+      },
+      {
+        "s": "beam-forming",
+        "p": "produces",
+        "o": "strong echo",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you add the five signals together, you form a strong echo"
+      },
+      {
+        "s": "beam-forming",
+        "p": "depends_on",
+        "o": "distribution of time delays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "by changing the distribution of time delays, you can guide coherent echoes at different depths"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Tri-windows for Scatter Correction\",\n      \"p\": \"uses\",\n      \"o\": \"energy window around the main photopeak\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"You set the energy window around the main photopeak.\"\n    },\n    {\n      \"s\": \"Tri-windows for Scatter Correction\",\n      \"p\": \"uses\",\n      \"o\": \"low and high-energy side windows\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"you also set windows on the left and right—these are the low and high-energy side windows.\"\n    },\n    {\n      \"s\": \"Tri-windows for Scatter Correction\",\n      \"p\": \"measures\",\n      \"o\": \"scattered background\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"you have a way to estimate the background scattering.\"\n    },\n    {\n      \"s\": \"Tri-windows for Scatter Correction\",\n      \"p\": \"produces\",\n      \"o\": \"corrected signal\",\n      \"modalities\": [\"text\"],",
+  "parsed": {
+    "s": "Tri-windows for Scatter Correction",
+    "p": "measures",
+    "o": "scattered background",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "you have a way to estimate the background scattering."
+    ]
+  }
+}

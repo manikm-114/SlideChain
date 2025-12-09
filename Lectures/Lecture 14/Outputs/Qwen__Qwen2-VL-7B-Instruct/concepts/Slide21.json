@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide21",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:16:20.767399+00:00",
+  "text_length": 453,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s discuss longitudinal data truncation from a single slice. When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.\n\nHowever, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed. The first paper I wrote on cone beam helical scanning proposed an approximate algorithm for this challenge.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Longitudinal Data Truncation\", \"category\": \"data_processing\"},\n    {\"term\": \"helical turn\", \"category\": \"algorithm\"},\n    {\"term\": \"interpolation\", \"category\": \"mathematics\"},\n    {\"term\": \"cone beam\", \"category\": \"instrumentation\"},\n    {\"term\": \"advanced algorithms\", \"category\": \"algorithm\"},\n    {\"term\": \"approximate algorithm\", \"category\": \"algorithm\"},\n    {\"term\": \"helical scanning\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.\",\n    \"However, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Longitudinal Data Truncation",
+        "category": "data_processing"
+      },
+      {
+        "term": "helical turn",
+        "category": "algorithm"
+      },
+      {
+        "term": "interpolation",
+        "category": "mathematics"
+      },
+      {
+        "term": "cone beam",
+        "category": "instrumentation"
+      },
+      {
+        "term": "advanced algorithms",
+        "category": "algorithm"
+      },
+      {
+        "term": "approximate algorithm",
+        "category": "algorithm"
+      },
+      {
+        "term": "helical scanning",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.",
+      "However, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed."
+    ]
+  }
+}

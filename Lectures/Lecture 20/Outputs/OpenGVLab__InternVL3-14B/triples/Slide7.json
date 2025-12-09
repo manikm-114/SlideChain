@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"modern MRI scanners\", \"p\":\"uses\", \"o\":\"superconducting magnet\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The mainstream approach, used in nearly all modern MRI scanners, is to use a superconducting magnet.\"},\n    {\"s\":\"superconducting magnet\", \"p\":\"operates\", \"o\":\"extremely cold environment—close to absolute zero\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This magnet operates in an extremely cold environment—close to absolute zero—so that the wire inside becomes superconductive.\"},\n    {\"s\":\"superconducting magnet\", \"p\":\"has\", \"o\":\"superconducting windings\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Surrounding it are layers containing the superconducting windings, which are immersed in liquid helium to keep them cold enough to maintain superconductivity.\"},\n    {\"s\":\"superconducting windings\", \"p\":\"immersed in\", \"o\":\"liquid helium\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Surrounding it are layers",
+  "parsed": {
+    "s": "superconducting magnet",
+    "p": "has",
+    "o": "superconducting windings",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Surrounding it are layers containing the superconducting windings, which are immersed in liquid helium to keep them cold enough to maintain superconductivity."
+    ]
+  }
+}

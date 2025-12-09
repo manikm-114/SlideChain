@@ -1,0 +1,105 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "wrapping-around effect"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In MATLAB, we can perform circular convolution using the Fourier transform approach.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Fourier transform approach",
+            "p": "uses",
+            "s": "MATLAB"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The red dashed curve is the linear convolution result from our earlier example.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "clean triangular shape",
+            "p": "represents",
+            "s": "linear convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Zero-padding is essential"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "The blue curve is the circular convolution result without zero-padding."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The legend in the plot labels the red dashed curve as 'Linear Conv', which represents lconv."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Linear Conv",
+        "p": "represents",
+        "s": "lconv"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          }
+        ],
+        "evidence": [
+          "Here\u2019s where we can clearly see the difference between linear convolution and circular convolution without zero padding.",
+          "In MATLAB, we can perform circular convolution using the Fourier transform approach.",
+          "Multiplication in the frequency domain is equivalent to convolution in the time domain - but here\u2019s the key point: if we don\u2019t use zero-padding, the convolution we get is circular by nature.",
+          "Notice how the blue curve is the circular convolution result without zero-padding. The red dashed curve is the linear convolution result from our earlier example.",
+          "This is why zero-padding is essential when we want the frequency-domain method to give the same result as linear convolution. Without it, circular convolution will give you something different."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

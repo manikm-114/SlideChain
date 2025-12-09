@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide38",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T00:12:13.655312+00:00",
+  "text_length": 1538,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s now walk through an important example: the two-dimensional rectangle function, centered at the origin, with side lengths X and Y.\n\nThis function is quite simple in the spatial domain — it's just a bright rectangular block surrounded by zeros. But when we take its 2D Fourier transform, something fascinating happens.\nThe resulting function in the frequency domain is a product of two sinc functions — one in the u direction and one in the v direction. And remember, sinc functions come from the Fourier transform of a box function in one dimension. So when we go to two dimensions, the result is just a multiplication of two of them — one along each axis.\n\nYou can see this result visualized in the bottom right. There's a sharp peak in the center — that’s the low-frequency content — and then it decays with oscillations outward, characteristic of sinc behavior.\n\nNow here’s something more interesting: when we move into higher dimensions, something new becomes possible — rotation. In 1D, you can only flip a signal left or right, but there's no true concept of rotation. However, in 2D or 3D, you can rotate the object, and that rotation affects the frequency domain in a meaningful way.\nThis rotational property is one of the key advantages of analyzing signals in higher dimensions. It allows us to understand and manipulate how orientation in space translates into patterns in frequency.\n\nSo this simple example — a rectangular function — gives us a powerful insight into the structure of Fourier transforms in two dimensions.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"2D Rectangle Function\", \"category\": \"signal_processing\"},\n    {\"term\": \"2D Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"sinc function\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency domain\", \"category\": \"signal_processing\"},\n    {\"term\": \"rotation\", \"category\": \"signal_processing\"},\n    {\"term\": \"higher dimensions\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transforms\", \"category\": \"signal_processing\"},\n    {\"term\": \"2D sinc functions\", \"category\": \"signal_processing\"},\n    {\"term\": \"rotation in higher dimensions\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The resulting function in the frequency domain is a product of two sinc functions — one in the u direction and one in the v direction.\",\n    \"When we move into higher dimensions, something new becomes possible — rotation.\",\n    \"This rotational property is one of the key advantages of analyzing signals in higher dimensions.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "2D Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sinc function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency domain",
+        "category": "signal_processing"
+      },
+      {
+        "term": "rotation",
+        "category": "signal_processing"
+      },
+      {
+        "term": "higher dimensions",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transforms",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The resulting function in the frequency domain is a product of two sinc functions - one in the u direction and one in the v direction.",
+      "When we move into higher dimensions, something new becomes possible - rotation.",
+      "This rotational property is one of the key advantages of analyzing signals in higher dimensions."
+    ]
+  }
+}

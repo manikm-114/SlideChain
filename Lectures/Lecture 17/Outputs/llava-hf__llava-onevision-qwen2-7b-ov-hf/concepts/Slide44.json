@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide44",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nI want to summarize PET and SPECT imaging with this slide. The key point is that the data models are different, and the underlying technology relies on gamma rays, but at very different energies. SPECT uses lower-energy gamma rays, typically around 140 keV. Because of this lower energy, you can use a mechanical collimator—high-density metals effectively block unwanted photons, shaping the beam. But in PET, the gamma ray energy is much higher, at 511 keV. Mechanical collimation simply doesn’t work because the energy is too great for physical collimators, so PET uses electronic collimation instead.\n\nWith mechanical collimation, a large portion of useful gamma-ray photons is rejected, reducing sensitivity. By contrast, electronic collimation in PET does not block any useful gamma photons. This means PET sensitivity is fundamentally higher than SPECT sensitivity.\n\nAnother key feature is time information. In PET, two photons resulting from an annihilation are emitted simultaneously. The system records the precise timing, making time-resolved imaging possible and increasing sensitivity. In SPECT, we don’t know precisely when the radiotracer emits its gamma photons inside the body, so there’s no available time scale—just as in standard X-ray imaging, where we can’t control the emission timing for each photon. Even if you try to time the arrival of X-ray photons at a detector, you don’t have a proper time reference. With PET, the emission process gives you this timing, allowing sensitive and advanced time-resolved imaging. This is a crucial, elegant concept behind PET technology.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"SPECT\", \"category\": \"modality\"},\n    {\"term\": \"PET\", \"category\": \"modality\"},\n    {\"term\": \"gamma rays\", \"category\": \"physics\"},\n    {\"term\": \"mechanical collimation\", \"category\": \"instrumentation\"},\n    {\"term\": \"electronic collimation\", \"category\": \"instrumentation\"},\n    {\"term\": \"sensitivity\", \"category\": \"quality_metric\"},\n    {\"term\": \"time-resolved imaging\", \"category\": \"signal_processing\"},\n    {\"term\": \"annihilation\", \"category\": \"physics\"},\n    {\"term\": \"X-ray imaging\", \"category\": \"modality\"},\n    {\"term\": \"time reference\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"SLIDE_TEXT\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "SPECT",
+        "category": "modality"
+      },
+      {
+        "term": "PET",
+        "category": "modality"
+      },
+      {
+        "term": "gamma rays",
+        "category": "physics"
+      },
+      {
+        "term": "mechanical collimation",
+        "category": "instrumentation"
+      },
+      {
+        "term": "electronic collimation",
+        "category": "instrumentation"
+      },
+      {
+        "term": "sensitivity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "time-resolved imaging",
+        "category": "signal_processing"
+      },
+      {
+        "term": "annihilation",
+        "category": "physics"
+      },
+      {
+        "term": "X-ray imaging",
+        "category": "modality"
+      },
+      {
+        "term": "time reference",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "SLIDE_TEXT"
+    ]
+  }
+}

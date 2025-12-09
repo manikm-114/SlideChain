@@ -1,0 +1,55 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:19:35.606916+00:00",
+  "text_length": 507,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at logical operations in MATLAB.\nYou can compare values using operators like:\u000bdouble equals, less than, greater than, or not equals, which is written as tilde equals.\nThe tilde symbol means not.\u000bFor combining conditions, use ampersand for AND, and vertical bar for OR.\nTo find specific values in an array, use the find function.\u000bFor example: find A equals three — gives you the positions where A is exactly three.\nThese logical tools are great for filtering data and writing conditional code.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"double equals\", \"category\": \"mathematics\"},\n    {\"term\": \"less than\", \"category\": \"mathematics\"},\n    {\"term\": \"greater than\", \"category\": \"mathematics\"},\n    {\"term\": \"not equals\", \"category\": \"mathematics\"},\n    {\"term\": \"tilde equals\", \"category\": \"mathematics\"},\n    {\"term\": \"not\", \"category\": \"mathematics\"},\n    {\"term\": \"ampersand\", \"category\": \"mathematics\"},\n    {\"term\": \"vertical bar\", \"category\": \"mathematics\"},\n    {\"term\": \"find\", \"category\": \"mathematics\"},\n    {\"term\": \"A equals three\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"You can compare values using operators like: double equals, less than, greater than, or not equals, which is written as tilde equals.\", \"The tilde symbol means not.\", \"For combining conditions, use ampersand for AND, and vertical bar for OR.\", \"To find specific values in an array, use the find function.\", \"For example: find A equals three — gives you the positions where A is exactly three.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "double equals",
+        "category": "mathematics"
+      },
+      {
+        "term": "less than",
+        "category": "mathematics"
+      },
+      {
+        "term": "greater than",
+        "category": "mathematics"
+      },
+      {
+        "term": "not equals",
+        "category": "mathematics"
+      },
+      {
+        "term": "tilde equals",
+        "category": "mathematics"
+      },
+      {
+        "term": "ampersand",
+        "category": "mathematics"
+      },
+      {
+        "term": "vertical bar",
+        "category": "mathematics"
+      },
+      {
+        "term": "find",
+        "category": "mathematics"
+      },
+      {
+        "term": "A equals three",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "You can compare values using operators like: double equals, less than, greater than, or not equals, which is written as tilde equals.",
+      "The tilde symbol means not.",
+      "For combining conditions, use ampersand for AND, and vertical bar for OR.",
+      "To find specific values in an array, use the find function.",
+      "For example: find A equals three - gives you the positions where A is exactly three."
+    ]
+  }
+}

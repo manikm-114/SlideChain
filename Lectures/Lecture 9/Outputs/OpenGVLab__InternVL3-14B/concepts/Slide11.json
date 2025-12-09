@@ -1,0 +1,10 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"edge effect\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"overlap\", \"category\": \"signal_processing\"},\n    {\"term\": \"interference\", \"category\": \"signal_processing\"},\n    {\"term\": \"distortion\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"insert extra zeros at the ends of our signals before performing the convolution\",\n    \"the edge effect problem we saw with circular convolution\",\n    \"the red and green lines — representing the start and end of the main region we care about — were very close together\",\n    \"the signal to wrap around and overlap in places we didn’t want\",\n    \"adding zero-padding is like putting some extra space between the hands\",\n    \"the main section we care about — here marked in red — remains untouched by unwanted overlaps\",\n    \"the green section, which previously had interference from wrapping, now stays clean\",",
+  "parsed": {
+    "term": "distortion",
+    "category": "signal_processing"
+  }
+}

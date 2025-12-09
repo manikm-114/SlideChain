@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide31",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:43:06.457673+00:00",
+  "text_length": 531,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn MATLAB, you can do both matrix and element-wise operations — and the difference is all in the dot.\n“A times B” — with a single star — means matrix multiplication.\u000b“A dot star B” — with a dot — means multiply element by element.\nSame goes for powers and division.\u000b“A caret 2” raises the matrix to a power.\u000b“A dot caret 2” squares each element.\u000bAnd for division, “A divided by B” solves equations, while “A dot slash B” divides element-wise.\nThese small differences are key when working with data, equations, or signals in MATLAB.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"matrix multiplication\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise multiplication\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix power\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise power\", \"category\": \"mathematics\"},\n    {\"term\": \"matrix division\", \"category\": \"mathematics\"},\n    {\"term\": \"element-wise division\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"A times B\", \"A dot star B\", \"A caret 2\", \"A dot caret 2\", \"A divided by B\", \"A dot slash B\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "matrix multiplication",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "A times B",
+      "A dot star B",
+      "A caret 2",
+      "A dot caret 2",
+      "A divided by B",
+      "A dot slash B"
+    ]
+  }
+}

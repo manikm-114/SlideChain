@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Spatial Resolution\",\n      \"p\": \"measures\",\n      \"o\": \"Full Width at Half Maximum (FWHM) of PSF\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Spatial Resolution = Full Width at Half Maximum (FWHM) of PSF\"\n    },\n    {\n      \"s\": \"Point Spread Function (PSF)\",\n      \"p\": \"represents\",\n      \"o\": \"how the system responds to a single point source\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It tells us how the system responds to a single point source.\"\n    },\n    {\n      \"s\": \"Spatial Resolution\",\n      \"p\": \"depends_on\",\n      \"o\": \"minimum separation at which two objects can still be seen as distinct\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is why we say spatial resolution is the minimum separation at which two objects can still be seen as distinct.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Spatial Resolution",
+        "p": "depends_on",
+        "o": "minimum separation at which two objects can still be seen as distinct",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This is why we say spatial resolution is the minimum separation at which two objects can still be seen as distinct."
+      }
+    ]
+  }
+}

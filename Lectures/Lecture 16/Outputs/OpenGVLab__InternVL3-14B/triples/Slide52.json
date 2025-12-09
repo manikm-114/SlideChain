@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide52",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"coincidence detection\",\n      \"p\": \"uses\",\n      \"o\": \"pulse height analyzer\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is where the pulse height analyzer comes in. It checks the energy of each detected photon and only accepts those within a narrow energy window around 511 keV.\"\n    },\n    {\n      \"s\": \"coincidence detection\",\n      \"p\": \"depends_on\",\n      \"o\": \"energy window\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It checks the energy of each detected photon and only accepts those within a narrow energy window around 511 keV.\"\n    },\n    {\n      \"s\": \"coincidence detection\",\n      \"p\": \"produces\",\n      \"o\": \"true PET event\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So, only when both detectors see valid 511 keV photons at nearly the same instant do we count it as a true PET event.\"",
+  "parsed": {
+    "s": "coincidence detection",
+    "p": "depends_on",
+    "o": "energy window",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "It checks the energy of each detected photon and only accepts those within a narrow energy window around 511 keV."
+    ]
+  }
+}

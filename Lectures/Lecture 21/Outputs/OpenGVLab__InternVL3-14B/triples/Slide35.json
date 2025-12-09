@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"12 MHz scanhead\", \"p\":\"produces\", \"o\":\"very good resolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A 12 MHz scanhead has very good resolution, but cannot penetrate very deep into the body\"},\n    {\"s\":\"12 MHz scanhead\", \"p\":\"cannot penetrate\", \"o\":\"very deep into the body\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A 12 MHz scanhead has very good resolution, but cannot penetrate very deep into the body\"},\n    {\"s\":\"3 MHz scanhead\", \"p\":\"can penetrate\", \"o\":\"deep into the body\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A 3 MHz scanhead can penetrate deep into the body, but the resolution is not as good as the 12 MHz\"},\n    {\"s\":\"3 MHz scanhead\", \"p\":\"has\", \"o\":\"not as good resolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A 3 MHz scanhead can penetrate deep into the body, but the resolution is not as",
+  "parsed": {
+    "s": "3 MHz scanhead",
+    "p": "can penetrate",
+    "o": "deep into the body",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "A 3 MHz scanhead can penetrate deep into the body, but the resolution is not as good as the 12 MHz"
+    ]
+  }
+}

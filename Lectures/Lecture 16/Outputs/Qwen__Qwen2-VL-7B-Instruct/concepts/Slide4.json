@@ -1,0 +1,34 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:28:50.375080+00:00",
+  "text_length": 986,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s begin with a bit of history to set the stage. Every imaging modality we study has been shaped by many talented researchers whose discoveries were recognized at the highest levels. Nuclear imaging is no exception. If you look back at the milestones in its history, you’ll find several famous names, and among the most remarkable is Marie Curie.\n\nMarie Curie was awarded two Nobel Prizes for her groundbreaking work on radioactivity. In fact, element ninety-six, called curium, was named in her honor. Her influence extended to the next generation as well — her daughter Irène became a distinguished nuclear physicist in her own right and received a Nobel Prize in 1935. Her other daughter, Ève, wrote a highly acclaimed biography of her mother.\n\nSo, when we talk about nuclear imaging today, we are building on a legacy that began with pioneers like Marie Curie. Their contributions laid the foundation for our understanding of radioactivity, which is central to this entire field.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Marie Curie\", \"category\": \"physics\"},\n    {\"term\": \"radioactivity\", \"category\": \"physics\"},\n    {\"term\": \"curium\", \"category\": \"physics\"},\n    {\"term\": \"Nobel Prize\", \"category\": \"awards\"},\n    {\"term\": \"nuclear physics\", \"category\": \"physics\"},\n    {\"term\": \"biography\", \"category\": \"literature\"},\n    {\"term\": \"nuclear imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"Marie Curie was awarded two Nobel Prizes for her groundbreaking work on radioactivity.\",\n    \"Element ninety-six, called curium, was named in her honor.\",\n    \"Her daughter Irène became a distinguished nuclear physicist in her own right and received a Nobel Prize in 1935.\",\n    \"Their contributions laid the foundation for our understanding of radioactivity, which is central to this entire field.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Marie Curie",
+        "category": "physics"
+      },
+      {
+        "term": "radioactivity",
+        "category": "physics"
+      },
+      {
+        "term": "curium",
+        "category": "physics"
+      },
+      {
+        "term": "nuclear imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Marie Curie was awarded two Nobel Prizes for her groundbreaking work on radioactivity.",
+      "Element ninety-six, called curium, was named in her honor.",
+      "Her daughter Irène became a distinguished nuclear physicist in her own right and received a Nobel Prize in 1935.",
+      "Their contributions laid the foundation for our understanding of radioactivity, which is central to this entire field."
+    ]
+  }
+}

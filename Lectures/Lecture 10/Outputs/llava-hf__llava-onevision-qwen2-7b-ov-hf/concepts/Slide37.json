@@ -1,0 +1,34 @@
+{
+  "slide_id": "Slide37",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere is a simplified view of how neurons work. Think of this as the basic flow of information in our nervous system.\n\nIncoming signals — whether from the outside world or from other neurons — arrive at the dendrites. These dendrites act as the input terminals of the neuron. They collect all incoming information, both excitatory and inhibitory.\nIf the combined strength of these signals is strong enough to cross a certain threshold, the neuron generates an electrical pulse called an action potential. This signal travels down the axon — the long fiber you see here — and moves toward the axon terminals.\n\nAt the axon terminals, the neuron communicates with the next cell, often through a synapse. There, chemical messengers or direct electrical connections pass the information forward, continuing the chain of processing in the nervous system.\nThis is the fundamental process behind everything from reflexes to complex thought — and it’s also the biological inspiration for how artificial neural networks process information in AI systems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"dendrites\", \"category\": \"anatomy\"},\n    {\"term\": \"action potential\", \"category\": \"signal_processing\"},\n    {\"term\": \"synapse\", \"category\": \"communication\"},\n    {\"term\": \"artificial neural networks\", \"category\": \"ai_ml\"},\n    {\"term\": \"neurons\", \"category\": \"anatomy\"},\n    {\"term\": \"excitatory and inhibitory signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"axon terminals\", \"category\": \"anatomy\"},\n    {\"term\": \"chemical messengers\", \"category\": \"communication\"},\n    {\"term\": \"processing in the nervous system\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Here is a simplified view of how neurons work. Think of this as the basic flow of information in our nervous system.\", \"This is the fundamental process behind everything from reflexes to complex thought — and it’s also the biological inspiration for how artificial neural networks process information in AI systems.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "action potential",
+        "category": "signal_processing"
+      },
+      {
+        "term": "synapse",
+        "category": "communication"
+      },
+      {
+        "term": "artificial neural networks",
+        "category": "ai_ml"
+      },
+      {
+        "term": "chemical messengers",
+        "category": "communication"
+      },
+      {
+        "term": "processing in the nervous system",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Here is a simplified view of how neurons work. Think of this as the basic flow of information in our nervous system.",
+      "This is the fundamental process behind everything from reflexes to complex thought - and it’s also the biological inspiration for how artificial neural networks process information in AI systems."
+    ]
+  }
+}

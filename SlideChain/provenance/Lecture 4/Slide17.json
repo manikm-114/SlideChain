@@ -1,0 +1,167 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "discrete delta functions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scaled delta function"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct"
+          }
+        ],
+        "evidence": [
+          "use discrete delta functions to represent any arbitrary discrete function",
+          "Each value of the function can be represented as a scaled delta function at that point",
+          "When we sum these scaled delta functions, we reconstruct the original discrete function"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Each value of the function can be represented as a scaled delta function at that point.",
+            "modalities": [
+              "text"
+            ],
+            "o": "scaled delta function",
+            "p": "represents",
+            "s": "each value of the function"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "discrete delta functions"
+          },
+          {
+            "category": "mathematics",
+            "term": "represent any arbitrary discrete function"
+          },
+          {
+            "category": "mathematics",
+            "term": "scaled delta function"
+          },
+          {
+            "category": "mathematics",
+            "term": "sum these scaled delta functions"
+          },
+          {
+            "category": "mathematics",
+            "term": "reconstruct the original discrete function"
+          }
+        ],
+        "evidence": [
+          "In fact, you can use discrete delta functions to represent any arbitrary discrete function. Each value of the function can be represented as a scaled delta function at that point. When we sum these scaled delta functions, we reconstruct the original discrete function."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "you can use discrete delta functions to represent any arbitrary discrete function."
+          },
+          {
+            "category": "signal_processing",
+            "term": "Each value of the function can be represented as a scaled delta function at that point."
+          },
+          {
+            "category": "reconstruction",
+            "term": "When we sum these scaled delta functions, we reconstruct the original discrete function."
+          }
+        ],
+        "evidence": [
+          "In fact, you can use discrete delta functions to represent any arbitrary discrete function.",
+          "Each value of the function can be represented as a scaled delta function at that point.",
+          "When we sum these scaled delta functions, we reconstruct the original discrete function."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "In fact, you can use discrete delta functions to represent any arbitrary discrete function.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "any arbitrary discrete function",
+            "p": "uses",
+            "s": "discrete delta functions"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Each value of the function can be represented as a scaled delta function at that point.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "a scaled delta function at that point",
+            "p": "represents",
+            "s": "each value of the function"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "When we sum these scaled delta functions, we reconstruct the original discrete function.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "the original discrete function",
+            "p": "reconstructs_with",
+            "s": "these scaled delta functions"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "delta function"
+          },
+          {
+            "category": "mathematics",
+            "term": "discrete function"
+          },
+          {
+            "category": "mathematics",
+            "term": "scaled delta function"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct"
+          }
+        ],
+        "evidence": [
+          "In fact, you can use discrete delta functions to represent any arbitrary discrete function. Each value of the function can be represented as a scaled delta function at that point. When we sum these scaled delta functions, we reconstruct the original discrete function."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

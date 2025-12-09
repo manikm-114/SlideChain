@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "motion at a specific depth"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "it allows us to measure motion at a specific depth",
+            "modalities": [
+              "text"
+            ],
+            "o": "motion at a specific depth",
+            "p": "measures",
+            "s": "pulsed wave Doppler"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid",
+            "modalities": [
+              "text"
+            ],
+            "o": "motion or velocity of the surface or fluid",
+            "p": "represents",
+            "s": "Doppler frequency"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Doppler frequency"
+          },
+          {
+            "category": "physics",
+            "term": "motion or velocity"
+          },
+          {
+            "category": "modality",
+            "term": "pulsed wave Doppler"
+          },
+          {
+            "category": "modality",
+            "term": "continuous wave Doppler"
+          },
+          {
+            "category": "modality",
+            "term": "motion at a specific depth"
+          }
+        ],
+        "evidence": [
+          "This mathematical operation converts the time-domain signal into a frequency-domain representation.",
+          "The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid.",
+          "We record this oscillating signal over time and then perform a Fourier transform on it.",
+          "By analyzing these Doppler frequencies, we can quantify that motion precisely.",
+          "It's slightly more complex than continuous wave Doppler, but it has a major advantage - it allows us to measure motion at a specific depth."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the measured signal amplitude will fluctuate up and down around the average line"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "practice"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The peak of the echo signal shifts forward in time. This small timing change, or phase shift, tells us that motion has occurred.",
+            "modalities": [
+              "text"
+            ],
+            "o": "motion",
+            "p": "measures",
+            "s": "pulse"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

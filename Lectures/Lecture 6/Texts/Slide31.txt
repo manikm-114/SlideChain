@@ -1,0 +1,19 @@
+Now let’s take a moment to understand why the convolution theorem actually works. What’s the reasoning behind it?
+So far, we've seen that the Fourier transform of the convolution of two functions — say, f of t and g of t — turns into a simple multiplication of their individual transforms. 
+
+But why is that true?
+Let’s walk through the logic behind it, one step at a time.
+We start with this:Multiply the Fourier transform of f of t by the Fourier transform of g of t. That means you're multiplying two integrals. One for g of t times a complex exponential, and the other for f of x times the same kind of exponential — but with a different variable.
+To combine them, we use different dummy variables inside the integrals — like t in one and x in the other — so they don't interfere. Then we combine them into a double integral.
+
+Now we group the exponential terms. The two exponentials become a single exponential with t plus x in the exponent.
+This sets up our key trick: we change variables. In the inner integral, let’s sayu equals t plus x. That means t equals u minus x, and since we're just changing variables inside an integral, the limits stay the same.
+So now, what used to be g of t becomes g of u minus x, and the exponential becomes a function of u. This lets us express the entire inside of the integral in terms of u, and f of x stays outside.
+At this point, we switch the order of integration — that’s allowed because the functions we’re working with are well-behaved. So now we’re integrating over u, with x nested inside.
+
+What you get in the end is this:You have e to the power minus 2 pi i s  u — that’s the same complex exponential from the Fourier formula — and it’s multiplied by the convolution of g and f at position u.
+That’s the key. The inner integral has now become the convolution of g and f, evaluated at u.
+So finally, this whole thing is just the Fourier transform of that convolution.
+That’s the magic of it.
+Multiplication in the Fourier domain really does correspond to convolution in the time domain — and now you’ve seen where it comes from.
+Of course, these steps are dense, and I encourage you to go over them again slowly. Grab a coffee, sit back, and follow the substitutions. Each step follows cleanly from the last — and the full picture is quite elegant.

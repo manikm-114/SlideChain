@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide27",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"textread\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"header lines\", \"category\": \"software\"},\n    {\"term\": \"indexed data\", \"category\": \"data_processing\"},\n    {\"term\": \"debugging\", \"category\": \"software\"},\n    {\"term\": \"large file\", \"category\": \"data_processing\"}\n  ],\n  \"evidence\": [\"Sometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\", \"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "textread",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "header lines",
+        "category": "software"
+      },
+      {
+        "term": "indexed data",
+        "category": "data_processing"
+      },
+      {
+        "term": "debugging",
+        "category": "software"
+      },
+      {
+        "term": "large file",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "Sometimes you don’t need the full file - you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.",
+      "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip."
+    ]
+  }
+}

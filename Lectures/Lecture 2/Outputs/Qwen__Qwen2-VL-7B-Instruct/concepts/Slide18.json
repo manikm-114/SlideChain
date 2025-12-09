@@ -1,0 +1,25 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:23:59.900139+00:00",
+  "text_length": 813,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s talk about control flow — specifically, loops.\nStart with a for loop. Use it when you know how many times you want to repeat something.\nFor example:\u000bSet x to zero.\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\u000bwe add i to x.\u000bAt the end, x equals 9.\nfor loops are useful when working through a known sequence.\nNow, a while loop runs as long as a condition is true.\nIn this example:\u000bStart with x equal to 7.\u000bWhile x is greater than or equal to zero, subtract 2 each time.\u000bThe loop stops when x becomes negative.\nJust be careful — if the condition never becomes false, the loop won’t stop.\nFinally, break lets you exit a loop early.\u000bIt’s useful if you find what you need before the loop finishes.\u000bIn nested loops, it only exits the innermost one.\u000bUse it wisely — don’t skip steps that still matter.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"for loops\", \"category\": \"software\"},\n    {\"term\": \"while loops\", \"category\": \"software\"},\n    {\"term\": \"break\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"for loops are useful when working through a known sequence.\",\n    \"while loops run as long as a condition is true.\",\n    \"break lets you exit a loop early.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "for loops",
+        "category": "software"
+      },
+      {
+        "term": "break",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "for loops are useful when working through a known sequence.",
+      "while loops run as long as a condition is true.",
+      "break lets you exit a loop early."
+    ]
+  }
+}

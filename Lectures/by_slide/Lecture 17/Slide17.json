@@ -1,0 +1,205 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide17",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide17.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "weighting factor",
+              "category": "mathematics"
+            },
+            {
+              "term": "integral",
+              "category": "mathematics"
+            },
+            {
+              "term": "source distributions",
+              "category": "signal_processing"
+            },
+            {
+              "term": "image reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "constant weighting factor",
+              "category": "physics"
+            },
+            {
+              "term": "line of response",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn’t depend on the source position.",
+            "So, let’s shift our focus to image reconstruction, where these ideas become important."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"pairing\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"weighting factor\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"integral\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"source distributions\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"image reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"constant weighting factor\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"line of response\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn’t depend on the source position.\\\", \\\"So, let’s shift our focus to image reconstruction, where these ideas become important.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"weighting factor\", \"category\": \"mathematics\"}, {\"term\": \"integral\", \"category\": \"mathematics\"}, {\"term\": \"source distributions\", \"category\": \"signal_processing\"}, {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"constant weighting factor\", \"category\": \"physics\"}, {\"term\": \"line of response\", \"category\": \"physics\"}], \"evidence\": [\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn’t depend on the source position.\", \"So, let’s shift our focus to image reconstruction, where these ideas become important.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"pair photon emission models\\\", \\\"p\\\":\\\"uses\\\",\\n     \\\"o\\\":\\\"integral\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn’t depend on the source position.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "attenuation",
+              "category": "physics"
+            },
+            {
+              "term": "integral",
+              "category": "mathematics"
+            },
+            {
+              "term": "source distributions",
+              "category": "data_processing"
+            },
+            {
+              "term": "image reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "weighting factor",
+              "category": "mathematics"
+            },
+            {
+              "term": "line of response",
+              "category": "physics"
+            },
+            {
+              "term": "pull this constant weighting factor outside the integral",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "weighting factor for attenuation is constant along a given line of response",
+            "integral over all source distributions",
+            "pull this constant weighting factor outside the integral",
+            "image reconstruction"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"integral\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"source distributions\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"image reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"weighting factor\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"line of response\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"pull this constant weighting factor outside the integral\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"weighting factor for attenuation is constant along a given line of response\\\",\\n    \\\"integral over all source distributions\\\",\\n    \\\"pull this constant weighting factor outside the integral\\\",\\n    \\\"image reconstruction\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"attenuation\", \"category\": \"physics\"}, {\"term\": \"integral\", \"category\": \"mathematics\"}, {\"term\": \"source distributions\", \"category\": \"data_processing\"}, {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"weighting factor\", \"category\": \"mathematics\"}, {\"term\": \"line of response\", \"category\": \"physics\"}, {\"term\": \"pull this constant weighting factor outside the integral\", \"category\": \"mathematics\"}], \"evidence\": [\"weighting factor for attenuation is constant along a given line of response\", \"integral over all source distributions\", \"pull this constant weighting factor outside the integral\", \"image reconstruction\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide17.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "PET",
+              "p": "uses",
+              "o": "paired photon emission models",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "When we talk about PET or paired photon emission models"
+            },
+            {
+              "s": "attenuation",
+              "p": "depends_on",
+              "o": "constant weighting factor",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "the weighting factor for attenuation is constant along a given line of response"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"PET\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"paired photon emission models\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"When we talk about PET or paired photon emission models\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"attenuation\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"constant weighting factor\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"the weighting factor for attenuation is constant along a given line of response\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"PET\", \"p\": \"uses\", \"o\": \"paired photon emission models\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"When we talk about PET or paired photon emission models\"}, {\"s\": \"attenuation\", \"p\": \"depends_on\", \"o\": \"constant weighting factor\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"the weighting factor for attenuation is constant along a given line of response\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "paired photon emission models",
+              "category": "modality"
+            },
+            {
+              "term": "weighting factor for attenuation",
+              "category": "physics"
+            },
+            {
+              "term": "integral over all source distributions",
+              "category": "mathematics"
+            },
+            {
+              "term": "constant weighting factor",
+              "category": "physics"
+            },
+            {
+              "term": "image reconstruction",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn't depend on the source position."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T10:54:46.958815+00:00\", \"text_length\": 457, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"paired photon emission models\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"weighting factor for attenuation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"integral over all source distributions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"constant weighting factor\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"image reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"paired photon emission models\", \"category\": \"modality\"}, {\"term\": \"weighting factor for attenuation\", \"category\": \"physics\"}, {\"term\": \"integral over all source distributions\", \"category\": \"mathematics\"}, {\"term\": \"constant weighting factor\", \"category\": \"physics\"}, {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"}], \"evidence\": [\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn't depend on the source position.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:14:34.383305+00:00\", \"text_length\": 457, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "weighting factor for attenuation is constant along a given line of response",
+              "category": "physics"
+            },
+            {
+              "term": "integral over all source distributions",
+              "category": "mathematics"
+            },
+            {
+              "term": "pull this constant weighting factor outside the integral",
+              "category": "mathematics"
+            },
+            {
+              "term": "image reconstruction",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response.",
+            "You'll see how this works more clearly in the next slide.",
+            "So, let's shift our focus to image reconstruction, where these ideas become important."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:09:27.607837+00:00\", \"text_length\": 457, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"weighting factor for attenuation is constant along a given line of response\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"integral over all source distributions\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"pull this constant weighting factor outside the integral\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"image reconstruction\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response.\\\",\\n    \\\"You’ll see how this works more clearly in the next slide.\\\",\\n    \\\"So, let’s shift our focus to image reconstruction, where these ideas become important.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"weighting factor for attenuation is constant along a given line of response\", \"category\": \"physics\"}, {\"term\": \"integral over all source distributions\", \"category\": \"mathematics\"}, {\"term\": \"pull this constant weighting factor outside the integral\", \"category\": \"mathematics\"}, {\"term\": \"image reconstruction\", \"category\": \"reconstruction\"}], \"evidence\": [\"When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response.\", \"You'll see how this works more clearly in the next slide.\", \"So, let's shift our focus to image reconstruction, where these ideas become important.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:17:00.804121+00:00\", \"text_length\": 457, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nWhen we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral—it doesn't depend on the source position. \\n\\nYou’ll see how this works more clearly in the next slide. So, let’s shift our focus to image reconstruction, where these ideas become important.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

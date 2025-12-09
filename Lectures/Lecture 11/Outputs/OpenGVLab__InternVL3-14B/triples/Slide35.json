@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"radiologist\", \"p\":\"measures\", \"o\":\"CT scans and X-rays\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A radiologist, with years of training and experience, carefully reviews CT scans and X-rays.\"},\n    {\"s\":\"task-specific measures\", \"p\":\"measures\", \"o\":\"clinical questions\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This highlights why task-specific measures are so important.\"},\n    {\"s\":\"task-specific measures\", \"p\":\"measures\", \"o\":\"sensitivity, specificity, ROC curves, and observer studies\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So in this part of the lecture, we’ll look at task-specific measures such as sensitivity, specificity, ROC curves, and observer studies, which are all designed to assess performance in clinical terms rather than engineering terms.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radiologist",
+        "p": "measures",
+        "o": "CT scans and X-rays",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A radiologist, with years of training and experience, carefully reviews CT scans and X-rays."
+      },
+      {
+        "s": "task-specific measures",
+        "p": "measures",
+        "o": "clinical questions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This highlights why task-specific measures are so important."
+      },
+      {
+        "s": "task-specific measures",
+        "p": "measures",
+        "o": "sensitivity, specificity, ROC curves, and observer studies",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "So in this part of the lecture, we’ll look at task-specific measures such as sensitivity, specificity, ROC curves, and observer studies, which are all designed to assess performance in clinical terms rather than engineering terms."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"alternating current circuit\",\n      \"p\": \"is\",\n      \"o\": \"direct current circuit\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"AC is DC in disguise\"\n    },\n    {\n      \"s\": \"phasor notation and impedance\",\n      \"p\": \"turns\",\n      \"o\": \"differential equations into simple algebraic ones\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"By representing AC voltages and currents as phasors, we turn differential equations into simple algebraic ones\"\n    },\n    {\n      \"s\": \"phasor notation and impedance\",\n      \"p\": \"depends_on\",\n      \"o\": \"DC analysis\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"just like in DC analysis\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "phasor notation and impedance",
+        "p": "depends_on",
+        "o": "DC analysis",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "just like in DC analysis"
+      }
+    ]
+  }
+}

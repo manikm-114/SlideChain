@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"CT number windows\", \"category\": \"modality\"},\n    {\"term\": \"Hounsfield units\", \"category\": \"physics\"},\n    {\"term\": \"gray levels\", \"category\": \"signal_processing\"},\n    {\"term\": \"windowing\", \"category\": \"data_processing\"},\n    {\"term\": \"lung imaging\", \"category\": \"anatomy\"},\n    {\"term\": \"clinical needs\", \"category\": \"workflow\"}\n  ],\n  \"evidence\": [\n    \"Different body regions use different CT number windows for display.\",\n    \"The full range of CT numbers might be mapped to 256 grayscale levels on a display, from white to black.\",\n    \"For lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value.\",\n    \"This windowing is critical to tailoring visualization to different clinical needs.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT number windows",
+        "category": "modality"
+      },
+      {
+        "term": "Hounsfield units",
+        "category": "physics"
+      },
+      {
+        "term": "gray levels",
+        "category": "signal_processing"
+      },
+      {
+        "term": "windowing",
+        "category": "data_processing"
+      },
+      {
+        "term": "lung imaging",
+        "category": "anatomy"
+      },
+      {
+        "term": "clinical needs",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Different body regions use different CT number windows for display.",
+      "The full range of CT numbers might be mapped to 256 grayscale levels on a display, from white to black.",
+      "For lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value.",
+      "This windowing is critical to tailoring visualization to different clinical needs."
+    ]
+  }
+}

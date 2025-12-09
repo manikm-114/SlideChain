@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T02:22:40.692102+00:00",
+  "text_length": 512,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHello, everyone.\u000bLet’s take a few minutes before we dive into today’s MATLAB tutorial to connect what we’ve learned so far.\nOver the past lectures, we’ve covered some very important foundations — linear systems, convolution, the delta function, Fourier series, Fourier transforms, and the sampling theorem. These ideas are deeply connected, and if you understand them well, everything that follows will be much easier. If you are still unsure about any of these topics, now is a great time to go back and review.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"linear systems\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"convolution\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"delta function\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"fourier series\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"fourier transforms\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"sampling theorem\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"Over the past lectures, we’ve covered some very important foundations — linear systems, convolution, the delta function, Fourier series, Fourier transforms, and the sampling theorem.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear systems",
+        "category": "mathematics"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "fourier series",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "fourier transforms",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "sampling theorem",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Over the past lectures, we've covered some very important foundations - linear systems, convolution, the delta function, Fourier series, Fourier transforms, and the sampling theorem."
+    ]
+  }
+}

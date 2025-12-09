@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"X-rays\",\n      \"p\": \"produces\",\n      \"o\": \"image contrast\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It’s the balance of these interactions that produces image contrast.\"\n    },\n    {\n      \"s\": \"X-rays\",\n      \"p\": \"attenuates\",\n      \"o\": \"different tissues\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Different tissues in the body — bone, muscle, fat, lung — attenuate X-rays to different degrees\"\n    },\n    {\n      \"s\": \"X-rays\",\n      \"p\": \"interacts with\",\n      \"o\": \"molecules, atoms, or inner electrons\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"X-rays are photons, tiny packets of energy. When they strike the body, they may interact with molecules, atoms, or even inner electrons.\"\n    },\n    {\n      \"s\": \"X-rays\",\n      \"p\": \"forms\",\n      \"o\": \"primary beam\",",
+  "parsed": {
+    "s": "X-rays",
+    "p": "interacts with",
+    "o": "molecules, atoms, or inner electrons",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "X-rays are photons, tiny packets of energy. When they strike the body, they may interact with molecules, atoms, or even inner electrons."
+    ]
+  }
+}

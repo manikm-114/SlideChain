@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide47",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo detect edges effectively across all directions, we apply multiple convolution filters — each oriented differently.\nThe image on the left shows the original grayscale input. On the right, we see the result of applying the Canny edge detector, one of the most widely used edge detection algorithms.\nWhat makes the Canny method powerful is its multi-stage approach. It starts with smoothing the image to suppress noise, then applies gradient-based filters in horizontal and vertical directions. From there, it calculates the gradient magnitude and direction at each pixel.\nThe algorithm then performs non-maximum suppression to thin out the edges, and finally applies double thresholding and edge tracking by hysteresis to preserve only the most significant contours.\nThe result is a crisp, binary edge map — like the one shown here — which highlights boundaries of objects and fine details.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Canny edge detector\", \"category\": \"algorithm\"},\n    {\"term\": \"multi-stage approach\", \"category\": \"software\"},\n    {\"term\": \"smoothing\", \"category\": \"signal_processing\"},\n    {\"term\": \"gradient-based filters\", \"category\": \"signal_processing\"},\n    {\"term\": \"non-maximum suppression\", \"category\": \"software\"},\n    {\"term\": \"double thresholding\", \"category\": \"software\"},\n    {\"term\": \"edge tracking by hysteresis\", \"category\": \"software\"},\n    {\"term\": \"binary edge map\", \"category\": \"image_processing\"}\n  ],\n  \"evidence\": [\"To detect edges effectively across all directions, we apply multiple convolution filters — each oriented differently.\", \"The image on the left shows the original grayscale input. On the right, we see the result of applying the Canny edge detector, one of the most widely used edge detection algorithms.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Canny edge detector",
+        "category": "algorithm"
+      },
+      {
+        "term": "multi-stage approach",
+        "category": "software"
+      },
+      {
+        "term": "smoothing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "gradient-based filters",
+        "category": "signal_processing"
+      },
+      {
+        "term": "non-maximum suppression",
+        "category": "software"
+      },
+      {
+        "term": "double thresholding",
+        "category": "software"
+      },
+      {
+        "term": "edge tracking by hysteresis",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "To detect edges effectively across all directions, we apply multiple convolution filters - each oriented differently.",
+      "The image on the left shows the original grayscale input. On the right, we see the result of applying the Canny edge detector, one of the most widely used edge detection algorithms."
+    ]
+  }
+}

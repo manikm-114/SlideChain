@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"red arrows\",\n      \"p\": \"represents\",\n      \"o\": \"f of k\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the red arrows on the top represent f of k\"\n    },\n    {\n      \"s\": \"green arrows\",\n      \"p\": \"represents\",\n      \"o\": \"g of eight minus k\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the green arrows on the bottom show g of eight minus k\"\n    },\n    {\n      \"s\": \"flipped hand\",\n      \"p\": \"represents\",\n      \"o\": \"g of eight minus k\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you can imagine sliding the flipped hand far enough to the right\"\n    },\n    {\n      \"s\": \"convolution value\",\n      \"p\": \"produces\",\n      \"o\": \"multiplying overlapping values and summing them up\",\n      \"modalities\": [\"text\"],",
+  "parsed": {
+    "s": "flipped hand",
+    "p": "represents",
+    "o": "g of eight minus k",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "you can imagine sliding the flipped hand far enough to the right"
+    ]
+  }
+}

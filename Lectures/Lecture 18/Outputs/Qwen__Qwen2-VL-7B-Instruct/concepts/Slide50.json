@@ -1,0 +1,56 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:37:43.912627+00:00",
+  "text_length": 1050,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere we have a summary table of T1 and T2 relaxation times for different tissues, measured at a field strength of one point five Tesla.\n\nFor fat, the T1 relaxation time is about two hundred sixty milliseconds, and the T2 is about eighty milliseconds.\nFor muscle, T1 is around eight hundred seventy milliseconds, while T2 is much shorter, about forty-five milliseconds.\nIn the brain, gray matter has a T1 of about nine hundred milliseconds and a T2 of about one hundred milliseconds. White matter is slightly shorter, with a T1 of about seven hundred eighty milliseconds and a T2 of about ninety milliseconds.\nThe liver shows a T1 of about five hundred milliseconds and a T2 of about forty milliseconds.\nFinally, cerebrospinal fluid has the longest times by far: a T1 of about two thousand four hundred milliseconds and a T2 of about one hundred sixty milliseconds.\n\nThese values illustrate a key point: different tissues have different relaxation times, and that difference is what gives MRI its powerful ability to generate contrast between tissues.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"T1 relaxation time\", \"category\": \"physics\"},\n    {\"term\": \"T2 relaxation time\", \"category\": \"physics\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"field strength\", \"category\": \"physics\"},\n    {\"term\": \"Tesla\", \"category\": \"physics\"},\n    {\"term\": \"fat\", \"category\": \"anatomy\"},\n    {\"term\": \"muscle\", \"category\": \"anatomy\"},\n    {\"term\": \"brain\", \"category\": \"anatomy\"},\n    {\"term\": \"gray matter\", \"category\": \"anatomy\"},\n    {\"term\": \"white matter\", \"category\": \"anatomy\"},\n    {\"term\": \"liver\", \"category\": \"anatomy\"},\n    {\"term\": \"cerebrospinal fluid\", \"category\": \"anatomy\"},\n    {\"term\": \"contrast\", \"category\": \"modality\"},\n    {\"term\": \"relaxation times\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"different tissues have different relaxation times\",\n    \"MRI's powerful ability to generate contrast between tissues\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "T1 relaxation time",
+        "category": "physics"
+      },
+      {
+        "term": "T2 relaxation time",
+        "category": "physics"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "field strength",
+        "category": "physics"
+      },
+      {
+        "term": "Tesla",
+        "category": "physics"
+      },
+      {
+        "term": "muscle",
+        "category": "anatomy"
+      },
+      {
+        "term": "brain",
+        "category": "anatomy"
+      },
+      {
+        "term": "liver",
+        "category": "anatomy"
+      },
+      {
+        "term": "contrast",
+        "category": "modality"
+      },
+      {
+        "term": "relaxation times",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "different tissues have different relaxation times",
+      "MRI's powerful ability to generate contrast between tissues"
+    ]
+  }
+}

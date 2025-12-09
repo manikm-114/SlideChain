@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"fanbeam function\",\n      \"p\": \"represents\",\n      \"o\": \"fan shape\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In this geometry, the X-rays don’t travel in parallel lines like before. Instead, they spread out in a fan shape from a single point called the beam vertex.\"\n    },\n    {\n      \"s\": \"fanbeam function\",\n      \"p\": \"depends_on\",\n      \"o\": \"D\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"There’s also an important parameter here called D. This is the distance from the fan-beam vertex—that is, the source position—to the center of rotation of the sample.\"\n    },\n    {\n      \"s\": \"fanbeam function\",\n      \"p\": \"depends_on\",\n      \"o\": \"theta\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"As in parallel-beam CT, both the source and detector rotate together around the object at different angles, which we denote by theta.\"",
+  "parsed": {
+    "s": "fanbeam function",
+    "p": "depends_on",
+    "o": "D",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "There’s also an important parameter here called D. This is the distance from the fan-beam vertex-that is, the source position-to the center of rotation of the sample."
+    ]
+  }
+}

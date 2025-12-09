@@ -1,0 +1,121 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "piecewise polynomials"
+          },
+          {
+            "category": "signal_processing",
+            "term": "band-limited signals"
+          },
+          {
+            "category": "algorithm",
+            "term": "sparsity-based model"
+          },
+          {
+            "category": "reconstruction",
+            "term": "interior reconstruction problem"
+          },
+          {
+            "category": "modality",
+            "term": "chest CT scan"
+          },
+          {
+            "category": "instrumentation",
+            "term": "Siemens scanner"
+          }
+        ],
+        "evidence": [
+          "piecewise polynomials",
+          "band-limited signals",
+          "sparsity-based model",
+          "interior reconstruction problem",
+          "ROI",
+          "chest CT scan",
+          "Siemens scanner"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.",
+            "modalities": [
+              "text"
+            ],
+            "o": "piecewise polynomials",
+            "p": "reconstructs_with",
+            "s": "Interior tomography"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "you can reconstruct the whole chest from all data",
+            "modalities": [
+              "text"
+            ],
+            "o": "all data",
+            "p": "reconstructs_with",
+            "s": "Interior tomography"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI",
+            "modalities": [
+              "text"
+            ],
+            "o": "truncated data",
+            "p": "reconstructs_with",
+            "s": "Interior tomography"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "practically good reconstruction results"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "interior reconstruction problem becomes solvable"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": " Siemens scanner"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sub-regions",
+            "p": "represents",
+            "s": "ROI"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide24.txt"
+  },
+  "slide_id": "Slide24"
+}

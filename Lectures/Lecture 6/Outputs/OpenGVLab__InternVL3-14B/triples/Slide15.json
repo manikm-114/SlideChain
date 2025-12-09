@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"periodic signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"And because it’s periodic, we can now apply Fourier series to analyze it\"\n    },\n    {\n      \"s\": \"periodization\",\n      \"p\": \"produces\",\n      \"o\": \"periodic signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"we take that single gate function — and simply repeat it over and over again, at regular intervals. This is called periodization.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"non-periodic function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"And because it’s non-periodic, we can't represent it using a Fourier series — only the Fourier transform works in that case.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "periodic signal",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "And because it’s periodic, we can now apply Fourier series to analyze it"
+      },
+      {
+        "s": "periodization",
+        "p": "produces",
+        "o": "periodic signal",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we take that single gate function - and simply repeat it over and over again, at regular intervals. This is called periodization."
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+Here’s the Nyquist theorem in action.
+
+In the diagram, you can see the original spectrum and its repeated copies created by sampling. If our sampling rate is too low, these copies start to overlap. When that happens, the frequency components from one copy mix with those from another. This is aliasing — and once it occurs, we can’t tell which part of the spectrum came from the original signal and which part came from the overlap.
+
+To avoid aliasing, we must make sure that the highest frequency in the signal — we call it u-max — is less than one divided by twice the sampling interval. In spoken terms, the sampling frequency must be greater than twice u-max. This threshold is called the Nyquist frequency.
+
+When the condition is satisfied, we can use a rectangular filter — often called a gate function — to select just the central copy of the spectrum. That single copy contains all the information needed to perfectly reconstruct the original signal.
+It’s like DNA testing — you don’t need the whole organism, just a small sample, because it contains the complete blueprint. In the same way, one clean copy of the spectrum contains everything we need.
+
+But if the sampling rate is too low and overlap happens, no filter can separate the mixed components. The information is lost forever.

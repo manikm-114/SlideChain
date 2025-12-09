@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide38",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:47:53.528415+00:00",
+  "text_length": 697,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTemporal resolution, so you see conventional CP scanning. You do one slice at a time. Then you\nmove the patient into the country by a small increment. Do again, patient, keep pressing. \n\nSo from slice to slice, you see some discontinuity. So this is not due to some pathological feature.\nIt's really due to motion artifacts that show the temporal resolution agent is good enough. But\nWith helical scanning, it's smoothed out, but you have some longitudinal blurring.\n\nHere is the earlier algorithm. Later, I mentioned overlapping reconstruction. You really can\nrecover an image longitudinally and a better resolution than conventional scanning. Anyway,\nso we wouldn't have time to go into details.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Temporal Resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"Conventional Scanning\", \"category\": \"modality\"},\n    {\"term\": \"Spiral Scanning\", \"category\": \"modality\"},\n    {\"term\": \"Motion Artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"Helical Scanning\", \"category\": \"modality\"},\n    {\"term\": \"Overlapping Reconstruction\", \"category\": \"algorithm\"},\n    {\"term\": \"Longitudinal Blurring\", \"category\": \"signal_processing\"},\n    {\"term\": \"Algorithm\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Through-plane motion artifacts are suppressed by single-breath-hold spiral scanning\",\n    \"With helical scanning, it's smoothed out, but you have some longitudinal blurring\",\n    \"Later, I mentioned overlapping reconstruction. You really can recover an image longitudinally and a better resolution than conventional scanning\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Temporal Resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Conventional Scanning",
+        "category": "modality"
+      },
+      {
+        "term": "Motion Artifacts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Helical Scanning",
+        "category": "modality"
+      },
+      {
+        "term": "Overlapping Reconstruction",
+        "category": "algorithm"
+      },
+      {
+        "term": "Longitudinal Blurring",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Algorithm",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Through-plane motion artifacts are suppressed by single-breath-hold spiral scanning",
+      "With helical scanning, it's smoothed out, but you have some longitudinal blurring",
+      "Later, I mentioned overlapping reconstruction. You really can recover an image longitudinally and a better resolution than conventional scanning"
+    ]
+  }
+}

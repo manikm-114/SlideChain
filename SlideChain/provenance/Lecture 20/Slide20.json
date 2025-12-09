@@ -1,0 +1,77 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "signal decay"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "the final data form a three-dimensional Fourier transform."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "three-dimensional Fourier transform",
+        "p": "reconstructs_with",
+        "s": "three-dimensional gradient echo imaging"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "functional MRI"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "radio-frequency pulse that flips the magnetization vector, M, by a small angle alpha, much less than ninety degrees.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "magnetization vector",
+            "p": "uses",
+            "s": "radio-frequency pulse"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "final data form a three-dimensional Fourier transform"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "In this method, we extend the basic idea of gradient echo imaging into three spatial dimensions by using two separate phase-encoding gradients and one frequency-encoding gradient."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "one frequency-encoding gradient",
+        "p": "uses",
+        "s": "three-dimensional gradient echo imaging"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "communication",
+        "term": "functional MRI"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide20.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide20.txt"
+  },
+  "slide_id": "Slide20"
+}

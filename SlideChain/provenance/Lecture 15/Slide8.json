@@ -1,0 +1,124 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "Radon transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "inverse Radon transform"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "one-dimensional Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "two-dimensional Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "projection profile"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "inverse two-dimensional Fourier transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct"
+          }
+        ],
+        "evidence": [
+          "reconstruct an image",
+          "inverse Radon transform",
+          "Fourier slice theorem",
+          "one-dimensional Fourier transform",
+          "two-dimensional Fourier transform",
+          "projection profile",
+          "inverse two-dimensional Fourier transform",
+          "reconstruct the original image"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "inverse Fourier transform"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "applying the inverse two-dimensional Fourier transform to reconstruct the original image"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "Radon transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "inverse Radon transform"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "two-dimensional Fourier transform"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier space"
+          },
+          {
+            "category": "reconstruction",
+            "term": "projection"
+          },
+          {
+            "category": "signal_processing",
+            "term": "2D Fourier transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "inverse Fourier transform"
+          }
+        ],
+        "evidence": [
+          "So far, we\u2019ve looked at the Radon transform. But to actually reconstruct an image, we also need the inverse Radon transform. This process relies on something called the Fourier slice theorem.",
+          "Each projection corresponds to one line in Fourier space. Change the angle, and you get another line, and then another. As we add up all these lines at different angles, the Fourier space is gradually filled. Finally, applying the inverse Fourier transform brings us back to a reconstructed image."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide8.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide8.txt"
+  },
+  "slide_id": "Slide8"
+}

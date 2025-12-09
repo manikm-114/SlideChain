@@ -1,0 +1,15 @@
+So far, we've talked about the real form of the Fourier series, which uses sine and cosine functions. But there's another way to write the same idea — in what we call the complex form.
+
+Now don’t be alarmed by the word “complex.” This version is mathematically equivalent to the real form — it's just more compact and elegant.
+Instead of separating things into sines and cosines, we use complex exponentials — specifically, e to the power of 2 pi i n t. That’s Euler’s formula at work.
+In this form, the function f of t is expressed as a sum — from n equals minus N to N — of coefficients c n multiplied by e to the 2 pi i n t.
+And just like before, we need to figure out those coefficients. So how do we compute c n?
+
+We use this formula:c n equals the integral from 0 to 1 of e to the power minus 2 pi i n t times f of t, with respect to t.
+This is essentially an inner product — projecting your function onto the exponential basis function e to the power minus 2 pi i n t. 
+
+In my book, I like to write the imaginary unit i in front — as in minus i 2 pi n t — but it’s just a matter of notation. The meaning stays the same.
+At the bottom here, you see the same formula written slightly differently — as f-hat of n — which is just another way of naming the coefficient.
+
+Now, throughout this slide, we’re assuming that the function is periodic with unit period — meaning it repeats every interval from 0 to 1. If the function instead repeats from, say, 100 to 101, it’s still the same picture — just shifted.
+So the complex form doesn't change the logic — it simply gives us a cleaner, more powerful way to write and manipulate Fourier series, especially when we move into Fourier transforms.

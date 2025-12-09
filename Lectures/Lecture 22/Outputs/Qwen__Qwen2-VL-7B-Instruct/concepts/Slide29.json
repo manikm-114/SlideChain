@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide29",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T18:00:48.249282+00:00",
+  "text_length": 1640,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s imagine we send a pulse to a stationary target — say, a student sitting still. The pulse travels to that target and comes back after a certain time. Suppose it takes exactly one hundred milliseconds for the sound to make the round trip. If we send a second pulse after one second, that second echo will return at the same delay — one hundred milliseconds — if the target hasn’t moved. Both echoes will look identical, because the distance hasn’t changed.\n\nBut now, if that student moves slightly toward us, the second echo will arrive a bit earlier — the return time becomes shorter. The peak of the echo signal shifts forward in time. This small timing change, or phase shift, tells us that motion has occurred. If the target moves rhythmically — for example, the surface is oscillating — the measured signal amplitude will fluctuate up and down around the average line.\n\nWe record this oscillating signal over time and then perform a Fourier transform on it. This mathematical operation converts the time-domain signal into a frequency-domain representation. The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid. Usually, the motion is not perfectly uniform but has some periodic pattern. By analyzing these Doppler frequencies, we can quantify that motion precisely.\n\nSo, this is the basic idea behind pulsed wave Doppler. It’s slightly more complex than continuous wave Doppler, but it has a major advantage — it allows us to measure motion at a specific depth. We’ll look at some examples and waveforms shortly to illustrate how this works in practice.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"Doppler frequency\", \"category\": \"frequency_domain\"},\n    {\"term\": \"motion or velocity\", \"category\": \"physics\"},\n    {\"term\": \"pulsed wave Doppler\", \"category\": \"modality\"},\n    {\"term\": \"continuous wave Doppler\", \"category\": \"modality\"},\n    {\"term\": \"motion at a specific depth\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"This mathematical operation converts the time-domain signal into a frequency-domain representation.\",\n    \"The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid.\",\n    \"We record this oscillating signal over time and then perform a Fourier transform on it.\",\n    \"By analyzing these Doppler frequencies, we can quantify that motion precisely.\",\n    \"It’s slightly more complex than continuous wave Doppler, but it has a major advantage — it allows us to measure motion at a specific depth.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Doppler frequency",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "motion or velocity",
+        "category": "physics"
+      },
+      {
+        "term": "pulsed wave Doppler",
+        "category": "modality"
+      },
+      {
+        "term": "continuous wave Doppler",
+        "category": "modality"
+      },
+      {
+        "term": "motion at a specific depth",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "This mathematical operation converts the time-domain signal into a frequency-domain representation.",
+      "The resulting frequency shift corresponds to the Doppler frequency, which reflects the motion or velocity of the surface or fluid.",
+      "We record this oscillating signal over time and then perform a Fourier transform on it.",
+      "By analyzing these Doppler frequencies, we can quantify that motion precisely.",
+      "It's slightly more complex than continuous wave Doppler, but it has a major advantage - it allows us to measure motion at a specific depth."
+    ]
+  }
+}

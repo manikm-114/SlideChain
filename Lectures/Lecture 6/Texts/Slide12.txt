@@ -1,0 +1,23 @@
+Now to understand that last idea more clearly, let’s take a look at this picture.
+
+What we’re doing here is sampling inner products at many frequency points. Each of these points corresponds to a value of n divided by capital T — that is, u equals n over T. As n varies from negative to positive integers, you get a collection of frequency points spread along the u-axis, which represents frequency.
+
+When n equals 0, you’re at the DC component — the zero-frequency term. When n equals 1, you get one frequency point. When n equals minus 1, you get another. And so on.
+So you can imagine each vertical line here as one of those frequency points — u equals n over T — spread across the axis.
+
+Now here’s the key idea:If we let the period T become very large, then the range from minus T over 2 to plus T over 2 will grow wider and wider. In fact, in the limit as T goes to infinity, that interval covers the entire frequency axis — from minus infinity to plus infinity.
+
+That’s what we mean by dense sampling of frequency.
+As T increases, the spacing between neighboring frequencies gets smaller and smaller. Mathematically, the spacing — which we call delta u — becomes 1 over capital T. So the gap between u equals to n over T and u equals to (n plus 1) over T shrinks.
+Eventually, these discrete frequency samples get so close together that they begin to form a continuous spectrum.
+And that’s the magic.
+
+We started with a periodic function, which gives us discrete frequencies. But as the period stretches toward infinity, the function becomes non-periodic, and the discrete frequency points turn into a continuous frequency range.
+So, what is a non-periodic function in this view?
+It’s just a periodic function with an infinitely long period. Anything that happens beyond that infinite window doesn’t affect what we see — and that’s how we bridge from the Fourier series to the Fourier transform.
+
+This slide captures the big picture:
+Discrete frequencies spaced by 1 over T,
+Becoming densely packed as T increases,
+And ultimately forming a continuous frequency axis.
+That’s our gateway into the Fourier transform.

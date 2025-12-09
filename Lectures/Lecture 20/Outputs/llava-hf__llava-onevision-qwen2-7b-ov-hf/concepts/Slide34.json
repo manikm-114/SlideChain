@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide34",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo, as we’ve just discussed, MRI contrast agents are not entirely harmless. Research in recent years has revealed that gadolinium-based agents — while extremely useful for improving image clarity — can sometimes remain in the body long after the scan, particularly in the brain and even within bone tissue. In response to this growing concern, the European Medicines Agency, or EMA, launched an extensive investigation. In 2017, their committee reviewed evidence showing that traces of gadolinium could persist in brain tissues for many months after a single injection. MRI scans even showed increased signal intensity in regions where gadolinium had accumulated.\n\nFollowing this review, the EMA decided to take precautionary action. They suspended several widely used linear gadolinium-based contrast agents, including MultiHance, Omniscan, Magnevist, and OptiMARK. These were once very common in clinical MRI but are now restricted in Europe due to the risk of residual gadolinium retention. This is not something you’ll find discussed in most textbooks yet — it’s a relatively recent development, but an important one to know. It reminds us that while MRI is a non-ionizing and generally safe imaging technique, it still comes with chemical safety considerations when contrast agents are used.\n\nNow, from here, I’ll move quickly through a few additional slides that are not required for this course, but they’re worth knowing to give you a broader perspective. They illustrate how MRI, beyond diagnostic imaging, plays a major role in neuroscience and brain research, helping us study how the human brain functions and connects at a fundamental level.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"MRI contrast agents\", \"category\": \"modality\"},\n    {\"term\": \"gadolinium-based agents\", \"category\": \"modality\"},\n    {\"term\": \"EMA investigation\", \"category\": \"workflow\"},\n    {\"term\": \"residual gadolinium retention\", \"category\": \"modality\"},\n    {\"term\": \"brain tissue\", \"category\": \"anatomy\"},\n    {\"term\": \"increased signal intensity\", \"category\": \"signal_processing\"},\n    {\"term\": \"precautionary action\", \"category\": \"workflow\"},\n    {\"term\": \"suspension of contrast agents\", \"category\": \"workflow\"},\n    {\"term\": \"chemical safety considerations\", \"category\": \"physics\"},\n    {\"term\": \"non-ionizing imaging technique\", \"category\": \"physics\"},\n    {\"term\": \"neuroscience and brain research\", \"category\": \"modality\"},\n    {\"term\": \"study of human brain function\", \"category\": \"modality\"},\n    {\"term\": \"fundamental level\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"MRI scans even showed increased signal intensity in regions where gadolinium had accumulated.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MRI contrast agents",
+        "category": "modality"
+      },
+      {
+        "term": "gadolinium-based agents",
+        "category": "modality"
+      },
+      {
+        "term": "residual gadolinium retention",
+        "category": "modality"
+      },
+      {
+        "term": "brain tissue",
+        "category": "anatomy"
+      },
+      {
+        "term": "increased signal intensity",
+        "category": "signal_processing"
+      },
+      {
+        "term": "precautionary action",
+        "category": "workflow"
+      },
+      {
+        "term": "chemical safety considerations",
+        "category": "physics"
+      },
+      {
+        "term": "neuroscience and brain research",
+        "category": "modality"
+      },
+      {
+        "term": "fundamental level",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "MRI scans even showed increased signal intensity in regions where gadolinium had accumulated."
+    ]
+  }
+}

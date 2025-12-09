@@ -1,0 +1,149 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "multiple pinholes"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scintillation camera"
+          },
+          {
+            "category": "reconstruction",
+            "term": "double-cone image"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstructions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal processing"
+          },
+          {
+            "category": "modality",
+            "term": "multi-view tomography"
+          },
+          {
+            "category": "reconstruction",
+            "term": "seven simultaneous views"
+          },
+          {
+            "category": "quality_metric",
+            "term": "improved accuracy"
+          }
+        ],
+        "evidence": [
+          "using multiple pinholes with a scintillation camera",
+          "double-cone image from one pinhole\u2019s geometry",
+          "image reconstructions",
+          "signal processing",
+          "multi-view tomography",
+          "seven simultaneous views",
+          "improved accuracy"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This approach was used to image the heart"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "heart",
+        "p": "measures",
+        "s": "seven pinholes"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "pinholes"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scintillation camera"
+          },
+          {
+            "category": "instrumentation",
+            "term": "seven pinholes"
+          },
+          {
+            "category": "algorithm",
+            "term": "seven simultaneous views"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal processing"
+          },
+          {
+            "category": "mathematics",
+            "term": "orthogonal direction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "modern signal processing"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstructions"
+          }
+        ],
+        "evidence": [
+          "using several pinholes-seven in this case",
+          "producing multiple views of the target simultaneously",
+          "improved accuracy by acquiring several perspectives at a single time point",
+          "collecting seven views from one direction and another seven from an orthogonal direction",
+          "achieving image reconstructions far superior to those early results"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "this approach was used to image the heart"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Each pinhole forms a distinct image, producing multiple views of the target simultaneously; for example, you get a double-cone image from one pinhole's geometry, and with seven pinholes, you get seven images at once."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "multiple views",
+        "p": "produces",
+        "s": "multiple pinholes"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstructions"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide47.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide47.txt"
+  },
+  "slide_id": "Slide47"
+}

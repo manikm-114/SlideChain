@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier slice theorem\",\n      \"p\": \"uses\",\n      \"o\": \"1D Fourier Transform (FT) of the RT projection profile\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"1D Fourier Transform (FT) of the RT projection profile acquired at angle φ is equivalent to the value of the 2D FT of f(x,y) along a line at the inclination angle φ\"\n    },\n    {\n      \"s\": \"Putting together RT profiles at all acquisition angles\",\n      \"p\": \"produces\",\n      \"o\": \"full 2D FT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Putting together RT profiles at all acquisition angles yields the full 2D FT\"\n    },\n    {\n      \"s\": \"Image\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"inverse 2D FT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Image can be reconstructed using the inverse 2D FT\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "CT dose index"
+          },
+          {
+            "category": "physics",
+            "term": "slice thickness"
+          },
+          {
+            "category": "physics",
+            "term": "radiation dose measurements"
+          },
+          {
+            "category": "mathematics",
+            "term": "integrate"
+          },
+          {
+            "category": "physics",
+            "term": "leakage radiation"
+          },
+          {
+            "category": "instrumentation",
+            "term": "CT scanner"
+          },
+          {
+            "category": "physics",
+            "term": "dose distribution"
+          }
+        ],
+        "evidence": [
+          "CT dose index, or CTDI",
+          "slice thickness",
+          "radiation dose measurements",
+          "integrate",
+          "leakage radiation",
+          "CT scanner",
+          "dose distribution",
+          "CT dose index (CTDI)"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "CTD"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "CTD: CT dose index",
+            "modalities": [
+              "text"
+            ],
+            "o": "CT dose index",
+            "p": "measures",
+            "s": "CTD"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "reflecting dose distribution within the irradiated volume"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "D(z): local dose"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "local dose",
+        "p": "represents",
+        "s": "CTDI"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [],
+        "evidence": [
+          "It's a simple yet important concept, as it includes any additional leakage radiation in the dose computation."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide52.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide52.txt"
+  },
+  "slide_id": "Slide52"
+}

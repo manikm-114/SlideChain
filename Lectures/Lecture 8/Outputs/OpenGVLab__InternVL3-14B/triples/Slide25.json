@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discretization\",\n      \"p\": \"represents\",\n      \"o\": \"sum becomes integral\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Sum becomes Integral\"\n    },\n    {\n      \"s\": \"discretization\",\n      \"p\": \"introduces\",\n      \"o\": \"factor of 1 over capital N\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the discretization introduces a factor of delta-t. When we perform the inverse transform, the discretization introduces a factor of delta-u. Multiply those together, and you get delta-t times delta-u — which we know is equal to one over capital N.\"\n    },\n    {\n      \"s\": \"forward Fourier transform\",\n      \"p\": \"uses\",\n      \"o\": \"minus sign in the exponent\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the forward transform uses a minus sign in the exponent\"\n    },\n    {\n      \"s\": \"inverse Fourier transform\",\n      \"p\":",
+  "parsed": {
+    "s": "forward Fourier transform",
+    "p": "uses",
+    "o": "minus sign in the exponent",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "the forward transform uses a minus sign in the exponent"
+    ]
+  }
+}

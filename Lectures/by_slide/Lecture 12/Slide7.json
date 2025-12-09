@@ -1,0 +1,179 @@
+{
+  "lecture": "Lecture 12",
+  "slide_id": "Slide7",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide7.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "X-ray",
+              "category": "physics"
+            },
+            {
+              "term": "wavelength",
+              "category": "physics"
+            },
+            {
+              "term": "energy",
+              "category": "physics"
+            },
+            {
+              "term": "hard X-rays",
+              "category": "physics"
+            },
+            {
+              "term": "soft X-rays",
+              "category": "physics"
+            },
+            {
+              "term": "mammography",
+              "category": "modality"
+            },
+            {
+              "term": "airport security screening",
+              "category": "modality"
+            },
+            {
+              "term": "relatively soft X-rays",
+              "category": "physics"
+            },
+            {
+              "term": "dense objects",
+              "category": "modality"
+            },
+            {
+              "term": "thicker parts of the body",
+              "category": "modality"
+            },
+            {
+              "term": "useful for different applications",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "SLIDE_TEXT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-ray\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"wavelength\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"energy\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"hard X-rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"soft X-rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"mammography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"airport security screening\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"energy above 100 kilo-electron-volts\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"relatively soft X-rays\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"dense objects\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"thicker parts of the body\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"useful for different applications\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"SLIDE_TEXT\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"X-ray\", \"category\": \"physics\"}, {\"term\": \"wavelength\", \"category\": \"physics\"}, {\"term\": \"energy\", \"category\": \"physics\"}, {\"term\": \"hard X-rays\", \"category\": \"physics\"}, {\"term\": \"soft X-rays\", \"category\": \"physics\"}, {\"term\": \"mammography\", \"category\": \"modality\"}, {\"term\": \"airport security screening\", \"category\": \"modality\"}, {\"term\": \"relatively soft X-rays\", \"category\": \"physics\"}, {\"term\": \"dense objects\", \"category\": \"modality\"}, {\"term\": \"thicker parts of the body\", \"category\": \"modality\"}, {\"term\": \"useful for different applications\", \"category\": \"modality\"}], \"evidence\": [\"SLIDE_TEXT\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide7.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "X-rays",
+              "p": "uses",
+              "o": "mammography",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"X-rays\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"mammography\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"X-rays\", \"p\": \"uses\", \"o\": \"mammography\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide7.json",
+        "parsed": {
+          "term": "attenuation",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"wavelength\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"frequency\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"energy\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"hard X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"soft X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"mammography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"medical CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"airport security\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"penetrate\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"dense tissues\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"bone\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"luggage\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"radiation\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"attenuation\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Their wavelengths are extremely\", \"parsed\": {\"term\": \"attenuation\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide7.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "mammography",
+              "p": "uses",
+              "o": "soft X-rays",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures."
+            },
+            {
+              "s": "Airport security",
+              "p": "uses",
+              "o": "hard X-rays",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "In airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"mammography\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"soft X-rays\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\\\"},\\n    {\\\"s\\\":\\\"Medical CT\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"hard X-rays\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays\\\"},\\n    {\\\"s\\\":\\\"Airport security\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"hard X-rays\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"In airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"mammography\", \"p\": \"uses\", \"o\": \"soft X-rays\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\"}, {\"s\": \"Airport security\", \"p\": \"uses\", \"o\": \"hard X-rays\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"In airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "term": "X-rays",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:29:18.052452+00:00\", \"text_length\": 1317, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"wavelength\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"energy\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"soft X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"hard X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"mammography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Medical CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Airport security\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"electromagnetic spectrum\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"frequency\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"radiation\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"bone\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"thicker parts of the body\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"dense objects\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-rays\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"t\", \"parsed\": {\"term\": \"X-rays\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "soft X-rays",
+              "p": "uses",
+              "o": "mammography",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.0,
+              "evidence": "In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T06:57:06.353490+00:00\", \"text_length\": 1317, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"soft X-rays\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"mammography\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"soft X-rays\", \"p\": \"uses\", \"o\": \"mammography\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.0, \"evidence\": \"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\"}]}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "term": "In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T05:01:13.211636+00:00\", \"text_length\": 1317, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"If we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Different kinds of X-rays are useful for different applications.\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can\", \"parsed\": {\"term\": \"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "s": "medical CT",
+          "p": "uses",
+          "o": "hard X-rays",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:09:03.206977+00:00\", \"text_length\": 1317, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nIf we narrow down within the electromagnetic spectrum, we can clearly see where X-rays sit. Their wavelengths are extremely small, ranging roughly from one-tenth of a nanometer up to ten nanometers. Within this narrow window, we classify radiation as X-rays.\\n\\nBut not all X-rays are the same. When the frequency is higher — and remember, higher frequency means higher energy — we call them hard X-rays. When the frequency is lower, corresponding to longer wavelengths, the energy is weaker, and we call them soft X-rays.\\n\\nDifferent kinds of X-rays are useful for different applications. For example, in mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures. But if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\n\\nIn non-medical settings, even higher-energy X-rays are used. For example, in airport security screening, luggage may be very thick or contain dense objects. In those cases, stronger X-rays are required; otherwise, all the radiation would be absorbed, and no useful information would come out. So, depending on the wavelength and energy, X-rays can be tuned for very different purposes — from delicate imaging in medicine to powerful scanning in security.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"mammography\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"soft X-rays\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"In mammography, we use relatively soft X-rays because we want sensitivity to soft tissue structures.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"medical CT\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"hard X-rays\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"airport security\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"hard X-rays\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"In non-medical settings, even higher-energy X-rays are used\", \"parsed\": {\"s\": \"medical CT\", \"p\": \"uses\", \"o\": \"hard X-rays\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"if we want to penetrate thicker parts of the body or denser tissues like bone, we need hard X-rays, with energies that can go above 100 kilo-electron-volts.\"]}}"
+      }
+    }
+  }
+}

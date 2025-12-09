@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"diag(v)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms. For example, diag of v creates a diagonal matrix from a vector.\"},\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"diag(A)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You can also reverse it: diag of A pulls the diagonal elements from a matrix.\"},\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"eye(n)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\"},\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"zeros(m,n)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To create a matrix full of zeros, use zeros of m and n.\"},\n    {\"s\":\"MATLAB\", \"p\":\"uses\",",
+  "parsed": {
+    "s": "MATLAB",
+    "p": "uses",
+    "o": "zeros(m,n)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "To create a matrix full of zeros, use zeros of m and n."
+    ]
+  }
+}

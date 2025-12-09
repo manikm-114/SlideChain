@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide6",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:00:51.851582+00:00",
+  "text_length": 1854,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, the mean squared error is not the only way to measure differences. There are several variants, each with slightly different properties.\n\nThe first, which we’ve already discussed, is the Mean Squared Error, or MSE. This is the average of the squared differences between prediction and truth.\nA closely related measure is the Root Mean Squared Error, or RMSE. Here we simply take the square root of the mean squared error. Why? Because this brings the units back to the same scale as the original measurement. For example, if we are measuring pixel intensities, RMSE will be expressed in the same units as those intensities, which makes it easier to interpret.\n\nOne important property of squaring is that it emphasizes larger errors much more strongly. If a difference is 100, squaring turns it into 10,000. That means MSE and RMSE heavily penalize large deviations.\nSometimes we want a measure that treats all errors more equally. That’s where the Mean Absolute Error, or MAE, comes in. Instead of squaring, we take the absolute value of the difference at each pixel, then average. This is also called the L1 norm, while MSE is associated with the L2 norm. The L1 norm is less sensitive to outliers compared to the L2 norm.\n\nFinally, we have the Mean Absolute Percentage Error, or MAPE. This is the mean absolute error expressed as a percentage of the true value. In other words, it’s MAE divided by the ground truth at each point, multiplied by 100 percent. This can be useful when we want to understand an error in relative terms — for example, saying “the error is 5 percent” rather than giving a raw number.\n\nSo, these different distance measures — MSE, RMSE, MAE, and MAPE — give us different perspectives on error. The choice depends on the problem: do we want to penalize large errors more, or do we care more about relative error percentages?\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"mean squared error\",\n      \"category\": \"quality_metric\"\n    },\n    {\n      \"term\": \"root mean squared error\",\n      \"category\": \"quality_metric\"\n    },\n    {\n      \"term\": \"mean absolute error\",\n      \"category\": \"quality_metric\"\n    },\n    {\n      \"term\": \"mean absolute percentage error\",\n      \"category\": \"quality_metric\"\n    },\n    {\n      \"term\": \"l1 norm\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"l2 norm\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"mean squared error is the average of the squared differences between prediction and truth\",\n    \"root mean squared error is the square root of the mean squared error\",\n    \"mean absolute error is the average of the absolute value of the difference\",\n    \"mean absolute percentage error is the mean absolute error expressed as a percentage of the true value\",\n    \"l1 norm is the mean absolute error\",\n    \"l2 norm is associated with the mean squared error\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "mean squared error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "root mean squared error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "mean absolute error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "mean absolute percentage error",
+        "category": "quality_metric"
+      },
+      {
+        "term": "l1 norm",
+        "category": "mathematics"
+      },
+      {
+        "term": "l2 norm",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "mean squared error is the average of the squared differences between prediction and truth",
+      "root mean squared error is the square root of the mean squared error",
+      "mean absolute error is the average of the absolute value of the difference",
+      "mean absolute percentage error is the mean absolute error expressed as a percentage of the true value",
+      "l1 norm is the mean absolute error",
+      "l2 norm is associated with the mean squared error"
+    ]
+  }
+}

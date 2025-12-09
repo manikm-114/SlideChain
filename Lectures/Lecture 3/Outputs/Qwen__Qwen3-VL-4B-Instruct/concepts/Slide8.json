@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide8",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:11:12.028029+00:00",
+  "text_length": 356,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn fact, for most practical purposes, we’re satisfied with linear functions. In one dimension, this means a straight line; in two dimensions, it’s a plane; and in higher dimensions, we extend the idea further. These simple, linear relationships are easy to work with and provide the foundation for much of engineering analysis—including in medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"linear functions\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"in one dimension, this means a straight line; in two dimensions, it’s a plane; and in higher dimensions, we extend the idea further\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"These simple, linear relationships are easy to work with and provide the foundation for much of engineering analysis—including in medical imaging\",\n      \"category\": \"data_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"In fact, for most practical purposes, we’re satisfied with linear functions.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear functions",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "In fact, for most practical purposes, we're satisfied with linear functions."
+    ]
+  }
+}

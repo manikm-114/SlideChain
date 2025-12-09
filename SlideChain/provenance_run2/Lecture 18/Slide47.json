@@ -1,0 +1,128 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "T1 tells us how quickly a tissue\u2019s magnetization realigns with the main magnetic field, B zero.",
+            "modalities": [
+              "text"
+            ],
+            "o": "how quickly a tissue\u2019s magnetization realigns with the main magnetic field, B zero",
+            "p": "measures",
+            "s": "T1"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This exponential recovery is the hallmark of T1 relaxation.",
+            "modalities": [
+              "text"
+            ],
+            "o": "exponential recovery",
+            "p": "represents",
+            "s": "T1 relaxation"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The recovery speed depends on the tissue type, because different tissues exchange energy with their environment-the so-called spin-lattice interaction-at different rates.",
+            "modalities": [
+              "text"
+            ],
+            "o": "tissue type",
+            "p": "depends_on",
+            "s": "T1 times"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "MRI"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "These differences in T1 times are one of the key sources of image contrast in MRI."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The recovery speed depends on the tissue type, because different tissues exchange energy with their environment-the so-called spin-lattice interaction-at different rates."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "the tissue type",
+        "p": "depends_on",
+        "s": "T1"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 effect"
+          },
+          {
+            "category": "physics",
+            "term": "longitudinal magnetization"
+          },
+          {
+            "category": "mathematics",
+            "term": "z-axis"
+          },
+          {
+            "category": "signal_processing",
+            "term": "exponential recovery"
+          },
+          {
+            "category": "physics",
+            "term": "T1 relaxation"
+          },
+          {
+            "category": "anatomy",
+            "term": "tissue type"
+          },
+          {
+            "category": "modality",
+            "term": "image contrast"
+          },
+          {
+            "category": "mathematics",
+            "term": "M naught"
+          },
+          {
+            "category": "signal_processing",
+            "term": "exponential"
+          }
+        ],
+        "evidence": [
+          "T1 describes how the longitudinal magnetization, that is, the component along the z-axis, gradually returns to its equilibrium value after being disturbed by a radiofrequency pulse.",
+          "The recovery speed depends on the tissue type, because different tissues exchange energy with their environment-the so-called spin-lattice interaction-at different rates.",
+          "The differences in T1 times are one of the key sources of image contrast in MRI."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide47.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide47.txt"
+  },
+  "slide_id": "Slide47"
+}

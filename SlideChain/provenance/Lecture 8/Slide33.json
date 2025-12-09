@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "FFT-based convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wrap-around"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero padding"
+          },
+          {
+            "category": "mathematics",
+            "term": "N plus M minus 1"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "inverse FFT"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          }
+        ],
+        "evidence": [
+          "FFT-based convolution gives us circular convolution by default",
+          "avoid that wrap-around is to make sure those neighbors are far enough away",
+          "zero padding",
+          "We take our original signals and append enough zeros",
+          "the total length is at least N plus M minus 1",
+          "perform the FFT",
+          "take the inverse FFT",
+          "the result matches the direct, linear convolution exactly"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "We take our original signals and append enough zeros to both so that the total length is at least N plus M minus 1, where N and M are the original lengths of the two sequences."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "non-overlapping",
+        "p": "ensures",
+        "s": "zero padding"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "frequency domain"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": null,
+      "triples": null
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "zero padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "FFT-based convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wrap-around"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          }
+        ],
+        "evidence": [
+          "We just saw that FFT-based convolution gives us circular convolution by default, where the \u201cneighboring\u201d copies wrap around and interfere.",
+          "The simplest way to avoid that wrap-around is to make sure those neighbors are far enough away so they can\u2019t overlap during the shift. That\u2019s what zero padding does.",
+          "In this example, each signal is only 5 samples long, but we pad them out to length 16. Now, when we perform the FFT, multiply in the frequency domain, and take the inverse FFT, the \u201cwrap-around\u201d region is all zeros - so the result matches the direct, linear convolution exactly."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide33.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide33.txt"
+  },
+  "slide_id": "Slide33"
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"ray-sum\", \"p\":\"represents\", \"o\":\"line integral\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The term simply means we are summing up contributions along a single ray of X-rays as it travels through the object.\"},\n    {\"s\":\"line integral\", \"p\":\"measures\", \"o\":\"attenuation coefficient\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In the limit, what we measure is a line integral of the attenuation coefficient along the path of the X-ray.\"},\n    {\"s\":\"linear equation\", \"p\":\"forms\", \"o\":\"bridge between unknown interior of the body and measurable data at the detector\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So this linear equation forms the bridge between the unknown interior of the body and the measurable data at the detector.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ray-sum",
+        "p": "represents",
+        "o": "line integral",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The term simply means we are summing up contributions along a single ray of X-rays as it travels through the object."
+      },
+      {
+        "s": "line integral",
+        "p": "measures",
+        "o": "attenuation coefficient",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In the limit, what we measure is a line integral of the attenuation coefficient along the path of the X-ray."
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "Temporal resolution"
+          },
+          {
+            "category": "modality",
+            "term": "Conventional Scanning"
+          },
+          {
+            "category": "modality",
+            "term": "Helical scanning"
+          },
+          {
+            "category": "quality_metric",
+            "term": "Longitudinal blurring"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Overlapping reconstruction"
+          }
+        ],
+        "evidence": [
+          "Temporal resolution agent is good enough",
+          "Conventional Scanning",
+          "Spiral Scanning",
+          "Through-plane motion artifacts",
+          "single-breath-hold spiral scanning",
+          "With helical scanning",
+          "longitudinal blurring",
+          "overlapping reconstruction",
+          "recover an image longitudinally"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Temporal Resolution"
+          },
+          {
+            "category": "modality",
+            "term": "Conventional Scanning"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Motion Artifacts"
+          },
+          {
+            "category": "modality",
+            "term": "Helical Scanning"
+          },
+          {
+            "category": "algorithm",
+            "term": "Overlapping Reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Longitudinal Blurring"
+          },
+          {
+            "category": "algorithm",
+            "term": "Algorithm"
+          }
+        ],
+        "evidence": [
+          "Through-plane motion artifacts are suppressed by single-breath-hold spiral scanning",
+          "With helical scanning, it's smoothed out, but you have some longitudinal blurring",
+          "Later, I mentioned overlapping reconstruction. You really can recover an image longitudinally and a better resolution than conventional scanning"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "SLIDE_TEXT",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "image",
+            "p": "measures",
+            "s": "Temporal resolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "temporal resolution"
+          },
+          {
+            "category": "modality",
+            "term": "conventional cp scanning"
+          },
+          {
+            "category": "modality",
+            "term": "helical scanning"
+          },
+          {
+            "category": "quality_metric",
+            "term": "motion artifacts"
+          },
+          {
+            "category": "quality_metric",
+            "term": "longitudinal blurring"
+          },
+          {
+            "category": "reconstruction",
+            "term": "overlapping reconstruction"
+          }
+        ],
+        "evidence": [
+          "Temporal resolution, so you see conventional cp scanning.",
+          "With helical scanning, it's smoothed out, but you have some longitudinal blurring.",
+          "Later, I mentioned overlapping reconstruction.",
+          "Through-plane motion artifacts are suppressed by single-breath-hold spiral scanning"
+        ]
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "Through-plane motion artifacts are suppressed by single-breath-hold spiral scanning"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Through-plane motion artifacts",
+        "p": "produces",
+        "s": "Conventional Scanning"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "Temporal resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Helical scanning"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Motion artifacts"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Overlapping reconstruction"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Longitudinal blurring"
+          },
+          {
+            "category": "workflow",
+            "term": "Conventional scanning"
+          }
+        ],
+        "evidence": [
+          "Temporal resolution, so you see conventional CP scanning. You do one slice at a time. Then you move the patient into the country by a small increment. Do again, patient, keep pressing.",
+          "So from slice to slice, you see some discontinuity. So this is not due to some pathological feature. It's really due to motion artifacts that show the temporal resolution agent is good enough. But With helical scanning, it's smoothed out, but you have some longitudinal blurring."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "It's really due to some pathological feature.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Temporal resolution agent",
+            "p": "measures",
+            "s": "Temporal resolution"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

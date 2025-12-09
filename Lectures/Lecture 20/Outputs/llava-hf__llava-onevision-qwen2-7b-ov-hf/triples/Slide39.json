@@ -1,0 +1,19 @@
+{
+  "slide_id": "Slide39",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo far, we’ve learned about the major medical imaging modalities — CT, nuclear imaging, and MRI. Each of them has unique strengths and physical foundations. CT uses X-rays and attenuation; nuclear imaging uses radioactive tracers; and MRI uses magnetic resonance and the behavior of hydrogen protons.\n\nNow, one very exciting direction in modern imaging research is modality fusion — combining these different imaging technologies into a single, integrated platform. For example, PET/CT and PET/MRI scanners combine anatomical and functional information together, so that we can see both the structure and the physiology in one unified image.\n\nBeyond this, people are exploring hybrid imaging ideas, where optical imaging, ultrasound, or even photoacoustic methods are combined with MRI or CT to capture complementary information. These approaches can greatly enhance diagnostic accuracy and help us understand the body’s processes at multiple scales — from cellular activity all the way to organ-level structure.\n\nSo, while MRI itself is a powerful and mature modality, the fusion of imaging technologies is opening up new horizons — what we might call the “next generation” of biomedical imaging systems. These are truly exciting times for both clinical medicine and research.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"CT\", \"p\":\"uses\", \"o\":\"X-rays and attenuation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT uses X-rays and attenuation.\"},\n    {\"s\":\"nuclear imaging\", \"p\":\"uses\", \"o\":\"radioactive tracers\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"nuclear imaging uses radioactive tracers.\"},\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"magnetic resonance and the behavior of hydrogen protons\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MRI uses magnetic resonance and the behavior of hydrogen protons.\"},\n    {\"s\":\"PET/CT\", \"p\":\"uses\", \"o\":\"anatomical and functional information\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"PET/CT scanners combine anatomical and functional information together.\"},\n    {\"s\":\"PET/MRI\", \"p\":\"uses\", \"o\":\"anatomical and functional information\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"PET/MRI scanners combine anatomical and functional",
+  "parsed": {
+    "s": "PET/CT",
+    "p": "uses",
+    "o": "anatomical and functional information",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "PET/CT scanners combine anatomical and functional information together."
+    ]
+  }
+}

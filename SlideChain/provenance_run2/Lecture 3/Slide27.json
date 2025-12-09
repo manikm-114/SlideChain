@@ -1,0 +1,156 @@
+{
+  "lecture": "Lecture 3",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Ohm\u2019s law"
+          },
+          {
+            "category": "mathematics",
+            "term": "V = IR"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear relationship"
+          },
+          {
+            "category": "mathematics",
+            "term": "I = V/R"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear system"
+          }
+        ],
+        "evidence": [
+          "A resistor follows Ohm\u2019s law: V = IR",
+          "double the current, and the voltage doubles",
+          "Whether we write V = IR or I = V/R, the linearity remains clear",
+          "simple, familiar example of a linear system"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "A resistor follows Ohm\u2019s law: V = IR.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Ohm\u2019s law",
+            "p": "represents",
+            "s": "Resistor"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "A resistor follows Ohm\u2019s law: V = IR.",
+            "modalities": [
+              "text"
+            ],
+            "o": "V = IR",
+            "p": "uses",
+            "s": "Ohm\u2019s law"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Whether we write V = IR or I = V/R, the linearity remains clear.",
+            "modalities": [
+              "text"
+            ],
+            "o": "I = V/R",
+            "p": "uses",
+            "s": "Ohm\u2019s law"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "V = IR"
+          },
+          {
+            "category": "mathematics",
+            "term": "I = V/R"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear relationship"
+          }
+        ],
+        "evidence": [
+          "double the current, and the voltage doubles",
+          "This is a simple, familiar example of a linear system"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "V = IR"
+          },
+          {
+            "category": "mathematics",
+            "term": "I = V/R"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear relationship"
+          },
+          {
+            "category": "mathematics",
+            "term": "double the current, and the voltage doubles"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear system"
+          }
+        ],
+        "evidence": [
+          "Let's consider classic electrical components. A resistor follows Ohm's law: V = IR.",
+          "This is a linear relationship-double the current, and the voltage doubles.",
+          "Whether we write V = IR or I = V/R, the linearity remains clear.",
+          "This is a simple, familiar example of a linear system."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "linear relationship"
+          },
+          {
+            "category": "instrumentation",
+            "term": "resistor"
+          }
+        ],
+        "evidence": [
+          "Let\u2019s consider classic electrical components. A resistor follows Ohm\u2019s law: V = IR. This is a linear relationship-double the current, and the voltage doubles. Whether we write V = IR or I = V/R, the linearity remains clear. This is a simple, familiar example of a linear system."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

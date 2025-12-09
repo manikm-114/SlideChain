@@ -1,0 +1,91 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "Hotelling Observer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear template"
+          },
+          {
+            "category": "signal_processing",
+            "term": "test statistic"
+          },
+          {
+            "category": "quality_metric",
+            "term": "signal-to-noise ratio"
+          },
+          {
+            "category": "algorithm",
+            "term": "Channelized Hotelling Observer"
+          }
+        ],
+        "evidence": [
+          "The Hotelling Observer is designed to be the best possible linear observer.",
+          "we take the image data and apply a linear template to it.",
+          "a test statistic.",
+          "maximizes the signal-to-noise ratio",
+          "We might only use selected features or specific channels of the image, instead of the full dataset. That gives us the Channelized Hotelling Observer"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The Hotelling Observer is designed to be the best possible linear observer. What does \u201cbest\u201d mean here? It means the observer chooses its template in a way that maximizes the signal-to-noise ratio."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "signal-to-noise ratio",
+        "p": "measures",
+        "s": "Hotelling Observer"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "real-world medical imaging problems"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "Channelized Hotelling Observer"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A linear observer applies a linear template to an image data vector to obtain the value of a scalar test statistic t."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "test statistic t",
+        "p": "produces",
+        "s": "Hotelling Observer"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "diseased and non-diseased cases"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide56.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide56.txt"
+  },
+  "slide_id": "Slide56"
+}

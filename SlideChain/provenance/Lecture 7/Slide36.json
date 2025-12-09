@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 7",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "highest frequency"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "To determine those two unknowns for each sinusoid - amplitude and phase - we need at least two data points per cycle.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sampling rate",
+            "p": "depends_on",
+            "s": "signal reconstruction"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "the sampling rate - measured in samples per second - must be greater than 2 times nu.",
+            "modalities": [
+              "text"
+            ],
+            "o": "samples per second",
+            "p": "measures",
+            "s": "Nyquist sampling rate"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Nyquist frequency"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sample fast enough to resolve the highest frequency present in the signal"
+      },
+      "triples": null
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "communication",
+        "term": "data transfer"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "To avoid missing any important information, the spacing between adjacent samples must be less than or equal to 1 over 2 nu. In more familiar terms, that means the sampling rate - measured in samples per second - must be greater than 2 times nu. This is the famous Nyquist sampling rate.",
+            "modalities": [
+              "text"
+            ],
+            "o": "2 times nu",
+            "p": "measures",
+            "s": "Nyquist sampling rate"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

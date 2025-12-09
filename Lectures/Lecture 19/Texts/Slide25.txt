@@ -1,0 +1,16 @@
+Let’s start with phase encoding.
+
+Suppose you do nothing special — what happens? All the signals from the slice come out at the same frequency, and they just add together. You can’t tell which signal came from which location. It’s like hearing a classroom of students speaking at once, all in the same pitch. You know there are many voices, but you can’t separate them.
+So how do we make progress? We apply a gradient encoding along one direction of the slice. This gradient is turned on for a certain amount of time. What happens then?
+
+At the beginning, before the gradient is applied, all the spins are in phase. But once the gradient is turned on, the magnetic field is no longer the same everywhere. At one location, say at the top, the field is a little weaker. At another location, maybe lower down, the field is stronger.
+Because precession frequency depends on field strength, the spins at different locations accumulate different amounts of phase shift over that same time interval.
+Where the field is weak, the spins process more slowly.
+Where the field is strong, the spins process more quickly.
+And since the gradient is linear, the phase difference grows proportionally with position.
+
+So, after the gradient pulse, spins at the top may have accumulated only a small phase change, while spins at the bottom may have accumulated a large phase change, maybe even 180 degrees.
+Now, when you collect the signal, you know that spins with little or no phase shift must have come from one end of the slice, and spins with larger phase shifts must have come from the other end.
+
+This is the essence of phase encoding. You haven’t fully reconstructed the image yet, but you now have row-wise spatial information. It’s like being able to say, “That sound came from the front row, or the middle row, or the back row,” even if you don’t yet know exactly which student was speaking.
+Phase encoding is the first step toward resolving spatial information inside the slice.

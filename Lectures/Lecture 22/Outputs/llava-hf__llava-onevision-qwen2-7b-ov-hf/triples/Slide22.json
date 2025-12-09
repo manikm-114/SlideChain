@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide22",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere is the key paragraph from your textbook. The diagram is reduced in size, but the principle remains the same. You have motion, an incident frequency, and a reflected frequency. The derivation goes as follows: the frequency reflected by the moving blood cell or boundary is given by Equation 3.40. Here, c is the speed of sound in the tissue, v is the blood flow velocity, θ is the angle between the beam and the direction of motion, and the whole term is divided by λ, the wavelength.\n\nNow, how do we derive this? The idea is straightforward. The wavelength times the frequency gives you the speed of the sound wave, meaning c = f × λ. The term v cos θ represents the velocity component of motion in the direction of the beam. Together, these describe the relative velocity between the transducer and the moving target.\n\nThe incident frequency of the ultrasound is denoted f ᵢ, which equals c divided by λ. The difference between the incident frequency and the reflected frequency is shown in the last equation. This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction. So, from the measured shift, you can infer how fast the blood or tissue is moving toward or away from the transducer.\n\nThis may not be immediately clear from the formulas, so let’s use a simple cartoon to understand why this Doppler shift happens.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"The Doppler frequency shift\", \"p\":\"measures\",\n     \"o\":\"The velocity component along the beam direction\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction. So, from the measured shift, you can infer how fast the blood or tissue is moving toward or away from the transducer.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "The Doppler frequency shift",
+        "p": "measures",
+        "o": "The velocity component along the beam direction",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.0,
+        "evidence": "This frequency difference, called the Doppler frequency shift, allows you to calculate the velocity component along the beam direction. So, from the measured shift, you can infer how fast the blood or tissue is moving toward or away from the transducer."
+      }
+    ]
+  }
+}

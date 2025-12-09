@@ -1,0 +1,13 @@
+Now let’s go deeper into how MATLAB’s radon function works for parallel-beam CT.
+
+Think of the simulated beams as rays spaced one pixel apart. These beams are projected from the source, travel in straight parallel lines, pass through the object, and arrive at the detector on the other side.
+In practice, both the beams and the detector array rotate together around the center of the image. The amount of rotation is controlled by the angle theta, which we provide as an input to the function. So by sweeping through many angles, we gather projections from all around the object.
+
+The MATLAB function looks like this:R, x p equals radon I, theta;
+Here’s what each part means:
+R is the result—it contains the projection values, essentially the amplitudes of the rays.
+X p gives the detector positions, if you need to keep track of them.
+I is simply your input image, or phantom.
+theta is the set of rotation angles you want to use.
+
+So, in one line of code, MATLAB takes your image and simulates what the parallel-beam projections would look like at the specified angles.

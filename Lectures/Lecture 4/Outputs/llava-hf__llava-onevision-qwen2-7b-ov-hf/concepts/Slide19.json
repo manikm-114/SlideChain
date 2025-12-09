@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide19",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo far, we’ve explored both the continuous and discrete versions of the delta function.\nBoth approaches give us ways to express functions as combinations of basic building blocks.\nWhether a system or phenomenon is fundamentally continuous or discrete isn’t always clear — think of water.\nWhen you see a flowing stream, it seems continuous. But if you zoom in, you’ll find discrete molecules.\u000bAnd if you go even deeper, those molecules follow the rules of quantum mechanics, where a continuous probability wave describes behavior.\n\nIn engineering, we switch between these views depending on what’s useful.\u000bA summation represents the discrete case. An integral represents the continuous case.\u000bThey are really two sides of the same coin.\nWith this foundation, we’re ready to move forward —\u000band explore how delta functions connect directly to shift-invariant systems,\u000bwhich play a key role in imaging and signal processing.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"delta function\", \"category\": \"mathematics\"},\n    {\"term\": \"discrete\", \"category\": \"mathematics\"},\n    {\"term\": \"continuous\", \"category\": \"mathematics\"},\n    {\"term\": \"summation\", \"category\": \"mathematics\"},\n    {\"term\": \"integral\", \"category\": \"mathematics\"},\n    {\"term\": \"shift-invariant systems\", \"category\": \"signal_processing\"},\n    {\"term\": \"imaging and signal processing\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Both approaches give us ways to express functions as combinations of basic building blocks.\", \"They are really two sides of the same coin.\", \"With this foundation, we’re ready to move forward — and explore how delta functions connect directly to shift-invariant systems, which play a key role in imaging and signal processing.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "discrete",
+        "category": "mathematics"
+      },
+      {
+        "term": "continuous",
+        "category": "mathematics"
+      },
+      {
+        "term": "summation",
+        "category": "mathematics"
+      },
+      {
+        "term": "integral",
+        "category": "mathematics"
+      },
+      {
+        "term": "shift-invariant systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "imaging and signal processing",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Both approaches give us ways to express functions as combinations of basic building blocks.",
+      "They are really two sides of the same coin.",
+      "With this foundation, we’re ready to move forward - and explore how delta functions connect directly to shift-invariant systems, which play a key role in imaging and signal processing."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"PET-CT\", \"p\":\"uses\", \"o\":\"attenuation correction\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"PET-CT: Not Only Registered Anatomy & Physiology But Also Attenuation Correction!\"},\n    {\"s\":\"PET\", \"p\":\"uses\", \"o\":\"gamma photons at 511 keV\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Photon Energy in PET (511keV) Different from That in CT\"},\n    {\"s\":\"CT\", \"p\":\"uses\", \"o\":\"tube voltages up to about 140 kVp\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"X-ray CT scans use tube voltages that go up to about 140 kVp\"},\n    {\"s\":\"CT\", \"p\":\"measures\", \"o\":\"effective energy around 70 keV\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The actual X-ray beam covers a spectrum from around 30 keV to 140 keV, but all these energies can",
+  "parsed": {
+    "s": "CT",
+    "p": "uses",
+    "o": "tube voltages up to about 140 kVp",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "X-ray CT scans use tube voltages that go up to about 140 kVp"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "slide_id": "Slide6",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:50:55.341479+00:00",
+  "text_length": 1024,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe Fourier transform, as we learned, is the foundation of classic CT theory. It requires complete coverage of an entire cross-section or the whole object. When you have projection data, you can use the Fourier slice theorem in 2D or 3D, and then perform the inverse Fourier transform also in 2D or 3D. This classical framework is called the central dogma.\n\nThe whole cross-section or entire object must be fully covered by the X-ray beam. No matter the shape of the beam, you can always re-bin the data into parallel beam geometry. Then, the collected data can be inversely transformed back to the original image domain. That’s the fundamental way image reconstruction is performed.\n\nAs we learned, filtered back projection is essentially just the inverse Fourier transform represented in polar coordinates. This core concept explains the process pretty well. If you follow this, you should grasp the essential idea. In my opinion, the key question is: what is the difference between classic CT theory and modern CT theory?\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier transform\", \"category\": \"mathematics\"},\n    {\"term\": \"projection data\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"inverse Fourier transform\", \"category\": \"mathematics\"},\n    {\"term\": \"parallel beam geometry\", \"category\": \"physics\"},\n    {\"term\": \"filtered back projection\", \"category\": \"algorithm\"},\n    {\"term\": \"inverse Fourier transform\", \"category\": \"mathematics\"},\n    {\"term\": \"polar coordinates\", \"category\": \"mathematics\"},\n    {\"term\": \"classic CT theory\", \"category\": \"modality\"},\n    {\"term\": \"modern CT theory\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"The Fourier transform, as we learned, is the foundation of classic CT theory.\",\n    \"The whole cross-section or entire object must be fully covered by the X-ray beam.\",\n    \"Filtered back projection is essentially just the inverse Fourier transform represented in polar coordinates.\",\n    \"In my opinion, the key question is: what is the difference between classic CT theory and modern CT theory?\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "projection data",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "inverse Fourier transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "parallel beam geometry",
+        "category": "physics"
+      },
+      {
+        "term": "filtered back projection",
+        "category": "algorithm"
+      },
+      {
+        "term": "inverse Fourier transform",
+        "category": "mathematics"
+      },
+      {
+        "term": "polar coordinates",
+        "category": "mathematics"
+      },
+      {
+        "term": "classic CT theory",
+        "category": "modality"
+      },
+      {
+        "term": "modern CT theory",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "The Fourier transform, as we learned, is the foundation of classic CT theory.",
+      "The whole cross-section or entire object must be fully covered by the X-ray beam.",
+      "Filtered back projection is essentially just the inverse Fourier transform represented in polar coordinates.",
+      "In my opinion, the key question is: what is the difference between classic CT theory and modern CT theory?"
+    ]
+  }
+}

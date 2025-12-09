@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s discuss longitudinal data truncation from a single slice. When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.\n\nHowever, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed. The first paper I wrote on cone beam helical scanning proposed an approximate algorithm for this challenge.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n```json\n{\n  \"triples\": [\n    {\"s\":\"single slice\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"interpolation\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.\"}\n  ]\n}\n```",
+  "parsed": {
+    "triples": []
+  }
+}

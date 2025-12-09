@@ -1,0 +1,24 @@
+So now that we've talked about breaking a function into a sum of waves, let's formalize that idea using the real form of the Fourier series.
+
+What we’re looking at here is just a mathematical way of saying: any periodic function f of t can be written as a combination of three types of components:
+A constant term, called the DC component,
+A sum of cosine terms,
+And a sum of sine terms.
+Each term has a different frequency and amplitude, depending on the value of n. The higher the value of n, the higher the frequency of that term.
+
+So the general formula goes like this:
+f of t equals a-zero over 2, plus the sum from n equals 1 to N of a-n times cosine of 2 pi n t, plus b-n times sine of 2 pi n t.
+Now, where do these coefficients come from?
+Well, we have formulas to compute them. That’s the trick!
+To find a zero, you integrate f of t from 0 to 1.
+To find a-n, you multiply f of t with cosine of 2 pi n t, and integrate.
+And for b-n, you do the same, but with sine of 2 pi n t.
+
+So if I give you any function f of t, you just plug it into these formulas, do the math, and you get a set of numbers — the a’s and b’s. With those coefficients, you can then reconstruct the original function by summing all the sine and cosine waves.
+As N gets larger — meaning you include more wave components — the reconstructed function becomes more and more accurate. In fact, when N approaches infinity, this series can represent the function exactly, under reasonable conditions.
+
+Now here’s something deeper: These sine and cosine functions form an orthonormal basis — that’s just a fancy way of saying they’re like the X, Y, and Z axes in 3D space, but in an infinite-dimensional space of functions.
+So geometrically, what you're doing is projecting the function f of t onto each basis function — kind of like breaking a 3D vector into its X, Y, and Z components. Except here, we’re breaking a function into sine, cosine, and constant components.
+
+If this all feels a bit abstract, don’t worry. The key takeaway is:We’re representing a function as a sum of waves.And we have formulas that let us find the right weights — or coefficients — for those waves.
+That’s what the Fourier series, in its real form, is all about.

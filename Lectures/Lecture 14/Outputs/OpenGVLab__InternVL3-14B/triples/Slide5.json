@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"3D CT case\", \"p\":\"uses\", \"o\":\"planar or two-dimensional detector array\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Now, in the 3D CT case, the X-ray source remains a point source. But instead of using a linear detector array, you use a planar or two-dimensional detector array.\"},\n    {\"s\":\"X-ray source\", \"p\":\"emits\", \"o\":\"cone-shaped beam\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The X-ray source emits radiation in a cone-shaped beam, which should be wide enough to cover the entire object.\"},\n    {\"s\":\"cone beam geometry\", \"p\":\"originates from\", \"o\":\"point source\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This configuration results in a cone beam geometry originating from the point source.\"},\n    {\"s\":\"cone beam geometry\", \"p\":\"covers\", \"o\":\"entire object\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The X-ray source emits radiation in a cone-shaped beam, which should be wide enough to",
+  "parsed": {
+    "s": "cone beam geometry",
+    "p": "originates from",
+    "o": "point source",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This configuration results in a cone beam geometry originating from the point source."
+    ]
+  }
+}

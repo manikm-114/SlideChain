@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:27:34.317980+00:00",
+  "text_length": 1753,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow that we’ve developed an understanding of the delta function and its role in modeling discrete events, let’s take this idea a step further and see how we can use it to represent an entire discrete function.\n\nHere we observe a powerful mathematical concept: any discrete function — let’s call it g of n — can be expressed as a weighted sum of shifted delta functions. That is, we take the delta function, shift it to the appropriate position, and scale it by the function’s value at that point. When we add all these together, we recover the original function.\nHere you can see the mathematical expression in this slide.\n\nThis formula tells us that each sample of g contributes one impulse, located at n equals k, and scaled by g at that k. When we add up all these scaled and shifted impulses, we rebuild the function g.\n\nLet’s look at a specific example to make this concrete.\n\nSuppose your discrete function consists of just a few nonzero points. The first point is at n equals 0 with value 1 — that’s just delta of n.\n\u000bThe second point is at n equals 1 with a value of negative 1 — so we write that as minus delta of n minus 1.\n\u000bAnd the third point is at n equals 2 with a value of 1.5 — which becomes 1.5 times delta of n minus 2.\n\nBy adding these three impulses together, we effectively reconstruct the original signal, point by point.\n\nThis approach is not only elegant, it’s also foundational in signal processing and linear systems. It allows us to treat any discrete-time signal as a sum of building blocks — scaled and shifted impulses — making analysis and filtering much easier later on.\nWe’ll continue building on this idea when we introduce convolution, which is just the response of a system to this kind of delta-based representation.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete function\", \"category\": \"signal_processing\"},\n    {\"term\": \"weighted sum\", \"category\": \"mathematics\"},\n    {\"term\": \"shifted delta functions\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Any discrete function can be expressed as a weighted sum of shifted delta functions.\",\n    \"This formula tells us that each sample of g contributes one impulse, located at n equals k, and scaled by g at that k.\",\n    \"By adding these three impulses together, we effectively reconstruct the original signal, point by point.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "weighted sum",
+        "category": "mathematics"
+      },
+      {
+        "term": "shifted delta functions",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Any discrete function can be expressed as a weighted sum of shifted delta functions.",
+      "This formula tells us that each sample of g contributes one impulse, located at n equals k, and scaled by g at that k.",
+      "By adding these three impulses together, we effectively reconstruct the original signal, point by point."
+    ]
+  }
+}

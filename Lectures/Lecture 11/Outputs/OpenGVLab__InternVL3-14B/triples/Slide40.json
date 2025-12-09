@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide40",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"ROC curve\", \"p\":\"represents\", \"o\":\"trade-off between sensitivity and specificity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The ROC curve captures this trade-off.\"},\n    {\"s\":\"ROC curve\", \"p\":\"measures\", \"o\":\"sensitivity and specificity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here’s the key idea: sensitivity and specificity are not fixed properties of a test.\"},\n    {\"s\":\"ROC curve\", \"p\":\"produces\", \"o\":\"area under the curve (AUC)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"And importantly, the area under the ROC curve, or AUC, provides a single number to summarize diagnostic accuracy.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ROC curve",
+        "p": "measures",
+        "o": "sensitivity and specificity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Here’s the key idea: sensitivity and specificity are not fixed properties of a test."
+      }
+    ]
+  }
+}

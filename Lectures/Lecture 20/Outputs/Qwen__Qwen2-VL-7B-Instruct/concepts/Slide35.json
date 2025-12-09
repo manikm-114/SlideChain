@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T15:42:52.546975+00:00",
+  "text_length": 1078,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo far, we’ve covered the main aspects of MRI — the scanner hardware and the pulse sequences. These are the two core components that determine how MRI works and what kind of images we can obtain. Now, the remaining two topics — Brain Initiatives and Novel Ideas — are not required for this course, but I’ll go through them briefly because they’re very interesting and show how MRI has evolved beyond traditional medical imaging.\n\nMRI is an exceptionally powerful tool, especially in brain research. It’s not only used to visualize anatomical structures, like the brain’s gray matter and white matter, but also to explore neurological function — how different regions of the brain communicate and interact. Researchers around the world, through major brain initiatives, are using advanced MRI techniques to map brain connectivity, monitor neural activity, and understand complex cognitive processes such as memory, decision-making, and emotion.\n\nIn this way, MRI has become one of the most important technologies for both clinical diagnosis and fundamental neuroscience research.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"scanner hardware\", \"category\": \"instrumentation\"},\n    {\"term\": \"pulse sequences\", \"category\": \"signal_processing\"},\n    {\"term\": \"Brain Initiatives\", \"category\": \"algorithm\"},\n    {\"term\": \"Novel Ideas\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"the two core components that determine how MRI works and what kind of images we can obtain\",\n    \"MRI is an exceptionally powerful tool, especially in brain research\",\n    \"researchers around the world, through major brain initiatives, are using advanced MRI techniques to map brain connectivity, monitor neural activity, and understand complex cognitive processes such as memory, decision-making, and emotion\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "scanner hardware",
+        "category": "instrumentation"
+      },
+      {
+        "term": "pulse sequences",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Brain Initiatives",
+        "category": "algorithm"
+      },
+      {
+        "term": "Novel Ideas",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "the two core components that determine how MRI works and what kind of images we can obtain",
+      "MRI is an exceptionally powerful tool, especially in brain research",
+      "researchers around the world, through major brain initiatives, are using advanced MRI techniques to map brain connectivity, monitor neural activity, and understand complex cognitive processes such as memory, decision-making, and emotion"
+    ]
+  }
+}

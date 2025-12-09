@@ -1,0 +1,97 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "maximum similarity"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This is a special case of cross-correlation where the same function is compared with itself."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "a special case of cross-correlation",
+        "p": "represents",
+        "s": "Autocorrelation"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Zero shift"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the shapes are the same, but the symmetry is different - this matters in pattern alignment and signal comparison"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "It follows the same steps as convolution, except there's no flipping of g."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "no flipping of g",
+        "p": "uses",
+        "s": "Cross-correlation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "cross-correlation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "autocorrelation"
+          }
+        ],
+        "evidence": [
+          "Let\u2019s take a closer look at the graphical differences between convolution, cross-correlation, and autocorrelation.",
+          "Function f is in blue, and function g is in red.",
+          "In convolution, g is first flipped horizontally, then shifted, multiplied with f, and finally integrated or summed.",
+          "In the middle, we have cross-correlation. It follows the same steps as convolution, except there\u2019s no flipping of g.",
+          "On the right, we see autocorrelation. This is a special case of cross-correlation where the same function is compared with itself.",
+          "So visually, the shapes are the same, but the symmetry is different - this matters in pattern alignment and signal comparison.",
+          "So g and f are the same, and we measure how well the signal matches its own shifted versions.",
+          "The result usually peaks at zero shift - showing maximum similarity with itself - and falls off on either side."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "It follows the same steps as convolution, except there\u2019s no flipping of g. We simply shift g across f, multiply at each point, and accumulate the result."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "function f and function g",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "cross-correlation"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide43.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide43.txt"
+  },
+  "slide_id": "Slide43"
+}

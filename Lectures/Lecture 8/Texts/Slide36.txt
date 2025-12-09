@@ -1,0 +1,11 @@
+Our second example is spectral analysis.
+Here, we use an important relationship: one divided by capital N is equal to delta t multiplied by delta nu.In words, delta t is the sampling interval in the time domain, and delta nu — sometimes called delta u — is the spacing between frequency samples in the Fourier domain.
+
+What this tells us is that if we keep delta t fixed and the total number of samples N fixed, then our frequency spacing delta nu is also fixed. That means, if a signal contains two frequencies that are very close together, the spectrum may not have enough resolution to separate them.
+
+One way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller — giving us a finer frequency grid and better spectral resolution.
+
+In this MATLAB example, we create a signal by adding two sinusoids.The first term is the cosine of two times pi times one hundred times t.The second term is the sine of two times pi times two-hundred two point five times t.
+We sample t from zero to one second in steps of zero point zero zero one seconds, which corresponds to a sampling frequency of one kilohertz.Without zero padding, the frequency step size may be too large to clearly separate the peaks at one hundred hertz and one-hundred two point five hertz.With zero padding, the peaks become distinct.
+
+If you want the full MATLAB walkthrough, you can follow the link at the bottom of the slide.

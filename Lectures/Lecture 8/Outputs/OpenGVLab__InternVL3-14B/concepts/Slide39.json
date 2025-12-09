@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"time-limited\", \"category\": \"signal_processing\"},\n    {\"term\": \"band-limited\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency spectrum\", \"category\": \"frequency_domain\"},\n    {\"term\": \"sampling\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"windowing\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"A signal cannot be both time-limited and band-limited at the same time.\",\n    \"If a signal is strictly limited in time — meaning it exists only within a certain interval — its frequency spectrum will stretch infinitely.\",\n    \"In practice, we often work with signals that are approximately time-limited and approximately band-limited.\",\n    \"This approximation, along with clever techniques like sampling, zero padding, and windowing, allows us to do what might seem impossible\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "time-limited",
+        "category": "signal_processing"
+      },
+      {
+        "term": "band-limited",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency spectrum",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "sampling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "windowing",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "A signal cannot be both time-limited and band-limited at the same time.",
+      "If a signal is strictly limited in time - meaning it exists only within a certain interval - its frequency spectrum will stretch infinitely.",
+      "In practice, we often work with signals that are approximately time-limited and approximately band-limited.",
+      "This approximation, along with clever techniques like sampling, zero padding, and windowing, allows us to do what might seem impossible"
+    ]
+  }
+}

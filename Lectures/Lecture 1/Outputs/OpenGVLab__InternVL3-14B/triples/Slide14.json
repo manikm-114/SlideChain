@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"inversion\",\n      \"p\": \"is\",\n      \"o\": \"harder than the forward process\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, here’s the point: inversion is hard. Much harder than the forward process.\"\n    },\n    {\n      \"s\": \"inverse problem\",\n      \"p\": \"is\",\n      \"o\": \"the opposite of a forward problem\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"But an inverse problem is the opposite: you’re starting with the outcome, and trying to infer what caused it.\"\n    },\n    {\n      \"s\": \"inverse problem\",\n      \"p\": \"depends_on\",\n      \"o\": \"clever mathematics, algorithms, physical models, and prior knowledge\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"You need to bring in clever mathematics, algorithms, physical models, and prior knowledge to make sense of it all.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "inverse problem",
+        "p": "depends_on",
+        "o": "clever mathematics, algorithms, physical models, and prior knowledge",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "You need to bring in clever mathematics, algorithms, physical models, and prior knowledge to make sense of it all."
+      }
+    ]
+  }
+}

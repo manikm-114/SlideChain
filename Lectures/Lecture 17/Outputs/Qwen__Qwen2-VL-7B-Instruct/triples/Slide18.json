@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide18",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T12:15:16.629428+00:00",
+  "text_length": 579,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow we’re talking about the mathematical model for image reconstruction—the core idea is how to represent our data. For PET reconstruction, we usually assume that the number of detected photons is large, so the probability averages out and the measurements closely reflect the mean values. \n\nThat lets us use a deterministic model for reconstruction. For a given line path or line of response, the measured data will primarily reflect the radiotracer concentration along that line, so we can treat the whole reconstruction process as solving for concentrations along known paths.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Deterministic SPECT Recon\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"mathematical model\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"Now we’re talking about the mathematical model for image reconstruction—the core idea is how to represent our data.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

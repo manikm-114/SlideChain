@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T02:34:30.137065+00:00",
+  "text_length": 644,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nFor your homework, I’d like you to work through this sensitivity analysis problem.\n\nThe idea is to determine how to choose the resistor values so that the circuit’s sensitivity is as high as possible. Sensitivity here is defined as the derivative of V out​ with respect to x, where x represents a small fractional change in the sensor resistance.\nIn other words, if x changes just a little, we want V out​ to change as much as possible. That’s what we mean by “high sensitivity.”\n\nYou’ll be able to adjust both R L​ and R S​. If you work through the math, you’ll find that the sensitivity reaches its maximum when the two resistances are equal.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"sensitivity analysis\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"determine how to choose the resistor values so that the circuit’s sensitivity is as high as possible\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"sensitivity is defined as the derivative of V out​ with respect to x\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"x represents a small fractional change in the sensor resistance\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"If you work through the math, you’ll find that the sensitivity reaches its maximum when the two resistances are equal\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"For your homework, I’d like you to work through this sensitivity analysis problem.\",\n    \"You’ll be able to adjust both R L​ and R S​. If you work through the math, you’ll find that the sensitivity reaches its maximum when the two resistances are equal.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sensitivity analysis",
+        "category": "instrumentation"
+      },
+      {
+        "term": "x represents a small fractional change in the sensor resistance",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "For your homework, I'd like you to work through this sensitivity analysis problem.",
+      "You'll be able to adjust both R L​ and R S​. If you work through the math, you'll find that the sensitivity reaches its maximum when the two resistances are equal."
+    ]
+  }
+}

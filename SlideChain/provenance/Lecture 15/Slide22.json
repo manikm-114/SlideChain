@@ -1,0 +1,96 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "CT scanners"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "There\u2019s also an important parameter here called D. This is the distance from the fan-beam vertex-that is, the source position-to the center of rotation of the sample."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "D",
+        "p": "depends_on",
+        "s": "fanbeam function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "Fan-beam"
+          },
+          {
+            "category": "modality",
+            "term": "Fan-beam vertex"
+          },
+          {
+            "category": "modality",
+            "term": "Source"
+          },
+          {
+            "category": "modality",
+            "term": "Detector"
+          },
+          {
+            "category": "modality",
+            "term": "Fan-beam projection data"
+          },
+          {
+            "category": "software",
+            "term": "Fanbeam function"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "Fan-beam function in MATLAB allows us to simulate this geometry directly, bringing us closer to how modern CT scanners actually operate."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "By sweeping through all these angles, we collect the fan-beam projection data needed for reconstruction."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "X-rays don't travel in parallel lines like before. Instead, they spread out in a fan shape from a single point called the beam vertex."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "fan-beam vertex",
+        "p": "uses",
+        "s": "fanbeam"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide22.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide22.txt"
+  },
+  "slide_id": "Slide22"
+}

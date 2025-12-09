@@ -1,0 +1,12 @@
+Let’s look at this inverting amplifier and walk through the analysis step-by-step using our two op amp rules.
+
+First, the non-inverting input is connected to ground.By rule one, the inverting input is also at zero volts — that’s our virtual ground.
+By rule two, no current flows into the op amp input.That means all the current coming through the input resistor R-i from the input voltage must flow through the feedback resistor R-f to the output.
+
+Now, the current through R-i equals the input voltage minus zero, divided by R-i.The current through R-f equals zero minus the output voltage, divided by R-f.
+
+Since these currents are the same, we can say:Input voltage divided by R-i equals negative output voltage divided by R-f.
+If we multiply both sides by R-f, we get:Output voltage equals negative R-f over R-i, times the input voltage.
+The negative sign means the output is inverted compared to the input.The size of the gain is the value of R-f divided by the value of R-i.
+
+So, with just those two op amp rules, we can find the input–output relationship without worrying about the op amp’s internal complexity.

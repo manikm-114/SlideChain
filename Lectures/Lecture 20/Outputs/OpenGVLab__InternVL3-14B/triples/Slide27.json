@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"FA map\", \"p\":\"represents\", \"o\":\"main direction of the diffusion\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The hue represents the main direction of the diffusion and the brightness the fractional anisotropy.\"},\n    {\"s\":\"FA map\", \"p\":\"measures\", \"o\":\"fractional anisotropy\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The hue represents the main direction of the diffusion and the brightness the fractional anisotropy.\"},\n    {\"s\":\"MRI\", \"p\":\"measures\", \"o\":\"functional information\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MRI can provide functional information, such as how water and blood move inside tissues.\"},\n    {\"s\":\"diffusion-weighted and diffusion-tensor imaging\", \"p\":\"measures\", \"o\":\"how water molecules travel along nerve fibers\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Using diffusion-weighted and diffusion-tensor imaging, we can track how water molecules travel along nerve fibers, revealing the brain’s communication pathways.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "FA map",
+        "p": "measures",
+        "o": "fractional anisotropy",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The hue represents the main direction of the diffusion and the brightness the fractional anisotropy."
+      },
+      {
+        "s": "MRI",
+        "p": "measures",
+        "o": "functional information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MRI can provide functional information, such as how water and blood move inside tissues."
+      },
+      {
+        "s": "diffusion-weighted and diffusion-tensor imaging",
+        "p": "measures",
+        "o": "how water molecules travel along nerve fibers",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using diffusion-weighted and diffusion-tensor imaging, we can track how water molecules travel along nerve fibers, revealing the brain’s communication pathways."
+      }
+    ]
+  }
+}

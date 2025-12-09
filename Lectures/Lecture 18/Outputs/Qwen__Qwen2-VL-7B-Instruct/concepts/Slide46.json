@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:30:52.207511+00:00",
+  "text_length": 1820,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo now let’s ask: why does the MR signal decay?\nThe answer is very much like the rolling ball analogy. A ball on the ground slows down because of resistance and friction. In MRI, once we flip the magnetization into precession, it cannot stay there forever. Over time, it will naturally return to its steady state, aligned with the main magnetic field, B naught.\n\nThis return happens through different relaxation mechanisms:\nT1 relaxation, also called longitudinal or spin-lattice relaxation, is when flipped nuclei realign with the main magnetic field. The energy they lose is given back to the surrounding tissue as thermal energy.\nT2 relaxation, also called transverse or spin-spin relaxation, is when the nuclei gradually lose phase coherence with one another. Even though they were flipped together, local differences in their environment cause them to fall out of step.\nT2-star relaxation is an additional effect that comes from imperfections in the magnetic field itself. The field is never perfectly uniform, and small local variations cause the spins to dephase even faster. This effect is especially important in functional MRI, where susceptibility differences are actually used to generate contrast.\nThe key point is that the MR signal we detect — the NMR signal — is proportional to proton density, but reduced by these T1, T2, and T2-star factors.\n\nAnd this is what gives MRI its powerful contrasts. For example:\nT1 weighting helps us distinguish gray matter from white matter.\nT2 weighting highlights tissues and fluid, such as cerebrospinal fluid.\nT2-star weighting is especially useful for functional MRI, because it is sensitive to magnetic susceptibility changes, such as those caused by blood oxygenation.\nSo, signal decay is not a nuisance. In fact, it’s what makes MRI such a versatile imaging tool.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"T1 Relaxation\", \"category\": \"physics\"},\n    {\"term\": \"T2 Relaxation\", \"category\": \"physics\"},\n    {\"term\": \"T2* Relaxation\", \"category\": \"physics\"},\n    {\"term\": \"NMR Signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"Proton Density\", \"category\": \"signal_processing\"},\n    {\"term\": \"T1 Weighting\", \"category\": \"modality\"},\n    {\"term\": \"T2 Weighting\", \"category\": \"modality\"},\n    {\"term\": \"T2-star Weighting\", \"category\": \"modality\"},\n    {\"term\": \"Functional MRI\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"The NMR Signal Proportional to the Proton Density, Reduced by T1, T2, and T2* Factors\",\n    \"T1 – Gray/White matter\",\n    \"T2 – Tissue/Cerebrospinal Fluid Flow (CSF)\",\n    \"T2* – Susceptibility (Functional MRI)\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "T1 Relaxation",
+        "category": "physics"
+      },
+      {
+        "term": "T2 Relaxation",
+        "category": "physics"
+      },
+      {
+        "term": "NMR Signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Proton Density",
+        "category": "signal_processing"
+      },
+      {
+        "term": "T1 Weighting",
+        "category": "modality"
+      },
+      {
+        "term": "T2 Weighting",
+        "category": "modality"
+      },
+      {
+        "term": "T2-star Weighting",
+        "category": "modality"
+      },
+      {
+        "term": "Functional MRI",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "The NMR Signal Proportional to the Proton Density, Reduced by T1, T2, and T2* Factors",
+      "T1 - Gray/White matter",
+      "T2 - Tissue/Cerebrospinal Fluid Flow (CSF)",
+      "T2* - Susceptibility (Functional MRI)"
+    ]
+  }
+}

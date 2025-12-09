@@ -1,0 +1,54 @@
+{
+  "slide_id": "Slide57",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s talk about what is called the channelized observer. The idea here is to simplify the problem of analyzing very high-dimensional image data.\n\nInstead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels. Each channel acts like a filter or a template that extracts a particular aspect of the image. Think of them as different ‘views’ or ‘features’ of the same data.\nWhen we apply these channels to the image, we get a series of scalar responses — simple numbers that summarize how the image looks under each channel. We then collect these responses into a much smaller vector, which is far easier to work with than the original full image data.\nThis is what’s known as a channelized observer. Reducing the dimensionality allows us to perform statistical analysis more efficiently, while still retaining the essential information needed to judge image quality or detect a signal.\n\nSo in short, channelized observers strike a balance: they simplify the computational task but still capture the critical diagnostic features\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"channelized observer\", \"category\": \"signal_processing\"},\n    {\"term\": \"high-dimensional image data\", \"category\": \"signal_processing\"},\n    {\"term\": \"simplify\", \"category\": \"signal_processing\"},\n    {\"term\": \"break down\", \"category\": \"signal_processing\"},\n    {\"term\": \"channels\", \"category\": \"signal_processing\"},\n    {\"term\": \"filter\", \"category\": \"signal_processing\"},\n    {\"term\": \"template\", \"category\": \"signal_processing\"},\n    {\"term\": \"different ‘views’ or ‘features’\", \"category\": \"signal_processing\"},\n    {\"term\": \"scalar responses\", \"category\": \"signal_processing\"},\n    {\"term\": \"vector\", \"category\": \"signal_processing\"},\n    {\"term\": \"simplify the computational task\", \"category\": \"signal_processing\"},\n    {\"term\": \"retain the critical diagnostic features\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"The idea here is to simplify the problem of analyzing very high-dimensional image data.\", \"Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "channelized observer",
+        "category": "signal_processing"
+      },
+      {
+        "term": "high-dimensional image data",
+        "category": "signal_processing"
+      },
+      {
+        "term": "simplify",
+        "category": "signal_processing"
+      },
+      {
+        "term": "channels",
+        "category": "signal_processing"
+      },
+      {
+        "term": "filter",
+        "category": "signal_processing"
+      },
+      {
+        "term": "template",
+        "category": "signal_processing"
+      },
+      {
+        "term": "different ‘views’ or ‘features’",
+        "category": "signal_processing"
+      },
+      {
+        "term": "scalar responses",
+        "category": "signal_processing"
+      },
+      {
+        "term": "vector",
+        "category": "signal_processing"
+      },
+      {
+        "term": "simplify the computational task",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The idea here is to simplify the problem of analyzing very high-dimensional image data.",
+      "Instead of working with every single pixel value, which can be overwhelming, we break the image down into a set of channels."
+    ]
+  }
+}

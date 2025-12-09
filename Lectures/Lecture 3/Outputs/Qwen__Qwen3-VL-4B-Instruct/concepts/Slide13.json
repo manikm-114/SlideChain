@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide13",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:11:57.599481+00:00",
+  "text_length": 347,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nToday, robotic systems represent a hot area of control system development. From robots that provide assistance in hotels or nursing homes to those that help care for infants, these systems combine control with a degree of machine intelligence. Their adaptability and responsiveness open up incredible possibilities in both industry and healthcare.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"robotic systems\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"control system development\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"machine intelligence\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"adaptability\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"responsiveness\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"industry\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"healthcare\",\n      \"category\": \"workflow\"\n    }\n  ],\n  \"evidence\": [\n    \"Today, robotic systems represent a hot area of control system development.\",\n    \"From robots that provide assistance in hotels or nursing homes to those that help care for infants, these systems combine control with a degree of machine intelligence.\",\n    \"Their adaptability and responsiveness open up incredible possibilities in both industry and healthcare.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "robotic systems",
+        "category": "software"
+      },
+      {
+        "term": "control system development",
+        "category": "software"
+      },
+      {
+        "term": "machine intelligence",
+        "category": "ai_ml"
+      },
+      {
+        "term": "adaptability",
+        "category": "algorithm"
+      },
+      {
+        "term": "responsiveness",
+        "category": "algorithm"
+      },
+      {
+        "term": "healthcare",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Today, robotic systems represent a hot area of control system development.",
+      "From robots that provide assistance in hotels or nursing homes to those that help care for infants, these systems combine control with a degree of machine intelligence.",
+      "Their adaptability and responsiveness open up incredible possibilities in both industry and healthcare."
+    ]
+  }
+}

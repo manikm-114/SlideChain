@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT reconstruction\", \"p\":\"depends_on\", \"o\":\"CT numbers\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT reconstruction relies on CT numbers\"},\n    {\"s\":\"CT numbers\", \"p\":\"derived_from\", \"o\":\"Beer's law\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT numbers, which are derived from Beer's law\"},\n    {\"s\":\"CT numbers\", \"p\":\"measures\", \"o\":\"density relative to water\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT numbers indicate how much more or less dense a region is than water\"},\n    {\"s\":\"CT numbers\", \"p\":\"represents\", \"o\":\"Hounsfield units\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This scale is sometimes called Hounsfield units\"},\n    {\"s\":\"CT monitor\", \"p\":\"displays\", \"o\":\"relative values compared to water\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"On the CT monitor, you don’t see mu values directly but relative values compared to water",
+  "parsed": {
+    "s": "CT numbers",
+    "p": "represents",
+    "o": "Hounsfield units",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This scale is sometimes called Hounsfield units"
+    ]
+  }
+}

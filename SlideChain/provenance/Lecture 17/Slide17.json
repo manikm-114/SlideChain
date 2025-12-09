@@ -1,0 +1,173 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          },
+          {
+            "category": "data_processing",
+            "term": "source distributions"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          },
+          {
+            "category": "mathematics",
+            "term": "weighting factor"
+          },
+          {
+            "category": "physics",
+            "term": "line of response"
+          },
+          {
+            "category": "mathematics",
+            "term": "pull this constant weighting factor outside the integral"
+          }
+        ],
+        "evidence": [
+          "weighting factor for attenuation is constant along a given line of response",
+          "integral over all source distributions",
+          "pull this constant weighting factor outside the integral",
+          "image reconstruction"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "When we talk about PET or paired photon emission models",
+            "modalities": [
+              "text"
+            ],
+            "o": "paired photon emission models",
+            "p": "uses",
+            "s": "PET"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the weighting factor for attenuation is constant along a given line of response",
+            "modalities": [
+              "text"
+            ],
+            "o": "constant weighting factor",
+            "p": "depends_on",
+            "s": "attenuation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "paired photon emission models"
+          },
+          {
+            "category": "physics",
+            "term": "weighting factor for attenuation"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral over all source distributions"
+          },
+          {
+            "category": "physics",
+            "term": "constant weighting factor"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          }
+        ],
+        "evidence": [
+          "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn't depend on the source position."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "weighting factor for attenuation is constant along a given line of response"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral over all source distributions"
+          },
+          {
+            "category": "mathematics",
+            "term": "pull this constant weighting factor outside the integral"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          }
+        ],
+        "evidence": [
+          "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response.",
+          "You'll see how this works more clearly in the next slide.",
+          "So, let's shift our focus to image reconstruction, where these ideas become important."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "weighting factor"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          },
+          {
+            "category": "signal_processing",
+            "term": "source distributions"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          },
+          {
+            "category": "physics",
+            "term": "constant weighting factor"
+          },
+          {
+            "category": "physics",
+            "term": "line of response"
+          }
+        ],
+        "evidence": [
+          "When we talk about PET or paired photon emission models, the weighting factor for attenuation is constant along a given line of response. That means when you do an integral over all source distributions, you can pull this constant weighting factor outside the integral-it doesn\u2019t depend on the source position.",
+          "So, let\u2019s shift our focus to image reconstruction, where these ideas become important."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

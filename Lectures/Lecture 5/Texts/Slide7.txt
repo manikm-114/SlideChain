@@ -1,0 +1,27 @@
+Let’s now turn our attention to a very important and elegant result in linear algebra and geometry — the Cauchy–Schwarz inequality.
+
+If you haven’t yet walked through the proof of this inequality, I encourage you to do so. It’s not just a theoretical result — it’s a tool that offers deep insight into how vectors relate to each other.
+
+Now, the inequality is written here in both summation and vector form.
+You can see here.
+
+In vector form, we write:The absolute value of a dot b is less than or equal to the norm of a times the norm of b.
+
+In plain terms, if you take the dot product of two vectors, its value will always be smaller than or equal to the product of their magnitudes.
+Equality holds only when one vector is a scalar multiple of the other — in other words, when the vectors are perfectly aligned.
+
+To make this more concrete, let’s consider the two-dimensional version:The quantity a squared plus b squared, multiplied by c squared plus d squared, is greater than or equal to the square of a times c plus b times d.
+
+This is a specific case of the inequality and shows how it works with actual vector components.
+Now, how do we prove it?
+
+A typical approach involves setting up a quadratic expression that includes both vectors and a variable, x.We write the sum over i of the square of the quantity aᵢ times x plus bᵢ.This can also be written as the sum of aᵢ squared, multiplied by the square of x plus bᵢ divided by aᵢ
+We set this whole expression equal to zero and solve the resulting quadratic equation.
+This works because the square of a real quantity is always non-negative, so the sum equals zero only when all terms vanish.That only happens when the vectors are linearly dependent — and that’s what gives us the equality condition.
+Now, let’s connect this back to geometry. Remember from the last slide, the inner product of two vectors equals the product of their magnitudes times the cosine of the angle between them.
+That is:A dot B equals the norm of A times the norm of B times cosine theta.
+Since cosine of theta is always between negative one and one, the dot product can never exceed the product of the magnitudes.That’s the geometric heart of the Cauchy–Schwarz inequality.
+
+So this isn’t just an algebraic result — it’s a powerful guarantee about how closely two vectors can align.
+And as we move into Fourier analysis, this principle plays a crucial role in how we represent signals, enforce orthogonality, and ensure numerical stability.
+So keep this inequality in mind — we’ll revisit it again when we start working with basis functions and Fourier coefficients.

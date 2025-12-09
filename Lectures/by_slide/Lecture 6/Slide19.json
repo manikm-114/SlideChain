@@ -1,0 +1,132 @@
+{
+  "lecture": "Lecture 6",
+  "slide_id": "Slide19",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide19.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide19.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide19.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "sinc function",
+              "category": "signal_processing"
+            },
+            {
+              "term": "rectangular gate",
+              "category": "signal_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "sine of pi times u",
+              "category": "mathematics"
+            },
+            {
+              "term": "denominator grows",
+              "category": "mathematics"
+            },
+            {
+              "term": "scaling property",
+              "category": "signal_processing"
+            },
+            {
+              "term": "time and frequency are inversely related",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "the sinc function came from a rectangular gate function of width 1",
+            "this is the frequency domain representation of a simple gate in time",
+            "sine of pi times u, divided by pi times u",
+            "the denominator grows",
+            "the scaling property",
+            "time and frequency are inversely related"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sinc function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"rectangular gate\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"sine of pi times u\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"denominator grows\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"scaling property\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"time and frequency are inversely related\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"the sinc function came from a rectangular gate function of width 1\\\",\\n    \\\"this is the frequency domain representation of a simple gate in time\\\",\\n    \\\"sine of pi times u, divided by pi times u\\\",\\n    \\\"the denominator grows\\\",\\n    \\\"the scaling property\\\",\\n    \\\"time and frequency are inversely related\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"sinc function\", \"category\": \"signal_processing\"}, {\"term\": \"rectangular gate\", \"category\": \"signal_processing\"}, {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"}, {\"term\": \"sine of pi times u\", \"category\": \"mathematics\"}, {\"term\": \"denominator grows\", \"category\": \"mathematics\"}, {\"term\": \"scaling property\", \"category\": \"signal_processing\"}, {\"term\": \"time and frequency are inversely related\", \"category\": \"signal_processing\"}], \"evidence\": [\"the sinc function came from a rectangular gate function of width 1\", \"this is the frequency domain representation of a simple gate in time\", \"sine of pi times u, divided by pi times u\", \"the denominator grows\", \"the scaling property\", \"time and frequency are inversely related\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide19.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "sinc function",
+              "p": "represents",
+              "o": "frequency domain representation of a simple gate in time",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "So this is the frequency domain representation of a simple gate in time."
+            },
+            {
+              "s": "rectangular gate",
+              "p": "produces",
+              "o": "sinc function",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "this sinc function came from a rectangular gate function of width 1."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"sinc function\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"frequency domain representation of a simple gate in time\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"So this is the frequency domain representation of a simple gate in time.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"rectangular gate\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"sinc function\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"this sinc function came from a rectangular gate function of width 1.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"wider gate\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"narrower ripples in frequency\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"If we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"sinc function\", \"p\": \"represents\", \"o\": \"frequency domain representation of a simple gate in time\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"So this is the frequency domain representation of a simple gate in time.\"}, {\"s\": \"rectangular gate\", \"p\": \"produces\", \"o\": \"sinc function\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"this sinc function came from a rectangular gate function of width 1.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide19.json",
+        "parsed": {
+          "term": "narrow sinc",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T23:40:56.212239+00:00\", \"text_length\": 1397, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s take a look at the actual shape of the sinc function — the one we just derived from the rectangular gate.\\n\\nWhat you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.\\nIt has a smooth, wave-like shape. The peak is right at the center — at u equals zero — and the height there is exactly 1.\\nAs you move away from the center in either direction, the function oscillates — it goes up and down — but the peaks get smaller and smaller.\\nThat’s because the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks.\\nThis is the signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides.\\n\\nSo this is the frequency domain representation of a simple gate in time.\\nAnd just to recap — this sinc function came from a rectangular gate function of width 1.\\nIf we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency, because time and frequency are inversely related.\\n\\nWe’ll explore that in more detail when we talk about the scaling property. But for now, just remember: a narrow gate in time gives a wide sinc in frequency. A wide gate in time gives a narrow sinc.\\nThis is a key idea we’ll return to again and again.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sinc function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"rectangular gate\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"width\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"inverse relationship\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"time and frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"scaling property\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"narrow gate in time\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"wide sinc in frequency\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"narrow sinc\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"wide gate in time\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"narrow sinc\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The sinc function has a smooth, wave-like shape.\\\",\\n    \\\"The peak is right at the center — at u equals zero — and the height there is exactly 1.\\\",\\n    \\\"As you move away from the center in either direction,\", \"parsed\": {\"term\": \"narrow sinc\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide19.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T00:32:22.189458+00:00\", \"text_length\": 1397, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s take a look at the actual shape of the sinc function — the one we just derived from the rectangular gate.\\n\\nWhat you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.\\nIt has a smooth, wave-like shape. The peak is right at the center — at u equals zero — and the height there is exactly 1.\\nAs you move away from the center in either direction, the function oscillates — it goes up and down — but the peaks get smaller and smaller.\\nThat’s because the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks.\\nThis is the signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides.\\n\\nSo this is the frequency domain representation of a simple gate in time.\\nAnd just to recap — this sinc function came from a rectangular gate function of width 1.\\nIf we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency, because time and frequency are inversely related.\\n\\nWe’ll explore that in more detail when we talk about the scaling property. But for now, just remember: a narrow gate in time gives a wide sinc in frequency. A wide gate in time gives a narrow sinc.\\nThis is a key idea we’ll return to again and again.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Sinc Function\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"graph of sinc function\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"The graph of the sinc function is shown, with a peak at u=0 and oscillations decreasing in amplitude as u moves away from 0.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide19.json",
+        "parsed": {
+          "term": "signature look of the sinc function - one strong central lobe and then smaller and smaller ripples on the sides",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T23:14:31.747060+00:00\", \"text_length\": 1397, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s take a look at the actual shape of the sinc function — the one we just derived from the rectangular gate.\\n\\nWhat you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.\\nIt has a smooth, wave-like shape. The peak is right at the center — at u equals zero — and the height there is exactly 1.\\nAs you move away from the center in either direction, the function oscillates — it goes up and down — but the peaks get smaller and smaller.\\nThat’s because the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks.\\nThis is the signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides.\\n\\nSo this is the frequency domain representation of a simple gate in time.\\nAnd just to recap — this sinc function came from a rectangular gate function of width 1.\\nIf we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency, because time and frequency are inversely related.\\n\\nWe’ll explore that in more detail when we talk about the scaling property. But for now, just remember: a narrow gate in time gives a wide sinc in frequency. A wide gate in time gives a narrow sinc.\\nThis is a key idea we’ll return to again and again.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"sinc function\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sinc of u — which is defined as sine of pi times u, divided by pi times u\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"smooth, wave-like shape\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"peak is right at the center — at u equals zero — and the height there is exactly 1\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"oscillates — it goes up and down — but the peaks get smaller and smaller\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"frequency domain representation of a simple gate in time\", \"parsed\": {\"term\": \"signature look of the sinc function - one strong central lobe and then smaller and smaller ripples on the sides\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide19.json",
+        "parsed": {
+          "s": "sinc function",
+          "p": "produces",
+          "o": "sinc of u",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "What you see here is the graph of that function - sinc of u - which is defined as sine of pi times u, divided by pi times u."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T23:21:09.353429+00:00\", \"text_length\": 1397, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s take a look at the actual shape of the sinc function — the one we just derived from the rectangular gate.\\n\\nWhat you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.\\nIt has a smooth, wave-like shape. The peak is right at the center — at u equals zero — and the height there is exactly 1.\\nAs you move away from the center in either direction, the function oscillates — it goes up and down — but the peaks get smaller and smaller.\\nThat’s because the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks.\\nThis is the signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides.\\n\\nSo this is the frequency domain representation of a simple gate in time.\\nAnd just to recap — this sinc function came from a rectangular gate function of width 1.\\nIf we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency, because time and frequency are inversely related.\\n\\nWe’ll explore that in more detail when we talk about the scaling property. But for now, just remember: a narrow gate in time gives a wide sinc in frequency. A wide gate in time gives a narrow sinc.\\nThis is a key idea we’ll return to again and again.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"sinc function\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"frequency domain representation of a simple gate in time\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"So this is the frequency domain representation of a simple gate in time.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"sinc function\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"sinc of u\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"What you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"rectangular gate function of width 1\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"sinc function\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"And just to recap — this sinc function came from\", \"parsed\": {\"s\": \"sinc function\", \"p\": \"produces\", \"o\": \"sinc of u\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"What you see here is the graph of that function - sinc of u - which is defined as sine of pi times u, divided by pi times u.\"]}}"
+      }
+    }
+  }
+}

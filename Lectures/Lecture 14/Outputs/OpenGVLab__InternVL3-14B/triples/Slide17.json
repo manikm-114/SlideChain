@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"helical CT\",\n      \"p\": \"produces\",\n      \"o\": \"substantially better longitudinal resolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For a given X-ray dose, helical CT allows substantially better longitudinal resolution than conventional CT due to its inherent retrospective reconstruction capability.\"\n    },\n    {\n      \"s\": \"helical CT\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"retrospective reconstruction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction—that is, reconstructed overlapping slices along the longitudinal axis.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "helical CT",
+        "p": "produces",
+        "o": "substantially better longitudinal resolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "For a given X-ray dose, helical CT allows substantially better longitudinal resolution than conventional CT due to its inherent retrospective reconstruction capability."
+      },
+      {
+        "s": "helical CT",
+        "p": "reconstructs_with",
+        "o": "retrospective reconstruction",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This improvement comes from the inherent capability of helical CT to perform retrospective reconstruction-that is, reconstructed overlapping slices along the longitudinal axis."
+      }
+    ]
+  }
+}

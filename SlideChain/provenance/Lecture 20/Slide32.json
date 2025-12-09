@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "European Union restrictions"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "In this molecule, the gadolinium ion - which has seven unpaired electrons - is enclosed within a stable chelating cage.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gadolinium",
+            "p": "uses",
+            "s": "Gd-DTPA"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When water molecules come close to the contrast agent, they experience local magnetic field changes that speed up their T\u2081 relaxation, producing a brighter signal on the MRI image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "brighter signal on the MRI image",
+            "p": "produces",
+            "s": "Gd-DTPA"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Notice the bright region within the brain - this enhancement clearly reveals a tumor.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "tumor",
+            "p": "measures",
+            "s": "brain MRI"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "excreted more efficiently"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "the bright region within the brain - this enhancement clearly reveals a tumor"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A brain scan taken after administration of Gd-DTPA showing enhancement of a tumor."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "enhancement",
+        "p": "produces",
+        "s": "Gd-DTPA"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "safety alternatives"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

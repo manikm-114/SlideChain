@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"ultrasound\", \"p\":\"uses\", \"o\":\"mechanical wave\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It’s a mechanical wave, not electromagnetic.\"},\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"radio-frequency (RF) signals\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"MRI, for example, uses radio-frequency (RF) signals\"},\n    {\"s\":\"X-ray\", \"p\":\"uses\", \"o\":\"high-energy photons\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"X-ray and nuclear imaging use high-energy photons\"},\n    {\"s\":\"ultrasound\", \"p\":\"measures\", \"o\":\"depth\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Lower frequencies penetrate deeper but give lower resolution\"},\n    {\"s\":\"ultrasound\", \"p\":\"produces\", \"o\":\"medical images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"our focus remains on diagnostic ultrasound imaging\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasound",
+        "p": "uses",
+        "o": "mechanical wave",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s a mechanical wave, not electromagnetic."
+      },
+      {
+        "s": "MRI",
+        "p": "uses",
+        "o": "radio-frequency (RF) signals",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MRI, for example, uses radio-frequency (RF) signals"
+      },
+      {
+        "s": "X-ray",
+        "p": "uses",
+        "o": "high-energy photons",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "X-ray and nuclear imaging use high-energy photons"
+      },
+      {
+        "s": "ultrasound",
+        "p": "produces",
+        "o": "medical images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "our focus remains on diagnostic ultrasound imaging"
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "wavelength range"
+          },
+          {
+            "category": "signal_processing",
+            "term": "vector of wavelengths"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectrum"
+          },
+          {
+            "category": "physics",
+            "term": "Hydrogen-alpha line"
+          },
+          {
+            "category": "physics",
+            "term": "Doppler shift formula"
+          },
+          {
+            "category": "physics",
+            "term": "redshift"
+          },
+          {
+            "category": "physics",
+            "term": "speed of light"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "compute the wavelength range using the start point, number of data points, and spacing",
+          "build a vector of wavelengths",
+          "plot the spectrum",
+          "Hydrogen-alpha line",
+          "Doppler shift formula",
+          "redshift",
+          "speed of light in kilometers per second",
+          "velocity",
+          "Here\u2019s how we do that in MATLAB"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Using the Doppler shift formula, we compute the redshift"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Doppler shift formula",
+        "p": "uses",
+        "s": "MATLAB"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "kilometers per second"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "just a few lines of code, and we're measuring motion across space"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Next, we plot the spectrum"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "spectrum",
+        "p": "represents",
+        "s": "loglog(lambda,s,'-');"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "measuring motion across space"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "First, we compute the wavelength range using the start point, number of data points, and spacing.",
+            "modalities": [
+              "text"
+            ],
+            "o": "wavelength range",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

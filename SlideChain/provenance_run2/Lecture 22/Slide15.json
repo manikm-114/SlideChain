@@ -1,0 +1,131 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "annular array"
+          },
+          {
+            "category": "instrumentation",
+            "term": "piezoelectric elements"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound beam"
+          },
+          {
+            "category": "instrumentation",
+            "term": "focal distance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time delay"
+          },
+          {
+            "category": "physics",
+            "term": "circularly symmetric"
+          }
+        ],
+        "evidence": [
+          "You can design a circular symmetric arrangement of piezoelectric elements, like the one shown here.",
+          "With this type of array, you cannot do circular scanning-because it\u2019s already circularly symmetric-but you can focus along the principal direction.",
+          "The advantage is that you can control the focal distance very easily.",
+          "You can make the focus point closer or farther, depending on the time delay and how you drive those circular rings."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "You can design a circular symmetric arrangement of piezoelectric elements, like the one shown here.",
+            "modalities": [
+              "text"
+            ],
+            "o": "piezoelectric elements",
+            "p": "uses",
+            "s": "annular array"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "annular array"
+          },
+          {
+            "category": "signal_processing",
+            "term": "focal distance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "radially symmetric"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular symmetric"
+          },
+          {
+            "category": "signal_processing",
+            "term": "principal direction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time delay"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular scanning"
+          }
+        ],
+        "evidence": [
+          "You can make the ultrasound beam radially symmetric, or what we sometimes call recirculately symmetric.",
+          "You can control the focal distance very easily.",
+          "You can make the focus point closer or farther, depending on the time delay and how you drive those circular rings.",
+          "That's something you can easily do with this annular array structure."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "drive those circular rings"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "You can adjust the focal distance to be small or large. That's something you can easily do with this annular array structure."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "time delay and driving of circular rings",
+        "p": "depends_on",
+        "s": "annular array"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "radially symmetric"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

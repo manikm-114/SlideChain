@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"approximate\",\n      \"p\": \"uses\",\n      \"o\": \"constant slices\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We can approximate it piecewise using constant slices\"\n    },\n    {\n      \"s\": \"rectangle\",\n      \"p\": \"represents\",\n      \"o\": \"delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Each rectangle corresponds to a delta function\"\n    },\n    {\n      \"s\": \"area under rectangle\",\n      \"p\": \"equivalent to\",\n      \"o\": \"area under delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the area under each rectangle is equivalent to the area under the corresponding delta function\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "approximate",
+        "p": "uses",
+        "o": "constant slices",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "We can approximate it piecewise using constant slices"
+      },
+      {
+        "s": "rectangle",
+        "p": "represents",
+        "o": "delta function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Each rectangle corresponds to a delta function"
+      }
+    ]
+  }
+}

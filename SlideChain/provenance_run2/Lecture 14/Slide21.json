@@ -1,0 +1,171 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "longitudinal data truncation"
+          },
+          {
+            "category": "instrumentation",
+            "term": "parallel beam"
+          },
+          {
+            "category": "instrumentation",
+            "term": "adjacent rays"
+          },
+          {
+            "category": "algorithm",
+            "term": "interpolation"
+          },
+          {
+            "category": "instrumentation",
+            "term": "cone beam"
+          },
+          {
+            "category": "algorithm",
+            "term": "advanced algorithms"
+          },
+          {
+            "category": "modality",
+            "term": "cone beam helical scanning"
+          },
+          {
+            "category": "algorithm",
+            "term": "approximate algorithm"
+          }
+        ],
+        "evidence": [
+          "longitudinal data truncation from a single slice",
+          "parallel beam and adjacent rays",
+          "simple interpolation",
+          "wider angle cone beam",
+          "more advanced algorithms",
+          "cone beam helical scanning",
+          "approximate algorithm"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed.",
+            "modalities": [
+              "text"
+            ],
+            "o": "advanced algorithms",
+            "p": "depends_on",
+            "s": "cone beam helical scanning"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The first paper I wrote on cone beam helical scanning proposed an approximate algorithm for this challenge.",
+            "modalities": [
+              "text"
+            ],
+            "o": "approximate algorithm",
+            "p": "produces",
+            "s": "cone beam helical scanning"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "Longitudinal Data Truncation"
+          },
+          {
+            "category": "algorithm",
+            "term": "helical turn"
+          },
+          {
+            "category": "mathematics",
+            "term": "interpolation"
+          },
+          {
+            "category": "instrumentation",
+            "term": "cone beam"
+          },
+          {
+            "category": "algorithm",
+            "term": "advanced algorithms"
+          },
+          {
+            "category": "algorithm",
+            "term": "approximate algorithm"
+          },
+          {
+            "category": "algorithm",
+            "term": "helical scanning"
+          }
+        ],
+        "evidence": [
+          "When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.",
+          "However, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.",
+            "modalities": [
+              "text"
+            ],
+            "o": "simple interpolation",
+            "p": "uses",
+            "s": "interpolation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "approximate algorithm"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "helical scanning"
+          },
+          {
+            "category": "physics",
+            "term": "cone beam"
+          },
+          {
+            "category": "signal_processing",
+            "term": "interpolation"
+          },
+          {
+            "category": "software",
+            "term": "approximate algorithm"
+          }
+        ],
+        "evidence": [
+          "When you perform one helical turn with a single slice, you have a parallel beam and adjacent rays, allowing you to perform interpolation.",
+          "However, when you move to a wider angle cone beam, simple interpolation is no longer sufficient, and more advanced algorithms are needed."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

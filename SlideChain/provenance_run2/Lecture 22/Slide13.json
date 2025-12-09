@@ -1,0 +1,105 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "linear phased array"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound beam"
+          },
+          {
+            "category": "physics",
+            "term": "wavefront"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time delays"
+          },
+          {
+            "category": "instrumentation",
+            "term": "beam steering"
+          },
+          {
+            "category": "physics",
+            "term": "Huygens\u2019 principle"
+          },
+          {
+            "category": "signal_processing",
+            "term": "phase"
+          }
+        ],
+        "evidence": [
+          "linear phased array example",
+          "ultrasound beam travels straight ahead",
+          "different wavefronts",
+          "relative time delays",
+          "beam steering",
+          "Huygens\u2019 principle",
+          "controlled relative phase",
+          "beam focusing"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "If you adjust the timing slightly, you can shape the beam. For instance, if you fire elements 1 and 5 a little earlier, as shown on the time axis here, where this point is time zero, and then fire the others with slight delays, you create different wavefronts that add up.",
+            "modalities": [
+              "text"
+            ],
+            "o": "curved wavefront",
+            "p": "produces",
+            "s": "linear phased array"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Focal spot"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "when all these small wavelets combine, they form a curved wavefront, producing a focused ultrasound field downward, with the focal spot located here."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When all these small wavelets combine, they form a curved wavefront, producing a focused ultrasound field downward"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "focused ultrasound field",
+        "p": "produces",
+        "s": "linear phased array"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "controlled relative phase"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

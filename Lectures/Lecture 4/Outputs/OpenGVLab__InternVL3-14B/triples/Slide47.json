@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide47",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Canny edge detector\",\n      \"p\": \"uses\",\n      \"o\": \"multi-stage algorithm\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Canny edge detector uses a multi-stage algorithm to detect a wide range of edges in images.\"\n    },\n    {\n      \"s\": \"Canny edge detector\",\n      \"p\": \"produces\",\n      \"o\": \"binary edge map\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The result is a crisp, binary edge map — like the one shown here — which highlights boundaries of objects and fine details.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Canny edge detector",
+        "p": "produces",
+        "o": "binary edge map",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "The result is a crisp, binary edge map - like the one shown here - which highlights boundaries of objects and fine details."
+      }
+    ]
+  }
+}

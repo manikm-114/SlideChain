@@ -1,0 +1,185 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "periodic function"
+          },
+          {
+            "category": "mathematics",
+            "term": "sine and cosine waves"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinusoidal components"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "amplitude"
+          },
+          {
+            "category": "signal_processing",
+            "term": "phase"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier analysis"
+          },
+          {
+            "category": "signal_processing",
+            "term": "wave-based view"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sum of waves"
+          }
+        ],
+        "evidence": [
+          "a periodic function like this can be broken down into many sine and cosine waves",
+          "These waves can vary in three ways: their frequency, which tells us how fast they oscillate; their amplitude, which tells us how tall they are; and their phase, which tells us where each wave starts",
+          "This wave-based view is the foundation for Fourier analysis",
+          "sum of waves"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "a periodic function like this can be broken down into many sine and cosine waves",
+            "modalities": [
+              "text"
+            ],
+            "o": "sum of waves",
+            "p": "represents",
+            "s": "periodic function"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "this wave-based view is the foundation for Fourier analysis",
+            "modalities": [
+              "text"
+            ],
+            "o": "wave-based view",
+            "p": "depends_on",
+            "s": "Fourier analysis"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "periodic function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sinusoidal components"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "amplitude"
+          },
+          {
+            "category": "signal_processing",
+            "term": "phase"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier analysis"
+          }
+        ],
+        "evidence": [
+          "a periodic function like this can be broken down into many sine and cosine waves",
+          "we want to find the right combination of amplitudes, frequencies, and phases",
+          "this wave-based view is the foundation for Fourier analysis"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "a periodic function"
+          },
+          {
+            "category": "mathematics",
+            "term": "sinusoidal components"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency"
+          },
+          {
+            "category": "mathematics",
+            "term": "amplitude"
+          },
+          {
+            "category": "mathematics",
+            "term": "phase"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier analysis"
+          }
+        ],
+        "evidence": [
+          "a periodic function like this can be broken down into many sine and cosine waves - we call these sinusoidal components.",
+          "These waves can vary in three ways: their frequency, which tells us how fast they oscillate; their amplitude, which tells us how tall they are; and their phase, which tells us where each wave starts.",
+          "And this wave-based view is the foundation for Fourier analysis."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "a periodic function like this can be broken down into many sine and cosine waves - we call these sinusoidal components.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "many sine and cosine waves",
+            "p": "reconstructs_with",
+            "s": "a periodic function"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Now let's look at the same function from a completely different angle - instead of seeing it as a sum of impulses, imagine it as a sum of waves.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "a sum of waves",
+            "p": "uses",
+            "s": "a periodic function"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

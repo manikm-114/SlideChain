@@ -1,0 +1,172 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "SPECT scanner"
+          },
+          {
+            "category": "instrumentation",
+            "term": "rotation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "three-dimensional reconstruction"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector"
+          },
+          {
+            "category": "instrumentation",
+            "term": "collimators"
+          },
+          {
+            "category": "workflow",
+            "term": "longitudinal scanning"
+          }
+        ],
+        "evidence": [
+          "SPECT scanner",
+          "rotation",
+          "three-dimensional reconstruction",
+          "detector",
+          "collimators",
+          "longitudinal scanning"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The SPECT camera system is held together by a sturdy structure, and it\u2019s designed to rotate around the patient.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rotation",
+            "p": "uses",
+            "s": "SPECT scanner"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By rotating the detector and collimators around the patient, we get signals from different angles, enabling a full three-dimensional reconstruction.",
+            "modalities": [
+              "text"
+            ],
+            "o": "full three-dimensional reconstruction",
+            "p": "produces",
+            "s": "SPECT scanner"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "SPECT Scanner"
+          },
+          {
+            "category": "instrumentation",
+            "term": "sturdy structure"
+          },
+          {
+            "category": "workflow",
+            "term": "rotate around the patient"
+          },
+          {
+            "category": "data_processing",
+            "term": "collect data from multiple orientations"
+          },
+          {
+            "category": "reconstruction",
+            "term": "three-dimensional reconstruction"
+          },
+          {
+            "category": "workflow",
+            "term": "standard longitudinal scanning"
+          }
+        ],
+        "evidence": [
+          "The SPECT camera system is held together by a sturdy structure, and it's designed to rotate around the patient.",
+          "This rotation allows the scanner to collect data from multiple orientations, enabling a full three-dimensional reconstruction.",
+          "The system also allows for standard longitudinal scanning, which is what you typically see in practical clinical use."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The SPECT camera system is held together by a sturdy structure, and it's designed to rotate around the patient. This rotation allows the scanner to collect data from multiple orientations, which is conceptually similar to how CT scanners work.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "CT scanner",
+            "p": "uses",
+            "s": "SPECT Scanner"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "standard longitudinal scanning"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "The SPECT camera system is held together by a sturdy structure, and it's designed to rotate around the patient."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "rotation",
+        "p": "uses",
+        "s": "SPECT scanner"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "SPECT scanner"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scanner"
+          },
+          {
+            "category": "reconstruction",
+            "term": "three-dimensional reconstruction"
+          },
+          {
+            "category": "workflow",
+            "term": "longitudinal scanning"
+          }
+        ],
+        "evidence": [
+          "The SPECT camera system is held together by a sturdy structure, and it\u2019s designed to rotate around the patient.",
+          "This rotation allows the scanner to collect data from multiple orientations, which is conceptually similar to how CT scanners work.",
+          "By rotating the detector and collimators around the patient, we get signals from different angles, enabling a full three-dimensional reconstruction.",
+          "The system also allows for standard longitudinal scanning, which is what you typically see in practical clinical use."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

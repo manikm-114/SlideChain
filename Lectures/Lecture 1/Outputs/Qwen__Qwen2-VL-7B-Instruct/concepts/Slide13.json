@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide13",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T17:58:43.142978+00:00",
+  "text_length": 1671,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a step back for a moment and think about how mathematics builds over time.\n\nWhen you were in school, you learned the basics: addition, subtraction, multiplication, division. These are the building blocks. But once you reach higher levels—like where we are now—those simple operations take on more advanced forms.\n\nTake addition, for example. At this level, we’re not just adding a few numbers—we might be summing over an infinite number of values. That’s what integration is: it's a continuous version of addition, used when we add up contributions from every point in a region.\n\nWhat about subtraction? In calculus, that becomes differentiation. Instead of just finding a difference between two numbers, we’re looking at how fast something is changing at an exact point by evaluating a very small difference of a smooth function between two rather close points.\n\nNow let’s look at multiplication. In imaging, we move from regular multiplication to something called convolution—a fundamental concept in systems and signal processing. Convolution helps us model how a spatially-invariant linear system modifies a signal or an image. You’ll see this again and again in medical imaging. Again, a convolution in a spatial or time domain is a multiplication in the Fourier domain.\n\nAnd finally, what about division? Here’s where things get interesting. The advanced version of division—where you’re trying to reverse a process—is what we call an inverse solution; the deblurring problem is a good example. You’re given a blurry image, and your job is to figure out what is the underlying ground truth image. And that’s essentially what we do in tomographic imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"integration\", \"category\": \"mathematics\"},\n    {\"term\": \"differentiation\", \"category\": \"mathematics\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"inverse solution\", \"category\": \"mathematics\"},\n    {\"term\": \"deblurring\", \"category\": \"signal_processing\"},\n    {\"term\": \"tomographic imaging\", \"category\": \"medical_imaging\"}\n  ],\n  \"evidence\": [\n    \"integration is a continuous version of addition\",\n    \"differentiation is used to find how fast something is changing\",\n    \"convolution helps model how a spatially-invariant linear system modifies a signal or an image\",\n    \"inverse solution is used to reverse a process, such as deblurring\",\n    \"tomographic imaging is a technique used in medical imaging\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "integration",
+        "category": "mathematics"
+      },
+      {
+        "term": "differentiation",
+        "category": "mathematics"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "inverse solution",
+        "category": "mathematics"
+      },
+      {
+        "term": "deblurring",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "integration is a continuous version of addition",
+      "differentiation is used to find how fast something is changing",
+      "convolution helps model how a spatially-invariant linear system modifies a signal or an image",
+      "inverse solution is used to reverse a process, such as deblurring",
+      "tomographic imaging is a technique used in medical imaging"
+    ]
+  }
+}

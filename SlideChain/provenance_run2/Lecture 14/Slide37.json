@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "workflow",
+        "term": "diagnosis"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Low contrast image resolution can be measured using resolution phantoms containing small test objects with subtle differences in density.",
+            "modalities": [
+              "text"
+            ],
+            "o": "resolution phantoms",
+            "p": "measures",
+            "s": "Low contrast image resolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "When contrast is poor, like between blood vessels and surrounding tissue, contrast agents such as iodine are injected.",
+            "modalities": [
+              "text"
+            ],
+            "o": "iodine",
+            "p": "uses",
+            "s": "contrast agents"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "visualization"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Low contrast image resolution can be measured using resolution phantoms containing small test objects with subtle differences in density. These phantoms help to assess if the scanner and reconstruction algorithm can visualize objects with minor contrast differences.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "resolution phantoms",
+            "p": "measures",
+            "s": "Low contrast image resolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "better diagnosis and visualization of soft tissues"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Depending on\n\u2022 System MTF"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "System MTF",
+        "p": "depends_on",
+        "s": "Low-contrast Resolution"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "contrast agent"
+          },
+          {
+            "category": "quality_metric",
+            "term": "contrast resolution"
+          }
+        ],
+        "evidence": [
+          "SLIDE_TEXT"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

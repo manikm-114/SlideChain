@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier analysis\",\n      \"p\": \"uses\",\n      \"o\": \"orthonormal basis\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here we’re looking at a particular orthonormal basis used in Fourier analysis.\"\n    },\n    {\n      \"s\": \"Fourier basis\",\n      \"p\": \"represents\",\n      \"o\": \"signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Because the Fourier basis has this orthonormal property, we can represent any signal as a sum of these basis functions without losing information.\"\n    },\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"orthonormal property\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Based on such an orthonormality, we can directly define the discrete Fourier transform and its inversion in several equivalent forms.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier analysis",
+        "p": "uses",
+        "o": "orthonormal basis",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Here we’re looking at a particular orthonormal basis used in Fourier analysis."
+      },
+      {
+        "s": "Fourier basis",
+        "p": "represents",
+        "o": "signal",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Because the Fourier basis has this orthonormal property, we can represent any signal as a sum of these basis functions without losing information."
+      },
+      {
+        "s": "discrete Fourier transform",
+        "p": "depends_on",
+        "o": "orthonormal property",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Based on such an orthonormality, we can directly define the discrete Fourier transform and its inversion in several equivalent forms."
+      }
+    ]
+  }
+}

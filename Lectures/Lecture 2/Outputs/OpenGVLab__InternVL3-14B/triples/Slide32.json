@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Avoid loops\", \"p\":\"uses\", \"o\":\"matrix form\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Whenever you can, avoid loops — and write in matrix form.\"},\n    {\"s\":\"Square elements\", \"p\":\"uses\", \"o\":\"A dot caret 2\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Instead of looping to square elements, just write “A dot caret 2”.\"},\n    {\"s\":\"Row-wise sums\", \"p\":\"uses\", \"o\":\"sum of A, comma 2\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Want row-wise sums? Use “sum of A, comma 2”.\"},\n    {\"s\":\"Probabilities per row\", \"p\":\"uses\", \"o\":\"matrix broadcasting\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Need probabilities per row? Divide each row by its total using matrix broadcasting — it’s cleaner and faster than nested loops.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Avoid loops",
+        "p": "uses",
+        "o": "matrix form",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Whenever you can, avoid loops - and write in matrix form."
+      },
+      {
+        "s": "Square elements",
+        "p": "uses",
+        "o": "A dot caret 2",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Instead of looping to square elements, just write “A dot caret 2”."
+      },
+      {
+        "s": "Row-wise sums",
+        "p": "uses",
+        "o": "sum of A, comma 2",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Want row-wise sums? Use “sum of A, comma 2”."
+      },
+      {
+        "s": "Probabilities per row",
+        "p": "uses",
+        "o": "matrix broadcasting",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Need probabilities per row? Divide each row by its total using matrix broadcasting - it’s cleaner and faster than nested loops."
+      }
+    ]
+  }
+}

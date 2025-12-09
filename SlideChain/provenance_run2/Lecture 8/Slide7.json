@@ -1,0 +1,126 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "aliasing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling theorem"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "data_processing",
+            "term": "interpolation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "maximum frequency"
+          }
+        ],
+        "evidence": [
+          "sampling rate is too low",
+          "mismatch is caused by aliasing",
+          "sampling rate is less than twice the maximum frequency",
+          "reconstruct the signal from those samples",
+          "repeated spectra in the frequency domain overlap",
+          "no amount of interpolation can recover the original shape",
+          "respecting the sampling theorem is essential"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "But between the sample points, the red curve drifts far away from the true black signal."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "true black signal",
+        "p": "drifts away from",
+        "s": "reconstructed red curve"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "aliasing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "reconstruction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling theorem"
+          }
+        ],
+        "evidence": [
+          "At the sample locations, the reconstructed red curve passes exactly through the blue points - so it matches the original at those specific spots. But between the sample points, the red curve drifts far away from the true black signal.",
+          "This mismatch is caused by aliasing. Because our sampling rate is less than twice the maximum frequency in the signal, the repeated spectra in the frequency domain overlap. That overlap distorts the information, and once it happens, no amount of interpolation can recover the original shape."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "sampling rate is less than twice the maximum frequency in the signal"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "At the sample locations, the reconstructed red curve passes exactly through the blue points"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "blue points",
+        "p": "reconstructs_with",
+        "s": "red curve"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "permanent damage"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide7.txt"
+  },
+  "slide_id": "Slide7"
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"circular convolution\",\n      \"p\": \"represents\",\n      \"o\": \"wrap-around interaction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That wrap-around interaction is exactly what circular convolution means\"\n    },\n    {\n      \"s\": \"FFT-based convolution\",\n      \"p\": \"performs\",\n      \"o\": \"circular convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The FFT-based convolution performs this circular convolution by default\"\n    },\n    {\n      \"s\": \"direct method\",\n      \"p\": \"computes\",\n      \"o\": \"convolution in the time domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We again compute convolution in two ways: First, the direct method in the time domain.\"\n    },\n    {\n      \"s\": \"FFT-based method\",\n      \"p\": \"computes\",\n      \"o\": \"convolution in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,",
+  "parsed": {
+    "s": "direct method",
+    "p": "computes",
+    "o": "convolution in the time domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "We again compute convolution in two ways: First, the direct method in the time domain."
+    ]
+  }
+}

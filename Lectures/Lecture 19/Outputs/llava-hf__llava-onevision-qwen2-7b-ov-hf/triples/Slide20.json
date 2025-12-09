@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide20",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nGraphically, we can show this as you see on the slide.\nThe gradient field creates a range of resonance frequencies along the z-axis. When you send an RF pulse with a defined frequency range, only the spins within that frequency range — and therefore within a specific z-range — are excited.\n\nThat z-range corresponds to the slice thickness. So this is how we select a slice in MRI.\nWhat we’ve explained here is the principle for slice selection along the z-axis.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"slice selection\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"z-axis\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"That z-range corresponds to the slice thickness. So this is how we select a slice in MRI. What we’ve explained here is the principle for slice selection along the z-axis.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

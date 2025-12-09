@@ -1,0 +1,147 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "Doppler imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift.",
+            "modalities": [
+              "text"
+            ],
+            "o": "velocity of motion along the ultrasound beam direction",
+            "p": "measures",
+            "s": "Doppler shift"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The vertical component of the velocity-represented here as v cos \u03b8-is what contributes to this difference.",
+            "modalities": [
+              "text"
+            ],
+            "o": "vertical component of the velocity",
+            "p": "depends_on",
+            "s": "Doppler shift"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Doppler shift"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Doppler frequency shift"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ultrasound beam direction"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Doppler imaging"
+          }
+        ],
+        "evidence": [
+          "An illustration of the Doppler shift in flowing blood.",
+          "The RBCs scattering the ultrasound beam are traveling at velocity v.",
+          "The difference in these frequencies is the measured Doppler shift."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "The wall or the moving red blood cells reflect the ultrasound energy back to the transducer"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The Doppler shift tells us how motion changes the observed frequency, and that is the basis for Doppler imaging in medical ultrasound."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "information about motion",
+        "p": "produces",
+        "s": "the Doppler shift"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Doppler shift"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ultrasound energy"
+          },
+          {
+            "category": "signal_processing",
+            "term": "reflected frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "incident frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Doppler frequency shift"
+          },
+          {
+            "category": "physics",
+            "term": "motion changes the observed frequency"
+          }
+        ],
+        "evidence": [
+          "The Doppler shift occurs in flowing blood.",
+          "The reflected frequency becomes slightly different.",
+          "The Doppler shift tells us how motion changes the observed frequency."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

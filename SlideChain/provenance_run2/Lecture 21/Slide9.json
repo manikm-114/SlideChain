@@ -1,0 +1,145 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "displacement"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration"
+          },
+          {
+            "category": "physics",
+            "term": "pressure"
+          },
+          {
+            "category": "physics",
+            "term": "volume"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound wave"
+          },
+          {
+            "category": "physics",
+            "term": "conservation of mass"
+          },
+          {
+            "category": "physics",
+            "term": "Newton\u2019s second law"
+          },
+          {
+            "category": "physics",
+            "term": "elastic medium"
+          },
+          {
+            "category": "physics",
+            "term": "dynamic relationships"
+          }
+        ],
+        "evidence": [
+          "displacement (w)",
+          "velocity (u)",
+          "acceleration (a)",
+          "pressure (p)",
+          "volume (v)",
+          "ultrasound wave",
+          "conservation of mass",
+          "Newton\u2019s second law",
+          "elastic medium",
+          "dynamic relationships"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When we push it, the volume of that little element decreases because the particles are squeezed closer together. According to the conservation of mass, the total amount of material inside that voxel stays the same - but the pressure inside increases."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "pressure",
+        "p": "produces",
+        "s": "displacement"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "displacement (w)"
+          },
+          {
+            "category": "physics",
+            "term": "velocity (u)"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration (a)"
+          },
+          {
+            "category": "physics",
+            "term": "pressure (p)"
+          },
+          {
+            "category": "physics",
+            "term": "volume (v)"
+          }
+        ],
+        "evidence": [
+          "push on one side of that element toward the right",
+          "the volume of that little element decreases because the particles are squeezed closer together",
+          "the pressure inside increases",
+          "the net force generates acceleration",
+          "the acceleration then changes the velocity",
+          "the disturbance keeps propagating through the material"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "voxel"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "as the velocity builds up, the displacement w also changes further"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "displacement",
+        "p": "depends_on",
+        "s": "velocity"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "dynamic relationships"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

@@ -1,0 +1,123 @@
+{
+  "lecture": "Lecture 3",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "homogeneity"
+          },
+          {
+            "category": "mathematics",
+            "term": "additivity"
+          },
+          {
+            "category": "mathematics",
+            "term": "slope"
+          },
+          {
+            "category": "mathematics",
+            "term": "rational"
+          },
+          {
+            "category": "mathematics",
+            "term": "irrational"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear systems"
+          }
+        ],
+        "evidence": [
+          "homogeneity without additivity",
+          "function that applies one slope if the input is rational and another slope if it\u2019s irrational",
+          "Scaling works consistently because multiplying by a rational scalar preserves the input\u2019s type (rational or irrational), so homogeneity holds",
+          "if you add two irrational inputs that sum to a rational number, the slopes change-and additivity breaks down",
+          "linear systems require both properties"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Scaling works consistently because multiplying by a rational scalar preserves the input\u2019s type (rational or irrational), so homogeneity holds.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rational scalar",
+            "p": "depends_on",
+            "s": "homogeneity"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "shortcut"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "homogeneity"
+          },
+          {
+            "category": "mathematics",
+            "term": "additivity"
+          },
+          {
+            "category": "mathematics",
+            "term": "scaling"
+          },
+          {
+            "category": "mathematics",
+            "term": "rational"
+          },
+          {
+            "category": "mathematics",
+            "term": "irrational"
+          },
+          {
+            "category": "mathematics",
+            "term": "slope"
+          },
+          {
+            "category": "mathematics",
+            "term": "linear systems"
+          }
+        ],
+        "evidence": [
+          "homogeneity without additivity",
+          "additivity breaks down",
+          "scaling works consistently",
+          "multiplying by a rational scalar preserves the input's type",
+          "We can't shortcut the definition by assuming one implies the other in all cases"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "linear systems require both properties"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide24.txt"
+  },
+  "slide_id": "Slide24"
+}

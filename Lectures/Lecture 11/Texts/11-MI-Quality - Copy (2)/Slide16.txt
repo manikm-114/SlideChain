@@ -1,0 +1,10 @@
+As I mentioned, the Structural Similarity Index is built on three components: luminance, contrast, and structure — or L, C, and S for short.
+
+Let’s start with luminance. Suppose we have an image X with N pixels. To find its average brightness, or mean, we simply add up all the pixel values and divide by N. This gives us the mean value, which we call mu of X.
+Next, we remove the mean by subtracting the mean of X from every pixel. This is the first step of normalization — it centers the image so that the average brightness is zero.
+
+Once we have the mean, we can also compute the standard deviation. This measures how much the pixel values vary around the mean. Notice that the formula here uses 1 divided by N minus 1, not just N. That detail comes from statistics — it gives us an unbiased estimate of the standard deviation.
+Finally, we can normalize the image even further by dividing each pixel by the standard deviation. After this second step of normalization, the transformed image will have a mean of zero and a standard deviation of one. In other words, it has been rescaled so that brightness and contrast are standardized.
+We repeat this process for both images, X and Y. Only then do we compare them — first in terms of luminance, then contrast, and finally their structural relationship.
+
+So, these are the basic operations behind SSIM. They are simple statistical tools, but together they allow us to capture how similar two images are in terms of brightness, contrast, and structure.

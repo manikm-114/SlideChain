@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide36",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T01:11:21.269100+00:00",
+  "text_length": 1574,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOur second example is spectral analysis.\nHere, we use an important relationship: one divided by capital N is equal to delta t multiplied by delta nu.\u000bIn words, delta t is the sampling interval in the time domain, and delta nu — sometimes called delta u — is the spacing between frequency samples in the Fourier domain.\n\nWhat this tells us is that if we keep delta t fixed and the total number of samples N fixed, then our frequency spacing delta nu is also fixed. That means, if a signal contains two frequencies that are very close together, the spectrum may not have enough resolution to separate them.\n\nOne way to improve the resolution is called zero padding. This means we add zeros to the end of the time-domain signal, which increases the total number of samples N. Increasing N makes the spacing in the frequency domain, delta nu, smaller — giving us a finer frequency grid and better spectral resolution.\n\nIn this MATLAB example, we create a signal by adding two sinusoids.\u000bThe first term is the cosine of two times pi times one hundred times t.\u000bThe second term is the sine of two times pi times two-hundred two point five times t.\nWe sample t from zero to one second in steps of zero point zero zero one seconds, which corresponds to a sampling frequency of one kilohertz.\u000bWithout zero padding, the frequency step size may be too large to clearly separate the peaks at one hundred hertz and one-hundred two point five hertz.\u000bWith zero padding, the peaks become distinct.\n\nIf you want the full MATLAB walkthrough, you can follow the link at the bottom of the slide.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"1/N\",\n      \"p\": \"equals\",\n      \"o\": \"ΔtΔν\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"One divided by capital N is equal to delta t multiplied by delta nu.\"\n    },\n    {\n      \"s\": \"Δt\",\n      \"p\": \"represents\",\n      \"o\": \"sampling interval in the time domain\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"delta t is the sampling interval in the time domain\"\n    },\n    {\n      \"s\": \"Δν\",\n      \"p\": \"represents\",\n      \"o\": \"spacing between frequency samples in the Fourier domain\",\n      \"modalities\": [\n        \"text\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"delta nu — sometimes called delta u — is the spacing between frequency samples in the Fourier domain.\"\n    },\n    {\n      \"s\": \"Fs\",\n      \"p\": \"equals\",\n      \"o\": \"1e3\",\n      \"modal",
+  "parsed": {
+    "s": "Δν",
+    "p": "represents",
+    "o": "spacing between frequency samples in the Fourier domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "delta nu - sometimes called delta u - is the spacing between frequency samples in the Fourier domain."
+    ]
+  }
+}

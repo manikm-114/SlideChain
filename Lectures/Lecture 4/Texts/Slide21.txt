@@ -1,0 +1,9 @@
+In a shift-invariant system, if you know the system’s response to an impulse at one location, you can predict its response at any other location or time.
+That’s because shift-invariance means the system behaves the same way, no matter where or when you apply the impulse.
+If you apply an impulse at a different time or position, you can infer the output by simply shifting the known response accordingly.
+And because the system is linear, you have additivity and homogeneity.
+If you scale an input, the output will be scaled in the same way.
+If you add multiple inputs, the output will be the sum of individual outputs due to each input.
+This is exactly why knowing the impulse response of a system tells you everything about how that system behaves — no matter what input you give it.
+
+To summarize, for a shift-invariant linear system, given any input, we want to compute the output.The critical information we rely on is the system’s impulse response.If we know how the system reacts to a delta function at time zero,we can use that as a building block to find the output for any input.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"f(t)\", \"p\":\"represents\", \"o\":\"continuous function in the time domain\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We start with a continuous function in the time domain, which we’ll call f of t.\"},\n    {\"s\":\"F(u)\", \"p\":\"represents\", \"o\":\"continuous Fourier transform\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It has a continuous Fourier transform, capital F of u, in the frequency domain.\"},\n    {\"s\":\"g(t)\", \"p\":\"produces\", \"o\":\"discrete version of f(t)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"if we sample f of t at the Nyquist rate or higher, we get a discrete version of the signal — here shown as g of t.\"},\n    {\"s\":\"G(u)\", \"p\":\"represents\", \"o\":\"Fourier transform of g(t)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"And because our sampling rate satisfies the theorem, there’s no loss of information in moving from the continuous signal to its discrete version.\"},",
+  "parsed": {
+    "s": "G(u)",
+    "p": "represents",
+    "o": "Fourier transform of g(t)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "And because our sampling rate satisfies the theorem, there’s no loss of information in moving from the continuous signal to its discrete version."
+    ]
+  }
+}

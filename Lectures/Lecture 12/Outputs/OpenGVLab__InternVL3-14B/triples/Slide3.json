@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"uses\",\n      \"o\": \"X-ray source\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For X-ray imaging, I’ll use this outline format to guide our discussion. We will cover three fundamental aspects: the source, the attenuation, and the detector.\"\n    },\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"X-ray attenuation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We will cover three fundamental aspects: the source, the attenuation, and the detector.\"\n    },\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"uses\",\n      \"o\": \"X-ray detector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We will cover three fundamental aspects: the source, the attenuation, and the detector.\"\n    },\n    {\n      \"s\": \"X-ray source\",\n      \"p\": \"produces\",\n      \"o",
+  "parsed": {
+    "s": "X-ray imaging",
+    "p": "uses",
+    "o": "X-ray detector",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "We will cover three fundamental aspects: the source, the attenuation, and the detector."
+    ]
+  }
+}

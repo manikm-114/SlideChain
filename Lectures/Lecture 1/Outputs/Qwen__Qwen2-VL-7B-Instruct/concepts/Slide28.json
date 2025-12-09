@@ -1,0 +1,14 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:21:12.364004+00:00",
+  "text_length": 343,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nBefore we wrap up this introduction,  I’ll also give you a simple task—just a brief introductory slide you can prepare. It’s not graded, but it helps me get a sense of who you are, what your background is, your GPA, research experience, and what you hope to learn. That way, I can adjust the flow of this course to better support your journey.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Inner Vision\", \"category\": \"algorithm\"},\n    {\"term\": \"Health-related Knowledge\", \"category\": \"signal_processing\"},\n    {\"term\": \"Career Requirements\", \"category\": \"workflow\"},\n    {\"term\": \"Instructors\", \"category\": \"software\"},\n    {\"term\": \"You\", \"category\": \"software\"},\n    {\"term\": \"Foundation + Modalities\", \"category\": \"modality\"},\n    {\"term\": \"MatLab\", \"category\": \"software\"},\n    {\"term\": \"Books + Google\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"Before we wrap up this introduction, I’ll also give you a simple task—just a brief introductory slide you can prepare. It’s not graded, but it helps me get a sense of who you are, what your background is, your GPA, research experience, and what you hope to learn. That way, I can adjust the flow of this course to better support your journey.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Before we wrap up this introduction, I'll also give you a simple task-just a brief introductory slide you can prepare. It's not graded, but it helps me get a sense of who you are, what your background is, your GPA, research experience, and what you hope to learn. That way, I can adjust the flow of this course to better support your journey."
+    ]
+  }
+}

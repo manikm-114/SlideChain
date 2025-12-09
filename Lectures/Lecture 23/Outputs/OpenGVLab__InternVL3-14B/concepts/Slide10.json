@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"rays passing through the center of a lens are unaffected by the lens\", \"category\": \"physics\"},\n    {\"term\": \"rays parallel to the optical axis pass through the focal point\", \"category\": \"physics\"},\n    {\"term\": \"parallel rays pass through the same point in the focal plane after refraction\", \"category\": \"physics\"},\n    {\"term\": \"converging lens\", \"category\": \"physics\"},\n    {\"term\": \"diverging lens\", \"category\": \"physics\"},\n    {\"term\": \"real image\", \"category\": \"physics\"},\n    {\"term\": \"virtual image\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"a ray passing through the center of a lens will not be deflected\",\n    \"rays parallel to the optical axis will converge to the focal point\",\n    \"parallel rays entering the lens at different angles all meet at a single focal plane\",\n    \"converging lens\",\n    \"diverging lens\",\n    \"real image forms with a converging lens\",\n    \"virtual image appears to form on the same side as the object\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "converging lens",
+        "category": "physics"
+      },
+      {
+        "term": "diverging lens",
+        "category": "physics"
+      },
+      {
+        "term": "real image",
+        "category": "physics"
+      },
+      {
+        "term": "virtual image",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "a ray passing through the center of a lens will not be deflected",
+      "rays parallel to the optical axis will converge to the focal point",
+      "parallel rays entering the lens at different angles all meet at a single focal plane",
+      "converging lens",
+      "diverging lens",
+      "real image forms with a converging lens",
+      "virtual image appears to form on the same side as the object"
+    ]
+  }
+}

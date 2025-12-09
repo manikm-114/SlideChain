@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"v\", \"p\":\"uses\", \"o\":\"v'\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To make it a column, we write: v equals v prime — using the transpose.\"},\n    {\"s\":\"v(1)\", \"p\":\"represents\", \"o\":\"the first element of v\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"v of one gives the first\"},\n    {\"s\":\"v(2:4)\", \"p\":\"represents\", \"o\":\"entries 2-4 of v\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"v of two to four gives the second to fourth\"},\n    {\"s\":\"v([3,5])\", \"p\":\"represents\", \"o\":\"entries 3 & 5\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"and v of three and five gives just those two\"},\n    {\"s\":\"v[4:-1:2]\", \"p\":\"represents\", \"o\":\"four, three, two\", \"modalities\":[\"text\"], \"confidence\":1.0, \"",
+  "parsed": {
+    "s": "v([3,5])",
+    "p": "represents",
+    "o": "entries 3 & 5",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "and v of three and five gives just those two"
+    ]
+  }
+}

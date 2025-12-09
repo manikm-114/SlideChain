@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"cylinder function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here, we’re creating a cone using MATLAB’s cylinder function.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"produces\",\n      \"o\": \"3D surface\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then we call the cylinder function to get the X, Y, and Z coordinates, and use surf to draw the 3D surface.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "cylinder function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Here, we’re creating a cone using MATLAB’s cylinder function."
+      },
+      {
+        "s": "MATLAB",
+        "p": "produces",
+        "o": "3D surface",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Then we call the cylinder function to get the X, Y, and Z coordinates, and use surf to draw the 3D surface."
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide25",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:10:48.042531+00:00",
+  "text_length": 974,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis example shows patient reconstruction results. When using filtered back projection, the images clearly display streak artifacts and significant noise. These issues appear across all views—coronal, transaxial, and sagittal. Overall, the images produced by filtered back projection are noisy and contain strong artifacts that reduce clarity and diagnostic value.\n\nIn contrast, maximum likelihood iterative reconstruction directly incorporates statistical knowledge into the reconstruction process. This approach produces images that are both visually and quantitatively improved. Noise is greatly reduced, artifacts are minimized, and the resulting images are more accurate and reliable for clinical use.\nThe side-by-side comparison highlights the advantage of maximum likelihood iterative reconstruction over traditional filtered back projection. In real patient data, the iterative approach delivers superior image quality, both in appearance and in diagnostic accuracy.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Filtered Back Projection\", \"category\": \"algorithm\"},\n    {\"term\": \"Maximum Likelihood Iterative Reconstruction\", \"category\": \"algorithm\"},\n    {\"term\": \"Streak Artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"Noise\", \"category\": \"signal_processing\"},\n    {\"term\": \"Diagnostic Accuracy\", \"category\": \"quality_metric\"},\n    {\"term\": \"Iterative Approach\", \"category\": \"algorithm\"},\n    {\"term\": \"Patient Reconstruction\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"Filtered back projection produces noisy images with strong artifacts.\",\n    \"Maximum likelihood iterative reconstruction produces images with reduced noise and minimized artifacts.\",\n    \"Iterative reconstruction approach is superior to traditional filtered back projection in real patient data.\",\n    \"Iterative reconstruction approach delivers superior image quality and diagnostic accuracy.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Filtered Back Projection",
+        "category": "algorithm"
+      },
+      {
+        "term": "Maximum Likelihood Iterative Reconstruction",
+        "category": "algorithm"
+      },
+      {
+        "term": "Streak Artifacts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Noise",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Diagnostic Accuracy",
+        "category": "quality_metric"
+      },
+      {
+        "term": "Iterative Approach",
+        "category": "algorithm"
+      },
+      {
+        "term": "Patient Reconstruction",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Filtered back projection produces noisy images with strong artifacts.",
+      "Maximum likelihood iterative reconstruction produces images with reduced noise and minimized artifacts.",
+      "Iterative reconstruction approach is superior to traditional filtered back projection in real patient data.",
+      "Iterative reconstruction approach delivers superior image quality and diagnostic accuracy."
+    ]
+  }
+}

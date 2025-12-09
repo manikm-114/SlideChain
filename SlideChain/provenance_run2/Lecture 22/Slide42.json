@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "heating and thermal expansion"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Graphene has an interesting property: it can absorb light energy and convert it into heat."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "NIR pulsed laser",
+        "p": "absorbs",
+        "s": "Graphene-PVA Microbubbles"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "Heating and Thermal expansion"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Ultrasonic detection"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "The NIR pulsed laser excites graphene microbubbles, which then generate acoustic waves via thermal expansion."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Acoustic waves",
+        "p": "produces",
+        "s": "NIR pulsed laser"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "targeted drug delivery"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Once these microbubbles are introduced, they enhance the ultrasound signal because the presence of microbubbles makes acoustic reflections stronger.",
+            "modalities": [
+              "text"
+            ],
+            "o": "microbubbles",
+            "p": "uses",
+            "s": "contrast agents"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

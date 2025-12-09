@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB's radon function\",\n      \"p\": \"uses\",\n      \"o\": \"parallel-beam CT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now let’s go deeper into how MATLAB’s radon function works for parallel-beam CT.\"\n    },\n    {\n      \"s\": \"MATLAB's radon function\",\n      \"p\": \"produces\",\n      \"o\": \"projection values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"R is the result—it contains the projection values, essentially the amplitudes of the rays.\"\n    },\n    {\n      \"s\": \"MATLAB's radon function\",\n      \"p\": \"depends_on\",\n      \"o\": \"rotation angles\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The amount of rotation is controlled by the angle theta, which we provide as an input to the function.\"\n    },\n    {\n      \"s\": \"MATLAB's radon function\",\n      \"p\": \"uses\",",
+  "parsed": {
+    "s": "MATLAB's radon function",
+    "p": "depends_on",
+    "o": "rotation angles",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The amount of rotation is controlled by the angle theta, which we provide as an input to the function."
+    ]
+  }
+}

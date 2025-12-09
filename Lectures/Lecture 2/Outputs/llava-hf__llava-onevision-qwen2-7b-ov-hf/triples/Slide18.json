@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide18",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s talk about control flow — specifically, loops.\nStart with a for loop. Use it when you know how many times you want to repeat something.\nFor example:\u000bSet x to zero.\u000bThen, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 —\u000bwe add i to x.\u000bAt the end, x equals 9.\nfor loops are useful when working through a known sequence.\nNow, a while loop runs as long as a condition is true.\nIn this example:\u000bStart with x equal to 7.\u000bWhile x is greater than or equal to zero, subtract 2 each time.\u000bThe loop stops when x becomes negative.\nJust be careful — if the condition never becomes false, the loop won’t stop.\nFinally, break lets you exit a loop early.\u000bIt’s useful if you find what you need before the loop finishes.\u000bIn nested loops, it only exits the innermost one.\u000bUse it wisely — don’t skip steps that still matter.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"for loop\", \"p\":\"uses\", \"o\":\"known sequence\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"Set x to zero. Then, for i from 1 to 5 in steps of 2 — so, 1, 3, and 5 — we add i to x. At the end, x equals 9.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "for loop",
+        "p": "uses",
+        "o": "known sequence",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Set x to zero. Then, for i from 1 to 5 in steps of 2 - so, 1, 3, and 5 - we add i to x. At the end, x equals 9."
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide15",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo now we move to the next part: being spatially specific.\nIn MRI, we don’t just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that — within that slice, we also want to know the signal from each location.\n\nThat means we need to encode each pixel in a way that makes its signal slightly different from every other pixel. Only then can we reconstruct an image that shows the T1 and T2 values for each voxel.\nThe first step in this process is slice selection. We begin by defining which slice we want to image.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"slice selection\", \"category\": \"workflow\"},\n    {\"term\": \"pixel encoding\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"T1 and T2 values\", \"category\": \"physics\"},\n    {\"term\": \"voxel\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\"In MRI, we don’t just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that — within that slice, we also want to know the signal from each location.\", \"The first step in this process is slice selection. We begin by defining which slice we want to image.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "slice selection",
+        "category": "workflow"
+      },
+      {
+        "term": "T1 and T2 values",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "In MRI, we don’t just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that - within that slice, we also want to know the signal from each location.",
+      "The first step in this process is slice selection. We begin by defining which slice we want to image."
+    ]
+  }
+}

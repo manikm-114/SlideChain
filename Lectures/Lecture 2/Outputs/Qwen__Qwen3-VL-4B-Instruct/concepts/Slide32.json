@@ -1,0 +1,17 @@
+{
+  "slide_id": "Slide32",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T21:44:08.253849+00:00",
+  "text_length": 297,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWhenever you can, avoid loops — and write in matrix form.\nInstead of looping to square elements, just write “A dot caret 2”.\nWant row-wise sums? Use “sum of A, comma 2”.\nNeed probabilities per row? Divide each row by its total using matrix broadcasting — it’s cleaner and faster than nested loops.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Whenever you can, avoid loops — and write in matrix form.\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"Instead of looping to square elements, just write \\\"A dot caret 2\\\"\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"Want row-wise sums? Use \\\"sum of A, comma 2\\\"\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"Need probabilities per row? Divide each row by its total using matrix broadcasting — it’s cleaner and faster than nested loops.\",\n      \"category\": \"software\"\n    }\n  ],\n  \"evidence\": [\n    \"Whenever you can, avoid loops — and write in matrix form.\",\n    \"Instead of looping to square elements, just write \\\"A dot caret 2\\\"\",\n    \"Want row-wise sums? Use \\\"sum of A, comma 2\\\"\",\n    \"Need probabilities per row? Divide each row by its total using matrix broadcasting — it’s cleaner and faster than nested loops.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Whenever you can, avoid loops - and write in matrix form.",
+      "Instead of looping to square elements, just write \"A dot caret 2\"",
+      "Want row-wise sums? Use \"sum of A, comma 2\"",
+      "Need probabilities per row? Divide each row by its total using matrix broadcasting - it's cleaner and faster than nested loops."
+    ]
+  }
+}

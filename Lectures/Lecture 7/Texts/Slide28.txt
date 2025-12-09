@@ -1,0 +1,22 @@
+Alright, let’s take a step further and make things more precise.
+
+Earlier, I showed you some cartoon-like pictures to build intuition. Now, let’s look at the actual math behind those ideas — starting with the delta function.
+
+In signal processing, the delta function plays a key role — especially when we have a series of delta functions lined up at regular intervals. We often call this a comb, because visually, it looks just like the teeth of a hair comb.
+Here’s the key idea.
+
+Imagine you have a bunch of delta functions spaced by a fixed time interval, T. We write that as:s of t equals the sum of delta of t minus n times T.
+Now, when you take the Fourier transform of this comb-shaped signal, something beautiful happens. You get another comb — but this time in the frequency domain.
+
+There’s a simple rule:
+If the spacing in time is T,
+Then the spacing in frequency becomes 1 over T.
+The impulses are still evenly spaced, but now they live in the frequency domain. And their height is scaled by a factor of 1 over T.
+So this transformation turns one comb into another — just flipped into frequency space, with inverted spacing.
+This is a fundamental result you’ll see in many signal processing books. Different authors may use different symbols — like f or u for frequency, or j or i in the exponential — but the meaning is the same.
+
+Also, keep in mind that delta functions are really convenient in Fourier analysis. When you plug a delta function into the Fourier formula, it simplifies easily — because a delta picks out a single point.
+And when you shift the delta in time — say, to delta of t minus some value — the result in frequency becomes a complex exponential, like e to the j 2 pi f zero t. That’s thanks to the shift theorem.
+
+So, the takeaway here is:a comb of delta functions in time becomes another comb in frequency — just with spacing flipped and amplitude scaled.
+This sets the stage for understanding how sampling works in both domains. We’ll build on this in the slides that follow.

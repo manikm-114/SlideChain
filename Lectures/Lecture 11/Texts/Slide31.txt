@@ -1,0 +1,10 @@
+Another way to describe spatial resolution is through the Modulation Transfer Function, or MTF.
+
+Here’s the idea: every image can be broken down into sinusoidal components using Fourier analysis. These components can be low frequency — representing smooth, gradual changes — or high frequency — representing fine details like sharp edges or thin lines.
+If we feed a sinusoidal pattern into an imaging system, the system does not pass all frequencies equally well. Low-frequency components pass through almost perfectly. But as the frequency increases, the system begins to attenuate, or weaken, those components. At very high frequencies, the system may blur them so much that they become invisible.
+
+The MTF curve shows this behavior. On the left side, at low frequencies, the modulation is close to 100 percent. As frequency increases, the response gradually drops. Eventually, at very high frequencies, the response falls to zero — meaning the system can no longer reproduce those details.
+A practical way to think about this is with a line-pair phantom, where black and white bars alternate like a test pattern. At low frequencies, the bars are wide, and the system can reproduce them clearly. At high frequencies, the bars get narrower and closer together. At some point, the system can no longer distinguish the bars — they blur into a uniform gray. That point defines the system’s resolution limit.
+
+So MTF gives us a frequency-domain way of measuring resolution. It tells us not just whether two points can be separated, but how well the system preserves detail across different scales.
+This measure is widely used in both medical imaging and general optics. It provides a more complete picture of resolution compared to the single-number definition from the point spread function.

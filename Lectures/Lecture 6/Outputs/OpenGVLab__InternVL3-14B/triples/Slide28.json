@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"represents\",\n      \"o\": \"connection to derivatives\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now let’s talk about a beautiful and surprising property of the Fourier transform — its connection to derivatives.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"multiplication in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Taking a derivative in time becomes multiplication in the frequency domain.\"\n    },\n    {\n      \"s\": \"Fourier transform of f'(t)\",\n      \"p\": \"produces\",\n      \"o\": \"2 pi i s times the Fourier transform of f\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Fourier transform of f ' of t is just 2 pi i s times the Fourier transform of f.\"\n    },\n    {\n      \"s\": \"derivative of the Fourier transform\",\n      \"p\": \"depends_on\",",
+  "parsed": {
+    "s": "Fourier transform of f'(t)",
+    "p": "produces",
+    "o": "2 pi i s times the Fourier transform of f",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The Fourier transform of f ' of t is just 2 pi i s times the Fourier transform of f."
+    ]
+  }
+}

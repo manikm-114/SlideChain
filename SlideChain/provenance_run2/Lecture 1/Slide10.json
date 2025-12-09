@@ -1,0 +1,120 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "Metabolism"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Gamma rays are used in nuclear imaging, like PET and SPECT",
+            "modalities": [
+              "text"
+            ],
+            "o": "nuclear imaging",
+            "p": "uses",
+            "s": "Gamma rays"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Radio waves are instrumental in MRI",
+            "modalities": [
+              "text"
+            ],
+            "o": "MRI",
+            "p": "uses",
+            "s": "Radio waves"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Visible and infrared light are for optical imaging",
+            "modalities": [
+              "text"
+            ],
+            "o": "optical imaging",
+            "p": "uses",
+            "s": "Visible and infrared light"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Ultrasound, though not part of the EM spectrum, gives us mechanical wave-based imaging, referred to as ultrasound imaging",
+            "modalities": [
+              "text"
+            ],
+            "o": "ultrasound imaging",
+            "p": "uses",
+            "s": "Ultrasound"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "Bones"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Gamma rays are used in nuclear imaging, like PET and SPECT.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "nuclear imaging",
+            "p": "uses",
+            "s": "Gamma rays"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "some are good at seeing bones, others at detecting molecular processes"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Visible and infrared light are for optical imaging"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "optical imaging",
+        "p": "uses",
+        "s": "visible and infrared light"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "resolution"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Gamma rays are used in nuclear imaging, like PET and SPECT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "PET and SPECT",
+            "p": "uses",
+            "s": "X-rays"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide10.txt"
+  },
+  "slide_id": "Slide10"
+}

@@ -1,0 +1,35 @@
+Let me now show you the other direction of this idea — and this time, we’re not going to rely on the convolution theorem directly.
+
+We’ll start with a simple question:Can any function other than a sinusoid go into a system and come out unchanged in shape — just scaled by a constant?
+Let’s think about that.
+
+Suppose the impulse response of the system is a delta function. Then, any signal you put into that system just passes through exactly as it is — unchanged. The system does nothing.This is an ideal system — it responds instantly and perfectly.
+
+For example, if a camera had a perfect delta-function impulse response, every point in the scene would be captured exactly — with perfect sharpness, no blur at all.
+But in real life, that doesn’t happen. No camera has a true delta response.
+
+In practical systems, the impulse response is not a delta function — it’s more spread out. That means the system blurs things.Even if you feed it a sharp impulse, the output will be a wider, smeared version — not the same as the input.
+So what does that mean in the frequency domain?
+
+Well, we know that the Fourier transform of a delta function is a constant — it's just one everywhere.That’s because a delta contains all frequencies equally.
+But if your impulse response is not a delta — if it’s more spread out — then its Fourier transform won’t be constant.It will vary in frequency. That’s key.
+
+Now, let’s suppose you have some input signal — let’s call it i of t — and this signal goes into the system.You get an output o of t, and let’s say the output has the exact same shape as the input, just scaled by some number alpha.
+
+That is:
+o of t equals alpha times i of t.
+That sounds simple, but let’s look at what it means in the frequency domain.
+If we take the Fourier transform of both sides, we get:
+Capital O of u equals alpha times capital I of u.
+But from the convolution theorem, we also know:
+Capital O of u equals capital H of u times capital I of u.
+If we compare those two expressions, we find:
+Capital H of u must equal alpha — a constant.
+But as we just said, that would only be possible if h of t — the impulse response — is a delta function.And we assumed it's not.
+So we have a contradiction.
+
+That tells us:No function other than a sinusoid can go through a general shift-invariant linear system and come out with the same shape — unless the system is trivial, like an ideal delta.
+Only sinusoids have this amazing property:Sinusoid in, sinusoid out — same frequency, just scaled and shifted in phase.
+That’s what makes them so special in Fourier analysis.That’s why convolution in the time domain becomes multiplication in the frequency domain — because the system affects each sinusoidal component independently and proportionally.
+
+So what you see here is not just a bunch of equations — it’s a deeper logic behind the theorem.Understanding this helps you move beyond just memorizing formulas — it helps you truly see why Fourier analysis works the way it does.

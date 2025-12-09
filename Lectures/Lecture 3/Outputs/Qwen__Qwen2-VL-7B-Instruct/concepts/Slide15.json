@@ -1,0 +1,16 @@
+{
+  "slide_id": "Slide15",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:05:23.583869+00:00",
+  "text_length": 447,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe human system as a whole is incredibly intricate. It spans multiple levels—from genes and cells up to organs and entire physiological systems like the circulatory or digestive systems. When disease strikes, understanding these interconnections is crucial. This is the realm of systems biology or systems medicine—a field dedicated to studying the body as a network of interacting parts, so we can better understand, diagnose, and treat disease.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"human system\", \"category\": \"anatomy\"},\n    {\"term\": \"systems biology\", \"category\": \"biology\"},\n    {\"term\": \"systems medicine\", \"category\": \"biology\"},\n    {\"term\": \"body as a network of interacting parts\", \"category\": \"biology\"},\n    {\"term\": \"understanding, diagnosing, and treating disease\", \"category\": \"medicine\"}\n  ],\n  \"evidence\": [\n    \"The human system as a whole is incredibly intricate.\",\n    \"When disease strikes, understanding these interconnections is crucial.\",\n    \"This is the realm of systems biology or systems medicine—a field dedicated to studying the body as a network of interacting parts, so we can better understand, diagnose, and treat disease.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "The human system as a whole is incredibly intricate.",
+      "When disease strikes, understanding these interconnections is crucial.",
+      "This is the realm of systems biology or systems medicine-a field dedicated to studying the body as a network of interacting parts, so we can better understand, diagnose, and treat disease."
+    ]
+  }
+}

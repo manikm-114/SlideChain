@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"PET without attenuation correction\",\n      \"p\": \"produces\",\n      \"o\": \"reduced mediastinal uptake\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"PET: without attenuation correction\"\n    },\n    {\n      \"s\": \"PET without attenuation correction\",\n      \"p\": \"produces\",\n      \"o\": \"non-uniform liver\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"PET: without attenuation correction\"\n    },\n    {\n      \"s\": \"PET without attenuation correction\",\n      \"p\": \"produces\",\n      \"o\": \"enhanced skin uptake\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"PET: without attenuation correction\"\n    },\n    {\n      \"s\": \"PET with attenuation correction\",\n      \"p\": \"produces\",\n      \"o\": \"accurate\",\n      \"modalities\": [\"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"PET: with attenuation correction (accurate)\"",
+  "parsed": {
+    "s": "PET without attenuation correction",
+    "p": "produces",
+    "o": "enhanced skin uptake",
+    "modalities": [
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "PET: without attenuation correction"
+    ]
+  }
+}

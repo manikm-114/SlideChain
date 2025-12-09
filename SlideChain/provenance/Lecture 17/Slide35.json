@@ -1,0 +1,127 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "scintillation crystals"
+          },
+          {
+            "category": "instrumentation",
+            "term": "photomultiplier tubes"
+          },
+          {
+            "category": "physics",
+            "term": "gamma photons"
+          },
+          {
+            "category": "signal_processing",
+            "term": "electrical signals"
+          },
+          {
+            "category": "physics",
+            "term": "energy"
+          },
+          {
+            "category": "physics",
+            "term": "Compton scattering"
+          },
+          {
+            "category": "instrumentation",
+            "term": "coincidence processing unit"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered back projection"
+          },
+          {
+            "category": "modality",
+            "term": "cross-sectional images"
+          }
+        ],
+        "evidence": [
+          "scintillation crystals",
+          "photomultiplier tubes",
+          "gamma photons",
+          "energy",
+          "Compton scattering",
+          "coincidence processing unit",
+          "image reconstruction",
+          "filtered back projection",
+          "cross-sectional images"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "the photomultiplier tubes convert the light produced by these interactions into electrical signals"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "visible light to electrical signal",
+        "p": "converts",
+        "s": "photomultiplier tubes"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "filtered back projection"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "filtered back projection"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "Incident 511kev Photons Make Visible Light... Visible Light Converted to Electrical Signal"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Incident 511kev Photons",
+        "p": "measures",
+        "s": "Photomultiplier Tubes"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "filtered back projection"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Each block is coupled with multiple photomultiplier tubes in the background-typically four per block.",
+            "modalities": [
+              "text"
+            ],
+            "o": "photomultiplier tubes",
+            "p": "uses",
+            "s": "scintillation crystals"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide35.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide35.txt"
+  },
+  "slide_id": "Slide35"
+}

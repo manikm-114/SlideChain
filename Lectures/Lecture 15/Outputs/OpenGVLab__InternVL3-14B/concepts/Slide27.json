@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"fan-beam\", \"category\": \"modality\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"artifacts\", \"category\": \"quality_metric\"},\n    {\"term\": \"source-object distance\", \"category\": \"instrumentation\"},\n    {\"term\": \"phantom\", \"category\": \"modality\"},\n    {\"term\": \"distortion\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"fan-beam simulation\",\n    \"reconstruction looks good\",\n    \"resolution decreases\",\n    \"faint artifacts start to appear\",\n    \"source is from the object\",\n    \"square phantom\",\n    \"square no longer looks crisp\",\n    \"background shows strong artifacts\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "fan-beam",
+        "category": "modality"
+      },
+      {
+        "term": "reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "artifacts",
+        "category": "quality_metric"
+      },
+      {
+        "term": "source-object distance",
+        "category": "instrumentation"
+      },
+      {
+        "term": "phantom",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "fan-beam simulation",
+      "reconstruction looks good",
+      "resolution decreases",
+      "faint artifacts start to appear",
+      "source is from the object",
+      "square phantom",
+      "square no longer looks crisp",
+      "background shows strong artifacts"
+    ]
+  }
+}

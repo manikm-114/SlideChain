@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "backprojection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "artifact"
+          },
+          {
+            "category": "reconstruction",
+            "term": "smearing"
+          }
+        ],
+        "evidence": [
+          "You still see a region that is a little high, because this part of the projection is high.",
+          "Backprojection alone smears the high values around.",
+          "That is why we really need to filter the projections."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "that is why we really need to filter the projections"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "backprojection"
+          },
+          {
+            "category": "signal_processing",
+            "term": "artifacts"
+          },
+          {
+            "category": "signal_processing",
+            "term": "filter"
+          },
+          {
+            "category": "signal_processing",
+            "term": "high value"
+          },
+          {
+            "category": "signal_processing",
+            "term": "smearing-back process"
+          },
+          {
+            "category": "quality_metric",
+            "term": "accurate image"
+          },
+          {
+            "category": "data_processing",
+            "term": "collecting projections"
+          },
+          {
+            "category": "signal_processing",
+            "term": "backprojection alone"
+          },
+          {
+            "category": "signal_processing",
+            "term": "smears the high values around"
+          },
+          {
+            "category": "signal_processing",
+            "term": "filter the projections"
+          }
+        ],
+        "evidence": [
+          "However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

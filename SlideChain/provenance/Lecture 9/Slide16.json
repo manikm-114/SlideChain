@@ -1,0 +1,106 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "time-domain"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "When we add these two waveforms together, we get x, which contains both frequencies."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "combined oscillations",
+        "p": "produces",
+        "s": "signal x"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "sampling frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time vector"
+          },
+          {
+            "category": "signal_processing",
+            "term": "cosine wave"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sine wave"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          }
+        ],
+        "evidence": [
+          "MATLAB",
+          "frequency domain",
+          "time-domain view",
+          "Fourier transform",
+          "zero-padding"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "Fourier transform to find these frequencies in the frequency domain"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Next, we create the time vector, t. It starts at zero seconds and increases in steps of zero, zero point zero zero one seconds - that's one millisecond - until just before one second."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "time vector",
+        "p": "produces",
+        "s": "t = 0:0.001:1-0.001;"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "MATLAB",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

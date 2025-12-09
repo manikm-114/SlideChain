@@ -1,0 +1,102 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "communication",
+            "term": "logo"
+          },
+          {
+            "category": "communication",
+            "term": "Fully 3D meeting"
+          }
+        ],
+        "evidence": [
+          "designed a logo specifically for the Fully 3D meeting",
+          "modeled after the iconic Bell Tower",
+          "connects the event to the cultural heart of Xi\u2019an"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The logo is modeled after the iconic Bell Tower in the city",
+            "modalities": [
+              "text"
+            ],
+            "o": "Bell Tower",
+            "p": "represents",
+            "s": "logo"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "I designed a logo specifically for the Fully 3D meeting",
+            "modalities": [
+              "text"
+            ],
+            "o": "Fully 3D meeting",
+            "p": "produces",
+            "s": "logo"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "event",
+        "term": "event"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "communication",
+            "term": "fully 3d meeting"
+          }
+        ],
+        "evidence": [
+          "So the interesting thing is that I designed a logo specifically for the Fully 3D meeting.",
+          "The logo is modeled after the iconic Bell Tower in the city, making it a distinctive symbol that connects the event to the cultural heart of Xi'an."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The logo is modeled after the iconic Bell Tower in the city",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "iconic Bell Tower in the city",
+            "p": "represents",
+            "s": "logo"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [],
+        "evidence": [
+          "The logo is modeled after the iconic Bell Tower in the city, making it a distinctive symbol that connects the event to the cultural heart of Xi'an."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide52.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide52.txt"
+  },
+  "slide_id": "Slide52"
+}

@@ -1,0 +1,12 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T03:04:16.621320+00:00",
+  "text_length": 78,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe are right on schedule in our journey through this material. So let's start.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Introduction\", \"category\": \"software\"},\n    {\"term\": \"MatLab I (Basics)\", \"category\": \"software\"},\n    {\"term\": \"Convolution\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier Transform\", \"category\": \"mathematics\"},\n    {\"term\": \"Discrete FT & FFT\", \"category\": \"mathematics\"},\n    {\"term\": \"Network\", \"category\": \"software\"},\n    {\"term\": \"Exam I\", \"category\": \"communication\"},\n    {\"term\": \"Quality & Performance\", \"category\": \"quality_metric\"},\n    {\"term\": \"X-ray & Radiography\", \"category\": \"modality\"},\n    {\"term\": \"CT Scanner\", \"category\": \"instrumentation\"},\n    {\"term\": \"Nuclear Physics\", \"category\": \"physics\"},\n    {\"term\": \"PET & SPECT\", \"category\": \"modality\"},\n    {\"term\": \"MRI I\", \"category\": \"modality\"},\n    {\"term\": \"MRI II\", \"category\": \"modality\"},\n    {\"term\": \"MRI III\", \"category\": \"modality\"},\n    {\"term\": \"Ultrasound I\", \"category\": \"modality\"},",
+  "parsed": {
+    "term": "Ultrasound I",
+    "category": "modality"
+  }
+}

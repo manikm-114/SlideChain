@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide31",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T11:41:25.752230+00:00",
+  "text_length": 417,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow we assume capital W is the maximum bandwidth. Because of that, we can use the sampling theorem. The projection profile can be expressed through the sampling kernel in terms of discrete sampling points P theta at k tau—where tau is the sampling step. \n\nLikewise, the filtering kernel, under the assumption of limited bandwidth capital W, can be expressed in terms of sampled values. So you get these two equations.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"capital W is the maximum bandwidth\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"sampling theorem\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"projection profile can be expressed through the sampling kernel in terms of discrete sampling points P theta at k tau\",\n      \"category\": \"reconstruction\"\n    },\n    {\n      \"term\": \"filtering kernel, under the assumption of limited bandwidth capital W, can be expressed in terms of sampled values\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"Now we assume capital W is the maximum bandwidth. Because of that, we can use the sampling theorem.\",\n    \"The projection profile can be expressed through the sampling kernel in terms of discrete sampling points P theta at k tau—where tau is the sampling step.\",\n    \"Likewise, the filtering kernel, under the assumption of limited bandwidth capital W, can be expressed in terms of sampled values.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "capital W is the maximum bandwidth",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling theorem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "projection profile can be expressed through the sampling kernel in terms of discrete sampling points P theta at k tau",
+        "category": "reconstruction"
+      },
+      {
+        "term": "filtering kernel, under the assumption of limited bandwidth capital W, can be expressed in terms of sampled values",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Now we assume capital W is the maximum bandwidth. Because of that, we can use the sampling theorem.",
+      "The projection profile can be expressed through the sampling kernel in terms of discrete sampling points P theta at k tau-where tau is the sampling step.",
+      "Likewise, the filtering kernel, under the assumption of limited bandwidth capital W, can be expressed in terms of sampled values."
+    ]
+  }
+}

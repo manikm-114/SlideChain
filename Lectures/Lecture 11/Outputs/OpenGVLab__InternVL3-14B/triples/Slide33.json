@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT imaging\", \"p\":\"produces\", \"o\":\"metal artifacts\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Now let’s look at a specific example of artifacts — in this case, metal artifacts in CT imaging.\"},\n    {\"s\":\"reconstruction algorithm\", \"p\":\"assumes\", \"o\":\"complete and accurate data\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The reconstruction algorithm, however, assumes it has complete and accurate data along every path.\"},\n    {\"s\":\"metal artifacts\", \"p\":\"caused by\", \"o\":\"missing or distorted data\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These bright and dark lines are not real anatomical structures — they are purely computational artifacts caused by missing or distorted data.\"},\n    {\"s\":\"NMAR\", \"p\":\"improves\", \"o\":\"image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat.\"},\n    {\"s\":\"convolutional neural networks\", \"p\":\"further cleans up\",",
+  "parsed": {
+    "s": "NMAR",
+    "p": "improves",
+    "o": "image",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat."
+    ]
+  }
+}

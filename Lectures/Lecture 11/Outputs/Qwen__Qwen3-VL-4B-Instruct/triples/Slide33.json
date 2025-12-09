@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T03:14:09.623416+00:00",
+  "text_length": 1582,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at a specific example of artifacts — in this case, metal artifacts in CT imaging.\n\nSuppose a patient has a hip fracture and receives metal implants. When we take X-rays or CT scans, the metal is so dense that it blocks or severely distorts the X-ray beams. The reconstruction algorithm, however, assumes it has complete and accurate data along every path. It doesn’t “know” that some of the information is missing or corrupted.\n\nAs a result, the system produces streaks and bands radiating from the metal. These bright and dark lines are not real anatomical structures — they are purely computational artifacts caused by missing or distorted data.\nIn the figure here, the first column shows uncorrected CT images with severe streak artifacts. The last column shows the ground truth, what the anatomy should look like.\n\nResearchers have developed various ways to reduce these artifacts. One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat. More recently, deep learning methods, such as convolutional neural networks, have been applied to further clean up the image and recover structures hidden by artifacts.\nYou can see that the CNN results are closer to the ground truth, with clearer anatomy and fewer streaks.\n\nThe key point here is that artifacts are not real structures, but they can easily confuse interpretation. They depend on the imaging modality, the reconstruction algorithm, and the clinical situation. That’s why recognizing artifacts — and knowing how to reduce them — is so important in medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"metal artifacts\",\n      \"p\": \"produces\",\n      \"o\": \"streaks and bands radiating from the metal\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"The system produces streaks and bands radiating from the metal.\"\n    },\n    {\n      \"s\": \"CNN\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"ground truth\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.85,\n      \"evidence\": \"The CNN results are closer to the ground truth, with clearer anatomy and fewer streaks.\"\n    },\n    {\n      \"s\": \"NMAR\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"uncorrected CT images\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.8,\n      \"evidence\": \"One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat.\"\n    },\n    {\n      \"s\":",
+  "parsed": {
+    "s": "NMAR",
+    "p": "reconstructs_with",
+    "o": "uncorrected CT images",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.8,
+    "evidence": [
+      "One common method is NMAR, or normalized metal artifact reduction, which improves the image somewhat."
+    ]
+  }
+}

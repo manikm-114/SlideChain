@@ -1,0 +1,20 @@
+Let’s now take a closer look at the Fourier transform of this impulse train — and I’ll explain it in a way that’s easier to follow, even if not perfectly rigorous.
+
+Suppose we have a signal made of delta functions spaced by a fixed interval, capital T. This is a periodic function, right? It repeats every T. So we can use a Fourier series to represent it.
+
+We write this function, s T of t, as a sum of delta functions at every multiple of T:s T of t equals the sum over n of delta of t minus n T.
+Now, since it's periodic, we can also express it as a sum of complex exponentials — that’s what a Fourier series does. So we write:s T of t equals the sum over n of c n times e to the power j 2 pi n t over T,where c n is the Fourier coefficient.
+To compute c n, we take the standard approach:c n equals 1 over T times the integral over one period of s T of t multiplied by e to the power negative j 2 pi n t over T.
+But here’s the trick — remember that s T of t is a train of delta functions. That means when you integrate, only the delta at t = 0 survives. 
+
+The result is simply:c n equals 1 over T.
+So when you plug this back in, your entire Fourier series becomes a sum of complex exponentials, each with coefficient 1 over T.
+Now, there’s a well-known identity:A sum of complex exponentials with equal spacing and equal weights becomes a train of delta functions in the frequency domain.
+
+So finally, we can write:s T of t transforms to (1 over T) times s 1 over T of u.That is, the train of impulses in time maps to another train of impulses in frequency, with flipped spacing and scaled amplitude.
+This is what we call a Fourier pair. A comb in one domain becomes another comb in the other domain — with the spacing inverted and amplitude scaled.
+This idea is fundamental in signal processing. You’ll see it over and over — whether you’re analyzing sampling, modulation, or reconstruction.
+
+Now, I’ll admit — this version of the derivation is not entirely rigorous. It's a bit hand-wavy. A more precise proof would involve deeper mathematical tools, especially when it comes to convergence. But for our purposes, this intuitive explanation gives you the right picture.
+
+So just keep this in mind:A periodic sequence of impulses in time transforms into another periodic sequence in frequency, and the spacing and amplitude follow a simple reciprocal relationship.

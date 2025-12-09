@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide28",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:05:24.134210+00:00",
+  "text_length": 1007,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo you put the inverse Fourier transform in terms of the polar coordinate system. In polar coordinates, the angle theta goes a full circle, and the radius W goes from zero at the origin all the way to infinity. That covers the full space.\n\nThen we do a little trick. We decompose the full circle into two half-scans: from zero to pi, and from pi to two pi. For the second part, I write theta plus pi instead of just theta. That is why the interval from pi to two pi becomes zero to pi after the change of variables. So you get this form.\n\nFor parallel-beam geometry, the angular range of zero to one hundred eighty degrees is enough. If you scan from zero to three hundred sixty degrees, you simply double the information; you really need only half of it.\nMathematically, we handle this by changing the capital F of W, theta, plus one hundred eighty degrees back to a function of theta. Use the identities cosine of theta plus pi equals minus cosine theta, and sine of theta plus pi equals minus sine theta.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"polar coordinate system\", \"category\": \"mathematics\"},\n    {\"term\": \"inverse Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"half-scan\", \"category\": \"algorithm\"},\n    {\"term\": \"parallel-beam geometry\", \"category\": \"reconstruction\"},\n    {\"term\": \"angular range\", \"category\": \"mathematics\"},\n    {\"term\": \"cosine of theta plus pi\", \"category\": \"mathematics\"},\n    {\"term\": \"sine of theta plus pi\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"we can write the inverse Fourier transform of a polar function as\",\n    \"This integral can be split into two by considering θ from 0° to 180° and then from 180° to 360°\",\n    \"Half-scan over 0-180 Degrees Gives Sufficient Information for Image Reconstruction\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "polar coordinate system",
+        "category": "mathematics"
+      },
+      {
+        "term": "inverse Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "half-scan",
+        "category": "algorithm"
+      },
+      {
+        "term": "parallel-beam geometry",
+        "category": "reconstruction"
+      },
+      {
+        "term": "angular range",
+        "category": "mathematics"
+      },
+      {
+        "term": "cosine of theta plus pi",
+        "category": "mathematics"
+      },
+      {
+        "term": "sine of theta plus pi",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "we can write the inverse Fourier transform of a polar function as",
+      "This integral can be split into two by considering θ from 0° to 180° and then from 180° to 360°",
+      "Half-scan over 0-180 Degrees Gives Sufficient Information for Image Reconstruction"
+    ]
+  }
+}

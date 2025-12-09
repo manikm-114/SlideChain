@@ -1,0 +1,24 @@
+Now, let’s step back for a moment and ask a deeper question: Why does the convolution theorem work the way it does? What makes it so special?
+
+In the last lecture, I mentioned something that gives us a clue.If you have a shift-invariant linear system, and you input a sinusoidal signal, what comes out is also a sinusoid, and — importantly — at the same frequency.
+That’s a big deal.
+It means the system doesn't generate any new frequencies. It doesn’t distort the sinusoid into some other shape. It simply scales it or shifts its phase — but the frequency stays the same.
+This is a unique and powerful property of sinusoids.
+
+Now let’s think about what that means for convolution and Fourier analysis.
+In time-domain analysis, convolution is the operation that describes how a system responds to an input.
+But if your input and your system are both described using sinusoids, and those sinusoids don’t change frequency, then it turns out convolution becomes multiplication in the Fourier domain.
+
+Why?
+Because in the Fourier domain, every signal is broken into sinusoids. And if each one stays intact — same frequency in, same frequency out — then multiplying their responses is all you need to compute the system output.
+That’s exactly what the convolution theorem says:Convolution in time equals multiplication in frequency.
+But — and this is important — this beautiful relationship only works because of the special behavior of sinusoids.
+If your input signal isn’t made of sinusoids, or your system doesn’t treat them nicely, this property breaks down.
+That’s why this theorem only exists for the Fourier transform, which is based entirely on sinusoids.Other transforms — like wavelets or polynomials — don’t have this same "in equals out" behavior, and so they don’t give us a convolution theorem in the same way.
+
+If you’re curious, I actually encourage you to think about this more. You could even write a short paper or a reflection on it.
+Here’s something to try:
+Try proving that if a function goes into a system and the same form comes out — unchanged except for amplitude and phase — then that function must be a sinusoid.
+
+And also prove the related idea:If sinusoids go in and come out with the same frequency, then convolution in time must match multiplication in frequency.
+These are two different ideas — but together, they give us the foundation for the convolution theorem and explain why Fourier analysis is so powerful for linear systems.

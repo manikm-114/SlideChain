@@ -1,0 +1,27 @@
+{
+  "slide_id": "Slide17",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T06:47:07.459708+00:00",
+  "text_length": 436,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNext, the analytic approach involves the Fourier slice theorem—that’s the key point—so we need Fourier analysis.\n\nIf you already understand Fourier analysis very well, you will have a good time here. If you are still confused about Fourier analysis, you may struggle a little, and I recommend a review. This is not an easy topic, but it is very cool. For the Fourier analysis, analytic approach, let me give you a heuristic explanation.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier slice theorem\", \"category\": \"reconstruction\"},\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"analytic approach\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"Next, the analytic approach involves the Fourier slice theorem—that’s the key point—so we need Fourier analysis.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier slice theorem",
+        "category": "reconstruction"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "analytic approach",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Next, the analytic approach involves the Fourier slice theorem-that's the key point-so we need Fourier analysis."
+    ]
+  }
+}

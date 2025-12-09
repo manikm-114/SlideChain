@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:34:00.695820+00:00",
+  "text_length": 753,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\n\nWell, I’d say there are at least two solid reasons.\n\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\n\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"health-related knowledge\",\n      \"category\": \"communication\"\n    },\n    {\n      \"term\": \"career requirements\",\n      \"category\": \"communication\"\n    }\n  ],\n  \"evidence\": [\n    \"it gives you essential health-related knowledge\",\n    \"this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "health-related knowledge",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "it gives you essential health-related knowledge",
+      "this is cool knowledge for a niche group of people. It's personal and extremely useful in several ways; to say the least, it is a required course for your college education"
+    ]
+  }
+}

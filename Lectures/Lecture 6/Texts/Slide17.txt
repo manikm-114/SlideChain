@@ -1,0 +1,25 @@
+Now that we’ve built up all the ideas step by step, let’s bring it all together into one elegant concept — the Fourier transform pair.
+What you see on this slide captures the very heart of Fourier analysis.
+
+Let’s begin with the first equation, which is the forward Fourier transform.Suppose you have a signal in the time domain, which we’ll call f of t. The goal is to understand how much of each frequency is present in that signal.
+
+So how do we do that?
+We project f of t onto a family of complex exponential functions. These functions look like e to the power minus i, 2 pi, u, t, where u is the frequency. This projection acts like an inner product, telling us how strongly f of t resonates with each frequency component.
+When we integrate this product across all time, we obtain f hat of u, also called the frequency spectrum or the Fourier transform of f of t.
+So this first equation maps the signal from the time domain to the frequency domain.
+
+Now look at the second equation. This is the inverse Fourier transform.
+Here, we take all those frequency components — that is, each f hat of u — and multiply them by their corresponding complex exponential, this time e to the power i, two pi, u, t. Then, we integrate over all frequencies.
+And what do we get?We reconstruct the original signal — f of t — exactly.
+So in summary, the forward transform takes you from time to frequency, and the inverse transform brings you back from frequency to time.That’s the two-way mapping shown symbolically at the bottom:f of t goes to f hat of u, and back again.
+
+Now, a few mathematical notes to make this complete:
+First — this transform assumes that f of t is square-integrable, meaning if you square the function and integrate it over all time, the total is finite. This ensures convergence and makes the math work properly.
+
+Second — even though we’re dealing with a non-periodic function here, the idea still grows out of the Fourier series. Remember what happens when the period of a function becomes very large — the discrete set of frequency components becomes a continuous spectrum. The Fourier transform is essentially the limit of the Fourier series as the period tends to infinity.
+And finally — here’s a nice geometric interpretation.
+Think of projecting a 3D vector onto the x, y, and z axes.
+In the same way, when we apply the Fourier transform, we’re projecting our function onto an infinite set of sine and cosine waves — or more precisely, complex exponentials. Each frequency contributes a tiny slice of the original signal.And by adding all those slices back together — using integration — we reconstruct the full signal.
+
+This isn’t just a clever trick.It’s one of the most powerful tools in all of engineering, physics, and mathematics.It lets us analyze and manipulate signals in both time and frequency — without losing any information.
+With this foundational concept in place, we’re ready to explore some practical examples and dive deeper into the properties of the Fourier transform.

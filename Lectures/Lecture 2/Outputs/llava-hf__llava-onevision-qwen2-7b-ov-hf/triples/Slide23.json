@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide23",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s add a third dimension.\nUse plot 3 of x, y, z to make a 3D line plot.\nFor surfaces, use the mesh command — it draws a grid over the surface defined by z values.\nIf you want a contour plot — use contour z matrix. That shows level curves of a surface.\nYou can also control the axis limits with axis, add a title with title, and label the axes using x label and y label.\nTo explain the meaning of different curves, use legend.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"3D line plot\", \"p\":\"uses\", \"o\":\"plot 3 of x, y, z\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"For surfaces, use the mesh command — it draws a grid over the surface defined by z values.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "3D line plot",
+        "p": "uses",
+        "o": "plot 3 of x, y, z",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "For surfaces, use the mesh command - it draws a grid over the surface defined by z values."
+      }
+    ]
+  }
+}

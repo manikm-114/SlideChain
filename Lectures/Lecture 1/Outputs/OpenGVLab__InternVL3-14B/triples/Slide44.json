@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Biomedical Imaging\", \"p\":\"measures\", \"o\":\"Phenotype\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Biomedical imaging plays a crucial role in studying the phenotype.\"},\n    {\"s\":\"Bioinformatics\", \"p\":\"produces\", \"o\":\"Genotype\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Bioinformatics and genetic profiling give us a lot of information about the genotype\"},\n    {\"s\":\"Biomedical Imaging\", \"p\":\"depends_on\", \"o\":\"Genotype\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Biomedical Imaging",
+        "p": "measures",
+        "o": "Phenotype",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Biomedical imaging plays a crucial role in studying the phenotype."
+      },
+      {
+        "s": "Bioinformatics",
+        "p": "produces",
+        "o": "Genotype",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Bioinformatics and genetic profiling give us a lot of information about the genotype"
+      },
+      {
+        "s": "Biomedical Imaging",
+        "p": "depends_on",
+        "o": "Genotype",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We can use biomedical imaging to observe and understand the effects of genetic factors on the body."
+      }
+    ]
+  }
+}

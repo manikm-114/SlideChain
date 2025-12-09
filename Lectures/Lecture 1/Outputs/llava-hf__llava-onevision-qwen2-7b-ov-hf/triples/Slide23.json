@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide23",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen it comes to imaging modalities, CT and MRI continue to lead in market share and clinical use.\n\nThat’s no surprise—both are incredibly versatile and widely used across medical specialties. CT scans are fast and great for detailed anatomical views. MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.\n\nYou might be surprised, though, that nuclear imaging—like PET and SPECT—is also a major player. These techniques are critical for functional imaging and cancer imaging. They are becoming more popular as we move toward personalized and molecular medicine.\n\nEach year, investment in these technologies grows. The message is clear: the field is fast evolving, and there’s a strong momentum behind it.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"CT scans\", \"p\":\"uses\", \"o\":\"anatomical views\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"CT scans are fast and great for detailed anatomical views.\"},\n    {\"s\":\"MRI\", \"p\":\"uses\", \"o\":\"soft tissue contrast\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"MRI provides outstanding soft tissue contrast, which is essential in areas like cardiology and neurology.\"},\n    {\"s\":\"nuclear imaging\", \"p\":\"uses\", \"o\":\"functional imaging and cancer imaging\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"These techniques are critical for functional imaging and cancer imaging.\"},\n    {\"s\":\"PET and SPECT\", \"p\":\"uses\", \"o\":\"personalized and molecular medicine\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"They are becoming more popular as we move toward personalized and molecular medicine.\"},\n    {\"s\":\"nuclear imaging\", \"p\":\"uses\", \"o\":\"investment in these technologies grows\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Each year",
+  "parsed": {
+    "s": "PET and SPECT",
+    "p": "uses",
+    "o": "personalized and molecular medicine",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "They are becoming more popular as we move toward personalized and molecular medicine."
+    ]
+  }
+}

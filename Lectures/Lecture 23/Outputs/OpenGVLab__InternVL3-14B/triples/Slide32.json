@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"diffuse optical spectroscopy\", \"p\":\"measures\", \"o\":\"oxygen saturation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Now, by measuring how much light gets through at two or more wavelengths, we can solve for unknowns in the tissue.\"},\n    {\"s\":\"diffuse optical spectroscopy\", \"p\":\"uses\", \"o\":\"Beer's law\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Mathematically, it’s quite straightforward. The transmitted intensity follows Beer’s law — I equals I naught times e to the power of minus mu-a times L, where mu-a is the absorption coefficient and L is the path length.\"},\n    {\"s\":\"pulse oximeter\", \"p\":\"uses\", \"o\":\"diffuse optical spectroscopy\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In fact, this is exactly the principle used in a pulse oximeter — that little clip you put on your finger in the hospital.\"},\n    {\"s\":\"pulse oximeter\", \"p\":\"measures\", \"o\":\"oxygen saturation\", \"modalities\":[\"text\"], \"confidence\":1",
+  "parsed": {
+    "s": "pulse oximeter",
+    "p": "uses",
+    "o": "diffuse optical spectroscopy",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In fact, this is exactly the principle used in a pulse oximeter - that little clip you put on your finger in the hospital."
+    ]
+  }
+}

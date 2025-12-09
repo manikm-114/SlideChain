@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"lung imaging\", \"p\":\"uses\", \"o\":\"window maximum of about 250 Hounsfield units\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"For lung imaging, for example, you might set the window maximum to about 250 Hounsfield units and the minimum to the air value.\"},\n    {\"s\":\"CT number windows\", \"p\":\"depends_on\", \"o\":\"manufacturer or clinical application\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Different body regions use different CT number windows for display. These windows are defined by minimum and maximum CT numbers, depending on the manufacturer or clinical application.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT number windows",
+        "p": "depends_on",
+        "o": "manufacturer or clinical application",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Different body regions use different CT number windows for display. These windows are defined by minimum and maximum CT numbers, depending on the manufacturer or clinical application."
+      }
+    ]
+  }
+}

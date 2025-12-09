@@ -1,0 +1,79 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "application",
+        "term": "early disease studies"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "You can see the image of the animal here - this is usually a mouse, and we\u2019ve done the imaging after injecting fluorescent probes.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "fluorescent probes",
+            "p": "reconstructs_with",
+            "s": "FMT reconstruction"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The colors correspond to different levels of fluorescent intensity.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "fluorescent intensity",
+            "p": "measures",
+            "s": "FMT reconstruction"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "size issue"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "preclinical imaging technique"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "The colors correspond to different levels of fluorescent intensity. So, when you look at the image, you get a sense of where the fluorescent probe has accumulated inside the animal's body."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "fluorescent intensity",
+        "p": "measures",
+        "s": "FMT Reconstruction"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "model mismatch"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

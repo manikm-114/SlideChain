@@ -1,0 +1,33 @@
+Let’s now walk through an example to help us better understand why the convolution theorem works — especially when sinusoids are involved.
+
+We’ll use a one-dimensional, shift-invariant linear system.In such a system, the output — which we’ll call o of t — is the convolution of the system’s impulse response h of t with the input signal, i of t.
+So we write:
+o of t equals h of t convolved with i of t.
+According to the convolution theorem, when we take the Fourier transform of both sides, this convolution becomes multiplication.
+So we have:
+capital O of u equals capital H of u times capital I of u,where capital O, H, and I are the Fourier transforms of the output, impulse response, and input, respectively, and u is the frequency variable.
+
+Now, let’s suppose we feed the system a complex sinusoidal input.That is:i of t equals e to the power i 2 pi u naught t,where u naught is the frequency of the sinusoid.
+As we learned earlier, the Fourier transform of a pure sinusoidal signal is a delta function.So, in the frequency domain:
+capital I of u equals delta of u minus u naught.
+This delta function tells us the signal contains only one frequency — u naught — and no others.
+
+Now, using the convolution theorem:
+capital O of u equals capital H of u times delta of u minus u naught.
+Multiplying anything by a delta function simply picks out the value at that point.So this simplifies to:
+capital O of u equals H of u naught times delta of u minus u naught.
+This tells us that the output, in the frequency domain, also consists of a single frequency — the same one as the input — and it’s just scaled by the system’s transfer function at that frequency, which is H of u naught.
+Now we go back to the time domain.
+
+If the Fourier transform of the output is a scaled delta function in frequency, then the time-domain output must also be a sinusoid — at the same frequency.
+So, we have:
+o of t equals H of u naught times e to the power i 2 pi u naught t.
+This shows that the output is still a complex sinusoid — same frequency as the input — but scaled by a factor, H of u naught, which may include amplitude and phase changes.
+The key idea here is:
+The frequency doesn't change.
+No new frequencies are generated.
+The output stays sinusoidal if the input was sinusoidal.
+
+This confirms that a shift-invariant linear system preserves frequency when the input is a pure sinusoid.
+And we were able to demonstrate this clearly and quickly — thanks to the convolution theorem and the properties of the Fourier transform.
+It’s a great example of how math gives us not just a result, but deep insight into how signals behave in systems.

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide7",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s look at how impulse relates to momentum — a key concept in both physics and system analysis.\nMomentum, as you may recall, is simply mass multiplied by velocity. \n\nSo if an object is at rest, it has zero momentum. When you apply a force over a period of time — say, when you hit a tennis ball with a racket — the object gains velocity. That change in velocity reflects a change in momentum.\n\nNow here’s the essential link:\u000bImpulse is defined as force multiplied by the time over which it acts.\n\u000bWe start with Newton’s second law, which tells us:\u000bForce equals mass times acceleration — or simply,\u000bF equals m a.\n\nNow, acceleration is defined as the change in velocity divided by the change in time — so we write:\u000ba equals delta v over delta t.\n\nIf we substitute that into Newton’s law, we get:\u000bF times delta t equals m times delta v.\n\nThis equation shows us something powerful:\u000bImpulse — that’s force times time — equals the change in momentum.\ntells us that impulse causes the change in momentum.\n\n\n It’s the way to model how mechanical systems respond to external inputs, and the idea applies to other input-output relationships as well.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Impulse\", \"p\":\"depends_on\", \"o\":\"Force\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"Impulse is defined as force multiplied by the time over which it acts.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Impulse",
+        "p": "depends_on",
+        "o": "Force",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "Impulse is defined as force multiplied by the time over which it acts."
+      }
+    ]
+  }
+}

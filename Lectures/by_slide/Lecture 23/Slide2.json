@@ -1,0 +1,148 @@
+{
+  "lecture": "Lecture 23",
+  "slide_id": "Slide2",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide2.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide2.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide2.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "optical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "final imaging modality",
+              "category": "modality"
+            },
+            {
+              "term": "sequence",
+              "category": "workflow"
+            },
+            {
+              "term": "connect",
+              "category": "software"
+            },
+            {
+              "term": "learned about other imaging techniques",
+              "category": "software"
+            },
+            {
+              "term": "world of light-based imaging",
+              "category": "physics"
+            }
+          ],
+          "evidence": [
+            "As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"optical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"final imaging modality\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"sequence\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"connect\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"learned about other imaging techniques\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"world of light-based imaging\\\", \\\"category\\\": \\\"physics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"optical imaging\", \"category\": \"modality\"}, {\"term\": \"final imaging modality\", \"category\": \"modality\"}, {\"term\": \"sequence\", \"category\": \"workflow\"}, {\"term\": \"connect\", \"category\": \"software\"}, {\"term\": \"learned about other imaging techniques\", \"category\": \"software\"}, {\"term\": \"world of light-based imaging\", \"category\": \"physics\"}], \"evidence\": [\"As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide2.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"optical imaging\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"ultrasound\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide2.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Optical Imaging",
+              "category": "modality"
+            },
+            {
+              "term": "Ultrasound",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "Optical Imaging",
+            "Ultrasound"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Optical Imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Ultrasound\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Optical Imaging\\\", \\\"Ultrasound\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Optical Imaging\", \"category\": \"modality\"}, {\"term\": \"Ultrasound\", \"category\": \"modality\"}], \"evidence\": [\"Optical Imaging\", \"Ultrasound\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide2.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Optical Imaging\\\", \\\"p\\\":\\\"comes after\\\", \\\"o\\\":\\\"Ultrasound\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"},\\n    {\\\"s\\\":\\\"Optical Imaging\\\", \\\"p\\\":\\\"is\\\", \\\"o\\\":\\\"Lecture 23\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"today’s topic is Optical Imaging, listed here as Lecture 23\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide2.json",
+        "parsed": {
+          "term": "Network",
+          "category": "communication"
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T17:16:51.268141+00:00\", \"text_length\": 311, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Optical Imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Ultrasound\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Ultrasound I\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Ultrasound II\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Ultrasound\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI I\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI II\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI III\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"CT Scanner\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"CT Reconstruction\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"PET\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Nuclear Physics\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"Network\\\", \\\"category\\\": \\\"communication\\\"},\\n    {\\\"term\\\": \\\"Office Hour\\\", \\\"category\\\":\", \"parsed\": {\"term\": \"Network\", \"category\": \"communication\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide2.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T18:34:39.732668+00:00\", \"text_length\": 311, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Optical Imaging\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Lecture 23\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide2.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Optical Imaging",
+              "category": "modality"
+            },
+            {
+              "term": "lecture 23",
+              "category": "modality"
+            },
+            {
+              "term": "final imaging modality",
+              "category": "modality"
+            },
+            {
+              "term": "light-based imaging",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "This lecture will connect what we've learned about other imaging techniques to the world of light-based imaging."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T15:53:19.135977+00:00\", \"text_length\": 311, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"Optical Imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"lecture 23\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"final imaging modality\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"light-based imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Optical Imaging\", \"category\": \"modality\"}, {\"term\": \"lecture 23\", \"category\": \"modality\"}, {\"term\": \"final imaging modality\", \"category\": \"modality\"}, {\"term\": \"light-based imaging\", \"category\": \"modality\"}], \"evidence\": [\"This lecture will connect what we've learned about other imaging techniques to the world of light-based imaging.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide2.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Optical Imaging",
+              "p": "represents",
+              "o": "the world of light-based imaging",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.9,
+              "evidence": "This lecture will connect what we've learned about other imaging techniques to the world of light-based imaging."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide2\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T16:01:44.415338+00:00\", \"text_length\": 311, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Optical Imaging\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the world of light-based imaging\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Optical Imaging\", \"p\": \"represents\", \"o\": \"the world of light-based imaging\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": \"This lecture will connect what we've learned about other imaging techniques to the world of light-based imaging.\"}]}}"
+      }
+    }
+  }
+}

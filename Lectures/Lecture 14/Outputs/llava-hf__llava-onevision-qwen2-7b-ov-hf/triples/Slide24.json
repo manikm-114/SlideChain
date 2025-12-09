@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide24",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nIn the new approach, we assume there is no known sub-region.\nInstead, we model the region of interest as composed of finitely many sub-regions, each modeled by piecewise polynomials.\n\nThe boundaries of these sub-regions need not be known in advance. Each sub-region can be approximated by constant, quadratic, or more general multivariable polynomials.\nThis assumption matches the idea of band-limited signals from sampling theory.\nWith this sparsity-based model, where the ROI is decomposed into a small number of smooth regions, the interior reconstruction problem becomes solvable.\n\nFor example, in a chest CT scan, you can reconstruct the whole chest from all data or just from truncated data restricted to an ROI.\nHere is a real dataset scanned on a Siemens scanner demonstrating this.\nInterior tomography is no longer a mathematical curiosity but delivers practically good reconstruction results.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"ROI\", \"p\":\"represents\", \"o\":\"sub-regions\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ROI",
+        "p": "represents",
+        "o": "sub-regions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The region of interest is composed of finitely many sub-regions, each modeled by piecewise polynomials."
+      }
+    ]
+  }
+}

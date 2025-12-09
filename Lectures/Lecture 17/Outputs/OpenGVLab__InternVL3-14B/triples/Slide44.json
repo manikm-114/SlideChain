@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"SPECT\", \"p\":\"uses\", \"o\":\"mechanical collimation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"SPECT – Mechanical Collimation\"},\n    {\"s\":\"PET\", \"p\":\"uses\", \"o\":\"electronic collimation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"PET – Electronic Collimation\"},\n    {\"s\":\"SPECT\", \"p\":\"produces\", \"o\":\"many photons blocked\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Many Photons Blocked\"},\n    {\"s\":\"PET\", \"p\":\"produces\", \"o\":\"no absorption by high-Z collimator\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"No Absorption by High-Z Collimator\"},\n    {\"s\":\"PET\", \"p\":\"has\", \"o\":\"higher sensitivity than SPECT\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"PET Sensitivity > SPECT Sensitivity\"},\n    {\"s\":\"PET\", \"p\":\"depends_on\", \"o\":\"timing information\", \"modalities\":[\"text\"], \"",
+  "parsed": {
+    "s": "PET",
+    "p": "has",
+    "o": "higher sensitivity than SPECT",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "PET Sensitivity > SPECT Sensitivity"
+    ]
+  }
+}

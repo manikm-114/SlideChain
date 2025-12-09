@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide47",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:38:27.915571+00:00",
+  "text_length": 289,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, I want to say something that’s transforming the world of medical imaging: the huge wave of machine learning, artificial intelligence (AI), and robotics. These technologies hold huge potential, and they are revolutionizing how we analyze and interpret medical images, to say the least.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"machine learning\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"artificial intelligence (ai)\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"robotics\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"analyze and interpret medical images\",\n      \"category\": \"data_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"These technologies hold huge potential, and they are revolutionizing how we analyze and interpret medical images, to say the least.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "machine learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "artificial intelligence (ai)",
+        "category": "ai_ml"
+      },
+      {
+        "term": "robotics",
+        "category": "ai_ml"
+      },
+      {
+        "term": "analyze and interpret medical images",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "These technologies hold huge potential, and they are revolutionizing how we analyze and interpret medical images, to say the least."
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "impulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Gaussian curves"
+          },
+          {
+            "category": "signal_processing",
+            "term": "integrated effect"
+          },
+          {
+            "category": "signal_processing",
+            "term": "total impulse"
+          }
+        ],
+        "evidence": [
+          "Impulse isn\u2019t limited to rectangular shapes.",
+          "different Gaussian curves - whether wide or narrow, flat or sharp - can all serve as impulse-like inputs.",
+          "What matters is the area under each curve.",
+          "This area represents the total impulse delivered by the force.",
+          "we often abstract away the exact shape of a signal and focus instead on its integrated effect - the impulse."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "different Gaussian curves - whether wide or narrow, flat or sharp - can all serve as impulse-like inputs.",
+            "modalities": [
+              "text"
+            ],
+            "o": "impulse-like inputs",
+            "p": "represents",
+            "s": "Gaussian curves"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "What matters is the area under each curve. This area represents the total impulse delivered by the force",
+            "modalities": [
+              "text"
+            ],
+            "o": "total impulse delivered by the force",
+            "p": "represents",
+            "s": "area under each curve"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Gaussian curves"
+          },
+          {
+            "category": "physics",
+            "term": "total impulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "abstract away"
+          },
+          {
+            "category": "signal_processing",
+            "term": "integrated effect"
+          },
+          {
+            "category": "signal_processing",
+            "term": "impulse"
+          }
+        ],
+        "evidence": [
+          "different Gaussian curves - whether wide or narrow, flat or sharp - can all serve as impulse-like inputs.",
+          "As long as that area remains the same, the impact on the system is the same.",
+          "we often abstract away the exact shape of a signal and focus instead on its integrated effect - the impulse."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "This insight is critical in both physics and engineering: we often abstract away the exact shape of a signal and focus instead on its integrated effect - the impulse"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This area represents the total impulse delivered by the force, regardless of how the function looks."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "total impulse delivered by the force",
+        "p": "represents",
+        "s": "area under the curve"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Impulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Gaussian curves"
+          },
+          {
+            "category": "signal_processing",
+            "term": "total impulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "abstract away"
+          },
+          {
+            "category": "signal_processing",
+            "term": "exact shape"
+          },
+          {
+            "category": "signal_processing",
+            "term": "integrated effect"
+          },
+          {
+            "category": "physics",
+            "term": "physics"
+          }
+        ],
+        "evidence": [
+          "Impulse isn\u2019t limited to rectangular shapes. We can see in this graph that different Gaussian curves - whether wide or narrow, flat or sharp - can all serve as impulse-like inputs.",
+          "This insight is critical in both physics and engineering: we often abstract away the exact shape of a signal and focus instead on its integrated effect - the impulse."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

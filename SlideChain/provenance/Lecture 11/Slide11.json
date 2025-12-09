@@ -1,0 +1,104 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "mean squared error"
+          },
+          {
+            "category": "quality_metric",
+            "term": "structural similarity"
+          },
+          {
+            "category": "quality_metric",
+            "term": "SSIM"
+          }
+        ],
+        "evidence": [
+          "mean squared error between the original image and each of these five degraded ones, the result is the same - two hundred and twenty-five.",
+          "we need a measure that better matches what humans actually see. That\u2019s where structural similarity, or SSIM, comes in."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "human perception"
+          }
+        ],
+        "evidence": [
+          "MSE does not reflect human perception very well. It measures pixel-wise differences, but it cannot capture whether the overall structure of the image is preserved.",
+          "This leads us to the next important idea - we need a measure that better matches what humans actually see. That's where structural similarity, or SSIM, comes in."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "mean squared error, or mse"
+          },
+          {
+            "category": "quality_metric",
+            "term": "mse does not reflect human perception very well"
+          },
+          {
+            "category": "quality_metric",
+            "term": "we need a measure that better matches what humans actually see"
+          },
+          {
+            "category": "quality_metric",
+            "term": "structural similarity, or ssim"
+          }
+        ],
+        "evidence": [
+          "when we compute the mean squared error between the original image and each of these five degraded ones, the result is the same - two hundred and twenty-five.",
+          "mse does not reflect human perception very well.",
+          "we need a measure that better matches what humans actually see.",
+          "that's where structural similarity, or ssim, comes in."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "MSE tells us they are equally different from the original.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "pixel-wise differences",
+            "p": "measures",
+            "s": "MSE"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "image structure preservation"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

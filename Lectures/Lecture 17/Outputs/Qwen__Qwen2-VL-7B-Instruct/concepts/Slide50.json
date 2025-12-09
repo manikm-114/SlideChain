@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide50",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:55:22.597891+00:00",
+  "text_length": 396,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fully3D 2017\", \"category\": \"modality\"},\n    {\"term\": \"Xi'an\", \"category\": \"anatomy\"},\n    {\"term\": \"China\", \"category\": \"anatomy\"},\n    {\"term\": \"June 18-23, 2017\", \"category\": \"software\"},\n    {\"term\": \"Silk Road\", \"category\": \"algorithm\"},\n    {\"term\": \"Terracotta Army\", \"category\": \"algorithm\"},\n    {\"term\": \"eighth wonder\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Fully3D 2017\",\n    \"Xi'an is the oldest ancient capital of China\",\n    \"For 13 dynasties (Fully 13D)\",\n    \"As the start of the Silk Road\",\n    \"To the Terracotta Army (the 8th wonder)\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fully3D 2017",
+        "category": "modality"
+      },
+      {
+        "term": "Silk Road",
+        "category": "algorithm"
+      },
+      {
+        "term": "Terracotta Army",
+        "category": "algorithm"
+      },
+      {
+        "term": "eighth wonder",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Fully3D 2017",
+      "Xi'an is the oldest ancient capital of China",
+      "For 13 dynasties (Fully 13D)",
+      "As the start of the Silk Road",
+      "To the Terracotta Army (the 8th wonder)"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Wheatstone bridge\", \"p\":\"uses\", \"o\":\"two voltage dividers\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Wheatstone bridge is essentially two voltage dividers connected side by side.\"},\n    {\"s\":\"Wheatstone bridge\", \"p\":\"measures\", \"o\":\"output voltage V_out\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The output voltage, V_out, is measured between the midpoints of these two dividers.\"},\n    {\"s\":\"Null mode\", \"p\":\"produces\", \"o\":\"zero output voltage V_out\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"If the ratios of the resistors are chosen so that R 1 over R 2 equals R 4 over R 3, the two dividers produce exactly the same voltage at their midpoints, and V_out is zero.\"},\n    {\"s\":\"Deflection mode\", \"p\":\"produces\", \"o\":\"nonzero V_out\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This small change in R 3 produces a nonzero V",
+  "parsed": {
+    "s": "Null mode",
+    "p": "produces",
+    "o": "zero output voltage V_out",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "If the ratios of the resistors are chosen so that R 1 over R 2 equals R 4 over R 3, the two dividers produce exactly the same voltage at their midpoints, and V_out is zero."
+    ]
+  }
+}

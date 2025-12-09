@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide14",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere is another common application of X-ray imaging. In addition to medicine, you encounter X-rays almost every time you go through an airport. Large machines like this are used routinely to screen luggage.\n\nX-ray imaging in this context is designed to detect dangerous items such as explosives or weapons. It has become a standard part of modern security systems, and most of us are so accustomed to it that we hardly think about the technology at work.\nSo, this concludes our general introduction. At this point, you should have a clear idea of what X-rays are, where they fall in the electromagnetic spectrum, and some of their major practical uses — in both healthcare and security.\n\nNow we move on to the more detailed and important part of today’s lecture: the X-ray imaging chain — the source, the interactions, and the detector.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"X-ray imaging\", \"p\":\"uses\", \"o\":\"security systems\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"X-ray imaging in this context is designed to detect dangerous items such as explosives or weapons. It has become a standard part of modern security systems, and most of us are so accustomed to it that we hardly think about the technology at work.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray imaging",
+        "p": "uses",
+        "o": "security systems",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "X-ray imaging in this context is designed to detect dangerous items such as explosives or weapons. It has become a standard part of modern security systems, and most of us are so accustomed to it that we hardly think about the technology at work."
+      }
+    ]
+  }
+}

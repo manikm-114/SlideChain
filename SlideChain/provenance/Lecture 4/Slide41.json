@@ -1,0 +1,190 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "standard convolution definition"
+          },
+          {
+            "category": "mathematics",
+            "term": "index of summation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "h convolved with x"
+          },
+          {
+            "category": "signal_processing",
+            "term": "x convolved with h"
+          }
+        ],
+        "evidence": [
+          "We can even prove these properties.",
+          "By substituting k equals n minus capital K",
+          "This leads directly to: h convolved with x equals x convolved with h",
+          "So, convolution is commutative - just like multiplication."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "y[n] = x[n] * h[n] = \u2211 x[k] * h[n-k]",
+            "modalities": [
+              "text"
+            ],
+            "o": "sum over k of x of k times h of n minus k",
+            "p": "represents",
+            "s": "convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order.",
+            "modalities": [
+              "text"
+            ],
+            "o": "substituting k equals n minus capital K",
+            "p": "uses",
+            "s": "convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This leads directly to: h convolved with x equals x convolved with h.",
+            "modalities": [
+              "text"
+            ],
+            "o": "h convolved with x equals x convolved with h",
+            "p": "produces",
+            "s": "convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "index of summation"
+          },
+          {
+            "category": "mathematics",
+            "term": "reversed order"
+          },
+          {
+            "category": "mathematics",
+            "term": "multiplication"
+          }
+        ],
+        "evidence": [
+          "Here, we start with the standard convolution definition: y of n equals the sum over k of x of k times h of n minus k.",
+          "By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order.",
+          "This leads directly to: h convolved with x equals x convolved with h.",
+          "So, convolution is commutative - just like multiplication."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "y of n equals the sum over k of x of k times h of n minus k"
+          },
+          {
+            "category": "signal_processing",
+            "term": "by substituting k equals n minus capital K"
+          },
+          {
+            "category": "signal_processing",
+            "term": "we change the index of summation and rewrite the expression in reversed order"
+          },
+          {
+            "category": "signal_processing",
+            "term": "h convolved with x equals x convolved with h"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution is commutative"
+          }
+        ],
+        "evidence": [
+          "We can even prove these properties. I won't go through the full proof now, but it follows directly from how convolution is defined.",
+          "By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order.",
+          "This leads directly to: h convolved with x equals x convolved with h.",
+          "So, convolution is commutative - just like multiplication."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "commutative"
+          },
+          {
+            "category": "signal_processing",
+            "term": "multiplication"
+          },
+          {
+            "category": "signal_processing",
+            "term": "standard convolution definition"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sum over k"
+          },
+          {
+            "category": "signal_processing",
+            "term": "change the index of summation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rewrite the expression in reversed order"
+          },
+          {
+            "category": "signal_processing",
+            "term": "h convolved with x equals x convolved with h"
+          },
+          {
+            "category": "signal_processing",
+            "term": "commutative"
+          }
+        ],
+        "evidence": [
+          "By substituting k equals n minus capital K, we change the index of summation and rewrite the expression in reversed order. This leads directly to: h convolved with x equals x convolved with h. So, convolution is commutative - just like multiplication."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide41.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide41.txt"
+  },
+  "slide_id": "Slide41"
+}

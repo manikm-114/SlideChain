@@ -1,0 +1,115 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "measurable MRI signal"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Mathematically, we write the Larmor frequency as omega zero equals gamma times B zero. Here, omega zero represents the precession frequency"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "precession frequency",
+        "p": "represents",
+        "s": "omega zero"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "measurable MRI signal"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "Mathematically, we write the Larmor frequency as omega zero equals gamma times B zero."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio..."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the gyromagnetic ratio",
+        "p": "depends_on",
+        "s": "the precession frequency"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "magnetic moment"
+          },
+          {
+            "category": "physics",
+            "term": "external magnetic field"
+          },
+          {
+            "category": "physics",
+            "term": "torque"
+          },
+          {
+            "category": "physics",
+            "term": "precession"
+          },
+          {
+            "category": "physics",
+            "term": "Larmor frequency"
+          },
+          {
+            "category": "physics",
+            "term": "gyromagnetic ratio"
+          },
+          {
+            "category": "physics",
+            "term": "protons"
+          },
+          {
+            "category": "signal_processing",
+            "term": "radiofrequency pulses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "measurable MRI signal"
+          }
+        ],
+        "evidence": [
+          "When a magnetic moment is placed in an external magnetic field, it experiences a torque. This torque does not flip the magnetic moment directly into alignment with the field. Instead, it causes the moment to precess, meaning it rotates around the axis of the magnetic field, very much like a spinning top under the influence of gravity.",
+          "The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio, which is unique for each type of nucleus."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The Larmor frequency depends on two things: the strength of the magnetic field and a constant called the gyromagnetic ratio, which is unique for each type of nucleus.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gamma",
+            "p": "depends_on",
+            "s": "magnetic moment"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

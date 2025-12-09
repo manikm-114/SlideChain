@@ -1,0 +1,18 @@
+Let’s now take the next big step in our journey —a function can actually be treated like a vector.
+
+Now, when you first think about a function — for example, y equals f of x —You can imagine a smooth curve on a graph.As x changes, you get a continuous stream of y-values,and these values trace out a flowing shape across the domain.
+That’s the classical view — a function as a curve.
+But here’s a shift in perspective that changes everything.
+Suppose you discretize the function.That means instead of considering every possible x,you just pick a few specific values:x 1, x 2, all the way to x n.
+At each of these points, you compute the function:f of x 1, f of x 2, and so on, up to f of x n.
+And now you have a finite list of numbers.Those function values — can be written as a vector.Each value becomes one component of that vector.
+
+In the diagram here, you see a red curve — that’s the original function —and below it, green bars showing sample values.If we sample the function at 7 locations,we can think of those 7 values as a 7-dimensional vector.
+Take more samples — say 700, or 7 million —and the dimension of the vector simply increases.But conceptually, it’s still just a point in some high-dimensional space.
+
+So here’s the key idea:a function is just a vector — possibly a very high-dimensional one.And that means we can apply all the tools of vector analysis to functions.We can talk about the length of a function,we can project one function onto another,and we can compute angles between functions,just like we did with ordinary vectors in R-n.
+This insight is exactly what powers Fourier analysis.In a Fourier series, we project a function onto a set of orthogonal basis functions —functions like sine and cosine —just as we projected ordinary vectors onto coordinate axes.
+
+So let me leave you with this big takeaway:
+If a vector is a point,and a function is a vector,then a function is also a point —a point living in a high-dimensional function space.
+That’s the foundation of what we’ll build next —representing and analyzing functions using the powerful language of vectors.

@@ -1,0 +1,156 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "dead time"
+          },
+          {
+            "category": "instrumentation",
+            "term": "scintillation crystal"
+          },
+          {
+            "category": "physics",
+            "term": "gamma photon"
+          },
+          {
+            "category": "data_processing",
+            "term": "count rate"
+          },
+          {
+            "category": "data_processing",
+            "term": "true count rate"
+          },
+          {
+            "category": "data_processing",
+            "term": "observed count rate"
+          },
+          {
+            "category": "instrumentation",
+            "term": "recovery time"
+          },
+          {
+            "category": "instrumentation",
+            "term": "gamma camera"
+          },
+          {
+            "category": "mathematics",
+            "term": "reciprocal"
+          },
+          {
+            "category": "instrumentation",
+            "term": "system dead time"
+          }
+        ],
+        "evidence": [
+          "limitation is called dead time",
+          "gamma photon interacts with the scintillation crystal",
+          "recording capabilities of the system",
+          "recovery time before the system is ready",
+          "gamma camera",
+          "reciprocal of these two rates",
+          "system dead time"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This limitation is called dead time. It reflects the fact that every detector and its electronics need a short period to reset after each event.",
+            "modalities": [
+              "text"
+            ],
+            "o": "recovery time",
+            "p": "represents",
+            "s": "dead time"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The system dead time, usually written as the Greek letter tau, can be expressed as the difference between the reciprocal of these two rates: tau equals one over n minus one over N.",
+            "modalities": [
+              "text"
+            ],
+            "o": "difference between the reciprocal of these two rates",
+            "p": "measures",
+            "s": "system dead time"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "dead time"
+          },
+          {
+            "category": "mathematics",
+            "term": "true count rate"
+          },
+          {
+            "category": "mathematics",
+            "term": "observed count rate"
+          },
+          {
+            "category": "mathematics",
+            "term": "system dead time"
+          }
+        ],
+        "evidence": [
+          "This limitation is called dead time. It reflects the fact that every detector and its electronics need a short period to reset after each event.",
+          "The system dead time, usually written as the Greek letter tau, can be expressed as the difference between the reciprocal of these two rates: tau equals one over n minus one over N."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "reset"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This formula tells us how much recovery time the system effectively needs between two detected events."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "the time between two detected events",
+        "p": "measures",
+        "s": "dead time"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "injection activity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "It reflects the fact that every detector and its electronics need a short period to reset after each event.",
+            "modalities": [
+              "text"
+            ],
+            "o": "recovery time",
+            "p": "measures",
+            "s": "dead time"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide50.txt"
+  },
+  "slide_id": "Slide50"
+}

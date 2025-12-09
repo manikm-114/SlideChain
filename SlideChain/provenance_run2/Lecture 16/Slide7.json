@@ -1,0 +1,75 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "physiology"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "After passing through the collimator, the gamma rays strike a scintillation crystal. This crystal converts the high-energy gamma photons into flashes of visible light."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "scintillation crystal",
+        "p": "strikes",
+        "s": "gamma rays"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "function of tissues"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "we use a collimator - such as a pinhole collimator or a parallel-hole collimator. The collimator ensures that only photons traveling along certain directions are recorded, giving us the directional information we need for tomographic imaging."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "A general schematic of the instrumentation required for the formation of nuclear medicine images using a gamma camera. (Left) A general schematic of the instrumentation required for the formation of nuclear medicine images using a gamma camera. (Right) A brain tumor shows up as an area of high signal intensity in one slice from a SPECT multislice dataset."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "collimator",
+        "p": "uses",
+        "s": "gamma camera"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "function of tissues"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "Ensures that only photons traveling along certain directions are recorded."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "collimator",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "nuclear imaging"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide7.txt"
+  },
+  "slide_id": "Slide7"
+}

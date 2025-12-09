@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"X-ray attenuation\", \"p\":\"represents\", \"o\":\"exponential decay term\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The output intensity equals the input intensity multiplied by an exponential decay term.\"},\n    {\"s\":\"output intensity\", \"p\":\"depends_on\", \"o\":\"input intensity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The output intensity equals the input intensity multiplied by an exponential decay term.\"},\n    {\"s\":\"output intensity\", \"p\":\"depends_on\", \"o\":\"linear attenuation coefficient\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The relationship between the input and output depends on two key factors. First, the property of the material, which we describe using the linear attenuation coefficient.\"},\n    {\"s\":\"output intensity\", \"p\":\"depends_on\", \"o\":\"thickness of the material\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The relationship between the input and output depends on two key factors. Second, the thickness of the material, which we call delta x.\"},\n    {\"s\":\"output intensity\", \"p\":\"produces\", \"",
+  "parsed": {
+    "s": "output intensity",
+    "p": "depends_on",
+    "o": "thickness of the material",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The relationship between the input and output depends on two key factors. Second, the thickness of the material, which we call delta x."
+    ]
+  }
+}

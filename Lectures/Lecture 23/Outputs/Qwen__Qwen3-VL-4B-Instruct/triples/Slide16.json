@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T16:03:21.907843+00:00",
+  "text_length": 1768,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s talk about optical biopsy, which is another fascinating application of optical imaging.\u000bTraditionally, when we talk about a biopsy, we mean the physical process of removing a small piece of tissue from the body so it can be examined under a microscope. That’s what doctors do tens of millions of times every year — they take a tissue sample, send it to the lab, and after several days or even weeks, you finally get the results. It’s a reliable method, but it’s slow, invasive, and can be uncomfortable for the patient.\n\nNow imagine if you could see those same microscopic structures instantly — without ever cutting into the tissue. That’s the idea behind optical biopsy. Instead of using mechanical tools to remove a sample, we use light. You simply insert a tiny, flexible optical fiber, shine light onto the tissue, and collect the reflected or emitted signal. The information is transmitted back through the fiber and processed in real time.\n\nIn other words, you can obtain the same kind of diagnostic information that you would from a traditional biopsy — but noninvasively, and in milliseconds rather than days or weeks. The optical fiber acts as both the light source and the detector, allowing you to see cellular and subcellular details immediately inside the living body.\n\nThis is truly an exciting step toward real-time, in vivo diagnosis. With optical biopsy, you can visualize tissue structure clearly and evaluate whether it’s normal or diseased right at the point of care. And as we’ll see in the next part of this lecture, the next major development in this direction is optical coherence tomography (OCT) — a powerful technique that extends this same concept of optical imaging into three-dimensional, high-resolution tissue visualization.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Biopsies\",\n      \"p\": \"produces\",\n      \"o\": \"microscopic tissue images\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"That’s what doctors do tens of millions of times every year — they take a tissue sample, send it to the lab, and after several days or even weeks, you finally get the results.\"\n    },\n    {\n      \"s\": \"Optical biopsy\",\n      \"p\": \"uses\",\n      \"o\": \"light\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Instead of using mechanical tools to remove a sample, we use light. You simply insert a tiny, flexible optical fiber, shine light onto the tissue, and collect the reflected or emitted signal.\"\n    },\n    {\n      \"s\": \"Optical biopsy\",\n      \"p\": \"represents\",\n      \"o\": \"microscopic structures\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9",
+  "parsed": {
+    "s": "Optical biopsy",
+    "p": "uses",
+    "o": "light",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Instead of using mechanical tools to remove a sample, we use light. You simply insert a tiny, flexible optical fiber, shine light onto the tissue, and collect the reflected or emitted signal."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"complex exponential components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"we’re still breaking the function into complex exponential components\"\n    },\n    {\n      \"s\": \"formula\",\n      \"p\": \"uses\",\n      \"o\": \"T\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"you simply use T in place of 1 and apply this formula\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"produces\",\n      \"o\": \"wave-like components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"You’re still summing wave-like components\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "complex exponential components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "we’re still breaking the function into complex exponential components"
+      },
+      {
+        "s": "formula",
+        "p": "uses",
+        "o": "T",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "you simply use T in place of 1 and apply this formula"
+      },
+      {
+        "s": "Fourier series",
+        "p": "produces",
+        "o": "wave-like components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "You’re still summing wave-like components"
+      }
+    ]
+  }
+}

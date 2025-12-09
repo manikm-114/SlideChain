@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide45",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T14:15:41.685239+00:00",
+  "text_length": 935,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let me give you a simple example to make this clearer. Under the three approximations we just discussed, we can measure the Fourier space information. The figure on the left shows what is recorded in k-space. Remember, the Fourier transform is a complex function. It has both amplitude and phase. But what we display here is only the amplitude. It looks something like this, a distribution of intensities in k-space. \n\nThen, if you apply an inverse Fourier transformation, you obtain the image on the right, which is a cross-sectional image of the brain. So with MRI, by collecting data in k-space and applying an inverse Fourier transform, we can reconstruct detailed cross-sectional anatomy. I think this is really an amazing achievement — especially when you compare it with X-ray CT. MRI provides a completely different way of obtaining cross-sectional images, not from attenuation, but directly from signals in Fourier space.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"k-space\", \"category\": \"frequency_domain\"},\n    {\"term\": \"inverse Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"cross-sectional image\", \"category\": \"anatomy\"},\n    {\"term\": \"attenuation\", \"category\": \"physics\"},\n    {\"term\": \"X-ray CT\", \"category\": \"modality\"},\n    {\"term\": \"signal in Fourier space\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"under the three approximations we just discussed, we can measure the Fourier space information\",\n    \"the figure on the left shows what is recorded in k-space\",\n    \"the Fourier transform is a complex function. It has both amplitude and phase\",\n    \"the inverse Fourier transformation\",\n    \"we can reconstruct detailed cross-sectional anatomy\",\n    \"especially when you compare it with X-ray CT\",\n    \"MRI provides a completely different way of obtaining cross-sectional images, not from attenuation, but directly from signals in Fourier space\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "k-space",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "inverse Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "attenuation",
+        "category": "physics"
+      },
+      {
+        "term": "X-ray CT",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "under the three approximations we just discussed, we can measure the Fourier space information",
+      "the figure on the left shows what is recorded in k-space",
+      "the Fourier transform is a complex function. It has both amplitude and phase",
+      "the inverse Fourier transformation",
+      "we can reconstruct detailed cross-sectional anatomy",
+      "especially when you compare it with X-ray CT",
+      "MRI provides a completely different way of obtaining cross-sectional images, not from attenuation, but directly from signals in Fourier space"
+    ]
+  }
+}

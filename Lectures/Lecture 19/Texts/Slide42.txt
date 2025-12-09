@@ -1,0 +1,5 @@
+Now let’s move this into the k-space picture. We define a function f of x and y, which includes rho, the proton density, multiplied by the T1 recovery term and the T2 decay term. This function describes the true tissue properties in space. Then we define kx as gamma over 2 pi, times Gx, times t minus TE. So as time increases, kx traces out a trajectory in Fourier space. The signal of t, the thing we actually measure, is the Fourier transform of f of x and y, evaluated along the kx axis. 
+
+So in this case, we are scanning a single line in k-space, the horizontal line, because the gradient field is only along x. 
+
+This is a very special case, but it makes the principle clear: our signal directly corresponds to the Fourier components of the object we are imaging. That’s why MRI data is often first collected in k-space and then reconstructed by inverse Fourier transform to get the final image.

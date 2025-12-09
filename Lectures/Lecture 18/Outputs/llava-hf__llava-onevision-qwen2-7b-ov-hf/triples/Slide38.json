@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide38",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s look at the classical view of RF excitation.\u000bWe have our net magnetization vector, which represents the collective magnetic moment of all protons. In the steady state, this vector points along the z-axis, aligned with the static magnetic field B-zero.\n\nWhen we apply an additional magnetic field, called B-one, along the x-axis, something interesting happens. The cross product between the magnetization vector and B-one produces a torque. This torque acts in the direction perpendicular to both vectors, and it causes the magnetization to tip away from the z-axis.\nBut remember, the system is still precessing around the main magnetic field. So the magnetization doesn’t simply tilt once and stop—it spirals away from the z-axis, tracing out a cone. The longer we apply the B-one field, the further the vector tips, increasing the flip angle.\n\nThis picture is very convenient to describe using the concept of a rotating frame. In that frame, the B-one field looks stationary, and the magnetization vector simply rotates around it. That’s why we often describe RF excitation as “flipping” the magnetization into the transverse plane.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"net magnetization vector\", \"p\":\"represents\",\n     \"o\":\"collective magnetic moment of all protons\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"In the steady state, this vector points along the z-axis, aligned with the static magnetic field B-zero.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "net magnetization vector",
+        "p": "represents",
+        "o": "collective magnetic moment of all protons",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "In the steady state, this vector points along the z-axis, aligned with the static magnetic field B-zero."
+      }
+    ]
+  }
+}

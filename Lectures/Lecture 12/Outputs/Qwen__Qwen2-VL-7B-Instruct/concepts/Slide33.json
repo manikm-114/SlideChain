@@ -1,0 +1,57 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T06:22:08.999678+00:00",
+  "text_length": 2074,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow we come to the final part of today’s lecture — the X-ray detector.\n\nIn your textbook, you will see quite a bit of discussion about traditional film and early detection methods. Those are historically important, and I encourage you to read them so you have general knowledge. But in practice, those methods are now outdated. What really matters for us is how X-rays are detected in modern CT scanners and what technologies are shaping the future of X-ray imaging.\nModern detectors are digital. They convert incoming X-ray photons into electrical signals that can be processed by the computer. And today, there are two main classes of detector technologies that you should understand:\n\nEnergy-integrating detectors — This is the technology used in nearly all current CT scanners. They simply collect all the incoming photons and integrate their total energy. Whether a photon has high energy or low energy, the detector just sums them up. That gives us grayscale images — the kind you are familiar with in clinical CT. A variation of this is dual-energy imaging, where two different energy spectra are used to give some limited energy discrimination. Dual-energy CT is already widely applied, for example, to distinguish iodine contrast from calcium.\nPhoton-counting detectors — This is the emerging, next-generation technology. Instead of summing all energies together, photon-counting detectors measure each incoming photon individually and record its energy. That means they can separate photons into different energy bins, giving us spectral information. With this approach, we can do material decomposition, K-edge imaging, and molecular-level X-ray imaging, which we just discussed with gold and gadolinium.\n\nSo, to summarize: energy-integrating detectors are the current standard, while photon-counting detectors represent the future. They promise higher resolution, lower dose, and much richer information content.\nThis transition from energy integration to photon counting is one of the most exciting directions in X-ray imaging research and clinical translation.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"energy-integrating detectors\", \"category\": \"instrumentation\"},\n    {\"term\": \"dual-energy imaging\", \"category\": \"instrumentation\"},\n    {\"term\": \"photon-counting detectors\", \"category\": \"instrumentation\"},\n    {\"term\": \"spectral information\", \"category\": \"signal_processing\"},\n    {\"term\": \"material decomposition\", \"category\": \"signal_processing\"},\n    {\"term\": \"K-edge imaging\", \"category\": \"signal_processing\"},\n    {\"term\": \"molecular-level X-ray imaging\", \"category\": \"signal_processing\"},\n    {\"term\": \"higher resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"lower dose\", \"category\": \"quality_metric\"},\n    {\"term\": \"richer information content\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\n    \"energy-integrating detectors are the current standard\",\n    \"photon-counting detectors represent the future\",\n    \"they promise higher resolution, lower dose, and much richer information content\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "energy-integrating detectors",
+        "category": "instrumentation"
+      },
+      {
+        "term": "dual-energy imaging",
+        "category": "instrumentation"
+      },
+      {
+        "term": "photon-counting detectors",
+        "category": "instrumentation"
+      },
+      {
+        "term": "spectral information",
+        "category": "signal_processing"
+      },
+      {
+        "term": "material decomposition",
+        "category": "signal_processing"
+      },
+      {
+        "term": "K-edge imaging",
+        "category": "signal_processing"
+      },
+      {
+        "term": "molecular-level X-ray imaging",
+        "category": "signal_processing"
+      },
+      {
+        "term": "higher resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "lower dose",
+        "category": "quality_metric"
+      },
+      {
+        "term": "richer information content",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "energy-integrating detectors are the current standard",
+      "photon-counting detectors represent the future",
+      "they promise higher resolution, lower dose, and much richer information content"
+    ]
+  }
+}

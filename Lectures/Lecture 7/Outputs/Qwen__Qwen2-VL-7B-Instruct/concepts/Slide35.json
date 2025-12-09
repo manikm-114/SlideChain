@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T00:42:54.631034+00:00",
+  "text_length": 1406,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s explore an interesting point in signal representation — how sine and cosine terms can be combined.\n\nIn Fourier analysis, you’ll often see expressions involving both sine and cosine terms. For example, something like A sine theta plus B cosine theta. This is a common way to write periodic signals, using a mix of sines and cosines.\nBut here’s the neat part: this combination can actually be rewritten as a single sine function — with an amplitude and a phase shift. In other words, we can express it as R sine theta plus alpha, where R is the amplitude and alpha is the phase.\n\nThis identity is not just useful — it’s powerful. It tells us that instead of dealing with two separate unknowns, A and B, we can represent the same information using two different unknowns: R, the amplitude, and alpha, the phase.\nSo nothing is lost — we’re simply transforming the representation. Instead of working in the sine-cosine basis, we switch to amplitude and phase.\n\nIf you're curious about the proof or how this identity works, you can easily find tutorials or short videos online that walk through the steps in detail.\nBut the main takeaway here is: whenever you have a sine and cosine pair, you can always combine them into a single sine with a shifted angle. It’s a cleaner and often more intuitive way to represent oscillating signals — especially when we want to talk about signal magnitude and delay.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"},\n    {\"term\": \"sine and cosine terms\", \"category\": \"signal_processing\"},\n    {\"term\": \"amplitude\", \"category\": \"signal_processing\"},\n    {\"term\": \"phase shift\", \"category\": \"signal_processing\"},\n    {\"term\": \"R sine theta plus alpha\", \"category\": \"signal_processing\"},\n    {\"term\": \"amplitude and phase\", \"category\": \"signal_processing\"},\n    {\"term\": \"oscillating signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"signal magnitude\", \"category\": \"signal_processing\"},\n    {\"term\": \"signal delay\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"This identity is not just useful — it’s powerful. It tells us that instead of dealing with two separate unknowns, A and B, we can represent the same information using two different unknowns: R, the amplitude, and alpha, the phase.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier analysis",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sine and cosine terms",
+        "category": "signal_processing"
+      },
+      {
+        "term": "amplitude",
+        "category": "signal_processing"
+      },
+      {
+        "term": "phase shift",
+        "category": "signal_processing"
+      },
+      {
+        "term": "R sine theta plus alpha",
+        "category": "signal_processing"
+      },
+      {
+        "term": "amplitude and phase",
+        "category": "signal_processing"
+      },
+      {
+        "term": "oscillating signals",
+        "category": "signal_processing"
+      },
+      {
+        "term": "signal magnitude",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This identity is not just useful - it's powerful. It tells us that instead of dealing with two separate unknowns, A and B, we can represent the same information using two different unknowns: R, the amplitude, and alpha, the phase."
+    ]
+  }
+}

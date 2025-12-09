@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT scanner\", \"p\":\"uses\", \"o\":\"high-voltage supply\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Powering the tube requires a high-voltage supply\"},\n    {\"s\":\"CT scanner\", \"p\":\"uses\", \"o\":\"cooling system\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Powering the tube requires a high-voltage supply and a cooling system\"},\n    {\"s\":\"gantry\", \"p\":\"includes\", \"o\":\"patient table\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This entire setup is called the gantry. It includes the patient table where the patient lies\"},\n    {\"s\":\"gantry\", \"p\":\"includes\", \"o\":\"detector array\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This entire setup is called the gantry. It includes ... the detector array opposite the source\"},\n    {\"s\":\"gantry\", \"p\":\"includes\", \"o\":\"collimators\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This entire setup is called the gan",
+  "parsed": {
+    "s": "gantry",
+    "p": "includes",
+    "o": "detector array",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "This entire setup is called the gantry. It includes ... the detector array opposite the source"
+    ]
+  }
+}

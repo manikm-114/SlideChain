@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:25:58.805721+00:00",
+  "text_length": 549,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about vectorization — one of the most important habits in MATLAB programming.\nHere’s the idea. Instead of looping through each element one by one, we apply an operation to the whole array at once.\nFor example:\u000bLet’s say x is the vector — one, two, three.\u000bUsing a loop, we would add five to each element, one at a time.\u000bBut with vectorization, we just say: x equals x plus five — and MATLAB does it all at once.\nSame result, much faster, much cleaner.\nWhenever you can, avoid loops. Use vectorized operations. MATLAB is built for that.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"vectorization\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"loops\", \"category\": \"software\"},\n    {\"term\": \"vectorized operations\", \"category\": \"software\"},\n    {\"term\": \"MATLAB is built for that\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"Because Matlab is an interpreted language, i.e., it is not compiled before execution, loops run slowly.\",\n    \"Vectorized code runs faster in Matlab.\",\n    \"Whenever you can, avoid loops. Use vectorized operations. MATLAB is built for that.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "vectorization",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "loops",
+        "category": "software"
+      },
+      {
+        "term": "vectorized operations",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB is built for that",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Because Matlab is an interpreted language, i.e., it is not compiled before execution, loops run slowly.",
+      "Vectorized code runs faster in Matlab.",
+      "Whenever you can, avoid loops. Use vectorized operations. MATLAB is built for that."
+    ]
+  }
+}

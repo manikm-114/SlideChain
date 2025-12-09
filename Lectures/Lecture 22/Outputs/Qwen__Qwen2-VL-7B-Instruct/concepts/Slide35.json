@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T18:12:05.092770+00:00",
+  "text_length": 653,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nFinally, let’s talk briefly about ultrasound image artifacts. Like any imaging modality, ultrasound is not perfect — and various artifacts can appear due to limitations in the system or the physics of sound propagation. These artifacts may come from reflection, refraction, attenuation, or motion. Some are simply distortions, while others can mimic real anatomical structures.\n\nUnderstanding and recognizing these artifacts is extremely important, because they can affect how you interpret the image. We’ll look at examples of these artifacts and discuss what causes them, and how they can sometimes even be used advantageously in image interpretation.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"ultrasound image artifacts\", \"category\": \"modality\"},\n    {\"term\": \"reflection\", \"category\": \"physics\"},\n    {\"term\": \"refraction\", \"category\": \"physics\"},\n    {\"term\": \"attenuation\", \"category\": \"physics\"},\n    {\"term\": \"motion\", \"category\": \"physics\"},\n    {\"term\": \"distortions\", \"category\": \"modality\"},\n    {\"term\": \"anatomical structures\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\"Like any imaging modality, ultrasound is not perfect — and various artifacts can appear due to limitations in the system or the physics of sound propagation. These artifacts may come from reflection, refraction, attenuation, or motion. Some are simply distortions, while others can mimic real anatomical structures.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "ultrasound image artifacts",
+        "category": "modality"
+      },
+      {
+        "term": "reflection",
+        "category": "physics"
+      },
+      {
+        "term": "refraction",
+        "category": "physics"
+      },
+      {
+        "term": "attenuation",
+        "category": "physics"
+      },
+      {
+        "term": "motion",
+        "category": "physics"
+      },
+      {
+        "term": "distortions",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Like any imaging modality, ultrasound is not perfect - and various artifacts can appear due to limitations in the system or the physics of sound propagation. These artifacts may come from reflection, refraction, attenuation, or motion. Some are simply distortions, while others can mimic real anatomical structures."
+    ]
+  }
+}

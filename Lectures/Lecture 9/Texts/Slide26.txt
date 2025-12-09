@@ -1,0 +1,7 @@
+We’ve just seen how Fourier transforms can be used to remove noise. Now, let’s look at two related techniques — low-pass filtering and high-pass filtering — and how they affect an image.
+
+Starting with the original image of the building, shown in the top left, we first take its two-dimensional Fourier transform. This gives us the frequency-domain representation, shown in the bottom left.
+If we want to blur the image or remove fine details, we apply a low-pass filter. In the frequency domain, this means keeping only the low-frequency components near the center of the spectrum — as shown in the middle bottom image — and setting the high frequencies to zero. After applying the inverse Fourier transform, we get the middle top image: the overall structure is preserved, but the sharp edges are softened.
+
+On the other hand, if we want to highlight edges and fine details, we use a high-pass filter. This is done by removing the low-frequency center and keeping only the higher frequencies in the spectrum, as shown in the bottom right. The resulting image, in the top right, emphasizes edges and textures, but loses smooth gradients.
+Low-pass and high-pass filters are fundamental tools in image processing — whether we want to smooth an image, detect edges, or prepare data for further analysis.

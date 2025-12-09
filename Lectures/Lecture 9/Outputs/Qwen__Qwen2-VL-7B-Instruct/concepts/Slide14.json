@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:11:38.106659+00:00",
+  "text_length": 1151,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere we see why zero-padding is the key to making circular convolution match linear convolution.\n\nWe begin by setting N to be the length of x plus the length of h, minus 1. This value of N is exactly the length of the linear convolution result — something you’ve already seen in your RC circuit homework.\nNext, we create padded versions of our two signals:\nx pad starts with the original values of x, followed by enough zeros so that its length is N.\nh pad is created in exactly the same way, starting with h and then adding zeros to reach length N.\n\nNow, we take the FFT of these zero-padded signals, multiply them point by point in the frequency domain, and take the inverse FFT to return to the time domain.\n\nWhen we plot the result, we see that the zero-padded circular convolution — shown in blue — lies exactly on top of the linear convolution — shown in red. This perfect match confirms that zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.\n\nSo the takeaway is clear: if you’re using the FFT method to compute convolution, always add enough zero-padding to get the true linear convolution.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"wrap-around effects\", \"category\": \"signal_processing\"},\n    {\"term\": \"true linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT method\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Here we see why zero-padding is the key to making circular convolution match linear convolution.\", \"This perfect match confirms that zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.\", \"So the takeaway is clear: if you’re using the FFT method to compute convolution, always add enough zero-padding to get the true linear convolution.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "wrap-around effects",
+        "category": "signal_processing"
+      },
+      {
+        "term": "true linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "FFT method",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Here we see why zero-padding is the key to making circular convolution match linear convolution.",
+      "This perfect match confirms that zero-padding has removed the unwanted wrap-around effects and given us the correct, undistorted result.",
+      "So the takeaway is clear: if you're using the FFT method to compute convolution, always add enough zero-padding to get the true linear convolution."
+    ]
+  }
+}

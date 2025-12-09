@@ -1,0 +1,133 @@
+{
+  "lecture": "Lecture 13",
+  "slide_id": "Slide38",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide38.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "backprojection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "artifacts",
+              "category": "signal_processing"
+            },
+            {
+              "term": "filter",
+              "category": "signal_processing"
+            },
+            {
+              "term": "high value",
+              "category": "signal_processing"
+            },
+            {
+              "term": "smearing-back process",
+              "category": "signal_processing"
+            },
+            {
+              "term": "accurate image",
+              "category": "quality_metric"
+            },
+            {
+              "term": "collecting projections",
+              "category": "data_processing"
+            },
+            {
+              "term": "backprojection alone",
+              "category": "signal_processing"
+            },
+            {
+              "term": "smears the high values around",
+              "category": "signal_processing"
+            },
+            {
+              "term": "filter the projections",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"backprojection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"artifacts\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"filter\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"high value\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"smearing-back process\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"accurate image\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"collecting projections\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"backprojection alone\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"smears the high values around\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"filter the projections\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"backprojection\", \"category\": \"reconstruction\"}, {\"term\": \"artifacts\", \"category\": \"signal_processing\"}, {\"term\": \"filter\", \"category\": \"signal_processing\"}, {\"term\": \"high value\", \"category\": \"signal_processing\"}, {\"term\": \"smearing-back process\", \"category\": \"signal_processing\"}, {\"term\": \"accurate image\", \"category\": \"quality_metric\"}, {\"term\": \"collecting projections\", \"category\": \"data_processing\"}, {\"term\": \"backprojection alone\", \"category\": \"signal_processing\"}, {\"term\": \"smears the high values around\", \"category\": \"signal_processing\"}, {\"term\": \"filter the projections\", \"category\": \"signal_processing\"}], \"evidence\": [\"However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"projection\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"backprojection\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"When you backproject along the original X-ray paths, that high value is placed along those lines.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide38.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"\", \"parsed\": null}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide38.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"\", \"parsed\": null}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide38.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "backprojection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "artifact",
+              "category": "reconstruction"
+            },
+            {
+              "term": "smearing",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "You still see a region that is a little high, because this part of the projection is high.",
+            "Backprojection alone smears the high values around.",
+            "That is why we really need to filter the projections."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T07:22:28.164841+00:00\", \"text_length\": 686, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"backprojection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"artifact\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"smearing\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"filtering\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"You still see a region that is a little high, because this part of the projection is high.\\\",\\n    \\\"Backprojection alone smears the high values around.\\\",\\n    \\\"That is why we really need to filter the projections.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"backprojection\", \"category\": \"reconstruction\"}, {\"term\": \"artifact\", \"category\": \"reconstruction\"}, {\"term\": \"smearing\", \"category\": \"reconstruction\"}], \"evidence\": [\"You still see a region that is a little high, because this part of the projection is high.\", \"Backprojection alone smears the high values around.\", \"That is why we really need to filter the projections.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T07:59:41.682135+00:00\", \"text_length\": 686, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide38.json",
+        "parsed": {
+          "term": "that is why we really need to filter the projections",
+          "category": "reconstruction"
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T11:42:29.444441+00:00\", \"text_length\": 686, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"from one hundred eighty degrees, you add everything together\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"you get something not too much different from the truth, but it looks very blurred\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"when you backproject along the original X-ray paths, that high value is placed along those lines\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"however, there are artifacts. in the smearing-back process, a high value here gets spread to places that are not actually high in the object\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"backprojection alone smears the high values around\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"so, simply collecting projections and doing backprojection is not enough to recover an accurate image\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"that is why we really need to filter the projections\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"from one hundred\", \"parsed\": {\"term\": \"that is why we really need to filter the projections\", \"category\": \"reconstruction\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide38.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide38\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T11:47:57.691771+00:00\", \"text_length\": 686, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\\n\\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Backprojection to Image\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"Backprojected Image\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Backprojection to Image [image] → Backprojected Image\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Backprojection to Image\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"Sinogram\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Backprojection to Image [image] → Sinogram\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

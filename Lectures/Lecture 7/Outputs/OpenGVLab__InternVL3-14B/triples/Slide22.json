@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sampling in the frequency domain\",\n      \"p\": \"represents\",\n      \"o\": \"convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the frequency domain, that multiplication becomes a convolution.\"\n    },\n    {\n      \"s\": \"original signal’s spectrum\",\n      \"p\": \"produces\",\n      \"o\": \"smooth curve\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"On the left, we have the original signal’s spectrum — a smooth curve that shows how the energy is spread across different frequencies.\"\n    },\n    {\n      \"s\": \"train of delta functions\",\n      \"p\": \"represents\",\n      \"o\": \"periodic sampling pattern\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the center, we see a train of delta functions. These represent the periodic sampling pattern in the time domain.\"\n    },\n    {\n      \"s\": \"convolution of original spectrum with delta train\",\n      \"p\": \"produces\",\n      \"o",
+  "parsed": {
+    "s": "train of delta functions",
+    "p": "represents",
+    "o": "periodic sampling pattern",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In the center, we see a train of delta functions. These represent the periodic sampling pattern in the time domain."
+    ]
+  }
+}

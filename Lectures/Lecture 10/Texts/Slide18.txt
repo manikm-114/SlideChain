@@ -1,0 +1,23 @@
+Let’s solve this example step by step.
+
+We have two voltage sources and two loops. Our goal is to find three unknown currents:
+I 1, which flows through the left loop,
+I 2, which flows through the right loop,
+and I₃, which flows along the bottom branch.
+First, we apply Kirchhoff’s Current Law at node c. In words, the current I 1 flowing into the node plus the current I 2 flowing into the node must equal the current I₃ flowing out. That’s our first equation:“I one plus I two equals I three.”
+
+Next, we apply Kirchhoff’s Voltage Law to the green loop, moving clockwise through points b, e, f, c, and back to b. As we go around the loop:
+passing through the fourteen-volt battery in the opposite direction gives a minus fourteen volts,
+passing through the ten-volt battery in the opposite direction gives minus ten volts,
+passing through the six-ohm resistor with current I 1 gives plus six times I 1,
+and passing through the four-ohm resistor with current I 2 gives minus four times I 2.
+
+Adding them all up and setting the total to zero, we have:“negative fourteen, minus ten, plus six times I one, minus four times I two, equals zero.”
+Finally, we apply Kirchhoff’s Voltage Law to the blue loop, moving through points a, b, c, d, and back to a. This gives:“ten, minus six times I one, minus two times I three, equals zero.”
+
+Now we have three equations:
+I one plus I two equals I three.
+Negative fourteen minus ten plus six I one minus four I two equals zero.
+Ten minus six I one minus two I three equals zero.
+
+Solving these, we find:I one equals two amperes,I two equals negative three amperes — meaning it actually flows in the opposite direction we assumed —and I three equals negative one ampere.

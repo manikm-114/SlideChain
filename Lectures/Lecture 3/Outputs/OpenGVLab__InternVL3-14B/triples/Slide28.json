@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"capacitor\",\n      \"p\": \"depends_on\",\n      \"o\": \"integral of the current over time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Its voltage depends on the integral of the current over time\"\n    },\n    {\n      \"s\": \"capacitor\",\n      \"p\": \"depends_on\",\n      \"o\": \"initial condition\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Its voltage depends on the integral of the current over time, plus an initial condition\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "capacitor",
+        "p": "depends_on",
+        "o": "integral of the current over time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Its voltage depends on the integral of the current over time"
+      },
+      {
+        "s": "capacitor",
+        "p": "depends_on",
+        "o": "initial condition",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Its voltage depends on the integral of the current over time, plus an initial condition"
+      }
+    ]
+  }
+}

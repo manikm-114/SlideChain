@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"radioactive decay\",\n      \"p\": \"depends_on\",\n      \"o\": \"exponential curve\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"radioactive decay follows an exponential curve\"\n    },\n    {\n      \"s\": \"radioactive decay\",\n      \"p\": \"measures\",\n      \"o\": \"ordinary differential equations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radioactive decay",
+        "p": "depends_on",
+        "o": "exponential curve",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "radioactive decay follows an exponential curve"
+      },
+      {
+        "s": "radioactive decay",
+        "p": "measures",
+        "o": "ordinary differential equations",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "radioactive decay follows an exponential curve. This behavior can be modeled mathematically using ordinary differential equations"
+      }
+    ]
+  }
+}

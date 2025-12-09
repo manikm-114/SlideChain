@@ -1,0 +1,181 @@
+{
+  "lecture": "Lecture 1",
+  "slide_id": "Slide44",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide44.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide44.json",
+        "parsed": {
+          "term": "prediction",
+          "category": "diagnosis"
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"genotype\\\", \\\"category\\\": \\\"genetics\\\"},\\n    {\\\"term\\\": \\\"phenotype\\\", \\\"category\\\": \\\"genetics\\\"},\\n    {\\\"term\\\": \\\"biomedical imaging\\\", \\\"category\\\": \\\"imaging\\\"},\\n    {\\\"term\\\": \\\"bioinformatics\\\", \\\"category\\\": \\\"informatics\\\"},\\n    {\\\"term\\\": \\\"genetic profiling\\\", \\\"category\\\": \\\"informatics\\\"},\\n    {\\\"term\\\": \\\"personalized medicine\\\", \\\"category\\\": \\\"medicine\\\"},\\n    {\\\"term\\\": \\\"diagnosis\\\", \\\"category\\\": \\\"diagnosis\\\"},\\n    {\\\"term\\\": \\\"treatment\\\", \\\"category\\\": \\\"diagnosis\\\"},\\n    {\\\"term\\\": \\\"prediction\\\", \\\"category\\\": \\\"diagnosis\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Genotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype.\\\",\\n    \\\"Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\\",\\n    \\\"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\\",\\n    \\\"Linking genotype (your genetic\", \"parsed\": {\"term\": \"prediction\", \"category\": \"diagnosis\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide44.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "genotype",
+              "p": "represents",
+              "o": "genetic makeup",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "Genotype refers to your genetic makeup-the DNA that gives rise to your traits."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"genotype\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"genetic makeup\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Genotype refers to your genetic makeup—the DNA that gives rise to your traits.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"genotype\", \"p\": \"represents\", \"o\": \"genetic makeup\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"Genotype refers to your genetic makeup-the DNA that gives rise to your traits.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "biomedical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "bioinformatics",
+              "category": "data_processing"
+            },
+            {
+              "term": "personalized medicine",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "observable characteristics of an individual",
+            "your genetic makeup-the DNA that gives rise to your traits",
+            "visualize and analyze the biological structures and functions",
+            "give us a lot of information about the genotype",
+            "linking genotype with phenotype"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"phenotype\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"genotype\\\", \\\"category\\\": \\\"genetics\\\"},\\n    {\\\"term\\\": \\\"biomedical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"bioinformatics\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"genetic profiling\\\", \\\"category\\\": \\\"genetics\\\"},\\n    {\\\"term\\\": \\\"personalized medicine\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"observable characteristics of an individual\\\",\\n    \\\"your genetic makeup—the DNA that gives rise to your traits\\\",\\n    \\\"visualize and analyze the biological structures and functions\\\",\\n    \\\"give us a lot of information about the genotype\\\",\\n    \\\"linking genotype with phenotype\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"biomedical imaging\", \"category\": \"modality\"}, {\"term\": \"bioinformatics\", \"category\": \"data_processing\"}, {\"term\": \"personalized medicine\", \"category\": \"workflow\"}], \"evidence\": [\"observable characteristics of an individual\", \"your genetic makeup-the DNA that gives rise to your traits\", \"visualize and analyze the biological structures and functions\", \"give us a lot of information about the genotype\", \"linking genotype with phenotype\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide44.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Biomedical Imaging",
+              "p": "measures",
+              "o": "Phenotype",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 1.0,
+              "evidence": "Biomedical imaging plays a crucial role in studying the phenotype."
+            },
+            {
+              "s": "Bioinformatics",
+              "p": "produces",
+              "o": "Genotype",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "Bioinformatics and genetic profiling give us a lot of information about the genotype"
+            },
+            {
+              "s": "Biomedical Imaging",
+              "p": "depends_on",
+              "o": "Genotype",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "We can use biomedical imaging to observe and understand the effects of genetic factors on the body."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Biomedical Imaging\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"Phenotype\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Biomedical imaging plays a crucial role in studying the phenotype.\\\"},\\n    {\\\"s\\\":\\\"Bioinformatics\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"Genotype\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Bioinformatics and genetic profiling give us a lot of information about the genotype\\\"},\\n    {\\\"s\\\":\\\"Biomedical Imaging\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"Genotype\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Biomedical Imaging\", \"p\": \"measures\", \"o\": \"Phenotype\", \"modalities\": [\"text\", \"image\"], \"confidence\": 1.0, \"evidence\": \"Biomedical imaging plays a crucial role in studying the phenotype.\"}, {\"s\": \"Bioinformatics\", \"p\": \"produces\", \"o\": \"Genotype\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"Bioinformatics and genetic profiling give us a lot of information about the genotype\"}, {\"s\": \"Biomedical Imaging\", \"p\": \"depends_on\", \"o\": \"Genotype\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "biomedical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "bioinformatics",
+              "category": "software"
+            },
+            {
+              "term": "personalized medicine",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "Biomedical imaging plays a crucial role in studying the phenotype.",
+            "We can use biomedical imaging to observe and understand the effects of genetic factors on the body.",
+            "Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T18:45:59.353918+00:00\", \"text_length\": 1469, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"biomedical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"phenotype\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"genotype\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"bioinformatics\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"personalized medicine\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Biomedical imaging plays a crucial role in studying the phenotype.\\\",\\n    \\\"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\\",\\n    \\\"Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"biomedical imaging\", \"category\": \"modality\"}, {\"term\": \"bioinformatics\", \"category\": \"software\"}, {\"term\": \"personalized medicine\", \"category\": \"algorithm\"}], \"evidence\": [\"Biomedical imaging plays a crucial role in studying the phenotype.\", \"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\", \"Linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T19:20:58.502205+00:00\", \"text_length\": 1469, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "biomedical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "bioinformatics",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "In understanding the human body, we often talk about two key concepts: phenotype and genotype.",
+            "Biomedical imaging plays a crucial role in studying the phenotype.",
+            "bioinformatics and genetic profiling give us a lot of information about the genotype",
+            "We can use biomedical imaging to observe and understand the effects of genetic factors on the body."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-14T14:38:03.166562+00:00\", \"text_length\": 1469, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"phenotype\\\",\\n      \\\"category\\\": \\\"anatomy\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"genotype\\\",\\n      \\\"category\\\": \\\"anatomy\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"biomedical imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"bioinformatics\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\\",\\n    \\\"Biomedical imaging plays a crucial role in studying the phenotype.\\\",\\n    \\\"bioinformatics and genetic profiling give us a lot of information about the genotype\\\",\\n    \\\"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"biomedical imaging\", \"category\": \"modality\"}, {\"term\": \"bioinformatics\", \"category\": \"data_processing\"}], \"evidence\": [\"In understanding the human body, we often talk about two key concepts: phenotype and genotype.\", \"Biomedical imaging plays a crucial role in studying the phenotype.\", \"bioinformatics and genetic profiling give us a lot of information about the genotype\", \"We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "s": "Bioinformatics",
+          "p": "depends_on",
+          "o": "Genotype",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "Bioinformatics and genetic profiling give us a lot of information about the genotype-things like your genetic predispositions and variations."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-14T14:42:41.474462+00:00\", \"text_length\": 1469, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nTo put everything in perspective, let’s take a step back and look at the big picture. In understanding the human body, we often talk about two key concepts: phenotype and genotype.\\n\\nGenotype refers to your genetic makeup—the DNA that gives rise to your traits. Meanwhile, phenotype refers to the observable characteristics of an individual, such as physical traits, biological functions, and disease states. Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\n\\nNow, bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations. However, these genetic insights need to be connected to the physical manifestation of the genes—the phenotype. We can use biomedical imaging to observe and understand the effects of genetic factors on the body.\\n\\nWhile we’re entering the world of imaging in this course, it’s important to recognize that we’re focusing primarily on phenotype—how imaging allows us to visualize and analyze the body's structures and functions. However, linking genotype (your genetic information) with phenotype (the observable traits and conditions) is an essential goal for personalized medicine. This connection between the two will allow for more accurate diagnosis, more effective treatment, and unprecedented prediction in the future.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Biomedical Imaging\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"Phenotype\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"Biomedical imaging plays a crucial role in studying the phenotype. Through imaging, we can visualize and analyze the biological structures and functions that define an individual’s phenotype.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Bioinformatics\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"Genotype\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Bioinformatics and genetic profiling give us a lot of information about the genotype—things like your genetic predispositions and variations.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Genotype\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"Phenotype\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.85,\\n      \\\"evidence\\\": \\\"We can use biomedical imaging to observe and understand the effects of genetic\", \"parsed\": {\"s\": \"Bioinformatics\", \"p\": \"depends_on\", \"o\": \"Genotype\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"Bioinformatics and genetic profiling give us a lot of information about the genotype-things like your genetic predispositions and variations.\"]}}"
+      }
+    }
+  }
+}

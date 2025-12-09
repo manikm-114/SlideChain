@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Linear System Output\",\n      \"p\": \"produces\",\n      \"o\": \"y(n)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To be specific, now let’s see how we actually compute the output y of n of a shift-invariant linear system to an arbitrary input x of n, formulated on the 1st line.\"\n    },\n    {\n      \"s\": \"System\",\n      \"p\": \"represents\",\n      \"o\": \"h(n)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Suppose I give you a system characterized by its impulse response, written as h of n, which is shown on the 2nd line.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"produces\",\n      \"o\": \"y(n)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"y of n equals the sum over k from minus infinity to infinity of x of k times h of n minus k.\"\n    },\n    {",
+  "parsed": {
+    "s": "Convolution",
+    "p": "produces",
+    "o": "y(n)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "y of n equals the sum over k from minus infinity to infinity of x of k times h of n minus k."
+    ]
+  }
+}

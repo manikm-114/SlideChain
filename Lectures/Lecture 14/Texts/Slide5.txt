@@ -1,0 +1,14 @@
+Now, in the 3D CT case, the X-ray source remains a point source. But instead of using a linear detector array, you use a planar or two-dimensional detector array.
+
+This configuration results in a cone beam geometry originating from the point source.
+The X-ray source emits radiation in a cone-shaped beam, which should be wide enough to cover the entire object.
+In other words, the object must be fully contained within the cone beam to ensure complete data acquisition.
+This concept is similar to the 2D case but extended to volumetric imaging.
+
+Once you have all the rays, as shown here, you can rearrange, reorganize, or re-bin the X-rays into parallel beam geometry.
+In parallel beam geometry, you can apply Fourier transform-based imaging methods.
+The Fourier slice theorem allows the use of the one-dimensional Fourier transform on projections to recover the two-dimensional Fourier spectrum.
+Each projection recovers a profile in Fourier space, and by changing the viewing angle, you sample different radial lines sweeping over the entire Fourier domain.
+
+Likewise, in 3D imaging, an extended version of the Fourier slice theorem is required.
+This involves applying Fourier transforms in higher dimensions to recover the 3D spatial frequency information of the object.

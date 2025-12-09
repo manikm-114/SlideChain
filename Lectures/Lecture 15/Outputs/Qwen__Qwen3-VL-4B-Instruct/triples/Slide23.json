@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide23",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T08:16:26.638690+00:00",
+  "text_length": 1339,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at the fanbeam function in MATLAB in more detail.\n\nThis function calculates projection data for a specified fan-beam geometry. Unlike the parallel-beam case, here the rotation angles are fixed from 0 to 360 degrees. That means you can’t restrict the scan to only half a circle, like 0 to 180, or just 0 to 45. The fanbeam function always assumes a full rotation.\n\nHere’s what the function looks like:\nF1, sensor pos 1, fan rot angles 1] equals fan beam P, D, ‘Fan Sensor Spacing', dsensor1;\nLet’s break it down:\nF1 is the fan-beam projection data, the main output you need.\nSensor pos 1 gives the positions of the detectors.\nFan rot angles 1 lists the rotation angles used.\nP is your input image, or phantom.\nD is the distance from the source vertex to the object’s center of rotation.\n‘Fan Sensor Spacing' is a property name, which tells MATLAB you’re specifying the spacing between detectors.\nDsensor 1 is the actual spacing value.\n\nThose last two inputs are optional. You can run the function with just the image and the distance, and MATLAB will use default detector spacing. But if you want more control—say, to change the resolution or field of view—you can specify these additional arguments.\nSo in short: fanbeam gives you projection data over a full 360 degrees, with flexibility to adjust sensor spacing if needed.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"fanbeam\",\n      \"p\": \"produces\",\n      \"o\": \"projection data\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"Calculates projection data for a specified fan beam geometry\"\n    },\n    {\n      \"s\": \"fanbeam\",\n      \"p\": \"uses\",\n      \"o\": \"input image\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"P - input image\"\n    },\n    {\n      \"s\": \"fanbeam\",\n      \"p\": \"uses\",\n      \"o\": \"distance to object\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"D - distance to object\"\n    },\n    {\n      \"s\": \"fanbeam\",\n      \"p\": \"uses\",\n      \"o\": \"FanSensorSpacing\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0",
+  "parsed": {
+    "s": "fanbeam",
+    "p": "uses",
+    "o": "distance to object",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "D - distance to object"
+    ]
+  }
+}

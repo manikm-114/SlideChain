@@ -1,0 +1,10 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete function\", \"category\": \"signal_processing\"},\n    {\"term\": \"weighted sum\", \"category\": \"mathematics\"},\n    {\"term\": \"shifted delta functions\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete-time signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"scaled and shifted impulses\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"any discrete function — let’s call it g of n — can be expressed as a weighted sum of shifted delta functions\",\n    \"we take the delta function, shift it to the appropriate position, and scale it by the function’s value at that point\",\n    \"each sample of g contributes one impulse, located at n equals k, and scaled by g at that k\",\n    \"we add up all these scaled and shifted impulses, we rebuild the function g\",\n    \"This approach is not only elegant, it’s also foundational in signal processing",
+  "parsed": {
+    "term": "scaled and shifted impulses",
+    "category": "signal_processing"
+  }
+}

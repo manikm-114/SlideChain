@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide51",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"T2\", \"p\":\"represents\", \"o\":\"fundamental spin–spin interactions\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"T2 reflects fundamental spin–spin interactions.\"},\n    {\"s\":\"T2 prime\", \"p\":\"represents\", \"o\":\"field inhomogeneity and susceptibility effects\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"T2 prime reflects field inhomogeneity and susceptibility effects.\"},\n    {\"s\":\"T2 star\", \"p\":\"measures\", \"o\":\"effective decay time\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"T2 star combines both, and it is the effective decay time we actually measure in many MRI sequences.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "T2 prime",
+        "p": "represents",
+        "o": "field inhomogeneity and susceptibility effects",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "T2 prime reflects field inhomogeneity and susceptibility effects."
+      },
+      {
+        "s": "T2 star",
+        "p": "measures",
+        "o": "effective decay time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "T2 star combines both, and it is the effective decay time we actually measure in many MRI sequences."
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:45:11.672933+00:00",
+  "text_length": 494,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nWe are right on schedule in our journey through this material.\n\nIf you’ve had a chance to look over the reading materials for today’s lecture, that’s great — it will make it easier to connect the ideas we cover. If not, that’s fine too. I encourage you to follow along closely and take time afterward to review the main points. Consistently reinforcing concepts as you go will help you develop a stronger and more intuitive grasp, especially as the material becomes more mathematically detailed\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"signal_processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency_domain\", \"category\": \"frequency_domain\"},\n    {\"term\": \"mathematics\", \"category\": \"mathematics\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"quality_metric\", \"category\": \"quality_metric\"},\n    {\"term\": \"communication\", \"category\": \"communication\"},\n    {\"term\": \"modality\", \"category\": \"modality\"},\n    {\"term\": \"algorithm\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"We are right on schedule in our journey through this material.\",\n    \"If you’ve had a chance to look over the reading materials for today’s lecture, that’s great — it will make it easier to connect the ideas we cover.\",\n    \"I encourage you to follow along closely and take time afterward to review the main points. Consistently reinforcing concepts as you go will help you develop a stronger and more intuitive grasp, especially as the material becomes more mathematically detailed.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "We are right on schedule in our journey through this material.",
+      "If you've had a chance to look over the reading materials for today's lecture, that's great - it will make it easier to connect the ideas we cover.",
+      "I encourage you to follow along closely and take time afterward to review the main points. Consistently reinforcing concepts as you go will help you develop a stronger and more intuitive grasp, especially as the material becomes more mathematically detailed."
+    ]
+  }
+}

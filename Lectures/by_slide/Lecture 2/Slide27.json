@@ -1,0 +1,176 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide27",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide27.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide27.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "textread",
+              "category": "software"
+            },
+            {
+              "term": "MATLAB",
+              "category": "software"
+            },
+            {
+              "term": "header lines",
+              "category": "software"
+            },
+            {
+              "term": "indexed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "debugging",
+              "category": "software"
+            },
+            {
+              "term": "large file",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "Sometimes you don’t need the full file - you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.",
+            "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"textread\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"MATLAB\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"header lines\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"indexed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"debugging\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"large file\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Sometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\\", \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"textread\", \"category\": \"software\"}, {\"term\": \"MATLAB\", \"category\": \"software\"}, {\"term\": \"header lines\", \"category\": \"software\"}, {\"term\": \"indexed data\", \"category\": \"data_processing\"}, {\"term\": \"debugging\", \"category\": \"software\"}, {\"term\": \"large file\", \"category\": \"data_processing\"}], \"evidence\": [\"Sometimes you don’t need the full file - you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\", \"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide27.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<MATLAB>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<textread>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Sometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip. This lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide27.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "textread",
+              "category": "software"
+            },
+            {
+              "term": "indexed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "debugging",
+              "category": "workflow"
+            },
+            {
+              "term": "sampling",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+            "This lets you directly target a record without loading everything - useful for indexed data, or when you’re debugging or sampling from a large file."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"textread\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"headerlines\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"indexed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"debugging\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"sampling\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\",\\n    \\\"This lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"textread\", \"category\": \"software\"}, {\"term\": \"indexed data\", \"category\": \"data_processing\"}, {\"term\": \"debugging\", \"category\": \"workflow\"}, {\"term\": \"sampling\", \"category\": \"data_processing\"}], \"evidence\": [\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\", \"This lets you directly target a record without loading everything - useful for indexed data, or when you’re debugging or sampling from a large file.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide27.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "MATLAB",
+              "p": "uses",
+              "o": "textread",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"MATLAB\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"textread\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"MATLAB\", \"p\": \"uses\", \"o\": \"textread\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide27.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "textread",
+              "category": "data_processing"
+            },
+            {
+              "term": "skip",
+              "category": "data_processing"
+            },
+            {
+              "term": "indexed data",
+              "category": "data_processing"
+            },
+            {
+              "term": "debugging",
+              "category": "data_processing"
+            },
+            {
+              "term": "sampling",
+              "category": "data_processing"
+            },
+            {
+              "term": "large file",
+              "category": "data_processing"
+            }
+          ],
+          "evidence": [
+            "In this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.",
+            "This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:37:16.944670+00:00\", \"text_length\": 489, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"textread\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"headerlines\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"skip\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"indexed data\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"debugging\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"sampling\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"large file\\\", \\\"category\\\": \\\"data_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"In this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\", \\\"This lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"textread\", \"category\": \"data_processing\"}, {\"term\": \"skip\", \"category\": \"data_processing\"}, {\"term\": \"indexed data\", \"category\": \"data_processing\"}, {\"term\": \"debugging\", \"category\": \"data_processing\"}, {\"term\": \"sampling\", \"category\": \"data_processing\"}, {\"term\": \"large file\", \"category\": \"data_processing\"}], \"evidence\": [\"In this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\", \"This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide27.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:31:29.372010+00:00\", \"text_length\": 489, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"fid = fopen('mydata.dat', 'r');\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"textread(fid,'%s%s%f%d%s',1,'headerlines',1);\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide27.json",
+        "parsed": {
+          "term": "This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file.",
+          "category": "data_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:41:33.871161+00:00\", \"text_length\": 489, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"Sometimes you don’t need the full file — you just want a specific line.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"You can tell MATLAB to skip one line, and then read just one.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"This lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Sometimes you don’t need the full file — you just want a specific line.\\\",\\n    \\\"You can tell MATLAB to skip one line, and then read just one.\\\",\\n    \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\",\\n    \\\"This lets you directly target a record without loading everything — useful for indexed data, or\", \"parsed\": {\"term\": \"This lets you directly target a record without loading everything - useful for indexed data, or when you're debugging or sampling from a large file.\", \"category\": \"data_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide27.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "textread",
+              "p": "uses",
+              "o": "two extra options",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:53:48.453334+00:00\", \"text_length\": 489, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSometimes you don’t need the full file — you just want a specific line. Maybe line two contains Joe’s entry, and that’s all you care about.\\nIn this case, you can tell MATLAB to skip one line, and then read just one. You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\nThis lets you directly target a record without loading everything — useful for indexed data, or when you’re debugging or sampling from a large file.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"textread\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"two extra options\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"textread\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"[name,type,x,y,answer]\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"[name,type,x,y,answer] = textread(fid,'%s%s%f%d%s',1,'headerlines',1);\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"textread\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"Joe’s entry\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.8,\\n      \\\"evidence\\\": \\\"% Read-in one line of data corresponding % to Joe’s entry.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"textread\", \"p\": \"uses\", \"o\": \"two extra options\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"You still use textread, but now with two extra options: the number of lines to read, and the number of header lines to skip.\"}]}}"
+      }
+    }
+  }
+}

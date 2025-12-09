@@ -1,0 +1,14 @@
+Let’s begin with one of the most basic and widely used quality measures: the Mean Squared Error, or MSE.
+Suppose we have two images: the true image, which we’ll call y, and the reconstructed image, which we’ll call y-hat. Each image is made up of many pixels, indexed by i. If the image is 512 by 512, then the total number of pixels, n, is over 260,000.
+
+The formula for MSE is simple:MSE equals one over n, times the sum from i equals one to n, of the difference between y-sub-i and y-hat-sub-i, squared.
+In words, this means we compare the two images pixel by pixel. At each pixel, we take the difference, square it so that positive and negative errors don’t cancel out, and then average over all pixels. That gives us the mean squared error.
+Now, let’s go a bit deeper. When we estimate a parameter — say theta — we often write the estimate as theta-hat. The error between theta-hat and the true value theta can be analyzed in expectation, meaning averaged over many trials. When you expand the algebra, you find that the mean squared error naturally splits into two parts.
+
+The first part is the variance. This tells us how much our estimates fluctuate around their average value. You can think of variance as a measure of random scatter.
+
+The second part is the bias squared. This measures the difference between the average of our estimates and the true value. If our method consistently overshoots or undershoots, that’s bias.
+
+So, in summary: MSE equals variance plus bias squared. Variance captures random error, bias captures systematic error, and together they define the total error.
+
+This decomposition is very useful. It reminds us that an algorithm might have low variance but high bias, or vice versa. Understanding both helps us judge the quality of an estimator or an image reconstruction method.

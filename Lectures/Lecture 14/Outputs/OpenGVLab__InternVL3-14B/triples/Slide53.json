@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide53",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Radiation dose\",\n      \"p\": \"measures\",\n      \"o\": \"dose profile\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Another way to think about radiation dose is through the dose profile measured over multiple circular scans.\"\n    },\n    {\n      \"s\": \"Multiple scans\",\n      \"p\": \"produces\",\n      \"o\": \"total radiation dose\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When multiple scans are performed, each scan adds its own dose profile. These multiple dose profiles overlap, contributing to the total radiation dose the patient receives.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Radiation dose",
+        "p": "measures",
+        "o": "dose profile",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Another way to think about radiation dose is through the dose profile measured over multiple circular scans."
+      },
+      {
+        "s": "Multiple scans",
+        "p": "produces",
+        "o": "total radiation dose",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When multiple scans are performed, each scan adds its own dose profile. These multiple dose profiles overlap, contributing to the total radiation dose the patient receives."
+      }
+    ]
+  }
+}

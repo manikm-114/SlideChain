@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sinc function\",\n      \"p\": \"represents\",\n      \"o\": \"inverse Fourier transform of the rectangular function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This comes from taking the inverse Fourier transform of the rectangular function in the frequency domain — the gate function we introduced earlier.\"\n    },\n    {\n      \"s\": \"convolution theorem\",\n      \"p\": \"uses\",\n      \"o\": \"multiplying two functions in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"By the convolution theorem, multiplying two functions in the frequency domain is equivalent to convolving their inverse transforms in the time domain.\"\n    },\n    {\n      \"s\": \"inverse transform of a periodic impulse train\",\n      \"p\": \"produces\",\n      \"o\": \"periodic impulse train in time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"It gives us another periodic impulse train — this time in time — with spacing equal to one over capital P.\"\n    },\n    {\n      \"",
+  "parsed": {
+    "s": "inverse transform of a periodic impulse train",
+    "p": "produces",
+    "o": "periodic impulse train in time",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "It gives us another periodic impulse train - this time in time - with spacing equal to one over capital P."
+    ]
+  }
+}

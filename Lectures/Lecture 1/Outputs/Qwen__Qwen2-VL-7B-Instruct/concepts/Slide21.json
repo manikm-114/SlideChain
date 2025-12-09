@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide21",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:09:44.946989+00:00",
+  "text_length": 563,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn fact, if you look at trends in job growth, biomedical engineering consistently ranks among the fastest-growing careers. Just take a glance at some recent employment reports—you’ll see biomedical engineers right near the top.\n\nWhy is that? Well, part of the reason is that healthcare is becoming more tech-driven. Devices, sensors, data analysis, machine learning—it all depends on people who can bridge the gap between biology and engineering.\n\nSo not only is this field intellectually exciting—it also comes with strong job prospects and competitive salaries.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"biomedical engineering\", \"category\": \"instrumentation\"},\n    {\"term\": \"healthcare\", \"category\": \"modality\"},\n    {\"term\": \"technology\", \"category\": \"algorithm\"},\n    {\"term\": \"data analysis\", \"category\": \"data_processing\"},\n    {\"term\": \"machine learning\", \"category\": \"ai_ml\"}\n  ],\n  \"evidence\": [\"biomedical engineering consistently ranks among the fastest-growing careers\", \"healthcare is becoming more tech-driven\", \"devices, sensors, data analysis, machine learning\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "biomedical engineering",
+        "category": "instrumentation"
+      },
+      {
+        "term": "healthcare",
+        "category": "modality"
+      },
+      {
+        "term": "data analysis",
+        "category": "data_processing"
+      },
+      {
+        "term": "machine learning",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "biomedical engineering consistently ranks among the fastest-growing careers",
+      "healthcare is becoming more tech-driven",
+      "devices, sensors, data analysis, machine learning"
+    ]
+  }
+}

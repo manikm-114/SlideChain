@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"speed of sound\", \"p\":\"depends_on\", \"o\":\"material properties\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the speed depends entirely on the material properties — how dense and how stiff the material is.\"},\n    {\"s\":\"speed of sound\", \"p\":\"represents\", \"o\":\"constant c\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the constant c represents the speed of sound in the medium.\"},\n    {\"s\":\"frequency\", \"p\":\"means\", \"o\":\"shorter wavelength\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"higher frequency means shorter wavelength\"},\n    {\"s\":\"frequency\", \"p\":\"means\", \"o\":\"longer wavelength\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"lower frequency means longer wavelength\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "speed of sound",
+        "p": "depends_on",
+        "o": "material properties",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the speed depends entirely on the material properties - how dense and how stiff the material is."
+      },
+      {
+        "s": "speed of sound",
+        "p": "represents",
+        "o": "constant c",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the constant c represents the speed of sound in the medium."
+      }
+    ]
+  }
+}

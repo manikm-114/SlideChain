@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide4",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s start with the most basic electrical component — the resistor.\u000b\nYou already know Ohm’s Law, which tells us that the voltage across a resistor equals the current flowing through it multiplied by its resistance. In words,\u000bv equals i times R.\nWe can also rearrange this to say that the current i equals the voltage v divided by the resistance R.\u000bThis means the current is directly proportional to the applied voltage and inversely proportional to the resistance.\nThe name resistor comes from its function — it resists the flow of electric current. In other words, it limits how many electrons can pass through it for a given voltage.\n\nNext, we’ll move on to another fundamental component — the capacitor.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"resistor\", \"category\": \"physics\"},\n    {\"term\": \"Ohm’s Law\", \"category\": \"mathematics\"},\n    {\"term\": \"voltage\", \"category\": \"physics\"},\n    {\"term\": \"current\", \"category\": \"physics\"},\n    {\"term\": \"resistance\", \"category\": \"physics\"},\n    {\"term\": \"capacitor\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"Let’s start with the most basic electrical component — the resistor.\", \n               \"In words, v equals i times R.\", \n               \"The name resistor comes from its function — it resists the flow of electric current.\", \n               \"In other words, it limits how many electrons can pass through it for a given voltage.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "resistor",
+        "category": "physics"
+      },
+      {
+        "term": "Ohm’s Law",
+        "category": "mathematics"
+      },
+      {
+        "term": "voltage",
+        "category": "physics"
+      },
+      {
+        "term": "current",
+        "category": "physics"
+      },
+      {
+        "term": "resistance",
+        "category": "physics"
+      },
+      {
+        "term": "capacitor",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "Let’s start with the most basic electrical component - the resistor.",
+      "In words, v equals i times R.",
+      "The name resistor comes from its function - it resists the flow of electric current.",
+      "In other words, it limits how many electrons can pass through it for a given voltage."
+    ]
+  }
+}

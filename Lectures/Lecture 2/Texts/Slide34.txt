@@ -1,0 +1,5 @@
+Here’s how we morph faces using matrix tools.
+We warp two face images using interpolation on each color channel. Then blend them using a weighted average — with alpha controlling the mix.
+To detect unusual pixels, we reshape the image and compute the Mahalanobis distance from a reference color.
+Next, we create a binary mask by thresholding the distance, and apply a median filter to clean it up.
+It’s a compact example of how MATLAB combines image warping, statistics, and filtering — all with matrices.

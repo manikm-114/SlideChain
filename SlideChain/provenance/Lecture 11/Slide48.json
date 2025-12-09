@@ -1,0 +1,151 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "subtle discriminating features"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "diagnostic performance is shaped by two things: the reader\u2019s skill and the technology\u2019s power.",
+            "modalities": [
+              "text"
+            ],
+            "o": "technology\u2019s power",
+            "p": "depends_on",
+            "s": "diagnostic performance"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This is exactly what the ROC curve captures - the combined effect of technology and human expertise.",
+            "modalities": [
+              "text"
+            ],
+            "o": "combined effect of technology and human expertise",
+            "p": "represents",
+            "s": "ROC curve"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "Diagnostic Performance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ROC curve"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Chance Line"
+          },
+          {
+            "category": "algorithm",
+            "term": "Technology and Human Expertise"
+          }
+        ],
+        "evidence": [
+          "Diagnostic performance is shaped by two things: the reader's skill and the technology's power.",
+          "Better imaging systems reduce overlap, but equally important is the ability of the radiologist to interpret the image correctly.",
+          "The same scan might lead to different conclusions depending on who reads it.",
+          "A highly trained radiologist can extract subtle discriminating features that others may miss."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "subtle discriminating features"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Not every doctor reads images with the same skill. Some physicians, with years of training and experience, can clearly separate diseased from non-diseased cases. For them, the two distributions hardly overlap, and their ROC curve bends sharply toward the upper-left corner - that's excellent diagnostic power."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "reader's skill",
+        "p": "depends_on",
+        "s": "diagnostic performance"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "diagnostic performance"
+          },
+          {
+            "category": "mathematics",
+            "term": "ROC curve"
+          },
+          {
+            "category": "software",
+            "term": "reader\u2019s skill"
+          },
+          {
+            "category": "instrumentation",
+            "term": "technology\u2019s power"
+          },
+          {
+            "category": "workflow",
+            "term": "junior residents"
+          },
+          {
+            "category": "algorithm",
+            "term": "highly trained radiologist"
+          },
+          {
+            "category": "signal_processing",
+            "term": "subtle discriminating features"
+          },
+          {
+            "category": "communication",
+            "term": "ROC curve"
+          },
+          {
+            "category": "physics",
+            "term": "technology and human expertise"
+          }
+        ],
+        "evidence": [
+          "Diagnostic performance is shaped by two things: the reader\u2019s skill and the technology\u2019s power.",
+          "Better imaging systems reduce overlap, but equally important is the ability of the radiologist to interpret the image correctly.",
+          "The ROC curve captures - the combined effect of technology and human expertise."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Diagnostic performance is shaped by two things: the reader\u2019s skill and the technology\u2019s power.",
+            "modalities": [
+              "text"
+            ],
+            "o": "reader\u2019s skill",
+            "p": "depends_on",
+            "s": "diagnostic performance"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide48.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide48.txt"
+  },
+  "slide_id": "Slide48"
+}

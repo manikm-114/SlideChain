@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"sampling rate\", \"category\": \"signal_processing\"},\n    {\"term\": \"aliasing\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampling theorem\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"},\n    {\"term\": \"interpolation\", \"category\": \"data_processing\"},\n    {\"term\": \"maximum frequency\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"sampling rate is too low\",\n    \"mismatch is caused by aliasing\",\n    \"sampling rate is less than twice the maximum frequency\",\n    \"reconstruct the signal from those samples\",\n    \"repeated spectra in the frequency domain overlap\",\n    \"no amount of interpolation can recover the original shape\",\n    \"respecting the sampling theorem is essential\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sampling rate",
+        "category": "signal_processing"
+      },
+      {
+        "term": "aliasing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling theorem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "frequency domain",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "interpolation",
+        "category": "data_processing"
+      },
+      {
+        "term": "maximum frequency",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "sampling rate is too low",
+      "mismatch is caused by aliasing",
+      "sampling rate is less than twice the maximum frequency",
+      "reconstruct the signal from those samples",
+      "repeated spectra in the frequency domain overlap",
+      "no amount of interpolation can recover the original shape",
+      "respecting the sampling theorem is essential"
+    ]
+  }
+}

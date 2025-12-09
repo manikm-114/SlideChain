@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide14",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s not forget neurological systems, like the human brain. The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions. Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning. Together, these neural networks form the foundation of our physiological systems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"neuron\", \"category\": \"anatomy\"},\n    {\"term\": \"neural network\", \"category\": \"anatomy\"},\n    {\"term\": \"brain\", \"category\": \"anatomy\"},\n    {\"term\": \"inputs\", \"category\": \"signal_processing\"},\n    {\"term\": \"signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"processing\", \"category\": \"software\"},\n    {\"term\": \"intelligent actions\", \"category\": \"software\"},\n    {\"term\": \"neurons\", \"category\": \"anatomy\"},\n    {\"term\": \"firing\", \"category\": \"signal_processing\"},\n    {\"term\": \"inputs\", \"category\": \"signal_processing\"},\n    {\"term\": \"networks\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions.\", \"Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "brain",
+        "category": "anatomy"
+      },
+      {
+        "term": "inputs",
+        "category": "signal_processing"
+      },
+      {
+        "term": "signals",
+        "category": "signal_processing"
+      },
+      {
+        "term": "intelligent actions",
+        "category": "software"
+      },
+      {
+        "term": "inputs",
+        "category": "signal_processing"
+      },
+      {
+        "term": "networks",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions.",
+      "Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning."
+    ]
+  }
+}

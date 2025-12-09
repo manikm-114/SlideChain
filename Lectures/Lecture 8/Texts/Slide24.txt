@@ -1,0 +1,8 @@
+Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.
+Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.
+
+Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.
+Likewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.
+
+When we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.
+This is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.

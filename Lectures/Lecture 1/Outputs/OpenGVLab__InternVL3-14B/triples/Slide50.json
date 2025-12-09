@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Elysium\",\n      \"p\": \"represents\",\n      \"o\": \"futuristic machine\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In that film, there’s this futuristic machine—a kind of all-in-one medical scanner.\"\n    },\n    {\n      \"s\": \"futuristic machine\",\n      \"p\": \"produces\",\n      \"o\": \"perfect healthcare\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Elysium",
+        "p": "represents",
+        "o": "futuristic machine",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "In that film, there’s this futuristic machine-a kind of all-in-one medical scanner."
+      },
+      {
+        "s": "futuristic machine",
+        "p": "produces",
+        "o": "perfect healthcare",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare."
+      }
+    ]
+  }
+}

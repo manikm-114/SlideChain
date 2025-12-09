@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Ultrasound image artifacts\",\n      \"p\": \"depends_on\",\n      \"o\": \"reflection, refraction, attenuation, or motion\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"These artifacts may come from reflection, refraction, attenuation, or motion.\"\n    },\n    {\n      \"s\": \"Ultrasound image artifacts\",\n      \"p\": \"represents\",\n      \"o\": \"distortions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Some are simply distortions\"\n    },\n    {\n      \"s\": \"Ultrasound image artifacts\",\n      \"p\": \"represents\",\n      \"o\": \"real anatomical structures\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"others can mimic real anatomical structures\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Ultrasound image artifacts",
+        "p": "depends_on",
+        "o": "reflection, refraction, attenuation, or motion",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These artifacts may come from reflection, refraction, attenuation, or motion."
+      },
+      {
+        "s": "Ultrasound image artifacts",
+        "p": "represents",
+        "o": "distortions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Some are simply distortions"
+      },
+      {
+        "s": "Ultrasound image artifacts",
+        "p": "represents",
+        "o": "real anatomical structures",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "others can mimic real anatomical structures"
+      }
+    ]
+  }
+}

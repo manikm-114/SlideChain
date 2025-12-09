@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"technetium-99m generator\",\n      \"p\": \"produces\",\n      \"o\": \"technetium-99m\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This system is sometimes nicknamed the “moly cow” because it is based on the parent isotope molybdenum-99, which naturally decays to technetium-99m.\"\n    },\n    {\n      \"s\": \"technetium-99m\",\n      \"p\": \"uses\",\n      \"o\": \"single photon emission computed tomography\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Technetium-99m is especially important because it is the most widely used radionuclide in single photon emission computed tomography, or SPECT.\"\n    },\n    {\n      \"s\": \"technetium-99m generator\",\n      \"p\": \"depends_on\",\n      \"o\": \"molybdenum-99\",\n      \"modalities\": [\"text\"],\n      \"confidence\":",
+  "parsed": {
+    "s": "technetium-99m",
+    "p": "uses",
+    "o": "single photon emission computed tomography",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Technetium-99m is especially important because it is the most widely used radionuclide in single photon emission computed tomography, or SPECT."
+    ]
+  }
+}

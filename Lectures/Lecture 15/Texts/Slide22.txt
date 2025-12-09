@@ -1,0 +1,9 @@
+Now let’s look at MATLAB’s fanbeam function.
+
+In this geometry, the X-rays don’t travel in parallel lines like before. Instead, they spread out in a fan shape from a single point called the beam vertex. You can see that illustrated here: the source is at the top, and the rays diverge outward, passing through the sample.
+On the opposite side, we have the detector array that records how much of the X-rays make it through.
+
+There’s also an important parameter here called D. This is the distance from the fan-beam vertex—that is, the source position—to the center of rotation of the sample. For something simple, like a square phantom, D might just be the length of the diagonal. For a human body, D would be the distance from the source to the center of the patient.
+As in parallel-beam CT, both the source and detector rotate together around the object at different angles, which we denote by theta. By sweeping through all these angles, we collect the fan-beam projection data needed for reconstruction.
+
+So, the fanbeam function in MATLAB allows us to simulate this geometry directly, bringing us closer to how modern CT scanners actually operate.

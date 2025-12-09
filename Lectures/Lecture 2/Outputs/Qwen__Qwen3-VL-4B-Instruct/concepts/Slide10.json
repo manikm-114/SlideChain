@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide10",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T21:32:05.645580+00:00",
+  "text_length": 684,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nOnce you start writing code in MATLAB, you’ll be creating and manipulating variables — and the workspace is used to hold them.\nThe who and whos commands show you what variables are currently stored. who gives you a simple list, while whos gives more detail — like size, type, and memory usage.\nYou can save all your current variables to a file using the save command and later bring them back with load. If you want to start fresh, clear all wipes out everything in the workspace, clc clears the command window, and close all shuts any open figures.\nThese are simple but essential tools. Once you know how to manage your workspace, you’ll find MATLAB easier and more enjoyable to use.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"who, whos\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"save\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"load\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"clear all\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"clc\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"close all\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"clf\",\n      \"category\": \"workflow\"\n    }\n  ],\n  \"evidence\": [\n    \"Once you start writing code in MATLAB, you’ll be creating and manipulating variables — and the workspace is used to hold them.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "save",
+        "category": "workflow"
+      },
+      {
+        "term": "load",
+        "category": "workflow"
+      },
+      {
+        "term": "clear all",
+        "category": "workflow"
+      },
+      {
+        "term": "close all",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Once you start writing code in MATLAB, you'll be creating and manipulating variables - and the workspace is used to hold them."
+    ]
+  }
+}

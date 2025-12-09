@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide24",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis table lists some of the most common radioactive tracers used in nuclear medicine. Each tracer has a characteristic half-life and a specific gamma-ray energy.\n\nFor example, technetium-99m has a half-life of about six hours and emits gamma rays at 140 kilo-electronvolts, which is ideal for imaging. Gallium-67 has a longer half-life of about three days and multiple gamma energies. Thallium-201, xenon-133, indium-111, and iodine isotopes are also widely used, each with its own half-lives and energy levels.\n\nYou don’t need to memorize the details of this table. Instead, just recognize that different radionuclides are available for different imaging applications, and their properties — half-life and gamma energy — determine how and where they are best used. This is general knowledge to give you a sense of the variety of tracers available in nuclear medicine.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"technetium-99m\", \"category\": \"physics\"},\n    {\"term\": \"gamma rays\", \"category\": \"physics\"},\n    {\"term\": \"half-life\", \"category\": \"physics\"},\n    {\"term\": \"nuclear medicine\", \"category\": \"modality\"},\n    {\"term\": \"imaging applications\", \"category\": \"modality\"},\n    {\"term\": \"different radionuclides\", \"category\": \"physics\"},\n    {\"term\": \"various tracers\", \"category\": \"modality\"},\n    {\"term\": \"gamma energy\", \"category\": \"physics\"},\n    {\"term\": \"isotopes\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"For example, technetium-99m has a half-life of about six hours and emits gamma rays at 140 kilo-electronvolts, which is ideal for imaging.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "technetium-99m",
+        "category": "physics"
+      },
+      {
+        "term": "gamma rays",
+        "category": "physics"
+      },
+      {
+        "term": "half-life",
+        "category": "physics"
+      },
+      {
+        "term": "nuclear medicine",
+        "category": "modality"
+      },
+      {
+        "term": "imaging applications",
+        "category": "modality"
+      },
+      {
+        "term": "different radionuclides",
+        "category": "physics"
+      },
+      {
+        "term": "gamma energy",
+        "category": "physics"
+      },
+      {
+        "term": "isotopes",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "For example, technetium-99m has a half-life of about six hours and emits gamma rays at 140 kilo-electronvolts, which is ideal for imaging."
+    ]
+  }
+}

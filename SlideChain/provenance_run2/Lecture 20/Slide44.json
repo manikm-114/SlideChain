@@ -1,0 +1,133 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "hybrid imaging"
+          },
+          {
+            "category": "modality",
+            "term": "MRI"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray"
+          },
+          {
+            "category": "instrumentation",
+            "term": "permanent magnetic field"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct the images"
+          },
+          {
+            "category": "modality",
+            "term": "MRI projection"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray projection"
+          },
+          {
+            "category": "modality",
+            "term": "simultaneous"
+          }
+        ],
+        "evidence": [
+          "combines MRI and X-ray together",
+          "permanent magnetic field",
+          "CT-MRI fusion",
+          "reconstruct the images",
+          "MRI projection",
+          "X-ray projection",
+          "simultaneous",
+          "CT-MRI scanners"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "By rotating the system around the patient, you can reconstruct the images together - effectively achieving CT-MRI fusion in a single setup."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "CT-MRI fusion",
+        "p": "reconstructs_with",
+        "s": "system"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "application",
+        "term": "specialized applications"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "hybrid spiral MR-X-ray system"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "MRI projection and X-ray projection",
+        "p": "reconstructs_with",
+        "s": "hybrid imaging system"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "hybrid imaging"
+          },
+          {
+            "category": "modality",
+            "term": "MRI and X-ray"
+          },
+          {
+            "category": "instrumentation",
+            "term": "permanent magnetic field"
+          },
+          {
+            "category": "modality",
+            "term": "multimodal imaging"
+          },
+          {
+            "category": "workflow",
+            "term": "accessible pathway"
+          }
+        ],
+        "evidence": [
+          "Here, we move toward a more practical version of hybrid imaging - a low-cost system that combines MRI and X-ray together.",
+          "This configuration opens many possibilities for future imaging systems.",
+          "You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time,",
+          "This hybrid spiral MR-X-ray system offers a more accessible pathway to achieve similar goals - bringing advanced imaging capabilities within reach for smaller labs or specialized applications."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide44.txt"
+  },
+  "slide_id": "Slide44"
+}

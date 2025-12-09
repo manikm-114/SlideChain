@@ -1,0 +1,8 @@
+CT reconstruction relies on CT numbers, which are derived from Beer's law. Beer's law relates the incoming and attenuated X-ray intensities via a parameter called the linear attenuation coefficient, mu.
+Data processing converts raw measurements into line integrals, which are then used to reconstruct mu values throughout the image.
+
+On the CT monitor, you don’t see mu values directly but relative values compared to water, since the human body is mostly water.
+Thus, CT numbers indicate how much more or less dense a region is than water.
+For example, bone has a CT number over 1000, air has about -1000, and water is defined as zero. The range is often magnified by 1000 times for visualization.
+
+This scale is sometimes called Hounsfield units, named after Sir Godfrey Hounsfield, the British engineer who developed the first CT scanner, which earned him a Nobel Prize for its revolutionary capability to reveal internal structures.

@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s go back and revisit the question we just posed:\u000bIf we take a continuous signal and convert it into discrete samples, can we still reconstruct the original signal?\nTo explore that, let’s start with this example — a pure continuous wave.\n\nHere, we’ve plotted the function\u000b5 times sine of 2 pi 4 t\u000bThat’s a simple sine wave with amplitude 5 and frequency 4 cycles per second — or 4 hertz.\nAnd this signal is completely continuous in both time and amplitude.\u000b\nThat means it's defined for every instant in time, not just selected points, and the values can take on any number, not just a limited set.\nThis is the kind of signal you might get from an ideal microphone or sensor measuring vibration, sound, or light — in the real world, before any digital conversion takes place.\n\nBut here’s the key point:\nThe computer can’t store this curve as it is.\u000bSo we need to figure out: How often do we need to sample this signal to capture all the important information?\u000b\nHow dense should our sampling be, so that we don’t lose critical features?\nAnd that question brings us right to the Sampling Theorem — the mathematical foundation for how we digitize continuous signals without losing information.\nThat’s exactly what we’ll examine next.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Sampling Theorem\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete samples\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstruct the original signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"continuous signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete time\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete amplitude\", \"category\": \"signal_processing\"},\n    {\"term\": \"computer can’t store this curve as it is\", \"category\": \"signal_processing\"},\n    {\"term\": \"Sampling Theorem\", \"category\": \"signal_processing\"},\n    {\"term\": \"digitize continuous signals without losing information\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"That means it's defined for every instant in time, not just selected points, and the values can take on any number, not just a limited set.\", \"So we need to figure out: How often do we need to sample this signal to capture all the important information?\", \"How dense should our sampling be, so that we don’t lose critical features?\", \"That’s exactly what we’ll examine next.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Sampling Theorem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete samples",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstruct the original signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "computer can’t store this curve as it is",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Sampling Theorem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "digitize continuous signals without losing information",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "That means it's defined for every instant in time, not just selected points, and the values can take on any number, not just a limited set.",
+      "So we need to figure out: How often do we need to sample this signal to capture all the important information?",
+      "How dense should our sampling be, so that we don’t lose critical features?",
+      "That’s exactly what we’ll examine next."
+    ]
+  }
+}

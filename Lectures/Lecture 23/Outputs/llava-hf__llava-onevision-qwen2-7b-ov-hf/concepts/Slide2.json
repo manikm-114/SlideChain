@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide2",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"optical imaging\", \"category\": \"modality\"},\n    {\"term\": \"final imaging modality\", \"category\": \"modality\"},\n    {\"term\": \"sequence\", \"category\": \"workflow\"},\n    {\"term\": \"connect\", \"category\": \"software\"},\n    {\"term\": \"learned about other imaging techniques\", \"category\": \"software\"},\n    {\"term\": \"world of light-based imaging\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\"As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "optical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "final imaging modality",
+        "category": "modality"
+      },
+      {
+        "term": "sequence",
+        "category": "workflow"
+      },
+      {
+        "term": "connect",
+        "category": "software"
+      },
+      {
+        "term": "learned about other imaging techniques",
+        "category": "software"
+      },
+      {
+        "term": "world of light-based imaging",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "As you can see from our course schedule, today’s topic is Optical Imaging, listed here as Lecture 23. This is our final imaging modality in the sequence, coming right after the ultrasound sessions.  This lecture will connect what we’ve learned about other imaging techniques to the world of light-based imaging."
+    ]
+  }
+}

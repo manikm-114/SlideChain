@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"ultrasound transducer arrays\", \"p\":\"uses\", \"o\":\"parallel data acquisition\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"we have to use ultrasound transducer arrays. This will allow you to do parallel data acquisition.\"},\n    {\"s\":\"linear phased array\", \"p\":\"represents\", \"o\":\"each ultrasound pixel\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"you have this linear phased array. And there is a one-point-five-D array—so this is a one-dimensional array, but you have several one-dimensional rows; the number is not too big.\"},\n    {\"s\":\"2D phased array\", \"p\":\"represents\", \"o\":\"each transducer\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"each pixel—each transducer—can be individually controlled.\"},\n    {\"s\":\"1.5D array\", \"p\":\"represents\", \"o\":\"several one-dimensional rows\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"you have this linear phased array. And there is a one-point-five-D array—so this is",
+  "parsed": {
+    "s": "2D phased array",
+    "p": "represents",
+    "o": "each transducer",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "each pixel-each transducer-can be individually controlled."
+    ]
+  }
+}

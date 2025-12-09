@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"diffusion tensor imaging\",\n      \"p\": \"measures\",\n      \"o\": \"diffusion tensor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"diffusion tensor imaging, or DTI, is the MRI technique that measures this tensor for every voxel in the image.\"\n    },\n    {\n      \"s\": \"diffusion tensor\",\n      \"p\": \"represents\",\n      \"o\": \"directional dependence\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To describe such directional dependence, we need a more general concept than a vector — and that’s where the tensor comes in.\"\n    },\n    {\n      \"s\": \"diffusion tensor\",\n      \"p\": \"depends_on\",\n      \"o\": \"orientation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In anisotropic media the mean diffusion distances depend on the orientation.\"\n    },\n    {\n      \"s\": \"multivariate Gaussian function\",\n      \"p\": \"represents\",\n      \"o\": \"probability distribution of",
+  "parsed": {
+    "s": "diffusion tensor",
+    "p": "depends_on",
+    "o": "orientation",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In anisotropic media the mean diffusion distances depend on the orientation."
+    ]
+  }
+}

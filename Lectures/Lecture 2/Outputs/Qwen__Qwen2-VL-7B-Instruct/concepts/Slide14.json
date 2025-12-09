@@ -1,0 +1,27 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:17:29.636490+00:00",
+  "text_length": 615,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nMATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\nFor example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.\nIf you need an identity matrix — that’s a square matrix with ones on the diagonal and zeros elsewhere — just write eye of n.\nTo create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n.\nThese kinds of matrices are especially useful when initializing arrays before filling them with computed values.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"diag\", \"category\": \"mathematics\"},\n    {\"term\": \"eye\", \"category\": \"mathematics\"},\n    {\"term\": \"zeros\", \"category\": \"mathematics\"},\n    {\"term\": \"ones\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "diag",
+        "category": "mathematics"
+      },
+      {
+        "term": "zeros",
+        "category": "mathematics"
+      },
+      {
+        "term": "ones",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms."
+    ]
+  }
+}

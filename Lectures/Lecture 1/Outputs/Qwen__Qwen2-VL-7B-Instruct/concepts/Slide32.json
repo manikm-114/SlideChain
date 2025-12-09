@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide32",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T18:26:39.306392+00:00",
+  "text_length": 367,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, I often like to say: if CBIS were a coordinate system, my office would be right at the origin!\n\nOf course, for this online course, we’re not meeting in person. But the idea is the same—I’m here as a resource for you. The lectures, materials, and any additional resources I share are all designed to help you succeed and make the most of this learning experience.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"CBIS\", \"category\": \"software\"},\n    {\"term\": \"origin\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"if CBIS were a coordinate system, my office would be right at the origin!\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CBIS",
+        "category": "software"
+      },
+      {
+        "term": "origin",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "if CBIS were a coordinate system, my office would be right at the origin!"
+    ]
+  }
+}

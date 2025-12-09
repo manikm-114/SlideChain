@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:57:59.033934+00:00",
+  "text_length": 1246,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, all of these models we’ve discussed, including the Boltzmann distribution, set the stage for the next key idea: precession.\n\nWhen a magnetic moment sits inside a strong external magnetic field, it doesn’t simply align once and stay fixed. Instead, it undergoes a motion very much like a spinning top. The top leans and slowly wobbles around the vertical axis. In the same way, the magnetic moment traces out a precession around the magnetic field direction. We’ll go into more detail on this soon.\n\nTo explain why this happens, we need to go back to Newton’s second law—not just in the familiar form, force equals mass times acceleration, but in the rotational context. In rotations, the central quantity is angular momentum.\nThe law tells us that the time derivative of angular momentum, written as dL over dt, is equal to torque. So, torque is the rotational analog of force. Just as force changes linear momentum, torque changes angular momentum.\nThe derivation on this slide shows the details. If you’re interested in the full proof, you can follow it step by step. If not, you can simply trust the key result: the rate of change of angular momentum equals torque.\n\nThis is the foundation we need to understand precession in MRI physics.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"precession\", \"category\": \"physics\"},\n    {\"term\": \"angular momentum\", \"category\": \"physics\"},\n    {\"term\": \"torque\", \"category\": \"physics\"},\n    {\"term\": \"Newton's second law\", \"category\": \"physics\"},\n    {\"term\": \"magnetic moment\", \"category\": \"physics\"},\n    {\"term\": \"magnetic field\", \"category\": \"physics\"},\n    {\"term\": \"magnetic resonance imaging (MRI)\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"The magnetic moment sits inside a strong external magnetic field and undergoes a motion very much like a spinning top.\",\n    \"The law tells us that the time derivative of angular momentum, written as dL over dt, is equal to torque.\",\n    \"This is the foundation we need to understand precession in MRI physics.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "precession",
+        "category": "physics"
+      },
+      {
+        "term": "angular momentum",
+        "category": "physics"
+      },
+      {
+        "term": "torque",
+        "category": "physics"
+      },
+      {
+        "term": "magnetic moment",
+        "category": "physics"
+      },
+      {
+        "term": "magnetic field",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The magnetic moment sits inside a strong external magnetic field and undergoes a motion very much like a spinning top.",
+      "The law tells us that the time derivative of angular momentum, written as dL over dt, is equal to torque.",
+      "This is the foundation we need to understand precession in MRI physics."
+    ]
+  }
+}

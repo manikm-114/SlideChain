@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound beam\",\n      \"p\": \"uses\",\n      \"o\": \"exponential decay\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the intensity of the acoustic wave — and likewise the pressure amplitude — decreases as you go deeper and deeper into the medium. And the reason both intensity and pressure amplitude become smaller and smaller is due to attenuation.\"\n    },\n    {\n      \"s\": \"attenuation\",\n      \"p\": \"represents\",\n      \"o\": \"contrast\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"attenuation gives us contrast.\"\n    },\n    {\n      \"s\": \"imaging mechanism\",\n      \"p\": \"depends_on\",\n      \"o\": \"attenuation rate\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Based on the attenuation rate, we can tell how dense or how light certain tissues are.\"\n    },\n    {\n      \"s\": \"μ\",\n      \"p\": \"represents\",\n      \"o\": \"att",
+  "parsed": {
+    "s": "imaging mechanism",
+    "p": "depends_on",
+    "o": "attenuation rate",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Based on the attenuation rate, we can tell how dense or how light certain tissues are."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T22:50:00.132848+00:00",
+  "text_length": 468,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nA related concept to convolution is cross-correlation.\nMathematically, the key difference is in the sign of the shift.\nIn convolution, we compute the integral of f of x minus u times g of u.\nIn cross-correlation, it’s f of x plus u times g of u.\nSo, convolution flips one of the functions before shifting and multiplying,\u000bwhile cross-correlation does not.\nBoth are useful in signal processing —\u000bbut for different purposes, like system response versus pattern matching.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Convolution\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"Cross-correlation\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"A related concept to convolution is cross-correlation.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

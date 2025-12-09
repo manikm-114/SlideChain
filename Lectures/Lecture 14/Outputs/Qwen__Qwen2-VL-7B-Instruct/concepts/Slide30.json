@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide30",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:32:59.971684+00:00",
+  "text_length": 1457,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nI am especially excited about this project, collaborating with GE.\nCurrently, cardiac CT scanners mostly use third-generation geometry, but with cone beam helical scanning mode, which some call improved third generation or helical cone beam generation.\nThis system is already very fast, capable of rotating three to four times per second.\nThe mechanical acceleration involved is astonishing—much higher than what’s involved in launching a space shuttle.\nThe current best temporal and spatial resolution for cardiac CT is about 500 microns.\n\nBut according to cardiac surgeons I know, 100 micron resolution would solve many clinical challenges.\nImproving cardiac CT resolution requires higher imaging speed to freeze the heart’s rapid motion on this fine scale.\nHowever, as you increase rotation speed, the X-ray tube has less time to emit photons, limiting achievable image quality.\nOur out-of-the-box solution uses interior tomography. We designed a stationary ring scanner to boost X-ray flux by orders of magnitude.\n\nImagine a cardiac patient lying still while being scanned. You get immediate images.\nWhen higher resolution is needed, the patient or ring can be translated to focus precisely on the region of interest.\nThis stationary ring can move up, down, left, or right to align perfectly with conventional cardiac CT images.\nI believe this design is a promising way forward—an out-of-the-box solution for high-speed, high-resolution cardiac imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Cardiac CT Architecture\", \"category\": \"modality\"},\n    {\"term\": \"Background from Best Conventional CT\", \"category\": \"modality\"},\n    {\"term\": \"ROI Info from Spectral Interior Tomography\", \"category\": \"modality\"},\n    {\"term\": \"In-vivo Spectral Micro-CT Enabled with\", \"category\": \"modality\"},\n    {\"term\": \"Parallel Localized Data Acquisition\", \"category\": \"data_processing\"},\n    {\"term\": \"Hybrid Advanced Reconstruction\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"Background from Best Conventional CT\",\n    \"ROI Info from Spectral Interior Tomography\",\n    \"In-vivo Spectral Micro-CT Enabled with\",\n    \"Parallel Localized Data Acquisition\",\n    \"Hybrid Advanced Reconstruction\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Background from Best Conventional CT",
+      "ROI Info from Spectral Interior Tomography",
+      "In-vivo Spectral Micro-CT Enabled with",
+      "Parallel Localized Data Acquisition",
+      "Hybrid Advanced Reconstruction"
+    ]
+  }
+}

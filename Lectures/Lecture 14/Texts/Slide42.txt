@@ -1,0 +1,16 @@
+Now, let’s discuss volume averaging and various related artifacts. These artifacts are not difficult to understand conceptually, but effectively removing them can be challenging.
+
+In CT imaging, volume averaging occurs because of finite detector element size and limitations in the reconstruction matrix’s resolution. These hardware elements are not small enough to capture features smaller than the detector size or the X-ray focal spot.
+Imagine you have a fine detail—a small yellow cross in an image. But your image pixels are arranged in a grid, and this cross might fall entirely within a single pixel.
+
+That one pixel will then represent an average of all the structures within it, so the small cross may simply blend into a larger, less distinct area.
+For example, if the cross is in one pixel and that pixel appears as a light yellow block, you cannot resolve the cross’s true shape.
+This phenomenon is called volume averaging.
+
+In CT images, various factors cause blurring and averaging effects, causing images to look less sharp.
+Detector pixels have a limited size, and the X-ray source’s focal spot is not a perfect point but has an elliptical shape, which contributes to image blur.
+
+To partially counteract this, image processing techniques like deblurring and deconvolution are applied, recovering some lost resolution.
+This relates to our earlier study of linear systems and convolution in imaging.
+So, volume averaging is a fundamental problem intrinsic to CT imaging, limiting the spatial resolution achievable.
+

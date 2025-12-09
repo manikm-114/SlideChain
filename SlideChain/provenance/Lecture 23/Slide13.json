@@ -1,0 +1,130 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "three-dimensional, volumetric image"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The system uses an X-Y scanning device to move the laser spot across the sample."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "X-Y scanning device",
+        "p": "uses",
+        "s": "confocal optical microscope"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "laser source"
+          },
+          {
+            "category": "instrumentation",
+            "term": "beam splitter"
+          },
+          {
+            "category": "physics",
+            "term": "focal plane"
+          },
+          {
+            "category": "instrumentation",
+            "term": "pinhole aperture"
+          },
+          {
+            "category": "algorithm",
+            "term": "confocal"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-Y scanning device"
+          },
+          {
+            "category": "data_processing",
+            "term": "two-dimensional image"
+          },
+          {
+            "category": "data_processing",
+            "term": "three-dimensional, volumetric image"
+          },
+          {
+            "category": "modality",
+            "term": "confocal microscope"
+          }
+        ],
+        "evidence": [
+          "The genius of the confocal design lies in how it handles these different signals.",
+          "The microscope effectively captures light from one small point at a time, dramatically increasing the resolution and contrast of the image.",
+          "The confocal microscope solves that problem beautifully by adding precision optics and scanning.",
+          "It's a milestone in optical imaging, giving us a much higher resolution and clearer view of microscopic structures."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Laser source",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Laser beam",
+            "p": "uses",
+            "s": "Laser source"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "objective system I"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "You can see here in the diagram that we start with a laser source - this is our input light. The laser beam is reflected by a semi-transparent mirror, or what we call a beam splitter, and it's directed downward through a set of lenses that focus the light onto a single tiny spot, known as the focal spot."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Mirror (beam splitter)",
+        "p": "uses",
+        "s": "Confocal Optical Microscope"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "high resolution and clearer view of microscopic structures"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The laser beam is reflected by a semi-transparent mirror, or what we call a beam splitter.",
+            "modalities": [
+              "text"
+            ],
+            "o": "beam splitter",
+            "p": "uses",
+            "s": "laser source"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

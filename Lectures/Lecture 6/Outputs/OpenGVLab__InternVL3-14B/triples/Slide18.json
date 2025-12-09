@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"sinc function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"a rectangle in time turns into a sinc wave in frequency\"\n    },\n    {\n      \"s\": \"gate function\",\n      \"p\": \"represents\",\n      \"o\": \"rectangular function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the gate function, also called the rectangular function\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"scaling property\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"you could try computing it directly, or you could use a shortcut — the scaling property of the Fourier transform\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier transform",
+        "p": "produces",
+        "o": "sinc function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "a rectangle in time turns into a sinc wave in frequency"
+      },
+      {
+        "s": "gate function",
+        "p": "represents",
+        "o": "rectangular function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the gate function, also called the rectangular function"
+      },
+      {
+        "s": "Fourier transform",
+        "p": "depends_on",
+        "o": "scaling property",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "you could try computing it directly, or you could use a shortcut - the scaling property of the Fourier transform"
+      }
+    ]
+  }
+}

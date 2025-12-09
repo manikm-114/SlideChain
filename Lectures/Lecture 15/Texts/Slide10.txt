@@ -1,0 +1,11 @@
+Now let’s move from simple back-projection to filtered back-projection, or FBP.
+
+As we saw in the last example, back-projection is the standard way of reconstructing CT slices. We take the sinogram, back-project each view, and combine them. But here’s the problem: if we simply use unfiltered back-projection, the resulting image often looks blurry. That’s because the projections overlap in a way that smears out the details.
+To fix this, we apply a filter in the sinogram space before back-projecting. Filtering helps sharpen the edges and preserve the fine details that would otherwise be lost.
+
+Look at the images here. In the top row, we have a sinogram and its back-projected image. Notice how the back-projection produces just a fuzzy, grayish blob with poorly defined boundaries.
+
+Now, in the bottom row, the sinogram has first been filtered. After reconstruction, the image is much clearer—you can actually see the circular structure with sharp edges, and even a smaller circle inside it, which could represent something like a tumor.
+On the right side, you see examples of different filters that can be applied, such as the Ram-Lak filter, the Shepp-Logan filter, and the Hamming filter. Each of these adjusts the frequency content of the sinogram differently, but they all serve the same purpose: to enhance contrast and reduce blurring in the final reconstructed image.
+
+So in summary, filtered back-projection is one of the most widely used methods in CT, because it gives us images that are both accurate and sharp enough for clinical use.

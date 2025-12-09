@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"gradient-echo sequences\",\n      \"p\": \"uses\",\n      \"o\": \"no 180° refocusing pulse\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In a gradient-echo sequence, there is no one-hundred-eighty-degree refocusing pulse.\"\n    },\n    {\n      \"s\": \"gradient-echo sequences\",\n      \"p\": \"produces\",\n      \"o\": \"shorter TE and TR values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This omission greatly shortens both the echo time, or T-E, and the repetition time, T-R.\"\n    },\n    {\n      \"s\": \"gradient-echo sequences\",\n      \"p\": \"depends_on\",\n      \"o\": \"T2* value of tissue\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"signal decay during the TE interval is determined by the T2* value of tissue\"\n    },\n    {\n      \"s\": \"gradient-echo sequences\",\n      \"",
+  "parsed": {
+    "s": "gradient-echo sequences",
+    "p": "depends_on",
+    "o": "T2* value of tissue",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "signal decay during the TE interval is determined by the T2* value of tissue"
+    ]
+  }
+}

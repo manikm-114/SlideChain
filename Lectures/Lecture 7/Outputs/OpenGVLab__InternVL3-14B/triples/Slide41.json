@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide41",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"the sampling theorem\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"samples\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"if a signal is band-limited — that is, its frequency content is restricted — then we can reconstruct the entire continuous-time signal exactly from its samples\"\n    },\n    {\n      \"s\": \"the sampling theorem\",\n      \"p\": \"produces\",\n      \"o\": \"a series of weighted sinc functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the function f of t is being sampled at every t equals k over P, and the result is a series of weighted sinc functions\"\n    },\n    {\n      \"s\": \"the sampling theorem\",\n      \"p\": \"depends_on\",\n      \"o\": \"a delta train\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"That brought us to this expression: f of t equals sinc of pi P t, divided by pi P t, convolved with the sum from k equals",
+  "parsed": {
+    "s": "the sampling theorem",
+    "p": "produces",
+    "o": "a series of weighted sinc functions",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "the function f of t is being sampled at every t equals k over P, and the result is a series of weighted sinc functions"
+    ]
+  }
+}

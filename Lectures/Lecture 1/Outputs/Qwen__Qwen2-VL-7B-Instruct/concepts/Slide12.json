@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T17:57:28.391249+00:00",
+  "text_length": 1399,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s another example that might feel a bit more familiar.\n\nLet’s say you take a photo with your phone, but it turns out a little blurry—maybe the camera shook, or the focus was off, or the camera is cheap and of poor quality. What you get is not the true image, but a version that’s been blurred in several ways.\n\nNow, how do we describe that blurring? In image processing, we model it using something called a point spread function—or PSF for short. This describes how a single point of light spreads out in the image.\n\nThe process that causes blurring is called convolution. It’s a mathematical operation that combines the original image with the PSF. Convolution is sort of like multiplication—but in the so-called Fourier space that we will explain later in this course. Indeed, in the Fourier domain, convolution becomes regular multiplication. The Fourier transform is often performed using a fast algorithm, FFT in short. That simplifies a lot of computations.\n\nBut now comes the hard part: what if all you have is the blurry image? Can you work backward and recover the original, sharp version?\n\nThat’s another inverse problem. And just like with tomography, it’s tricky. You're trying to undo the effect of the blur, based on your knowledge of the system. It takes clever algorithms and good models—but it can be done. And that’s the kind of thinking we’ll develop throughout this course.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"blurring\", \"category\": \"signal_processing\"},\n    {\"term\": \"deblurring\", \"category\": \"signal_processing\"},\n    {\"term\": \"point spread function (PSF)\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT (Fast Fourier Transform)\", \"category\": \"signal_processing\"},\n    {\"term\": \"inverse problem\", \"category\": \"signal_processing\"},\n    {\"term\": \"algorithm\", \"category\": \"algorithm\"},\n    {\"term\": \"deconvolution\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The process that causes blurring is called convolution.\",\n    \"The Fourier transform is often performed using a fast algorithm, FFT in short.\",\n    \"That’s another inverse problem. And just like with tomography, it’s tricky.\",\n    \"It takes clever algorithms and good models—but it can be done.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "blurring",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "inverse problem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "algorithm",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "The process that causes blurring is called convolution.",
+      "The Fourier transform is often performed using a fast algorithm, FFT in short.",
+      "That's another inverse problem. And just like with tomography, it's tricky.",
+      "It takes clever algorithms and good models-but it can be done."
+    ]
+  }
+}

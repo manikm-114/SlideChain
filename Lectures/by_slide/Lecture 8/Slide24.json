@@ -1,0 +1,187 @@
+{
+  "lecture": "Lecture 8",
+  "slide_id": "Slide24",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide24.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide24.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide24.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "inverse discrete Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discretization",
+              "category": "signal_processing"
+            },
+            {
+              "term": "sampling interval",
+              "category": "signal_processing"
+            },
+            {
+              "term": "continuous Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discrete Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "scaling factor",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discrete equivalent",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.",
+            "Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"inverse discrete Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discretization\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling interval\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"scaling factor\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete equivalent\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\\", \\\"Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"inverse discrete Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"discretization\", \"category\": \"signal_processing\"}, {\"term\": \"sampling interval\", \"category\": \"signal_processing\"}, {\"term\": \"continuous Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"discrete Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"scaling factor\", \"category\": \"signal_processing\"}, {\"term\": \"discrete equivalent\", \"category\": \"signal_processing\"}], \"evidence\": [\"Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\", \"Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide24.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "1 over N",
+              "p": "depends_on",
+              "o": "delta-t times delta-u",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "1 over N equals delta-t times delta-u"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"1 over N\\\", \\\"p\\\":\\\"depends_on\\\", \\\"o\\\":\\\"delta-t times delta-u\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"1 over N equals delta-t times delta-u\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"1 over N\", \"p\": \"depends_on\", \"o\": \"delta-t times delta-u\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"1 over N equals delta-t times delta-u\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide24.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "inverse discrete Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "sampling interval",
+              "category": "signal_processing"
+            },
+            {
+              "term": "continuous Fourier transform",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discrete version",
+              "category": "signal_processing"
+            },
+            {
+              "term": "time domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "scaling factor",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discretization",
+              "category": "signal_processing"
+            },
+            {
+              "term": "inverse DFT",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "inverse discrete Fourier transform",
+            "sampling interval",
+            "continuous Fourier transform",
+            "discrete version",
+            "time domain",
+            "frequency domain",
+            "rectangular functions",
+            "scaling factor",
+            "discretization",
+            "inverse DFT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"inverse discrete Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling interval\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete version\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"time domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"rectangular functions\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"scaling factor\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discretization\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"inverse DFT\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"inverse discrete Fourier transform\\\",\\n    \\\"sampling interval\\\",\\n    \\\"continuous Fourier transform\\\",\\n    \\\"discrete version\\\",\\n    \\\"time domain\\\",\\n    \\\"frequency domain\\\",\\n    \\\"rectangular functions\\\",\\n    \\\"scaling factor\\\",\\n    \\\"discretization\\\",\\n    \\\"inverse DFT\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"inverse discrete Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"sampling interval\", \"category\": \"signal_processing\"}, {\"term\": \"continuous Fourier transform\", \"category\": \"signal_processing\"}, {\"term\": \"discrete version\", \"category\": \"signal_processing\"}, {\"term\": \"time domain\", \"category\": \"signal_processing\"}, {\"term\": \"frequency domain\", \"category\": \"signal_processing\"}, {\"term\": \"scaling factor\", \"category\": \"signal_processing\"}, {\"term\": \"discretization\", \"category\": \"signal_processing\"}, {\"term\": \"inverse DFT\", \"category\": \"signal_processing\"}], \"evidence\": [\"inverse discrete Fourier transform\", \"sampling interval\", \"continuous Fourier transform\", \"discrete version\", \"time domain\", \"frequency domain\", \"rectangular functions\", \"scaling factor\", \"discretization\", \"inverse DFT\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide24.json",
+        "parsed": {
+          "s": "original continuous function",
+          "p": "approximated as",
+          "o": "collection of rectangles",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"inverse discrete Fourier transform\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"1/N\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"1/N\\\",\\n      \\\"p\\\": \\\"equals\\\",\\n      \\\"o\\\": \\\"delta-t times delta-u\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Earlier, I mentioned that 1 over N is equal to delta-t times delta-u.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"original continuous function\\\",\\n      \\\"p\\\": \\\"approximated as\\\",\\n      \\\"o\\\": \\\"collection of rectangles\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles.\\\"\\n    },\", \"parsed\": {\"s\": \"original continuous function\", \"p\": \"approximated as\", \"o\": \"collection of rectangles\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"Think of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide24.json",
+        "parsed": {
+          "term": "scaling factor",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T01:43:37.799473+00:00\", \"text_length\": 1391, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"inverse discrete Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"1/N\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"delta-t\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"delta-u\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discretization\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling interval\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete Fourier transform\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"rectangular functions\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"inverse formula\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"scaling factor\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"1 over N is equal to delta-t times delta-u.\\\",\\n    \\\"The factor of delta-t times delta-u captures the combined effect of this discretization in both domains.\\\",\\n    \\\"The difference is that here, the scaling is tied directly to our sampling steps in\", \"parsed\": {\"term\": \"scaling factor\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide24.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T02:33:51.690916+00:00\", \"text_length\": 1391, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"1/N\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"delta-t times delta-u\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"1/N = delta-t times delta-u\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide24.json",
+        "parsed": {
+          "term": "approximated as a collection of rectangular functions",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T01:04:53.173048+00:00\", \"text_length\": 1391, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"1/N\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"delta-t times delta-u\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sampling interval in the time domain\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sampling interval in the frequency domain\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"continuous Fourier transform\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"discrete Fourier transform\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"inverse discrete Fourier transform\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"discretizing in the t- and Fourier domains\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"rectangular functions\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"approximated as a collection of rectangular functions\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"adding up all of these little rectangular pieces\\\",\\n      \\\"\", \"parsed\": {\"term\": \"approximated as a collection of rectangular functions\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide24.json",
+        "parsed": {
+          "s": "1/N",
+          "p": "represents",
+          "o": "the combined effect of discretization in both domains",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "The overall effect of the discretizing in the t- and Fourier domains is combined into 1/N = ΔtΔu ."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide24\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T01:10:39.088237+00:00\", \"text_length\": 1391, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\\n\\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\\n\\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"1/N\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"delta-t times delta-u\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"There is the weighting factor 1/N in the inverse discrete Fourier transform, which can be understood for the approximation involved in the continuous Fourier transform and its inversion. To appreciate this point, you can show that 1/N = ΔtΔu .\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"1/N\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the combined effect of discretization in both domains\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The overall effect of the discretizing in the t- and Fourier domains is combined into 1/N = ΔtΔu .\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"1/N\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"delta-t times delta-u\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.95,\", \"parsed\": {\"s\": \"1/N\", \"p\": \"represents\", \"o\": \"the combined effect of discretization in both domains\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"The overall effect of the discretizing in the t- and Fourier domains is combined into 1/N = ΔtΔu .\"]}}"
+      }
+    }
+  }
+}

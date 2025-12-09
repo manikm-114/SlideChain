@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Single Photon Emission\",\n      \"p\": \"uses\",\n      \"o\": \"exponential factor\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The formula you see uses an exponential factor, e to the negative integral from 'a' to 'd' of mu(s) ds.\"\n    },\n    {\n      \"s\": \"Paired Photon Emission\",\n      \"p\": \"uses\",\n      \"o\": \"product of two individual probabilities\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The total probability is the product of two individual probabilities.\"\n    },\n    {\n      \"s\": \"Single Photon Emission\",\n      \"p\": \"depends_on\",\n      \"o\": \"source location\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"For single photon emission, here’s how we model it... the weight changes based on where the radiotracer is located.\"\n    },\n    {\n      \"s\": \"Paired Photon Emission\",\n      \"p\": \"produces\",\n      \"",
+  "parsed": {
+    "s": "Single Photon Emission",
+    "p": "depends_on",
+    "o": "source location",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "For single photon emission, here’s how we model it... the weight changes based on where the radiotracer is located."
+    ]
+  }
+}

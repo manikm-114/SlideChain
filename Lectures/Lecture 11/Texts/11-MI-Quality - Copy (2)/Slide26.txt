@@ -1,0 +1,11 @@
+Here’s another example that demonstrates the power of SSIM.
+
+The image in the top left, marked (a), is the reference image — the ground truth. The other five images are distorted versions, each with a different type of degradation: contrast stretching, mean shift, JPEG compression, blurring, and salt-and-pepper noise.
+If we were to use mean squared error, all of these distorted images would end up with roughly the same error value. But visually, they do not look equally bad. Some are close to the original, while others are clearly worse.
+
+Now look at the SSIM scores shown here. The contrast-stretched image has an SSIM close to 0.92, which makes sense because it looks fairly good. The mean-shifted version scores about 0.90, also quite close. But the JPEG-compressed version drops down to around 0.69, and the blurred version to 0.70. The salt-and-pepper noisy image scores about 0.77.
+If you compare these numbers with what your eyes tell you, the agreement is clear. Images that look closer to the original score higher; images that look worse score lower.
+
+This is why SSIM is so widely used. It captures the essential aspects of the human visual system — brightness, contrast, and structure — in a single number. And in practice, this means we can use SSIM to guide optimization. For example, when designing a communication channel or an imaging system, we can adjust the system parameters to maximize SSIM, ensuring that the images produced look good to the human eye.
+
+So, SSIM is not just a theoretical measure — it is a practical tool that connects mathematics directly to human perception.

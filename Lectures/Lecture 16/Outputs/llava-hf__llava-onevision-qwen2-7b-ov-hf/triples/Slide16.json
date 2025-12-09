@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nRadioactive isotopes can decay through several different mechanisms, and it’s important to understand the main ones.\n\nIn your textbook, these are grouped into four basic types. The first is alpha decay, the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission — the third is gamma decay, and the fourth is electron capture.\nAn easy way to remember them is simply in order: alpha, beta, gamma, and then electron capture. Each of these processes describes a different way in which an unstable nucleus transforms into a more stable state, releasing radiation in the process.\n\nWe’ll go into detail about each type of decay in the following slides.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"radioactive isotopes\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"decay mechanisms\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"can decay through several different mechanisms\"}\n  ],\n    {\"s\":\"alpha decay\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"alpha\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"the first is alpha decay\"}\n  ],\n    {\"s\":\"beta decay\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"beta\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission\"}\n  ],\n    {\"s\":\"gamma decay\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"gamma\", \"modalities\":[\"text\"], \"",
+  "parsed": {
+    "s": "beta decay",
+    "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+    "o": "beta",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "the second is beta decay, which includes both beta-minus and beta-plus, or positron, emission"
+    ]
+  }
+}

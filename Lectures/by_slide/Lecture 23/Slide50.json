@@ -1,0 +1,181 @@
+{
+  "lecture": "Lecture 23",
+  "slide_id": "Slide50",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide50.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "medical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "review",
+              "category": "software"
+            },
+            {
+              "term": "transcribe",
+              "category": "software"
+            },
+            {
+              "term": "creative thinking",
+              "category": "communication"
+            },
+            {
+              "term": "polarized light",
+              "category": "physics"
+            },
+            {
+              "term": "detect fluorescence",
+              "category": "physics"
+            },
+            {
+              "term": "measure oxygen levels",
+              "category": "physics"
+            },
+            {
+              "term": "monitor glucose levels",
+              "category": "modality"
+            },
+            {
+              "term": "perform optical tomography",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "SLIDE_TEXT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"review\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"transcribe\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"creative thinking\\\", \\\"category\\\": \\\"communication\\\"},\\n    {\\\"term\\\": \\\"polarized light\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detect fluorescence\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"measure oxygen levels\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"monitor glucose levels\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"perform optical tomography\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"SLIDE_TEXT\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"medical imaging\", \"category\": \"modality\"}, {\"term\": \"review\", \"category\": \"software\"}, {\"term\": \"transcribe\", \"category\": \"software\"}, {\"term\": \"creative thinking\", \"category\": \"communication\"}, {\"term\": \"polarized light\", \"category\": \"physics\"}, {\"term\": \"detect fluorescence\", \"category\": \"physics\"}, {\"term\": \"measure oxygen levels\", \"category\": \"physics\"}, {\"term\": \"monitor glucose levels\", \"category\": \"modality\"}, {\"term\": \"perform optical tomography\", \"category\": \"modality\"}], \"evidence\": [\"SLIDE_TEXT\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide50.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "review",
+              "p": "uses",
+              "o": "summary",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "Review carefully and summarize the key ideas."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"review\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"summary\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Review carefully and summarize the key ideas.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"review\", \"p\": \"uses\", \"o\": \"summary\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"Review carefully and summarize the key ideas.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "send and receive light",
+              "category": "physics"
+            },
+            {
+              "term": "polarized light",
+              "category": "physics"
+            },
+            {
+              "term": "detect fluorescence",
+              "category": "physics"
+            },
+            {
+              "term": "measure oxygen levels through tissue",
+              "category": "physics"
+            },
+            {
+              "term": "monitor glucose levels",
+              "category": "modality"
+            },
+            {
+              "term": "optical tomography",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "send and receive light in any way you want",
+            "emit polarized light",
+            "detect fluorescence",
+            "measure oxygen levels through tissue",
+            "monitor glucose levels",
+            "perform optical tomography"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"send and receive light\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"polarized light\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"detect fluorescence\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"measure oxygen levels through tissue\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"monitor glucose levels\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"optical tomography\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"send and receive light in any way you want\\\",\\n    \\\"emit polarized light\\\",\\n    \\\"detect fluorescence\\\",\\n    \\\"measure oxygen levels through tissue\\\",\\n    \\\"monitor glucose levels\\\",\\n    \\\"perform optical tomography\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"send and receive light\", \"category\": \"physics\"}, {\"term\": \"polarized light\", \"category\": \"physics\"}, {\"term\": \"detect fluorescence\", \"category\": \"physics\"}, {\"term\": \"measure oxygen levels through tissue\", \"category\": \"physics\"}, {\"term\": \"monitor glucose levels\", \"category\": \"modality\"}, {\"term\": \"optical tomography\", \"category\": \"modality\"}], \"evidence\": [\"send and receive light in any way you want\", \"emit polarized light\", \"detect fluorescence\", \"measure oxygen levels through tissue\", \"monitor glucose levels\", \"perform optical tomography\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide50.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "smartphone",
+              "p": "measures",
+              "o": "oxygen levels through tissue",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "Could it measure oxygen levels through tissue?"
+            },
+            {
+              "s": "smartphone",
+              "p": "measures",
+              "o": "glucose levels",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "Could it monitor glucose levels?"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"smartphone\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"oxygen levels through tissue\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Could it measure oxygen levels through tissue?\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"smartphone\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"glucose levels\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Could it monitor glucose levels?\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"smartphone\\\",\\n      \\\"p\\\": \\\"performs\\\",\\n      \\\"o\\\": \\\"optical tomography\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Could it perform optical tomography?\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"smartphone\", \"p\": \"measures\", \"o\": \"oxygen levels through tissue\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"Could it measure oxygen levels through tissue?\"}, {\"s\": \"smartphone\", \"p\": \"measures\", \"o\": \"glucose levels\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"Could it monitor glucose levels?\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "term": "tissue",
+          "category": "anatomy"
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T18:33:16.705750+00:00\", \"text_length\": 1167, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"review\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"transcribe\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"light\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"smartphone\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"medical imaging applications\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"polarized light\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"fluorescence\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"oxygen levels\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"tissue\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"glucose levels\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"optical tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"creative thinking\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"physics\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"connectivity\\\", \\\"category\\\": \\\"communication\\\"},\\n    {\\\"term\\\": \\\"glucose\\\", \\\"category\\\": \\\"chemistry\\\"},\\n    {\\\"term\\\": \\\"tissue\\\", \\\"category\\\": \\\"anatomy\\\"},\", \"parsed\": {\"term\": \"tissue\", \"category\": \"anatomy\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T19:01:33.947150+00:00\", \"text_length\": 1167, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "term": "stay within the limits of physics",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T16:01:39.747877+00:00\", \"text_length\": 1167, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"review this lecture to summary key ideas/points\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"transcribe the 1st part, 2nd part, or the last two parts of this lecture\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"if we make a smart phone send and receive light anyway you want\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"medical imaging applications\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"smartphone already has a light source, a detector, computing power, and connectivity\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"emit polarized light, or detect fluorescence, or measure oxygen levels through tissue\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"monitor glucose levels\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"perform optical tomography\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"stay within the limits of physics\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    }\\n  ],\", \"parsed\": {\"term\": \"stay within the limits of physics\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T16:08:07.118842+00:00\", \"text_length\": 1167, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlright, that brings us to the end of today’s lecture.\\n\\nFor homework, I’d like you to do three things:\\nFirst, review this lecture carefully and summarize the key ideas — not just a quick summary, but really try to capture the main concepts and how they connect.\\nSecond, transcribe one section of this lecture — you can pick the first part, the second part, or the last two parts — and write it down clearly. This will help reinforce your understanding.\\nAnd third, here’s a fun one — a creative thinking question. Imagine you could make a smartphone that can send and receive light in any way you want. What kind of medical imaging applications could you create?\\n\\nThink about it — a smartphone already has a light source, a detector, computing power, and connectivity. What if it could emit polarized light, or detect fluorescence, or measure oxygen levels through tissue? Could it monitor glucose levels? Could it perform optical tomography?\\n\\nYou can be as creative as you want — just stay within the limits of physics.\\nSo, that’s your assignment: review, transcribe, and imagine. I’m really looking forward to seeing your ideas. And that’s all for today — thank you!\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

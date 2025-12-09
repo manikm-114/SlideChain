@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s turn to the second type of CT geometry that MATLAB can simulate, which is fan-beam CT.\n\nUnlike parallel-beam CT, where all the X-ray beams are perfectly parallel, in fan-beam CT, the rays spread out from a single source point, forming a fan shape as they pass through the object. This setup is much closer to how real CT scanners work today, because the source rotates around the patient while the rays diverge outward.\n\nAs I mentioned in class, fan-beam geometry introduces some additional considerations compared to the parallel-beam case, but it also gives us more realistic simulations. MATLAB provides dedicated functions to handle fan-beam CT, which we’ll look at in the next slides.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"fan-beam CT\", \"category\": \"modality\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"real CT scanners\", \"category\": \"physics\"},\n    {\"term\": \"divergent rays\", \"category\": \"physics\"},\n    {\"term\": \"fan-beam geometry\", \"category\": \"mathematics\"},\n    {\"term\": \"additional considerations\", \"category\": \"software\"},\n    {\"term\": \"realistic simulations\", \"category\": \"workflow\"},\n    {\"term\": \"dedicated functions\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Unlike parallel-beam CT, where all the X-ray beams are perfectly parallel, in fan-beam CT, the rays spread out from a single source point, forming a fan shape as they pass through the object.\", \"MATLAB provides dedicated functions to handle fan-beam CT, which we’ll look at in the next slides.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "fan-beam CT",
+        "category": "modality"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "real CT scanners",
+        "category": "physics"
+      },
+      {
+        "term": "fan-beam geometry",
+        "category": "mathematics"
+      },
+      {
+        "term": "additional considerations",
+        "category": "software"
+      },
+      {
+        "term": "realistic simulations",
+        "category": "workflow"
+      },
+      {
+        "term": "dedicated functions",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Unlike parallel-beam CT, where all the X-ray beams are perfectly parallel, in fan-beam CT, the rays spread out from a single source point, forming a fan shape as they pass through the object.",
+      "MATLAB provides dedicated functions to handle fan-beam CT, which we’ll look at in the next slides."
+    ]
+  }
+}

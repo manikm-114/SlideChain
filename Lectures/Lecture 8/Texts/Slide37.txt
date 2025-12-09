@@ -1,0 +1,8 @@
+Now, let’s see what happens when we perform the Fourier transform without using zero padding.
+
+We take our signal x and compute its discrete Fourier transform using the FFT function.We keep only the first half of the spectrum, because for a real-valued signal, the second half is just the mirror image.Then we normalize by dividing by the length of x, and scale the amplitudes appropriately.The frequency axis is calculated from zero to half the sampling rate, in steps of the frequency resolution.
+
+On the plot, you see two peaks in blue. The first peak is at exactly one hundred hertz — that one is well captured because it matches the frequency grid.The second component, however, is at one hundred two point five hertz, which does not align neatly with the frequency samples.
+As a result, the peak is lower than it should be — you can see that it only reaches about half of its true amplitude — and it spreads into nearby frequency bins.
+
+This illustrates the limitation of the frequency resolution when we don’t use zero padding.

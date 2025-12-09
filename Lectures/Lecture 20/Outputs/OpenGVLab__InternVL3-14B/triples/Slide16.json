@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"MRI\",\n      \"p\": \"uses\",\n      \"o\": \"Fourier imaging mode\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MRI operates in what we call a Fourier imaging mode\"\n    },\n    {\n      \"s\": \"signal\",\n      \"p\": \"proportional to\",\n      \"o\": \"proton density\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the overall signal that we detect — or equivalently, the magnetization vector M — is proportional to the proton density\"\n    },\n    {\n      \"s\": \"signal\",\n      \"p\": \"introduces\",\n      \"o\": \"phase and frequency variations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"These exponential terms introduce both phase and frequency variations across the image slice\"\n    },\n    {\n      \"s\": \"detected signal S(k_x, k_y)\",\n      \"p\": \"proportional to\",\n      \"o\": \"double integral of rho(x, y) times e to",
+  "parsed": {
+    "s": "signal",
+    "p": "introduces",
+    "o": "phase and frequency variations",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "These exponential terms introduce both phase and frequency variations across the image slice"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide49",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:53:47.841943+00:00",
+  "text_length": 391,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnd we had a fully 3D meeting in China. This conference is dedicated to advances in fully three-dimensional image reconstruction in radiology and nuclear medicine, bringing together experts, researchers, and students from around the world to share the latest developments and ideas. \n\nIt’s a valuable opportunity to connect with the community and stay current in this rapidly evolving field.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"fully three-dimensional image reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"radiology\", \"category\": \"modality\"},\n    {\"term\": \"nuclear medicine\", \"category\": \"modality\"},\n    {\"term\": \"advances\", \"category\": \"algorithm\"},\n    {\"term\": \"community\", \"category\": \"communication\"},\n    {\"term\": \"developments\", \"category\": \"algorithm\"},\n    {\"term\": \"ideas\", \"category\": \"algorithm\"},\n    {\"term\": \"evolving\", \"category\": \"algorithm\"},\n    {\"term\": \"field\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\"This conference is dedicated to advances in fully three-dimensional image reconstruction in radiology and nuclear medicine, bringing together experts, researchers, and students from around the world to share the latest developments and ideas. It’s a valuable opportunity to connect with the community and stay current in this rapidly evolving field.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "fully three-dimensional image reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "radiology",
+        "category": "modality"
+      },
+      {
+        "term": "nuclear medicine",
+        "category": "modality"
+      },
+      {
+        "term": "advances",
+        "category": "algorithm"
+      },
+      {
+        "term": "community",
+        "category": "communication"
+      },
+      {
+        "term": "developments",
+        "category": "algorithm"
+      },
+      {
+        "term": "ideas",
+        "category": "algorithm"
+      },
+      {
+        "term": "evolving",
+        "category": "algorithm"
+      },
+      {
+        "term": "field",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "This conference is dedicated to advances in fully three-dimensional image reconstruction in radiology and nuclear medicine, bringing together experts, researchers, and students from around the world to share the latest developments and ideas. It's a valuable opportunity to connect with the community and stay current in this rapidly evolving field."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Fourier series\", \"p\":\"represents\", \"o\":\"sum of waves\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We’re representing a function as a sum of waves.\"},\n    {\"s\":\"Fourier series\", \"p\":\"uses\", \"o\":\"orthonormal basis\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These sine and cosine functions form an orthonormal basis\"},\n    {\"s\":\"Fourier series\", \"p\":\"reconstructs_with\", \"o\":\"coefficients\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"With those coefficients, you can then reconstruct the original function by summing all the sine and cosine waves.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Fourier series",
+        "p": "represents",
+        "o": "sum of waves",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We’re representing a function as a sum of waves."
+      },
+      {
+        "s": "Fourier series",
+        "p": "uses",
+        "o": "orthonormal basis",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These sine and cosine functions form an orthonormal basis"
+      },
+      {
+        "s": "Fourier series",
+        "p": "reconstructs_with",
+        "o": "coefficients",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "With those coefficients, you can then reconstruct the original function by summing all the sine and cosine waves."
+      }
+    ]
+  }
+}

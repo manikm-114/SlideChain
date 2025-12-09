@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide20",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, here’s a really important idea — something we call the aliasing problem.\n\nRemember, we just said that sampling needs to be dense enough? But what does that mean?\nTake a look at the curve on the left. It’s a complex, high-frequency signal — lots of rapid changes and fine details. If we don’t sample it frequently enough — meaning, we don’t take enough points per second — we miss those small peaks and dips.\nIn the middle, you see the result of sparse sampling. We’re only picking up a few values. And when we try to reconstruct the signal, shown on the right, we get something much smoother and simpler than the original. It might even look okay at first glance, but it’s actually wrong.\n\nAll that detail — all the fast oscillations — is lost. Even worse, the reconstructed version can look like a completely different signal, with a false shape or even the wrong frequency.\nThis is what we call aliasing. It happens when the sampling rate is too low to capture the higher-frequency components. And once they’re lost, you can’t recover them from the sampled data.\nThat’s why choosing the right sampling rate is so critical in signal processing.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"aliasing problem\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampling rate\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstruction\", \"category\": \"signal_processing\"},\n    {\"term\": \"sparse sampling\", \"category\": \"signal_processing\"},\n    {\"term\": \"high-frequency signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"low-frequency components\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Take a look at the curve on the left. It’s a complex, high-frequency signal — lots of rapid changes and fine details. If we don’t sample it frequently enough — meaning, we don’t take enough points per second — we miss those small peaks and dips.\", \"In the middle, you see the result of sparse sampling. We’re only picking up a few values. And when we try to reconstruct the signal, shown on the right, we get something much smoother and simpler than the original. It might even look okay at first glance, but it’s actually wrong.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "aliasing problem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling rate",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sparse sampling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "high-frequency signal",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Take a look at the curve on the left. It’s a complex, high-frequency signal - lots of rapid changes and fine details. If we don’t sample it frequently enough - meaning, we don’t take enough points per second - we miss those small peaks and dips.",
+      "In the middle, you see the result of sparse sampling. We’re only picking up a few values. And when we try to reconstruct the signal, shown on the right, we get something much smoother and simpler than the original. It might even look okay at first glance, but it’s actually wrong."
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "continuous function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular bar"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete perspective"
+          }
+        ],
+        "evidence": [
+          "original continuous function shown in gray",
+          "delta function, or a rectangular bar",
+          "area under each rectangle",
+          "approximate it piecewise",
+          "discrete perspectives"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "We can approximate it piecewise using constant slices",
+            "modalities": [
+              "text"
+            ],
+            "o": "constant slices",
+            "p": "uses",
+            "s": "approximate"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "Each rectangle corresponds to a delta function",
+            "modalities": [
+              "text"
+            ],
+            "o": "delta function",
+            "p": "represents",
+            "s": "rectangle"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete perspective"
+          }
+        ],
+        "evidence": [
+          "approximate it piecewise using constant slices",
+          "each rectangle corresponds to a delta function",
+          "the area under each rectangle is equivalent to the area under the corresponding delta function"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "In this way, everything ties together between the continuous and discrete perspectives."
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "Imagine the original continuous function shown in gray. We can approximate it piecewise using constant slices - small rectangles, each with a height that matches the continuous function's value at that point."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "constant slices",
+        "p": "uses",
+        "s": "the original continuous function"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

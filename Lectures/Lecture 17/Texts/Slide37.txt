@@ -1,0 +1,7 @@
+For a system to work at its best, noise, scatter, and random events must be estimated and removed. This slide is a nice summary. A true event means you have a single annihilation, then two photons are emitted and detected by opposite detectors, and captured by the circuit. That's what you really want—these true coincidences are the signals that contribute to accurate image reconstruction.
+
+Scatter events have different mechanisms. Here’s an example: a photon is emitted from an event, but gets scattered away before it reaches the detector. The system may report a coincidence along this scattered path, but it’s not the true line of response. This isn’t the real signal we need, so the scattered photon event should be removed—just like in CT, where scattering also occurs.
+
+Random events are different. In this case, two gamma photons are generated from different events in the body, and one photon is detected in the same time window as another photon from a separate event. The system reports a coincidence, but along a line that doesn’t correspond to either true event—this is not accurate, and should be avoided if possible.
+
+In 3D PET imaging, you can see that scattered and random events become more frequent, mainly because sensitivity increases due to the wider aperture and more possibilities for 3D data acquisition. So, it’s important to maximize sensitivity while minimizing scatter and random events to maintain image quality.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide42",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"analog signal\",\n      \"p\": \"represents\",\n      \"o\": \"f(t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"At the top, we have a smooth, continuous signal — this is your analog signal — represented here as f of t, where t is time.\"\n    },\n    {\n      \"s\": \"digitize\",\n      \"p\": \"uses\",\n      \"o\": \"sampling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, to digitize this signal, we begin with the process of sampling.\"\n    },\n    {\n      \"s\": \"sampling\",\n      \"p\": \"produces\",\n      \"o\": \"train of delta functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the middle plot, you see a train of delta functions — these are evenly spaced impulses in time.\"\n    },\n    {\n      \"s\": \"multiplication\",\n      \"p\": \"produces\",\n      \"o\": \"series of weighted impulses\",",
+  "parsed": {
+    "s": "sampling",
+    "p": "produces",
+    "o": "train of delta functions",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "In the middle plot, you see a train of delta functions - these are evenly spaced impulses in time."
+    ]
+  }
+}

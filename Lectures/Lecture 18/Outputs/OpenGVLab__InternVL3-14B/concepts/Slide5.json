@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"anatomical information\", \"category\": \"anatomy\"},\n    {\"term\": \"functional information\", \"category\": \"modality\"},\n    {\"term\": \"nuclear magnetic resonance\", \"category\": \"physics\"},\n    {\"term\": \"gradient magnetic fields\", \"category\": \"physics\"},\n    {\"term\": \"tomographic imaging technique\", \"category\": \"reconstruction\"},\n    {\"term\": \"functional MRI\", \"category\": \"modality\"},\n    {\"term\": \"blood oxygenation changes\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\n    \"MRI is unique because it can provide two types of information\",\n    \"it gives us anatomical information\",\n    \"it can measure blood oxygenation levels\",\n    \"nuclear magnetic resonance\",\n    \"gradient magnetic fields\",\n    \"tomographic imaging technique\",\n    \"functional MRI\",\n    \"blood oxygenation changes\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "functional information",
+        "category": "modality"
+      },
+      {
+        "term": "nuclear magnetic resonance",
+        "category": "physics"
+      },
+      {
+        "term": "gradient magnetic fields",
+        "category": "physics"
+      },
+      {
+        "term": "tomographic imaging technique",
+        "category": "reconstruction"
+      },
+      {
+        "term": "functional MRI",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "MRI is unique because it can provide two types of information",
+      "it gives us anatomical information",
+      "it can measure blood oxygenation levels",
+      "nuclear magnetic resonance",
+      "gradient magnetic fields",
+      "tomographic imaging technique",
+      "functional MRI",
+      "blood oxygenation changes"
+    ]
+  }
+}

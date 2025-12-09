@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Doppler Signal Detection\", \"p\":\"represents\", \"o\":\"A cos[2π(f_i + Δf)t]\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The signal detected by the second transducer can be represented as sin(t) = A cos[2π(f_i + Δf)t]\"},\n    {\"s\":\"Doppler Signal Detection\", \"p\":\"uses\", \"o\":\"low-pass filter\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"we use a low-pass filter to remove the high-frequency component and keep only the low-frequency term that carries the Doppler information\"},\n    {\"s\":\"Doppler Signal Detection\", \"p\":\"measures\", \"o\":\"Δf\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"So, by measuring delta-f, we can determine how fast the object is moving along the ultrasound beam direction\"},\n    {\"s\":\"Doppler Signal Detection\", \"p\":\"produces\", \"o\":\"A/2 cos(2πΔft)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"",
+  "parsed": {
+    "s": "Doppler Signal Detection",
+    "p": "measures",
+    "o": "Δf",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "So, by measuring delta-f, we can determine how fast the object is moving along the ultrasound beam direction"
+    ]
+  }
+}

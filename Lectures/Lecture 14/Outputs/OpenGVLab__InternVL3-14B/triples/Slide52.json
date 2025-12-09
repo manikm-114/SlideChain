@@ -1,0 +1,9 @@
+{
+  "slide_id": "Slide52",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT dose index (CTDI)\", \"p\":\"measures\", \"o\":\"radiation output from the CT scanner\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The CTDI provides a standardized measure of radiation output from the CT scanner, reflecting dose distribution within the irradiated volume.\"},\n    {\"s\":\"CT dose index (CTDI)\", \"p\":\"depends_on\", \"o\":\"slice thickness\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Suppose the slice thickness is represented by T.\"},\n    {\"s\":\"CT dose index (CTDI)\", \"p\":\"uses\", \"o\":\"radiation dose measurements\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"You integrate the radiation dose measurements over the slice thickness, effectively summing the dose contributions from the slice and imaginary adjacent slices\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

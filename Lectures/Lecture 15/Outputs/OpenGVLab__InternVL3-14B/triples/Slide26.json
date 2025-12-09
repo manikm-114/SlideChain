@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide26",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"fan-beam CT\",\n      \"p\": \"depends_on\",\n      \"o\": \"sensor spacing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"resolution is directly related to detector spacing\"\n    },\n    {\n      \"s\": \"D sensor\",\n      \"p\": \"represents\",\n      \"o\": \"sensor spacing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"this is the D sensor value on line 26\"\n    },\n    {\n      \"s\": \"D sensor\",\n      \"p\": \"produces\",\n      \"o\": \"resolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"resolution is directly related to detector spacing\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "fan-beam CT",
+        "p": "depends_on",
+        "o": "sensor spacing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "resolution is directly related to detector spacing"
+      },
+      {
+        "s": "D sensor",
+        "p": "represents",
+        "o": "sensor spacing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "this is the D sensor value on line 26"
+      },
+      {
+        "s": "D sensor",
+        "p": "produces",
+        "o": "resolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "resolution is directly related to detector spacing"
+      }
+    ]
+  }
+}

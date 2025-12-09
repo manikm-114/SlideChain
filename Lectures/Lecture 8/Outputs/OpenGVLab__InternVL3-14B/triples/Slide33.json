@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"FFT-based convolution\",\n      \"p\": \"produces\",\n      \"o\": \"circular convolution\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"FFT-based convolution gives us circular convolution by default\"\n    },\n    {\n      \"s\": \"zero padding\",\n      \"p\": \"avoids\",\n      \"o\": \"wrap-around\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The simplest way to avoid that wrap-around is to make sure those neighbors are far enough away so they can’t overlap during the shift.\"\n    },\n    {\n      \"s\": \"zero padding\",\n      \"p\": \"ensures\",\n      \"o\": \"non-overlapping\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We take our original signals and append enough zeros to both so that the total length is at least N plus M minus 1, where N and M are the original lengths of the two sequences.\"\n    },\n    {\n      \"s\": \"zero padding\",\n      \"p\":",
+  "parsed": {
+    "s": "zero padding",
+    "p": "ensures",
+    "o": "non-overlapping",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "We take our original signals and append enough zeros to both so that the total length is at least N plus M minus 1, where N and M are the original lengths of the two sequences."
+    ]
+  }
+}

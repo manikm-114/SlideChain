@@ -1,0 +1,113 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "beam geometry"
+          },
+          {
+            "category": "physics",
+            "term": "near field"
+          },
+          {
+            "category": "physics",
+            "term": "far field"
+          },
+          {
+            "category": "physics",
+            "term": "divergence angle"
+          },
+          {
+            "category": "physics",
+            "term": "wavelength"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer aperture"
+          },
+          {
+            "category": "mathematics",
+            "term": "Gaussian distribution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "lateral resolution"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          }
+        ],
+        "evidence": [
+          "beam geometry",
+          "near field",
+          "far field",
+          "divergence angle",
+          "wavelength",
+          "transducer aperture",
+          "Gaussian distribution",
+          "full width at half maximum (FWHM)",
+          "lateral resolution",
+          "attenuation"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This divergence angle, which we call theta, is determined by the wavelength lambda and the transducer aperture 'a'."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "wavelength and transducer aperture",
+        "p": "depends_on",
+        "s": "divergence angle"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound image"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "FWHM equals two times the square root of two times the natural log of two, multiplied by sigma - approximately equal to two point three six sigma"
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "When the transducer vibrates, it sends energy downward in a conical shape."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "conical shape",
+        "p": "produces",
+        "s": "beam geometry"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "lateral resolution"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

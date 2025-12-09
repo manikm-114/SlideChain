@@ -1,0 +1,11 @@
+Now, let’s take a moment to visualize what the discrete Fourier transform — or DFT — really means.
+On this slide, you see two columns. On the left, we have signals in the time domain. On the right, we have their corresponding representations in the frequency domain. The arrows between them remind us that the Fourier transform takes us from one domain to the other, and the inverse Fourier transform brings us back.
+
+Each row here is a different example. In some cases, we’re multiplying two signals in the time domain. In others, we’re convolving them. And each time, there’s a matching operation in the frequency domain — because multiplication in one domain corresponds to convolution in the other, and vice versa. This is one of the most important dual relationships in Fourier theory.
+
+You can also see how different shapes in the time domain create specific patterns in the frequency domain. For example:
+A narrow pulse in time spreads out in frequency.
+A broad, smooth shape in time becomes more concentrated in frequency.
+Sampling a continuous signal in time produces repeated copies — or “aliases” — in the frequency domain.
+By moving row by row, you can start to see the bigger picture: every change we make to a signal in one domain has a predictable effect in the other. This is exactly why Fourier analysis is so powerful — it gives us two different but connected ways of looking at the same signal.
+As we go through the rest of today’s examples, keep these relationships in mind. They’ll help you understand not just the MATLAB results, but also the deeper reason why those results look the way they do.

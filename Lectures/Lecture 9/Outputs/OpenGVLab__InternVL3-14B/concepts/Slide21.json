@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"frequency bins\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"data_processing\"},\n    {\"term\": \"bin refinement\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete FFT bins\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"}\n  ],\n  \"evidence\": [\n    \"refine our frequency bins by a factor of two\",\n    \"increasing the FFT length\",\n    \"appending enough zeros to double the length of the signal before computing the FFT\",\n    \"frequency at two hundred two point five hertz is now well resolved\",\n    \"frequency at four hundred forty-five point eight hertz is still not well resolved\",\n    \"zero-padding and bin refinement improve resolution\",\n    \"frequency exactly matches a discrete bin location\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "frequency bins",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "data_processing"
+      },
+      {
+        "term": "bin refinement",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete FFT bins",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "refine our frequency bins by a factor of two",
+      "increasing the FFT length",
+      "appending enough zeros to double the length of the signal before computing the FFT",
+      "frequency at two hundred two point five hertz is now well resolved",
+      "frequency at four hundred forty-five point eight hertz is still not well resolved",
+      "zero-padding and bin refinement improve resolution",
+      "frequency exactly matches a discrete bin location"
+    ]
+  }
+}

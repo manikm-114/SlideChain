@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide44",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere’s the full example, all in one place.\nWe define t as a vector with values zero, one, zero. Then we call the cylinder function to generate the geometry, and use surf to plot it.\nThat’s it — three lines of code give us a smooth 3D cone you can rotate, zoom, and customize. You can even add lights, shadows, or change the viewing angle.\nIt’s a simple example, but it shows the power of MATLAB for 3D visualization.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"3D visualization\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It’s a simple example, but it shows the power of MATLAB for 3D visualization.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "3D visualization",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s a simple example, but it shows the power of MATLAB for 3D visualization."
+      }
+    ]
+  }
+}

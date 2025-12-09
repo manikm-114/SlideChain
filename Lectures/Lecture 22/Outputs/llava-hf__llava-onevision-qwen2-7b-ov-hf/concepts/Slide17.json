@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide17",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let me just copy this figure to help explain the idea. This shows a one-dimensional ultrasound array. If you use just this group of transducers, you can certainly do beam forming. You perform focusing in this way—based on the relative time delays across elements.\n\nYou can adjust the focus at a certain depth—from the transducer surface to the focal plane—and make the focus spot here. You receive signals mainly from this region of interest. Then, this group of signals can be moved laterally.\nFrom left to right, you perform scanning—line by line—so you get information along each line. When you repeat this line-by-line process, you effectively build up a two-dimensional image.\n\nSo, in summary, with beam forming, you control how the echoes are added together in time, and with scanning, you move the beam position across the field. Together, they form the foundation of modern ultrasound imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"beam forming\", \"category\": \"signal_processing\"},\n    {\"term\": \"focusing\", \"category\": \"signal_processing\"},\n    {\"term\": \"focus\", \"category\": \"signal_processing\"},\n    {\"term\": \"transducers\", \"category\": \"instrumentation\"},\n    {\"term\": \"scanning\", \"category\": \"signal_processing\"},\n    {\"term\": \"two-dimensional image\", \"category\": \"reconstruction\"},\n    {\"term\": \"beam forming\", \"category\": \"signal_processing\"},\n    {\"term\": \"scanning\", \"category\": \"signal_processing\"},\n    {\"term\": \"modern ultrasound imaging\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\"You can certainly do beam forming.\", \"You receive signals mainly from this region of interest.\", \"Then, this group of signals can be moved laterally.\", \"You get information along each line.\", \"Together, they form the foundation of modern ultrasound imaging.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "beam forming",
+        "category": "signal_processing"
+      },
+      {
+        "term": "focusing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "focus",
+        "category": "signal_processing"
+      },
+      {
+        "term": "transducers",
+        "category": "instrumentation"
+      },
+      {
+        "term": "scanning",
+        "category": "signal_processing"
+      },
+      {
+        "term": "two-dimensional image",
+        "category": "reconstruction"
+      },
+      {
+        "term": "beam forming",
+        "category": "signal_processing"
+      },
+      {
+        "term": "scanning",
+        "category": "signal_processing"
+      },
+      {
+        "term": "modern ultrasound imaging",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "You can certainly do beam forming.",
+      "You receive signals mainly from this region of interest.",
+      "Then, this group of signals can be moved laterally.",
+      "You get information along each line.",
+      "Together, they form the foundation of modern ultrasound imaging."
+    ]
+  }
+}

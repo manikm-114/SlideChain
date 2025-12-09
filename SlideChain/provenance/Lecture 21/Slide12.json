@@ -1,0 +1,111 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "wave equation"
+          },
+          {
+            "category": "mathematics",
+            "term": "partial squared W over partial Z squared"
+          },
+          {
+            "category": "mathematics",
+            "term": "partial squared W over partial T squared"
+          },
+          {
+            "category": "physics",
+            "term": "speed of sound"
+          },
+          {
+            "category": "physics",
+            "term": "density"
+          },
+          {
+            "category": "physics",
+            "term": "compressibility"
+          },
+          {
+            "category": "physics",
+            "term": "bulk modulus"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound elastography"
+          },
+          {
+            "category": "anatomy",
+            "term": "tissue stiffness"
+          }
+        ],
+        "evidence": [
+          "the wave equation",
+          "partial squared W over partial Z squared equals one over C squared times partial squared W over partial T squared",
+          "speed of sound",
+          "density",
+          "compressibility",
+          "bulk modulus",
+          "ultrasound elastography",
+          "tissue stiffness",
+          "sound propagation velocity"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "C depends on two key material properties - density, which we call rho, and compressibility, which we call kappa."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "compressibility",
+        "p": "depends_on",
+        "s": "speed of sound"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "rho - written as the Greek letter \u03c1 - represents the density of the tissue"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The value of c depends on the tissue density \u03c1 and compressibility \u03ba."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "compressibility",
+        "p": "depends_on",
+        "s": "speed of sound"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "abnormalities"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

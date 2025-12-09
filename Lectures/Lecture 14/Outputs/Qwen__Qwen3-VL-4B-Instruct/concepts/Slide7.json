@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:29:13.442340+00:00",
+  "text_length": 651,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis leads us to the issue of data truncation. If the data is incomplete, the Fourier slice theorem— which assumes a full projection profile for each one-dimensional Fourier transform—can no longer be applied straightforwardly.\n\nWhat happens if part of the data is missing? If some portion of the projection profile is lost, the Fourier transformation cannot be performed fully. This is called the data truncation problem. Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data.\n\nBefore we delve into the types of data truncation, let me give you some context.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"data truncation\",\n      \"category\": \"reconstruction\"\n    },\n    {\n      \"term\": \"Fourier slice theorem\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"Fourier transformation\",\n      \"category\": \"frequency_domain\"\n    },\n    {\n      \"term\": \"projection profile\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"reconstruct images\",\n      \"category\": \"reconstruction\"\n    }\n  ],\n  \"evidence\": [\n    \"This leads us to the issue of data truncation.\",\n    \"If the data is incomplete, the Fourier slice theorem— which assumes a full projection profile for each one-dimensional Fourier transform—can no longer be applied straightforwardly.\",\n    \"This is called the data truncation problem.\",\n    \"Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "data truncation",
+        "category": "reconstruction"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "Fourier transformation",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "projection profile",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstruct images",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "This leads us to the issue of data truncation.",
+      "If the data is incomplete, the Fourier slice theorem- which assumes a full projection profile for each one-dimensional Fourier transform-can no longer be applied straightforwardly.",
+      "This is called the data truncation problem.",
+      "Much of modern CT theory has been developed to address this data truncation problem, finding ways to reconstruct images even with incomplete data."
+    ]
+  }
+}

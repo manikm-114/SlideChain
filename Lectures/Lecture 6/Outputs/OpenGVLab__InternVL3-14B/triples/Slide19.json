@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"sinc function\",\n      \"p\": \"represents\",\n      \"o\": \"frequency domain representation of a simple gate in time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So this is the frequency domain representation of a simple gate in time.\"\n    },\n    {\n      \"s\": \"rectangular gate\",\n      \"p\": \"produces\",\n      \"o\": \"sinc function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"this sinc function came from a rectangular gate function of width 1.\"\n    },\n    {\n      \"s\": \"wider gate\",\n      \"p\": \"produces\",\n      \"o\": \"narrower ripples in frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "sinc function",
+        "p": "represents",
+        "o": "frequency domain representation of a simple gate in time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "So this is the frequency domain representation of a simple gate in time."
+      },
+      {
+        "s": "rectangular gate",
+        "p": "produces",
+        "o": "sinc function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "this sinc function came from a rectangular gate function of width 1."
+      }
+    ]
+  }
+}

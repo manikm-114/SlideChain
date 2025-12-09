@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "communication",
+        "term": "medical decisions"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "True Positive: The patient has a tumor, and the system or doctor correctly identifies it.",
+            "modalities": [
+              "text"
+            ],
+            "o": "True Positive",
+            "p": "uses",
+            "s": "edge detection"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "False Positive: The patient is healthy, but the system says there is a tumor.",
+            "modalities": [
+              "text"
+            ],
+            "o": "False Positive",
+            "p": "uses",
+            "s": "edge detection"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "True Negative: The patient is healthy, and the report correctly says no tumor.",
+            "modalities": [
+              "text"
+            ],
+            "o": "True Negative",
+            "p": "uses",
+            "s": "edge detection"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "False Negative: The patient does have a tumor, but the system or doctor misses it.",
+            "modalities": [
+              "text"
+            ],
+            "o": "False Negative",
+            "p": "uses",
+            "s": "edge detection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "Specificity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "False Positive: The patient is healthy, but the system says there is a tumor. This can cause unnecessary anxiety, follow-up scans, or even invasive procedures.",
+            "modalities": [
+              "text"
+            ],
+            "o": "False Negative",
+            "p": "measures",
+            "s": "False Positive"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "system says there is a tumor"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "True Negative: The patient is healthy, and the report correctly says no tumor."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "true negative",
+        "p": "measures",
+        "s": "edge detection"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "False Negative"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

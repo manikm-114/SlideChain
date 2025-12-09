@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"diary command\",\n      \"p\": \"uses\",\n      \"o\": \"filename\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Start with diary followed by a filename.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"measures\",\n      \"o\": \"elapsed time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MATLAB will show you the elapsed time in seconds.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "diary command",
+        "p": "uses",
+        "o": "filename",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Start with diary followed by a filename."
+      },
+      {
+        "s": "MATLAB",
+        "p": "measures",
+        "o": "elapsed time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MATLAB will show you the elapsed time in seconds."
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+In our last lecture, we examined the sampling theorem in detail, focusing on key concepts such as the sampling rate and the Nyquist rate. By now, you should have a clear idea of why, under certain conditions, we can perfectly recover a continuous signal from its sampled version.
+
+Here’s the key idea:We start with a continuous signal, f of t, shown here. When we sample it at regular time intervals — let's call that interval delta-t — we obtain a discrete sequence of values. The sampling theorem tells us that, if certain conditions are met, we can reconstruct the original continuous signal from these samples without losing any information.
+
+That’s remarkable — because even though we only record values at specific time points, and there’s “missing” information in between, the theorem guarantees perfect recovery. But this only works if the original signal’s Fourier transform is band-limited. That means its frequency spectrum is essentially zero outside a certain range, from minus w to plus w.
+
+In the frequency domain, sampling corresponds to a convolution between the original continuous Fourier spectrum and a periodic train of delta functions. This delta train in frequency comes from the Fourier transform of the impulse train in time. The spacing between the deltas in frequency — which we’ll call P — is the reciprocal of the sampling interval delta-t.
+
+To avoid any distortion, P must be at least 2 W. This ensures there is no overlap between the repeated copies of the spectrum in the frequency domain. You can think of each delta function as a “copying machine” — each one shifts and reproduces the original spectrum at regular intervals. If the copies don’t overlap, the original information is preserved perfectly.
+
+In practice, we can apply a low-pass filter to keep only the central copy of the spectrum, then perform an inverse Fourier transform to reconstruct the exact original signal.
+
+Now, a small note about the special case where P equals exactly 2 W: here, the copies just touch at a single point. This doesn’t cause problems unless that single point is a delta function with a finite value — in which case it could contribute to the result. But in most practical signals, that single point has no significant effect.

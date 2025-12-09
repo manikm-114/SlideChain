@@ -1,0 +1,97 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "diseases"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "By combining PET with MRI-as shown here-you get unique diagnostic information.",
+            "modalities": [
+              "text"
+            ],
+            "o": "unique diagnostic information",
+            "p": "produces",
+            "s": "PET-MRI"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "PET provides molecular and metabolic data",
+            "modalities": [
+              "text"
+            ],
+            "o": "molecular and metabolic data",
+            "p": "measures",
+            "s": "PET"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "MRI supplies detailed anatomical views",
+            "modalities": [
+              "text"
+            ],
+            "o": "detailed anatomical views",
+            "p": "represents",
+            "s": "MRI"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "MRI provides excellent soft tissue contrast",
+            "modalities": [
+              "text"
+            ],
+            "o": "soft tissue contrast",
+            "p": "measures",
+            "s": "MRI"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "molecular and metabolic data"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "for brain imaging and soft tissue tumors, pet-mri truly offers cutting-edge capability"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "By combining PET with MRI-as shown here-you get unique diagnostic information"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "unique diagnostic information",
+        "p": "produces",
+        "s": "PET-MRI"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "larger anatomical areas"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

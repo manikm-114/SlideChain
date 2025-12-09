@@ -1,0 +1,76 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "beam direction"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "when the object is moving, you will see the apparent frequency change."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "apparent frequency change",
+        "p": "measures",
+        "s": "Moving Object"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "reflected signal"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The transducer sends out ultrasound waves at the speed of c toward a stationary object.",
+            "modalities": [
+              "text"
+            ],
+            "o": "ultrasound waves",
+            "p": "uses",
+            "s": "transducer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "Only the portion of the velocity component along the beam direction contributes to the observed frequency shift"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "In a unit time, 4 pulse into the object... you receive four reflected pulses, and that gives you the same frequency as the transmitted one-no frequency change."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Frequency",
+        "p": "measures",
+        "s": "Stationary Object"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "perpendicular motion"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

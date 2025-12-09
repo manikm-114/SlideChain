@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"dead time\",\n      \"p\": \"represents\",\n      \"o\": \"recovery time\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This limitation is called dead time. It reflects the fact that every detector and its electronics need a short period to reset after each event.\"\n    },\n    {\n      \"s\": \"system dead time\",\n      \"p\": \"measures\",\n      \"o\": \"difference between the reciprocal of these two rates\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The system dead time, usually written as the Greek letter tau, can be expressed as the difference between the reciprocal of these two rates: tau equals one over n minus one over N.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "dead time",
+        "p": "represents",
+        "o": "recovery time",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This limitation is called dead time. It reflects the fact that every detector and its electronics need a short period to reset after each event."
+      },
+      {
+        "s": "system dead time",
+        "p": "measures",
+        "o": "difference between the reciprocal of these two rates",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The system dead time, usually written as the Greek letter tau, can be expressed as the difference between the reciprocal of these two rates: tau equals one over n minus one over N."
+      }
+    ]
+  }
+}

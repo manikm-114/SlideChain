@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discrete function\",\n      \"p\": \"represents\",\n      \"o\": \"weighted sum of shifted delta functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"any discrete function — let’s call it g of n — can be expressed as a weighted sum of shifted delta functions.\"\n    },\n    {\n      \"s\": \"discrete function\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"scaled and shifted impulses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we add up all these scaled and shifted impulses, we rebuild the function g.\"\n    },\n    {\n      \"s\": \"discrete function\",\n      \"p\": \"uses\",\n      \"o\": \"delta function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"any discrete function — let’s call it g of n — can be expressed as a weighted sum of shifted delta functions.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "discrete function",
+        "p": "represents",
+        "o": "weighted sum of shifted delta functions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "any discrete function - let’s call it g of n - can be expressed as a weighted sum of shifted delta functions."
+      },
+      {
+        "s": "discrete function",
+        "p": "reconstructs_with",
+        "o": "scaled and shifted impulses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When we add up all these scaled and shifted impulses, we rebuild the function g."
+      },
+      {
+        "s": "discrete function",
+        "p": "uses",
+        "o": "delta function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "any discrete function - let’s call it g of n - can be expressed as a weighted sum of shifted delta functions."
+      }
+    ]
+  }
+}

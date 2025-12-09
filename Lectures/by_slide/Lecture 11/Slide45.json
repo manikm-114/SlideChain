@@ -1,0 +1,163 @@
+{
+  "lecture": "Lecture 11",
+  "slide_id": "Slide45",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide45.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide45.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "threshold",
+              "category": "signal_processing"
+            },
+            {
+              "term": "diseased distribution",
+              "category": "modality"
+            },
+            {
+              "term": "sensitivity",
+              "category": "quality_metric"
+            },
+            {
+              "term": "false positive fraction",
+              "category": "quality_metric"
+            },
+            {
+              "term": "ROC curve",
+              "category": "signal_processing"
+            },
+            {
+              "term": "trade-off",
+              "category": "workflow"
+            },
+            {
+              "term": "moderate",
+              "category": "software"
+            },
+            {
+              "term": "decision-making strategy",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.",
+            "But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"threshold\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"diseased distribution\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"false positive fraction\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"ROC curve\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"trade-off\\\", \\\"category\\\": \\\"workflow\\\"},\\n    {\\\"term\\\": \\\"moderate\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"decision-making strategy\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\\", \\\"But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"threshold\", \"category\": \"signal_processing\"}, {\"term\": \"diseased distribution\", \"category\": \"modality\"}, {\"term\": \"sensitivity\", \"category\": \"quality_metric\"}, {\"term\": \"false positive fraction\", \"category\": \"quality_metric\"}, {\"term\": \"ROC curve\", \"category\": \"signal_processing\"}, {\"term\": \"trade-off\", \"category\": \"workflow\"}, {\"term\": \"moderate\", \"category\": \"software\"}, {\"term\": \"decision-making strategy\", \"category\": \"workflow\"}], \"evidence\": [\"This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\", \"But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide45.json",
+        "parsed": {
+          "s": "<threshold>",
+          "p": "moves",
+          "o": "<decision boundary>",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.0,
+          "evidence": [
+            "That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<diseased distribution>\\\", \\\"p\\\":\\\"measures\\\",\\n     \\\"o\\\":\\\"<non-diseased distribution>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\\"\\n    },\\n    {\\\"s\\\":\\\"<decision boundary>\\\", \\\"p\\\":\\\"moves\\\",\\n     \\\"o\\\":\\\"<threshold>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This time, we shift the decision boundary slightly to the left.\\\"\\n    },\\n    {\\\"s\\\":\\\"<threshold>\\\", \\\"p\\\":\\\"moves\\\",\\n     \\\"o\\\":\\\"<decision boundary>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\\"\\n    },\\n    {\\\"s\\\":\\\"<decision boundary>\\\", \\\"p\\\":\\\"moves\\\",\\n     \\\"o\\\":\\\"<threshold>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"But the trade-off is clear. By moving the line left, we also capture\", \"parsed\": {\"s\": \"<threshold>\", \"p\": \"moves\", \"o\": \"<decision boundary>\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": [\"That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\"]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide45.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "threshold setting",
+              "category": "algorithm"
+            },
+            {
+              "term": "decision boundary",
+              "category": "algorithm"
+            },
+            {
+              "term": "sensitivity",
+              "category": "quality_metric"
+            },
+            {
+              "term": "false positive fraction",
+              "category": "quality_metric"
+            },
+            {
+              "term": "ROC curve",
+              "category": "algorithm"
+            },
+            {
+              "term": "moderate threshold",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "shift the decision boundary slightly to the left",
+            "sensitivity increases",
+            "false positive fraction increases",
+            "On the ROC curve",
+            "This “moderate” threshold represents a more balanced decision-making strategy"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"threshold setting\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"decision boundary\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"false positive fraction\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"ROC curve\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"moderate threshold\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"shift the decision boundary slightly to the left\\\",\\n    \\\"sensitivity increases\\\",\\n    \\\"false positive fraction increases\\\",\\n    \\\"On the ROC curve\\\",\\n    \\\"This “moderate” threshold represents a more balanced decision-making strategy\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"threshold setting\", \"category\": \"algorithm\"}, {\"term\": \"decision boundary\", \"category\": \"algorithm\"}, {\"term\": \"sensitivity\", \"category\": \"quality_metric\"}, {\"term\": \"false positive fraction\", \"category\": \"quality_metric\"}, {\"term\": \"ROC curve\", \"category\": \"algorithm\"}, {\"term\": \"moderate threshold\", \"category\": \"algorithm\"}], \"evidence\": [\"shift the decision boundary slightly to the left\", \"sensitivity increases\", \"false positive fraction increases\", \"On the ROC curve\", \"This “moderate” threshold represents a more balanced decision-making strategy\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide45.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "moderate threshold setting",
+              "p": "represents",
+              "o": "more balanced decision-making strategy",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "This “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"moderate threshold setting\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"more balanced decision-making strategy\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"ROC curve\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"sensitivity and false positive fraction\\\",\\n      \\\"modalities\\\": [\\\"text\\\", \\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"On the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"moderate threshold setting\", \"p\": \"represents\", \"o\": \"more balanced decision-making strategy\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"This “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide45.json",
+        "parsed": {
+          "term": "moderate",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T04:39:46.191770+00:00\", \"text_length\": 942, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"ROC\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"threshold setting\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"sensitivity\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"false positive fraction\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"ROC curve\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"trade-off\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"false alarms\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"moderate\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\\",\\n    \\\"But the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\\",\\n    \\\"On the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to\", \"parsed\": {\"term\": \"moderate\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide45.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T05:48:52.508254+00:00\", \"text_length\": 942, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide45.json",
+        "parsed": {
+          "term": "more balanced decision-making strategy",
+          "category": "algorithm"
+        },
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T03:07:24.527465+00:00\", \"text_length\": 942, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"moderate threshold setting\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"decision boundary\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sensitivity increases\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"false positive fraction increases\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"ROC curve\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"step upward — higher sensitivity\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"step to the right — higher false positive fraction\\\",\\n      \\\"category\\\": \\\"quality_metric\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"more balanced decision-making strategy\\\",\\n      \\\"category\\\": \\\"algorithm\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\\",\\n    \\\"But the trade-off is clear. By moving\", \"parsed\": {\"term\": \"more balanced decision-making strategy\", \"category\": \"algorithm\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide45.json",
+        "parsed": null,
+        "raw": "{\"slide_id\": \"Slide45\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T03:15:55.682992+00:00\", \"text_length\": 942, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s look at a moderate threshold setting.\\n\\nThis time, we shift the decision boundary slightly to the left. What happens? More of the diseased distribution now falls to the right of the threshold. That means a greater fraction of patients with the disease are correctly identified. In other words, the sensitivity increases.\\nBut the trade-off is clear. By moving the line left, we also capture more of the non-diseased distribution in the red region. That means more healthy patients are incorrectly flagged as diseased. The false positive fraction increases.\\n\\nOn the ROC curve, you can see this move as a step upward — higher sensitivity — but also a step to the right — higher false positive fraction. In other words, we’ve shifted from the black cross to the yellow cross on this plot.\\n\\nThis “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Moderate\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"a more balanced decision-making strategy\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This “moderate” threshold represents a more balanced decision-making strategy: better at catching true cases, but at the cost of more false alarms.\\\"\\n    }\\n  ]\\n}\", \"parsed\": null}"
+      }
+    }
+  }
+}

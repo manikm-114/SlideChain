@@ -1,0 +1,12 @@
+Now, let’s work through a more abstract — and slightly more mathematical — example.I like to call this a minds-on example.
+This example is based on continuous convolution, and while it’s not difficult, it does require you to think like in calculus.
+So let’s take our time with it.
+With convolution, the basic process is this:We flip one function, shift it, multiply them point by point, and then integrate over the region where they overlap.
+At first, that might sound a little mechanical. So let’s break it down clearly, step by step.
+We’re working with two functions here:
+f of t, shown in red. This is a triangular function — it starts at zero, rises to a peak at t equals 2, and then drops back to zero.
+g of t, shown in purple. This is a rectangular pulse that spans from t equals minus 2 to plus 2, with a constant value of 3.
+Now, because g of t is symmetric, flipping it across the vertical axis doesn’t change its shape —which actually makes our job easier.
+So we’ll flip g to get g of t minus tau, and then slide it across f of tau,evaluating the convolution at each position t.
+Here’s the key part:Both functions are compactly supported, meaning they’re only non-zero over a specific range.That means the overlap only happens during certain intervals.
+So to compute the convolution, we’ll handle it case by case — based on the value of t.

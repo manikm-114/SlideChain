@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "delta-u"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "N = T / (1/P) = TP",
+            "modalities": [
+              "text"
+            ],
+            "o": "T multiplied by P",
+            "p": "represents",
+            "s": "N"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "M = N = P / (1/T) = PT",
+            "modalities": [
+              "text"
+            ],
+            "o": "T multiplied by P",
+            "p": "represents",
+            "s": "M"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "mathematics"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "N = T / P = TP",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "T",
+            "p": "depends_on",
+            "s": "N"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "if you zoom in more on one domain, you automatically zoom out in the other"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "In the frequency domain, we have the exact same number of samples, also T multiplied by P. We call this number M, and here P is the total span of one period in frequency, while T controls the sampling density in frequency."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "T multiplied by P",
+        "p": "represents",
+        "s": "M"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Sampling step size in time and frequency"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "N = T * P",
+            "modalities": [
+              "text"
+            ],
+            "o": "N",
+            "p": "measures",
+            "s": "total number of samples"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide17.txt"
+  },
+  "slide_id": "Slide17"
+}

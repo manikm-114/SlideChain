@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide9",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, just for your broader knowledge, let me connect this to another important concept in information theory: mutual information.\n\nMutual information is a way to measure how much knowing one random variable tells us about another. For example, suppose we have two variables, X and Y. If they are completely independent, then measuring X tells us nothing about Y. In that case, their mutual information is zero. On the other hand, if X and Y are perfectly dependent — meaning that once you know X, you completely know Y — then their mutual information is very high. Most real-world situations fall somewhere in between.\n\nMathematically, mutual information can actually be expressed in terms of the KL divergence. Specifically, it’s the KL divergence between the joint distribution of X and Y, and the product of their marginal distributions. Don’t worry about the details of the formula — the key idea is that it quantifies how much information one variable provides about the other.\nYou can also think of it this way: when you measure one variable, how much does your uncertainty about the other variable decrease? That decrease in uncertainty is exactly what mutual information captures.\n\nIn practice, this idea is very useful in areas like image registration, where we align two images. Instead of just matching pixel intensities, we can maximize the mutual information between the two images. That way, even if the images look very different in terms of brightness or contrast, we can still measure how well they correspond.\n\nSo, mutual information is essentially a generalization of correlation, but in the language of information theory. It goes beyond simple linear relationships and captures any kind of statistical dependence.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"mutual information\", \"category\": \"communication\"},\n    {\"term\": \"KL divergence\", \"category\": \"mathematics\"},\n    {\"term\": \"image registration\", \"category\": \"reconstruction\"},\n    {\"term\": \"uncertainty\", \"category\": \"mathematics\"},\n    {\"term\": \"correlation\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Mutual information is a way to measure how much knowing one random variable tells us about another.\", \n               \"Mathematically, mutual information can actually be expressed in terms of the KL divergence.\", \n               \"In practice, this idea is very useful in areas like image registration, where we align two images.\", \n               \"Instead of just matching pixel intensities, we can maximize the mutual information between the two images.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "mutual information",
+        "category": "communication"
+      },
+      {
+        "term": "KL divergence",
+        "category": "mathematics"
+      },
+      {
+        "term": "image registration",
+        "category": "reconstruction"
+      },
+      {
+        "term": "uncertainty",
+        "category": "mathematics"
+      },
+      {
+        "term": "correlation",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Mutual information is a way to measure how much knowing one random variable tells us about another.",
+      "Mathematically, mutual information can actually be expressed in terms of the KL divergence.",
+      "In practice, this idea is very useful in areas like image registration, where we align two images.",
+      "Instead of just matching pixel intensities, we can maximize the mutual information between the two images."
+    ]
+  }
+}

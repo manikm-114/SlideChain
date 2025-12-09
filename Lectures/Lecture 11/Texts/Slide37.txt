@@ -1,0 +1,19 @@
+Now that we’ve defined the four possible outcomes — true positives, true negatives, false positives, and false negatives — we can formally define sensitivity and specificity.
+
+Sensitivity is the proportion of true positives among all actual positive cases. In formula form, it is:
+Sensitivity equals TP over TP plus FN.
+
+In other words, sensitivity answers the question: “If the patient really has the disease, how likely are we to detect it?”
+For example, suppose 100 patients truly have lung cancer. If our system correctly detects 50 of them, but misses the other 50, then the sensitivity is 50%. Sensitivity is essentially a measure of how confident we are when we say “Yes, disease is present.”
+Now let’s move to specificity.
+Specificity is the proportion of true negatives among all actual negative cases. The formula is:
+Specificity equals TN over TN plus FP.
+
+This answers the question: “If the patient really does not have the disease, how likely are we to correctly say no?”
+For example, if 100 healthy people are scanned, and 95 are correctly reported as negative while 5 are mistakenly labeled as positive, the specificity is 95%. Specificity is essentially a measure of how confident we are when we say “No, there is no disease.”
+
+So, in summary:
+Sensitivity tells us how good we are at catching disease cases.
+Specificity tells us how good we are at avoiding false alarms.
+
+Both are critical in clinical imaging. High sensitivity ensures we don’t miss disease, while high specificity ensures we don’t overwhelm patients with unnecessary worry or treatment.

@@ -1,0 +1,62 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "t"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "using x-ray measurements, you perform a physical or mathematical transform from f of x, y to p of theta, t"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Using X-ray measurements, you perform a physical or mathematical transform from f of x, y to p of theta, t."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "p(\u03b8,t)",
+        "p": "produces",
+        "s": "f(x,y)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "cannot resolve"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "If you have a parallel beam at projection angle theta, and you have, say, one hundred rays or five hundred rays, then you have one hundred or five hundred linear system equations.",
+            "modalities": [
+              "text"
+            ],
+            "o": "linear system equations",
+            "p": "measures",
+            "s": "X-ray measurements"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

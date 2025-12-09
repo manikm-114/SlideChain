@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide49",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T22:21:34.295465+00:00",
+  "text_length": 520,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow it’s time to apply what we’ve learned.\nSuppose the time constant RC equals 1 second. Use MATLAB to generate the plots shown in the first row.\nYour goal is to compute the convolution of the input signal with the system’s impulse response:\n h of t equals R C times e to the power of minus t over R C, multiplied by the unit step function\nFocus on how the input signal and the impulse response interact to produce the output.\nPlease submit:\n– Your MATLAB script\u000b– The resulting figures\u000b– All combined in a Word document\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"impulse response\", \"category\": \"signal_processing\"},\n    {\"term\": \"time constant RC\", \"category\": \"mathematics\"},\n    {\"term\": \"unit step function\", \"category\": \"mathematics\"},\n    {\"term\": \"input signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"output signal\", \"category\": \"signal_processing\"},\n    {\"term\": \"plot\", \"category\": \"data_processing\"},\n    {\"term\": \"Word document\", \"category\": \"data_processing\"}\n  ],\n  \"evidence\": [\n    \"Use MATLAB to generate the plots shown in the first row.\",\n    \"Your goal is to compute the convolution of the input signal with the system’s impulse response.\",\n    \"Please submit: Your MATLAB script, The resulting figures, All combined in a Word document.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "impulse response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "time constant RC",
+        "category": "mathematics"
+      },
+      {
+        "term": "unit step function",
+        "category": "mathematics"
+      },
+      {
+        "term": "input signal",
+        "category": "signal_processing"
+      },
+      {
+        "term": "plot",
+        "category": "data_processing"
+      },
+      {
+        "term": "Word document",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "Use MATLAB to generate the plots shown in the first row.",
+      "Your goal is to compute the convolution of the input signal with the system's impulse response.",
+      "Please submit: Your MATLAB script, The resulting figures, All combined in a Word document."
+    ]
+  }
+}

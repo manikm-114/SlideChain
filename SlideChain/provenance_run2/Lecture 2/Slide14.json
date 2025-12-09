@@ -1,0 +1,152 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "mathematics",
+            "term": "special-purpose matrices"
+          },
+          {
+            "category": "mathematics",
+            "term": "diagonal matrix"
+          },
+          {
+            "category": "mathematics",
+            "term": "identity matrix"
+          },
+          {
+            "category": "workflow",
+            "term": "initializing arrays"
+          }
+        ],
+        "evidence": [
+          "MATLAB also makes it easy to generate special-purpose matrices",
+          "diag of v creates a diagonal matrix from a vector",
+          "eye of n",
+          "zeros of m and n",
+          "ones of m and n",
+          "These kinds of matrices are especially useful when initializing arrays"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "To create a matrix full of zeros, use zeros of m and n."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "zeros(m,n)",
+        "p": "uses",
+        "s": "MATLAB"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "diag"
+          },
+          {
+            "category": "mathematics",
+            "term": "zeros"
+          },
+          {
+            "category": "mathematics",
+            "term": "ones"
+          }
+        ],
+        "evidence": [
+          "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "These kinds of matrices are especially useful when initializing arrays before filling them with computed values"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "% m-by-n zero matrix."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "an m-by-n zero matrix",
+        "p": "produces",
+        "s": "zeros(m,n)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "diag"
+          },
+          {
+            "category": "software",
+            "term": "zeros"
+          },
+          {
+            "category": "software",
+            "term": "ones"
+          },
+          {
+            "category": "mathematics",
+            "term": "special-purpose matrices"
+          },
+          {
+            "category": "mathematics",
+            "term": "diagonal matrix"
+          },
+          {
+            "category": "mathematics",
+            "term": "identity matrix"
+          },
+          {
+            "category": "data_processing",
+            "term": "initializing arrays"
+          }
+        ],
+        "evidence": [
+          "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.",
+          "For example, diag of v creates a diagonal matrix from a vector. You can also reverse it: diag of A pulls the diagonal elements from a matrix.",
+          "If you need an identity matrix - that\u2019s a square matrix with ones on the diagonal and zeros elsewhere - just write eye of n.",
+          "To create a matrix full of zeros, use zeros of m and n. If you need one filled with ones, use ones of m and n."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "MATLAB also makes it easy to generate special-purpose matrices, which are often useful for setting up or testing algorithms.",
+            "modalities": [
+              "text"
+            ],
+            "o": "special-purpose matrices",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

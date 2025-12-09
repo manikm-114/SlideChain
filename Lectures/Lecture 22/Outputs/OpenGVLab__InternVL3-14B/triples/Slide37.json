@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"interference pattern\",\n      \"p\": \"contains\",\n      \"o\": \"side lobes\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"interference pattern contains side lobes\"\n    },\n    {\n      \"s\": \"side lobes\",\n      \"p\": \"produces\",\n      \"o\": \"false echoes\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"these side lobes can create misleading signals in the image\"\n    },\n    {\n      \"s\": \"reverberation\",\n      \"p\": \"produces\",\n      \"o\": \"delayed echoes\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"These multiple reflections cause several delayed echoes to appear on the image\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "side lobes",
+        "p": "produces",
+        "o": "false echoes",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "these side lobes can create misleading signals in the image"
+      },
+      {
+        "s": "reverberation",
+        "p": "produces",
+        "o": "delayed echoes",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These multiple reflections cause several delayed echoes to appear on the image"
+      }
+    ]
+  }
+}

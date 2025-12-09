@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"tomographic imaging\", \"p\":\"uses\", \"o\":\"inversion\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"to get a cross-sectional image, we need to do something called inversion.\"},\n    {\"s\":\"inversion\", \"p\":\"represents\", \"o\":\"inverse problem\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It’s different from the more familiar forward problem, where you know all the inputs, and a forward model, and calculate the outcome.\"},\n    {\"s\":\"boiling an egg\", \"p\":\"represents\", \"o\":\"forward problem\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"think of boiling an egg. That’s a straightforward process.\"},\n    {\"s\":\"unboiling an egg\", \"p\":\"represents\", \"o\":\"inverse problem\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"what if someone gave you a boiled egg and said, “Unboil it”? That’s the inverse problem.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "tomographic imaging",
+        "p": "uses",
+        "o": "inversion",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "to get a cross-sectional image, we need to do something called inversion."
+      },
+      {
+        "s": "inversion",
+        "p": "represents",
+        "o": "inverse problem",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s different from the more familiar forward problem, where you know all the inputs, and a forward model, and calculate the outcome."
+      },
+      {
+        "s": "boiling an egg",
+        "p": "represents",
+        "o": "forward problem",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "think of boiling an egg. That’s a straightforward process."
+      }
+    ]
+  }
+}

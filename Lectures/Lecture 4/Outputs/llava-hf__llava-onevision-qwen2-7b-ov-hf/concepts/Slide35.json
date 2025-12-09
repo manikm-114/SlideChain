@@ -1,0 +1,28 @@
+{
+  "slide_id": "Slide35",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn imaging, 2D convolution is a powerful tool for modeling blurring.\nLet’s take a look at how this works using a simple example.\nOn the left, we see an input image represented as a matrix of pixel intensities.\u000bEach number corresponds to the brightness level of a pixel.\nIn the middle, we see a 3 by 3 averaging mask.\u000bAll entries are 1, and we divide the result by 9 —\u000bwhich means we’re averaging the values in a 3 by 3 window.\nThis operation is a 2D convolution:\u000bwe slide the mask across the image, and at each position,\u000bwe multiply corresponding elements, sum them up, and store the result in the center pixel of the output.\nLet’s focus on the region that’s highlighted.\nFor the top-left example, the 3 by 3 neighborhood includes values like 1, 2, 3, and so on.\u000bWhen we sum those values and divide by 9, we get the blurred output value, shown in yellow.\nThe same thing happens throughout the image.\u000bEach pixel in the output image becomes the average of itself and its eight neighbors.\nThe result?\u000bSharp transitions are smoothed out, fine details are softened —\u000band the image takes on a blurred appearance.\nThis is a fundamental application of 2D convolution —\u000band it’s used not only for visual effects, but also as a preprocessing step in many medical imaging tasks,\u000blike noise reduction and feature extraction.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"averaging mask\", \"category\": \"signal_processing\"},\n    {\"term\": \"image blurring\", \"category\": \"image_processing\"},\n    {\"term\": \"pixel intensities\", \"category\": \"image_processing\"},\n    {\"term\": \"2D convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"preprocessing step\", \"category\": \"image_processing\"},\n    {\"term\": \"noise reduction\", \"category\": \"image_processing\"},\n    {\"term\": \"feature extraction\", \"category\": \"image_processing\"}\n  ],\n  \"evidence\": [\"In imaging, 2D convolution is a powerful tool for modeling blurring.\", \n               \"Each pixel in the output image becomes the average of itself and its eight neighbors.\", \n               \"The result? Sharp transitions are smoothed out, fine details are softened — and the image takes on a blurred appearance.\", \n               \"This is a fundamental application of 2D convolution — and it’s used not only for visual effects, but also as a preprocessing step in many medical imaging tasks, like noise reduction and feature extraction.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "averaging mask",
+        "category": "signal_processing"
+      },
+      {
+        "term": "2D convolution",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "In imaging, 2D convolution is a powerful tool for modeling blurring.",
+      "Each pixel in the output image becomes the average of itself and its eight neighbors.",
+      "The result? Sharp transitions are smoothed out, fine details are softened - and the image takes on a blurred appearance.",
+      "This is a fundamental application of 2D convolution - and it’s used not only for visual effects, but also as a preprocessing step in many medical imaging tasks, like noise reduction and feature extraction."
+    ]
+  }
+}

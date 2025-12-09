@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide43",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T12:29:39.871182+00:00",
+  "text_length": 861,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThe goal is to make your line integral data accurately reflect the true line integrals through the body. This allows you to reconstruct images that truly represent the concentration of radiotracer in the organ of interest. You can do this for each organ and at each time point during the PET imaging session. By plotting these time curves, you can assess perfusion in different regions and extract physiologically relevant parameters. \n\nThis process gives you more diagnostic information and helps to interpret the results accurately. These steps—attenuation correction, scatter and random correction, and dead time correction—are all essential for quantitative PET imaging. They work together to ensure that your final images and time-activity curves are both accurate and clinically meaningful, which is the central principle behind quantitative PET analysis.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Quantitative PET\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\", \"o\":\"Attenuation Correction\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"MRI scanner\", \"p\":\"produces\", \"o\":\"image of a cross-section of the body’s anatomy\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"its purpose is to measure and produce an image of a cross-section of the body’s anatomy\"},\n    {\"s\":\"high-quality system\", \"p\":\"produces\", \"o\":\"sharp, high-contrast images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"A high-quality system will produce sharp, high-contrast images\"},\n    {\"s\":\"less precise system\", \"p\":\"produces\", \"o\":\"blurred details\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"a less precise system might blur details\"},\n    {\"s\":\"imaging systems\", \"p\":\"belong to\", \"o\":\"same family as sensing systems and measurement systems\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"imaging systems, sensing systems, and measurement systems all belong to the same family\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MRI scanner",
+        "p": "produces",
+        "o": "image of a cross-section of the body’s anatomy",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "its purpose is to measure and produce an image of a cross-section of the body’s anatomy"
+      },
+      {
+        "s": "high-quality system",
+        "p": "produces",
+        "o": "sharp, high-contrast images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A high-quality system will produce sharp, high-contrast images"
+      }
+    ]
+  }
+}

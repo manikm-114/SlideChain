@@ -1,0 +1,204 @@
+{
+  "lecture": "Lecture 16",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "cyclotron"
+          },
+          {
+            "category": "physics",
+            "term": "radionuclides"
+          },
+          {
+            "category": "instrumentation",
+            "term": "biosynthesizer"
+          },
+          {
+            "category": "modality",
+            "term": "radiotracer"
+          },
+          {
+            "category": "modality",
+            "term": "PET imaging"
+          },
+          {
+            "category": "instrumentation",
+            "term": "computer terminal"
+          },
+          {
+            "category": "workflow",
+            "term": "workflow"
+          },
+          {
+            "category": "modality",
+            "term": "tracer"
+          }
+        ],
+        "evidence": [
+          "particle accelerator that produces the radionuclides",
+          "used to process the raw radioactive material",
+          "injectable tracer",
+          "monitored and controlled",
+          "workflow: the cyclotron generates the radionuclide",
+          "radiation",
+          "FDG for PET imaging",
+          "injectable tracer",
+          "computer terminal"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "the cyclotron itself, the particle accelerator that produces the radionuclides",
+            "modalities": [
+              "text"
+            ],
+            "o": "radionuclides",
+            "p": "produces",
+            "s": "cyclotron"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the biosynthesizer, which is used to process the raw radioactive material",
+            "modalities": [
+              "text"
+            ],
+            "o": "raw radioactive material",
+            "p": "uses",
+            "s": "biosynthesizer"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "process the raw radioactive material into a usable radiotracer",
+            "modalities": [
+              "text"
+            ],
+            "o": "radiotracer",
+            "p": "produces",
+            "s": "biosynthesizer"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "nuclear imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The computer terminal is used to monitor and control the entire operation.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Cyclotron",
+            "p": "uses",
+            "s": "Computer Terminal"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "clinical use"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "On the right is the cyclotron itself, the particle accelerator that produces the radionuclides.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "radionuclide",
+            "p": "produces",
+            "s": "Cyclotron"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "In the middle is the biosynthesizer, which is used to process the raw radioactive material into a usable radiotracer",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "raw radioactive material",
+            "p": "uses",
+            "s": "Biosynthesizer"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "On the left is the computer terminal, where the entire operation is monitored and controlled.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "entire operation",
+            "p": "uses",
+            "s": "Computer Terminal"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "cyclotron"
+          },
+          {
+            "category": "physics",
+            "term": "radionuclide"
+          },
+          {
+            "category": "instrumentation",
+            "term": "biosynthesizer"
+          },
+          {
+            "category": "modality",
+            "term": "injectable tracer"
+          },
+          {
+            "category": "software",
+            "term": "computer terminal"
+          },
+          {
+            "category": "modality",
+            "term": "nuclear imaging"
+          }
+        ],
+        "evidence": [
+          "This layout highlights the workflow: the cyclotron generates the radionuclide, the biosynthesizer prepares it into an injectable tracer, and the computer terminal ensures that everything runs safely and precisely. Together, these components allow us to produce short-lived tracers on demand for clinical use in nuclear imaging."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The cyclotron generates the radionuclide.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radionuclide",
+            "p": "uses",
+            "s": "cyclotron"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Images\\Slide32.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 16\\Texts\\Slide32.txt"
+  },
+  "slide_id": "Slide32"
+}

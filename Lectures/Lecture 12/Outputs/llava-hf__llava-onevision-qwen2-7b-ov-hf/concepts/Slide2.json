@@ -1,0 +1,57 @@
+{
+  "slide_id": "Slide2",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nwe are right on schedule, and today marks the beginning of our detailed study of imaging modalities.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"imaging modalities\", \"category\": \"modality\"},\n    {\"term\": \"beginning\", \"category\": \"workflow\"},\n    {\"term\": \"study\", \"category\": \"workflow\"},\n    {\"term\": \"detailed\", \"category\": \"workflow\"},\n    {\"term\": \"today\", \"category\": \"software\"},\n    {\"term\": \"marks\", \"category\": \"software\"},\n    {\"term\": \"schedule\", \"category\": \"software\"},\n    {\"term\": \"beginning\", \"category\": \"software\"},\n    {\"term\": \"detail\", \"category\": \"software\"},\n    {\"term\": \"study\", \"category\": \"software\"},\n    {\"term\": \"modalities\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"we are right on schedule, and today marks the beginning of our detailed study of imaging modalities.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "imaging modalities",
+        "category": "modality"
+      },
+      {
+        "term": "beginning",
+        "category": "workflow"
+      },
+      {
+        "term": "study",
+        "category": "workflow"
+      },
+      {
+        "term": "detailed",
+        "category": "workflow"
+      },
+      {
+        "term": "today",
+        "category": "software"
+      },
+      {
+        "term": "marks",
+        "category": "software"
+      },
+      {
+        "term": "schedule",
+        "category": "software"
+      },
+      {
+        "term": "beginning",
+        "category": "software"
+      },
+      {
+        "term": "detail",
+        "category": "software"
+      },
+      {
+        "term": "study",
+        "category": "software"
+      },
+      {
+        "term": "modalities",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "we are right on schedule, and today marks the beginning of our detailed study of imaging modalities."
+    ]
+  }
+}

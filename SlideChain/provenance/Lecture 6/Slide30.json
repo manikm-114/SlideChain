@@ -1,0 +1,81 @@
+{
+  "lecture": "Lecture 6",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "triangle function"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Convolution in the time domain corresponds to multiplication in the frequency domain.",
+            "modalities": [
+              "text"
+            ],
+            "o": "multiplication in the frequency domain",
+            "p": "represents",
+            "s": "convolution theorem"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "the transform of f convolved with g is F of s times G of s.",
+            "modalities": [
+              "text"
+            ],
+            "o": "sinc squared",
+            "p": "produces",
+            "s": "convolution theorem"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "If the Fourier transform of f of t is capital F of s, and the transform of g of t is capital G of s, then the transform of f convolved with g is F of s times G of s.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Fourier transform",
+            "p": "depends_on",
+            "s": "convolution theorem"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sinc"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Fourier transform of a gate function is a sinc function"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "If the Fourier transform of f of t is capital F of s, and the transform of g of t is capital G of s, then the transform of f convolved with g is F of s times G of s."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "F(s) times G(s)",
+        "p": "produces",
+        "s": "Fourier transform of f convolved with g"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": null,
+      "triples": null
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 6\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

@@ -1,0 +1,130 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "mathematics",
+            "term": "vector"
+          },
+          {
+            "category": "data_processing",
+            "term": "plot"
+          },
+          {
+            "category": "signal_processing",
+            "term": "flip"
+          },
+          {
+            "category": "signal_processing",
+            "term": "shift"
+          },
+          {
+            "category": "signal_processing",
+            "term": "pairwise products"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear and shift-invariant"
+          }
+        ],
+        "evidence": [
+          "MATLAB code shown on the slide",
+          "define x as the vector",
+          "y equals conv of x and h",
+          "flip the right hand",
+          "slide it across the left hand",
+          "pairwise products at each shift",
+          "linear and shift-invariant",
+          "how the system responds to any input"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Then we call y equals conv of x and h and finally, we plot the result.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "plot",
+            "p": "produces",
+            "s": "MATLAB code"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Practicing with simple examples like this helps you visualize and internalize the convolution process - flipping, shifting, multiplying, and adding.",
+            "modalities": [
+              "text"
+            ],
+            "o": "flipping, shifting, multiplying, and adding",
+            "p": "represents",
+            "s": "convolution process"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "And in imaging systems, which are designed to be linear and shift-invariant, convolution defines how the system responds to any input.",
+            "modalities": [
+              "text"
+            ],
+            "o": "convolution",
+            "p": "depends_on",
+            "s": "imaging systems"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "convolution defines"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "convolution defines how the system responds to any input"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "On your right hand, the values go the other way - your little finger is 1, ring finger is 2, and it increases up to 5 at the thumb."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "right hand finger values",
+        "p": "represents",
+        "s": "h=[1 2 3 4 5]"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "mastering"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide26.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide26.txt"
+  },
+  "slide_id": "Slide26"
+}

@@ -1,0 +1,124 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Signal sampling"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Continuous signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Shah function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Impulse train"
+          },
+          {
+            "category": "mathematics",
+            "term": "Delta functions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Sampled function"
+          }
+        ],
+        "evidence": [
+          "Signal sampling is a fundamental concept",
+          "At the top, we have our continuous signal",
+          "Next, we have what\u2019s called a Shah function, or an impulse train",
+          "This is simply a series of delta functions",
+          "When we multiply the continuous signal f of x by this impulse train",
+          "This multiplication is done point-by-point"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This is simply a series of delta functions, each spaced t units apart."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "series of delta functions",
+        "p": "represents",
+        "s": "Shah function (impulse train)"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": null,
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "the sampled signal is just the original function, but only at discrete, regularly spaced points"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "When we multiply the continuous signal f of x by this impulse train, we get the sampled function."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "f(x)",
+        "p": "uses",
+        "s": "Shah Function (Impulse Train)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "signal sampling"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Shah function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "impulse train"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampled function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete, regularly spaced points"
+          }
+        ],
+        "evidence": [
+          "At the top, we have our continuous signal, f x. This is defined for every value of x and could represent anything - a sound wave, an image profile, or a measured signal.",
+          "Next, we have what\u2019s called a Shah function, or an impulse Train. This is simply a series of delta functions, each spaced t units apart.",
+          "When we multiply the continuous signal f of x by this impulse train, we get the sampled function.",
+          "So the sampled signal is really the original signal\u2019s values, \u201cattached\u201d to the impulses in the train. The impulses mark the positions, and the heights of the impulses carry the signal\u2019s values at those positions."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

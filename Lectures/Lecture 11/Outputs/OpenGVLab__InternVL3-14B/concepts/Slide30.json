@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"spatial resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"delta function\", \"category\": \"mathematics\"},\n    {\"term\": \"point spread function (PSF)\", \"category\": \"signal_processing\"},\n    {\"term\": \"full width at half maximum (FWHM)\", \"category\": \"quality_metric\"},\n    {\"term\": \"modulation transfer function (MTF)\", \"category\": \"quality_metric\"},\n    {\"term\": \"Fourier analysis\", \"category\": \"frequency_domain\"}\n  ],\n  \"evidence\": [\n    \"Spatial Resolution = Full Width at Half Maximum (FWHM) of PSF\",\n    \"Mathematically, we describe each of those points as a delta function\",\n    \"This blur is called the point spread function, or PSF\",\n    \"The critical threshold is defined by the full width at half maximum, or FWHM\",\n    \"Another way to analyze resolution — which we’ll get to shortly — is through the modulation transfer function, or MTF\",\n    \"which uses Fourier analysis to quantify how well different spatial frequencies are preserved in the image\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "spatial resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "frequency_domain"
+      }
+    ],
+    "evidence": [
+      "Spatial Resolution = Full Width at Half Maximum (FWHM) of PSF",
+      "Mathematically, we describe each of those points as a delta function",
+      "This blur is called the point spread function, or PSF",
+      "The critical threshold is defined by the full width at half maximum, or FWHM",
+      "Another way to analyze resolution - which we’ll get to shortly - is through the modulation transfer function, or MTF",
+      "which uses Fourier analysis to quantify how well different spatial frequencies are preserved in the image"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+Let’s now bring everything together in one big picture, but with a bit more detail.
+
+We start with a continuous function, f of t, and its continuous Fourier spectrum, capital F of u. Our goal is to sample both the time domain and the frequency domain in a way that makes sense for digital processing.
+
+First, let’s ask: how many samples will we have in the time domain?
+This depends on two things:
+The sampling interval in time, delta-t. This is equal to one over capital P, where capital P is the spacing in the frequency domain. The smaller the delta-t, the more data points we collect.
+The total duration of the signal, capital T. The longer we record, the more samples we have.
+The total number of samples in the time domain — call it N — is simply the total duration T divided by delta-t. Since delta-t is one over P.
+
+We can write:N equals T multiplied by P.
+Now let’s switch to the frequency domain.
+Here, the total span of one period in frequency is capital P. The sampling interval in frequency, delta-u, is equal to one over capital T. So the total number of samples in frequency over one period — call it M — is the total span P divided by delta-u. That’s again P multiplied by T.
+This symmetry is important:The number of data points in the time domain and the number of data points in the frequency domain are the same — both equal to P multiplied by T.
+
+So whether we’re sampling in time or in frequency, the total number of samples is determined by the product of the total span in one domain and the sampling density in the other.
+
+This is the balanced relationship that underlies the discrete Fourier transform, and it’s why we can move between time and frequency representations so efficiently in digital signal processing.

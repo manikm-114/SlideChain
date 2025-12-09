@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide35",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T02:03:05.742003+00:00",
+  "text_length": 723,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIf you’d like to explore these ideas further, MathWorks has some excellent tutorials and examples in its documentation.\n\nThis particular page walks through the relationship between linear and circular convolution in MATLAB. It explains the key conditions under which the two are equivalent, and shows how zero padding can be used to make circular convolution behave like linear convolution.\n\nYou’ll also find clear MATLAB examples here — creating vectors, padding them to the right length, applying the FFT, multiplying in the frequency domain, and using the inverse FFT to get back to the time domain.\nSo, if you want to reinforce what we’ve just covered or see it implemented step-by-step, this is a great place to start.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"linear and circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"inverse FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"This particular page walks through the relationship between linear and circular convolution in MATLAB.\", \"You’ll also find clear MATLAB examples here — creating vectors, padding them to the right length, applying the FFT, multiplying in the frequency domain, and using the inverse FFT to get back to the time domain.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "linear and circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "inverse FFT",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "This particular page walks through the relationship between linear and circular convolution in MATLAB.",
+      "You'll also find clear MATLAB examples here - creating vectors, padding them to the right length, applying the FFT, multiplying in the frequency domain, and using the inverse FFT to get back to the time domain."
+    ]
+  }
+}

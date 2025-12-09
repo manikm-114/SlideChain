@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide50",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere we have a summary table of T1 and T2 relaxation times for different tissues, measured at a field strength of one point five Tesla.\n\nFor fat, the T1 relaxation time is about two hundred sixty milliseconds, and the T2 is about eighty milliseconds.\nFor muscle, T1 is around eight hundred seventy milliseconds, while T2 is much shorter, about forty-five milliseconds.\nIn the brain, gray matter has a T1 of about nine hundred milliseconds and a T2 of about one hundred milliseconds. White matter is slightly shorter, with a T1 of about seven hundred eighty milliseconds and a T2 of about ninety milliseconds.\nThe liver shows a T1 of about five hundred milliseconds and a T2 of about forty milliseconds.\nFinally, cerebrospinal fluid has the longest times by far: a T1 of about two thousand four hundred milliseconds and a T2 of about one hundred sixty milliseconds.\n\nThese values illustrate a key point: different tissues have different relaxation times, and that difference is what gives MRI its powerful ability to generate contrast between tissues.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"fat\", \"p\":\"measures\", \"o\":\"T1 relaxation time\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The T1 relaxation time for fat is about two hundred sixty milliseconds.\"},\n    {\"s\":\"fat\", \"p\":\"measures\", \"o\":\"T2 relaxation time\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The T2 relaxation time for fat is about eighty milliseconds.\"},\n    {\"s\":\"muscle\", \"p\":\"measures\", \"o\":\"T1 relaxation time\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The T1 relaxation time for muscle is around eight hundred seventy milliseconds.\"},\n    {\"s\":\"muscle\", \"p\":\"measures\", \"o\":\"T2 relaxation time\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The T2 relaxation time for muscle is about forty-five milliseconds.\"},\n    {\"s\":\"gray matter\", \"p\":\"measures\", \"o\":\"T1 relaxation time\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The T1 relaxation time for gray matter",
+  "parsed": {
+    "s": "muscle",
+    "p": "measures",
+    "o": "T2 relaxation time",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "The T2 relaxation time for muscle is about forty-five milliseconds."
+    ]
+  }
+}

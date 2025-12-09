@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:25:04.932289+00:00",
+  "text_length": 583,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere, you can see the idea visually.\nImagine the original continuous function shown in gray.\u000bWe can approximate it piecewise using constant slices — small rectangles, each with a height that matches the continuous function’s value at that point.\nEach rectangle corresponds to a delta function, or a rectangular bar, scaled to match the original function’s height.\n\nThe key point is: the area under each rectangle is equivalent to the area under the corresponding delta function at that location.\nIn this way, everything ties together between the continuous and discrete perspectives.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"rect/gate functions\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta function\", \"category\": \"signal_processing\"},\n    {\"term\": \"area under the curve\", \"category\": \"mathematics\"},\n    {\"term\": \"continuous function\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete perspective\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"approximate it piecewise using constant slices\", \"each rectangle corresponds to a delta function\", \"the area under each rectangle is equivalent to the area under the corresponding delta function\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "delta function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete perspective",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "approximate it piecewise using constant slices",
+      "each rectangle corresponds to a delta function",
+      "the area under each rectangle is equivalent to the area under the corresponding delta function"
+    ]
+  }
+}

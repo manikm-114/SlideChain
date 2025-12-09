@@ -1,0 +1,7 @@
+When we construct a similarity measure, the goal is to capture not just how different two images are, but how similar they are. To do this properly, we want our measure to satisfy three basic conditions, or postulates.
+
+First, symmetry. The similarity between X and Y should be the same as the similarity between Y and X. In other words, order doesn’t matter. If you compare image A with image B, you should get the same result as comparing image B with image A.
+Second, boundedness. The similarity value should always be between zero and one. A score of one means the images are perfectly identical. A score closer to zero means they are very different.
+Third, a unique maximum. The similarity should only reach the maximum value of one if the two images are exactly the same, pixel for pixel. That way, the measure has a clear and meaningful interpretation.
+
+These three conditions — symmetry, boundedness, and unique maximum — make sure that a similarity measure behaves logically and reliably. SSIM is designed to satisfy all of these postulates.

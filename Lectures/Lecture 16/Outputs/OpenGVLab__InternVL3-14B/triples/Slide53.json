@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide53",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"PET imaging\",\n      \"p\": \"uses\",\n      \"o\": \"paired pulses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This principle—detecting paired pulses and building lines of response—is the foundation of PET imaging.\"\n    },\n    {\n      \"s\": \"system\",\n      \"p\": \"produces\",\n      \"o\": \"line of response\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Whenever a coincidence is confirmed, the system draws what we call a line of response between the two detectors.\"\n    },\n    {\n      \"s\": \"system\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"three-dimensional image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"By collecting many such lines from annihilations throughout the body, we can reconstruct a full three-dimensional image of tracer distribution inside the patient.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "PET imaging",
+        "p": "uses",
+        "o": "paired pulses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This principle-detecting paired pulses and building lines of response-is the foundation of PET imaging."
+      },
+      {
+        "s": "system",
+        "p": "produces",
+        "o": "line of response",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Whenever a coincidence is confirmed, the system draws what we call a line of response between the two detectors."
+      },
+      {
+        "s": "system",
+        "p": "reconstructs_with",
+        "o": "three-dimensional image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By collecting many such lines from annihilations throughout the body, we can reconstruct a full three-dimensional image of tracer distribution inside the patient."
+      }
+    ]
+  }
+}

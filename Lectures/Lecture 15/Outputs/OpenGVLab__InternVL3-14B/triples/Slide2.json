@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide2",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"course\",\n      \"p\": \"uses\",\n      \"o\": \"MATLAB\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MATLAB practice\"\n    },\n    {\n      \"s\": \"course\",\n      \"p\": \"depends_on\",\n      \"o\": \"Fourier series\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Fourier series\"\n    },\n    {\n      \"s\": \"course\",\n      \"p\": \"depends_on\",\n      \"o\": \"signal processing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"signal processing\"\n    },\n    {\n      \"s\": \"CT\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"computed tomography\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"computed tomography\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "course",
+        "p": "uses",
+        "o": "MATLAB",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MATLAB practice"
+      },
+      {
+        "s": "course",
+        "p": "depends_on",
+        "o": "Fourier series",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Fourier series"
+      },
+      {
+        "s": "course",
+        "p": "depends_on",
+        "o": "signal processing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "signal processing"
+      },
+      {
+        "s": "CT",
+        "p": "reconstructs_with",
+        "o": "computed tomography",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "computed tomography"
+      }
+    ]
+  }
+}

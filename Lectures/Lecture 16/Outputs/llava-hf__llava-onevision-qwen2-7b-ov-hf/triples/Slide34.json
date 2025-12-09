@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide34",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet us now look more carefully at how the technetium generator actually works. This system operates through a two-step process.\n\nThe parent isotope is molybdenum-99, which is prepared and loaded into an alumina column inside the generator. This column is shielded with lead for safety. Over time, molybdenum-99 naturally decays to technetium-99m, the daughter isotope. Technetium-99m, however, binds only weakly to the alumina column. That means if we pass a saline solution through the column, it will wash the technetium-99m out, while leaving the molybdenum-99 behind. This daily washing process is often called “milking” the generator, just like milking a cow. Each elution provides a fresh supply of technetium-99m for clinical use.\n\nOnce obtained, the technetium-99m is injected into the patient’s body. Inside the body, it undergoes further decay to technetium-99, a stable isotope. Importantly, this decay is accompanied by the emission of gamma photons, which can then be detected by imaging devices such as a gamma camera.\n\nFrom a modeling perspective, this is a two-step decay chain. The parent, molybdenum-99, decays with its own half-life to produce technetium-99m. Then technetium-99m decays with a shorter half-life into stable technetium-99, releasing gamma radiation in the process. Each of these steps follows an exponential law, and when combined, they produce a dynamic interplay between parent, daughter, and final stable product.\nThis two-step process is what makes the technetium generator so effective—it provides a steady supply of a short-lived imaging isotope without requiring a reactor or cyclotron on-site.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"technetium-99m\", \"p\":\"produces\", \"o\":\"technetium-99\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Technetium-99m decays with a shorter half-life into stable technetium-99, releasing gamma radiation in the process.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "technetium-99m",
+        "p": "produces",
+        "o": "technetium-99",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "Technetium-99m decays with a shorter half-life into stable technetium-99, releasing gamma radiation in the process."
+      }
+    ]
+  }
+}

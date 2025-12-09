@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide38",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis short video, which I highly recommend you watch later, is truly fascinating. It explores how modern MRI technology can be used to study thought processes — in other words, how it can “read the mind.”\n\nIn this demonstration, researchers show that by monitoring brain activity patterns, we can detect what a person is recognizing or recalling, even without them speaking. For instance, imagine a criminal suspect claiming, “I didn’t commit the crime.” If you place this person in an MRI scanner and show images of various locations — one being the actual crime scene — the brain’s response will be noticeably different when that familiar location appears.\n\nThe brain’s recognition centers light up, revealing subconscious memory traces, even when the person tries to hide it. This shows the incredible potential of functional MRI — not just for medical diagnosis, but also for applications in neuroscience, psychology, and even criminal investigation.\nThe video runs about ten minutes, and it’s well worth watching. It gives you a glimpse into how MRI can connect biology, cognition, and technology — opening up entirely new frontiers for understanding the human mind.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"functional MRI\", \"category\": \"modality\"},\n    {\"term\": \"brain activity patterns\", \"category\": \"signal_processing\"},\n    {\"term\": \"subconscious memory traces\", \"category\": \"anatomy\"},\n    {\"term\": \"cognitive neuroscience\", \"category\": \"workflow\"},\n    {\"term\": \"neuroscience\", \"category\": \"software\"},\n    {\"term\": \"psychology\", \"category\": \"communication\"},\n    {\"term\": \"criminal investigation\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"This short video, which I highly recommend you watch later, is truly fascinating. It explores how modern MRI technology can be used to study thought processes — in other words, how it can “read the mind.”\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "functional MRI",
+        "category": "modality"
+      },
+      {
+        "term": "brain activity patterns",
+        "category": "signal_processing"
+      },
+      {
+        "term": "neuroscience",
+        "category": "software"
+      },
+      {
+        "term": "psychology",
+        "category": "communication"
+      },
+      {
+        "term": "criminal investigation",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "This short video, which I highly recommend you watch later, is truly fascinating. It explores how modern MRI technology can be used to study thought processes - in other words, how it can “read the mind.”"
+    ]
+  }
+}

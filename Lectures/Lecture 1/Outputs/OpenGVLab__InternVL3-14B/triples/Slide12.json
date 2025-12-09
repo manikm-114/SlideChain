@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"blurring\", \"p\":\"uses\", \"o\":\"convolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The process that causes blurring is called convolution.\"},\n    {\"s\":\"convolution\", \"p\":\"depends_on\", \"o\":\"point spread function\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In image processing, we model it using something called a point spread function—or PSF for short.\"},\n    {\"s\":\"Fourier transform\", \"p\":\"uses\", \"o\":\"FFT\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Fourier transform is often performed using a fast algorithm, FFT in short.\"},\n    {\"s\":\"deblurring\", \"p\":\"depends_on\", \"o\":\"inverse problem\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"That’s another inverse problem. And just like with tomography, it’s tricky.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "blurring",
+        "p": "uses",
+        "o": "convolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The process that causes blurring is called convolution."
+      },
+      {
+        "s": "convolution",
+        "p": "depends_on",
+        "o": "point spread function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In image processing, we model it using something called a point spread function-or PSF for short."
+      },
+      {
+        "s": "Fourier transform",
+        "p": "uses",
+        "o": "FFT",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The Fourier transform is often performed using a fast algorithm, FFT in short."
+      }
+    ]
+  }
+}

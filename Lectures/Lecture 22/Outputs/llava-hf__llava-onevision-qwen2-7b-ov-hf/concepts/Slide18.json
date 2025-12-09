@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide18",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s connect the ideas we discussed earlier. You can sweep the ultrasound beam from left to right, and when you perform ultrasound imaging, you can use this sweeping approach to create what we call compound imaging. Using a phased array transducer, you can steer the ultrasound beams toward the left side, collect multiple image lines—each one similar to an A-mode line—and combine them to form a B-mode image over the region of interest. Then, you slightly change the beam angle and sweep across again, this time pointing the beams toward the right side.\n\nWhat you get are multiple images of the same region, each captured from a different angle. When you combine or “add” these images together, you average the results across those angles. The benefit is that the underlying structures—like the organs or tissues—stay consistent across frames, but the speckle noise and random scattering patterns vary from one angle to another. When you sum them together, the random noise cancels out while the consistent features are reinforced, giving you a much smoother, clearer image with reduced artifacts.\n\nSo, this is what we call compound imaging. It’s essentially a noise reduction technique achieved by imaging the same region from multiple directions. The figure here shows how the image looks smoother, with far fewer speckles compared to a single acquisition. This method is similar in principle to noise averaging or multi-angle integration.\n\nIn short, this is another powerful way to perform ultrasound imaging—whether A-mode, B-mode, or C-mode—based on Huygens’ principle and the use of one- or two-dimensional transducer arrays. You can scan, focus, and form images in many flexible ways. So, read the green textbook carefully and make sure you understand these imaging principles. That completes the first part of this lecture.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"compound imaging\", \"category\": \"signal_processing\"},\n    {\"term\": \"Huygens’ principle\", \"category\": \"physics\"},\n    {\"term\": \"one- or two-dimensional transducer arrays\", \"category\": \"instrumentation\"},\n    {\"term\": \"A-mode, B-mode, or C-mode\", \"category\": \"modality\"},\n    {\"term\": \"noise reduction technique\", \"category\": \"signal_processing\"},\n    {\"term\": \"noise averaging\", \"category\": \"signal_processing\"},\n    {\"term\": \"multi-angle integration\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"You can sweep the ultrasound beam from left to right, and when you perform ultrasound imaging, you can use this sweeping approach to create what we call compound imaging.\", \"The benefit is that the underlying structures—like the organs or tissues—stay consistent across frames, but the speckle noise and random scattering patterns vary from one angle to another. When you sum them together, the random noise cancels out while the consistent features are reinforced, giving you a much smoother, clearer image with reduced artifacts.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "compound imaging",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Huygens’ principle",
+        "category": "physics"
+      },
+      {
+        "term": "one- or two-dimensional transducer arrays",
+        "category": "instrumentation"
+      },
+      {
+        "term": "A-mode, B-mode, or C-mode",
+        "category": "modality"
+      },
+      {
+        "term": "noise reduction technique",
+        "category": "signal_processing"
+      },
+      {
+        "term": "noise averaging",
+        "category": "signal_processing"
+      },
+      {
+        "term": "multi-angle integration",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "You can sweep the ultrasound beam from left to right, and when you perform ultrasound imaging, you can use this sweeping approach to create what we call compound imaging.",
+      "The benefit is that the underlying structures-like the organs or tissues-stay consistent across frames, but the speckle noise and random scattering patterns vary from one angle to another. When you sum them together, the random noise cancels out while the consistent features are reinforced, giving you a much smoother, clearer image with reduced artifacts."
+    ]
+  }
+}

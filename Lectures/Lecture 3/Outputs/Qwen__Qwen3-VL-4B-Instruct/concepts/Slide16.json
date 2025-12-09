@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:12:24.092285+00:00",
+  "text_length": 538,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLooking ahead, we can expect increasing convergence between robotic systems and human systems. Technologies like brain-machine interfaces are already emerging, with the potential to enhance memory, reasoning, and other cognitive functions. This merging of neuroscience and artificial intelligence represents an exciting frontier. As I once heard in a talk: physics helps us understand the external world, while neuroscience helps us understand ourselves. Bringing these fields together may fundamentally reshape what it means to be human.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"brain-machine interfaces\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"neuroscience\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"artificial intelligence\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"physics\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"neuroscience\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"brain-machine interfaces\",\n      \"category\": \"ai_ml\"\n    }\n  ],\n  \"evidence\": [\n    \"Technologies like brain-machine interfaces are already emerging\",\n    \"This merging of neuroscience and artificial intelligence represents an exciting frontier\",\n    \"physics helps us understand the external world, while neuroscience helps us understand ourselves\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "brain-machine interfaces",
+        "category": "ai_ml"
+      },
+      {
+        "term": "neuroscience",
+        "category": "ai_ml"
+      },
+      {
+        "term": "artificial intelligence",
+        "category": "ai_ml"
+      },
+      {
+        "term": "physics",
+        "category": "physics"
+      },
+      {
+        "term": "neuroscience",
+        "category": "ai_ml"
+      },
+      {
+        "term": "brain-machine interfaces",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "Technologies like brain-machine interfaces are already emerging",
+      "This merging of neuroscience and artificial intelligence represents an exciting frontier",
+      "physics helps us understand the external world, while neuroscience helps us understand ourselves"
+    ]
+  }
+}

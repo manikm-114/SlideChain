@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "linspace"
+          },
+          {
+            "category": "software",
+            "term": "logspace"
+          },
+          {
+            "category": "mathematics",
+            "term": "matrix"
+          },
+          {
+            "category": "mathematics",
+            "term": "transpose"
+          },
+          {
+            "category": "mathematics",
+            "term": "determinant"
+          },
+          {
+            "category": "mathematics",
+            "term": "matrix multiplication"
+          }
+        ],
+        "evidence": [
+          "To get evenly spaced numbers, use linspace.",
+          "For logarithmic spacing, use logspace.",
+          "To define a matrix, write...",
+          "Transpose with A prime...",
+          "get the determinant using det of A.",
+          "You can add, subtract, or scale matrices like...",
+          "Use A star B for matrix multiplication...",
+          "and A dot star B for element-by-element."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "A of one, two gives the value in the first row, second column."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "element in the first row, second column",
+        "p": "represents",
+        "s": "A(1,2)"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "determinant"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "det(A)"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A = [1 2 3; 4 5 6]; % creates 2x3 matrix"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "2x3 matrix",
+        "p": "represents",
+        "s": "A = [1 2 3; 4 5 6]"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "det of A"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "To get evenly spaced numbers, use linspace.",
+            "modalities": [
+              "text"
+            ],
+            "o": "MATLAB",
+            "p": "uses",
+            "s": "linspace"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

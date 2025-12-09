@@ -1,0 +1,124 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "quality_metric",
+            "term": "lateral resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "cross-beam resolution"
+          },
+          {
+            "category": "instrumentation",
+            "term": "beam profile"
+          },
+          {
+            "category": "physics",
+            "term": "scatterers"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echoes"
+          },
+          {
+            "category": "instrumentation",
+            "term": "beam width"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image sharpness"
+          },
+          {
+            "category": "physics",
+            "term": "direction perpendicular to the beam path"
+          }
+        ],
+        "evidence": [
+          "the concept of lateral resolution",
+          "cross-beam resolution",
+          "beam profile",
+          "full width at half maximum",
+          "scatterers",
+          "transducer",
+          "echoes",
+          "beam width",
+          "image sharpness",
+          "direction perpendicular to the beam path"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "if the two scatterers are separated by a distance greater than the beam width - specifically, greater than the full width at half maximum - then the two echoes appear as two distinct peaks"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "two distinct peaks",
+        "p": "appear as",
+        "s": "two scatterers"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "direction perpendicular to beam path"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "direction perpendicular to the beam path"
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "if the two scatterers are separated by a distance greater than the beam width, then the two echoes appear as two distinct peaks."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "distinct peaks for separated scatterers",
+        "p": "produces",
+        "s": "lateral resolution"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "beam path"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The lateral resolution is determined primarily by the beam width.",
+            "modalities": [
+              "text"
+            ],
+            "o": "beam width",
+            "p": "depends_on",
+            "s": "lateral resolution"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

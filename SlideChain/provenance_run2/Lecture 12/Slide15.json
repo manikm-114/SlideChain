@@ -1,0 +1,144 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "X-ray source"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray tube"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray"
+          },
+          {
+            "category": "instrumentation",
+            "term": "imaging system"
+          }
+        ],
+        "evidence": [
+          "the X-ray tube is the source that makes the entire imaging chain possible",
+          "At the heart of the system is the X-ray tube",
+          "if you hold them together in the right configuration, you can start performing medical X-ray imaging",
+          "the X-ray source"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray source",
+            "p": "depends_on",
+            "s": "X-ray imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "photon-counting"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "X-ray source"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray tube"
+          },
+          {
+            "category": "physics",
+            "term": "working principle"
+          },
+          {
+            "category": "modality",
+            "term": "imaging system"
+          }
+        ],
+        "evidence": [
+          "Now, once you have both the X-ray source and the detector, you can build an imaging system.",
+          "At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays.",
+          "We will look at its working principle in more detail, but for now, just remember: the X-ray tube is the source that makes the entire imaging chain possible.",
+          "So, the first step in understanding X-ray imaging is to understand the X-ray source."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The X-ray tube is the device that actually generates the X-rays.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "X-rays",
+            "p": "produces",
+            "s": "X-ray tube"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays. We will look at its working principle in more detail, but for now, just remember: the X-ray tube is the source that makes the entire imaging chain possible.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "X-ray tube",
+            "p": "represents",
+            "s": "X-ray source"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray source"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray tube"
+          },
+          {
+            "category": "modality",
+            "term": "imaging system"
+          },
+          {
+            "category": "modality",
+            "term": "medical X-ray imaging"
+          }
+        ],
+        "evidence": [
+          "Now, once you have both the X-ray source and the detector, you can build an imaging system. Simply put, if you hold them together in the right configuration, you can start performing medical X-ray imaging.",
+          "At the heart of the system is the X-ray tube. This is the device that actually generates the X-rays. We will look at its working principle in more detail, but for now, just remember: the X-ray tube is the source that makes the entire imaging chain possible."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

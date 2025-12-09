@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide1",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound imaging\",\n      \"p\": \"produces\",\n      \"o\": \"different kinds of ultrasound images\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In this lecture, we will be more specific about how we can form different kinds of ultrasound images.\"\n    },\n    {\n      \"s\": \"ultrasound imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"physical and mathematical principles\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Last time, we explained to you the physical and mathematical principles for ultrasound imaging.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasound imaging",
+        "p": "produces",
+        "o": "different kinds of ultrasound images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In this lecture, we will be more specific about how we can form different kinds of ultrasound images."
+      },
+      {
+        "s": "ultrasound imaging",
+        "p": "depends_on",
+        "o": "physical and mathematical principles",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Last time, we explained to you the physical and mathematical principles for ultrasound imaging."
+      }
+    ]
+  }
+}

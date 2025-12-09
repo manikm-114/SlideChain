@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide47",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s take a closer look at the T1 effect.\nT1 describes how the longitudinal magnetization, that is, the component along the z-axis, gradually returns to its equilibrium value after being disturbed by a radiofrequency pulse.\n\nOn the left side of the figure, we see what happens after a ninety-degree pulse. In this case, the longitudinal magnetization, which we call M z, has been tipped entirely into the transverse plane, so it starts at zero. Over time, it recovers back toward its equilibrium value, which we call M naught, and it does so in an exponential fashion.\n\nOn the right side, we see the case of a one-hundred-eighty-degree pulse. Here, the longitudinal magnetization is flipped completely upside down, starting at negative M naught. From there, it also recovers exponentially back to M naught.\nThis exponential recovery is the hallmark of T1 relaxation. The recovery speed depends on the tissue type, because different tissues exchange energy with their environment—the so-called spin-lattice interaction—at different rates.\n\nSo, to summarize: T1 tells us how quickly a tissue’s magnetization realigns with the main magnetic field, B zero. And these differences in T1 times are one of the key sources of image contrast in MRI.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"T1 effect\", \"category\": \"physics\"},\n    {\"term\": \"longitudinal magnetization\", \"category\": \"physics\"},\n    {\"term\": \"z-axis\", \"category\": \"mathematics\"},\n    {\"term\": \"exponential recovery\", \"category\": \"signal_processing\"},\n    {\"term\": \"T1 relaxation\", \"category\": \"physics\"},\n    {\"term\": \"tissue type\", \"category\": \"anatomy\"},\n    {\"term\": \"image contrast\", \"category\": \"modality\"},\n    {\"term\": \"M z\", \"category\": \"mathematics\"},\n    {\"term\": \"M naught\", \"category\": \"mathematics\"},\n    {\"term\": \"exponential\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"T1 describes how the longitudinal magnetization, that is, the component along the z-axis, gradually returns to its equilibrium value after being disturbed by a radiofrequency pulse.\", \"The recovery speed depends on the tissue type, because different tissues exchange energy with their environment—the so-called spin-lattice interaction—at different rates.\", \"The differences in T1 times are one of the key sources of image contrast in MRI.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "T1 effect",
+        "category": "physics"
+      },
+      {
+        "term": "longitudinal magnetization",
+        "category": "physics"
+      },
+      {
+        "term": "z-axis",
+        "category": "mathematics"
+      },
+      {
+        "term": "exponential recovery",
+        "category": "signal_processing"
+      },
+      {
+        "term": "T1 relaxation",
+        "category": "physics"
+      },
+      {
+        "term": "tissue type",
+        "category": "anatomy"
+      },
+      {
+        "term": "image contrast",
+        "category": "modality"
+      },
+      {
+        "term": "M naught",
+        "category": "mathematics"
+      },
+      {
+        "term": "exponential",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "T1 describes how the longitudinal magnetization, that is, the component along the z-axis, gradually returns to its equilibrium value after being disturbed by a radiofrequency pulse.",
+      "The recovery speed depends on the tissue type, because different tissues exchange energy with their environment-the so-called spin-lattice interaction-at different rates.",
+      "The differences in T1 times are one of the key sources of image contrast in MRI."
+    ]
+  }
+}

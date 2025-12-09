@@ -1,0 +1,120 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "radiation dose profile"
+          },
+          {
+            "category": "modality",
+            "term": "circular CT scan"
+          },
+          {
+            "category": "physics",
+            "term": "XY plane"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray beam"
+          },
+          {
+            "category": "instrumentation",
+            "term": "collimated"
+          },
+          {
+            "category": "physics",
+            "term": "slice thickness"
+          },
+          {
+            "category": "physics",
+            "term": "scattered photons"
+          },
+          {
+            "category": "physics",
+            "term": "radiation exposure"
+          }
+        ],
+        "evidence": [
+          "radiation dose profile",
+          "circular CT scan",
+          "XY plane",
+          "X-ray beam",
+          "collimated",
+          "slice thickness",
+          "scattered photons",
+          "radiation exposure"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This scanning method reconstructs images within a single plane, called the XY plane.",
+            "modalities": [
+              "text"
+            ],
+            "o": "XY plane",
+            "p": "reconstructs_with",
+            "s": "circular CT scan"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Ideally, the X-ray beam would be finely collimated so that all photons are confined within the slice thickness, represented as a neat rectangular region",
+            "modalities": [
+              "text"
+            ],
+            "o": "neat rectangular region",
+            "p": "represents",
+            "s": "X-ray beam"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "total patient radiation exposure"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "patient radiation exposure"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "patient radiation exposure"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This dose 'tail' outside the intended slice area also contributes to the total patient radiation exposure.",
+            "modalities": [
+              "text"
+            ],
+            "o": "blue curve",
+            "p": "represents",
+            "s": "radiation dose profile"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide51.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide51.txt"
+  },
+  "slide_id": "Slide51"
+}

@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"image processing\", \"p\":\"uses\", \"o\":\"noise suppression\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In image processing, noise can often hide important details.\"},\n    {\"s\":\"two-dimensional Fourier transform\", \"p\":\"represents\", \"o\":\"frequency-domain representation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When we take the two-dimensional Fourier transform of this image, shown in the bottom left, we see its frequency-domain representation.\"},\n    {\"s\":\"low-pass filter\", \"p\":\"produces\", \"o\":\"filtered spectrum\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"One simple way is to set the outer regions of the spectrum to zero, while keeping only the frequencies near the center — this is essentially a low-pass filter in the frequency domain.\"},\n    {\"s\":\"inverse Fourier transform\", \"p\":\"reconstructs_with\", \"o\":\"restored image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Finally, applying the inverse Fourier transform gives us the restored image in the top right.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "image processing",
+        "p": "uses",
+        "o": "noise suppression",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In image processing, noise can often hide important details."
+      },
+      {
+        "s": "two-dimensional Fourier transform",
+        "p": "represents",
+        "o": "frequency-domain representation",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When we take the two-dimensional Fourier transform of this image, shown in the bottom left, we see its frequency-domain representation."
+      },
+      {
+        "s": "low-pass filter",
+        "p": "produces",
+        "o": "filtered spectrum",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "One simple way is to set the outer regions of the spectrum to zero, while keeping only the frequencies near the center - this is essentially a low-pass filter in the frequency domain."
+      },
+      {
+        "s": "inverse Fourier transform",
+        "p": "reconstructs_with",
+        "o": "restored image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Finally, applying the inverse Fourier transform gives us the restored image in the top right."
+      }
+    ]
+  }
+}

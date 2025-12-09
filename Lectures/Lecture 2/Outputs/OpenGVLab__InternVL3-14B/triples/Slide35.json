@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide35",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"plot resolution\",\n      \"p\": \"affects\",\n      \"o\": \"curve smoothness\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This example shows how plot resolution affects curve smoothness.\"\n    },\n    {\n      \"s\": \"linspace\",\n      \"p\": \"uses\",\n      \"o\": \"number of x-values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In a loop, we increase the number of x-values using linspace\"\n    },\n    {\n      \"s\": \"y\",\n      \"p\": \"equals\",\n      \"o\": \"x over one plus x squared\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"then compute y equals x over one plus x squared\"\n    },\n    {\n      \"s\": \"subplot grid\",\n      \"p\": \"produces\",\n      \"o\": \"each result\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We plot each result in a subplot",
+  "parsed": {
+    "s": "y",
+    "p": "equals",
+    "o": "x over one plus x squared",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "then compute y equals x over one plus x squared"
+    ]
+  }
+}

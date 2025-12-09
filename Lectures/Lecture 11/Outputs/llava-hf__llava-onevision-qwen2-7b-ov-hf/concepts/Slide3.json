@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide3",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere you can see the textbook’s outline of Chapter Five, which I have actually moved earlier in our course. The reason is simple: once you understand the basics of image quality assessment, you can apply these ideas to almost any imaging modality.\nNo matter whether we’re talking about X-ray, CT, MRI, ultrasound, or optical imaging, the general principles remain the same. Concepts such as resolution, signal-to-noise ratio, contrast-to-noise ratio, and artifacts are universal. They may appear in different forms, but the underlying logic applies everywhere.\n\nThe good news is that this chapter is relatively easy reading compared to some of the heavier mathematical topics we’ve already tackled. The ideas are straightforward. If you follow carefully and think through the examples, you’ll see how each concept connects to real images.\n\nFor today’s lecture, I will guide you mainly through three key aspects of image quality assessment. We’ll start with general mathematical measures, then move to system-specific characteristics, and finally consider task-specific and human-observer models. This will give you a well-rounded view of what it means to evaluate image quality in practice.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"image quality assessment\", \"category\": \"quality_metric\"},\n    {\"term\": \"resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"signal-to-noise ratio\", \"category\": \"quality_metric\"},\n    {\"term\": \"contrast-to-noise ratio\", \"category\": \"quality_metric\"},\n    {\"term\": \"artifacts\", \"category\": \"quality_metric\"},\n    {\"term\": \"mathematical measures\", \"category\": \"mathematics\"},\n    {\"term\": \"system-specific characteristics\", \"category\": \"instrumentation\"},\n    {\"term\": \"task-specific and human-observer models\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\"The good news is that this chapter is relatively easy reading compared to some of the heavier mathematical topics we’ve already tackled. The ideas are straightforward. If you follow carefully and think through the examples, you’ll see how each concept connects to real images.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "image quality assessment",
+        "category": "quality_metric"
+      },
+      {
+        "term": "resolution",
+        "category": "quality_metric"
+      },
+      {
+        "term": "signal-to-noise ratio",
+        "category": "quality_metric"
+      },
+      {
+        "term": "contrast-to-noise ratio",
+        "category": "quality_metric"
+      },
+      {
+        "term": "artifacts",
+        "category": "quality_metric"
+      },
+      {
+        "term": "mathematical measures",
+        "category": "mathematics"
+      },
+      {
+        "term": "system-specific characteristics",
+        "category": "instrumentation"
+      },
+      {
+        "term": "task-specific and human-observer models",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "The good news is that this chapter is relatively easy reading compared to some of the heavier mathematical topics we’ve already tackled. The ideas are straightforward. If you follow carefully and think through the examples, you’ll see how each concept connects to real images."
+    ]
+  }
+}

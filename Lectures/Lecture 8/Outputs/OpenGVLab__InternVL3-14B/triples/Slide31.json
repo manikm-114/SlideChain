@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB approach\",\n      \"p\": \"uses\",\n      \"o\": \"Fast Fourier Transform (FFT)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here’s the MATLAB approach: First, compute the FFT of x — that gives us its frequency spectrum.\"\n    },\n    {\n      \"s\": \"FFT-based convolution\",\n      \"p\": \"produces\",\n      \"o\": \"convolution in the time domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Finally, apply the inverse FFT to that product to return to the time domain.\"\n    },\n    {\n      \"s\": \"FFT-based convolution\",\n      \"p\": \"depends_on\",\n      \"o\": \"convolution theorem\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This works because of the convolution theorem — it says convolution in the time domain is equivalent to multiplication in the frequency domain.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "FFT-based convolution",
+        "p": "produces",
+        "o": "convolution in the time domain",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Finally, apply the inverse FFT to that product to return to the time domain."
+      },
+      {
+        "s": "FFT-based convolution",
+        "p": "depends_on",
+        "o": "convolution theorem",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This works because of the convolution theorem - it says convolution in the time domain is equivalent to multiplication in the frequency domain."
+      }
+    ]
+  }
+}

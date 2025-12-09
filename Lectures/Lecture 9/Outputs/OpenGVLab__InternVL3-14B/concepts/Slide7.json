@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide7",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"f of k\", \"category\": \"signal_processing\"},\n    {\"term\": \"g of eight minus k\", \"category\": \"signal_processing\"},\n    {\"term\": \"flipped\", \"category\": \"signal_processing\"},\n    {\"term\": \"shifted\", \"category\": \"signal_processing\"},\n    {\"term\": \"multiplication\", \"category\": \"signal_processing\"},\n    {\"term\": \"sum\", \"category\": \"signal_processing\"},\n    {\"term\": \"overlap\", \"category\": \"signal_processing\"},\n    {\"term\": \"sliding\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"compute the convolution at n equals eight\",\n    \"red arrows on the top represent f of k\",\n    \"green arrows on the bottom show g of eight minus k\",\n    \"the second signal has been flipped and shifted\",\n    \"only a few of the red and green arrows overlap\",\n    \"We multiply those overlapping values and then sum them up\",\n    \"sliding the flipped hand far enough to the right\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "f of k",
+        "category": "signal_processing"
+      },
+      {
+        "term": "g of eight minus k",
+        "category": "signal_processing"
+      },
+      {
+        "term": "flipped",
+        "category": "signal_processing"
+      },
+      {
+        "term": "shifted",
+        "category": "signal_processing"
+      },
+      {
+        "term": "overlap",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sliding",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "compute the convolution at n equals eight",
+      "red arrows on the top represent f of k",
+      "green arrows on the bottom show g of eight minus k",
+      "the second signal has been flipped and shifted",
+      "only a few of the red and green arrows overlap",
+      "We multiply those overlapping values and then sum them up",
+      "sliding the flipped hand far enough to the right"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide47",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nAlright, let’s wrap up with the big picture.\n\nThis slide summarizes the key relationships between time and frequency domains — especially how signals and their spectra behave when we move from continuous to discrete representations.\nAt the very top left, we start with a continuous-time signal — a smooth pulse that exists over a limited time interval. On the right, we see its frequency content, also confined to a certain bandwidth.\n\nNow, as we go down the slide, we perform sampling in time. That’s the red comb of vertical lines. We're picking values from the original signal at regular intervals — let’s say every delta t.\nWhat does this do in the frequency domain?\nIt creates multiple copies of the spectrum, repeated again and again. This is called spectral replication. And if these replications don’t overlap, we can perfectly reconstruct the original signal.\nThat's the essence of the sampling theorem — to avoid distortion, we must sample fast enough, at least twice the highest frequency present in the signal.\n\nNow, let’s look at the lower half of the slide.\nHere, we’re sampling in the frequency domain instead. That’s shown by the green comb — regularly spaced frequency spikes.\nWhat happens to the signal in the time domain?\nIt becomes periodic — the original signal now repeats over time, again and again.\n\nSo the big idea is this:\nSampling in time causes replication in frequency.\nSampling in frequency causes repetition in time.\nThese two processes mirror each other — one in time, the other in frequency. This duality is at the heart of signal processing.\nNow, I know this diagram is dense, but if you walk through it carefully — step by step — you’ll see how everything we’ve covered comes together.\n\nWe’ll cover this in more detail on Friday. In the meantime, I suggest reviewing this flow using the lecture slides and working through the derivations.\nEven if there are a few typos in the book chapter, don’t worry. The key ideas are all here. And if you’re curious, feel free to preview the next topic — the Discrete Fourier Transform — in the book as well.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Continuous-time signal\", \"p\":\"represents\", \"o\":\"Frequency content\", \"modalities\":[\"text\"], \"confidence\":0.9, \"evidence\":\"At the very top left, we start with a continuous-time signal — a smooth pulse that exists over a limited time interval. On the right, we see its frequency content, also confined to a certain bandwidth.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Continuous-time signal",
+        "p": "represents",
+        "o": "Frequency content",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "At the very top left, we start with a continuous-time signal - a smooth pulse that exists over a limited time interval. On the right, we see its frequency content, also confined to a certain bandwidth."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide54",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T14:32:00.648826+00:00",
+  "text_length": 1056,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis slide is a list of extra resources for you to explore outside the lecture. These links are short videos that explain some of the key concepts we discussed in more detail. \n\nThe first group of links is about the spin echo. Spin echo is one of the most fundamental sequences in MRI, so watching those demonstrations will help reinforce how a ninety-degree pulse and a one-eighty-degree pulse work together to refocus the signal. The second group of links is about the gradient echo. Gradient echo is a variation where gradients are used to generate echoes instead of a one-eighty-degree pulse. These videos will show you the difference in how the signal is produced. Finally, the last link is about slice selection. As we discussed, slice selection is how we target a specific region of the body by combining a magnetic gradient with the RF pulse.\n\nNote that although these videos are not required, they are helpful if you want to review the concepts visually. They can give you an extra layer of understanding, especially if you are new to MRI physics.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"spin echo\", \"category\": \"signal_processing\"},\n    {\"term\": \"gradient echo\", \"category\": \"signal_processing\"},\n    {\"term\": \"slice selection\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"These links are short videos that explain some of the key concepts we discussed in more detail.\", \"Spin echo is one of the most fundamental sequences in MRI, so watching those demonstrations will help reinforce how a ninety-degree pulse and a one-eighty-degree pulse work together to refocus the signal.\", \"Gradient echo is a variation where gradients are used to generate echoes instead of a one-eighty-degree pulse.\", \"As we discussed, slice selection is how we target a specific region of the body by combining a magnetic gradient with the RF pulse.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "spin echo",
+        "category": "signal_processing"
+      },
+      {
+        "term": "gradient echo",
+        "category": "signal_processing"
+      },
+      {
+        "term": "slice selection",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "These links are short videos that explain some of the key concepts we discussed in more detail.",
+      "Spin echo is one of the most fundamental sequences in MRI, so watching those demonstrations will help reinforce how a ninety-degree pulse and a one-eighty-degree pulse work together to refocus the signal.",
+      "Gradient echo is a variation where gradients are used to generate echoes instead of a one-eighty-degree pulse.",
+      "As we discussed, slice selection is how we target a specific region of the body by combining a magnetic gradient with the RF pulse."
+    ]
+  }
+}

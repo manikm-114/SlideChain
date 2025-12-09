@@ -1,0 +1,214 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "scatter correction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "measurement accuracy"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "physics",
+            "term": "scattered background"
+          },
+          {
+            "category": "reconstruction",
+            "term": "corrected measurements"
+          },
+          {
+            "category": "reconstruction",
+            "term": "corrected reconstructions"
+          }
+        ],
+        "evidence": [
+          "scatter correction is a key point in improving measurement accuracy and image quality",
+          "you can see the scattered background as it appears in the data",
+          "When you remove the scattered background, you get these corrected measurements, or corrected reconstructions"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "scatter correction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "measurement accuracy"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scattered background"
+          },
+          {
+            "category": "signal_processing",
+            "term": "corrected measurements"
+          },
+          {
+            "category": "signal_processing",
+            "term": "corrected reconstructions"
+          },
+          {
+            "category": "physics",
+            "term": "scattering problem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "measurement"
+          }
+        ],
+        "evidence": [
+          "This demonstrates how the result changes by addressing the scattering problem.",
+          "Scatter correction is a key point in improving measurement accuracy and image quality."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "scatter correction"
+          },
+          {
+            "category": "data_processing",
+            "term": "real measurement"
+          },
+          {
+            "category": "data_processing",
+            "term": "scattered background"
+          },
+          {
+            "category": "data_processing",
+            "term": "corrected measurements"
+          },
+          {
+            "category": "reconstruction",
+            "term": "corrected reconstructions"
+          },
+          {
+            "category": "quality_metric",
+            "term": "improving measurement accuracy"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          }
+        ],
+        "evidence": [
+          "This shows you the result. This is the real measurement, and you can see the scattered background as it appears in the data.",
+          "When you remove the scattered background, you get these corrected measurements, or corrected reconstructions.",
+          "This demonstrates how the result changes by addressing the scattering problem.",
+          "Scatter correction is a key point in improving measurement accuracy and image quality."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "When you remove the scattered background, you get these corrected measurements, or corrected reconstructions.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "corrected measurements",
+            "p": "produces",
+            "s": "scatter correction"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "When you remove the scattered background, you get these corrected measurements, or corrected reconstructions.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "corrected reconstructions",
+            "p": "produces",
+            "s": "scatter correction"
+          },
+          {
+            "confidence": 0.8,
+            "evidence": "Scatter correction is a key point in improving measurement accuracy and image quality.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "image quality",
+            "p": "measures",
+            "s": "scatter correction"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "scatter correction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "measurement accuracy"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "reconstruction",
+            "term": "corrected measurements"
+          },
+          {
+            "category": "reconstruction",
+            "term": "corrected reconstructions"
+          }
+        ],
+        "evidence": [
+          "This demonstrates how the result changes by addressing the scattering problem.",
+          "Scatter correction is a key point in improving measurement accuracy and image quality."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This is the real measurement, and you can see the scattered background as it appears in the data.",
+            "modalities": [
+              "text"
+            ],
+            "o": "scattered background",
+            "p": "measures",
+            "s": "result"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide39.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide39.txt"
+  },
+  "slide_id": "Slide39"
+}

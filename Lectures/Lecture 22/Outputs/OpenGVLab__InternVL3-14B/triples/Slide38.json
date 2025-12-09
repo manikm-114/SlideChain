@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"ultrasound artifacts\",\n      \"p\": \"produces\",\n      \"o\": \"reverberation artifacts\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"One common type is caused by multiple reflections between layers.\"\n    },\n    {\n      \"s\": \"ultrasound artifacts\",\n      \"p\": \"produces\",\n      \"o\": \"acoustic shadowing\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Another important artifact is acoustic shadowing.\"\n    },\n    {\n      \"s\": \"acoustic shadowing\",\n      \"p\": \"appears as\",\n      \"o\": \"dark region\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"On the image, this appears as a dark region, or 'shadow', extending below the bright reflective surface.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "ultrasound artifacts",
+        "p": "produces",
+        "o": "acoustic shadowing",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.9,
+        "evidence": "Another important artifact is acoustic shadowing."
+      }
+    ]
+  }
+}

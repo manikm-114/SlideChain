@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"FFT-based convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"wrap-around\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"N plus M minus 1\", \"category\": \"mathematics\"},\n    {\"term\": \"FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"inverse FFT\", \"category\": \"frequency_domain\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"FFT-based convolution gives us circular convolution by default\",\n    \"avoid that wrap-around is to make sure those neighbors are far enough away\",\n    \"zero padding\",\n    \"We take our original signals and append enough zeros\",\n    \"the total length is at least N plus M minus 1\",\n    \"perform the FFT\",\n    \"take the inverse FFT\",\n    \"the result matches the direct, linear convolution exactly\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "FFT-based convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "wrap-around",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "N plus M minus 1",
+        "category": "mathematics"
+      },
+      {
+        "term": "inverse FFT",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "FFT-based convolution gives us circular convolution by default",
+      "avoid that wrap-around is to make sure those neighbors are far enough away",
+      "zero padding",
+      "We take our original signals and append enough zeros",
+      "the total length is at least N plus M minus 1",
+      "perform the FFT",
+      "take the inverse FFT",
+      "the result matches the direct, linear convolution exactly"
+    ]
+  }
+}

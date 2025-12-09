@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide21",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s analyze the contrast term a bit more carefully.\n\nThe key idea here is that the human visual system does not respond to absolute changes in brightness, but rather to relative changes. This is exactly what Weber’s law describes. It states that the smallest noticeable change in a stimulus is proportional to the background level of that stimulus.\n\nFor example, if you are in a very dark room, even a tiny spot of light is noticeable right away. But if you are in a brightly lit room, the very same tiny light would be invisible. The background intensity is so high that the small change is masked.\nYou’ve probably experienced this outdoors: at night, under a dark sky, you can see countless stars. But during the day, those same stars are still there — yet you can’t see them, because the bright background light overwhelms them.\nThe same principle applies to hearing. In a quiet room, even a whisper can be heard. But in a noisy party, you need to shout for anyone to notice.\n\nMathematically, this means that the sensitivity of the contrast measure depends on the ratio of the change, delta-X, to the baseline, X. If X is small, even a small delta makes a big difference. If X is large, the same delta hardly matters.\nSo the contrast term in SSIM naturally captures this idea — it reflects the fact that our visual system is tuned to relative, not absolute, differences. This is why the measure agrees so well with human perception.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Weber's law\", \"category\": \"psychophysics\"},\n    {\"term\": \"contrast measure\", \"category\": \"quality_metric\"},\n    {\"term\": \"ratio\", \"category\": \"mathematics\"},\n    {\"term\": \"baseline\", \"category\": \"signal_processing\"},\n    {\"term\": \"sensitivity\", \"category\": \"signal_processing\"},\n    {\"term\": \"relative differences\", \"category\": \"psychophysics\"},\n    {\"term\": \"human perception\", \"category\": \"psychophysics\"}\n  ],\n  \"evidence\": [\"The key idea here is that the human visual system does not respond to absolute changes in brightness, but rather to relative changes. This is exactly what Weber’s law describes.\", \"The contrast term in SSIM naturally captures this idea — it reflects the fact that our visual system is tuned to relative, not absolute, differences.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "contrast measure",
+        "category": "quality_metric"
+      },
+      {
+        "term": "ratio",
+        "category": "mathematics"
+      },
+      {
+        "term": "baseline",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sensitivity",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The key idea here is that the human visual system does not respond to absolute changes in brightness, but rather to relative changes. This is exactly what Weber’s law describes.",
+      "The contrast term in SSIM naturally captures this idea - it reflects the fact that our visual system is tuned to relative, not absolute, differences."
+    ]
+  }
+}

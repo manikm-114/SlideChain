@@ -1,0 +1,9 @@
+Signal sampling is a fundamental concept, but it can be confusing if you only look at it quickly. So let’s slow down and really understand it.
+At the top, we have our continuous signal, f x. This is defined for every value of x and could represent anything — a sound wave, an image profile, or a measured signal.
+
+Next, we have what’s called a Shah function, or an impulse train. This is simply a series of delta functions, each spaced t units apart. Mathematically, it’s written as the sum of delta functions, where each one is located at x equals n T, with n being an integer. You can think of this impulse train as a ruler that marks the exact points where we’ll take our samples.
+
+When we multiply the continuous signal f of x by this impulse train, we get the sampled function. This multiplication is done point-by-point: at each delta function’s location, we keep the value of f of x; everywhere else, the result is zero.
+So the sampled signal is really the original signal’s values, “attached” to the impulses in the train. The impulses mark the positions, and the heights of the impulses carry the signal’s values at those positions.
+
+In other words, the sampled function is just the original function, but only at discrete, regularly spaced points. This is the first step in moving from the continuous world to the digital world.

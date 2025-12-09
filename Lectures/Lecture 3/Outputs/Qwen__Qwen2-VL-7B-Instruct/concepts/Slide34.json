@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:33:21.300656+00:00",
+  "text_length": 709,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s finish this part of our discussion by touching briefly on nonlinear systems. This is a topic marked with a green button—so it’s something nice to know, not required at the core level of this course. Nonlinear science is a relatively new and complex area. Unlike linear systems, nonlinear equations are often difficult, or even impossible, to solve exactly. But thanks to modern computing, we can discretize these equations and compute solutions numerically—even if we have to do so through brute force.\nBeyond practical applications, nonlinear systems are fascinating because they produce surprising, often counterintuitive phenomena. And anything that defies our intuition naturally grabs our interest.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Nonlinear equations\", \"category\": \"mathematics\"},\n    {\"term\": \"Chaos\", \"category\": \"physics\"},\n    {\"term\": \"Solitons\", \"category\": \"physics\"},\n    {\"term\": \"Singularities\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"Nonlinear equations are difficult to analyze but can be numerically solved.\",\n    \"New phenomena are inherent in many nonlinear systems, such as Chaos, Solitons, and Singularities which are counterintuitive and/or unpredictable.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Nonlinear equations",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "Nonlinear equations are difficult to analyze but can be numerically solved.",
+      "New phenomena are inherent in many nonlinear systems, such as Chaos, Solitons, and Singularities which are counterintuitive and/or unpredictable."
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Physical System\",\n      \"p\": \"produces\",\n      \"o\": \"Analog signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It all starts with the physical world — maybe we’re measuring temperature, pressure, light intensity, motion, or some other physical quantity.\"\n    },\n    {\n      \"s\": \"Transducer Sensor\",\n      \"p\": \"converts\",\n      \"o\": \"Analog signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A transducer converts the physical phenomenon into an electrical signal — usually an analog one.\"\n    },\n    {\n      \"s\": \"Signal Conditioning\",\n      \"p\": \"produces\",\n      \"o\": \"Clean, usable signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here we might filter the signal, smooth it, amplify it, or perform other adjustments to get it into a clean, usable form.\"\n    },\n    {\n      \"s\": \"Analog-to-Digital Converter\",\n      \"p",
+  "parsed": {
+    "s": "Signal Conditioning",
+    "p": "produces",
+    "o": "Clean, usable signal",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Here we might filter the signal, smooth it, amplify it, or perform other adjustments to get it into a clean, usable form."
+    ]
+  }
+}

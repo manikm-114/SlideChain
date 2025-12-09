@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:08:03.988395+00:00",
+  "text_length": 580,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNext, we have partial volume averaging artifacts. For each slice, if a tumor only partially lies within that slice, you might not see it clearly. Small tumors can be especially difficult to detect when they occupy only half of a slice, and image noise further complicates clear visualization.\n\nHowever, with spiral CT, you can select longitudinal positions as densely as you want. This gives you a real opportunity to reconstruct images densely enough. One of the reconstructed slices is likely to contain the tumor fully, providing much better contrast resolution and visibility.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"partial volume averaging artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"spiral CT\", \"category\": \"modality\"},\n    {\"term\": \"densely reconstructed images\", \"category\": \"reconstruction\"},\n    {\"term\": \"contrast resolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"visibility\", \"category\": \"signal_processing\"},\n    {\"term\": \"tumor detection\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"For each slice, if a tumor only partially lies within that slice, you might not see it clearly.\",\n    \"Small tumors can be especially difficult to detect when they occupy only half of a slice, and image noise further complicates clear visualization.\",\n    \"One of the reconstructed slices is likely to contain the tumor fully, providing much better contrast resolution and visibility.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "partial volume averaging artifacts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "spiral CT",
+        "category": "modality"
+      },
+      {
+        "term": "contrast resolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "visibility",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "For each slice, if a tumor only partially lies within that slice, you might not see it clearly.",
+      "Small tumors can be especially difficult to detect when they occupy only half of a slice, and image noise further complicates clear visualization.",
+      "One of the reconstructed slices is likely to contain the tumor fully, providing much better contrast resolution and visibility."
+    ]
+  }
+}

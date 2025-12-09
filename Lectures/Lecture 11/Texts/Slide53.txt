@@ -1,0 +1,11 @@
+Before we define model observers in detail, let’s step back and look at how we can mathematically describe the imaging process itself.
+
+In most medical imaging systems, the process of acquiring an image can be represented by a very simple but powerful equation:
+g = Hf plus n.
+Here, f represents the object we are trying to image — for example, the radioactivity distribution in nuclear medicine or the internal structure of a patient in CT.
+
+The imaging system is described by H, which acts like a mapping or an operator. You can think of it as a large matrix that tells us how each point in the object contributes to the measured image. For instance, in CT, H would represent all the X-ray projections and how they are combined.
+Then comes n, the noise. Every real imaging system is contaminated by noise — whether it’s photon noise, electronic noise, or other random fluctuations. That uncertainty is inherent to the physics of measurement.
+
+Finally, g is what we actually record — the image data. So what you see on the screen is not the object itself, but rather the result of the object being transformed by the system response and corrupted by noise.
+This linear system model is the foundation for both image reconstruction and image analysis. It’s also where model observers come in: they take this same mathematical description and use it to predict how well a system can perform a diagnostic task.

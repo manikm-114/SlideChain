@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"frequency domain analysis\",\n      \"p\": \"produces\",\n      \"o\": \"no aliasing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If the original spectrum is narrow enough, these copies won’t overlap — and that’s a key idea. No overlap means no aliasing.\"\n    },\n    {\n      \"s\": \"low-pass filter\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This makes it possible to perfectly reconstruct the original signal from its samples.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "frequency domain analysis",
+        "p": "produces",
+        "o": "no aliasing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "If the original spectrum is narrow enough, these copies won’t overlap - and that’s a key idea. No overlap means no aliasing."
+      },
+      {
+        "s": "low-pass filter",
+        "p": "reconstructs_with",
+        "o": "original signal",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "This makes it possible to perfectly reconstruct the original signal from its samples."
+      }
+    ]
+  }
+}

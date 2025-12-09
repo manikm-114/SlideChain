@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide16",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"pure continuous wave\",\n      \"p\": \"represents\",\n      \"o\": \"5*sin(2π4t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Here, we’ve plotted the function 5 times sine of 2 pi 4 t\"\n    },\n    {\n      \"s\": \"pure continuous wave\",\n      \"p\": \"measures\",\n      \"o\": \"vibration, sound, or light\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This is the kind of signal you might get from an ideal microphone or sensor measuring vibration, sound, or light\"\n    },\n    {\n      \"s\": \"Sampling Theorem\",\n      \"p\": \"depends_on\",\n      \"o\": \"how often to sample the signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That question brings us right to the Sampling Theorem — the mathematical foundation for how we digitize continuous signals without losing information\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "pure continuous wave",
+        "p": "measures",
+        "o": "vibration, sound, or light",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This is the kind of signal you might get from an ideal microphone or sensor measuring vibration, sound, or light"
+      }
+    ]
+  }
+}

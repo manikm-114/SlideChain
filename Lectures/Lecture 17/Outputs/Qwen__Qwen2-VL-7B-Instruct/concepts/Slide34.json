@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide34",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T11:26:25.270793+00:00",
+  "text_length": 639,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAll of these are considered desirable properties for PET detector crystals. The table lists the main candidate materials used in PET scanners. You don't need to memorize all the details or specific values here—in clinical practice, it’s more important to understand the general differences and why a particular material might be chosen for a given system. \n\nWhat matters is knowing that these materials differ in their density, decay time, emission intensity, atomic number, refractive index, and whether they are hygroscopic. Each property affects how well the crystal works for detecting gamma rays and producing high-quality PET images.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Density\", \"category\": \"instrumentation\"},\n    {\"term\": \"Decay Time\", \"category\": \"instrumentation\"},\n    {\"term\": \"Emission Intensity\", \"category\": \"instrumentation\"},\n    {\"term\": \"Atomic Number\", \"category\": \"physics\"},\n    {\"term\": \"Refractive Index\", \"category\": \"physics\"},\n    {\"term\": \"Hygroscopic\", \"category\": \"instrumentation\"}\n  ],\n  \"evidence\": [\"Each property affects how well the crystal works for detecting gamma rays and producing high-quality PET images.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Density",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Decay Time",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Emission Intensity",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Atomic Number",
+        "category": "physics"
+      },
+      {
+        "term": "Refractive Index",
+        "category": "physics"
+      },
+      {
+        "term": "Hygroscopic",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "Each property affects how well the crystal works for detecting gamma rays and producing high-quality PET images."
+    ]
+  }
+}

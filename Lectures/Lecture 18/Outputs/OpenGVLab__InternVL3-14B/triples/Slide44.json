@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"FID\", \"p\":\"produces\", \"o\":\"NMR Signal\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This Free Induction Decay (FID) Gives NMR Signal\"},\n    {\"s\":\"FID\", \"p\":\"measures\", \"o\":\"Proton Density\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Proportional to Proton Density\"},\n    {\"s\":\"FID\", \"p\":\"oscillates at\", \"o\":\"Resonance Frequency\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It oscillates at the resonance frequency\"},\n    {\"s\":\"MRI\", \"p\":\"reconstructs_with\", \"o\":\"FID\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By capturing and analyzing this signal, we can reconstruct images\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "FID",
+        "p": "measures",
+        "o": "Proton Density",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Proportional to Proton Density"
+      },
+      {
+        "s": "MRI",
+        "p": "reconstructs_with",
+        "o": "FID",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By capturing and analyzing this signal, we can reconstruct images"
+      }
+    ]
+  }
+}

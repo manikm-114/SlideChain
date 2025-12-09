@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"Light diffusion\", \"category\": \"physics\"},\n    {\"term\": \"X-ray imaging\", \"category\": \"modality\"},\n    {\"term\": \"linear attenuation coefficient\", \"category\": \"physics\"},\n    {\"term\": \"Rayleigh scattering\", \"category\": \"physics\"},\n    {\"term\": \"Mie scattering\", \"category\": \"physics\"},\n    {\"term\": \"diffuse optical imaging\", \"category\": \"modality\"},\n    {\"term\": \"inverse problems\", \"category\": \"algorithm\"},\n    {\"term\": \"diffusion models\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Light diffusion is the heart of the third part.\",\n    \"With X-ray imaging, rays go essentially straight.\",\n    \"you can explain it with the linear attenuation coefficient along that ray.\",\n    \"I showed you that little cartoon of scattering — Rayleigh at small scales, Mie at larger ones\",\n    \"diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image.\",\n    \"that’s why we dig into diffusion models and inverse problems to see what can be recovered.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Light diffusion",
+        "category": "physics"
+      },
+      {
+        "term": "X-ray imaging",
+        "category": "modality"
+      },
+      {
+        "term": "linear attenuation coefficient",
+        "category": "physics"
+      },
+      {
+        "term": "diffuse optical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "inverse problems",
+        "category": "algorithm"
+      },
+      {
+        "term": "diffusion models",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Light diffusion is the heart of the third part.",
+      "With X-ray imaging, rays go essentially straight.",
+      "you can explain it with the linear attenuation coefficient along that ray.",
+      "I showed you that little cartoon of scattering - Rayleigh at small scales, Mie at larger ones",
+      "diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image.",
+      "that’s why we dig into diffusion models and inverse problems to see what can be recovered."
+    ]
+  }
+}

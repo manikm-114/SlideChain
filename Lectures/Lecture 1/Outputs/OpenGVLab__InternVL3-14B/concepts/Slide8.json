@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"computed tomography\", \"category\": \"modality\"},\n    {\"term\": \"X-ray\", \"category\": \"modality\"},\n    {\"term\": \"cross-sectional image\", \"category\": \"reconstruction\"},\n    {\"term\": \"transverse sections\", \"category\": \"anatomy\"},\n    {\"term\": \"slices\", \"category\": \"reconstruction\"},\n    {\"term\": \"X-ray projections\", \"category\": \"physics\"},\n    {\"term\": \"computer\", \"category\": \"reconstruction\"},\n    {\"term\": \"features smaller than a millimeter\", \"category\": \"quality_metric\"},\n    {\"term\": \"attenuation\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"computed tomography, or CT, allows us to do\",\n    \"X-ray radiographs\",\n    \"cross-sectional image\",\n    \"transverse sections\",\n    \"slices\",\n    \"X-ray projections\",\n    \"use a computer to reconstruct\",\n    \"resolve features smaller than a millimeter\",\n    \"attenuation\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "computed tomography",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray",
+        "category": "modality"
+      },
+      {
+        "term": "cross-sectional image",
+        "category": "reconstruction"
+      },
+      {
+        "term": "slices",
+        "category": "reconstruction"
+      },
+      {
+        "term": "X-ray projections",
+        "category": "physics"
+      },
+      {
+        "term": "computer",
+        "category": "reconstruction"
+      },
+      {
+        "term": "features smaller than a millimeter",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "computed tomography, or CT, allows us to do",
+      "X-ray radiographs",
+      "cross-sectional image",
+      "transverse sections",
+      "slices",
+      "X-ray projections",
+      "use a computer to reconstruct",
+      "resolve features smaller than a millimeter",
+      "attenuation"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide38",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T21:46:50.799412+00:00",
+  "text_length": 478,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s try a simple numerical task: summing one over i squared, from i equals 1 to 10.\nWe can do this two ways — forward, starting from i equals 1, or backward, starting from i equals 10.\nThe code is nearly identical, just with the loop going in reverse.\nNow, in theory, both results should be the same. But because of floating-point rounding, the order can make a small difference. This is a great example of how numerical stability matters — especially in scientific computing.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"summing one over i squared, from i equals 1 to 10\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"forward, starting from i equals 1\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"backward, starting from i equals 10\",\n      \"category\": \"algorithm\"\n    },\n    {\n      \"term\": \"floating-point rounding\",\n      \"category\": \"data_processing\"\n    },\n    {\n      \"term\": \"numerical stability\",\n      \"category\": \"data_processing\"\n    },\n    {\n      \"term\": \"scientific computing\",\n      \"category\": \"data_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"Let’s try a simple numerical task: summing one over i squared, from i equals 1 to 10.\",\n    \"We can do this two ways — forward, starting from i equals 1, or backward, starting from i equals 10.\",\n    \"But because of floating-point rounding, the order can make a small difference.\",\n    \"This is a great example of how numerical stability matters — especially in scientific computing.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "summing one over i squared, from i equals 1 to 10",
+        "category": "mathematics"
+      },
+      {
+        "term": "forward, starting from i equals 1",
+        "category": "algorithm"
+      },
+      {
+        "term": "backward, starting from i equals 10",
+        "category": "algorithm"
+      },
+      {
+        "term": "floating-point rounding",
+        "category": "data_processing"
+      },
+      {
+        "term": "numerical stability",
+        "category": "data_processing"
+      },
+      {
+        "term": "scientific computing",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "Let's try a simple numerical task: summing one over i squared, from i equals 1 to 10.",
+      "We can do this two ways - forward, starting from i equals 1, or backward, starting from i equals 10.",
+      "But because of floating-point rounding, the order can make a small difference.",
+      "This is a great example of how numerical stability matters - especially in scientific computing."
+    ]
+  }
+}

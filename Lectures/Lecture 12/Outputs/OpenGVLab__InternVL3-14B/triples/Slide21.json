@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"X-ray attenuation\", \"p\":\"depends_on\", \"o\":\"absorption\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction.\"},\n    {\"s\":\"X-ray attenuation\", \"p\":\"depends_on\", \"o\":\"scatter\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction.\"},\n    {\"s\":\"X-ray attenuation\", \"p\":\"measures\", \"o\":\"contrast and quality of the images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"It’s in this process — the way X-rays are attenuated by different tissues or materials — that valuable diagnostic information is encoded. Understanding attenuation is crucial because it directly determines the contrast and quality of the images we can produce.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray attenuation",
+        "p": "depends_on",
+        "o": "scatter",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction."
+      },
+      {
+        "s": "X-ray attenuation",
+        "p": "measures",
+        "o": "contrast and quality of the images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s in this process - the way X-rays are attenuated by different tissues or materials - that valuable diagnostic information is encoded. Understanding attenuation is crucial because it directly determines the contrast and quality of the images we can produce."
+      }
+    ]
+  }
+}

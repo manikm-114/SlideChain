@@ -1,0 +1,82 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "tissue interaction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Another important artifact is acoustic shadowing.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "acoustic shadowing",
+            "p": "produces",
+            "s": "ultrasound artifacts"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "ultrasound imaging interpretation"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "<short quote from SLIDE_TEXT>",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "echoes",
+            "p": "uses",
+            "s": "ultrasound pulse"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "ultrasound energy"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "stone"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "... strongly reflects or absorbs the ultrasound energy. Because the wave cannot penetrate beyond it, there\u2019s no signal coming from the tissue behind the object.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "acoustic shadowing",
+            "p": "produces",
+            "s": "dense object"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide38.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide38.txt"
+  },
+  "slide_id": "Slide38"
+}

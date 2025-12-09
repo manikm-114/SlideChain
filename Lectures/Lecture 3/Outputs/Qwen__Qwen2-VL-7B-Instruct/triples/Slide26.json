@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T21:01:18.513074+00:00",
+  "text_length": 555,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOne subtle idea is relative linearity. A system’s behavior might depend on the chosen coordinate system or reference point. For example, a linear function with an intercept (like y = mx + b) is still linear in its relative changes. If you redefine the origin to subtract out b, it behaves like a linear function passing through zero.\nSimilarly, for systems, we often focus on relative changes in input and output rather than absolute values. This helps us apply linear system theory even when the system’s baseline isn’t perfectly aligned with the origin.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Relative Linearity\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"system responses\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"The apparent discrepancy between the linear system and linear function concepts can be eliminated by considering the system responses in terms of relative changes.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

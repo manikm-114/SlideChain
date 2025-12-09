@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide8",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"computed tomography\", \"p\":\"produces\", \"o\":\"cross-sectional image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image.\"},\n    {\"s\":\"CT\", \"p\":\"reconstructs_with\", \"o\":\"computer\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "computed tomography",
+        "p": "produces",
+        "o": "cross-sectional image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image."
+      },
+      {
+        "s": "CT",
+        "p": "reconstructs_with",
+        "o": "computer",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "With CT, we collect X-ray projections from many angles, then use a computer to reconstruct a cross-sectional image."
+      }
+    ]
+  }
+}

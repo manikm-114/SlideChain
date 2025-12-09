@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"cone beam spiral CT\",\n      \"p\": \"depends_on\",\n      \"o\": \"data truncation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Consequently, data truncation naturally occurs in helical cone beam scanning, making it an important consideration in advanced CT imaging.\"\n    },\n    {\n      \"s\": \"cone beam spiral CT\",\n      \"p\": \"produces\",\n      \"o\": \"fan beam\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If you slice through the patient in any plane, the actual X-ray beam forms a fan beam in that plane.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "cone beam spiral CT",
+        "p": "depends_on",
+        "o": "data truncation",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Consequently, data truncation naturally occurs in helical cone beam scanning, making it an important consideration in advanced CT imaging."
+      },
+      {
+        "s": "cone beam spiral CT",
+        "p": "produces",
+        "o": "fan beam",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If you slice through the patient in any plane, the actual X-ray beam forms a fan beam in that plane."
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide13",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nComputed tomography was previously called computer-aided tomography, C-A-T—so we usually put a cute cat here. C-T is nothing but the inverse process. Once you have sinogram data, p of theta, t, the question is: given the measurements, how do you invert the process?\n\nWhat is the underlying image that explains this data? Once you have the data, you reconstruct the image. The inverse process goes from data to image. X-ray measurement goes from image to data. The tomographic algorithm goes the other way, from data to image, the underlying image.\n\nAnd how do you do it? The picture I gave you shows you can use an impending method, so you have a heuristic feeling.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"tomography\", \"category\": \"modality\"},\n    {\"term\": \"sinogram\", \"category\": \"data_processing\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"inverse process\", \"category\": \"algorithm\"},\n    {\"term\": \"X-ray measurement\", \"category\": \"physics\"},\n    {\"term\": \"tomographic algorithm\", \"category\": \"algorithm\"},\n    {\"term\": \"image to data\", \"category\": \"data_processing\"},\n    {\"term\": \"data to image\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"Computed tomography was previously called computer-aided tomography, C-A-T—so we usually put a cute cat here. C-T is nothing but the inverse process. Once you have sinogram data, p of theta, t, the question is: given the measurements, how do you invert the process?\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "tomography",
+        "category": "modality"
+      },
+      {
+        "term": "sinogram",
+        "category": "data_processing"
+      },
+      {
+        "term": "inverse process",
+        "category": "algorithm"
+      },
+      {
+        "term": "X-ray measurement",
+        "category": "physics"
+      },
+      {
+        "term": "tomographic algorithm",
+        "category": "algorithm"
+      },
+      {
+        "term": "image to data",
+        "category": "data_processing"
+      },
+      {
+        "term": "data to image",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Computed tomography was previously called computer-aided tomography, C-A-T-so we usually put a cute cat here. C-T is nothing but the inverse process. Once you have sinogram data, p of theta, t, the question is: given the measurements, how do you invert the process?"
+    ]
+  }
+}

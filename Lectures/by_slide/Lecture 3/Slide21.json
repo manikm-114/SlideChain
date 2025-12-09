@@ -1,0 +1,185 @@
+{
+  "lecture": "Lecture 3",
+  "slide_id": "Slide21",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide21.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "additivity",
+              "category": "signal_processing"
+            },
+            {
+              "term": "homogeneity",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Euclid",
+              "category": "mathematics"
+            },
+            {
+              "term": "postulates",
+              "category": "mathematics"
+            },
+            {
+              "term": "definitions",
+              "category": "mathematics"
+            },
+            {
+              "term": "crafting precise definitions",
+              "category": "mathematics"
+            },
+            {
+              "term": "engineering practice",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "Over the years, some have argued that the definition of a linear system might be redundant-perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.",
+            "In the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"additivity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"homogeneity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Euclid\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"postulates\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"definitions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"crafting precise definitions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"engineering practice\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Over the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\\", \\\"In the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"additivity\", \"category\": \"signal_processing\"}, {\"term\": \"homogeneity\", \"category\": \"signal_processing\"}, {\"term\": \"Euclid\", \"category\": \"mathematics\"}, {\"term\": \"postulates\", \"category\": \"mathematics\"}, {\"term\": \"definitions\", \"category\": \"mathematics\"}, {\"term\": \"crafting precise definitions\", \"category\": \"mathematics\"}, {\"term\": \"engineering practice\", \"category\": \"workflow\"}], \"evidence\": [\"Over the years, some have argued that the definition of a linear system might be redundant-perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\", \"In the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"linear system\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"homogeneity\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "linear system",
+              "category": "mathematics"
+            },
+            {
+              "term": "additivity",
+              "category": "mathematics"
+            },
+            {
+              "term": "homogeneity",
+              "category": "mathematics"
+            },
+            {
+              "term": "Euclid",
+              "category": "mathematics"
+            },
+            {
+              "term": "postulates",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "definition of a linear system",
+            "additivity alone implies homogeneity",
+            "Euclid defined geometry with five foundational postulates"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"linear system\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"additivity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"homogeneity\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Euclid\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"postulates\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"definition of a linear system\\\",\\n    \\\"additivity alone implies homogeneity\\\",\\n    \\\"Euclid defined geometry with five foundational postulates\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"linear system\", \"category\": \"mathematics\"}, {\"term\": \"additivity\", \"category\": \"mathematics\"}, {\"term\": \"homogeneity\", \"category\": \"mathematics\"}, {\"term\": \"Euclid\", \"category\": \"mathematics\"}, {\"term\": \"postulates\", \"category\": \"mathematics\"}], \"evidence\": [\"definition of a linear system\", \"additivity alone implies homogeneity\", \"Euclid defined geometry with five foundational postulates\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide21.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Additivity",
+              "p": "represents",
+              "o": "Homogeneity",
+              "modalities": [
+                "image"
+              ],
+              "confidence": 0.9,
+              "evidence": "This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Additivity\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"Homogeneity\\\",\\n      \\\"modalities\\\": [\\\"image\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"Additivity\", \"p\": \"represents\", \"o\": \"Homogeneity\", \"modalities\": [\"image\"], \"confidence\": 0.9, \"evidence\": \"This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Additivity",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Homogeneity",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Euclid",
+              "category": "mathematics"
+            },
+            {
+              "term": "geometry",
+              "category": "mathematics"
+            },
+            {
+              "term": "postulates",
+              "category": "mathematics"
+            },
+            {
+              "term": "independent",
+              "category": "mathematics"
+            },
+            {
+              "term": "system properties",
+              "category": "signal_processing"
+            },
+            {
+              "term": "engineering practice",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "additivity alone implies homogeneity, or vice versa",
+            "crafting precise definitions, like those in mathematics or geometry, is both an art and a science",
+            "Euclid defined geometry with five foundational postulates",
+            "we can ask similar questions about system properties",
+            "this kind of deep thinking helps us build stronger foundations for engineering practice"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T20:15:26.617980+00:00\", \"text_length\": 700, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Additivity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Homogeneity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Euclid\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"geometry\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"postulates\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"independent\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"system properties\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"engineering practice\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"additivity alone implies homogeneity, or vice versa\\\",\\n    \\\"crafting precise definitions, like those in mathematics or geometry, is both an art and a science\\\",\\n    \\\"Euclid defined geometry with five foundational postulates\\\",\\n    \\\"we can ask similar questions about system properties\\\",\\n    \\\"this kind of deep thinking helps us build stronger foundations for engineering practice\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Additivity\", \"category\": \"signal_processing\"}, {\"term\": \"Homogeneity\", \"category\": \"signal_processing\"}, {\"term\": \"Euclid\", \"category\": \"mathematics\"}, {\"term\": \"geometry\", \"category\": \"mathematics\"}, {\"term\": \"postulates\", \"category\": \"mathematics\"}, {\"term\": \"independent\", \"category\": \"mathematics\"}, {\"term\": \"system properties\", \"category\": \"signal_processing\"}, {\"term\": \"engineering practice\", \"category\": \"signal_processing\"}], \"evidence\": [\"additivity alone implies homogeneity, or vice versa\", \"crafting precise definitions, like those in mathematics or geometry, is both an art and a science\", \"Euclid defined geometry with five foundational postulates\", \"we can ask similar questions about system properties\", \"this kind of deep thinking helps us build stronger foundations for engineering practice\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:57:37.104596+00:00\", \"text_length\": 700, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Additivity\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Homogeneity\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "term": "independent",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T22:13:08.170893+00:00\", \"text_length\": 700, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"additivity\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"homogeneity\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"linear system\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"euclid defined geometry\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"foundational postulates\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"independent\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa.\\\",\\n    \\\"this is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science.\\\",\\n    \\\"just as euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\\",\\n    \\\"in the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they\", \"parsed\": {\"term\": \"independent\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T22:16:24.600898+00:00\", \"text_length\": 700, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOver the years, some have argued that the definition of a linear system might be redundant—perhaps additivity alone implies homogeneity, or vice versa. This is an intriguing idea, and it reminds us that crafting precise definitions, like those in mathematics or geometry, is both an art and a science. Just as Euclid defined geometry with five foundational postulates, and mathematicians later debated whether all were independent, we can ask similar questions about system properties.\\nIn the next few slides, we’ll look at when additivity and homogeneity are truly independent and when they might be connected. This kind of deep thinking helps us build stronger foundations for engineering practice.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

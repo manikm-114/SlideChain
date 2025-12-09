@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide46",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T01:36:11.905448+00:00",
+  "text_length": 2483,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s take a step further and talk about a powerful idea that shows up across science and engineering — and that’s sparsity.\nYou can see the green button here, which means this concept is important, but it’s okay if the details feel abstract for now. Just follow the intuition.\n\nTraditionally, signal processing has focused on signals that are band-limited — which means their frequencies don’t go beyond a certain point. Based on that assumption, we rely on Nyquist sampling: sample at least twice the maximum frequency, and you can perfectly reconstruct the signal.\n\nBut what if we go beyond that assumption?\nModern theory says: you don’t always need to sample that densely. Instead of requiring a signal to be band-limited, we assume that it’s sparse in some domain. That means — in the right representation, most of the values are zero, or nearly zero.\nThink about images. They may look complex, but when you apply a wavelet transform — like the ones shown in the graphics — most of the wavelet coefficients are close to zero. Only a few carry meaningful information. This is sparsity.\nOn the left, we have an illustration from the book Wavelets in Physics. It shows how signals in physics often exhibit localized spikes — sparse behavior. In the center and top-right, you see surfaces where most values are flat or close to zero, with just a few sharp peaks — again, sparse structure.\n\nEven in biology — like the cellular structure of a leaf — patterns emerge that are spatially compact and repeated. This biological system, shown on the right, is highly structured and organized. And this kind of structure is often sparse when expressed in the right basis.\n\nNow, here’s why sparsity matters.\nIf you don’t have enough measurements to fully determine a signal — that is, if your system is underdetermined — then infinitely many solutions could explain the data. But if you know the signal is sparse, you can ask: among all possible solutions, which one is the sparsest?\nThat’s the central idea behind compressed sensing.\nBy assuming sparsity, and by choosing the solution with the fewest nonzero components, you can accurately recover the original signal — even from very limited data.\n\nSo this concept — sparsity — is not just a mathematical trick. It’s something we see everywhere: in physics, in images, in biology, and in many natural and engineered systems. Recognizing it gives us a powerful way to reconstruct signals and solve problems more efficiently than ever before.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Wavelets in Physics\", \"p\":\"uses\", \"o\":\"Wavelet transform\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The book 'Wavelets in Physics' shows how signals in physics often exhibit localized spikes — sparse behavior.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Wavelets in Physics",
+        "p": "uses",
+        "o": "Wavelet transform",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The book 'Wavelets in Physics' shows how signals in physics often exhibit localized spikes - sparse behavior."
+      }
+    ]
+  }
+}

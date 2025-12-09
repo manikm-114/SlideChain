@@ -1,0 +1,118 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "grays"
+          },
+          {
+            "category": "physics",
+            "term": "sieverts"
+          },
+          {
+            "category": "physics",
+            "term": "millisieverts"
+          },
+          {
+            "category": "physics",
+            "term": "effective dose"
+          },
+          {
+            "category": "modality",
+            "term": "CT scanning"
+          }
+        ],
+        "evidence": [
+          "grays measure the pure physical energy deposited",
+          "sieverts factor in biological effects",
+          "millisieverts (mSv)",
+          "effective dose is quite low",
+          "CT Dose Index, or CTDI",
+          "CT scanning"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "CTDIs"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "For a typical breast examination, the effective dose is quite low. For high-dose CT scans, the effective dose can be in the range of three millisieverts. For a full-body CT scan, it could be around ten millisieverts.",
+            "modalities": [
+              "text"
+            ],
+            "o": "millisieverts (mSv)",
+            "p": "measures",
+            "s": "effective dose"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "average dose over one full rotation"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "where Dz is the absorbed dose at position z and T is the thickness of the slice. In terms of assessing patient risk, again the value of He is a better measure."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "patient risk",
+        "p": "represents",
+        "s": "effective dose equivalent"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "gray"
+          },
+          {
+            "category": "physics",
+            "term": "sievert"
+          },
+          {
+            "category": "physics",
+            "term": "millisievert"
+          },
+          {
+            "category": "physics",
+            "term": "CTDI"
+          }
+        ],
+        "evidence": [
+          "For example, in a breast exam, the physical energy absorbed is measured in grays. But when you take biological sensitivity into account and use standard formulas, the unit becomes the sievert, often abbreviated as Sv or sometimes called C-word.",
+          "Because a sievert-or the C-word-is a relatively large unit, radiation dose is often expressed in millisieverts (mSv).",
+          "For a typical breast examination, the effective dose is quite low.",
+          "For high-dose CT scans, the effective dose can be in the range of three millisieverts.",
+          "For a full-body CT scan, it could be around ten millisieverts.",
+          "In CT scanning, another important metric is the CT Dose Index, or CTDI, which is used to estimate how much radiation dose is delivered."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide47.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide47.txt"
+  },
+  "slide_id": "Slide47"
+}

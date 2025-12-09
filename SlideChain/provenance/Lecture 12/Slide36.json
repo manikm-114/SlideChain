@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "anti-scatter grid"
+          },
+          {
+            "category": "physics",
+            "term": "scattered photons"
+          },
+          {
+            "category": "quality_metric",
+            "term": "contrast"
+          },
+          {
+            "category": "physics",
+            "term": "scatter"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray photons"
+          },
+          {
+            "category": "modality",
+            "term": "image"
+          }
+        ],
+        "evidence": [
+          "difference between using an anti-scatter grid and not using one",
+          "anatomical structures are much sharper",
+          "scattered photons",
+          "scatter washes out important details and reduces contrast",
+          "low-contrast tumors",
+          "scattered X-ray photons",
+          "image looks more foggy",
+          "detecting a disease early"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "anti-scatter grid"
+          },
+          {
+            "category": "physics",
+            "term": "scattered photons"
+          },
+          {
+            "category": "signal_processing",
+            "term": "contrast"
+          }
+        ],
+        "evidence": [
+          "the anatomical structures are much sharper",
+          "the image looks more foggy",
+          "scattered X-ray photons act like a layer of clouds",
+          "without a grid, these tumors might be completely hidden",
+          "using an anti-scatter grid can make the difference between detecting a disease early and missing it entirely"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "this becomes especially important when detecting low-contrast tumors"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "With a grid, however, you remove much of that scatter, revealing the underlying details more accurately."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "scattered photons",
+        "p": "removes",
+        "s": "anti-scatter grid"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "missing"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide36.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide36.txt"
+  },
+  "slide_id": "Slide36"
+}

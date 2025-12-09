@@ -1,0 +1,11 @@
+Starting with data sampling: In modern CT scanners, such as those from GE or Siemens, a typical rotation collects about 1,000 projections—sometimes slightly fewer, depending on the manufacturer, like 800 or 790.
+
+At each projection, the detector array works like a comb beam or multi-row detector, capturing thousands of data points along each ray path. For example, along one ray direction, you might have about 1,000 detector elements.
+All these detector readings combine to define the scanner’s spatial resolution, often achieving sub-millimeter precision.
+
+In the future, we are aiming to improve this further, reaching resolutions on the order of 100 microns. This is challenging because every wire and detector element has limits, so current strategies often focus on targeting smaller regions of interest.
+To resolve fine details, the angular sampling intervals and detector element sizes must be small enough, consistent with Fourier analysis and sampling theory.
+
+If the sampling rate is too low or the detector elements are too big, small features won’t be resolved clearly. For instance, with about 512 rays, you get fairly clear images. With fewer rays, small details become difficult to detect.
+Angular sampling is also critical. If you have nearly 1,000 views around the object, image quality is good. Using fewer views leads to aliasing artifacts and lower image quality.
+

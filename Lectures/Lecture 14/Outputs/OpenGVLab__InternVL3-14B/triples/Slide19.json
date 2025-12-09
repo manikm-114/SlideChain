@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"General Cone Beam Reconstruction Algorithm\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"cone beam helical scanning\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It explains that for cone beam helical scanning—where the beam geometry is divergent—you cannot simply apply linear interpolation to reconstruct images.\"\n    },\n    {\n      \"s\": \"cone beam helical scanning\",\n      \"p\": \"requires\",\n      \"o\": \"specialized algorithms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The mathematics involved is more complicated, requiring specialized algorithms to handle data truncation and beam geometry correctly.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "General Cone Beam Reconstruction Algorithm",
+        "p": "reconstructs_with",
+        "o": "cone beam helical scanning",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It explains that for cone beam helical scanning-where the beam geometry is divergent-you cannot simply apply linear interpolation to reconstruct images."
+      }
+    ]
+  }
+}

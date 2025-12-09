@@ -1,0 +1,10 @@
+Now let’s shift gears and talk about conditioning in the spatial domain.
+
+Suppose you start with a signal that has a lot of sharp changes — a noisy or high-frequency function, like the one shown on the left. Before sampling or further processing, we often want to smooth out the extremes. This helps avoid issues like aliasing or instability in reconstruction.
+
+So what do we do?
+We multiply the signal by a smooth, bell-shaped function — something like a Gaussian. That’s the curve shown in the middle. This operation acts like a soft window. It suppresses the values at the edges and emphasizes the center part of the signal.
+The result, shown on the right, is a conditioned signal. It’s still based on the original data, but now it’s more concentrated, more stable, and less prone to causing problems downstream.
+
+This process is called conditioning — and in the spatial domain, it’s done by pointwise multiplication. We’re not changing the signal globally — just shaping it locally to make it behave better.
+This idea becomes even more powerful when we look at its effect in the frequency domain — and that’s where we’re headed next.

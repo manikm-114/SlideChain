@@ -1,0 +1,107 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "side lobes"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducer"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound imaging"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier analysis"
+          },
+          {
+            "category": "signal_processing",
+            "term": "ringing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "echoes"
+          },
+          {
+            "category": "quality_metric",
+            "term": "artifacts"
+          }
+        ],
+        "evidence": [
+          "interference pattern contains side lobes",
+          "waves naturally spread out",
+          "approximate a sharp function",
+          "reverberation",
+          "transducer elements",
+          "ultrasound imaging",
+          "Fourier analysis",
+          "rippling, known as ringing",
+          "reflections from off-axis points",
+          "recognizing this artifact"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "these side lobes can create misleading signals in the image",
+            "modalities": [
+              "text"
+            ],
+            "o": "false echoes",
+            "p": "produces",
+            "s": "side lobes"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "These multiple reflections cause several delayed echoes to appear on the image",
+            "modalities": [
+              "text"
+            ],
+            "o": "delayed echoes",
+            "p": "produces",
+            "s": "reverberation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "reverberation artifacts"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "delayed echoes"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "workflow",
+        "term": "image interpretation"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

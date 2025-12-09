@@ -1,0 +1,161 @@
+{
+  "lecture": "Lecture 4",
+  "slide_id": "Slide23",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide23.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide23.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "shift-invariance",
+              "category": "signal_processing"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "delta function",
+              "category": "signal_processing"
+            },
+            {
+              "term": "weighted impulse responses",
+              "category": "signal_processing"
+            },
+            {
+              "term": "continuous-time convolution integral",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way - that’s shift-invariance.",
+            "Because the system is linear, the output also gets scaled - giving us x of tau times h of t minus tau.",
+            "To build the full output for a general input signal, we integrate over all time - summing these scaled and shifted responses.",
+            "This is how linear, shift-invariant systems behave in continuous time - and this operation, convolution, lies at the heart of modeling and understanding them."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"shift-invariance\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"linearity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"delta function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"weighted impulse responses\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous-time convolution integral\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\\", \\\"Because the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\\", \\\"To build the full output for a general input signal, we integrate over all time — summing these scaled and shifted responses.\\\", \\\"This is how linear, shift-invariant systems behave in continuous time — and this operation, convolution, lies at the heart of modeling and understanding them.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"shift-invariance\", \"category\": \"signal_processing\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"delta function\", \"category\": \"signal_processing\"}, {\"term\": \"weighted impulse responses\", \"category\": \"signal_processing\"}, {\"term\": \"continuous-time convolution integral\", \"category\": \"signal_processing\"}], \"evidence\": [\"If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way - that’s shift-invariance.\", \"Because the system is linear, the output also gets scaled - giving us x of tau times h of t minus tau.\", \"To build the full output for a general input signal, we integrate over all time - summing these scaled and shifted responses.\", \"This is how linear, shift-invariant systems behave in continuous time - and this operation, convolution, lies at the heart of modeling and understanding them.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide23.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "shift-invariance",
+              "p": "represents",
+              "o": "h of t minus tau",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "Shifting the input shifts the output in the same way - that’s shift-invariance."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"shift-invariance\\\", \\\"p\\\":\\\"represents\\\",\\n     \\\"o\\\":\\\"h of t minus tau\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Shifting the input shifts the output in the same way — that’s shift-invariance.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"shift-invariance\", \"p\": \"represents\", \"o\": \"h of t minus tau\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"Shifting the input shifts the output in the same way - that’s shift-invariance.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide23.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "delta function",
+              "category": "signal_processing"
+            },
+            {
+              "term": "shift-invariance",
+              "category": "signal_processing"
+            },
+            {
+              "term": "linear",
+              "category": "signal_processing"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "continuous-time convolution integral",
+              "category": "signal_processing"
+            },
+            {
+              "term": "sampling property of the delta function",
+              "category": "signal_processing"
+            },
+            {
+              "term": "mathematically well defined",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "system’s response to a delta function",
+            "shifting the input shifts the output in the same way - that’s shift-invariance",
+            "Because the system is linear",
+            "This operation, convolution, lies at the heart of modeling and understanding them",
+            "continuous-time convolution integral",
+            "utilized the sampling property of the delta function",
+            "mathematically well defined"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"delta function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"shift-invariance\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"linear\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous-time convolution integral\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling property of the delta function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"mathematically well defined\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"system’s response to a delta function\\\",\\n    \\\"shifting the input shifts the output in the same way — that’s shift-invariance\\\",\\n    \\\"Because the system is linear\\\",\\n    \\\"This operation, convolution, lies at the heart of modeling and understanding them\\\",\\n    \\\"continuous-time convolution integral\\\",\\n    \\\"utilized the sampling property of the delta function\\\",\\n    \\\"mathematically well defined\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"delta function\", \"category\": \"signal_processing\"}, {\"term\": \"shift-invariance\", \"category\": \"signal_processing\"}, {\"term\": \"linear\", \"category\": \"signal_processing\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"continuous-time convolution integral\", \"category\": \"signal_processing\"}, {\"term\": \"sampling property of the delta function\", \"category\": \"signal_processing\"}, {\"term\": \"mathematically well defined\", \"category\": \"mathematics\"}], \"evidence\": [\"system’s response to a delta function\", \"shifting the input shifts the output in the same way - that’s shift-invariance\", \"Because the system is linear\", \"This operation, convolution, lies at the heart of modeling and understanding them\", \"continuous-time convolution integral\", \"utilized the sampling property of the delta function\", \"mathematically well defined\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide23.json",
+        "parsed": {
+          "s": "System Output (Continuous)",
+          "p": "depends_on",
+          "o": "h(t)",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "If we shift the delta to t minus tau, the output becomes h of t minus tau."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"System Output (Continuous)\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"convolution\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This operation, convolution, lies at the heart of modeling and understanding them.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"System Output (Continuous)\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"y(t)\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"x(t) -> h -> y(t)\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"System Output (Continuous)\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"h(t)\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"If we shift the delta to t minus tau, the output becomes h of t minus tau.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"System Output (Continuous)\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"delta function\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"e\", \"parsed\": {\"s\": \"System Output (Continuous)\", \"p\": \"depends_on\", \"o\": \"h(t)\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"If we shift the delta to t minus tau, the output becomes h of t minus tau.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide23.json",
+        "parsed": {
+          "term": "mathematically well defined",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T21:37:05.178800+00:00\", \"text_length\": 1132, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"shift-invariance\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"linear system\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"continuous-time convolution integral\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"delta function\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"shift-invariant systems\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling property\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"mathematically well defined\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Again, you’re given the system’s response to a delta function, which we call h of t.\\\",\\n    \\\"Next, we scale the input by x of tau. Because the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\\",\\n    \\\"Finally, to build the full output for a general input signal, we integrate over all time — summing these scaled and shifted responses.\\\",\\n    \\\"This gives us the continuous-time convolution integral: x(t) -> h -> ∫ x(τ)\", \"parsed\": {\"term\": \"mathematically well defined\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide23.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T22:38:26.018257+00:00\", \"text_length\": 1132, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"System Output (Continuous)\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim subject>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide23.json",
+        "parsed": {
+          "term": "collecting all the weighted impulse responses across time",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T23:07:25.324675+00:00\", \"text_length\": 1132, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"continuous case\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"system’s response to a delta function, which we call h of t\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"shifting the input shifts the output in the same way — that’s shift-invariance\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"scale the input by x of tau\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the output also gets scaled — giving us x of tau times h of t minus tau\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"integrate over all time — summing these scaled and shifted responses\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"continuous-time convolution integral\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"collecting all the weighted impulse responses across time\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"linear, shift-invariant systems behave in continuous time\\\",\\n      \\\"category\", \"parsed\": {\"term\": \"collecting all the weighted impulse responses across time\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide23.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide23\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T23:13:58.139745+00:00\", \"text_length\": 1132, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s apply the same idea in the continuous case.\\nAgain, you’re given the system’s response to a delta function, which we call h of t.\\nIf we shift the delta to t minus tau, the output becomes h of t minus tau.\\u000bIn other words, shifting the input shifts the output in the same way — that’s shift-invariance.\\nNext, we scale the input by x of tau.\\u000bBecause the system is linear, the output also gets scaled — giving us x of tau times h of t minus tau.\\nFinally, to build the full output for a general input signal,\\u000bwe integrate over all time — summing these scaled and shifted responses.\\nThis gives us the continuous-time convolution integral:\\n\\nYou can think of this as collecting all the weighted impulse responses across time,\\u000band combining them to form the system’s output, where we have utilized the sampling property of the delta function.\\nThis is how linear, shift-invariant systems behave in continuous time —\\u000band this operation, convolution, lies at the heart of modeling and understanding them.\\nFinally, we have assumed that all involved integrals or summations on the previous slide converge, so mathematically well defined.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

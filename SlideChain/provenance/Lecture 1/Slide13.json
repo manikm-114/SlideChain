@@ -1,0 +1,130 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "integration"
+          },
+          {
+            "category": "mathematics",
+            "term": "differentiation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "algorithm",
+            "term": "inverse solution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "deblurring problem"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier domain"
+          },
+          {
+            "category": "reconstruction",
+            "term": "tomographic imaging"
+          }
+        ],
+        "evidence": [
+          "summing over an infinite number of values",
+          "how fast something is changing at an exact point",
+          "model how a spatially-invariant linear system modifies a signal or an image",
+          "reverse a process",
+          "given a blurry image",
+          "a convolution in a spatial or time domain is a multiplication in the Fourier domain",
+          "essentially what we do in tomographic imaging"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Convolution helps us model how a spatially-invariant linear system modifies a signal or an image."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "modeling how a spatially-invariant linear system modifies a signal or an image",
+        "p": "represents",
+        "s": "convolution"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "integration"
+          },
+          {
+            "category": "mathematics",
+            "term": "differentiation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "mathematics",
+            "term": "inverse solution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "deblurring"
+          }
+        ],
+        "evidence": [
+          "integration is a continuous version of addition",
+          "differentiation is used to find how fast something is changing",
+          "convolution helps model how a spatially-invariant linear system modifies a signal or an image",
+          "inverse solution is used to reverse a process, such as deblurring",
+          "tomographic imaging is a technique used in medical imaging"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "integration is a continuous version of addition, used when we add up contributions from every point in a region.",
+            "modalities": [
+              "text"
+            ],
+            "o": "continuous version of addition",
+            "p": "uses",
+            "s": "integration"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "multiplication in the Fourier domain"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "deblurring"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

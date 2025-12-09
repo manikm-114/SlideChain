@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide36",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"2D Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"frequency spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, if we perform a 2D Fourier transform — which we indicate here by 'F T' — we move from the spatial domain to the frequency domain. The result is this bottom-left image, which shows the frequency spectrum of the noisy image.\"\n    },\n    {\n      \"s\": \"inverse Fourier transform\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"clean version of the original image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then we perform the inverse Fourier transform — marked here as 'I F T' — to convert back to the spatial domain. And just like that, we get a much cleaner version of the original image.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "2D Fourier transform",
+        "p": "produces",
+        "o": "frequency spectrum",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now, if we perform a 2D Fourier transform - which we indicate here by 'F T' - we move from the spatial domain to the frequency domain. The result is this bottom-left image, which shows the frequency spectrum of the noisy image."
+      }
+    ]
+  }
+}

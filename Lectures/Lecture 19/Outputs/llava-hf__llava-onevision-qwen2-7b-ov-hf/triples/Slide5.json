@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide5",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nSo, the change rate, whether it is growth or decay, is described by an ordinary first-order differential equation. The first derivative — the change rate — is proportional to the original quantity.\n\nWhen we talk about the change of y, the rate of change is proportional to y. You keep seeing this kind of first-order differential equation in multiple imaging modalities. For example, in X-ray imaging, you have the initial beam intensity. It will be attenuated. The amount of attenuation — the change of the X-ray flux — is proportional to the initial flux, which we call I-naught.\n\nSimilarly, here in MRI, with y, we are talking about the initial M vector, which is M-naught. So we have this relationship.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"change rate\", \"p\":\"depends_on\", \"o\":\"original quantity\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The first derivative — the change rate — is proportional to the original quantity.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "change rate",
+        "p": "depends_on",
+        "o": "original quantity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "The first derivative - the change rate - is proportional to the original quantity."
+      }
+    ]
+  }
+}

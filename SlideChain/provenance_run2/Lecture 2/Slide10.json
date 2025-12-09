@@ -1,0 +1,188 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "workspace"
+          },
+          {
+            "category": "software",
+            "term": "variables"
+          },
+          {
+            "category": "software",
+            "term": "save command"
+          },
+          {
+            "category": "software",
+            "term": "load"
+          },
+          {
+            "category": "software",
+            "term": "clear all"
+          },
+          {
+            "category": "software",
+            "term": "close all"
+          },
+          {
+            "category": "software",
+            "term": "whos"
+          }
+        ],
+        "evidence": [
+          "the workspace is used to hold them",
+          "save all your current variables to a file",
+          "bring them back with load",
+          "clear all wipes out everything in the workspace",
+          "clc clears the command window",
+          "close any open figures",
+          "who gives you a simple list",
+          "whos gives more detail"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The who and whos commands show you what variables are currently stored."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "whos command",
+        "p": "uses",
+        "s": "MATLAB"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "whos"
+          },
+          {
+            "category": "software",
+            "term": "save"
+          },
+          {
+            "category": "software",
+            "term": "load"
+          },
+          {
+            "category": "software",
+            "term": "clear all"
+          },
+          {
+            "category": "software",
+            "term": "workspace"
+          }
+        ],
+        "evidence": [
+          "Once you start writing code in MATLAB, you'll be creating and manipulating variables - and the workspace is used to hold them.",
+          "The who and whos commands show you what variables are currently stored.",
+          "You can save all your current variables to a file using the save command and later bring them back with load.",
+          "If you want to start fresh, clear all wipes out everything in the workspace, clc clears the command window, and close all shuts any open figures."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "workflow",
+            "term": "save"
+          },
+          {
+            "category": "workflow",
+            "term": "load"
+          },
+          {
+            "category": "workflow",
+            "term": "clear all"
+          },
+          {
+            "category": "workflow",
+            "term": "close all"
+          }
+        ],
+        "evidence": [
+          "Once you start writing code in MATLAB, you'll be creating and manipulating variables - and the workspace is used to hold them."
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "clear all - clear workspace vars."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "workspace vars",
+        "p": "depends_on",
+        "s": "clear all"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "workspace"
+          },
+          {
+            "category": "software",
+            "term": "whos"
+          },
+          {
+            "category": "software",
+            "term": "save"
+          },
+          {
+            "category": "software",
+            "term": "load"
+          },
+          {
+            "category": "software",
+            "term": "clear"
+          },
+          {
+            "category": "software",
+            "term": "close all"
+          }
+        ],
+        "evidence": [
+          "The workspace is used to hold variables.",
+          "who and whos commands show you what variables are currently stored.",
+          "You can save all your current variables to a file using the save command and later bring them back with load.",
+          "If you want to start fresh, clear all wipes out everything in the workspace, clc clears the command window, and close all shuts any open figures."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Once you start writing code in MATLAB, you\u2019ll be creating and manipulating variables - and the workspace is used to hold them.",
+            "modalities": [
+              "text"
+            ],
+            "o": "workspace",
+            "p": "uses",
+            "s": "MATLAB"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide10.txt"
+  },
+  "slide_id": "Slide10"
+}

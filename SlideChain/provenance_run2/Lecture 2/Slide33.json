@@ -1,0 +1,196 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "peaks function"
+          },
+          {
+            "category": "software",
+            "term": "mesh"
+          },
+          {
+            "category": "algorithm",
+            "term": "meshgrid"
+          },
+          {
+            "category": "algorithm",
+            "term": "interp2"
+          },
+          {
+            "category": "data_processing",
+            "term": "finer grid"
+          },
+          {
+            "category": "algorithm",
+            "term": "estimate new Z-values"
+          },
+          {
+            "category": "data_processing",
+            "term": "smoother, higher-resolution data"
+          }
+        ],
+        "evidence": [
+          "The peaks function creates a sample surface.",
+          "Use mesh to visualize it.",
+          "create a finer grid with meshgrid",
+          "use interp2 to estimate new Z-values",
+          "This technique is useful in graphics, simulations, and image processing - anytime you want smoother, higher-resolution data."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "meshgrid"
+          },
+          {
+            "category": "mathematics",
+            "term": "interp2"
+          },
+          {
+            "category": "mathematics",
+            "term": "peaks"
+          },
+          {
+            "category": "mathematics",
+            "term": "grid"
+          },
+          {
+            "category": "data_processing",
+            "term": "higher-resolution"
+          },
+          {
+            "category": "software",
+            "term": "graphics"
+          },
+          {
+            "category": "software",
+            "term": "simulations"
+          },
+          {
+            "category": "software",
+            "term": "image processing"
+          }
+        ],
+        "evidence": [
+          "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.",
+          "This technique is useful in graphics, simulations, and image processing - anytime you want smoother, higher-resolution data."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "The peaks function creates a sample surface."
+          },
+          {
+            "category": "data_processing",
+            "term": "Use mesh to visualize it."
+          },
+          {
+            "category": "data_processing",
+            "term": "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values."
+          }
+        ],
+        "evidence": [
+          "The peaks function creates a sample surface.",
+          "Use mesh to visualize it.",
+          "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.",
+          "This technique is useful in graphics, simulations, and image processing - anytime you want smoother, higher-resolution data."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The peaks function creates a sample surface.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "sample surface",
+            "p": "produces",
+            "s": "peaks function"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "To smooth it out, create a finer grid with meshgrid",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "meshgrid",
+            "p": "uses",
+            "s": "meshgrid"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "use interp2 to estimate new Z-values.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "interp2",
+            "p": "uses",
+            "s": "interp2"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "meshgrid"
+          },
+          {
+            "category": "software",
+            "term": "interp2"
+          },
+          {
+            "category": "data_processing",
+            "term": "higher-resolution data"
+          }
+        ],
+        "evidence": [
+          "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.",
+          "This technique is useful in graphics, simulations, and image processing - anytime you want smoother, higher-resolution data."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "To smooth it out, create a finer grid with meshgrid, and use interp2 to estimate new Z-values.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Z-values",
+            "p": "uses",
+            "s": "meshgrid"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide33.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide33.txt"
+  },
+  "slide_id": "Slide33"
+}

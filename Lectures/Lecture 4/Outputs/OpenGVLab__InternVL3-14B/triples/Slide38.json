@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide38",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Inverse filtering\",\n      \"p\": \"uses\",\n      \"o\": \"Fourier domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This slide shows how inverse filtering works in the frequency domain.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"becomes\",\n      \"o\": \"multiplication\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In the Fourier domain, convolution becomes multiplication.\"\n    },\n    {\n      \"s\": \"Fourier transform of the blurred image\",\n      \"p\": \"equals\",\n      \"o\": \"product of the transforms of the original image and the PSF\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"So, the Fourier transform of the blurred image equals the product of the transforms of the original image and the PSF.\"\n    },\n    {\n      \"s\": \"Inverse filtering\",\n      \"p\": \"depends_on\",\n      \"o\": \"division in the frequency domain\",\n      \"modalities\": [\"text\"],",
+  "parsed": {
+    "s": "Fourier transform of the blurred image",
+    "p": "equals",
+    "o": "product of the transforms of the original image and the PSF",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "So, the Fourier transform of the blurred image equals the product of the transforms of the original image and the PSF."
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "lecture": "Lecture 15",
+  "slide_id": "Slide17",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide17.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide17.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "sinogram",
+              "category": "reconstruction"
+            },
+            {
+              "term": "maximum theta value",
+              "category": "reconstruction"
+            },
+            {
+              "term": "truncated",
+              "category": "reconstruction"
+            },
+            {
+              "term": "projections",
+              "category": "reconstruction"
+            },
+            {
+              "term": "algorithm",
+              "category": "reconstruction"
+            },
+            {
+              "term": "complete picture",
+              "category": "reconstruction"
+            },
+            {
+              "term": "angular range",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.",
+            "So, limiting the maximum theta is like taking photos of a sculpture but only from one side-you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"maximum theta value\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"truncated\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"projections\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"algorithm\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"complete picture\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"angular range\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\\", \\\"So, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"sinogram\", \"category\": \"reconstruction\"}, {\"term\": \"maximum theta value\", \"category\": \"reconstruction\"}, {\"term\": \"truncated\", \"category\": \"reconstruction\"}, {\"term\": \"projections\", \"category\": \"reconstruction\"}, {\"term\": \"algorithm\", \"category\": \"reconstruction\"}, {\"term\": \"complete picture\", \"category\": \"reconstruction\"}, {\"term\": \"angular range\", \"category\": \"reconstruction\"}], \"evidence\": [\"When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\", \"So, limiting the maximum theta is like taking photos of a sculpture but only from one side-you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<maximum theta value>\\\", \\\"p\\\":\\\"measures\\\",\\n     \\\"o\\\":\\\"<sinogram>\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"When we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "sinogram",
+              "category": "data_processing"
+            },
+            {
+              "term": "truncated",
+              "category": "data_processing"
+            },
+            {
+              "term": "projections",
+              "category": "data_processing"
+            },
+            {
+              "term": "reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "maximum theta",
+              "category": "data_processing"
+            },
+            {
+              "term": "angular range",
+              "category": "data_processing"
+            },
+            {
+              "term": "incomplete and inaccurate",
+              "category": "quality_metric"
+            },
+            {
+              "term": "algorithm",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "The sinogram is truncated",
+            "projections from 0 all the way up to 180 degrees",
+            "reconstruct the image",
+            "limiting the maximum theta",
+            "projections across the whole angular range",
+            "incomplete and inaccurate",
+            "algorithm never saw the object from the other directions"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"truncated\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"projections\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"maximum theta\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"angular range\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"incomplete and inaccurate\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"algorithm\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The sinogram is truncated\\\",\\n    \\\"projections from 0 all the way up to 180 degrees\\\",\\n    \\\"reconstruct the image\\\",\\n    \\\"limiting the maximum theta\\\",\\n    \\\"projections across the whole angular range\\\",\\n    \\\"incomplete and inaccurate\\\",\\n    \\\"algorithm never saw the object from the other directions\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"sinogram\", \"category\": \"data_processing\"}, {\"term\": \"truncated\", \"category\": \"data_processing\"}, {\"term\": \"projections\", \"category\": \"data_processing\"}, {\"term\": \"reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"maximum theta\", \"category\": \"data_processing\"}, {\"term\": \"angular range\", \"category\": \"data_processing\"}, {\"term\": \"incomplete and inaccurate\", \"category\": \"quality_metric\"}, {\"term\": \"algorithm\", \"category\": \"algorithm\"}], \"evidence\": [\"The sinogram is truncated\", \"projections from 0 all the way up to 180 degrees\", \"reconstruct the image\", \"limiting the maximum theta\", \"projections across the whole angular range\", \"incomplete and inaccurate\", \"algorithm never saw the object from the other directions\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide17.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "sinogram",
+              "p": "represents",
+              "o": "truncated",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "The sinogram is truncated (only part of sample is scanned)"
+            },
+            {
+              "s": "reconstruction",
+              "p": "depends_on",
+              "o": "projections from 0 to 45 degrees",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"sinogram\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"truncated\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The sinogram is truncated (only part of sample is scanned)\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"reconstruction\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"projections from 0 to 45 degrees\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"sinogram\", \"p\": \"represents\", \"o\": \"truncated\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"The sinogram is truncated (only part of sample is scanned)\"}, {\"s\": \"reconstruction\", \"p\": \"depends_on\", \"o\": \"projections from 0 to 45 degrees\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide17.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "sinogram",
+              "category": "signal_processing"
+            },
+            {
+              "term": "truncated",
+              "category": "data_processing"
+            },
+            {
+              "term": "projection",
+              "category": "signal_processing"
+            },
+            {
+              "term": "reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "angular range",
+              "category": "mathematics"
+            },
+            {
+              "term": "incomplete",
+              "category": "quality_metric"
+            },
+            {
+              "term": "accurate",
+              "category": "quality_metric"
+            },
+            {
+              "term": "algorithm",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "The sinogram is essentially truncated.",
+            "we're missing most of the information.",
+            "we need projections across the whole angular range."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:42:15.455086+00:00\", \"text_length\": 928, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"truncated\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"projection\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"angular range\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"incomplete\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"accurate\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"algorithm\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The sinogram is essentially truncated.\\\", \\\"we’re missing most of the information.\\\", \\\"we need projections across the whole angular range.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"sinogram\", \"category\": \"signal_processing\"}, {\"term\": \"truncated\", \"category\": \"data_processing\"}, {\"term\": \"projection\", \"category\": \"signal_processing\"}, {\"term\": \"reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"angular range\", \"category\": \"mathematics\"}, {\"term\": \"incomplete\", \"category\": \"quality_metric\"}, {\"term\": \"accurate\", \"category\": \"quality_metric\"}, {\"term\": \"algorithm\", \"category\": \"algorithm\"}], \"evidence\": [\"The sinogram is essentially truncated.\", \"we're missing most of the information.\", \"we need projections across the whole angular range.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:12:17.958771+00:00\", \"text_length\": 928, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide17.json",
+        "parsed": {
+          "term": "to get a full and accurate reconstruction, we need projections across the whole angular range",
+          "category": "reconstruction"
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:11:05.016873+00:00\", \"text_length\": 928, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"what happens if you change the max θ (Line 22) to 45?\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the sinogram is truncated (only part of sample is scanned)\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"if we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"to get a full and accurate reconstruction, we need projections across the whole angular range\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"what happens if you change the max θ (Line 2\", \"parsed\": {\"term\": \"to get a full and accurate reconstruction, we need projections across the whole angular range\", \"category\": \"reconstruction\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide17.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide17\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T08:15:29.645186+00:00\", \"text_length\": 928, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nNow let’s see what happens if we change the maximum theta value.\\n\\nPreviously, we collected projections from 0 all the way up to 180 degrees. But what if we stop early—say, at just 45 degrees?\\nWhen we do that, the sinogram is essentially truncated. Instead of showing information from a full half-circle of projections, it only covers a small portion of the angles. In other words, we’ve only scanned part of the sample.\\n\\nWhat does that mean for reconstruction? If we only gather projections from 0 to 45 degrees, then when we try to reconstruct the image, we’re missing most of the information. The result will be incomplete and inaccurate, because the algorithm never saw the object from the other directions.\\n\\nSo, limiting the maximum theta is like taking photos of a sculpture but only from one side—you lose the complete picture. To get a full and accurate reconstruction, we need projections across the whole angular range.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"The sinogram is truncated\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"only part of sample is scanned\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"*The sinogram is truncated (only part of sample is scanned)*\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

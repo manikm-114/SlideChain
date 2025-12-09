@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide26",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s shift gears a little bit. Up to this point, we’ve been focusing mainly on the physics of ultrasound — the wave equation, acoustic impedance, and sound–tissue interactions. We’ve covered how ultrasound propagates, how energy is absorbed or reflected, and how contrast is generated in imaging.\nBut now, we’re moving into a different section — a more engineering-oriented discussion. These next few slides focus on the ultrasound scanner, or sometimes we call it the ultrasound probe or transducer. All these terms basically refer to the same device.\n\nSo, in this next part, we’ll first talk about the single ultrasound unit, and then how multiple such units are combined to form arrays — either linear arrays for one-dimensional scanning, or two-dimensional arrays for volumetric imaging. This is actually quite similar to how a CT scanner is organized — you have multiple detectors arranged in a specific pattern to collect information from different angles.\n\nWe’ll also talk about image resolution, contrast, and microbubbles, which are tiny gas-filled spheres used as ultrasound contrast agents. These help us visualize blood flow and enhance tissue contrast in medical imaging.\n\nSo again, just to summarize — the first part of this lecture covered the physical foundations, while this next part is all about the engineering principles of the ultrasound scanner itself: how it’s built, how it operates, and how it detects signals.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"ultrasound scanner\", \"category\": \"instrumentation\"},\n    {\"term\": \"linear arrays\", \"category\": \"instrumentation\"},\n    {\"term\": \"two-dimensional arrays\", \"category\": \"instrumentation\"},\n    {\"term\": \"volumetric imaging\", \"category\": \"instrumentation\"},\n    {\"term\": \"contrast agents\", \"category\": \"signal_processing\"},\n    {\"term\": \"microbubbles\", \"category\": \"signal_processing\"},\n    {\"term\": \"contrast\", \"category\": \"signal_processing\"},\n    {\"term\": \"image resolution\", \"category\": \"quality_metric\"},\n    {\"term\": \"microbubble contrast agents\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"But now, we’re moving into a different section — a more engineering-oriented discussion. These next few slides focus on the ultrasound scanner, or sometimes we call it the ultrasound probe or transducer. All these terms basically refer to the same device.\", \"We’ll also talk about image resolution, contrast, and microbubbles, which are tiny gas-filled spheres used as ultrasound contrast agents. These help us visualize blood flow and enhance tissue contrast in medical imaging.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "ultrasound scanner",
+        "category": "instrumentation"
+      },
+      {
+        "term": "linear arrays",
+        "category": "instrumentation"
+      },
+      {
+        "term": "two-dimensional arrays",
+        "category": "instrumentation"
+      },
+      {
+        "term": "volumetric imaging",
+        "category": "instrumentation"
+      },
+      {
+        "term": "contrast agents",
+        "category": "signal_processing"
+      },
+      {
+        "term": "microbubbles",
+        "category": "signal_processing"
+      },
+      {
+        "term": "contrast",
+        "category": "signal_processing"
+      },
+      {
+        "term": "image resolution",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "But now, we’re moving into a different section - a more engineering-oriented discussion. These next few slides focus on the ultrasound scanner, or sometimes we call it the ultrasound probe or transducer. All these terms basically refer to the same device.",
+      "We’ll also talk about image resolution, contrast, and microbubbles, which are tiny gas-filled spheres used as ultrasound contrast agents. These help us visualize blood flow and enhance tissue contrast in medical imaging."
+    ]
+  }
+}

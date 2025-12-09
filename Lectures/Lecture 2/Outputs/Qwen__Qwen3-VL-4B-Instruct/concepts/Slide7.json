@@ -1,0 +1,35 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T21:31:31.135901+00:00",
+  "text_length": 786,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThe very first step is to install and activate MATLAB.\nIf you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs. Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\nDuring the installation, you’ll be asked to enter a product key to activate the software. This key is provided by the institution, and it unlocks your licensed access.\nIf you run into any issues during the setup — like installation errors or activation trouble — don’t hesitate to reach out. You can consult the help center, or message me directly. We're here to help you get started smoothly.\nHaving MATLAB set up and ready prepares us well before diving into hands-on examples.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"install and activate matlab\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"download matlab directly from the campus software portal: dotcio.rpi.edu/services/software-labs\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"follow the installation instructions that match your operating system\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"enter a product key to activate the software\",\n      \"category\": \"software\"\n    },\n    {\n      \"term\": \"product key is provided by the institution\",\n      \"category\": \"software\"\n    }\n  ],\n  \"evidence\": [\n    \"The very first step is to install and activate MATLAB.\",\n    \"If you’re at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.\",\n    \"Make sure to follow the installation instructions that match your operating system — whether you're on Windows, macOS, or Linux.\",\n    \"During the installation, you’ll be asked to enter a product key to activate the software.\",\n    \"This key is provided by the institution, and it unlocks your licensed access.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "install and activate matlab",
+        "category": "software"
+      },
+      {
+        "term": "download matlab directly from the campus software portal: dotcio.rpi.edu/services/software-labs",
+        "category": "software"
+      },
+      {
+        "term": "follow the installation instructions that match your operating system",
+        "category": "software"
+      },
+      {
+        "term": "enter a product key to activate the software",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "The very first step is to install and activate MATLAB.",
+      "If you're at RPI, you can download MATLAB directly from the campus software portal: dotcio.rpi.edu/services/software-labs.",
+      "Make sure to follow the installation instructions that match your operating system - whether you're on Windows, macOS, or Linux.",
+      "During the installation, you'll be asked to enter a product key to activate the software.",
+      "This key is provided by the institution, and it unlocks your licensed access."
+    ]
+  }
+}

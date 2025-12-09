@@ -1,0 +1,127 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "loops"
+          },
+          {
+            "category": "signal_processing",
+            "term": "independent loops"
+          },
+          {
+            "category": "signal_processing",
+            "term": "building blocks"
+          },
+          {
+            "category": "signal_processing",
+            "term": "solving circuit problems"
+          },
+          {
+            "category": "signal_processing",
+            "term": "current through each branch"
+          },
+          {
+            "category": "signal_processing",
+            "term": "voltage across each resistor"
+          }
+        ],
+        "evidence": [
+          "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+          "We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.",
+          "The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.",
+          "These equations are the building blocks for solving circuit problems with multiple unknowns, such as the current through each branch or the voltage across each resistor."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "You might notice that other closed paths exist - for example, one that goes all the way around the outside - but these can be derived from combinations of the independent loops. They don't give us any new information."
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.95,
+            "evidence": "each independent loop gives us one equation when we apply Kirchhoff's Voltage Law.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "one equation",
+            "p": "produces",
+            "s": "independent loops"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "closed path",
+            "p": "represents",
+            "s": "independent loops"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "loop"
+          },
+          {
+            "category": "mathematics",
+            "term": "independent loop"
+          },
+          {
+            "category": "mathematics",
+            "term": "Kirchhoff\u2019s Voltage Law"
+          },
+          {
+            "category": "physics",
+            "term": "circuit"
+          },
+          {
+            "category": "physics",
+            "term": "voltage source"
+          },
+          {
+            "category": "physics",
+            "term": "resistor"
+          },
+          {
+            "category": "physics",
+            "term": "current source"
+          }
+        ],
+        "evidence": [
+          "A loop is a closed path in the circuit that passes through a sequence of branches and returns to the starting point without crossing any branch more than once.",
+          "But not all loops are equally useful in analysis. We focus on independent loops, which each contain at least one branch that is not part of any other loop in the set.",
+          "The reason this concept is important is that each independent loop gives us one equation when we apply Kirchhoff\u2019s Voltage Law."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide14.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide14.txt"
+  },
+  "slide_id": "Slide14"
+}

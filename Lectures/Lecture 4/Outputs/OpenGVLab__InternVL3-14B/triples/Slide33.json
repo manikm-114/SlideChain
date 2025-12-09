@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide33",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"RC circuit\",\n      \"p\": \"produces\",\n      \"o\": \"impulse response\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The output is the circuit’s impulse response, denoted h of t.\"\n    },\n    {\n      \"s\": \"RC circuit\",\n      \"p\": \"uses\",\n      \"o\": \"resistor R and capacitor C\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In this circuit, we have a resistor R and a capacitor C connected in series.\"\n    },\n    {\n      \"s\": \"impulse response\",\n      \"p\": \"represents\",\n      \"o\": \"decaying exponential\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The h of t of the RC circuit is a decaying exponential.\"\n    },\n    {\n      \"s\": \"output\",\n      \"p\": \"depends_on\",\n      \"o\": \"input and h of t\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9",
+  "parsed": {
+    "s": "impulse response",
+    "p": "represents",
+    "o": "decaying exponential",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "The h of t of the RC circuit is a decaying exponential."
+    ]
+  }
+}

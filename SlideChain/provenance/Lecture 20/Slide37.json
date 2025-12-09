@@ -1,0 +1,119 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "MRI scans"
+          },
+          {
+            "category": "physics",
+            "term": "BOLD effect"
+          },
+          {
+            "category": "physics",
+            "term": "Blood Oxygen Level Dependent contrast"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal patterns"
+          },
+          {
+            "category": "ai_ml",
+            "term": "machine learning"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct"
+          }
+        ],
+        "evidence": [
+          "The MRI scans you see here show how the brain reacts differently in each case.",
+          "This mechanism is called the BOLD effect, short for Blood Oxygen Level Dependent contrast.",
+          "By analyzing these signal patterns statistically, we can tell what kind of object the person is viewing.",
+          "Using advanced image analysis and machine learning, they can now reconstruct, with rough resolution, what a person is actually seeing.",
+          "understanding how the brain encodes visual information."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The MRI scans you see here show how the brain reacts differently in each case.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "brain activity",
+            "p": "measures",
+            "s": "MRI scans"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This mechanism is called the BOLD effect, short for Blood Oxygen Level Dependent contrast.",
+            "modalities": [
+              "text"
+            ],
+            "o": "oxygen-rich blood flow",
+            "p": "depends_on",
+            "s": "BOLD effect"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Using advanced image analysis and machine learning, they can now reconstruct, with rough resolution, what a person is actually seeing",
+            "modalities": [
+              "text"
+            ],
+            "o": "visual information",
+            "p": "reconstructs_with",
+            "s": "advanced image analysis and machine learning"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "communication",
+        "term": "video"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "ai_ml",
+        "term": "using advanced image analysis and machine learning"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "This mechanism is called the BOLD effect, short for Blood Oxygen Level Dependent contrast."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "BOLD effect",
+        "p": "produces",
+        "s": "the MRI signal"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "understanding how the brain encodes visual information"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

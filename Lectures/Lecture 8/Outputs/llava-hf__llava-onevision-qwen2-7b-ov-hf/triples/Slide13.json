@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide13",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nUp to this point, we’ve been talking about aliasing and how to avoid it. Let’s now assume we’ve done that — our sampling rate is always high enough, and the spectra are well separated. Aliasing is no longer an issue.\n\nOn the top row, you see our original continuous-time signal on the left. On the right, it’s been sampled — we now have a series of discrete values at regular time intervals.\n\nOn the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max. On the right is the sampled spectrum — multiple, non-overlapping copies, spaced apart by the sampling frequency, which is one over capital T.\n\nSo yes, the signal is now discrete in time, and its spectrum is nicely replicated without overlap. But our job isn’t finished yet. The spectrum is still continuous in frequency. And if we want to fully digitize the signal — so that both the time domain and the frequency domain are discrete — we still have another step to go.\nThat step is discretizing the spectrum, which is exactly where we’re heading next.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"original continuous-time signal\", \"p\":\"represents\",\n     \"o\":\"discrete values at regular time intervals\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"On the top row, you see our original continuous-time signal on the left. On the right, it’s been sampled — we now have a series of discrete values at regular time intervals.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "original continuous-time signal",
+        "p": "represents",
+        "o": "discrete values at regular time intervals",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 0.0,
+        "evidence": "On the top row, you see our original continuous-time signal on the left. On the right, it’s been sampled - we now have a series of discrete values at regular time intervals."
+      }
+    ]
+  }
+}

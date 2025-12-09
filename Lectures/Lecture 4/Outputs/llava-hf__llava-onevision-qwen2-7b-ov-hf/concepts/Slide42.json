@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide42",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nA related concept to convolution is cross-correlation.\nMathematically, the key difference is in the sign of the shift.\nIn convolution, we compute the integral of f of x minus u times g of u.\nIn cross-correlation, it’s f of x plus u times g of u.\nSo, convolution flips one of the functions before shifting and multiplying,\u000bwhile cross-correlation does not.\nBoth are useful in signal processing —\u000bbut for different purposes, like system response versus pattern matching.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"cross-correlation\", \"category\": \"signal_processing\"},\n    {\"term\": \"shift\", \"category\": \"signal_processing\"},\n    {\"term\": \"integral\", \"category\": \"mathematics\"},\n    {\"term\": \"system response\", \"category\": \"signal_processing\"},\n    {\"term\": \"pattern matching\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"In convolution, we compute the integral of f of x minus u times g of u.\", \"In cross-correlation, it’s f of x plus u times g of u.\", \"Both are useful in signal processing — but for different purposes, like system response versus pattern matching.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "cross-correlation",
+        "category": "signal_processing"
+      },
+      {
+        "term": "shift",
+        "category": "signal_processing"
+      },
+      {
+        "term": "integral",
+        "category": "mathematics"
+      },
+      {
+        "term": "system response",
+        "category": "signal_processing"
+      },
+      {
+        "term": "pattern matching",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "In convolution, we compute the integral of f of x minus u times g of u.",
+      "In cross-correlation, it’s f of x plus u times g of u.",
+      "Both are useful in signal processing - but for different purposes, like system response versus pattern matching."
+    ]
+  }
+}

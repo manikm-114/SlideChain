@@ -1,0 +1,134 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "gray matter"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "When you use a photon-counting detector, it can measure X-ray signals at different energy levels separately.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray signals at different energy levels",
+            "p": "measures",
+            "s": "photon-counting detector"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "beam hardening artifacts"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "This is an example of CT images affected by beam hardening without any correction. You can see a darker strip in the image, which obscures details. After applying correction techniques, you can visualize structures like gray matter much more clearly.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "beam hardening artifacts",
+            "p": "uses",
+            "s": "CT images"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "distortions in conventional CT images"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "When you use a photon-counting detector, it can measure X-ray signals at different energy levels separately."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "X-ray signals at different energy levels separately",
+        "p": "measures",
+        "s": "photon-counting detector"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "beam hardening artifacts"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray source"
+          },
+          {
+            "category": "physics",
+            "term": "polychromatic nature"
+          },
+          {
+            "category": "instrumentation",
+            "term": "photon-counting detector"
+          },
+          {
+            "category": "signal_processing",
+            "term": "energy levels"
+          },
+          {
+            "category": "physics",
+            "term": "beam hardening"
+          },
+          {
+            "category": "quality_metric",
+            "term": "image quality"
+          },
+          {
+            "category": "quality_metric",
+            "term": "distortions"
+          },
+          {
+            "category": "modality",
+            "term": "conventional CT images"
+          },
+          {
+            "category": "software",
+            "term": "correction techniques"
+          }
+        ],
+        "evidence": [
+          "This is an example of CT images affected by beam hardening without any correction. You can see a darker strip in the image, which obscures details. After applying correction techniques, you can visualize structures like gray matter much more clearly."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Beam hardening artifacts originate from the X-ray source and the polychromatic nature of the X-ray beam.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "X-ray signals",
+            "p": "measures",
+            "s": "beam hardening artifacts"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide41.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide41.txt"
+  },
+  "slide_id": "Slide41"
+}

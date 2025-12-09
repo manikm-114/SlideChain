@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide4",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CT\", \"p\":\"uses\", \"o\":\"X-ray projections\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT uses X-ray projections taken from many different angles around the body.\"},\n    {\"s\":\"CT\", \"p\":\"depends_on\", \"o\":\"attenuation\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"As the X-rays pass through, they are attenuated—that means they are weakened—depending on the different properties of the tissues they pass through.\"},\n    {\"s\":\"CT\", \"p\":\"reconstructs_with\", \"o\":\"projections from multiple views\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT",
+        "p": "uses",
+        "o": "X-ray projections",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "CT uses X-ray projections taken from many different angles around the body."
+      },
+      {
+        "s": "CT",
+        "p": "reconstructs_with",
+        "o": "projections from multiple views",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By collecting all these projections from multiple views, we build up enough information to start reconstructing what’s inside the body."
+      }
+    ]
+  }
+}

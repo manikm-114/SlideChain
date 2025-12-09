@@ -1,0 +1,19 @@
+Let’s go through a helpful example using a two-dimensional rectangular function. This is a classic case to build intuition around how the Fourier transform behaves in two dimensions.
+
+Imagine a rectangle that’s centered at the origin. It has a total width of capital X along the x-axis, and a total height of capital Y along the y-axis. The function value is constant — say, equal to 1 — inside this rectangle, and zero outside.
+
+We now take the 2D Fourier transform of this rectangle. The formula looks a bit dense, but the steps are straightforward.
+
+We start with the double integral of the original function times the complex exponential — e to the power minus j 2 pi times the quantity u x plus v y. That’s the standard definition of the 2D Fourier transform.
+Since the function is separable — meaning it depends independently on x and y — we can break the double integral into two parts:
+one over x, and one over y.
+Evaluating each of these integrals separately gives us a product of two expressions.
+Each part turns into a sinc function. In the x-direction, we get sin of pi times X u over pi X u — that’s sinc of pi X u. And in the y-direction, it’s sinc of pi Y v.
+
+So the full 2D Fourier transform ends up as the product of these two sinc functions — one in the u-direction, and one in the v-direction — scaled by the area of the original rectangle, which is X times Y.
+Now if you look at the plot here, you’ll see a 3D surface that shows the magnitude of the Fourier transform — the peak is at the center, and the ripples decay outward. That shape comes directly from the sinc functions.
+
+Why are we showing this?
+Because it mirrors the result we saw earlier: when a rectangular function is defined in one domain — here it’s the spatial domain — its transform becomes a sinc function in the other domain — in this case, the frequency domain.
+This is closely related to the idea we discussed on the previous slide, where the rectangle — or gate — was in the frequency domain, and its transform was a sinc function in time. Whether you go forward or inverse, the core relationship stays similar.
+So while this example is technically a bit different — it’s 2D, and it’s a forward transform — the intuition still applies. Rectangles and sinc functions are transform pairs. And we use that fact again and again in signal processing and imaging.

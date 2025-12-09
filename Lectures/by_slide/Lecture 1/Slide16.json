@@ -1,0 +1,148 @@
+{
+  "lecture": "Lecture 1",
+  "slide_id": "Slide16",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide16.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "medical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "career-related",
+              "category": "software"
+            },
+            {
+              "term": "required course",
+              "category": "communication"
+            }
+          ],
+          "evidence": [
+            "So by now, you might be thinking-this is all very cool, but why do I really need to learn medical imaging? Well, I’d say there are at least two solid reasons.",
+            "First-and perhaps most importantly-it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.",
+            "But for now, just keep in mind-this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"medical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"health-related knowledge\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"career-related\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"required course\\\", \\\"category\\\": \\\"communication\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"So by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging? Well, I’d say there are at least two solid reasons.\\\", \\\"First—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\\", \\\"But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"medical imaging\", \"category\": \"modality\"}, {\"term\": \"career-related\", \"category\": \"software\"}, {\"term\": \"required course\", \"category\": \"communication\"}], \"evidence\": [\"So by now, you might be thinking-this is all very cool, but why do I really need to learn medical imaging? Well, I’d say there are at least two solid reasons.\", \"First-and perhaps most importantly-it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\", \"But for now, just keep in mind-this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"medical imaging\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"health-related knowledge\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"gives you essential health-related knowledge\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "health-related knowledge",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "essential health-related knowledge",
+            "career-related"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"health-related knowledge\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"career requirements\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"essential health-related knowledge\\\", \\\"career-related\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"health-related knowledge\", \"category\": \"modality\"}], \"evidence\": [\"essential health-related knowledge\", \"career-related\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide16.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "medical imaging",
+              "p": "depends_on",
+              "o": "health-related knowledge",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "First-and perhaps most importantly-it gives you essential health-related knowledge."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"medical imaging\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"health-related knowledge\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"First—and perhaps most importantly—it gives you essential health-related knowledge.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"medical imaging\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"career requirements\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"The second reason is career-related.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"medical imaging\", \"p\": \"depends_on\", \"o\": \"health-related knowledge\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"First-and perhaps most importantly-it gives you essential health-related knowledge.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "health-related knowledge",
+              "category": "software"
+            },
+            {
+              "term": "career-related",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "gives you essential health-related knowledge",
+            "career-related",
+            "Foundation + Modalities",
+            "MatLab",
+            "Books + Google"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T18:03:05.732820+00:00\", \"text_length\": 753, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"health-related knowledge\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"career-related\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"foundation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"modalities\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"MatLab\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Books\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Google\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"gives you essential health-related knowledge\\\",\\n    \\\"career-related\\\",\\n    \\\"Foundation + Modalities\\\",\\n    \\\"MatLab\\\",\\n    \\\"Books + Google\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"health-related knowledge\", \"category\": \"software\"}, {\"term\": \"career-related\", \"category\": \"software\"}], \"evidence\": [\"gives you essential health-related knowledge\", \"career-related\", \"Foundation + Modalities\", \"MatLab\", \"Books + Google\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide16.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T19:04:49.753464+00:00\", \"text_length\": 753, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide16.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "health-related knowledge",
+              "category": "communication"
+            }
+          ],
+          "evidence": [
+            "it gives you essential health-related knowledge",
+            "this is cool knowledge for a niche group of people. It's personal and extremely useful in several ways; to say the least, it is a required course for your college education"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-14T14:34:00.695820+00:00\", \"text_length\": 753, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"health-related knowledge\\\",\\n      \\\"category\\\": \\\"communication\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"career requirements\\\",\\n      \\\"category\\\": \\\"communication\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"it gives you essential health-related knowledge\\\",\\n    \\\"this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"health-related knowledge\", \"category\": \"communication\"}], \"evidence\": [\"it gives you essential health-related knowledge\", \"this is cool knowledge for a niche group of people. It's personal and extremely useful in several ways; to say the least, it is a required course for your college education\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide16.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Health-related Knowledge",
+              "p": "uses",
+              "o": "medical imaging",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.95,
+              "evidence": "it gives you essential health-related knowledge"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide16\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-14T14:40:28.274857+00:00\", \"text_length\": 753, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo by now, you might be thinking—this is all very cool, but why do I really need to learn medical imaging?\\n\\nWell, I’d say there are at least two solid reasons.\\n\\nFirst—and perhaps most importantly—it gives you essential health-related knowledge. Whether you pursue a career in engineering, medicine, or something entirely different, understanding how imaging works can help you make sense of your own health and the health of those around you, during your hospital visits and afterwards.\\n\\nThe second reason is career-related. We’ll get to that more. But for now, just keep in mind—this is cool knowledge for a niche group of people. It’s personal and extremely useful in several ways; to say the least, it is a required course for your college education.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Health-related Knowledge\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"medical imaging\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"it gives you essential health-related knowledge\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Career Requirements\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"medical imaging\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"It’s a required course for your college education\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"Health-related Knowledge\", \"p\": \"uses\", \"o\": \"medical imaging\", \"modalities\": [\"text\"], \"confidence\": 0.95, \"evidence\": \"it gives you essential health-related knowledge\"}]}}"
+      }
+    }
+  }
+}

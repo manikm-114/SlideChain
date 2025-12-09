@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Sampling in one domain\",\n      \"p\": \"is equivalent to\",\n      \"o\": \"performing a convolution in the other domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Sampling in one domain is equivalent to performing a convolution in the other domain.\"\n    },\n    {\n      \"s\": \"Multiplication in time\",\n      \"p\": \"turns into\",\n      \"o\": \"convolution in frequency\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we multiply our signal in time by an impulse train — a set of regularly spaced spikes — that multiplication turns into a convolution in frequency.\"\n    },\n    {\n      \"s\": \"Sampling frequency\",\n      \"p\": \"is at least twice\",\n      \"o\": \"maximum frequency in the signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If our sampling frequency — which is one over T — is at least twice the maximum frequency in the signal...\"\n    },\n    {\n      \"s\": \"Sampling frequency\",\n      \"",
+  "parsed": {
+    "s": "Sampling frequency",
+    "p": "is at least twice",
+    "o": "maximum frequency in the signal",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "If our sampling frequency - which is one over T - is at least twice the maximum frequency in the signal..."
+    ]
+  }
+}

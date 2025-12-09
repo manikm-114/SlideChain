@@ -1,0 +1,14 @@
+Now let’s take a look at the actual shape of the sinc function — the one we just derived from the rectangular gate.
+
+What you see here is the graph of that function — sinc of u — which is defined as sine of pi times u, divided by pi times u.
+It has a smooth, wave-like shape. The peak is right at the center — at u equals zero — and the height there is exactly 1.
+As you move away from the center in either direction, the function oscillates — it goes up and down — but the peaks get smaller and smaller.
+That’s because the sine wave in the numerator keeps swinging, but the denominator grows, so the overall value shrinks.
+This is the signature look of the sinc function — one strong central lobe and then smaller and smaller ripples on the sides.
+
+So this is the frequency domain representation of a simple gate in time.
+And just to recap — this sinc function came from a rectangular gate function of width 1.
+If we use a wider gate — let’s say the width is capital T instead of 1 — then the sinc function would stretch out horizontally. That is, the ripples would become narrower in frequency, because time and frequency are inversely related.
+
+We’ll explore that in more detail when we talk about the scaling property. But for now, just remember: a narrow gate in time gives a wide sinc in frequency. A wide gate in time gives a narrow sinc.
+This is a key idea we’ll return to again and again.

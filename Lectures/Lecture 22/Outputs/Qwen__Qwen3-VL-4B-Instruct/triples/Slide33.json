@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T14:34:52.615520+00:00",
+  "text_length": 1471,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, this slide shows how the Doppler effect can be used to measure and visualize velocity. The Doppler information can be superimposed directly on the B-mode image. The B-mode gives you the anatomical structure — for example, you can clearly see a large blood vessel here. Once you have that anatomical background, you can add the velocity field on top of it using color coding.\n\nIn color Doppler imaging, the motion is encoded using colors, typically the RGB scheme. Motion toward the transducer is displayed in red, while motion away from the transducer is shown in blue. Sometimes a green component is used to indicate the variance of the signal — that is, how much fluctuation or turbulence there is in the flow. If the blood flow is smooth and uniform, you won’t see much green at all. But if the flow becomes turbulent or irregular, you’ll see more green appearing in the image.\n\nThis color map gives a one-dimensional view of motion — only along the direction of the ultrasound beam. It doesn’t tell you about lateral movement, but it’s very effective for examining flow in vessels. In more advanced cases, you can apply a Fourier transform to the Doppler signal to obtain the velocity distribution, because the motion is not always at a single frequency. Blood flow, for instance, has multiple velocity components due to pulsation and vessel geometry. So, color Doppler provides a dynamic, intuitive way to visualize those variations on top of anatomical images.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Color Doppler\",\n      \"p\": \"uses\",\n      \"o\": \"real-time B-mode\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"US Doppler - Display – Doppler information is often combined with real-time B-mode\"\n    },\n    {\n      \"s\": \"Color Doppler\",\n      \"p\": \"represents\",\n      \"o\": \"2D representation of the speed of the blood flow on a grey-scale image\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"US Doppler - Display – 2D representation of the speed of the blood flow on a grey-scale image\"\n    },\n    {\n      \"s\": \"Color Doppler\",\n      \"p\": \"measures\",\n      \"o\": \"velocity\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Now, this slide shows how the Doppler effect can be used to measure and visualize",
+  "parsed": {
+    "s": "Color Doppler",
+    "p": "represents",
+    "o": "2D representation of the speed of the blood flow on a grey-scale image",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "US Doppler - Display - 2D representation of the speed of the blood flow on a grey-scale image"
+    ]
+  }
+}

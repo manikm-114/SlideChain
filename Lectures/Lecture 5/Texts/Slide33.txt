@@ -1,0 +1,17 @@
+Let’s now practically apply this idea — focusing specifically on how we calculate individual Fourier coefficients.
+
+Suppose we want to compute the coefficient b3 from the Fourier series of some known function — say f of t.
+What exactly do we do?
+Well, we take the sine function, sine of 2 pi times 3 t, which is one of our orthonormal basis functions, and we compute its inner product with f of t.That means we integrate the product of f of t and sine of 2 pi times 3 t over the interval from 0 to 1.
+That’s it.
+The result of this integral is exactly the value of b 3.No guessing. No curve fitting. Just a clean calculation using integration.
+And this same approach works for any other sine coefficient.To compute b n, you use the sine of 2 pi n t as your basis function, multiply it by f of t, and integrate from 0 to 1.
+The same logic applies to the cosine coefficients — the a n terms.To find those, you simply take f of t and compute its inner product with cosine of 2 pi n t.Each integral gives you one specific Fourier coefficient.
+
+Now why does this work so beautifully?
+It’s all thanks to the orthonormality of the sine and cosine functions.
+When we take an inner product between f of t and any basis function — say, sine of 2 pi times 3 t —only the matching sine term in the Fourier expansion contributes to the result.
+All the other basis functions — like the cosines, or sine terms with different frequencies — are orthogonal to this one,so their inner products are zero and they vanish from the computation.
+This is exactly like projecting a vector in three-dimensional space.
+If you want the x-component of a vector, you project it onto the x-axis.For the y-component, you project onto the y-axis.Same idea here — but now, instead of axes, we have sine and cosine waves.And instead of finite dimensions, we’re working in an infinite-dimensional function space.
+So again, orthonormality makes everything work cleanly.It gives us a precise, mathematical way to extract each component of a function in the Fourier basis.

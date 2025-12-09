@@ -1,0 +1,13 @@
+Let’s now take a heuristic view to better understand the relationship between sampling and signal reconstruction.
+Suppose we represent our signal using a sum of sinusoids. Each term looks like this: A n sine of 2 pi nu t plus phi n. Here, A n is the amplitude, phi n is the phase, and nu is the frequency.
+
+So for each sinusoidal component, we need to determine two unknowns — amplitude and phase. That means, for N such components, we end up with 2N unknowns in total.
+
+Now, here’s the key point. To determine those two unknowns for each sinusoid — amplitude and phase — we need at least two data points per cycle. Think of it like trying to draw a sine wave: if you only know one point, you can’t say much. But with two points, you start to get the shape — its size and where it starts.
+
+So, for the highest frequency in our signal — which we’ll call nu — we need to sample at least twice per cycle. This leads to the idea of spacing between samples. To avoid missing any important information, the spacing between adjacent samples must be less than or equal to 1 over 2 nu.
+
+In more familiar terms, that means the sampling rate — measured in samples per second — must be greater than 2 times nu. This is the famous Nyquist sampling rate.
+
+Why does this matter? Because if we sample below this rate, we risk losing information. Our signal might be distorted or misrepresented — a problem known as aliasing. But if we sample at twice the highest frequency or more, we guarantee that every sinusoidal component is accurately captured.
+So the Nyquist rate gives us a fundamental guideline: sample fast enough to resolve the highest frequency present in the signal.

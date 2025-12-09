@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide37",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T13:42:27.621009+00:00",
+  "text_length": 1441,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow, let’s look at how we time the acquisition of this signal. Two very important parameters in MRI are TE and TR. TE stands for echo time, which is the time from the application of the RF pulse to the moment we collect the peak of the echo signal. TR stands for repetition time, which is the time between successive RF excitations. You see in this diagram that we often use a ninety-degree pulse followed by a one-eighty-degree refocusing pulse to generate a spin echo. The echo forms at time TE. TR is measured from one excitation pulse to the next. \n\nThese two parameters, TE and TR, are under our control. They are not properties of the tissue itself but technical choices we make during the imaging sequence. By carefully selecting TE and TR, we can emphasize different tissue contrasts, highlight T1 weighting, T2 weighting, or proton density weighting. And at the same time, we can also balance image quality with scan time. If TR is long, the magnetization has more time to recover, giving us strong signals, but the scan will take longer. If TR is short, scanning is faster, but some magnetization may not have fully recovered, which reduces the signal. TE works similarly: shorter echo times reduce T2 contrast but keep signal strong, while longer echo times allow more T2 differences to emerge but at the cost of weaker signals. These parameters, TE and TR, are the main levers we adjust to create different kinds of MRI contrast.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"TE\",\n      \"p\": \"measures\",\n      \"o\": \"echo time\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"TE stands for echo time, which is the time from the application of the RF pulse to the moment we collect the peak of the echo signal.\"\n    },\n    {\n      \"s\": \"TR\",\n      \"p\": \"measures\",\n      \"o\": \"repetition time\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"TR stands for repetition time, which is the time between successive RF excitations.\"\n    },\n    {\n      \"s\": \"TE\",\n      \"p\": \"produces\",\n      \"o\": \"T2 weighting\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.85,\n      \"evidence\": \"longer echo times allow more T2 differences to emerge\"\n    },\n    {\n      \"s\": \"TR\",\n      \"p\":",
+  "parsed": {
+    "s": "TE",
+    "p": "produces",
+    "o": "T2 weighting",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.85,
+    "evidence": [
+      "longer echo times allow more T2 differences to emerge"
+    ]
+  }
+}

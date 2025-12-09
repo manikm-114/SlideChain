@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"if statement\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"First, the if statement.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"switch statement\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now, when you want to check one variable against several specific values, a switch statement is better.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "if statement",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "First, the if statement."
+      },
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "switch statement",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now, when you want to check one variable against several specific values, a switch statement is better."
+      }
+    ]
+  }
+}

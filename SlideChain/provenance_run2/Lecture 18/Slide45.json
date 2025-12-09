@@ -1,0 +1,157 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 and T2 relaxation"
+          },
+          {
+            "category": "physics",
+            "term": "T1 and T2"
+          },
+          {
+            "category": "algorithm",
+            "term": "inversion recovery"
+          },
+          {
+            "category": "algorithm",
+            "term": "spin echo"
+          },
+          {
+            "category": "algorithm",
+            "term": "pulse sequences"
+          },
+          {
+            "category": "physics",
+            "term": "image contrast"
+          },
+          {
+            "category": "physics",
+            "term": "relaxation"
+          }
+        ],
+        "evidence": [
+          "decay mechanisms - specifically T1 and T2 relaxation",
+          "T1 and T2 are the keys that translate raw MRI physics into meaningful image contrast",
+          "pulse sequences such as inversion recovery and spin echo",
+          "how these relaxation times can be measured",
+          "how pulse sequences are designed to take advantage of them",
+          "to move from signals to images, we need to understand relaxation",
+          "T1 and T2 Mechanism"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "the decay mechanisms - specifically T1 and T2 relaxation - are what ultimately give us image contrast.",
+            "modalities": [
+              "text"
+            ],
+            "o": "T1 and T2 relaxation",
+            "p": "depends_on",
+            "s": "MRI signals"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "how pulse sequences such as inversion recovery and spin echo are designed to take advantage of them.",
+            "modalities": [
+              "text"
+            ],
+            "o": "inversion recovery and spin echo",
+            "p": "uses",
+            "s": "pulse sequences"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "inversion recovery"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spin echo"
+          }
+        ],
+        "evidence": [
+          "the decay mechanisms - specifically T1 and T2 relaxation - are what ultimately give us image contrast.",
+          "To move from signals to images, we need to understand relaxation. T1 and T2 are the keys that translate raw MRI physics into meaningful image contrast."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "image contrast"
+          }
+        ],
+        "evidence": [
+          "the next step is to understand how those signals decay",
+          "the decay mechanisms - specifically T1 and T2 relaxation - are what ultimately give us image contrast",
+          "we will also see how these relaxation times can be measured, and how pulse sequences such as inversion recovery and spin echo are designed to take advantage of them",
+          "to move from signals to images, we need to understand relaxation"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T2 relaxation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "inversion recovery"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spin echo"
+          },
+          {
+            "category": "modality",
+            "term": "image contrast"
+          }
+        ],
+        "evidence": [
+          "Now that we have covered how MRI signals are generated and detected, the next step is to understand how those signals decay. This part is crucial, because the decay mechanisms - specifically T1 and T2 relaxation - are what ultimately give us image contrast.",
+          "Up to this point, our discussion has focused on the overall process of signal generation and detection. But to move from signals to images, we need to understand relaxation. T1 and T2 are the keys that translate raw MRI physics into meaningful image contrast."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The decay mechanisms - specifically T1 and T2 relaxation - are what ultimately give us image contrast.",
+            "modalities": [
+              "text"
+            ],
+            "o": "T1 and T2 relaxation",
+            "p": "depends_on",
+            "s": "MRI signals"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide45.txt"
+  },
+  "slide_id": "Slide45"
+}

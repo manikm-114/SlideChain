@@ -1,0 +1,74 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "pixel"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "During the ninety-degree pulse, you apply a slice selection gradient. This gradient ensures that only the spins that are resonant within that slice frequency range are flipped into the x-y plane. Spins outside the slice are not flipped, and so they do not contribute to the signal.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "phase encoding",
+            "p": "uses",
+            "s": "slice selection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "G-phase"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Each readout provides you with N data points along this horizontal axis."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "N data points",
+        "p": "produces",
+        "s": "frequency encoding"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "image"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "During the ninety-degree pulse, you apply a slice selection gradient. This gradient ensures that only the spins that are resonant within that slice frequency range are flipped into the x-y plane.",
+            "modalities": [
+              "text"
+            ],
+            "o": "phase encoding",
+            "p": "uses",
+            "s": "slice selection"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

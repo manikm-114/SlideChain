@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide34",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"estimate the DC component\",\n      \"p\": \"uses\",\n      \"o\": \"average value of the function over one full period\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Remember, in a Fourier series, the DC component is the constant part of the signal — and mathematically, it’s given by the average value of the function over one full period.\"\n    },\n    {\n      \"s\": \"estimate the DC component\",\n      \"p\": \"uses\",\n      \"o\": \"average of sampled values\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Very simply: we add up all the sampled values, and then we take the average. That average gives us a good estimate of the DC component.\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"continuous function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Suppose we have a continuous function, and we sample it over the interval from zero to",
+  "parsed": {
+    "s": "estimate the DC component",
+    "p": "uses",
+    "o": "average of sampled values",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Very simply: we add up all the sampled values, and then we take the average. That average gives us a good estimate of the DC component."
+    ]
+  }
+}

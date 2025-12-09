@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"lecture\",\n      \"p\": \"represents\",\n      \"o\": \"concept of a system\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Today’s lecture is straightforward. We’re going to talk about the concept of a system—a core idea that underpins everything we’ll cover in this course.\"\n    },\n    {\n      \"s\": \"linear system\",\n      \"p\": \"depends_on\",\n      \"o\": \"additivity and homogeneity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To qualify as a linear system, two properties must be satisfied: additivity and homogeneity.\"\n    },\n    {\n      \"s\": \"lecture\",\n      \"p\": \"represents\",\n      \"o\": \"nonlinear systems\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Lastly, we’ll touch on nonlinear systems—which are simply systems that don’t meet these linearity conditions.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "lecture",
+        "p": "represents",
+        "o": "concept of a system",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Today’s lecture is straightforward. We’re going to talk about the concept of a system-a core idea that underpins everything we’ll cover in this course."
+      },
+      {
+        "s": "linear system",
+        "p": "depends_on",
+        "o": "additivity and homogeneity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "To qualify as a linear system, two properties must be satisfied: additivity and homogeneity."
+      },
+      {
+        "s": "lecture",
+        "p": "represents",
+        "o": "nonlinear systems",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Lastly, we’ll touch on nonlinear systems-which are simply systems that don’t meet these linearity conditions."
+      }
+    ]
+  }
+}

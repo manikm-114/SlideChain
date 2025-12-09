@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MRI\",\n      \"p\": \"uses\",\n      \"o\": \"magnetic resonance and the behavior of hydrogen protons\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MRI uses magnetic resonance and the behavior of hydrogen protons.\"\n    },\n    {\n      \"s\": \"CT\",\n      \"p\": \"uses\",\n      \"o\": \"X-rays and attenuation\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"CT uses X-rays and attenuation.\"\n    },\n    {\n      \"s\": \"nuclear imaging\",\n      \"p\": \"uses\",\n      \"o\": \"radioactive tracers\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"nuclear imaging uses radioactive tracers.\"\n    },\n    {\n      \"s\": \"PET/CT\",\n      \"p\": \"combines\",\n      \"o\": \"anatomical and functional information\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"PET/CT scanners",
+  "parsed": {
+    "s": "nuclear imaging",
+    "p": "uses",
+    "o": "radioactive tracers",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "nuclear imaging uses radioactive tracers."
+    ]
+  }
+}

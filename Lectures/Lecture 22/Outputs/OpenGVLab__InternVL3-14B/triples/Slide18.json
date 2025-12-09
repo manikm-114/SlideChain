@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"compound imaging\",\n      \"p\": \"uses\",\n      \"o\": \"phased array transducer\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Using a phased array transducer, you can steer the ultrasound beams toward the left side, collect multiple image lines—each one similar to an A-mode line—and combine them to form a B-mode image over the region of interest.\"\n    },\n    {\n      \"s\": \"compound imaging\",\n      \"p\": \"produces\",\n      \"o\": \"smoother image with reduced artifacts\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When you sum them together, the random noise cancels out while the consistent features are reinforced, giving you a much smoother, clearer image with reduced artifacts.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "compound imaging",
+        "p": "uses",
+        "o": "phased array transducer",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using a phased array transducer, you can steer the ultrasound beams toward the left side, collect multiple image lines-each one similar to an A-mode line-and combine them to form a B-mode image over the region of interest."
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide47",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nPreviously, we learned about gamma-ray imaging and radio tracers, which allow us to visualize physiological functions inside the body by detecting radiation emitted from injected tracers. Now, in this work, we take the concept one step further by combining emission and transmission tomography into a single, simultaneous process—what we call Simultaneous Emission–Transmission Tomography, or SET.\n\nThis idea was presented at the Fully3D Conference in Xi’an, China, and it represents an important advance in multimodal imaging. Normally, in PET or SPECT, emission data and transmission data are collected separately—first one scan for anatomy and then another for function. But with SET, both types of data are acquired at the same time.\n\nBy combining emission and transmission information simultaneously, we can achieve more accurate reconstructions with improved spatial and contrast resolution. The images on the left show the structural information from the transmission data, while the ones on the right display emission activity from the radio tracer. When we fuse these two datasets, we obtain both anatomical and functional information in a single scan, reducing motion artifacts and improving quantitative accuracy.\n\nThis represents another step toward our broader goal—true multimodal imaging, where complementary information from different imaging mechanisms is acquired concurrently for the most comprehensive view of the human body.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"emission\", \"category\": \"physics\"},\n    {\"term\": \"transmission\", \"category\": \"physics\"},\n    {\"term\": \"tomography\", \"category\": \"modality\"},\n    {\"term\": \"simultaneous\", \"category\": \"workflow\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"anatomy\", \"category\": \"anatomy\"},\n    {\"term\": \"functional imaging\", \"category\": \"modality\"},\n    {\"term\": \"multimodal imaging\", \"category\": \"modality\"},\n    {\"term\": \"fusion\", \"category\": \"workflow\"},\n    {\"term\": \"quantitative accuracy\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"... By combining emission and transmission information simultaneously, we can achieve more accurate reconstructions with improved spatial and contrast resolution.\", \"... This represents another step toward our broader goal—true multimodal imaging, where complementary information from different imaging mechanisms is acquired concurrently for the most comprehensive view of the human body.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "emission",
+        "category": "physics"
+      },
+      {
+        "term": "transmission",
+        "category": "physics"
+      },
+      {
+        "term": "tomography",
+        "category": "modality"
+      },
+      {
+        "term": "simultaneous",
+        "category": "workflow"
+      },
+      {
+        "term": "reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "multimodal imaging",
+        "category": "modality"
+      },
+      {
+        "term": "quantitative accuracy",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "... By combining emission and transmission information simultaneously, we can achieve more accurate reconstructions with improved spatial and contrast resolution.",
+      "... This represents another step toward our broader goal-true multimodal imaging, where complementary information from different imaging mechanisms is acquired concurrently for the most comprehensive view of the human body."
+    ]
+  }
+}

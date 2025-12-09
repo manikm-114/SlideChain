@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide37",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T01:30:38.316425+00:00",
+  "text_length": 2494,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow we’re entering the most important part of this discussion — the mathematical foundation behind the sampling theorem.\n\nLet’s start by recalling our goal: we want to take a continuous signal, sample it at regular intervals, and then perfectly reconstruct the original signal from just those samples. But this only works under certain conditions — particularly, when the sampling rate is high enough to avoid aliasing. That’s what the Nyquist theorem guarantees.\n\nNow, let’s walk through this derivation step by step. It’s a bit more mathematical, but I’ll explain the reasoning behind each part.\n\nWe begin by expressing the function f of t as the inverse Fourier transform of a product — specifically, a low-pass filter in the frequency domain multiplied by a sampled version of the original function’s spectrum. Symbolically, we write:\nf of t equals the inverse Fourier transform of the product of capital Pi  P of u and the convolution of f hat of u with S P of u.\n\nNext, we apply properties of the Fourier transform. We pull out the convolution and apply inverse transforms separately. This leads to:\nf of t equals the inverse transform of Pi  P of u, convolved with the inverse transform of f hat of u multiplied by S  P of u.\nThen, we take this result back to the time domain.\n\nHere’s what we get:\u000bf of t equals P times sinc of pi P t, convolved with f of t times S 1 over P of t.\nThis expression means we’re convolving the sinc function — which comes from the inverse transform of a box function in frequency — with the sampled version of the original function.\n\nAnd from there, we arrive at the reconstruction formula you’ve probably seen before:\nf of t equals the sum over k from minus infinity to infinity of f at k over P times sinc of pi times the quantity t minus k over P over pi times the quantity t minus k over P.\nThis is the classic sinc interpolation formula. It tells us that, under the right sampling conditions — meaning, the sampling rate is at least twice the highest frequency in the signal — the continuous signal can be reconstructed exactly by convolving the samples with the sinc function.\n\nSo in summary: sampling in the time domain corresponds to periodic replication in the frequency domain. When the signal is bandlimited and the sampling rate is high enough, we can perfectly reconstruct it using this formula.\nThis is the core of the sampling theorem. And this formula — the final one on the slide — is one of the most beautiful results in signal processing.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"inverse Fourier transform\", \"p\":\"uses\", \"o\":\"function f of t\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"f of t equals the inverse Fourier transform of a product — specifically, a low-pass filter in the frequency domain multiplied by a sampled version of the original function’s spectrum.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "inverse Fourier transform",
+        "p": "uses",
+        "o": "function f of t",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "f of t equals the inverse Fourier transform of a product - specifically, a low-pass filter in the frequency domain multiplied by a sampled version of the original function's spectrum."
+      }
+    ]
+  }
+}

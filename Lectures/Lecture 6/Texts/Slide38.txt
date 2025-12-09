@@ -1,0 +1,11 @@
+Let’s now walk through an important example: the two-dimensional rectangle function, centered at the origin, with side lengths X and Y.
+
+This function is quite simple in the spatial domain — it's just a bright rectangular block surrounded by zeros. But when we take its 2D Fourier transform, something fascinating happens.
+The resulting function in the frequency domain is a product of two sinc functions — one in the u direction and one in the v direction. And remember, sinc functions come from the Fourier transform of a box function in one dimension. So when we go to two dimensions, the result is just a multiplication of two of them — one along each axis.
+
+You can see this result visualized in the bottom right. There's a sharp peak in the center — that’s the low-frequency content — and then it decays with oscillations outward, characteristic of sinc behavior.
+
+Now here’s something more interesting: when we move into higher dimensions, something new becomes possible — rotation. In 1D, you can only flip a signal left or right, but there's no true concept of rotation. However, in 2D or 3D, you can rotate the object, and that rotation affects the frequency domain in a meaningful way.
+This rotational property is one of the key advantages of analyzing signals in higher dimensions. It allows us to understand and manipulate how orientation in space translates into patterns in frequency.
+
+So this simple example — a rectangular function — gives us a powerful insight into the structure of Fourier transforms in two dimensions.

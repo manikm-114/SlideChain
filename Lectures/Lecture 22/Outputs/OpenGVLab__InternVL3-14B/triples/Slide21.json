@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Doppler shift\",\n      \"p\": \"measures\",\n      \"o\": \"velocity of motion along the ultrasound beam direction\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift.\"\n    },\n    {\n      \"s\": \"Doppler shift\",\n      \"p\": \"depends_on\",\n      \"o\": \"vertical component of the velocity\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The vertical component of the velocity—represented here as v cos θ—is what contributes to this difference.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Doppler shift",
+        "p": "measures",
+        "o": "velocity of motion along the ultrasound beam direction",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The small difference between the transmitted and received frequencies is what we call the Doppler frequency shift."
+      },
+      {
+        "s": "Doppler shift",
+        "p": "depends_on",
+        "o": "vertical component of the velocity",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The vertical component of the velocity-represented here as v cos θ-is what contributes to this difference."
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "virtual contrast imaging"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Here, the scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "two X-ray tubes and two detectors",
+        "p": "represents",
+        "s": "dual-source"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "virtual contrast imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Siemens uses dual-source CT. Here, the scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage. For example, one tube might run at 80 kilovolts, while the other runs at 140 kilovolts. This gives you two spectra simultaneously, which means excellent temporal resolution and minimal motion artifact.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Siemens",
+            "p": "uses",
+            "s": "Dual-source CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "motion artifact"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Philips uses dual-layer detectors."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "dual-layer detectors",
+        "p": "uses",
+        "s": "Philips"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "virtual contrast imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The scanner has two X-ray tubes and two detectors mounted at an angle, each operating at a different voltage.",
+            "modalities": [
+              "text"
+            ],
+            "o": "dual-source CT",
+            "p": "uses",
+            "s": "Siemens"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide37.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide37.txt"
+  },
+  "slide_id": "Slide37"
+}

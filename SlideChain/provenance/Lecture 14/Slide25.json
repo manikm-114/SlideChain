@@ -1,0 +1,130 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "classic CT"
+          },
+          {
+            "category": "modality",
+            "term": "interior tomography"
+          },
+          {
+            "category": "data_processing",
+            "term": "data sufficiency condition"
+          },
+          {
+            "category": "instrumentation",
+            "term": "fan beam"
+          },
+          {
+            "category": "instrumentation",
+            "term": "cone beam"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered backprojection"
+          },
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "reconstruction",
+            "term": "region of interest"
+          }
+        ],
+        "evidence": [
+          "classic CT",
+          "interior tomography",
+          "data sufficiency condition",
+          "fan beam",
+          "cone beam",
+          "filtered backprojection",
+          "X-rays",
+          "region of interest",
+          "truncated projection data"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "classic CT reconstructs a global image, like a wholesale business covering the entire area.",
+            "modalities": [
+              "text"
+            ],
+            "o": "filtered backprojection",
+            "p": "reconstructs_with",
+            "s": "classic CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Interior tomography, however, only requires partial data limited to the region of interest.",
+            "modalities": [
+              "text"
+            ],
+            "o": "partial data",
+            "p": "reconstructs_with",
+            "s": "interior tomography"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Interior tomography reconstructs a smaller, targeted area-like retail shopping.",
+            "modalities": [
+              "text"
+            ],
+            "o": "smaller, targeted area",
+            "p": "reconstructs_with",
+            "s": "interior tomography"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "interior tomography"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "focusing on clinical needs"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "clinical needs"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "According to classical theory, which we learned and which I explained in textbooks, you need to collect all data to satisfy the data sufficiency condition-usually a fan beam or cone beam that covers the entire cross-section or object. The data must comprehensively cover the object for accurate reconstruction."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "global image",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "classical CT"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide25.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide25.txt"
+  },
+  "slide_id": "Slide25"
+}

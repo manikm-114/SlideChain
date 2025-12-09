@@ -1,0 +1,100 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "slice selection"
+          }
+        ],
+        "evidence": [
+          "We begin by defining which slice we want to image.",
+          "That means we need to encode each pixel in a way that makes its signal slightly different from every other pixel.",
+          "Only then can we reconstruct an image that shows the T1 and T2 values for each voxel."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "slice selection"
+          },
+          {
+            "category": "modality",
+            "term": "being spatially specific"
+          },
+          {
+            "category": "signal_processing",
+            "term": "encode each pixel"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruct an image"
+          },
+          {
+            "category": "signal_processing",
+            "term": "T1 and T2 values for each voxel"
+          }
+        ],
+        "evidence": [
+          "In MRI, we don't just want a signal from the whole sample. We want to isolate a particular slice.",
+          "The first step in this process is slice selection.",
+          "We begin by defining which slice we want to image.",
+          "Only then can we reconstruct an image that shows the T1 and T2 values for each voxel."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "So now we move to the next part: being spatially specific. In MRI, we don't just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that - within that slice, we also want to know the signal from each location.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "being spatially specific",
+            "p": "represents",
+            "s": "Slice Selection"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "workflow",
+            "term": "slice selection"
+          },
+          {
+            "category": "physics",
+            "term": "T1 and T2 values"
+          }
+        ],
+        "evidence": [
+          "In MRI, we don\u2019t just want a signal from the whole sample. We want to isolate a particular slice. Not every layer, but just one slice. And not only that - within that slice, we also want to know the signal from each location.",
+          "The first step in this process is slice selection. We begin by defining which slice we want to image."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

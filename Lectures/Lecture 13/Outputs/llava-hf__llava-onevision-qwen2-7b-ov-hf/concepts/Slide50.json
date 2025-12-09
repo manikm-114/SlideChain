@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide50",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nFor homework, review what we did with the block, and do the same steps using an ellipse. \n\nWork through the MATLAB code. Some variable names may not be obvious from the slides, but if you open MATLAB Help or search online, everything is straightforward. Spend some time, get familiar, and see how filtered backprojection works for you. \n\nThat’s all for today—thank you.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"ellipse\", \"category\": \"mathematics\"},\n    {\"term\": \"filtered backprojection\", \"category\": \"reconstruction\"},\n    {\"term\": \"block\", \"category\": \"workflow\"}\n  ],\n  \"evidence\": [\"For homework, review what we did with the block, and do the same steps using an ellipse.\", \"Work through the MATLAB code. Some variable names may not be obvious from the slides, but if you open MATLAB Help or search online, everything is straightforward.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "ellipse",
+        "category": "mathematics"
+      },
+      {
+        "term": "filtered backprojection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "block",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "For homework, review what we did with the block, and do the same steps using an ellipse.",
+      "Work through the MATLAB code. Some variable names may not be obvious from the slides, but if you open MATLAB Help or search online, everything is straightforward."
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide9",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\n\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\n\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"X-ray\", \"category\": \"modality\"},\n    {\"term\": \"production\", \"category\": \"physics\"},\n    {\"term\": \"interaction\", \"category\": \"physics\"},\n    {\"term\": \"detected signals\", \"category\": \"signal_processing\"},\n    {\"term\": \"cross-sectional image\", \"category\": \"reconstruction\"},\n    {\"term\": \"PET\", \"category\": \"modality\"},\n    {\"term\": \"SPECT\", \"category\": \"modality\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"},\n    {\"term\": \"CT\", \"category\": \"modality\"},\n    {\"term\": \"anatomy\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\"Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\", \"It walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "X-ray",
+        "category": "modality"
+      },
+      {
+        "term": "detected signals",
+        "category": "signal_processing"
+      },
+      {
+        "term": "cross-sectional image",
+        "category": "reconstruction"
+      },
+      {
+        "term": "PET",
+        "category": "modality"
+      },
+      {
+        "term": "SPECT",
+        "category": "modality"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      },
+      {
+        "term": "CT",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Now, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”",
+      "It walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image."
+    ]
+  }
+}

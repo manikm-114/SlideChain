@@ -1,0 +1,8 @@
+In image processing, noise can often hide important details. This is a common problem in real-world applications, especially when images are captured in low light, transmitted over noisy channels, or acquired using sensors in a challenging environment.
+Here, we start with an image — the well-known “Lena” test image — that has been corrupted by noise. In the top left, you can see the noisy image in the spatial domain.
+
+When we take the two-dimensional Fourier transform of this image, shown in the bottom left, we see its frequency-domain representation. The bright spot in the center corresponds to low-frequency components, which carry the main shapes and structures of the image. The scattered speckles throughout the spectrum represent higher-frequency noise.
+If we want to reduce noise, we can selectively remove certain frequency components. One simple way is to set the outer regions of the spectrum to zero, while keeping only the frequencies near the center — this is essentially a low-pass filter in the frequency domain. In the bottom right, you can see this filtered spectrum.
+
+Finally, applying the inverse Fourier transform gives us the restored image in the top right. The noise is greatly reduced, and the underlying features — such as the woman’s face and hat — become much clearer.
+This kind of frequency-domain noise suppression is a powerful technique in imaging, allowing us to recover important details that would otherwise be lost.

@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide22",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"bin-refine factor\", \"category\": \"signal_processing\"},\n    {\"term\": \"FFT\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency bin spacing\", \"category\": \"frequency_domain\"},\n    {\"term\": \"non-integer frequencies\", \"category\": \"signal_processing\"},\n    {\"term\": \"maximum amplitude\", \"category\": \"signal_processing\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"FFT length\", \"category\": \"signal_processing\"},\n    {\"term\": \"frequency resolution\", \"category\": \"frequency_domain\"}\n  ],\n  \"evidence\": [\n    \"setting the bin-refine factor to four\",\n    \"increasing the FFT length\",\n    \"appending enough zeros\",\n    \"frequency bin spacing changes\",\n    \"detect non-integer frequencies\",\n    \"maximum amplitude of one\",\n    \"In MATLAB\",\n    \"FFT length to four times\",\n    \"refining the bin spacing through zero-padding\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "bin-refine factor",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "frequency bin spacing",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "non-integer frequencies",
+        "category": "signal_processing"
+      },
+      {
+        "term": "maximum amplitude",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "FFT length",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "setting the bin-refine factor to four",
+      "increasing the FFT length",
+      "appending enough zeros",
+      "frequency bin spacing changes",
+      "detect non-integer frequencies",
+      "maximum amplitude of one",
+      "In MATLAB",
+      "FFT length to four times",
+      "refining the bin spacing through zero-padding"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "detected voltage"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The strength of this induced signal depends directly on the size of M_xy"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "size of M_xy",
+        "p": "depends_on",
+        "s": "signal strength"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "equilibrium magnetization"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The highest induction reached at the flip angle 90\u00b0 so that M x y=M 0",
+            "modalities": [
+              "text"
+            ],
+            "o": "flip angle",
+            "p": "depends_on",
+            "s": "M x y"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "At this angle, the entire magnetization vector lies in the x-y plane, meaning that M x y is equal to M naught, the full equilibrium magnetization."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The Highest Induction Reached at the Flip Angle 90\u00b0 so that M_xy=M\u2080"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "flip angle \u03b1",
+        "p": "depends_on",
+        "s": "M_xy"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "ninety-degree pulse"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "When the magnetization vector, capital M, is flipped away from the z-axis, it develops a transverse component, which we call x y.",
+            "modalities": [
+              "text"
+            ],
+            "o": "transverse component",
+            "p": "depends_on",
+            "s": "magnetization vector"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide43.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide43.txt"
+  },
+  "slide_id": "Slide43"
+}

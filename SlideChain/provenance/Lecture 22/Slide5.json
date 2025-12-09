@@ -1,0 +1,65 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "real-time imaging"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "Just like in X-ray CT, you can use a fan-beam geometry...sweeping motion allows you to reconstruct a full cross-sectional view of the tissue."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "fan-beam geometry",
+        "p": "reconstructs_with",
+        "s": "B-mode"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "phantom scan"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "speckles, some noise, and scattering effects"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "You can think of it as an extension of A-mode - instead of a single amplitude trace, you're now using multiple A-mode scans to create a two-dimensional image."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "multiple A-mode scans",
+        "p": "reconstructs_with",
+        "s": "B mode"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "real-time imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide5.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide5.txt"
+  },
+  "slide_id": "Slide5"
+}

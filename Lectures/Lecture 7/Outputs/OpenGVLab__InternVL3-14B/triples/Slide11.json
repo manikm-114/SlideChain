@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide11",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"delta function\",\n      \"p\": \"represents\",\n      \"o\": \"continuous function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The product of the delta function and a continuous function f can be measured to give a unique result\"\n    },\n    {\n      \"s\": \"delta function\",\n      \"p\": \"measures\",\n      \"o\": \"value of f at t naught\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught\"\n    },\n    {\n      \"s\": \"delta function\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"entire function f of t\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We can reconstruct the entire function f of t by summing up all these infinitesimal slices — each one represented by a delta function, placed at the right location, and scaled by",
+  "parsed": {
+    "s": "delta function",
+    "p": "measures",
+    "o": "value of f at t naught",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t - equals f of t naught"
+    ]
+  }
+}

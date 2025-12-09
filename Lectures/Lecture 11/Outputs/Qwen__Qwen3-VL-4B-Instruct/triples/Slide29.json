@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide29",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T03:13:39.870592+00:00",
+  "text_length": 1711,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nIn engineering, one of the most familiar terms you’ll encounter is the Signal-to-Noise Ratio, or SNR.\nWhenever we take a measurement — whether it’s a photograph, an MRI scan, or an ultrasound image — we always have some amount of noise. Noise is unavoidable. It arises from the fundamental randomness of physical processes, and ultimately from quantum mechanics itself. Nothing is ever perfectly certain.\n\nOn top of this background noise, we have the signal — the part of the measurement that actually carries meaningful information.\nSNR is a simple but powerful way of expressing how strong the signal is relative to the noise. Mathematically, it is defined as the ratio of signal power to noise power. Since power is proportional to the square of amplitude, you can also write SNR as the square of the signal amplitude divided by the noise amplitude.\n\nHere’s the intuition:\nIf the SNR is around 1, the signal varies in the same range as the noise. That means the signal is barely visible.\nIf the SNR is 5 or 10 or higher, the signal stands out clearly above the noise, and it can be easily detected.\n\nA related measure is the Contrast-to-Noise Ratio, or CNR. Instead of comparing one signal to background noise, we compare the difference between two signals — for example, a feature versus its background — divided by the noise level. This measure is very common in medical imaging because it directly reflects how well we can distinguish one structure from another.\n\nSo, SNR tells us whether a signal can rise above the noise at all, while CNR tells us whether two signals can be distinguished against that noisy background.\nAnd next, we’ll move on to another fundamental aspect of image quality: resolution.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Signal to Noise Ratio (SNR)\",\n      \"p\": \"measures\",\n      \"o\": \"the ratio of signal power to noise power\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"SNR is a simple but powerful way of expressing how strong the signal is relative to the noise. Mathematically, it is defined as the ratio of signal power to noise power.\"\n    },\n    {\n      \"s\": \"Signal to Noise Ratio (SNR)\",\n      \"p\": \"represents\",\n      \"o\": \"how strong the signal is relative to the noise\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"SNR is a simple but powerful way of expressing how strong the signal is relative to the noise.\"\n    },\n    {\n      \"s\": \"Signal to Noise Ratio (SNR)\",\n      \"p\": \"produces\",\n      \"o\": \"a measure of whether a signal can rise above the noise\",\n      \"modalities\": [\n        \"text",
+  "parsed": {
+    "s": "Signal to Noise Ratio (SNR)",
+    "p": "represents",
+    "o": "how strong the signal is relative to the noise",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.95,
+    "evidence": [
+      "SNR is a simple but powerful way of expressing how strong the signal is relative to the noise."
+    ]
+  }
+}

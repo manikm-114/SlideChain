@@ -1,0 +1,14 @@
+Now that we understand how MRI encoding works through Fourier principles, let’s see how this idea is applied in one of the most fundamental pulse sequences — the spin-echo imaging sequence.
+
+In this diagram, the horizontal axis represents time, and you can see the major events in the sequence: the radio-frequency pulses, the gradients for slice selection, phase encoding, and frequency encoding, and finally, the signal readout by the analog-to-digital converter.
+
+The process begins with a ninety-degree radio-frequency pulse, which flips the magnetization vector, M, from the z-axis into the x-y plane. Immediately after this, the spins start to dephase because of local field inhomogeneities — some spins precess a bit faster, others a bit slower. As a result, the transverse magnetization gradually fades away.
+
+To correct this dephasing, a one-hundred-eighty-degree pulse is applied halfway through the time interval known as T E, or echo time. This pulse effectively flips all the spins — the ones that were ahead now fall behind, and those that were behind move ahead. After an equal amount of time, all the spins come back into phase, and an echo signal is formed. That’s why we call it a spin echo — the system “rephases” itself to produce a measurable signal.
+The T R, or repetition time, is the total time between successive ninety-degree pulses. By changing T E and T R, we can emphasize different types of image contrast — for example, T-one weighting, T-two weighting, or proton-density weighting.
+
+Now, if you look at the lower part of the diagram, you’ll see three gradient waveforms:G - slice selects the imaging slice,G - phase applies a brief pulse to encode phase differences along the Y direction, andG - freq, or the frequency-encoding gradient, is turned on during the echo readout to separate spatial information along the X direction.
+
+The signal is then digitized by the A/D converter, forming one line of data in k-space. By repeating the process with different phase-encoding gradients, we fill up all the lines of k-space. After that, an inverse Fourier transform converts the data into the final image.
+
+So, in summary: the spin-echo sequence uses a ninety-degree pulse to excite the spins, a one-hundred-eighty-degree pulse to rephase them, and a carefully timed set of gradients to encode spatial information in both frequency and phase. This sequence forms the foundation of most MRI imaging techniques, and every other sequence — including gradient echo, echo planar, and spiral imaging — can be understood as a variation of this same principle.

@@ -1,0 +1,188 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide7",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide7.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide7.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "permutation",
+              "category": "mathematics"
+            },
+            {
+              "term": "combination",
+              "category": "mathematics"
+            },
+            {
+              "term": "Poisson noise",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Poisson distribution",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. So you can review this slide, you will recall what you learned."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"permutation\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"combination\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Poisson noise\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Poisson distribution\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. So you can review this slide, you will recall what you learned.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"permutation\", \"category\": \"mathematics\"}, {\"term\": \"combination\", \"category\": \"mathematics\"}, {\"term\": \"Poisson noise\", \"category\": \"signal_processing\"}, {\"term\": \"Poisson distribution\", \"category\": \"signal_processing\"}], \"evidence\": [\"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. So you can review this slide, you will recall what you learned.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"permutation\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"combination\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"In terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "permutation",
+              "category": "mathematics"
+            },
+            {
+              "term": "combination",
+              "category": "mathematics"
+            },
+            {
+              "term": "Poisson noise",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Poisson distribution",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "permutation, you just see the different arrangement",
+            "combination, you need to just remove those, those essentially the same arrangement",
+            "Poisson noise, Poisson distribution",
+            "you learned permutations and combinations"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"permutation\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"combination\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Poisson noise\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Poisson distribution\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"permutation, you just see the different arrangement\\\",\\n    \\\"combination, you need to just remove those, those essentially the same arrangement\\\",\\n    \\\"Poisson noise, Poisson distribution\\\",\\n    \\\"you learned permutations and combinations\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"permutation\", \"category\": \"mathematics\"}, {\"term\": \"combination\", \"category\": \"mathematics\"}, {\"term\": \"Poisson noise\", \"category\": \"signal_processing\"}, {\"term\": \"Poisson distribution\", \"category\": \"mathematics\"}], \"evidence\": [\"permutation, you just see the different arrangement\", \"combination, you need to just remove those, those essentially the same arrangement\", \"Poisson noise, Poisson distribution\", \"you learned permutations and combinations\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide7.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Poisson noise",
+              "p": "depends_on",
+              "o": "permutations and combinations",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.9,
+              "evidence": "And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Poisson noise\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"permutations and combinations\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.\\\"\\n    }\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"Poisson noise\", \"p\": \"depends_on\", \"o\": \"permutations and combinations\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": \"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Poisson noise",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Poisson distribution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "permutations",
+              "category": "mathematics"
+            },
+            {
+              "term": "combinations",
+              "category": "mathematics"
+            },
+            {
+              "term": "ABC and ACB",
+              "category": "mathematics"
+            },
+            {
+              "term": "permutation and combination",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.",
+            "And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.",
+            "So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:33:52.124938+00:00\", \"text_length\": 571, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Poisson noise\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Poisson distribution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"permutations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"combinations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"ABC and ACB\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"permutation and combination\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.\\\",\\n    \\\"And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.\\\",\\n    \\\"So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Poisson noise\", \"category\": \"signal_processing\"}, {\"term\": \"Poisson distribution\", \"category\": \"signal_processing\"}, {\"term\": \"permutations\", \"category\": \"mathematics\"}, {\"term\": \"combinations\", \"category\": \"mathematics\"}, {\"term\": \"ABC and ACB\", \"category\": \"mathematics\"}, {\"term\": \"permutation and combination\", \"category\": \"mathematics\"}], \"evidence\": [\"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.\", \"And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.\", \"So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:08:00.385589+00:00\", \"text_length\": 571, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"combination formula\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"permutation formula\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide7.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Poisson noise",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Poisson distribution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "permutations",
+              "category": "mathematics"
+            },
+            {
+              "term": "combinations",
+              "category": "mathematics"
+            },
+            {
+              "term": "different arrangement",
+              "category": "mathematics"
+            },
+            {
+              "term": "same three individuals are involved in this activity",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "you would need some high school statistics, you learned permutations and combinations.",
+            "And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.",
+            "In terms of combination, you think it's the same thing because this is same three individuals are involved in this activity."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:07:47.310240+00:00\", \"text_length\": 571, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"Poisson noise\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Poisson distribution\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"permutations\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"combinations\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"different arrangement\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"same three individuals are involved in this activity\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"you would need some high school statistics, you learned permutations and combinations.\\\",\\n    \\\"And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.\\\",\\n    \\\"In terms of combination, you think it's the same thing because this is same three individuals are involved in this activity.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Poisson noise\", \"category\": \"signal_processing\"}, {\"term\": \"Poisson distribution\", \"category\": \"signal_processing\"}, {\"term\": \"permutations\", \"category\": \"mathematics\"}, {\"term\": \"combinations\", \"category\": \"mathematics\"}, {\"term\": \"different arrangement\", \"category\": \"mathematics\"}, {\"term\": \"same three individuals are involved in this activity\", \"category\": \"mathematics\"}], \"evidence\": [\"you would need some high school statistics, you learned permutations and combinations.\", \"And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.\", \"In terms of combination, you think it's the same thing because this is same three individuals are involved in this activity.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide7.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide7\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:16:01.699037+00:00\", \"text_length\": 571, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \\n\\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

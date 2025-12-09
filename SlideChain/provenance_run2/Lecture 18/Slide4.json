@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "unified system"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "companies like Siemens and GE have developed PET/MRI systems"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "PET and MRI",
+        "p": "uses",
+        "s": "PET/MRI systems"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "hybrid imaging"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "CT provides us with detailed structural and anatomical information.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "anatomical information",
+            "p": "uses",
+            "s": "CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "radioactive tracers"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "nuclear imaging methods, such as PET and SPECT, provide functional information"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "functional information",
+        "p": "produces",
+        "s": "spectrum"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "unified system"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "CT provides us with detailed structural and anatomical information, while nuclear imaging methods, such as PET and SPECT, provide functional information by tracking radioactive tracers that participate in biochemical reactions within the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "nuclear imaging",
+            "p": "uses",
+            "s": "CT"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

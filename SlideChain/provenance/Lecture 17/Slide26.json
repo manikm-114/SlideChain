@@ -1,0 +1,77 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "dense structures"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "On the PET image, you see the distribution of the radiotracer, and in this case, there is a lot of accumulation in one organ."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "distribution of the radiotracer",
+        "p": "shows",
+        "s": "PET image"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "anatomical layout"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "CT image provides structural and anatomical information at a high spatial resolution.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "structural and anatomical information",
+            "p": "uses",
+            "s": "CT image"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "ct solves this by providing individualized, tomographic detail for each region"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "When you superimpose the PET image over the CT image, you get excellent anatomical context."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "excellent anatomical context",
+        "p": "produces",
+        "s": "PET-CT"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "individualized correction"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide26.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide26.txt"
+  },
+  "slide_id": "Slide26"
+}

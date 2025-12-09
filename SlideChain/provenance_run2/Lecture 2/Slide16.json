@@ -1,0 +1,134 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "solving systems of linear equations"
+          },
+          {
+            "category": "mathematics",
+            "term": "A times x equals b"
+          },
+          {
+            "category": "mathematics",
+            "term": "inverse of A"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "software",
+            "term": "backslash operator"
+          },
+          {
+            "category": "mathematics",
+            "term": "numerical issues"
+          },
+          {
+            "category": "mathematics",
+            "term": "ill-conditioned matrices"
+          },
+          {
+            "category": "algorithm",
+            "term": "implement our own solvers"
+          }
+        ],
+        "evidence": [
+          "solving systems of linear equations",
+          "A times x equals b",
+          "inverse of A",
+          "MATLAB",
+          "backslash operator",
+          "numerical issues",
+          "ill-conditioned matrices",
+          "implement our own solvers"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "It\u2019s slow, it\u2019s unstable, and it can lead to all kinds of numerical issues"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "bad idea",
+        "p": "is",
+        "s": "inv(A)*b"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "clean, fast, and accurate"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "clean, fast, and accurate"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "backslash operator"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          },
+          {
+            "category": "mathematics",
+            "term": "systems of linear equations"
+          },
+          {
+            "category": "mathematics",
+            "term": "inverse"
+          },
+          {
+            "category": "mathematics",
+            "term": "numerical issues"
+          },
+          {
+            "category": "algorithm",
+            "term": "solvers"
+          },
+          {
+            "category": "software",
+            "term": "built-in method"
+          },
+          {
+            "category": "software",
+            "term": "clean, fast, and accurate"
+          }
+        ],
+        "evidence": [
+          "Suppose we\u2019re working with a system like A times x equals b. Now, you might think - okay, just take the inverse of A and multiply it by b. So, x equals inv of A times b.",
+          "It\u2019s slow, it\u2019s unstable, and it can lead to all kinds of numerical issues, especially with large or ill-conditioned matrices.",
+          "This tells MATLAB to choose the most efficient way to solve the system behind the scenes - no explicit inverse needed."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide16.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide16.txt"
+  },
+  "slide_id": "Slide16"
+}

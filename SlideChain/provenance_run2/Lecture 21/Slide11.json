@@ -1,0 +1,152 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "wave propagation"
+          },
+          {
+            "category": "physics",
+            "term": "phase delay"
+          },
+          {
+            "category": "mathematics",
+            "term": "wave equation"
+          },
+          {
+            "category": "physics",
+            "term": "displacement"
+          },
+          {
+            "category": "physics",
+            "term": "pressure"
+          },
+          {
+            "category": "physics",
+            "term": "acceleration"
+          },
+          {
+            "category": "physics",
+            "term": "velocity"
+          },
+          {
+            "category": "physics",
+            "term": "elastic"
+          },
+          {
+            "category": "mathematics",
+            "term": "second-order differential equation"
+          }
+        ],
+        "evidence": [
+          "wave propagation - the motion is passed from one particle to the next",
+          "That delay is what makes the wave travel forward",
+          "Mathematically, if we focus on one physical quantity - say displacement w, or pressure p",
+          "express all the other variables, like acceleration and velocity",
+          "because biological tissue is elastic",
+          "combine them into a single second-order differential equation"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "That equation is called the wave equation, and it beautifully describes how the disturbance moves through the medium as a function of both space and time.",
+            "modalities": [
+              "text"
+            ],
+            "o": "wave propagation",
+            "p": "represents",
+            "s": "wave equation"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "W (displacement) + U (velocity) + W (displacement)",
+            "modalities": [
+              "image"
+            ],
+            "o": "wave",
+            "p": "produces",
+            "s": "displacement"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "wave propagation"
+          },
+          {
+            "category": "mathematics",
+            "term": "wave equation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "displacement"
+          },
+          {
+            "category": "signal_processing",
+            "term": "pressure"
+          },
+          {
+            "category": "signal_processing",
+            "term": "acceleration"
+          },
+          {
+            "category": "signal_processing",
+            "term": "velocity"
+          }
+        ],
+        "evidence": [
+          "The wave begins to propagate through the medium.",
+          "That delay is what makes the wave travel forward.",
+          "That's what we call wave propagation - the motion is passed from one particle to the next, not instantaneously, but through a sequence of tiny, delayed reactions.",
+          "Mathematically, if we focus on one physical quantity - say displacement w, or pressure p - and express all the other variables, like acceleration and velocity, in terms of that single variable, we can combine them into a single second-order differential equation."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "<short quote from SLIDE_TEXT>",
+            "modalities": [
+              "text"
+            ],
+            "o": "displacement",
+            "p": "depends_on",
+            "s": "acceleration"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "That's what we call wave propagation - the motion is passed from one particle to the next, not instantaneously, but through a sequence of tiny, delayed reactions."
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "pressure p"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide11.txt"
+  },
+  "slide_id": "Slide11"
+}

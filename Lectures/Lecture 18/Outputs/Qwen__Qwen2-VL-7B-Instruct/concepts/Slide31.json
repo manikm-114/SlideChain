@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide31",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:05:42.494815+00:00",
+  "text_length": 854,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIt’s often much easier to demonstrate precision than to explain it with equations.\nHere you see a gyroscope. Its circular motion around the stand is precession. This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.\n\nNotice how the wheel does not simply fall. Instead, because of torque, it precesses around the point where it is supported. If I increase the downward force—for example, by adding the weight of a wrench to the axle—you can see that the precession frequency increases.\n\nThis is the same principle that applies in MRI. The frequency of precession is directly linked to the strength of the magnetic field. Stronger forces or fields lead to faster precession. We call this frequency encoding, and it is the foundation for how MRI gathers spatial information.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"gyroscope\", \"category\": \"instrumentation\"},\n    {\"term\": \"precession\", \"category\": \"physics\"},\n    {\"term\": \"torque\", \"category\": \"physics\"},\n    {\"term\": \"magnetic field\", \"category\": \"physics\"},\n    {\"term\": \"frequency encoding\", \"category\": \"signal_processing\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"Here you see a gyroscope. Its circular motion around the stand is precession.\",\n    \"This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.\",\n    \"Stronger forces or fields lead to faster precession. We call this frequency encoding, and it is the foundation for how MRI gathers spatial information.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "gyroscope",
+        "category": "instrumentation"
+      },
+      {
+        "term": "precession",
+        "category": "physics"
+      },
+      {
+        "term": "torque",
+        "category": "physics"
+      },
+      {
+        "term": "magnetic field",
+        "category": "physics"
+      },
+      {
+        "term": "frequency encoding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Here you see a gyroscope. Its circular motion around the stand is precession.",
+      "This motion results from the combination of two effects: the downward force of gravity and the angular momentum around the spinning axis.",
+      "Stronger forces or fields lead to faster precession. We call this frequency encoding, and it is the foundation for how MRI gathers spatial information."
+    ]
+  }
+}

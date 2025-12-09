@@ -1,0 +1,8 @@
+Now, let’s refine our frequency bins by a factor of two — the same idea we used earlier when going from one-hertz bins to zero-point-five-hertz bins.
+
+We do this by setting a bin-refine factor equal to two, and then increasing the FFT length to be two times the number of samples in our original time vector. In practice, this means appending enough zeros to double the length of the signal before computing the FFT.
+When we plot the result, the improvement is clear: the frequency at two hundred two point five hertz is now well resolved, showing a sharp and distinct peak.
+
+However, notice that the frequency at four hundred forty-five point eight hertz is still not well resolved. Even with a bin spacing of zero-point-five hertz, this frequency does not fall exactly on one of the discrete FFT bins, so its energy is still spread across multiple bins. The peak is visible but not as sharp or as tall as the perfectly aligned frequencies.
+
+The takeaway is that zero-padding and bin refinement improve resolution, but they cannot create a perfectly sharp spike unless the frequency exactly matches a discrete bin location.

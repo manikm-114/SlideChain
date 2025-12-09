@@ -1,0 +1,36 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:28:22.050404+00:00",
+  "text_length": 180,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nGood afternoon.\u000bToday, we will explain the system aspects of computed tomography. Since the CT data acquisition is a scanning process, a CT system is typically called a CT scanner.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"computed tomography\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"CT system\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"CT scanner\",\n      \"category\": \"instrumentation\"\n    },\n    {\n      \"term\": \"CT data acquisition\",\n      \"category\": \"workflow\"\n    },\n    {\n      \"term\": \"scanning process\",\n      \"category\": \"workflow\"\n    }\n  ],\n  \"evidence\": [\n    \"Today, we will explain the system aspects of computed tomography.\",\n    \"Since the CT data acquisition is a scanning process, a CT system is typically called a CT scanner.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "computed tomography",
+        "category": "modality"
+      },
+      {
+        "term": "CT system",
+        "category": "instrumentation"
+      },
+      {
+        "term": "CT scanner",
+        "category": "instrumentation"
+      },
+      {
+        "term": "CT data acquisition",
+        "category": "workflow"
+      },
+      {
+        "term": "scanning process",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Today, we will explain the system aspects of computed tomography.",
+      "Since the CT data acquisition is a scanning process, a CT system is typically called a CT scanner."
+    ]
+  }
+}

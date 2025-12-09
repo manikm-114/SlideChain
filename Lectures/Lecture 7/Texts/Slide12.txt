@@ -1,0 +1,31 @@
+Let’s revisit the convolution theorem — this time with a concrete visual example to help reinforce the idea.
+This theorem is incredibly important, and we’ll keep coming back to it.So it's essential to get comfortable with how it works — both mathematically and visually.
+
+Let’s look at what we have here.
+In the top row, we see three time-domain signals:
+On the left is f of x, a simple rectangular function, also known as a gate function, centered at zero and extending from minus b over 2 to plus b over 2.
+In the middle is h of x, which consists of two delta functions — located symmetrically around zero at minus a over 2 and plus a over 2.
+On the right is the result of the convolution of f and h — which we’ll call g of x.
+
+Now remember:When you convolve a function with a delta, the result is simply a shifted version of that function.
+So here, convolving the gate function f of x with each of the two deltas in h of x gives us two shifted gate functions — one shifted left and one shifted right.
+When we add them together, we get g of x — a pair of rectangular pulses.
+Now let’s look at the bottom row — this is the frequency domain.
+Here’s where the convolution theorem comes in.
+
+According to the theorem:
+Convolution in the time domain becomes multiplication in the frequency domain.
+So we take the Fourier transforms of the three signals:
+f of x becomes capital F of k, which is a sinc-shaped curve — smooth and localized in frequency.
+h of x, which had two deltas in time, becomes a cosine wave in the frequency domain — that’s capital H of k, centered at zero, with oscillations depending on the spacing of the deltas.
+
+Now, to get capital G of k, we multiply the two frequency-domain functions:
+Capital F of k times capital H of k equals capital G of k.
+And the result, shown on the right, is a modulated sinc — essentially the original sinc shape, but with oscillations introduced by the cosine multiplier.
+
+So the key takeaway is this:
+In time, the convolution added and shifted the pulses.
+In frequency, the multiplication mixed the smooth sinc shape with oscillations.
+This is a perfect visual illustration of what the convolution theorem does:
+It transforms an operation that involves sliding and summing in time into a much simpler pointwise multiplication in the frequency domain.
+Understanding this duality will help you immensely when working with signals — whether in analysis, filtering, or system design.

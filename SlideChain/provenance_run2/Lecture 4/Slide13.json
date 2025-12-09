@@ -1,0 +1,121 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "integral mean value theorem"
+          },
+          {
+            "category": "mathematics",
+            "term": "continuous function"
+          },
+          {
+            "category": "mathematics",
+            "term": "interval from a to b"
+          },
+          {
+            "category": "mathematics",
+            "term": "area under the curve"
+          },
+          {
+            "category": "mathematics",
+            "term": "height of the function"
+          },
+          {
+            "category": "mathematics",
+            "term": "average value over a short interval"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling"
+          }
+        ],
+        "evidence": [
+          "integral mean value theorem",
+          "continuous function",
+          "interval from a to b",
+          "area under the curve",
+          "height of the function",
+          "average value over a short interval",
+          "delta function",
+          "sampling"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This concept of 'average value over a short interval' will help us understand how the delta function works when it comes to sampling a continuous function.",
+            "modalities": [
+              "text"
+            ],
+            "o": "average value over a short interval",
+            "p": "represents",
+            "s": "integral mean value theorem"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Somewhere between a and b, there\u2019s at least one point, which we\u2019ll call c, where the height of the function at that point - f of c - multiplied by the width of the interval, gives you the same area as the one under the curve.",
+            "modalities": [
+              "text"
+            ],
+            "o": "area under the curve",
+            "p": "measures",
+            "s": "mean value theorem"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sampling"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sampling a continuous function"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "It's like finding a rectangle with the same base and the same area - it represents the \"average\" value of the function across the interval.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "a rectangle with the same base and the same area",
+            "p": "represents",
+            "s": "the mean value theorem"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "sampling"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

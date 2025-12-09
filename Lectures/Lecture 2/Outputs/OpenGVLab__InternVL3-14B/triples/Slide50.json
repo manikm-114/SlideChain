@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide50",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Dr. Azernikov\",\n      \"p\": \"uses\",\n      \"o\": \"MATLAB basics\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"There’s a helpful online tutorial by Dr. Azernikov that introduces MATLAB basics step by step.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"F1\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If your cursor is on a command, just press F1.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"help followed by the function name\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Or type help followed by the function name in the Command Window.\"\n    },\n    {\n      \"s\": \"MathWorks website\",\n      \"p\": \"represents\",\n      \"o\": \"support\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1",
+  "parsed": {
+    "s": "MATLAB",
+    "p": "uses",
+    "o": "help followed by the function name",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Or type help followed by the function name in the Command Window."
+    ]
+  }
+}

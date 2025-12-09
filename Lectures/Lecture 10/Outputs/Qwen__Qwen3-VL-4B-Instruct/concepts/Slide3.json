@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide3",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T02:26:42.026408+00:00",
+  "text_length": 1293,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nBefore we dive into networks, let’s recall the two related ideas we’ve already discussed — functions and systems.\u000b\nA function is a mathematical concept. It takes an input, processes it according to some rule, and produces an output. You can think of it in terms of a domain and a range.\u000bA system is essentially the same idea, but we often use this term in engineering. We talk about inputs and outputs, and the system could be simple or complex.\n\nNow, a network is really just a more complex kind of system — one made up of many interconnected subsystems. The internet is a perfect example: millions of computers linked together, exchanging information. From a mathematical perspective, you can think of a network as a very complicated function, often involving many variables and composite functions linked together.\n\nIn electrical engineering, we often study electrical networks, where components like resistors, capacitors, and inductors are connected to form a circuit. In modern artificial intelligence, we have neural networks, which connect many artificial neurons to process information — in some ways, similar to how biological neurons communicate through electrical signals in our nervous system.\n\nToday, we’ll start with the more classic engineering example: the electrical network.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"function\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"system\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"network\",\n      \"category\": \"ai_ml\"\n    },\n    {\n      \"term\": \"electrical network\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"neural network\",\n      \"category\": \"ai_ml\"\n    }\n  ],\n  \"evidence\": [\n    \"A function is a mathematical concept.\",\n    \"A system is essentially the same idea, but we often use this term in engineering.\",\n    \"a network is really just a more complex kind of system\",\n    \"In electrical engineering, we often study electrical networks\",\n    \"In modern artificial intelligence, we have neural networks\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "function",
+        "category": "mathematics"
+      },
+      {
+        "term": "system",
+        "category": "mathematics"
+      },
+      {
+        "term": "network",
+        "category": "ai_ml"
+      },
+      {
+        "term": "electrical network",
+        "category": "physics"
+      },
+      {
+        "term": "neural network",
+        "category": "ai_ml"
+      }
+    ],
+    "evidence": [
+      "A function is a mathematical concept.",
+      "A system is essentially the same idea, but we often use this term in engineering.",
+      "a network is really just a more complex kind of system",
+      "In electrical engineering, we often study electrical networks",
+      "In modern artificial intelligence, we have neural networks"
+    ]
+  }
+}

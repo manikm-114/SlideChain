@@ -1,0 +1,19 @@
+Let’s take a deeper look at the Dirac delta function — one of the most powerful concepts in system analysis.
+The delta function is what we call a generalized function, or in mathematical terms, a distribution. It helps us model a perfect impulse — something that delivers a concentrated effect at a single moment in time.
+
+Now, here’s how we describe it mathematically:
+We say that delta of t minus t naught equals zero for all values of t not equal to t naught.And, when we integrate this delta function from minus infinity to infinity, the result is one.
+What does that mean?
+It means the function is zero everywhere — except at one specific point in time, which we call t naught. At that single point, it has an infinitely sharp spike, but the area under the spike is exactly one. That area is what we call the impulse.
+So even though we can’t see or draw the spike perfectly, we know that its total effect — the impulse — is one. That’s what matters. The effect is important, but the exact shape doesn’t matter.
+
+Now, let’s shift to the discrete version of the delta function — something we use in digital systems.
+We define delta of n like this:
+It equals one when n is zero,and it equals zero for all other values of n.
+
+In other words, this function is zero everywhere — except at n equals zero, where it has a value of one.It’s a single pulse — like a quick tap — at a specific point in time.
+
+We can also shift this pulse. For example, delta of n minus two just moves the pulse to position n equals two.
+
+This simple pulse is incredibly useful. It forms the building block for discrete-time convolution, which we’ll talk about next.
+So both the continuous and discrete versions of the delta function help us analyze how systems respond to input — whether we’re dealing with real-world signals or digital data.

@@ -1,0 +1,8 @@
+So far, these measures seem very reasonable. Think about it this way: you have one signal or one image, and you also have a standard — the ground truth. 
+
+By comparing them pixel by pixel, we’re essentially measuring the difference between two curves, or between two surfaces, or even between two volumes in three dimensions.
+The formula reduces to something very intuitive: it’s about the area between the two curves. The yellow region you see here represents those differences. The larger the area, the greater the error.
+
+This is why MSE and related measures are so widely used — they give us a direct and interpretable way to say how close or how far two images are. It’s simple, mathematically neat, and visually intuitive.
+
+But here’s an important point: while this is a good first step, it is not the whole story. Measuring differences point by point tells us something, but not everything. In medical imaging, we also care about structural similarity, system behavior, and clinical tasks. So, as we continue, you’ll see that this is only the beginning.

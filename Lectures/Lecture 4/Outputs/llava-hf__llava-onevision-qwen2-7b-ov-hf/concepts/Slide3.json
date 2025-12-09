@@ -1,0 +1,25 @@
+{
+  "slide_id": "Slide3",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs we step into the topic of convolution, let’s outline what we’ll be exploring today.\nWe’ll begin by revisiting shift-invariant linear systems, grounding ourselves in a concept we touched on earlier. Then, we’ll move into two important formulations of convolution: continuous convolution and discrete convolution.\n\nEach of them plays a crucial role depending on the context — continuous for signals that evolve smoothly over time or space, and discrete for digital signals and images. Through this lecture, we’ll examine both perspectives and their practical implications.\nBy the end of the course, you’ll not only understand how convolution works — you'll also appreciate why it matters in system analysis, image reconstruction, and the broader field of medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"shift-invariant linear systems\", \"category\": \"signal_processing\"},\n    {\"term\": \"continuous convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete convolution\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"We’ll begin by revisiting shift-invariant linear systems, grounding ourselves in a concept we touched on earlier. Then, we’ll move into two important formulations of convolution: continuous convolution and discrete convolution.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "shift-invariant linear systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete convolution",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "We’ll begin by revisiting shift-invariant linear systems, grounding ourselves in a concept we touched on earlier. Then, we’ll move into two important formulations of convolution: continuous convolution and discrete convolution."
+    ]
+  }
+}

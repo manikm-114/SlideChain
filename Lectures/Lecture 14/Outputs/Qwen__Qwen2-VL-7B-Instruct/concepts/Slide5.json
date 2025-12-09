@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide5",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:48:45.469896+00:00",
+  "text_length": 1275,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, in the 3D CT case, the X-ray source remains a point source. But instead of using a linear detector array, you use a planar or two-dimensional detector array.\n\nThis configuration results in a cone beam geometry originating from the point source.\nThe X-ray source emits radiation in a cone-shaped beam, which should be wide enough to cover the entire object.\nIn other words, the object must be fully contained within the cone beam to ensure complete data acquisition.\nThis concept is similar to the 2D case but extended to volumetric imaging.\n\nOnce you have all the rays, as shown here, you can rearrange, reorganize, or re-bin the X-rays into parallel beam geometry.\nIn parallel beam geometry, you can apply Fourier transform-based imaging methods.\nThe Fourier slice theorem allows the use of the one-dimensional Fourier transform on projections to recover the two-dimensional Fourier spectrum.\nEach projection recovers a profile in Fourier space, and by changing the viewing angle, you sample different radial lines sweeping over the entire Fourier domain.\n\nLikewise, in 3D imaging, an extended version of the Fourier slice theorem is required.\nThis involves applying Fourier transforms in higher dimensions to recover the 3D spatial frequency information of the object.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"3D CT\", \"category\": \"modality\"},\n    {\"term\": \"X-ray source\", \"category\": \"instrumentation\"},\n    {\"term\": \"planar or two-dimensional detector array\", \"category\": \"instrumentation\"},\n    {\"term\": \"cone beam geometry\", \"category\": \"geometry\"},\n    {\"term\": \"Fourier transform-based imaging methods\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier transforms in higher dimensions\", \"category\": \"mathematics\"},\n    {\"term\": \"3D spatial frequency information\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The X-ray source remains a point source.\",\n    \"A planar or two-dimensional detector array is used.\",\n    \"Cone beam geometry originating from the point source.\",\n    \"The object must be fully contained within the cone beam.\",\n    \"Rays are rearranged, reorganized, or re-binned into parallel beam geometry.\",\n    \"Fourier transforms in higher dimensions are required.\",\n    \"3D spatial frequency information is recovered.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "3D CT",
+        "category": "modality"
+      },
+      {
+        "term": "X-ray source",
+        "category": "instrumentation"
+      },
+      {
+        "term": "planar or two-dimensional detector array",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Fourier transform-based imaging methods",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier transforms in higher dimensions",
+        "category": "mathematics"
+      },
+      {
+        "term": "3D spatial frequency information",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The X-ray source remains a point source.",
+      "A planar or two-dimensional detector array is used.",
+      "Cone beam geometry originating from the point source.",
+      "The object must be fully contained within the cone beam.",
+      "Rays are rearranged, reorganized, or re-binned into parallel beam geometry.",
+      "Fourier transforms in higher dimensions are required.",
+      "3D spatial frequency information is recovered."
+    ]
+  }
+}

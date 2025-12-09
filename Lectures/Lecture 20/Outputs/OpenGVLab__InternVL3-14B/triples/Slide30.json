@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"CSI\", \"p\":\"uses\", \"o\":\"90-degree RF pulse\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"First, you select an axial slice in the z-direction using a 90-degree RF pulse combined with a slice-selection gradient, as shown in the figure.\"},\n    {\"s\":\"CSI\", \"p\":\"uses\", \"o\":\"slice-selection gradient\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"First, you select an axial slice in the z-direction using a 90-degree RF pulse combined with a slice-selection gradient, as shown in the figure.\"},\n    {\"s\":\"CSI\", \"p\":\"uses\", \"o\":\"phase encoding\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Then, phase encoding is applied in the x and y directions — that’s what the Gx and Gy gradients represent here.\"},\n    {\"s\":\"CSI\", \"p\":\"reconstructs_with\", \"o\":\"two-dimensional inverse Fourier transformations\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To reconstruct this data, we perform two-dimensional inverse Fourier transformations with respect",
+  "parsed": {
+    "s": "CSI",
+    "p": "uses",
+    "o": "phase encoding",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Then, phase encoding is applied in the x and y directions - that’s what the Gx and Gy gradients represent here."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+Now, let’s take a closer look at how changing the maximum theta or the theta step affects reconstruction.
+
+By default, our code uses a maximum theta of 180 degrees and a step size of 1 degree. But what happens if we adjust those values?
+On the left, you see the case where max theta is 180 and the step is 5. Here, we’re still covering the full range of angles, but we’re sampling them more coarsely. As a result, the back-projected image shows more artifacts—notice the diagonal streaks in the unfiltered image. Filtering helps reduce some of these, but the square edges are still less crisp compared to the default case.
+
+On the right, we have max theta reduced to 90 degrees with a step of 1. Now the issue is different: we’ve cut the angular range in half, so the reconstruction is incomplete. The square looks more rounded at the edges, and you see stronger cross-like artifacts in the background.
+
+So here’s the key takeaway:
+Increasing the step size (fewer sampled angles) makes the reconstructions less defined.
+Reducing the maximum angle (smaller angular coverage) lowers resolution and produces incomplete images.
+In real CT scanning, both of these parameters matter. More angles mean better images but also more computation and radiation dose. Fewer angles save time and dose but reduce quality.

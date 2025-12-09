@@ -1,0 +1,164 @@
+{
+  "lecture": "Lecture 15",
+  "slide_id": "Slide11",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide11.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide11.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide11.json",
+        "parsed": {
+          "term": "CT",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"filtered back-projection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"algorithm\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"image\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"phantom\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"reconstruction unfold\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"projections\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"filtered back-projection\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Here’s something pretty cool to look at—this is filtered back-projection in progress.\\\", \\n               \\\"What you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\\", \\n               \\\"It’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—\", \"parsed\": {\"term\": \"CT\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide11.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"filtered back-projection\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"CT\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This is filtered back-projection in progress. It’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears. This gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide11.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "filtered back-projection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "sinogram",
+              "category": "data_processing"
+            },
+            {
+              "term": "back-projections",
+              "category": "reconstruction"
+            },
+            {
+              "term": "reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "filtered back-projection in progress",
+            "original sinogram",
+            "back-projections",
+            "reconstruction unfold",
+            "CT actually builds up an image"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"filtered back-projection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"data_processing\\\"},\\n    {\\\"term\\\": \\\"back-projections\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"filtered back-projection in progress\\\",\\n    \\\"original sinogram\\\",\\n    \\\"back-projections\\\",\\n    \\\"reconstruction unfold\\\",\\n    \\\"CT actually builds up an image\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"filtered back-projection\", \"category\": \"reconstruction\"}, {\"term\": \"sinogram\", \"category\": \"data_processing\"}, {\"term\": \"back-projections\", \"category\": \"reconstruction\"}, {\"term\": \"reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"CT\", \"category\": \"modality\"}], \"evidence\": [\"filtered back-projection in progress\", \"original sinogram\", \"back-projections\", \"reconstruction unfold\", \"CT actually builds up an image\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide11.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "filtered back-projection",
+              "p": "reconstructs_with",
+              "o": "many projections",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "This gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"filtered back-projection\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"many projections\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"This gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"filtered back-projection\", \"p\": \"reconstructs_with\", \"o\": \"many projections\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"This gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide11.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "filtered back-projection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "sinogram",
+              "category": "reconstruction"
+            },
+            {
+              "term": "back-projection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "phantom",
+              "category": "reconstruction"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            },
+            {
+              "term": "projection",
+              "category": "reconstruction"
+            },
+            {
+              "term": "filtered back-projection",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "Filtered back-projection in progress",
+            "starts with the original sinogram",
+            "gradually added together",
+            "step by step, the image begins to take shape",
+            "almost like watching the reconstruction unfold in real time",
+            "not from a single snapshot, but from many projections combined through filtered back-projection"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:33:56.452450+00:00\", \"text_length\": 671, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"filtered back-projection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"sinogram\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"back-projection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"phantom\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"projection\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"filtered back-projection\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Filtered back-projection in progress\\\", \\\"starts with the original sinogram\\\", \\\"gradually added together\\\", \\\"step by step, the image begins to take shape\\\", \\\"almost like watching the reconstruction unfold in real time\\\", \\\"not from a single snapshot, but from many projections combined through filtered back-projection\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"filtered back-projection\", \"category\": \"reconstruction\"}, {\"term\": \"sinogram\", \"category\": \"reconstruction\"}, {\"term\": \"back-projection\", \"category\": \"reconstruction\"}, {\"term\": \"phantom\", \"category\": \"reconstruction\"}, {\"term\": \"CT\", \"category\": \"modality\"}, {\"term\": \"projection\", \"category\": \"reconstruction\"}, {\"term\": \"filtered back-projection\", \"category\": \"reconstruction\"}], \"evidence\": [\"Filtered back-projection in progress\", \"starts with the original sinogram\", \"gradually added together\", \"step by step, the image begins to take shape\", \"almost like watching the reconstruction unfold in real time\", \"not from a single snapshot, but from many projections combined through filtered back-projection\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide11.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T09:08:58.598460+00:00\", \"text_length\": 671, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"filtered back-projection\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"CT image reconstruction\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide11.json",
+        "parsed": {
+          "term": "not from a single snapshot, but from many projections combined",
+          "category": "reconstruction"
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T08:10:04.347266+00:00\", \"text_length\": 671, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"filtered back-projection in progress\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"original sinogram\\\",\\n      \\\"category\\\": \\\"data_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"back-projections are gradually added together\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the image begins to take shape\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"as more and more views are included\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the overlapping lines come together\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"the original phantom—or the sample image we started with—slowly reappears\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"CT actually builds up an image\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"not from a single snapshot, but from many projections combined\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Here’s something pretty cool to look at—this is\", \"parsed\": {\"term\": \"not from a single snapshot, but from many projections combined\", \"category\": \"reconstruction\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide11.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "filtered back-projection",
+              "p": "reconstructs_with",
+              "o": "the original phantom",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.9,
+              "evidence": "As more and more views are included, the overlapping lines come together, and the original phantom-or the sample image we started with-slowly reappears."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide11\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T08:14:42.401089+00:00\", \"text_length\": 671, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere’s something pretty cool to look at—this is filtered back-projection in progress.\\nWhat you’re seeing here starts with the original sinogram. Then, as the algorithm processes each view, the back-projections are gradually added together. Step by step, the image begins to take shape.\\n\\nIt’s almost like watching the reconstruction unfold in real time. As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\nThis gives you a visual sense of how CT actually builds up an image: not from a single snapshot, but from many projections combined through filtered back-projection.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"filtered back-projection\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"the original phantom\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"As more and more views are included, the overlapping lines come together, and the original phantom—or the sample image we started with—slowly reappears.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"filtered back-projection\", \"p\": \"reconstructs_with\", \"o\": \"the original phantom\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": \"As more and more views are included, the overlapping lines come together, and the original phantom-or the sample image we started with-slowly reappears.\"}]}}"
+      }
+    }
+  }
+}

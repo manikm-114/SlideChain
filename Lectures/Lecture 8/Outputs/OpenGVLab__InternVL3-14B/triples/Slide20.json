@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"sampling in the Fourier domain\",\n      \"p\": \"uses\",\n      \"o\": \"a train of delta functions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"If we multiply this spectrum by a train of delta functions in the frequency domain\"\n    },\n    {\n      \"s\": \"sampled spectrum at position u_m\",\n      \"p\": \"represents\",\n      \"o\": \"a sum over all the time-domain samples f(n/P) multiplied by a complex exponential\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Mathematically, we can write the sampled spectrum at position u_m as a sum over all the time-domain samples f of n over P, multiplied by a complex exponential\"\n    },\n    {\n      \"s\": \"discrete Fourier transform\",\n      \"p\": \"depends_on\",\n      \"o\": \"sampling in the Fourier domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This parallel is one of the reasons the discrete Fourier transform is so elegant",
+  "parsed": {
+    "s": "sampled spectrum at position u_m",
+    "p": "represents",
+    "o": "a sum over all the time-domain samples f(n/P) multiplied by a complex exponential",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Mathematically, we can write the sampled spectrum at position u_m as a sum over all the time-domain samples f of n over P, multiplied by a complex exponential"
+    ]
+  }
+}

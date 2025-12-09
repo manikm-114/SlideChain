@@ -1,0 +1,9 @@
+Now let’s highlight the key variables and the important relationship between them.
+
+In the time domain, the total number of samples is T times P. Here, capital T is the total duration of the signal, and capital P is the spacing in the frequency domain. So we have N equal to T multiplied by P.
+In the frequency domain, we have the exact same number of samples, also T multiplied by P. We call this number M, and here P is the total span of one period in frequency, while T controls the sampling density in frequency.
+
+If we take the reciprocal of N, we get a very useful relationship:1 over N equals delta-t times delta-u,where delta-t is the sampling step size in time, and delta-u is the sampling step size in frequency.
+This is an expression of the duality between time and frequency. If we fix the total number of samples N, making delta-t smaller — meaning we sample more finely in time — will make delta-u larger, meaning the frequency samples are spaced farther apart. And the reverse is also true.
+
+In simple terms: if you zoom in more on one domain, you automatically zoom out in the other. This balance is built into the mathematics of the Fourier transform and is something we’ll use later when we look at applications.

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"uses\",\n      \"o\": \"impulses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"First, express the input as a collection of impulses.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"produces\",\n      \"o\": \"output\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Finally, sum or integrate all of those individual responses to get the final output.\"\n    },\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"represents\",\n      \"o\": \"discrete and continuous mathematical formulations\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This process is captured using these two key equations: We can see here discrete and continuous mathematical formulations.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Convolution",
+        "p": "uses",
+        "o": "impulses",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "First, express the input as a collection of impulses."
+      },
+      {
+        "s": "Convolution",
+        "p": "produces",
+        "o": "output",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Finally, sum or integrate all of those individual responses to get the final output."
+      },
+      {
+        "s": "Convolution",
+        "p": "represents",
+        "o": "discrete and continuous mathematical formulations",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This process is captured using these two key equations: We can see here discrete and continuous mathematical formulations."
+      }
+    ]
+  }
+}

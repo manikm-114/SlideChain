@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T14:35:26.344941+00:00",
+  "text_length": 761,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHello my students!\nToday we’ll wrap up our MRI part by explaining pulse sequences. Although the title highlights pulse sequences, we’ll also review the overall architecture of an MRI scanner and a few related concepts that tie everything together.\nToward the end of the lecture, I’ll introduce some recent brain-initiative projects and a few emerging ideas in MRI research.\u000bThe main emphasis today follows the green book chapter, so I strongly encourage you to read that section carefully. If you fully understand the ideas we cover in this lecture, you’ll find the final exam easier.\nOf course, I’ll also share a few extra details and insights that go beyond the textbook—these will help you develop a deeper and more practical understanding of MRI as a whole.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"MRI Pulse Sequences\", \"category\": \"signal_processing\"},\n    {\"term\": \"MRI scanner architecture\", \"category\": \"instrumentation\"},\n    {\"term\": \"brain-initiative projects\", \"category\": \"modality\"},\n    {\"term\": \"MRI research\", \"category\": \"modality\"},\n    {\"term\": \"green book chapter\", \"category\": \"software\"},\n    {\"term\": \"final exam\", \"category\": \"communication\"},\n    {\"term\": \"textbook\", \"category\": \"software\"},\n    {\"term\": \"extra details\", \"category\": \"algorithm\"},\n    {\"term\": \"practical understanding\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"Today we’ll wrap up our MRI part by explaining pulse sequences.\",\n    \"We’ll also review the overall architecture of an MRI scanner and a few related concepts that tie everything together.\",\n    \"The main emphasis today follows the green book chapter, so I strongly encourage you to read that section carefully.\",\n    \"I’ll also share a few extra details and insights that go beyond the textbook—these will help you develop a deeper and more practical understanding of MRI as a whole.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "brain-initiative projects",
+        "category": "modality"
+      },
+      {
+        "term": "MRI research",
+        "category": "modality"
+      },
+      {
+        "term": "green book chapter",
+        "category": "software"
+      },
+      {
+        "term": "final exam",
+        "category": "communication"
+      },
+      {
+        "term": "textbook",
+        "category": "software"
+      },
+      {
+        "term": "extra details",
+        "category": "algorithm"
+      },
+      {
+        "term": "practical understanding",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "Today we'll wrap up our MRI part by explaining pulse sequences.",
+      "We'll also review the overall architecture of an MRI scanner and a few related concepts that tie everything together.",
+      "The main emphasis today follows the green book chapter, so I strongly encourage you to read that section carefully.",
+      "I'll also share a few extra details and insights that go beyond the textbook-these will help you develop a deeper and more practical understanding of MRI as a whole."
+    ]
+  }
+}

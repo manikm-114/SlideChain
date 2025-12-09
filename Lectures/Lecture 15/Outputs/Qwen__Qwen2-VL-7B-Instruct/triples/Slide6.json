@@ -1,0 +1,23 @@
+{
+  "slide_id": "Slide6",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T09:06:00.015029+00:00",
+  "text_length": 994,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about the resolution of CT reconstruction.\n\nTwo key factors determine how sharp or detailed your reconstructed image will be.\nFirst, the number of rays, or the number of X-rays passing through the object at each angle. This directly affects the radial component of spatial resolution—that is, how finely we can distinguish details along a line from the center outward.\nSecond, the number of views, or the number of different angles, is often denoted by theta. This controls the circumferential component of resolution—how well we can distinguish details as we go around the circle.\nOn the cartoon CT slice shown here, you can see both components: the radial resolution going outward from the center, and the circumferential resolution wrapping around the image.\n\nSo, to summarize: the more rays you use, and the more views you collect, the higher the resolution of your reconstruction. On the other hand, using fewer rays or fewer views leads to blurrier images with less detail.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Number of rays\", \"p\":\"uses\", \"o\":\"radial component of spatial resolution\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"Number of rays affects the radial component of spatial resolution\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Number of rays",
+        "p": "uses",
+        "o": "radial component of spatial resolution",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Number of rays affects the radial component of spatial resolution"
+      }
+    ]
+  }
+}

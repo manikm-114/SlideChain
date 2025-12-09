@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide6",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier Series (Complex Form)\",\n      \"p\": \"uses\",\n      \"o\": \"complex exponentials\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Instead of separating things into sines and cosines, we use complex exponentials — specifically, e to the power of 2 pi i n t.\"\n    },\n    {\n      \"s\": \"c_n\",\n      \"p\": \"produces\",\n      \"o\": \"integral from 0 to 1 of e to the power minus 2 pi i n t times f of t, with respect to t\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We use this formula: c_n equals the integral from 0 to 1 of e to the power minus 2 pi i n t times f of t, with respect to t.\"\n    },\n    {\n      \"s\": \"f(t)\",\n      \"p\": \"represents\",\n      \"o\": \"sum from n equals minus N to N of coefficients c_n multiplied by e to the 2 pi i n t\",",
+  "parsed": {
+    "s": "c_n",
+    "p": "produces",
+    "o": "integral from 0 to 1 of e to the power minus 2 pi i n t times f of t, with respect to t",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "We use this formula: c_n equals the integral from 0 to 1 of e to the power minus 2 pi i n t times f of t, with respect to t."
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slide_id": "Slide24",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\nEarlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\n\nThink of it this way: when we move from the continuous Fourier transform to the discrete version, we’re replacing continuous integrals with sums. In the time domain, we can picture our original continuous function as being approximated by a collection of rectangles — each rectangle has a height equal to the sample value f of n , and a width of delta-t.\nLikewise, in the frequency domain, the Fourier spectrum is also represented as a collection of rectangles — each one has a height equal to f-hat of m  and a width of delta-u.\n\nWhen we go from the spectrum back to the signal, we’re essentially adding up all of these little rectangular pieces. The factor of delta-t times delta-u captures the combined effect of this discretization in both domains. And since 1 over N equals delta-t times delta-u, that’s why the factor appears in the inverse DFT.\nThis is the discrete equivalent of what happens in the continuous Fourier transform, where we also have a scaling factor in the inverse formula. The difference is that here, the scaling is tied directly to our sampling steps in both domains.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"inverse discrete Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"discretization\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampling interval\", \"category\": \"signal_processing\"},\n    {\"term\": \"continuous Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"scaling factor\", \"category\": \"signal_processing\"},\n    {\"term\": \"discrete equivalent\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.\", \"Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "inverse discrete Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discretization",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling interval",
+        "category": "signal_processing"
+      },
+      {
+        "term": "continuous Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "scaling factor",
+        "category": "signal_processing"
+      },
+      {
+        "term": "discrete equivalent",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Let’s talk about why we have this factor of one over capital N in the inverse discrete Fourier transform.",
+      "Earlier, I mentioned that 1 over N is equal to delta-t times delta-u. Here, delta-t is the sampling interval in the time domain, and delta-u is the sampling interval in the frequency domain."
+    ]
+  }
+}

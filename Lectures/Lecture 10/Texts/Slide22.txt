@@ -1,0 +1,13 @@
+When we move into the Fourier domain, any signal can be represented as a collection of frequency components. Filters are circuits or systems that selectively pass or block these components based on their frequency.
+
+A low-pass filter allows low-frequency components to pass through while attenuating or reducing high-frequency components. In the idealized diagram here, the passband is shown as a flat rectangle up to the cutoff frequency, omega sub c, and then it drops to zero in the stopband. In real circuits, the transition is not perfectly sharp — it’s more gradual — but the concept is the same. At the cutoff frequency, the signal power has dropped to half its low-frequency value.
+A high-pass filter does the opposite: it blocks low-frequency signals and passes the high-frequency ones.
+A band-pass filter only allows frequencies within a certain range to pass, blocking both lower and higher frequencies.
+A band-stop filter, sometimes called a notch filter, removes frequencies within a specific range but passes those outside that range.
+
+All of these can be analyzed using the same approach:
+Decompose the input signal into sinusoidal components using Fourier analysis.
+For each frequency, calculate the system’s response using impedance and the phasor form of Ohm’s Law: voltage equals impedance times current.
+
+Combine the individual frequency responses to reconstruct the total output.
+For DC circuits with constant voltages, we only need algebraic equations — just resistance times current equals voltage. But with AC signals or sinusoidal sources, the relationships involve derivatives and integrals. Phasor notation transforms those into simple algebraic equations, letting us solve AC problems with the same ease as DC problems.

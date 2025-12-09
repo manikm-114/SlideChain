@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"convolution\", \"p\":\"uses\", \"o\":\"triangular function\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We’re working with two functions here: f of t, shown in red. This is a triangular function — it starts at zero, rises to a peak at t equals 2, and then drops back to zero.\"},\n    {\"s\":\"convolution\", \"p\":\"uses\", \"o\":\"rectangular pulse\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"g of t, shown in purple. This is a rectangular pulse that spans from t equals minus 2 to plus 2, with a constant value of 3.\"},\n    {\"s\":\"convolution\", \"p\":\"depends_on\", \"o\":\"flipping and sliding\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"With convolution, the basic process is this: We flip one function, shift it, multiply them point by point, and then integrate over the region where they overlap.\"},\n    {\"s\":\"g of t\", \"p\":\"represents\", \"o\":\"symmetric function\", \"modalities\":[\"text\"], \"",
+  "parsed": {
+    "s": "convolution",
+    "p": "depends_on",
+    "o": "flipping and sliding",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "With convolution, the basic process is this: We flip one function, shift it, multiply them point by point, and then integrate over the region where they overlap."
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "lecture": "Lecture 23",
+  "slide_id": "Slide27",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide27.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide27.json",
+        "parsed": {
+          "term": "Nobel-level advances",
+          "category": "awards"
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"confocal microscopy\\\", \\\"category\\\": \\\"microscopy\\\"},\\n    {\\\"term\\\": \\\"optical coherence tomography\\\", \\\"category\\\": \\\"optics\\\"},\\n    {\\\"term\\\": \\\"interferometry\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"Nobel Prize\\\", \\\"category\\\": \\\"awards\\\"},\\n    {\\\"term\\\": \\\"optical wave behavior\\\", \\\"category\\\": \\\"optics\\\"},\\n    {\\\"term\\\": \\\"extremely precise measurements\\\", \\\"category\\\": \\\"measurement\\\"},\\n    {\\\"term\\\": \\\"diffuse optical imaging\\\", \\\"category\\\": \\\"imaging\\\"},\\n    {\\\"term\\\": \\\"Nobel-level advances\\\", \\\"category\\\": \\\"awards\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"We talked about optical microscopy and the confocal idea — a wonderful idea.\\\", \\n               \\\"Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general.\\\", \\n               \\\"Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\\", \\n               \\\"The two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging.\\\", \\n               \\\"It’s not only optical; X-rays and even gravitational wave observ\", \"parsed\": {\"term\": \"Nobel-level advances\", \"category\": \"awards\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide27.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "confocal microscopy",
+              "p": "uses",
+              "o": "optical microscopy",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "We talked about optical microscopy and the confocal idea - a wonderful idea."
+            },
+            {
+              "s": "optical coherence tomography",
+              "p": "uses",
+              "o": "interferometric imaging",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "Then we looked at how interference lets you do imaging - not only optical coherence tomography, but interferometric imaging in general."
+            },
+            {
+              "s": "gravitational wave detection",
+              "p": "uses",
+              "o": "interferometry",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference."
+            },
+            {
+              "s": "diffuse optical imaging",
+              "p": "uses",
+              "o": "interferometric imaging",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "You may not know these methods yet, but you will."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n```json\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"confocal microscopy\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"optical microscopy\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"We talked about optical microscopy and the confocal idea — a wonderful idea.\\\"},\\n    {\\\"s\\\":\\\"optical coherence tomography\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"interferometric imaging\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general.\\\"},\\n    {\\\"s\\\":\\\"gravitational wave detection\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"interferometry\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference.\\\"},\\n    {\\\"s\\\":\\\"diffuse optical imaging\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"interferometric imaging\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"You may not know these methods yet, but you will.\\\"}\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"confocal microscopy\", \"p\": \"uses\", \"o\": \"optical microscopy\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"We talked about optical microscopy and the confocal idea - a wonderful idea.\"}, {\"s\": \"optical coherence tomography\", \"p\": \"uses\", \"o\": \"interferometric imaging\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"Then we looked at how interference lets you do imaging - not only optical coherence tomography, but interferometric imaging in general.\"}, {\"s\": \"gravitational wave detection\", \"p\": \"uses\", \"o\": \"interferometry\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference.\"}, {\"s\": \"diffuse optical imaging\", \"p\": \"uses\", \"o\": \"interferometric imaging\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"You may not know these methods yet, but you will.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide27.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "confocal microscopy",
+              "category": "modality"
+            },
+            {
+              "term": "optical coherence tomography",
+              "category": "modality"
+            },
+            {
+              "term": "interferometry",
+              "category": "physics"
+            },
+            {
+              "term": "interferometric imaging",
+              "category": "modality"
+            },
+            {
+              "term": "diffuse optical imaging",
+              "category": "modality"
+            },
+            {
+              "term": "gravitational wave detection",
+              "category": "physics"
+            },
+            {
+              "term": "interference",
+              "category": "physics"
+            },
+            {
+              "term": "cosine omega t",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "confocal idea",
+            "optical coherence tomography",
+            "interferometry",
+            "interferometric imaging",
+            "diffuse optical imaging",
+            "gravitational wave detection",
+            "interference",
+            "cosine omega t",
+            "wave behavior"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"confocal microscopy\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"optical coherence tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"interferometry\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"interferometric imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"diffuse optical imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"gravitational wave detection\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"interference\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"cosine omega t\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"signal behavior\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"confocal idea\\\",\\n    \\\"optical coherence tomography\\\",\\n    \\\"interferometry\\\",\\n    \\\"interferometric imaging\\\",\\n    \\\"diffuse optical imaging\\\",\\n    \\\"gravitational wave detection\\\",\\n    \\\"interference\\\",\\n    \\\"cosine omega t\\\",\\n    \\\"wave behavior\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"confocal microscopy\", \"category\": \"modality\"}, {\"term\": \"optical coherence tomography\", \"category\": \"modality\"}, {\"term\": \"interferometry\", \"category\": \"physics\"}, {\"term\": \"interferometric imaging\", \"category\": \"modality\"}, {\"term\": \"diffuse optical imaging\", \"category\": \"modality\"}, {\"term\": \"gravitational wave detection\", \"category\": \"physics\"}, {\"term\": \"interference\", \"category\": \"physics\"}, {\"term\": \"cosine omega t\", \"category\": \"mathematics\"}], \"evidence\": [\"confocal idea\", \"optical coherence tomography\", \"interferometry\", \"interferometric imaging\", \"diffuse optical imaging\", \"gravitational wave detection\", \"interference\", \"cosine omega t\", \"wave behavior\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide27.json",
+        "parsed": {
+          "s": "Diffuse Optical Imaging",
+          "p": "uses",
+          "o": "DOT",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "Diffuse Optical Imaging DOS, DOT, FMT, BLT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Optical Microscopy\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"EM Wave\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Optical Microscopy EM Wave\\\"},\\n    {\\\"s\\\":\\\"Optical Microscopy\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"Optical-tissue Interaction Microscopy\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Optical-tissue Interaction Microscopy\\\"},\\n    {\\\"s\\\":\\\"Optical Coherence Tomography\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"Principle Applications\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Optical Coherence Tomography Principle Applications\\\"},\\n    {\\\"s\\\":\\\"Diffuse Optical Imaging\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"DOS\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Diffuse Optical Imaging DOS, DOT, FMT, BLT\\\"},\\n    {\\\"s\\\":\\\"Diffuse Optical Imaging\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"DOT\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Diffuse Optical Imaging DOS, DOT, FMT, BLT\\\"},\\n    {\\\"s\\\":\\\"Diff\", \"parsed\": {\"s\": \"Diffuse Optical Imaging\", \"p\": \"uses\", \"o\": \"DOT\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"Diffuse Optical Imaging DOS, DOT, FMT, BLT\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide27.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Optical Microscopy",
+              "category": "modality"
+            },
+            {
+              "term": "Optical Coherence Tomography",
+              "category": "modality"
+            },
+            {
+              "term": "Diffuse Optical Imaging",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "No Nobel Prize there, unlike OCT, but still pretty amazing.",
+            "The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference.",
+            "The two ideas - confocal microscopy and optical coherence tomography - sit inside this larger family of interferometric imaging."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T17:57:00.184950+00:00\", \"text_length\": 1648, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Optical Microscopy\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Optical Coherence Tomography\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Diffuse Optical Imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray Optical Coupling\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"No Nobel Prize there, unlike OCT, but still pretty amazing.\\\",\\n    \\\"The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference.\\\",\\n    \\\"The two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Optical Microscopy\", \"category\": \"modality\"}, {\"term\": \"Optical Coherence Tomography\", \"category\": \"modality\"}, {\"term\": \"Diffuse Optical Imaging\", \"category\": \"modality\"}], \"evidence\": [\"No Nobel Prize there, unlike OCT, but still pretty amazing.\", \"The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference.\", \"The two ideas - confocal microscopy and optical coherence tomography - sit inside this larger family of interferometric imaging.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide27.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T18:48:03.704718+00:00\", \"text_length\": 1648, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide27.json",
+        "parsed": {
+          "term": "em wave",
+          "category": "physics"
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T15:57:40.095225+00:00\", \"text_length\": 1648, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"optical microscopy\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"optical coherence tomography\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"diffuse optical imaging\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"x-ray optical coupling\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"interferometry\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"confocal microscopy\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"cosine omega t plus cosine omega t plus phi\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"gravitational wave detection\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"interferometric imaging\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"interference\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"em wave\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"optical-tissue interaction\", \"parsed\": {\"term\": \"em wave\", \"category\": \"physics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide27.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide27\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T16:05:06.570495+00:00\", \"text_length\": 1648, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nOkay, how are we doing on time? We’ve wrapped up the second part, and now we’ll continue into the third and fourth parts. In the first part I walked you through the key ideas. We talked about optical microscopy and the confocal idea — a wonderful idea. No Nobel Prize there, unlike OCT, but still pretty amazing. Then we looked at how interference lets you do imaging — not only optical coherence tomography, but interferometric imaging in general. The principle itself is profound, even when there isn’t a Nobel attached to it.\\n\\nYou may have read the news about gravitational wave detection. How do they detect those waves? The waves create tiny vibrations — unbelievably small — that you would think are impossible to measure. The trick is interferometry. Two long arms, miles long, two optical paths that pick up a minute difference, and that difference is magnified by interference. There are setups in the United States and Europe, and even programs in China. Some people are pushing to use satellites to make the arms even longer. Interferometry is incredibly helpful whenever you have wave behavior and you want extremely precise measurements.\\n\\nSo the two ideas — confocal microscopy and optical coherence tomography — sit inside this larger family of interferometric imaging. It’s not only optical; X-rays and even gravitational wave observatories use the same core idea. In the end, it all goes back to adding waves: cosine omega t plus cosine omega t plus phi. That simple concept has powered multiple Nobel-level advances. Now, let’s turn to something different: diffuse optical imaging. You may not know these methods yet, but you will.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

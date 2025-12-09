@@ -1,0 +1,211 @@
+{
+  "lecture": "Lecture 4",
+  "slide_id": "Slide8",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide8.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide8.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide8.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "total impulse",
+              "category": "physics"
+            },
+            {
+              "term": "same response",
+              "category": "signal_processing"
+            },
+            {
+              "term": "accumulated effect",
+              "category": "signal_processing"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "The shape of the force curve - whether it’s a tall narrow spike or a wide shallow push - doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.",
+            "Different kinds of inputs can result in the same response if their total impact - the area - is identical."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"area under the curve\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"total impulse\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"same response\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"accumulated effect\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\\", \\\"Different kinds of inputs can result in the same response if their total impact — the area — is identical.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"total impulse\", \"category\": \"physics\"}, {\"term\": \"same response\", \"category\": \"signal_processing\"}, {\"term\": \"accumulated effect\", \"category\": \"signal_processing\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}], \"evidence\": [\"The shape of the force curve - whether it’s a tall narrow spike or a wide shallow push - doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\", \"Different kinds of inputs can result in the same response if their total impact - the area - is identical.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide8.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"force-time curve\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"total impulse\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide8.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "impulse",
+              "category": "physics"
+            },
+            {
+              "term": "force curve",
+              "category": "physics"
+            },
+            {
+              "term": "area under the force-time curve",
+              "category": "mathematics"
+            },
+            {
+              "term": "total impulse",
+              "category": "physics"
+            },
+            {
+              "term": "convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "accumulated effect",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "total impulse",
+            "area under the force-time curve",
+            "convolution",
+            "accumulated effect"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"impulse\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"force curve\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"area under the force-time curve\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"total impulse\\\", \\\"category\\\": \\\"physics\\\"},\\n    {\\\"term\\\": \\\"convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"accumulated effect\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"total impulse\\\",\\n    \\\"area under the force-time curve\\\",\\n    \\\"convolution\\\",\\n    \\\"accumulated effect\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"impulse\", \"category\": \"physics\"}, {\"term\": \"force curve\", \"category\": \"physics\"}, {\"term\": \"area under the force-time curve\", \"category\": \"mathematics\"}, {\"term\": \"total impulse\", \"category\": \"physics\"}, {\"term\": \"convolution\", \"category\": \"signal_processing\"}, {\"term\": \"accumulated effect\", \"category\": \"signal_processing\"}], \"evidence\": [\"total impulse\", \"area under the force-time curve\", \"convolution\", \"accumulated effect\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide8.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "area under the force-time curve",
+              "p": "represents",
+              "o": "cumulative effect of the force",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "This area represents the cumulative effect of the force."
+            },
+            {
+              "s": "total impulse",
+              "p": "depends_on",
+              "o": "area under the force-time curve",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "What truly matters is the area under the force-time curve."
+            },
+            {
+              "s": "different kinds of inputs",
+              "p": "produces",
+              "o": "same response",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "different kinds of inputs can result in the same response if their total impact - the area - is identical."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"area under the force-time curve\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"cumulative effect of the force\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"This area represents the cumulative effect of the force.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"total impulse\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"area under the force-time curve\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"What truly matters is the area under the force-time curve.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"different kinds of inputs\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"same response\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"different kinds of inputs can result in the same response if their total impact — the area — is identical.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"area under the force-time curve\", \"p\": \"represents\", \"o\": \"cumulative effect of the force\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"This area represents the cumulative effect of the force.\"}, {\"s\": \"total impulse\", \"p\": \"depends_on\", \"o\": \"area under the force-time curve\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"What truly matters is the area under the force-time curve.\"}, {\"s\": \"different kinds of inputs\", \"p\": \"produces\", \"o\": \"same response\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"different kinds of inputs can result in the same response if their total impact - the area - is identical.\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide8.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Impulse",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Force-time curve",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Convolution",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Total impact",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Accumulated effect",
+              "category": "signal_processing"
+            },
+            {
+              "term": "Convolution",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "The shape of the force curve - whether it's a tall narrow spike or a wide shallow push - doesn't actually matter when it comes to total impulse.",
+            "This area represents the cumulative effect of the force.",
+            "In system terms, different kinds of inputs can result in the same response if their total impact - the area - is identical.",
+            "This idea is central to convolution: we're not just tracking individual values, but the accumulated effect of an input across time."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T21:13:28.611777+00:00\", \"text_length\": 711, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Impulse\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Force-time curve\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Area under the curve\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Convolution\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Input response\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Total impact\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Accumulated effect\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"Convolution\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse.\\\",\\n    \\\"This area represents the cumulative effect of the force.\\\",\\n    \\\"In system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\\",\\n    \\\"This idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Impulse\", \"category\": \"signal_processing\"}, {\"term\": \"Force-time curve\", \"category\": \"signal_processing\"}, {\"term\": \"Convolution\", \"category\": \"signal_processing\"}, {\"term\": \"Total impact\", \"category\": \"signal_processing\"}, {\"term\": \"Accumulated effect\", \"category\": \"signal_processing\"}, {\"term\": \"Convolution\", \"category\": \"signal_processing\"}], \"evidence\": [\"The shape of the force curve - whether it's a tall narrow spike or a wide shallow push - doesn't actually matter when it comes to total impulse.\", \"This area represents the cumulative effect of the force.\", \"In system terms, different kinds of inputs can result in the same response if their total impact - the area - is identical.\", \"This idea is central to convolution: we're not just tracking individual values, but the accumulated effect of an input across time.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide8.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "area under the force-time curve",
+              "p": "measures",
+              "o": "total impulse",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 1.0,
+              "evidence": "The shape of the force curve - whether it's a tall narrow spike or a wide shallow push - doesn't actually matter when it comes to total impulse. What truly matters is the area under the force-time curve."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T22:26:36.888957+00:00\", \"text_length\": 711, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"area under the force-time curve\\\", \\\"p\\\":\\\"measures\\\", \\\"o\\\":\\\"total impulse\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"area under the force-time curve\", \"p\": \"measures\", \"o\": \"total impulse\", \"modalities\": [\"text\", \"image\"], \"confidence\": 1.0, \"evidence\": \"The shape of the force curve - whether it's a tall narrow spike or a wide shallow push - doesn't actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\"}]}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide8.json",
+        "parsed": {
+          "term": "This idea is central to convolution: we're not just tracking individual values, but the accumulated effect of an input across time.",
+          "category": "signal_processing"
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T23:04:57.479650+00:00\", \"text_length\": 711, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"What truly matters is the area under the force-time curve.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"This area represents the cumulative effect of the force.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"In system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"This idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Building on what we just discussed, here we observe something quite elegant\", \"parsed\": {\"term\": \"This idea is central to convolution: we're not just tracking individual values, but the accumulated effect of an input across time.\", \"category\": \"signal_processing\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide8.json",
+        "parsed": {
+          "s": "The area under the force-time curve",
+          "p": "represents",
+          "o": "the cumulative effect of the force",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "This area represents the cumulative effect of the force."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide8\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T23:12:17.303759+00:00\", \"text_length\": 711, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nBuilding on what we just discussed, here we observe something quite elegant:\\nThe shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\n\\nThis area represents the cumulative effect of the force. So, a small force applied over a long duration can have the same impulse as a large force applied for a short time.\\n\\nIn system terms, different kinds of inputs can result in the same response if their total impact — the area — is identical.\\nThis idea is central to convolution: we’re not just tracking individual values, but the accumulated effect of an input across time.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"The shape of the force curve\\\",\\n      \\\"p\\\": \\\"depends_on\\\",\\n      \\\"o\\\": \\\"the area under the force-time curve\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The shape of the force curve — whether it’s a tall narrow spike or a wide shallow push — doesn’t actually matter when it comes to total impulse. What truly matters is the area under the force-time curve.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"The area under the force-time curve\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the cumulative effect of the force\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This area represents the cumulative effect of the force.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"The area under the force-time curve\\\",\\n      \\\"p\\\": \\\"measures\\\",\\n      \\\"o\\\": \\\"total impulse\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\", \"parsed\": {\"s\": \"The area under the force-time curve\", \"p\": \"represents\", \"o\": \"the cumulative effect of the force\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"This area represents the cumulative effect of the force.\"]}}"
+      }
+    }
+  }
+}

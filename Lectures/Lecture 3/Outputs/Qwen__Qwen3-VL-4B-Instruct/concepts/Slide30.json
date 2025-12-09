@@ -1,0 +1,25 @@
+{
+  "slide_id": "Slide30",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:14:18.593158+00:00",
+  "text_length": 532,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nIn medical imaging and other engineering applications, we often focus not just on linear systems, but on shift-invariant linear systems. This means that if the input shifts—say, you move an object from one location to another—the output shifts in the same way.\nFor example, if I take your picture in this room, then take it again in my office, the image of you should look the same. The system’s response stays consistent despite the shift in location. This stability, or shift invariance, is a key property of many imaging systems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"shift-invariant linear systems\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"if the input shifts—say, you move an object from one location to another—the output shifts in the same way\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"the system’s response stays consistent despite the shift in location\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"This stability, or shift invariance, is a key property of many imaging systems\",\n      \"category\": \"signal_processing\"\n    }\n  ],\n  \"evidence\": [\n    \"In medical imaging and other engineering applications, we often focus not just on linear systems, but on shift-invariant linear systems.\",\n    \"For example, if I take your picture in this room, then take it again in my office, the image of you should look the same.\",\n    \"This stability, or shift invariance, is a key property of many imaging systems.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "shift-invariant linear systems",
+        "category": "signal_processing"
+      },
+      {
+        "term": "This stability, or shift invariance, is a key property of many imaging systems",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "In medical imaging and other engineering applications, we often focus not just on linear systems, but on shift-invariant linear systems.",
+      "For example, if I take your picture in this room, then take it again in my office, the image of you should look the same.",
+      "This stability, or shift invariance, is a key property of many imaging systems."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T14:23:36.583946+00:00",
+  "text_length": 355,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLast time, we explained to you the physical and mathematical principles for ultrasound imaging.\n\nIn this lecture, we will be more specific about how we can form different kinds of ultrasound images. We’re moving from principles to practice—how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"physical and mathematical principles for ultrasound imaging\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"how we can form different kinds of ultrasound images\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"how we send sound, receive echoes, and turn those echoes into the different image types\",\n      \"category\": \"workflow\"\n    }\n  ],\n  \"evidence\": [\n    \"Last time, we explained to you the physical and mathematical principles for ultrasound imaging.\",\n    \"In this lecture, we will be more specific about how we can form different kinds of ultrasound images.\",\n    \"We’re moving from principles to practice—how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "physical and mathematical principles for ultrasound imaging",
+        "category": "physics"
+      },
+      {
+        "term": "how we can form different kinds of ultrasound images",
+        "category": "modality"
+      },
+      {
+        "term": "how we send sound, receive echoes, and turn those echoes into the different image types",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Last time, we explained to you the physical and mathematical principles for ultrasound imaging.",
+      "In this lecture, we will be more specific about how we can form different kinds of ultrasound images.",
+      "We're moving from principles to practice-how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:48:54.978232+00:00",
+  "text_length": 712,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s build on that by comparing systems to something you’re already familiar with—functions. A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range. Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output.\nThese elements could represent anything: parts of a social system, components of a physiological system, or pieces of a mechanical system. The important point is that both functions and systems describe relationships between inputs and outputs. Our goal is to define these relationships clearly so that we can apply them to engineering and medical imaging problems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"function\", \"category\": \"mathematics\"},\n    {\"term\": \"system\", \"category\": \"mathematics\"},\n    {\"term\": \"domain\", \"category\": \"mathematics\"},\n    {\"term\": \"range\", \"category\": \"mathematics\"},\n    {\"term\": \"input\", \"category\": \"mathematics\"},\n    {\"term\": \"output\", \"category\": \"mathematics\"},\n    {\"term\": \"interconnected elements\", \"category\": \"mathematics\"},\n    {\"term\": \"relationships between inputs and outputs\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range.\",\n    \"Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output.\",\n    \"The important point is that both functions and systems describe relationships between inputs and outputs.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "function",
+        "category": "mathematics"
+      },
+      {
+        "term": "system",
+        "category": "mathematics"
+      },
+      {
+        "term": "domain",
+        "category": "mathematics"
+      },
+      {
+        "term": "range",
+        "category": "mathematics"
+      },
+      {
+        "term": "input",
+        "category": "mathematics"
+      },
+      {
+        "term": "output",
+        "category": "mathematics"
+      },
+      {
+        "term": "interconnected elements",
+        "category": "mathematics"
+      },
+      {
+        "term": "relationships between inputs and outputs",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "A function is a mathematical rule that maps each input from one set, called the domain, to an output in another set, called the range.",
+      "Systems work in a similar way. They take an input, process it through interconnected elements, and produce an output.",
+      "The important point is that both functions and systems describe relationships between inputs and outputs."
+    ]
+  }
+}

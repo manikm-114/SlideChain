@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier Series (Real Form)\",\n      \"p\": \"represents\",\n      \"o\": \"a weighted sum of sines and cosines\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"if you have a periodic function — let’s call it f of t — you can express it as a weighted sum of sines and cosines.\"\n    },\n    {\n      \"s\": \"a naught\",\n      \"p\": \"measures\",\n      \"o\": \"the average value of the function over one full period\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"a naught is the average value of the function over one full period.\"\n    },\n    {\n      \"s\": \"a naught divided by 2\",\n      \"p\": \"equals\",\n      \"o\": \"the integral of f of t from 0 to 1\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"That’s equal to the integral of f of t from 0 to 1.\"\n    },",
+  "parsed": {
+    "s": "a naught divided by 2",
+    "p": "equals",
+    "o": "the integral of f of t from 0 to 1",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "That’s equal to the integral of f of t from 0 to 1."
+    ]
+  }
+}

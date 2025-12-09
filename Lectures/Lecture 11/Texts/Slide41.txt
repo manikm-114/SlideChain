@@ -1,0 +1,10 @@
+Here’s another way to look at the ROC curve — in terms of true positive fraction and false positive fraction.
+
+The true positive fraction is simply the sensitivity: among all real disease cases, what fraction we detect correctly.The false positive fraction is equal to one minus specificity: among all healthy cases, what fraction we mistakenly call positive.
+When we plot sensitivity on the vertical axis against 1 – specificity on the horizontal axis, we get the ROC curve.
+
+If the curve lies along the diagonal dashed line, it means the test is performing no better than random guessing — the true positive fraction increases at the same rate as the false positive fraction.
+But if the curve bends upward toward the top-left corner, that indicates good diagnostic performance: we are capturing many true positives while keeping false positives relatively low.
+
+So in practice, the more the ROC curve bulges toward the upper left, the better the test or imaging system is at separating disease from non-disease.
+This is exactly why the ROC framework is so valuable. It captures the trade-off between sensitivity and specificity in a single curve, and it gives us a clear visual and quantitative way to compare different diagnostic systems.

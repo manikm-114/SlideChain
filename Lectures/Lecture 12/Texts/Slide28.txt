@@ -1,0 +1,13 @@
+Now let’s extend the exponential attenuation model to the case where the X-ray beam passes through multiple elements along its path.
+
+Suppose the beam is divided into many small steps. For each step, there is a local attenuation coefficient and a thickness. When we add up all of these contributions, we arrive at a cumulative relationship.
+This summation has a special name: we call it a ray-sum. The term simply means we are summing up contributions along a single ray of X-rays as it travels through the object.
+
+Now, notice what is known and what is unknown. The thickness of each element is something we set in the model. What we don’t know are the attenuation coefficients themselves — those are the values we are trying to determine. So, what we really have is a linear combination of unknowns. That’s why this is described as a linear system.
+
+On the other side of the equation, you see a logarithm. Taking the natural logarithm is just a mathematical way of undoing the exponential law we started with. This step allows us to link the unknown attenuation values inside the body with quantities we can actually measure.
+Think about it: the input intensity is known because we generate and calibrate the X-ray beam. The output intensity is measured directly by the detector. The ratio of the two gives us a measurable value, and taking the logarithm turns it into the sum of attenuation along the path.
+If we make the elements smaller and smaller, the discrete sum becomes a continuous integral. In other words, in the limit, what we measure is a line integral of the attenuation coefficient along the path of the X-ray.
+
+This is the key principle: with X-rays, we do not directly measure the attenuation at each point inside the body. Instead, we measure ray-sums — overlapping signals that represent line integrals. By collecting many such measurements from different angles, we can mathematically reconstruct the image.
+So this linear equation forms the bridge between the unknown interior of the body and the measurable data at the detector.

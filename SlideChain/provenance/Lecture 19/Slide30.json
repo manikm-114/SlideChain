@@ -1,0 +1,104 @@
+{
+  "lecture": "Lecture 19",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "Fourier MRI"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "phase encoding only gives one value of k y per line"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "If two variables k x and k y are defined as ... with x and y being the frequency- and phase-encoding directions, respectively, then equation (4.47) can be expressed in terms of these two variables: ..."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "phase-encoding direction",
+        "p": "represents",
+        "s": "k y"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "Fourier transformation"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "signal_processing",
+            "term": "phase encoding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency encoding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "readout"
+          },
+          {
+            "category": "instrumentation",
+            "term": "gradient"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier information"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "k-space"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          }
+        ],
+        "evidence": [
+          "The signal we measure is essentially a Fourier transformation.",
+          "The Fourier slice theorem has to be used.",
+          "The signals themselves directly populate k-space."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "gamma over two pi times G y times tau p e"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "tau p e",
+        "p": "depends_on",
+        "s": "k y"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 19\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

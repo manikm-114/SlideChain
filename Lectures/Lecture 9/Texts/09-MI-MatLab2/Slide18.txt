@@ -1,0 +1,9 @@
+Now let’s see what happens when we add zero-padding before taking the Fourier transform.
+
+This time, when we call the FFT function, we specify a length of two thousand. That means we take our original signal and append enough zeros to make it two thousand points long before computing the FFT.
+By doing this, we change the spacing between frequency bins. Previously, without padding, the bins were one hertz apart. Now, the bin spacing is F s divided by two thousand, which equals zero point five hertz. This finer spacing allows us to more accurately pinpoint frequencies that fall between the old one-hertz bins.
+
+When we plot the result, we still see the sharp spike at one hundred hertz. Also, we now see a very clear spike at two hundred two point five hertz — the second frequency in our original signal.
+The reason is simple: with zero-padding, we’ve increased the frequency resolution of the spectrum, making it possible to distinguish both components of our signal cleanly.
+
+So, zero-padding doesn’t create new information — it simply lets us view the spectrum at a finer scale, revealing details that would otherwise be hidden between coarse frequency bins.

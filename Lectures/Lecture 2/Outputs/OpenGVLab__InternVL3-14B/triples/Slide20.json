@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB programming\",\n      \"p\": \"uses\",\n      \"o\": \"vectorization\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now let’s talk about vectorization — one of the most important habits in MATLAB programming.\"\n    },\n    {\n      \"s\": \"vectorization\",\n      \"p\": \"represents\",\n      \"o\": \"applying an operation to the whole array at once\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Instead of looping through each element one by one, we apply an operation to the whole array at once.\"\n    },\n    {\n      \"s\": \"vectorization\",\n      \"p\": \"produces\",\n      \"o\": \"faster and cleaner code\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Same result, much faster, much cleaner.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"depends_on\",\n      \"o\": \"vectorized operations\",\n      \"modalities\": [\"text",
+  "parsed": {
+    "s": "vectorization",
+    "p": "produces",
+    "o": "faster and cleaner code",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Same result, much faster, much cleaner."
+    ]
+  }
+}

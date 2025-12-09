@@ -1,0 +1,141 @@
+{
+  "lecture": "Lecture 2",
+  "slide_id": "Slide13",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide13.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "det of A",
+          "category": "software"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"linspace\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"logspace\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A equals square bracket one two three; four five six\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A of one, two\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A colon, two\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A two, colon\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A plus B\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"two times A\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A star B\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A dot star B\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"A prime\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"det of A\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Let’s see how to create and work with matrices in MATLAB.\\\", \\\"To get evenly spaced numbers, use linspace.\\\", \\\"For example: x equals linspace from minus pi\", \"parsed\": {\"term\": \"det of A\", \"category\": \"software\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide13.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "linspace",
+              "p": "uses",
+              "o": "MATLAB",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "To get evenly spaced numbers, use linspace."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"linspace\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"MATLAB\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"To get evenly spaced numbers, use linspace.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"linspace\", \"p\": \"uses\", \"o\": \"MATLAB\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"To get evenly spaced numbers, use linspace.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide13.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "linspace",
+              "category": "software"
+            },
+            {
+              "term": "logspace",
+              "category": "software"
+            },
+            {
+              "term": "matrix",
+              "category": "mathematics"
+            },
+            {
+              "term": "transpose",
+              "category": "mathematics"
+            },
+            {
+              "term": "determinant",
+              "category": "mathematics"
+            },
+            {
+              "term": "matrix multiplication",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "To get evenly spaced numbers, use linspace.",
+            "For logarithmic spacing, use logspace.",
+            "To define a matrix, write...",
+            "Transpose with A prime...",
+            "get the determinant using det of A.",
+            "You can add, subtract, or scale matrices like...",
+            "Use A star B for matrix multiplication...",
+            "and A dot star B for element-by-element."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"linspace\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"logspace\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"transpose\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"determinant\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix addition\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix subtraction\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"scalar multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"element-by-element multiplication\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To get evenly spaced numbers, use linspace.\\\",\\n    \\\"For logarithmic spacing, use logspace.\\\",\\n    \\\"To define a matrix, write...\\\",\\n    \\\"Transpose with A prime...\\\",\\n    \\\"get the determinant using det of A.\\\",\\n    \\\"You can add, subtract, or scale matrices like...\\\",\\n    \\\"Use A star B for matrix multiplication...\\\",\\n    \\\"and A dot star B for element-by-element.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"linspace\", \"category\": \"software\"}, {\"term\": \"logspace\", \"category\": \"software\"}, {\"term\": \"matrix\", \"category\": \"mathematics\"}, {\"term\": \"transpose\", \"category\": \"mathematics\"}, {\"term\": \"determinant\", \"category\": \"mathematics\"}, {\"term\": \"matrix multiplication\", \"category\": \"mathematics\"}], \"evidence\": [\"To get evenly spaced numbers, use linspace.\", \"For logarithmic spacing, use logspace.\", \"To define a matrix, write...\", \"Transpose with A prime...\", \"get the determinant using det of A.\", \"You can add, subtract, or scale matrices like...\", \"Use A star B for matrix multiplication...\", \"and A dot star B for element-by-element.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide13.json",
+        "parsed": {
+          "s": "A(1,2)",
+          "p": "represents",
+          "o": "element in the first row, second column",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "A of one, two gives the value in the first row, second column."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"linspace\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"evenly spaced numbers\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"To get evenly spaced numbers, use linspace.\\\"},\\n    {\\\"s\\\":\\\"logspace\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"logarithmic spacing\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"For logarithmic spacing, use logspace.\\\"},\\n    {\\\"s\\\":\\\"A\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"two-by-three matrix\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"A equals square bracket one two three; four five six — that gives a two-by-three matrix.\\\"},\\n    {\\\"s\\\":\\\"A(1,2)\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"element in the first row, second column\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"A of one, two gives the value in the first row, second column.\\\"},\\n    {\\\"s\\\":\\\"A(:,2)\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"second column\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"A colon\", \"parsed\": {\"s\": \"A(1,2)\", \"p\": \"represents\", \"o\": \"element in the first row, second column\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"A of one, two gives the value in the first row, second column.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "determinant",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T19:16:39.807901+00:00\", \"text_length\": 736, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"linspace\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"logspace\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix addition\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix subtraction\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"matrix multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"element-by-element multiplication\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"transpose\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"determinant\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To get evenly spaced numbers, use linspace.\\\",\\n    \\\"For logarithmic spacing, use logspace.\\\",\\n    \\\"To define a matrix, write: A equals square bracket one two three; four five six — that gives a two-by-three matrix.\\\",\\n    \\\"To access elements: A of one, two gives the value in the first row, second column.\\\",\\n    \\\"A colon, two returns the second column.\\\",\\n    \\\"A two, colon gives the second row.\\\",\\n    \\\"You can add, subtract, or scale\", \"parsed\": {\"term\": \"determinant\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide13.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-08T20:21:15.701366+00:00\", \"text_length\": 736, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"x = linspace(-pi,pi,10);\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"creates 10 linearly-spaced elements from -pi to pi.\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide13.json",
+        "parsed": {
+          "term": "det(A)",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-07T21:33:07.708700+00:00\", \"text_length\": 736, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"linspace\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"logspace\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A = [1 2 3; 4 5 6];\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A(1,2)\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A(:,2)\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A(2,:)\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A'\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A+B, A-B, 2*A, A*B\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"A.*B\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"det(A)\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"To get evenly spaced numbers, use linspace.\\\",\\n    \\\"For logarithmic spacing, use log\", \"parsed\": {\"term\": \"det(A)\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide13.json",
+        "parsed": {
+          "s": "A = [1 2 3; 4 5 6]",
+          "p": "represents",
+          "o": "2x3 matrix",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.95,
+          "evidence": [
+            "A = [1 2 3; 4 5 6]; % creates 2x3 matrix"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide13\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-07T21:51:36.877586+00:00\", \"text_length\": 736, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s see how to create and work with matrices in MATLAB.\\nTo get evenly spaced numbers, use linspace.\\u000bFor example:\\u000bx equals linspace from minus pi to pi, with 10 points — gives 10 values across that range.\\u000bFor logarithmic spacing, use logspace.\\nTo define a matrix, write:\\u000bA equals square bracket one two three; four five six — that gives a two-by-three matrix.\\nTo access elements:\\u000bA of one, two gives the value in the first row, second column.\\u000bA colon, two returns the second column.\\u000bA two, colon gives the second row.\\nYou can add, subtract, or scale matrices like:\\u000bA plus B, or two times A.\\nUse A star B for matrix multiplication,\\u000band A dot star B for element-by-element.\\nTranspose with A prime,\\u000band get the determinant using det of A.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"x = linspace(-pi,pi,10)\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"linspace\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"x = linspace(-pi,pi,10); % creates 10 linearly-spaced elements from –pi to pi.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"A = [1 2 3; 4 5 6]\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"2x3 matrix\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"A = [1 2 3; 4 5 6]; % creates 2x3 matrix\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"A(1,2)\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the element in row 1, column 2\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 0.95,\\n      \\\"evidence\\\": \\\"A(1,2) % the element in row\", \"parsed\": {\"s\": \"A = [1 2 3; 4 5 6]\", \"p\": \"represents\", \"o\": \"2x3 matrix\", \"modalities\": [\"text\"], \"confidence\": 0.95, \"evidence\": [\"A = [1 2 3; 4 5 6]; % creates 2x3 matrix\"]}}"
+      }
+    }
+  }
+}

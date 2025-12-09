@@ -1,0 +1,33 @@
+{
+  "slide_id": "Slide13",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T13:31:54.498297+00:00",
+  "text_length": 991,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nHere’s an even simpler way to explain spin echo. Imagine you have a group of students lining up at a race track. At the starting point, they are all together, right at the start line. After the signal, they all run toward the finish line. Some students are faster, and some are slower. So after a certain time, they will have covered different distances.\n\nNow, at that moment, we ask them all to turn around and keep running, but in the opposite direction. The faster runners, who had gone farther ahead, now have a longer distance to come back. The slower runners, who didn’t go as far, have a shorter distance to cover. But because they are slower, their speed matches the distance they need to make up.\n\nAfter the same amount of time, both the fast and slow runners arrive back at the starting line together. They all realign again. This is the basic idea behind spin echo. By using this trick, we can measure T1, the pure T2, without the interference of the external field inhomogeneity.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"simple idea behind spin echo\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"starting point\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"different mileage\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"direction change\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"new alignment\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"they all realign again\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"by using this trick, we can measure T1, the pure T2, without the interference of the external field inhomogeneity\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"simple idea behind spin echo\",\n    \"starting point\",\n    \"different mileage\",\n    \"direction change\",\n    \"new alignment\",\n    \"they all realign again\",\n    \"by using this trick, we can measure T1, the pure T2, without the interference of the external field inhomogeneity\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "starting point",
+        "category": "modality"
+      },
+      {
+        "term": "they all realign again",
+        "category": "modality"
+      },
+      {
+        "term": "by using this trick, we can measure T1, the pure T2, without the interference of the external field inhomogeneity",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "simple idea behind spin echo",
+      "starting point",
+      "different mileage",
+      "direction change",
+      "new alignment",
+      "they all realign again",
+      "by using this trick, we can measure T1, the pure T2, without the interference of the external field inhomogeneity"
+    ]
+  }
+}

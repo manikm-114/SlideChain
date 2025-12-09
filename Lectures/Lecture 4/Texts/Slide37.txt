@@ -1,0 +1,7 @@
+Now let’s talk about the reverse process of blurring — a technique called deconvolution.
+When an image is blurred, it’s often because the original scene has been convolved with a point spread function — or PSF.We saw earlier that even a perfect point source becomes a blurred spot due to system limitations.
+Deconvolution is the process of trying to undo that effect —to recover the original image from its blurred version.
+You can think of convolution like a kind of advanced multiplication:we blend the signal with the system’s response.In that same spirit, deconvolution behaves like an advanced form of division —we’re trying to undo the blending, and isolate the original input.
+We can see that clearly in the example on this slide.The left image is a blurred photo of a car — the license plate is unreadable.After deconvolution, the right image restores the clarity — now we can read the plate.
+This kind of technique is used not just in photography, but in microscopy, astronomy, and especially in medical imaging,where resolving fine detail can be critical.
+It’s important to note that deconvolution is not always perfect —in real-world systems, noise and distortion make it a challenging problem.But with good modeling of the PSF and proper regularization,we can often greatly enhance image quality.

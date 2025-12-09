@@ -1,0 +1,13 @@
+The Fast Fourier Transform, or FFT, is an efficient algorithm for computing the discrete Fourier transform. It was published by Cooley and Tukey in 1965, and it completely changed the way we do signal processing.
+
+To give you an idea of its impact, in 1969, analyzing 2,048 data points from a seismic trace using the standard DFT took more than 13 hours. Using the FFT on the exact same machine, the same analysis took just 2.4 seconds. That’s an enormous improvement.
+I remember when I was in primary school, a 2,000-point seismic data analysis could take more than a full day to process. But with FFT, the same task could be finished in under three seconds.
+
+This kind of speedup is critical in many applications, especially those that need real-time results — whether it’s analyzing signals from an airplane’s sensors, monitoring seismic activity, or performing real-time image reconstruction.
+The reason FFT is so powerful is that it reduces the computational complexity.
+
+A naive DFT requires about N-squared operations — that’s N multiplications and additions for each of the N outputs.
+The FFT reduces this to N times log-base-2 of N operations.
+That’s a huge difference. For example, if N is 1,000, the log-base-2 of N is about 10. So instead of doing a million operations, we only need about ten thousand. The larger N gets, the more dramatic the savings become.
+
+Because of this efficiency, FFT still plays an essential role in modern signal processing, and it’s also widely used in areas like medical imaging, machine learning, and convolution-based computations.

@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide20",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:47:31.457524+00:00",
+  "text_length": 1306,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s take a closer look at how changing the maximum theta or the theta step affects reconstruction.\n\nBy default, our code uses a maximum theta of 180 degrees and a step size of 1 degree. But what happens if we adjust those values?\nOn the left, you see the case where max theta is 180 and the step is 5. Here, we’re still covering the full range of angles, but we’re sampling them more coarsely. As a result, the back-projected image shows more artifacts—notice the diagonal streaks in the unfiltered image. Filtering helps reduce some of these, but the square edges are still less crisp compared to the default case.\n\nOn the right, we have max theta reduced to 90 degrees with a step of 1. Now the issue is different: we’ve cut the angular range in half, so the reconstruction is incomplete. The square looks more rounded at the edges, and you see stronger cross-like artifacts in the background.\n\nSo here’s the key takeaway:\nIncreasing the step size (fewer sampled angles) makes the reconstructions less defined.\nReducing the maximum angle (smaller angular coverage) lowers resolution and produces incomplete images.\nIn real CT scanning, both of these parameters matter. More angles mean better images but also more computation and radiation dose. Fewer angles save time and dose but reduce quality.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"max_theta\", \"category\": \"reconstruction\"},\n    {\"term\": \"step\", \"category\": \"reconstruction\"},\n    {\"term\": \"back-projected image\", \"category\": \"reconstruction\"},\n    {\"term\": \"filtered backprojected image\", \"category\": \"reconstruction\"},\n    {\"term\": \"artifacts\", \"category\": \"reconstruction\"},\n    {\"term\": \"resolution\", \"category\": \"reconstruction\"},\n    {\"term\": \"angular coverage\", \"category\": \"reconstruction\"},\n    {\"term\": \"computation\", \"category\": \"reconstruction\"},\n    {\"term\": \"radiation dose\", \"category\": \"reconstruction\"},\n    {\"term\": \"quality\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"increasing the step size (fewer sampled angles) makes the reconstructions less defined.\",\n    \"reducing the maximum angle (smaller angular coverage) lowers resolution and produces incomplete images.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "step",
+        "category": "reconstruction"
+      },
+      {
+        "term": "back-projected image",
+        "category": "reconstruction"
+      },
+      {
+        "term": "artifacts",
+        "category": "reconstruction"
+      },
+      {
+        "term": "resolution",
+        "category": "reconstruction"
+      },
+      {
+        "term": "angular coverage",
+        "category": "reconstruction"
+      },
+      {
+        "term": "computation",
+        "category": "reconstruction"
+      },
+      {
+        "term": "radiation dose",
+        "category": "reconstruction"
+      },
+      {
+        "term": "quality",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "increasing the step size (fewer sampled angles) makes the reconstructions less defined.",
+      "reducing the maximum angle (smaller angular coverage) lowers resolution and produces incomplete images."
+    ]
+  }
+}

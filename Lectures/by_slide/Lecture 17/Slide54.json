@@ -1,0 +1,162 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide54",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide54.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide54.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide54.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fully3D",
+              "category": "software"
+            },
+            {
+              "term": "movie",
+              "category": "communication"
+            },
+            {
+              "term": "elements",
+              "category": "signal_processing"
+            },
+            {
+              "term": "spirit",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "SLIDE_TEXT"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"3D\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Fully3D\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"movie\\\", \\\"category\\\": \\\"communication\\\"},\\n    {\\\"term\\\": \\\"elements\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"spirit\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"SLIDE_TEXT\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Fully3D\", \"category\": \"software\"}, {\"term\": \"movie\", \"category\": \"communication\"}, {\"term\": \"elements\", \"category\": \"signal_processing\"}, {\"term\": \"spirit\", \"category\": \"workflow\"}], \"evidence\": [\"SLIDE_TEXT\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide54.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"3D logo\\\", \\\"p\\\":\\\"represents\\\", \\\"o\\\":\\\"Fully3D'17\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"brings together all the elements for Fully3D'17 and represents the spirit of the meeting\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide54.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "3D logo",
+              "category": "software"
+            },
+            {
+              "term": "Fully3D’17",
+              "category": "communication"
+            }
+          ],
+          "evidence": [
+            "movie of the 3D logo",
+            "represents the spirit of the meeting"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"3D logo\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Fully3D’17\\\", \\\"category\\\": \\\"communication\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"movie of the 3D logo\\\", \\\"represents the spirit of the meeting\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"3D logo\", \"category\": \"software\"}, {\"term\": \"Fully3D’17\", \"category\": \"communication\"}], \"evidence\": [\"movie of the 3D logo\", \"represents the spirit of the meeting\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide54.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "movie",
+              "p": "represents",
+              "o": "Fully3D’17",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "movie of the 3D logo that brings together all the elements for Fully3D’17"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"movie\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"Fully3D’17\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"movie of the 3D logo that brings together all the elements for Fully3D’17\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"movie\", \"p\": \"represents\", \"o\": \"Fully3D’17\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"movie of the 3D logo that brings together all the elements for Fully3D’17\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide54.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "3D logo",
+              "category": "software"
+            },
+            {
+              "term": "movie",
+              "category": "software"
+            },
+            {
+              "term": "elements",
+              "category": "software"
+            },
+            {
+              "term": "spirit",
+              "category": "software"
+            },
+            {
+              "term": "meeting",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "This movie of the 3D logo brings together all the elements for Fully3D'17 and represents the spirit of the meeting."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T12:01:13.759138+00:00\", \"text_length\": 135, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Animation\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"3D logo\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Fully3D'17\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"movie\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"elements\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"spirit\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"meeting\\\", \\\"category\\\": \\\"software\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"This movie of the 3D logo brings together all the elements for Fully3D'17 and represents the spirit of the meeting.\\\"]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"3D logo\", \"category\": \"software\"}, {\"term\": \"movie\", \"category\": \"software\"}, {\"term\": \"elements\", \"category\": \"software\"}, {\"term\": \"spirit\", \"category\": \"software\"}, {\"term\": \"meeting\", \"category\": \"software\"}], \"evidence\": [\"This movie of the 3D logo brings together all the elements for Fully3D'17 and represents the spirit of the meeting.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide54.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:36:08.150801+00:00\", \"text_length\": 135, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide54.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "movie of the 3D logo",
+              "category": "software"
+            }
+          ],
+          "evidence": [
+            "Also, you have this movie of the 3D logo that brings together all the elements for Fully3D'17 and represents the spirit of the meeting."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:15:08.197615+00:00\", \"text_length\": 135, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"movie of the 3D logo\\\",\\n      \\\"category\\\": \\\"software\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Fully3D’17\\\",\\n      \\\"category\\\": \\\"communication\\\"\\n    }\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Also, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"movie of the 3D logo\", \"category\": \"software\"}], \"evidence\": [\"Also, you have this movie of the 3D logo that brings together all the elements for Fully3D'17 and represents the spirit of the meeting.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide54.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "movie",
+              "p": "represents",
+              "o": "spirit of the meeting",
+              "modalities": [
+                "text",
+                "image"
+              ],
+              "confidence": 0.9,
+              "evidence": "Also, you have this movie of the 3D logo that brings together all the elements for Fully3D'17 and represents the spirit of the meeting."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide54\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:21:58.525968+00:00\", \"text_length\": 135, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nAlso, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"movie\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"spirit of the meeting\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Also, you have this movie of the 3D logo that brings together all the elements for Fully3D’17 and represents the spirit of the meeting.\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"movie\", \"p\": \"represents\", \"o\": \"spirit of the meeting\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": \"Also, you have this movie of the 3D logo that brings together all the elements for Fully3D'17 and represents the spirit of the meeting.\"}]}}"
+      }
+    }
+  }
+}

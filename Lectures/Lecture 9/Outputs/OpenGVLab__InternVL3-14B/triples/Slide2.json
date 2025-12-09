@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide2",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Convolution\",\n      \"p\": \"uses\",\n      \"o\": \"input signal and the system’s impulse response\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Convolution is the tool that allows us to do exactly that — it takes the input signal and the system’s impulse response, and combines them to give the output.\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"any periodic signal as a sum of sine and cosine waves\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It tells us that any periodic signal can be written as a sum of sine and cosine waves.\"\n    },\n    {\n      \"s\": \"Fourier transform\",\n      \"p\": \"works for\",\n      \"o\": \"non-periodic signals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we make the period infinitely long, this naturally becomes the Fourier transform, which works for non-periodic signals.\"\n    },",
+  "parsed": {
+    "s": "Fourier transform",
+    "p": "works for",
+    "o": "non-periodic signals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "If we make the period infinitely long, this naturally becomes the Fourier transform, which works for non-periodic signals."
+    ]
+  }
+}

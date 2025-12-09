@@ -1,0 +1,118 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "projection"
+          },
+          {
+            "category": "mathematics",
+            "term": "decompose"
+          },
+          {
+            "category": "mathematics",
+            "term": "two-by-two matrix"
+          },
+          {
+            "category": "physics",
+            "term": "rays"
+          },
+          {
+            "category": "instrumentation",
+            "term": "detector bins"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear interpolation"
+          }
+        ],
+        "evidence": [
+          "they basically decompose a single pixel into a two-by-two matrix",
+          "shoot rays through all these centers into the projection domain",
+          "If a ray hits the center of a detector bin, that detector takes the full value",
+          "If it hits the boundary between two detector bins, the value is divided equally",
+          "If it hits at an arbitrary location, linear interpolation is used"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "If it hits at an arbitrary location, linear interpolation is used"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "projection"
+          },
+          {
+            "category": "mathematics",
+            "term": "two-by-two matrix"
+          },
+          {
+            "category": "physics",
+            "term": "rays"
+          },
+          {
+            "category": "instrumentation",
+            "term": "center of a detector bin"
+          },
+          {
+            "category": "instrumentation",
+            "term": "boundary between two detector bins"
+          },
+          {
+            "category": "mathematics",
+            "term": "arbitrary location"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear interpolation"
+          },
+          {
+            "category": "data_processing",
+            "term": "value"
+          }
+        ],
+        "evidence": [
+          "When you do projection, they basically decompose a single pixel into a two-by-two matrix, then shoot rays through all these centers into the projection domain.",
+          "If a ray hits the center of a detector bin, that detector takes the full value. If it hits the boundary between two detector bins, the value is divided equally. If it hits at an arbitrary location, linear interpolation is used."
+        ]
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "hits the boundary between two detector bins, the value is divided equally"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "boundary between two detector bins",
+        "p": "hits|meets",
+        "s": "ray"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide45.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide45.txt"
+  },
+  "slide_id": "Slide45"
+}

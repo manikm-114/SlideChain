@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 22",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "sensitivity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "This repetition rate is an important parameter because it determines how deep your ultrasound can penetrate and how fast you can sample motion.",
+            "modalities": [
+              "text"
+            ],
+            "o": "pulse repetition frequency",
+            "p": "uses",
+            "s": "Pulsed wave Doppler"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By measuring the change in the timing or phase of these echoes, we can estimate velocity.",
+            "modalities": [
+              "text"
+            ],
+            "o": "velocity",
+            "p": "measures",
+            "s": "Pulsed wave Doppler"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "In pulsed wave Doppler, we can also target a specific depth, often referred to as the gate depth.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gate depth",
+            "p": "depends_on",
+            "s": "Pulsed wave Doppler"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Motion and flow"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The inverse of the pulse repetition period is called the pulse repetition frequency.",
+            "modalities": [
+              "text"
+            ],
+            "o": "Pulse repetition frequency",
+            "p": "depends_on",
+            "s": "Pulse repetition period"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "these returning echoes - let's call them echo one, echo two, echo three - come from slightly different layers or scattering surfaces inside the tissue"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "By measuring the change in the timing or phase of these echoes, we can estimate velocity."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "velocity",
+        "p": "measures",
+        "s": "echoes"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "sensitivity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The repetition rate is an important parameter because it determines how deep your ultrasound can penetrate and how fast you can sample motion.",
+            "modalities": [
+              "text"
+            ],
+            "o": "pulse repetition frequency",
+            "p": "measures",
+            "s": "pulse repetition period"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 22\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

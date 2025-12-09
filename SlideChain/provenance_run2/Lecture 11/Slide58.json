@@ -1,0 +1,134 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "channelized observers"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "filters"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spatial domain"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency spectrum"
+          },
+          {
+            "category": "signal_processing",
+            "term": "oscillatory patterns"
+          },
+          {
+            "category": "modality",
+            "term": "medical images"
+          },
+          {
+            "category": "signal_processing",
+            "term": "scales"
+          },
+          {
+            "category": "signal_processing",
+            "term": "channels"
+          }
+        ],
+        "evidence": [
+          "channelized observers",
+          "frequency domain",
+          "filters",
+          "spatial domain",
+          "frequency spectrum",
+          "oscillatory patterns",
+          "medical images",
+          "scales",
+          "channels"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "When we transform them back into the spatial domain, they appear as blurred or oscillatory patterns."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "blurred or oscillatory patterns",
+        "p": "produces",
+        "s": "filters"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "capture detail"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "apply these filters to an image"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "They are called \"square\" because they are band-pass filters in the frequency domain"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "band-pass filters in the frequency domain",
+        "p": "uses",
+        "s": "Four square frequency-domain channels"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "channel"
+          },
+          {
+            "category": "signal_processing",
+            "term": "filter"
+          },
+          {
+            "category": "modality",
+            "term": "image"
+          },
+          {
+            "category": "signal_processing",
+            "term": "channelized observers"
+          }
+        ],
+        "evidence": [
+          "To make the idea of channelized observers more concrete, let me give you an example.",
+          "Each channel acts like a filter. In the frequency domain, these filters look like concentric rings that select specific frequency ranges. When we transform them back into the spatial domain, they appear as blurred or oscillatory patterns.",
+          "This is very powerful because medical images contain structures at many different scales - some large and smooth, others fine and detailed. Using channels allows us to separate these scales and study them systematically.",
+          "So, these four channels are just one example, but in practice, you could design more channels depending on how much detail you want to capture."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide58.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide58.txt"
+  },
+  "slide_id": "Slide58"
+}

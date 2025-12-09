@@ -1,0 +1,16 @@
+{
+  "slide_id": "Slide6",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-07T22:10:56.868507+00:00",
+  "text_length": 414,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nFunctions come in many forms—like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry. If you’re unfamiliar with fractals, they’re fascinating patterns that repeat at every scale, and I encourage you to explore them further if you’re curious. But for our purposes, it’s enough to be comfortable with regular functions and their properties.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Functions come in many forms—like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry.\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"If you’re unfamiliar with fractals, they’re fascinating patterns that repeat at every scale\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"It’s enough to be comfortable with regular functions and their properties.\",\n      \"category\": \"mathematics\"\n    }\n  ],\n  \"evidence\": [\n    \"Functions come in many forms—like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry.\",\n    \"If you’re unfamiliar with fractals, they’re fascinating patterns that repeat at every scale\",\n    \"It’s enough to be comfortable with regular functions and their properties.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [],
+    "evidence": [
+      "Functions come in many forms-like sinusoidal functions, linear functions, and even more complex structures such as those defined recursively in fractal geometry.",
+      "If you're unfamiliar with fractals, they're fascinating patterns that repeat at every scale",
+      "It's enough to be comfortable with regular functions and their properties."
+    ]
+  }
+}

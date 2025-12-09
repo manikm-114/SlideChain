@@ -1,0 +1,18 @@
+Now, there is an important technical subtlety about slice selection that we need to address.
+When we apply a gradient field, by definition, it is not homogeneous. Instead, it varies linearly across space. But remember, any deviation from a homogeneous magnetic field introduces a problem: it causes dephasing.
+
+Let’s break this down. On the right-hand side of the diagram, you see the gradient field. On one side, the magnetic field is a little stronger. On the other side, it is a little weaker. Stronger fields correspond to faster precession. Weaker fields correspond to slower precession.
+So when you look across the entire slice, the spins are no longer processing together in sync. Some spins are ahead, some are behind. If you just add all these signals together, they partially cancel each other out. The result is a substantial reduction in signal strength. That’s the dephasing problem.
+So how do we fix it? We use what’s called a rephasing gradient.
+
+Here’s the idea: within the slice, after you’ve applied the slice-select gradient, the spins have accumulated different phases. That is described mathematically in your textbook by equation 4.41. The phase shift depends on the z-position and on the gradient strength.
+But notice the formula includes tau over 2, not tau. Why is it tau divided by 2? Well, think about it this way: during the full pulse duration tau, the spins at the top of the slice accumulate the maximum phase, and the spins at the bottom accumulate the opposite phase. The middle spins are only halfway through. So if you take the average phase across the slice, it corresponds to tau divided by 2. That’s why this factor appears.
+
+Now, to correct for this unwanted dephasing, we apply a second gradient — but this time with opposite polarity. We call it the rephasing gradient. It lasts for a short time, tau-ref, and its strength is chosen so that the overall effect cancels the earlier phase spread.
+Mathematically, the product of gradient strength and time for this rephasing pulse must equal tau over 2 times the original gradient strength. That’s equation 4.42 in your textbook.
+The result is that the spins, which had drifted apart in phase, are brought back into alignment. This cancels out the artificial dephasing caused by the slice-selection gradient itself.
+
+So now, within the slice, you’re left with a clean signal. The signal strength, mathematically, is proportional to the number of spins inside the slice. That’s why the formula is written as a double integral over x and y within the slice. It represents the total proton density summed across the slice area.
+This is a big improvement. Without slice selection, we had a triple integral over x, y, and z — the entire volume. But now, we’ve reduced it to just two dimensions, a double integral. This means our signal comes only from the selected slice, not the whole volume.
+
+That’s a huge step forward. But it’s still not the final goal. Because in imaging, we don’t just want the sum over the entire slice. We want to know the signal at each individual pixel or voxel. We want to resolve spatial detail — what is the proton density, the T1, or the T2 value at each location. That’s what we’ll cover in the next part.

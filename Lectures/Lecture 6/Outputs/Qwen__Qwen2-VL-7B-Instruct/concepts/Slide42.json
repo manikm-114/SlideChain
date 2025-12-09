@@ -1,0 +1,34 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T00:19:14.549620+00:00",
+  "text_length": 896,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAlright, to wrap up today’s session, here’s your homework assignment.\n\nFirst, I’d like you to read about the uncertainty principle of the Fourier transform. This is a fascinating and important concept. Summarize it in your own words, but keep it concise — no more than three sentences.\n\nSecond, I want you to analytically compute the Fourier transform of this function: the exponential of b times t, multiplied by the step function u of negative t. Here, b is a positive constant, and u of t is defined as 1 for positive time and 0 otherwise.\nThe due date is one week from now, by midnight next Friday. Please make sure to upload your report to MLS.\n\nAnd before we end, I’ve heard from a few students that the Fourier series material was a bit confusing. If that’s you, don’t hesitate — come talk to me now or reach out later. I’m happy to help clarify anything.\nThat’s all for today — thank you!\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"uncertainty principle of the Fourier transform\", \"category\": \"frequency_domain\"},\n    {\"term\": \"Fourier transform\", \"category\": \"frequency_domain\"},\n    {\"term\": \"exponential function\", \"category\": \"mathematics\"},\n    {\"term\": \"step function\", \"category\": \"mathematics\"},\n    {\"term\": \"analytical computation\", \"category\": \"mathematics\"},\n    {\"term\": \"due date\", \"category\": \"workflow\"},\n    {\"term\": \"upload report\", \"category\": \"workflow\"},\n    {\"term\": \"MLS\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"Read about the uncertainty property of the Fourier transform\",\n    \"Analytically compute the Fourier transform of exp(bt)u(-t)\",\n    \"Due date: One week from now (by midnight next Friday)\",\n    \"Please upload your report to MLS\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "uncertainty principle of the Fourier transform",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "step function",
+        "category": "mathematics"
+      },
+      {
+        "term": "due date",
+        "category": "workflow"
+      }
+    ],
+    "evidence": [
+      "Read about the uncertainty property of the Fourier transform",
+      "Analytically compute the Fourier transform of exp(bt)u(-t)",
+      "Due date: One week from now (by midnight next Friday)",
+      "Please upload your report to MLS"
+    ]
+  }
+}

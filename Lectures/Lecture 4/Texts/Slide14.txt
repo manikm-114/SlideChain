@@ -1,0 +1,10 @@
+Let’s now connect this idea directly to the delta function and its role in sampling.
+Imagine you have a continuous function — let’s call it f of t. Now, if you multiply this function by a shifted delta function, specifically delta of t minus t naught, and then integrate, something powerful happens:
+You end up extracting the value of f at t naught. In other words, the delta function acts like a perfect sampling tool.
+Mathematically, this is shown through a limiting process. As the width of the delta function shrinks toward zero, its height increases — but the total area remains one. That’s key.
+Inside this narrow window around t naught, the function f is essentially flat — and using the mean value theorem, we know there must be some point where the function's value equals the average over that interval. As the window becomes infinitesimally small, that point converges exactly to t naught.
+So what do we get?
+
+The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught.
+This is called the sampling property of the delta function. It’s as if the delta function "reaches into" the function and pulls out the value at a single point.
+Even more fascinating — we can actually rebuild any continuous function using this idea. By stacking many delta functions across time, each weighted by the function’s value at that point, we can reconstruct the entire function. Think of it like slicing the function into tiny pieces — each slice tells us something, and when you add them all together, you get the full picture again.

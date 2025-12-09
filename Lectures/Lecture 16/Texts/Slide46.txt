@@ -1,0 +1,8 @@
+Now that we understand how detection and localization work, let’s see how they come together in a full imaging system. The result is called planar scintigraphy. Essentially, this is a two-dimensional projection image, much like a standard X-ray radiograph, but instead of using transmitted X-rays, we are mapping the distribution of gamma rays emitted from inside the body.
+
+Here’s the sequence of events. First, the gamma rays from the patient pass through the collimator, which selects only those photons traveling in defined directions. Next, the gamma photons interact with the scintillation crystal, producing flashes of visible light. Those light signals are then converted into electrical pulses by the photomultiplier tubes.
+
+The outputs are processed through the position logic circuit, which localizes each detected event in the x and y directions. At the same time, the pulse height analyzer examines the energy of each pulse. This step is important because scattered photons inside the body lose energy, and we don’t want to include them—they would blur the image. By setting an energy threshold, the system can reject those lower-energy, scattered signals.
+
+Finally, the gating circuit can synchronize signal acquisition with physiological motion, such as the beating heart or breathing cycle. That way, the images can be captured at consistent phases, reducing motion artifacts.
+All of these components work together so that each detected gamma photon is accurately positioned and validated, building up a sharp two-dimensional image of radiotracer distribution inside the patient.

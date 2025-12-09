@@ -1,0 +1,10 @@
+Now we’re ready to move from the continuous Fourier transform to the discrete Fourier transform.
+
+When we sample a continuous signal, it stops being a smooth curve that exists at every moment in time. Instead, it becomes the product of the original signal and a series of equally spaced spikes — what we call delta functions. These spikes occur at time intervals of delta-t, which means each spike is separated by one divided by capital P in time. In other words, we only keep the signal’s value at these regular time points, and everywhere else is zero.
+
+We can describe this mathematically as a sum of delta spikes. Each spike occurs at a time equal to n divided by P, where n goes from zero up to N minus one. The height of each spike is simply the value of the original signal at that time. You can imagine it as a row of vertical lines, each carrying the amplitude of the signal at its sampling point.
+This gives us the discrete version of the signal in the time domain. Even though it’s just a set of separate values, it still represents a function of time, so we can take its Fourier transform.
+
+When we do that, the Fourier transform turns into a sum over all the sampled points. The oscillating factor — what we call the kernel — still has the form “e to the power of minus j times two-pi times the frequency u times n divided by P,” but now we only evaluate it at those sampled time points.
+
+The outcome is what we call the direct Fourier transform of the sampled signal. This is how we connect the continuous theory to the practical, digital form of the discrete Fourier transform that we use in computation.

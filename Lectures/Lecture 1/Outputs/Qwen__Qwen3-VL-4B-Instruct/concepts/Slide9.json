@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide9",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-14T14:32:57.679434+00:00",
+  "text_length": 610,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, if you want to get a fun and visual explanation of how X-rays work, there’s a great animated video I did for TED-Ed. It’s called “How X-rays See Through Your Skin.”\n\nIn just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image. It’s a great refresher, especially if you’re a visual learner.\n\nYou’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI. The video’s optional, but I really recommend checking it out when you have a moment.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"how x-rays work\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"how x-rays are produced\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"how they interact with the body\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"how detected signals are turned into a cross-sectional image\",\n      \"category\": \"signal_processing\"\n    },\n    {\n      \"term\": \"how this technology became the foundation for other types of imaging\",\n      \"category\": \"modality\"\n    },\n    {\n      \"term\": \"pet, spect, and mri\",\n      \"category\": \"modality\"\n    }\n  ],\n  \"evidence\": [\n    \"In just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.\",\n    \"It’s a great refresher, especially if you’re a visual learner.\",\n    \"You’ll also see how this technology became the foundation for other types of imaging we’ll cover—like PET, SPECT, and MRI.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "how x-rays work",
+        "category": "modality"
+      },
+      {
+        "term": "how x-rays are produced",
+        "category": "physics"
+      },
+      {
+        "term": "how they interact with the body",
+        "category": "physics"
+      },
+      {
+        "term": "how detected signals are turned into a cross-sectional image",
+        "category": "signal_processing"
+      },
+      {
+        "term": "how this technology became the foundation for other types of imaging",
+        "category": "modality"
+      },
+      {
+        "term": "pet, spect, and mri",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "In just a few minutes, it walks you through how X-rays are produced, how they interact with the body, and how detected signals are turned into a cross-sectional image.",
+      "It's a great refresher, especially if you're a visual learner.",
+      "You'll also see how this technology became the foundation for other types of imaging we'll cover-like PET, SPECT, and MRI."
+    ]
+  }
+}

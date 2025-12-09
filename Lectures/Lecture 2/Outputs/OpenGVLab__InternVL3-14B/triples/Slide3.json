@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide3",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"students\",\n      \"p\": \"uses\",\n      \"o\": \"MATLAB\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Now let me address a common issue students often encounter early on — installation problems with MATLAB.\"\n    },\n    {\n      \"s\": \"student\",\n      \"p\": \"depends_on\",\n      \"o\": \"CAS\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"He was unable to install MATLAB on his computer because of authentication issues with CAS\"\n    },\n    {\n      \"s\": \"RPI Help Center\",\n      \"p\": \"assists with\",\n      \"o\": \"installing MATLAB\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Visit the RPI Help Center, and they’ll assist you with installing MATLAB.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "students",
+        "p": "uses",
+        "o": "MATLAB",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Now let me address a common issue students often encounter early on - installation problems with MATLAB."
+      },
+      {
+        "s": "student",
+        "p": "depends_on",
+        "o": "CAS",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "He was unable to install MATLAB on his computer because of authentication issues with CAS"
+      }
+    ]
+  }
+}

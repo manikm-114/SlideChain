@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide21",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"fan-beam CT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"MATLAB can simulate, which is fan-beam CT.\"\n    },\n    {\n      \"s\": \"fan-beam CT\",\n      \"p\": \"represents\",\n      \"o\": \"real CT scanners\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This setup is much closer to how real CT scanners work today\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "fan-beam CT",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "MATLAB can simulate, which is fan-beam CT."
+      },
+      {
+        "s": "fan-beam CT",
+        "p": "represents",
+        "o": "real CT scanners",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This setup is much closer to how real CT scanners work today"
+      }
+    ]
+  }
+}

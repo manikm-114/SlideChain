@@ -1,0 +1,106 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "algorithm"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "If you then apply filtered backprojection to reconstruct images from this data, you get motion artifacts",
+            "modalities": [
+              "text"
+            ],
+            "o": "motion artifacts",
+            "p": "produces",
+            "s": "Filtered Backprojection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "Motion Artifacts"
+          },
+          {
+            "category": "reconstruction",
+            "term": "Filtered Backprojection"
+          }
+        ],
+        "evidence": [
+          "Filtered Backprojection",
+          "Iterative Reconstruction with Known Motion Pattern",
+          "Time-varying Phantom",
+          "Motion Artifacts Come from Model Mismatch",
+          "An Underlying Structure Keeps Changing While Data Are Collected",
+          "The Motion Pattern Can be Taken into Account for Accurate Reconstruction"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Filtered Backprojection creates motion artifacts when applied to data with motion artifacts.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Motion Artifacts",
+            "p": "produces",
+            "s": "Filtered Backprojection"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "smart computational algorithms that predict motion and correct for it during reconstruction."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "However, if you know the object's motion trajectory, you can incorporate that information into iterative reconstruction algorithms. With this additional information, it is possible to recover accurate images despite motion."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "accurate images",
+        "p": "reconstructs_with",
+        "s": "Iterative Reconstruction with Known Motion Pattern"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "filtered backprojection"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The phantom has a taiji pattern, a yin-yang shape.",
+            "modalities": [
+              "text"
+            ],
+            "o": "taiji pattern",
+            "p": "represents",
+            "s": "phantom"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide44.txt"
+  },
+  "slide_id": "Slide44"
+}

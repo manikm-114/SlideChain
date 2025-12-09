@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide43",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nNow let’s talk about how the MR signal is actually detected.\n‘\nWhen the magnetization vector, capital M, is flipped away from the z-axis, it develops a transverse component, which we call M x y. This transverse magnetization does not remain static — it oscillates at the resonance frequency. That oscillation induces a sinusoidal current in the radiofrequency coil, exactly as predicted by Faraday’s law of electromagnetic induction.\n\nThe strength of this induced signal depends directly on the size of M x y. The larger the transverse component, the stronger the oscillating magnetic field, and therefore the stronger the detected voltage in the coil.\nThe maximum possible signal is reached when the flip angle is ninety degrees. At this angle, the entire magnetization vector lies in the x-y plane, meaning that M x y is equal to M naught, the full equilibrium magnetization. This is why a ninety-degree pulse is often used in MRI — it gives the largest possible signal for detection.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"magnetization vector\", \"p\":\"depends_on\", \"o\":\"transverse component\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When the magnetization vector, capital M, is flipped away from the z-axis, it develops a transverse component, which we call x y.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "magnetization vector",
+        "p": "depends_on",
+        "o": "transverse component",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When the magnetization vector, capital M, is flipped away from the z-axis, it develops a transverse component, which we call x y."
+      }
+    ]
+  }
+}

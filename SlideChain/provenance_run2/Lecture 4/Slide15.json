@@ -1,0 +1,114 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "discrete function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular bars"
+          },
+          {
+            "category": "signal_processing",
+            "term": "gate functions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "unit impulses"
+          }
+        ],
+        "evidence": [
+          "discrete function",
+          "rectangular bars",
+          "gate functions",
+          "sampling",
+          "rectangular function",
+          "discrete delta function",
+          "unit impulses",
+          "sum of components"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "delta of n is a single spike located at n equals zero"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "single spike located at n equals zero",
+        "p": "represents",
+        "s": "discrete delta function"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "reconstructing a picture with pixels"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "discrete version of the continuous delta function"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "If we shift it, like delta of n minus two, the spike moves to n equals two."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "a spike moved to n equals two",
+        "p": "represents",
+        "s": "delta of n minus two"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "unit impulses"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "You can visualize a discrete function as a collection of rectangular bars - sometimes called gate functions.",
+            "modalities": [
+              "text"
+            ],
+            "o": "rectangular bars",
+            "p": "represents",
+            "s": "discrete function"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide15.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide15.txt"
+  },
+  "slide_id": "Slide15"
+}

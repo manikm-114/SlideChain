@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide4",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:46:52.246925+00:00",
+  "text_length": 880,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs we discussed in the previous lecture, when you collect X-ray projection data from an unimpeded perspective, you aim to reconstruct the image layer by layer, starting from the outermost shell.\n\nIt’s like peeling an onion, gradually revealing each layer beneath the surface.\nTo achieve this, you need to have X-ray measurements along every line passing through the region of interest.\nFor each X-ray, you want to record the line integral—the total attenuation along that path.\nThis situation pertains to 2D image reconstruction.\n\nAlways keep in mind the principle of unimpeded data acquisition.\nWe say there must be at least one point on the X-ray source trajectory for every line passing through the object.\nIn other words, you need a measured projection corresponding to every line through the cross-section.\nThis ensures you have complete data for accurate reconstruction.\n\n\n.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"unimpeded data acquisition\", \"category\": \"data_processing\"},\n    {\"term\": \"X-ray measurements\", \"category\": \"signal_processing\"},\n    {\"term\": \"line integral\", \"category\": \"mathematics\"},\n    {\"term\": \"2D image reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"X-ray source trajectory\", \"category\": \"instrumentation\"},\n    {\"term\": \"measured projection\", \"category\": \"data_processing\"},\n    {\"term\": \"every line through the object\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\n    \"X-ray measurements along every line passing through the region of interest\",\n    \"You need a measured projection corresponding to every line through the cross-section\",\n    \"This ensures you have complete data for accurate reconstruction\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "unimpeded data acquisition",
+        "category": "data_processing"
+      },
+      {
+        "term": "X-ray measurements",
+        "category": "signal_processing"
+      },
+      {
+        "term": "line integral",
+        "category": "mathematics"
+      },
+      {
+        "term": "2D image reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "X-ray source trajectory",
+        "category": "instrumentation"
+      },
+      {
+        "term": "measured projection",
+        "category": "data_processing"
+      }
+    ],
+    "evidence": [
+      "X-ray measurements along every line passing through the region of interest",
+      "You need a measured projection corresponding to every line through the cross-section",
+      "This ensures you have complete data for accurate reconstruction"
+    ]
+  }
+}

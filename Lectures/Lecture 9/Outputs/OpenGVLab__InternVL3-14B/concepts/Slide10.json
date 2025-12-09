@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"circular convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"linear convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"periodically\", \"category\": \"signal_processing\"},\n    {\"term\": \"zero-padding\", \"category\": \"signal_processing\"},\n    {\"term\": \"overlap\", \"category\": \"signal_processing\"},\n    {\"term\": \"wrapping-around effect\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Here, with circular convolution, the situation is different.\",\n    \"Earlier, with linear convolution, we had just one pair of signals sliding past each other.\",\n    \"The signal is treated as if it repeats periodically\",\n    \"If we don’t want those overlaps to distort our result, we need to use zero-padding\",\n    \"This wrapping-around effect is exactly what creates the edge overlaps we saw earlier.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "circular convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "linear convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "periodically",
+        "category": "signal_processing"
+      },
+      {
+        "term": "zero-padding",
+        "category": "signal_processing"
+      },
+      {
+        "term": "overlap",
+        "category": "signal_processing"
+      },
+      {
+        "term": "wrapping-around effect",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Here, with circular convolution, the situation is different.",
+      "Earlier, with linear convolution, we had just one pair of signals sliding past each other.",
+      "The signal is treated as if it repeats periodically",
+      "If we don’t want those overlaps to distort our result, we need to use zero-padding",
+      "This wrapping-around effect is exactly what creates the edge overlaps we saw earlier."
+    ]
+  }
+}

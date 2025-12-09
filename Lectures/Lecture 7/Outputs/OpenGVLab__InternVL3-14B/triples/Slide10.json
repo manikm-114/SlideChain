@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Parseval's theorem\",\n      \"p\": \"represents\",\n      \"o\": \"average power of a periodic signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The average power P of a periodic signal x(t) over any period T is represented by the complex exponential Fourier series as\"\n    },\n    {\n      \"s\": \"average power P\",\n      \"p\": \"measures\",\n      \"o\": \"1 over T times the integral of the absolute value of x of t squared, dt\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"P equals 1 over T, times the integral of the absolute value of x of t squared, d t.\"\n    },\n    {\n      \"s\": \"Parseval's theorem\",\n      \"p\": \"represents\",\n      \"o\": \"sum of the absolute value squared of all c n\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"power equals the sum of the absolute value squared of all c n — the",
+  "parsed": {
+    "s": "average power P",
+    "p": "measures",
+    "o": "1 over T times the integral of the absolute value of x of t squared, dt",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "P equals 1 over T, times the integral of the absolute value of x of t squared, d t."
+    ]
+  }
+}

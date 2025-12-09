@@ -1,0 +1,193 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "CT"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "physics",
+            "term": "attenuated"
+          },
+          {
+            "category": "anatomy",
+            "term": "tissues"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructing"
+          },
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          }
+        ],
+        "evidence": [
+          "CT uses X-ray projections taken from many different angles around the body.",
+          "they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+          "Dense tissues like bone attenuate more, while soft tissues attenuate less.",
+          "we build up enough information to start reconstructing what\u2019s inside the body.",
+          "That\u2019s the foundation of computed tomography."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "CT uses X-ray projections taken from many different angles around the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray projections",
+            "p": "uses",
+            "s": "CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By collecting all these projections from multiple views, we build up enough information to start reconstructing what\u2019s inside the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "projections from multiple views",
+            "p": "reconstructs_with",
+            "s": "CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "CT"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          }
+        ],
+        "evidence": [
+          "CT uses X-ray projections taken from many different angles around the body.",
+          "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "CT uses X-ray projections taken from many different angles around the body.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "X-ray projections",
+            "p": "uses",
+            "s": "CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "CT"
+          },
+          {
+            "category": "physics",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "physics",
+            "term": "attenuated"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructing"
+          },
+          {
+            "category": "modality",
+            "term": "computed tomography"
+          }
+        ],
+        "evidence": [
+          "CT uses X-ray projections taken from many different angles around the body.",
+          "As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+          "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body. That's the foundation of computed tomography."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "CT uses X-ray projections taken from many different angles around the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "X-ray projections",
+            "p": "uses",
+            "s": "CT"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "By collecting all these projections from multiple views, we build up enough information to start reconstructing what's inside the body.",
+            "modalities": [
+              "text"
+            ],
+            "o": "projections from multiple views",
+            "p": "reconstructs_with",
+            "s": "CT"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "X-ray projections"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructing what\u2019s inside the body"
+          },
+          {
+            "category": "physics",
+            "term": "dense tissues like bone attenuate more"
+          },
+          {
+            "category": "physics",
+            "term": "soft tissues attenuate less"
+          }
+        ],
+        "evidence": [
+          "The basic idea is this: CT uses X-ray projections taken from many different angles around the body.",
+          "As the X-rays pass through, they are attenuated-that means they are weakened-depending on the different properties of the tissues they pass through.",
+          "By collecting all these projections from multiple views, we build up enough information to start reconstructing what\u2019s inside the body. That\u2019s the foundation of computed tomography."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

@@ -1,0 +1,10 @@
+Now, just for your broader knowledge, let me connect this to another important concept in information theory: mutual information.
+
+Mutual information is a way to measure how much knowing one random variable tells us about another. For example, suppose we have two variables, X and Y. If they are completely independent, then measuring X tells us nothing about Y. In that case, their mutual information is zero. On the other hand, if X and Y are perfectly dependent — meaning that once you know X, you completely know Y — then their mutual information is very high. Most real-world situations fall somewhere in between.
+
+Mathematically, mutual information can actually be expressed in terms of the KL divergence. Specifically, it’s the KL divergence between the joint distribution of X and Y, and the product of their marginal distributions. Don’t worry about the details of the formula — the key idea is that it quantifies how much information one variable provides about the other.
+You can also think of it this way: when you measure one variable, how much does your uncertainty about the other variable decrease? That decrease in uncertainty is exactly what mutual information captures.
+
+In practice, this idea is very useful in areas like image registration, where we align two images. Instead of just matching pixel intensities, we can maximize the mutual information between the two images. That way, even if the images look very different in terms of brightness or contrast, we can still measure how well they correspond.
+
+So, mutual information is essentially a generalization of correlation, but in the language of information theory. It goes beyond simple linear relationships and captures any kind of statistical dependence.

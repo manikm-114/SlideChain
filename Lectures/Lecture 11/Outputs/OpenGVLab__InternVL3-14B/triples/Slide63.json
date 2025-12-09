@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide63",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Deep radiomics\", \"p\":\"uses\", \"o\":\"convolutional neural networks (CNNs)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Deep radiomics takes things one step further. Instead of manually extracting features, we use convolutional neural networks (CNNs) to learn them directly from the image data.\"},\n    {\"s\":\"Deep radiomics\", \"p\":\"produces\", \"o\":\"high-dimensional feature maps\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These learned features are then encoded and passed to classifiers for prediction tasks, such as distinguishing between tumor subtypes or predicting patient outcomes.\"},\n    {\"s\":\"CNN\", \"p\":\"depends_on\", \"o\":\"random patches from images\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In this workflow, random patches from images are used to train a CNN to recognize tumor regions.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Deep radiomics",
+        "p": "uses",
+        "o": "convolutional neural networks (CNNs)",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Deep radiomics takes things one step further. Instead of manually extracting features, we use convolutional neural networks (CNNs) to learn them directly from the image data."
+      },
+      {
+        "s": "Deep radiomics",
+        "p": "produces",
+        "o": "high-dimensional feature maps",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These learned features are then encoded and passed to classifiers for prediction tasks, such as distinguishing between tumor subtypes or predicting patient outcomes."
+      },
+      {
+        "s": "CNN",
+        "p": "depends_on",
+        "o": "random patches from images",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In this workflow, random patches from images are used to train a CNN to recognize tumor regions."
+      }
+    ]
+  }
+}

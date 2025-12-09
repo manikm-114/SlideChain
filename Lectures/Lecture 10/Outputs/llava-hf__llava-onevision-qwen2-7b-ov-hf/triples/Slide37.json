@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide37",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere is a simplified view of how neurons work. Think of this as the basic flow of information in our nervous system.\n\nIncoming signals — whether from the outside world or from other neurons — arrive at the dendrites. These dendrites act as the input terminals of the neuron. They collect all incoming information, both excitatory and inhibitory.\nIf the combined strength of these signals is strong enough to cross a certain threshold, the neuron generates an electrical pulse called an action potential. This signal travels down the axon — the long fiber you see here — and moves toward the axon terminals.\n\nAt the axon terminals, the neuron communicates with the next cell, often through a synapse. There, chemical messengers or direct electrical connections pass the information forward, continuing the chain of processing in the nervous system.\nThis is the fundamental process behind everything from reflexes to complex thought — and it’s also the biological inspiration for how artificial neural networks process information in AI systems.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Neuron\", \"p\":\"uses\", \"o\":\"Dendrites\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Incoming signals — whether from the outside world or from other neurons — arrive at the dendrites.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Neuron",
+        "p": "uses",
+        "o": "Dendrites",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Incoming signals - whether from the outside world or from other neurons - arrive at the dendrites."
+      }
+    ]
+  }
+}

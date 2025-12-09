@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide15",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"discrete function\",\n      \"p\": \"represents\",\n      \"o\": \"collection of rectangular bars\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"You can visualize a discrete function as a collection of rectangular bars\"\n    },\n    {\n      \"s\": \"rectangular function\",\n      \"p\": \"represents\",\n      \"o\": \"simple, finite pulse\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In other words, the rectangular function is centered at zero, has a total width of one, and represents a simple, finite pulse\"\n    },\n    {\n      \"s\": \"discrete delta function\",\n      \"p\": \"represents\",\n      \"o\": \"single spike located at n equals zero\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"delta of n is a single spike located at n equals zero\"\n    },\n    {\n      \"s\": \"discrete signal\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"sum of discrete delta",
+  "parsed": {
+    "s": "discrete delta function",
+    "p": "represents",
+    "o": "single spike located at n equals zero",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "delta of n is a single spike located at n equals zero"
+    ]
+  }
+}

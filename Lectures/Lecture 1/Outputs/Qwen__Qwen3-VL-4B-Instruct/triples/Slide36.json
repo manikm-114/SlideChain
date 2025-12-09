@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide36",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-14T14:41:23.261539+00:00",
+  "text_length": 713,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nIn this course, you’ll have access to a complete set of digital resources to support your learning.\n\nWe’ve included professionally recorded video lectures, so you can review key concepts anytime. All PowerPoint slides used in the course are also available for download and review.\n\nFor the modality sections, the textbook is available as hardcopy and PDF, making it easy to follow along even to search specific topics digitally. The course schedule follows a well-structured plan from previous offerings, with minor updates to reflect some latest progress in imaging science.\n\nThese materials are here to help you succeed—use them actively as we explore the foundation materials and modalities of medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Class Videos\",\n      \"p\": \"uses\",\n      \"o\": \"Professionally Recorded\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Class Videos • Professionally Recorded\"\n    },\n    {\n      \"s\": \"PPTs\",\n      \"p\": \"uses\",\n      \"o\": \"Available for Review\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"PPTs • Available for Review\"\n    },\n    {\n      \"s\": \"Textbook\",\n      \"p\": \"uses\",\n      \"o\": \"Available in PDF\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Textbook • Available in PDF\"\n    },\n    {\n      \"s\": \"Schedule\",\n      \"p\": \"uses\",\n      \"o\": \"Same or Very similar\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0",
+  "parsed": {
+    "s": "Textbook",
+    "p": "uses",
+    "o": "Available in PDF",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Textbook • Available in PDF"
+    ]
+  }
+}

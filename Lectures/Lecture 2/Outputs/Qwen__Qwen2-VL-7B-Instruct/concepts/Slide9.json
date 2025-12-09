@@ -1,0 +1,61 @@
+{
+  "slide_id": "Slide9",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:09:37.501269+00:00",
+  "text_length": 659,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs you begin using MATLAB, you might occasionally wonder, “What does this function do?” That’s where the built-in help system comes in.\nLet’s say you want to understand how to create a plot. Just type help plot in the command window, and MATLAB will show you the syntax, arguments, and examples for that function.\nIf you don’t know the name of the function you need, use the lookfor command. For example, typing lookfor matrix will return a list of functions that relate to matrices.\nThese built-in tools are powerful and often overlooked. Knowing how to access documentation and search for functions will make you more independent and effective as you learn.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"help\", \"category\": \"software\"},\n    {\"term\": \"plot\", \"category\": \"software\"},\n    {\"term\": \"lookfor\", \"category\": \"software\"},\n    {\"term\": \"matrix\", \"category\": \"software\"},\n    {\"term\": \"syntax\", \"category\": \"software\"},\n    {\"term\": \"arguments\", \"category\": \"software\"},\n    {\"term\": \"examples\", \"category\": \"software\"},\n    {\"term\": \"function\", \"category\": \"software\"},\n    {\"term\": \"documentation\", \"category\": \"software\"},\n    {\"term\": \"search\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"help system\", \"create a plot\", \"function you need\", \"lookfor command\", \"functions that relate to matrices\", \"access documentation\", \"search for functions\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "help",
+        "category": "software"
+      },
+      {
+        "term": "plot",
+        "category": "software"
+      },
+      {
+        "term": "lookfor",
+        "category": "software"
+      },
+      {
+        "term": "matrix",
+        "category": "software"
+      },
+      {
+        "term": "syntax",
+        "category": "software"
+      },
+      {
+        "term": "arguments",
+        "category": "software"
+      },
+      {
+        "term": "examples",
+        "category": "software"
+      },
+      {
+        "term": "function",
+        "category": "software"
+      },
+      {
+        "term": "documentation",
+        "category": "software"
+      },
+      {
+        "term": "search",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "help system",
+      "create a plot",
+      "function you need",
+      "lookfor command",
+      "functions that relate to matrices",
+      "access documentation",
+      "search for functions"
+    ]
+  }
+}

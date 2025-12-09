@@ -1,0 +1,153 @@
+{
+  "lecture": "Lecture 8",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "aliasing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "spectra"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "frequency domain"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discrete values"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "spectrum"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling frequency"
+          },
+          {
+            "category": "signal_processing",
+            "term": "discretizing the spectrum"
+          },
+          {
+            "category": "signal_processing",
+            "term": "digitize"
+          }
+        ],
+        "evidence": [
+          "how to avoid it",
+          "sampling rate is always high enough",
+          "spectra are well separated",
+          "original continuous-time signal",
+          "series of discrete values",
+          "original spectrum",
+          "sampled spectrum",
+          "sampling frequency",
+          "discretizing the spectrum",
+          "fully digitize the signal"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "On the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "original spectrum",
+        "p": "represents",
+        "s": "spectrum"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "aliasing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "signal_processing",
+            "term": "spectra"
+          },
+          {
+            "category": "signal_processing",
+            "term": "frequency domain"
+          }
+        ],
+        "evidence": [
+          "Aliasing is no longer an issue.",
+          "The signal is now discrete in time, and its spectrum is nicely replicated without overlap.",
+          "But our job isn't finished yet. The spectrum is still continuous in frequency. And if we want to fully digitize the signal - so that both the time domain and the frequency domain are discrete - we still have another step to go."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "fully digitize the signal"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "aliasing"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling rate"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "spectrum"
+          }
+        ],
+        "evidence": [
+          "On the top row, you see our original continuous-time signal on the left. On the right, it\u2019s been sampled - we now have a series of discrete values at regular time intervals.",
+          "On the bottom row, you see what this means in the frequency domain. On the left is the original spectrum, limited to a maximum frequency, u-max. On the right is the sampled spectrum - multiple, non-overlapping copies, spaced apart by the sampling frequency, which is one over capital T."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "On the top row, you see our original continuous-time signal on the left. On the right, it\u2019s been sampled - we now have a series of discrete values at regular time intervals.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "discrete values at regular time intervals",
+            "p": "represents",
+            "s": "original continuous-time signal"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 8\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

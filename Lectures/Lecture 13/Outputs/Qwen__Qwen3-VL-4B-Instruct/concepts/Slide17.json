@@ -1,0 +1,28 @@
+{
+  "slide_id": "Slide17",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T11:39:04.520045+00:00",
+  "text_length": 436,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNext, the analytic approach involves the Fourier slice theorem—that’s the key point—so we need Fourier analysis.\n\nIf you already understand Fourier analysis very well, you will have a good time here. If you are still confused about Fourier analysis, you may struggle a little, and I recommend a review. This is not an easy topic, but it is very cool. For the Fourier analysis, analytic approach, let me give you a heuristic explanation.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"Fourier slice theorem\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"Fourier analysis\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"analytic approach\",\n      \"category\": \"reconstruction\"\n    }\n  ],\n  \"evidence\": [\n    \"Next, the analytic approach involves the Fourier slice theorem—that’s the key point—so we need Fourier analysis.\",\n    \"For the Fourier analysis, analytic approach, let me give you a heuristic explanation.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier analysis",
+        "category": "mathematics"
+      },
+      {
+        "term": "analytic approach",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Next, the analytic approach involves the Fourier slice theorem-that's the key point-so we need Fourier analysis.",
+      "For the Fourier analysis, analytic approach, let me give you a heuristic explanation."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"X-ray imaging\",\n      \"p\": \"produces\",\n      \"o\": \"projection\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"With X-ray, the projection already looks like a picture.\"\n    },\n    {\n      \"s\": \"optical imaging\",\n      \"p\": \"measures\",\n      \"o\": \"biological information\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"optical interactions carry rich biological information\"\n    },\n    {\n      \"s\": \"diffuse optical imaging\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "X-ray imaging",
+        "p": "produces",
+        "o": "projection",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "With X-ray, the projection already looks like a picture."
+      },
+      {
+        "s": "optical imaging",
+        "p": "measures",
+        "o": "biological information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "optical interactions carry rich biological information"
+      },
+      {
+        "s": "diffuse optical imaging",
+        "p": "reconstructs_with",
+        "o": "image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image."
+      }
+    ]
+  }
+}

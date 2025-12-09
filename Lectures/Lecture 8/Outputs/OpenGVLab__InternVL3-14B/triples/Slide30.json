@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"fft function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MATLAB, the fft function computes the forward FFT, and the ifft function computes the inverse FFT.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"ifft function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MATLAB, the fft function computes the forward FFT, and the ifft function computes the inverse FFT.\"\n    },\n    {\n      \"s\": \"FFT\",\n      \"p\": \"produces\",\n      \"o\": \"N-point FFT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"fft of X, N computes an N-point FFT.\"\n    },\n    {\n      \"s\": \"IFFT\",\n      \"p\": \"produces\",\n      \"o\": \"inverse FFT\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.",
+  "parsed": {
+    "s": "FFT",
+    "p": "produces",
+    "o": "N-point FFT",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "fft of X, N computes an N-point FFT."
+    ]
+  }
+}

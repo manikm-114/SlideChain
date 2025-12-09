@@ -1,0 +1,38 @@
+{
+  "slide_id": "Slide19",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a closer look at the luminance term and see why it behaves the way we want.\n\nHere, we let mu-X, the mean of image X, be represented by the letter A. And we let mu-Y, the mean of image Y, be represented by the variable X. Now, the question is: as X changes, what value of X will maximize the luminance comparison?\nTo answer this, we take the formula for the luminance term and compute its first derivative with respect to X. By setting that derivative equal to zero, we can find the point where the function reaches its maximum.\n\nWhen we go through the algebra, the conclusion is very clear: the maximum occurs when X equals A, in other words, when the mean brightness of image Y is equal to the mean brightness of image X. At that point, the luminance comparison reaches its maximum possible value, which is one.\nThis confirms the intuition: two images will only be perfectly similar in luminance if their average brightness levels are the same. If one image is brighter or darker than the other, the luminance comparison will drop accordingly.\n\nSo this mathematical exercise is really just a proof of what we already expect: the luminance term is maximized when the two images have the same mean brightness.\nThat’s the first aspect of structural similarity. Next, we’ll move on to the second aspect: contrast comparison.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"mean brightness\", \"category\": \"mathematics\"},\n    {\"term\": \"luminance term\", \"category\": \"mathematics\"},\n    {\"term\": \"derivative\", \"category\": \"mathematics\"},\n    {\"term\": \"maximum\", \"category\": \"mathematics\"},\n    {\"term\": \"structural similarity\", \"category\": \"quality_metric\"},\n    {\"term\": \"contrast comparison\", \"category\": \"quality_metric\"}\n  ],\n  \"evidence\": [\"the luminance term is maximized when the two images have the same mean brightness.\", \"two images will only be perfectly similar in luminance if their average brightness levels are the same.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "mean brightness",
+        "category": "mathematics"
+      },
+      {
+        "term": "luminance term",
+        "category": "mathematics"
+      },
+      {
+        "term": "derivative",
+        "category": "mathematics"
+      },
+      {
+        "term": "maximum",
+        "category": "mathematics"
+      },
+      {
+        "term": "structural similarity",
+        "category": "quality_metric"
+      },
+      {
+        "term": "contrast comparison",
+        "category": "quality_metric"
+      }
+    ],
+    "evidence": [
+      "the luminance term is maximized when the two images have the same mean brightness.",
+      "two images will only be perfectly similar in luminance if their average brightness levels are the same."
+    ]
+  }
+}

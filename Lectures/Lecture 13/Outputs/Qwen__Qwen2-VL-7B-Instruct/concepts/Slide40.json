@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide40",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:24:50.060328+00:00",
+  "text_length": 249,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nThis is the sinogram. The filtering is one-dimensional along the horizontal direction, so a high-pass filter emphasizes edges. \n\nHere is the original sinogram; here is the filtered sinogram. Once it is filtered, we use these data for backprojection.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"sinogram\", \"category\": \"reconstruction\"},\n    {\"term\": \"filtered sinogram\", \"category\": \"reconstruction\"},\n    {\"term\": \"high-pass filter\", \"category\": \"signal_processing\"},\n    {\"term\": \"backprojection\", \"category\": \"reconstruction\"},\n    {\"term\": \"horizontal direction\", \"category\": \"mathematics\"},\n    {\"term\": \"edges\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"This is the sinogram.\",\n    \"The filtering is one-dimensional along the horizontal direction, so a high-pass filter emphasizes edges.\",\n    \"Once it is filtered, we use these data for backprojection.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sinogram",
+        "category": "reconstruction"
+      },
+      {
+        "term": "filtered sinogram",
+        "category": "reconstruction"
+      },
+      {
+        "term": "high-pass filter",
+        "category": "signal_processing"
+      },
+      {
+        "term": "backprojection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "horizontal direction",
+        "category": "mathematics"
+      },
+      {
+        "term": "edges",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This is the sinogram.",
+      "The filtering is one-dimensional along the horizontal direction, so a high-pass filter emphasizes edges.",
+      "Once it is filtered, we use these data for backprojection."
+    ]
+  }
+}

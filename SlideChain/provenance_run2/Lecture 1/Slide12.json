@@ -1,0 +1,153 @@
+{
+  "lecture": "Lecture 1",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "point spread function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "frequency_domain",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "inverse problem"
+          },
+          {
+            "category": "algorithm",
+            "term": "algorithms"
+          }
+        ],
+        "evidence": [
+          "In image processing, we model it using something called a point spread function-or PSF for short.",
+          "The process that causes blurring is called convolution.",
+          "Indeed, in the Fourier domain, convolution becomes regular multiplication.",
+          "The Fourier transform is often performed using a fast algorithm, FFT in short.",
+          "That\u2019s another inverse problem.",
+          "It takes clever algorithms and good models-but it can be done."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The process that causes blurring is called convolution.",
+            "modalities": [
+              "text"
+            ],
+            "o": "convolution",
+            "p": "uses",
+            "s": "blurring"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "In image processing, we model it using something called a point spread function-or PSF for short.",
+            "modalities": [
+              "text"
+            ],
+            "o": "point spread function",
+            "p": "depends_on",
+            "s": "convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The Fourier transform is often performed using a fast algorithm, FFT in short.",
+            "modalities": [
+              "text"
+            ],
+            "o": "FFT",
+            "p": "uses",
+            "s": "Fourier transform"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "blurring"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform"
+          },
+          {
+            "category": "signal_processing",
+            "term": "inverse problem"
+          },
+          {
+            "category": "algorithm",
+            "term": "algorithm"
+          }
+        ],
+        "evidence": [
+          "The process that causes blurring is called convolution.",
+          "The Fourier transform is often performed using a fast algorithm, FFT in short.",
+          "That's another inverse problem. And just like with tomography, it's tricky.",
+          "It takes clever algorithms and good models-but it can be done."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "clever algorithms"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The process that causes blurring is called convolution. It's a mathematical operation that combines the original image with the PSF."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "blurred image",
+        "p": "produces",
+        "s": "convolution"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "image_processing",
+        "term": "Fourier transform"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "'That\u2019s another inverse problem. And just like with tomography, it\u2019s tricky. You're trying to undo the effect of the blur, based on your knowledge of the system. It takes clever algorithms and good models-but it can be done.'",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "original, sharp version",
+            "p": "reconstructs_with",
+            "s": "blurry image"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 1\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

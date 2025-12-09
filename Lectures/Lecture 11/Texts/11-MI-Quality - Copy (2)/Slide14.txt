@@ -1,0 +1,7 @@
+Now let’s look at an example to see how the Structural Similarity Index, or SSIM, actually works in practice.
+On the top left, we have the reference image — the original, undistorted version. If we compare this image with itself, the SSIM score is exactly 1. That makes sense, because they are identical.
+
+Now, compare the original with the two images next to it. On the top row, both look quite similar to the original. One produces an SSIM value of 0.949, the other 0.989. These numbers are very close to one, reflecting the fact that the images are almost identical to our eyes.
+On the bottom row, however, we see very different results. One image has been heavily pixelated, another blurred, and another corrupted with noise. When compared to the original, their SSIM values drop significantly — around 0.67, 0.69, and about 0.72. That means they retain only about two-thirds of the structural similarity.
+
+The important thing here is that SSIM values line up with what we visually perceive. Images that look good to us score close to one. Images that look distorted or degraded score much lower. That is the power of SSIM — it bridges the gap between mathematical measurement and human vision.

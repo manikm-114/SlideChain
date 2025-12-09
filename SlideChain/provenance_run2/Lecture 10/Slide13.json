@@ -1,0 +1,122 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "So even though there are multiple connection spots physically drawn, electrically, we have just two distinct nodes in this circuit.",
+            "modalities": [
+              "text"
+            ],
+            "o": "two distinct nodes",
+            "p": "uses",
+            "s": "circuit"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "nodes"
+          },
+          {
+            "category": "physics",
+            "term": "resistor"
+          },
+          {
+            "category": "physics",
+            "term": "voltage source"
+          },
+          {
+            "category": "physics",
+            "term": "current source"
+          },
+          {
+            "category": "physics",
+            "term": "ideal conductor"
+          },
+          {
+            "category": "physics",
+            "term": "zero resistance"
+          },
+          {
+            "category": "physics",
+            "term": "electrically the same"
+          },
+          {
+            "category": "physics",
+            "term": "connection spots"
+          },
+          {
+            "category": "physics",
+            "term": "distinct nodes"
+          }
+        ],
+        "evidence": [
+          "all the points along this conducting path are electrically the same - the wires are ideal conductors with zero resistance - so we treat them as one single node.",
+          "electrically, we have just two distinct nodes in this circuit."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "A node is any point where two or more branches connect."
+          },
+          {
+            "category": "physics",
+            "term": "The other connection point, down here, is the second node."
+          },
+          {
+            "category": "physics",
+            "term": "So even though there are multiple connection spots physically drawn, electrically, we have just two distinct nodes in this circuit."
+          }
+        ],
+        "evidence": [
+          "So, how many nodes are in this circuit? Let's apply the definition.",
+          "all the points along this conducting path are electrically the same - the wires are ideal conductors with zero resistance - so we treat them as one single node.",
+          "The other connection point, down here, is the second node.",
+          "So even though there are multiple connection spots physically drawn, electrically, we have just two distinct nodes in this circuit."
+        ]
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A node is any point where two or more branches connect. Here, all the points along this conducting path are electrically the same - the wires are ideal conductors with zero resistance - so we treat them as one single node. This first node connects resistor R 1, resistor R 2, resistor R 3, and the voltage source."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "resistor R 1, resistor R 2, resistor R 3, and the voltage source",
+        "p": "represents",
+        "s": "the first node"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "zero resistance"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide13.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide13.txt"
+  },
+  "slide_id": "Slide13"
+}

@@ -1,0 +1,165 @@
+{
+  "lecture": "Lecture 20",
+  "slide_id": "Slide44",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide44.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide44.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "hybrid imaging",
+              "category": "modality"
+            },
+            {
+              "term": "MRI and X-ray",
+              "category": "modality"
+            },
+            {
+              "term": "permanent magnetic field",
+              "category": "instrumentation"
+            },
+            {
+              "term": "multimodal imaging",
+              "category": "modality"
+            },
+            {
+              "term": "accessible pathway",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "Here, we move toward a more practical version of hybrid imaging - a low-cost system that combines MRI and X-ray together.",
+            "This configuration opens many possibilities for future imaging systems.",
+            "You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time,",
+            "This hybrid spiral MR-X-ray system offers a more accessible pathway to achieve similar goals - bringing advanced imaging capabilities within reach for smaller labs or specialized applications."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"hybrid imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI and X-ray\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"permanent magnetic field\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"CT-MRI fusion\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"anatomical and functional information\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"multimodal imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"accessible pathway\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Here, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together.\\\", \\n               \\\"This configuration opens many possibilities for future imaging systems.\\\", \\n               \\\"You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time,\\\", \\n               \\\"This hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"hybrid imaging\", \"category\": \"modality\"}, {\"term\": \"MRI and X-ray\", \"category\": \"modality\"}, {\"term\": \"permanent magnetic field\", \"category\": \"instrumentation\"}, {\"term\": \"multimodal imaging\", \"category\": \"modality\"}, {\"term\": \"accessible pathway\", \"category\": \"workflow\"}], \"evidence\": [\"Here, we move toward a more practical version of hybrid imaging - a low-cost system that combines MRI and X-ray together.\", \"This configuration opens many possibilities for future imaging systems.\", \"You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time,\", \"This hybrid spiral MR-X-ray system offers a more accessible pathway to achieve similar goals - bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"hybrid spiral MR–X-ray system\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"CT–MRI fusion\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"This configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide44.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "hybrid imaging",
+              "category": "modality"
+            },
+            {
+              "term": "MRI",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray",
+              "category": "modality"
+            },
+            {
+              "term": "permanent magnetic field",
+              "category": "instrumentation"
+            },
+            {
+              "term": "reconstruct the images",
+              "category": "reconstruction"
+            },
+            {
+              "term": "MRI projection",
+              "category": "modality"
+            },
+            {
+              "term": "X-ray projection",
+              "category": "modality"
+            },
+            {
+              "term": "simultaneous",
+              "category": "modality"
+            }
+          ],
+          "evidence": [
+            "combines MRI and X-ray together",
+            "permanent magnetic field",
+            "CT-MRI fusion",
+            "reconstruct the images",
+            "MRI projection",
+            "X-ray projection",
+            "simultaneous",
+            "CT-MRI scanners"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"hybrid imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"permanent magnetic field\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"CT–MRI fusion\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruct the images\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"MRI projection\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray projection\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"simultaneous\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"CT–MRI scanners\\\", \\\"category\\\": \\\"modality\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"combines MRI and X-ray together\\\",\\n    \\\"permanent magnetic field\\\",\\n    \\\"CT–MRI fusion\\\",\\n    \\\"reconstruct the images\\\",\\n    \\\"MRI projection\\\",\\n    \\\"X-ray projection\\\",\\n    \\\"simultaneous\\\",\\n    \\\"CT–MRI scanners\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"hybrid imaging\", \"category\": \"modality\"}, {\"term\": \"MRI\", \"category\": \"modality\"}, {\"term\": \"X-ray\", \"category\": \"modality\"}, {\"term\": \"permanent magnetic field\", \"category\": \"instrumentation\"}, {\"term\": \"reconstruct the images\", \"category\": \"reconstruction\"}, {\"term\": \"MRI projection\", \"category\": \"modality\"}, {\"term\": \"X-ray projection\", \"category\": \"modality\"}, {\"term\": \"simultaneous\", \"category\": \"modality\"}], \"evidence\": [\"combines MRI and X-ray together\", \"permanent magnetic field\", \"CT-MRI fusion\", \"reconstruct the images\", \"MRI projection\", \"X-ray projection\", \"simultaneous\", \"CT-MRI scanners\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide44.json",
+        "parsed": {
+          "s": "system",
+          "p": "reconstructs_with",
+          "o": "CT-MRI fusion",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "By rotating the system around the patient, you can reconstruct the images together - effectively achieving CT-MRI fusion in a single setup."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"hybrid imaging system\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"permanent magnetic field\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\\"},\\n    {\\\"s\\\":\\\"system\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"MRI projection\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\\\"},\\n    {\\\"s\\\":\\\"system\\\", \\\"p\\\":\\\"produces\\\", \\\"o\\\":\\\"X-ray projection\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\\\"},\\n    {\\\"s\\\":\\\"system\\\", \\\"p\\\":\\\"reconstructs_with\\\", \\\"o\\\":\\\"CT–MRI fusion\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":1.0, \\\"evidence\\\":\\\"By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\\"}\\n  ]\", \"parsed\": {\"s\": \"system\", \"p\": \"reconstructs_with\", \"o\": \"CT-MRI fusion\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"By rotating the system around the patient, you can reconstruct the images together - effectively achieving CT-MRI fusion in a single setup.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "term": "specialized applications",
+          "category": "application"
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T16:00:17.917735+00:00\", \"text_length\": 1088, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"hybrid imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"MRI\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"X-ray\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"permanent magnetic field\\\", \\\"category\\\": \\\"instrumentation\\\"},\\n    {\\\"term\\\": \\\"projection\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"CT–MRI fusion\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"clinical applications\\\", \\\"category\\\": \\\"application\\\"},\\n    {\\\"term\\\": \\\"research applications\\\", \\\"category\\\": \\\"application\\\"},\\n    {\\\"term\\\": \\\"low-cost system\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"multimodal imaging\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"accessibility\\\", \\\"category\\\": \\\"quality_metric\\\"},\\n    {\\\"term\\\": \\\"smaller labs\\\", \\\"category\\\": \\\"application\\\"},\\n    {\\\"term\\\": \\\"specialized applications\\\", \\\"category\\\": \\\"application\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"This design uses a permanent magnetic field, making it much simpler and more compact.\\\",\\n    \\\"For each rotation, you obtain both an MRI projection\", \"parsed\": {\"term\": \"specialized applications\", \"category\": \"application\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T16:50:32.818414+00:00\", \"text_length\": 1088, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Hybrid Imaging System for Simultaneous Spiral MR and X-ray (MRX) Scans\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"Low-cost system that combines MRI and X-ray together\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Here, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide44.json",
+        "parsed": {
+          "term": "hybrid spiral MR-X-ray system",
+          "category": "modality"
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T14:24:04.775299+00:00\", \"text_length\": 1088, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"hybrid imaging system\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"low-cost system\\\",\\n      \\\"category\\\": \\\"instrumentation\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"permanent magnetic field\\\",\\n      \\\"category\\\": \\\"physics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"MRI projection\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"X-ray projection\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"reconstruct the images together\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"CT–MRI fusion\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"MRI to guide X-ray imaging\\\",\\n      \\\"category\\\": \\\"workflow\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"anatomical and functional information\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"simultaneous CT–MRI scanners\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"hybrid spiral MR–X-ray system\\\",\\n      \\\"category\\\": \\\"modality\\\"\\n    },\\n    {\", \"parsed\": {\"term\": \"hybrid spiral MR-X-ray system\", \"category\": \"modality\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide44.json",
+        "parsed": {
+          "s": "hybrid imaging system",
+          "p": "reconstructs_with",
+          "o": "MRI projection and X-ray projection",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide44\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T14:32:05.879216+00:00\", \"text_length\": 1088, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nHere, we move toward a more practical version of hybrid imaging — a low-cost system that combines MRI and X-ray together. Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\n\\nThe concept is quite elegant. For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle. By rotating the system around the patient, you can reconstruct the images together — effectively achieving CT–MRI fusion in a single setup.\\n\\nThis configuration opens many possibilities for future imaging systems. You can use MRI to guide X-ray imaging, combine anatomical and functional information in real time, and even explore new imaging modes for clinical or research applications.\\n\\nSo, while high-performance simultaneous CT–MRI scanners represent the top tier of multimodal imaging, this hybrid spiral MR–X-ray system offers a more accessible pathway to achieve similar goals — bringing advanced imaging capabilities within reach for smaller labs or specialized applications.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"hybrid imaging system\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"permanent magnetic field\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"Instead of using a superconducting magnet as in a high-end MRI system, this design uses a permanent magnetic field, making it much simpler and more compact.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"hybrid imaging system\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"MRI projection and X-ray projection\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"hybrid imaging system\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"CT–MRI fusion\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\",\\n        \\\"image\\\"\\n      ],\\n      \\\"confidence\\\": 0.8,\\n      \\\"evidence\\\": \\\"effectively achieving CT–MRI fusion in\", \"parsed\": {\"s\": \"hybrid imaging system\", \"p\": \"reconstructs_with\", \"o\": \"MRI projection and X-ray projection\", \"modalities\": [\"text\", \"image\"], \"confidence\": 0.9, \"evidence\": [\"For each rotation, you obtain both an MRI projection and an X-ray projection at the same angle.\"]}}"
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "radon"
+          },
+          {
+            "category": "mathematics",
+            "term": "theta"
+          },
+          {
+            "category": "mathematics",
+            "term": "projection"
+          },
+          {
+            "category": "mathematics",
+            "term": "filtering"
+          },
+          {
+            "category": "mathematics",
+            "term": "filtered backprojection"
+          },
+          {
+            "category": "mathematics",
+            "term": "image"
+          },
+          {
+            "category": "software",
+            "term": "toolbox"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "software",
+            "term": "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection."
+          },
+          {
+            "category": "algorithm",
+            "term": "The keyword is radon."
+          },
+          {
+            "category": "data_processing",
+            "term": "You supply an image and theta."
+          },
+          {
+            "category": "signal_processing",
+            "term": "Theta can be a single value, which gives one projection, or an array, which gives many projections."
+          }
+        ],
+        "evidence": [
+          "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection.",
+          "The keyword is radon.",
+          "You supply an image and theta.",
+          "Theta can be a single value, which gives one projection, or an array, which gives many projections."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "R = radon(I, theta)",
+            "modalities": [
+              "text"
+            ],
+            "o": "theta",
+            "p": "uses",
+            "s": "radon"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "radon"
+          },
+          {
+            "category": "modality",
+            "term": "image"
+          },
+          {
+            "category": "signal_processing",
+            "term": "theta"
+          },
+          {
+            "category": "signal_processing",
+            "term": "projection"
+          },
+          {
+            "category": "signal_processing",
+            "term": "filtering"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered backprojection"
+          }
+        ],
+        "evidence": [
+          "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection.",
+          "The keyword is radon. You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "image",
+            "p": "uses",
+            "s": "radon"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

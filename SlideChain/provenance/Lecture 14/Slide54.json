@@ -1,0 +1,98 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "patient exposure"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "MSAD is another classic measure of radiation dose in CT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radiation dose",
+            "p": "measures",
+            "s": "MSAD"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This concept of multiple scan average dose, or MSAD, is defined by an integral calculation.",
+            "modalities": [
+              "text"
+            ],
+            "o": "multiple scan average dose",
+            "p": "represents",
+            "s": "MSAD"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The number of adjacent scans considered is represented by N.",
+            "modalities": [
+              "text"
+            ],
+            "o": "number of adjacent scans",
+            "p": "depends_on",
+            "s": "MSAD"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "patient exposure"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "understanding how we measure the release dose is essential to managing patient exposure"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "I: inter-slice distance"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "inter-slice distance",
+        "p": "depends_on",
+        "s": "MSAD"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "quality_metric",
+        "term": "patient exposure"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "MSAD is another classic measure of radiation dose in CT.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radiation dose",
+            "p": "measures",
+            "s": "MSAD"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide54.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide54.txt"
+  },
+  "slide_id": "Slide54"
+}

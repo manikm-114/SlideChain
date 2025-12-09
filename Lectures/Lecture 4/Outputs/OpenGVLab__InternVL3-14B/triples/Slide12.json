@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide12",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Dirac delta function\",\n      \"p\": \"represents\",\n      \"o\": \"generalized function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The unit impulse function is an example of a generalized function and is usually called the Dirac delta function.\"\n    },\n    {\n      \"s\": \"Dirac delta function\",\n      \"p\": \"produces\",\n      \"o\": \"impulse\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It means the function is zero everywhere — except at one specific point in time, which we call t naught. At that single point, it has an infinitely sharp spike, but the area under the spike is exactly one. That area is what we call the impulse.\"\n    },\n    {\n      \"s\": \"discrete version of the delta function\",\n      \"p\": \"represents\",\n      \"o\": \"single pulse\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We define delta of n like this: It equals",
+  "parsed": {
+    "s": "Dirac delta function",
+    "p": "produces",
+    "o": "impulse",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "It means the function is zero everywhere - except at one specific point in time, which we call t naught. At that single point, it has an infinitely sharp spike, but the area under the spike is exactly one. That area is what we call the impulse."
+    ]
+  }
+}

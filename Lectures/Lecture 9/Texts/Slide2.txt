@@ -1,0 +1,12 @@
+Anyway, so this is our schedule. We are on schedule, so no problem.
+
+Let me briefly walk you through the big picture again.
+A linear system is one where we can predict the output for any input by combining the system’s response to simple building blocks. Convolution is the tool that allows us to do exactly that — it takes the input signal and the system’s impulse response, and combines them to give the output.
+The Fourier series is another powerful idea. It tells us that any periodic signal can be written as a sum of sine and cosine waves. If we make the period infinitely long, this naturally becomes the Fourier transform, which works for non-periodic signals.
+
+But computers don’t deal with continuous signals. We must first discretize them — that is, represent them as sequences of numbers. This involves sampling in time, and sometimes quantizing amplitudes. The sampling theorem assures us that, if we sample fast enough — at least twice the highest frequency in the signal — we can reconstruct the original waveform perfectly under ideal conditions.
+Once we sample in time, something interesting happens in the frequency domain: the spectrum becomes periodic. This leads us to the discrete Fourier transform. And if we compute it efficiently, we use the fast Fourier transform, or FFT.
+These tools are not just theory. They are powerful methods for denoising signals, extracting features, and understanding system behavior. But please remember — typing “fft” in MATLAB is easy; the real value comes from understanding what that result means and why it looks the way it does.
+
+Today, I will guide you through some hands-on MATLAB examples so you can see how Fourier analysis works on discrete data, and how these ideas connect back to the theory we’ve been building. This is a great chance to make sure the concepts are clear in your mind.
+Alright, let’s get started.

@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"SPECT & PET\",\n      \"p\": \"uses\",\n      \"o\": \"Statistical Distributions\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"As background, I really want us to review statistical distributions.\"\n    },\n    {\n      \"s\": \"SPECT & PET\",\n      \"p\": \"uses\",\n      \"o\": \"Data Modeling\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"After the statistics part, we’ll talk about data models.\"\n    },\n    {\n      \"s\": \"Data Modeling\",\n      \"p\": \"represents\",\n      \"o\": \"Single Emission\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"For either single-photon or positron imaging, you need a mathematical model for how you collect data.\"\n    },\n    {\n      \"s\": \"Data Modeling\",\n      \"p\": \"represents\",\n      \"o\": \"Paired Emission\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.",
+  "parsed": {
+    "s": "Data Modeling",
+    "p": "represents",
+    "o": "Single Emission",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "For either single-photon or positron imaging, you need a mathematical model for how you collect data."
+    ]
+  }
+}

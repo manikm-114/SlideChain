@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide23",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Time-of-Flight Imaging\",\n      \"p\": \"uses\",\n      \"o\": \"through-plane mechanism\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"In MRI angiography, the motion of blood itself provides the contrast, through the time-of-flight effect and the through-plane mechanism.\"\n    },\n    {\n      \"s\": \"Time-of-Flight Imaging\",\n      \"p\": \"produces\",\n      \"o\": \"contrast difference\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"This contrast difference allows us to visualize the vasculature clearly.\"\n    },\n    {\n      \"s\": \"Time-of-Flight Imaging\",\n      \"p\": \"depends_on\",\n      \"o\": \"blood flow perpendicular to the imaging slice\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The Time-of-Flight effect is strongest when the blood flow is perpendicular to the imaging slice.\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Time-of-Flight Imaging",
+        "p": "uses",
+        "o": "through-plane mechanism",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "In MRI angiography, the motion of blood itself provides the contrast, through the time-of-flight effect and the through-plane mechanism."
+      },
+      {
+        "s": "Time-of-Flight Imaging",
+        "p": "produces",
+        "o": "contrast difference",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This contrast difference allows us to visualize the vasculature clearly."
+      }
+    ]
+  }
+}

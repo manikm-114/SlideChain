@@ -1,0 +1,12 @@
+{
+  "slide_id": "Slide40",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:13:05.455669+00:00",
+  "text_length": 0,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\n\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"The energy of the emitted γ-ray is 140 keV.\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Below an energy of 100 keV most γ-rays are absorbed in the body via photoelectric interactions\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Above an energy of 200 keV, γ-rays penetrate the thin collimator septa used in gamma cameras to reject unwanted, scattered γ-rays.\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"Therefore, the ideal energy of a γ-ray for imaging lies somewhere between 100 and 200 keV.\",\n      \"category\": \"physics\"\n    }\n  ],\n  \"evidence\": [\n    \"The energy of the emitted γ-ray is 140 keV.\",\n    \"Below an energy of 100 keV most γ-rays are absorbed in the body via photoelectric interactions\",\n    \"Above an energy of 200 keV, γ-rays penetrate the thin collimator septa used in gamma cameras to reject unwanted, scattered γ-rays.\",\n    \"Therefore, the",
+  "parsed": {
+    "term": "Therefore, the ideal energy of a γ-ray for imaging lies somewhere between 100 and 200 keV.",
+    "category": "physics"
+  }
+}

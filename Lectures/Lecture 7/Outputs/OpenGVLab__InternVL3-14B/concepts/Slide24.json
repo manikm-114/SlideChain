@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide24",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "{\n  \"concepts\": [\n    {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"},\n    {\"term\": \"spectrum\", \"category\": \"signal_processing\"},\n    {\"term\": \"sampling\", \"category\": \"signal_processing\"},\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta train\", \"category\": \"signal_processing\"},\n    {\"term\": \"aliasing\", \"category\": \"signal_processing\"},\n    {\"term\": \"low-pass filter\", \"category\": \"signal_processing\"},\n    {\"term\": \"signal reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"ideal sampling filter\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"we’re often better off working in the frequency domain\",\n    \"narrow peak shown on the left\",\n    \"when we sample the signal\",\n    \"convolution with a delta train\",\n    \"copies of this spectrum\",\n    \"No overlap means no aliasing\",\n    \"use a low-pass filter\",\n    \"perfectly reconstruct the original signal\",\n    \"ideal sampling filter\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "frequency domain",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "spectrum",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sampling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta train",
+        "category": "signal_processing"
+      },
+      {
+        "term": "aliasing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "low-pass filter",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ideal sampling filter",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "we’re often better off working in the frequency domain",
+      "narrow peak shown on the left",
+      "when we sample the signal",
+      "convolution with a delta train",
+      "copies of this spectrum",
+      "No overlap means no aliasing",
+      "use a low-pass filter",
+      "perfectly reconstruct the original signal",
+      "ideal sampling filter"
+    ]
+  }
+}

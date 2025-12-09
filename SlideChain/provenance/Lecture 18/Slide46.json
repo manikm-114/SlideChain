@@ -1,0 +1,113 @@
+{
+  "lecture": "Lecture 18",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "magnetic susceptibility"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "T2* relaxation - Disturbance in the Magnetic Field (Susceptibility)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "disturbance in the magnetic field (Susceptibility)",
+        "p": "represents",
+        "s": "T2* relaxation"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "T1 Relaxation"
+          },
+          {
+            "category": "physics",
+            "term": "T2 Relaxation"
+          },
+          {
+            "category": "signal_processing",
+            "term": "NMR Signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Proton Density"
+          },
+          {
+            "category": "modality",
+            "term": "T1 Weighting"
+          },
+          {
+            "category": "modality",
+            "term": "T2 Weighting"
+          },
+          {
+            "category": "modality",
+            "term": "T2-star Weighting"
+          },
+          {
+            "category": "modality",
+            "term": "Functional MRI"
+          }
+        ],
+        "evidence": [
+          "The NMR Signal Proportional to the Proton Density, Reduced by T1, T2, and T2* Factors",
+          "T1 - Gray/White matter",
+          "T2 - Tissue/Cerebrospinal Fluid Flow (CSF)",
+          "T2* - Susceptibility (Functional MRI)"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "T2 - Tissue/Cerebrospinal Fluid Flow (CSF)"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "T2* relaxation - Disturbance in the Magnetic Field (Susceptibility)"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Disturbance in the Magnetic Field (Susceptibility)",
+        "p": "represents",
+        "s": "T2* relaxation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "contrast"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The MR signal we detect - the NMR signal - is proportional to proton density, but reduced by these T1, T2, and T2-star factors.",
+            "modalities": [
+              "text"
+            ],
+            "o": "T1 relaxation",
+            "p": "depends_on",
+            "s": "MR signal"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Images\\Slide46.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 18\\Texts\\Slide46.txt"
+  },
+  "slide_id": "Slide46"
+}

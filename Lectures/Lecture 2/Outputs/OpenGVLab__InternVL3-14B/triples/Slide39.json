@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"matrix_multiply\",\n      \"p\": \"uses\",\n      \"o\": \"three nested loops\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Using three nested loops, we compute the product row by row and column by column.\"\n    },\n    {\n      \"s\": \"matrix_multiply\",\n      \"p\": \"produces\",\n      \"o\": \"product of two square matrices\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We create a function called matrix_multiply that takes two square matrices and a size n.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "matrix_multiply",
+        "p": "uses",
+        "o": "three nested loops",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Using three nested loops, we compute the product row by row and column by column."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide41",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Omni-tomography\", \"p\":\"represents\", \"o\":\"all-in-one, all-at-once, all-of-couplings\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Omni-tomography means all-in-one, all-at-once, and all-of-couplings.\"},\n    {\"s\":\"Omni-tomography\", \"p\":\"uses\", \"o\":\"CT, nuclear imaging, and MRI\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"we want to bring all imaging modalities — CT, nuclear imaging, and MRI — together into a single integrated system.\"},\n    {\"s\":\"Omni-tomography\", \"p\":\"measures\", \"o\":\"structural, functional, and molecular information\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"a scanner capable of capturing structural, functional, and molecular information — all at the same time, perfectly aligned in space and synchronized in time.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Omni-tomography",
+        "p": "uses",
+        "o": "CT, nuclear imaging, and MRI",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we want to bring all imaging modalities - CT, nuclear imaging, and MRI - together into a single integrated system."
+      },
+      {
+        "s": "Omni-tomography",
+        "p": "measures",
+        "o": "structural, functional, and molecular information",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "a scanner capable of capturing structural, functional, and molecular information - all at the same time, perfectly aligned in space and synchronized in time."
+      }
+    ]
+  }
+}

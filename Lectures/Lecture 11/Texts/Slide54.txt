@@ -1,0 +1,12 @@
+Now let’s take the imaging model and apply it to a very common clinical task — binary classification.
+In medicine, this usually means asking a simple yes-or-no question. For example, does this patient have a tumor, or not?
+
+Mathematically, we describe this with two competing hypotheses.
+The first hypothesis says the image only contains the background — in other words, normal anatomy — plus noise.
+The second hypothesis says the image contains both the background and an additional signal, such as a tumor, again with noise added.
+
+Here, we think of the background as the normal structures in the body, and the signal as the diagnostic feature we’re trying to detect. Depending on the situation, we might know exactly what that signal looks like, or only know its general statistical properties. For example, in phantom studies, we know exactly what pattern is inserted, but in real patients, tumors can vary in shape, size, and contrast.
+To simplify the discussion, we often imagine a “clean” background image without noise, and a “clean” signal image without noise. The actual measurement we record is just those two components, combined with noise from the imaging process.
+
+So in essence, the classification task is: given the measured image, do we believe it came from the background-only case, or from the background-plus-signal case?
+This very simple framework — background versus background plus signal — forms the basis of many observer models in medical imaging.

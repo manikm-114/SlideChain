@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"measurement\", \"p\":\"measures\", \"o\":\"system\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Measurement is at the heart of both engineering and physics.\"},\n    {\"s\":\"measurement\", \"p\":\"measures\", \"o\":\"teaching quality\", \"modalities\":[\"text\", \"image\"], \"confidence\":1.0, \"evidence\":\"You are measuring teaching quality\"},\n    {\"s\":\"balance\", \"p\":\"uses\", \"o\":\"reference\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"we place a known weight on one side of a balance and the object on the other\"},\n    {\"s\":\"multimeter\", \"p\":\"measures\", \"o\":\"current, resistance, and capacitance\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These devices let us measure things like current, resistance, and capacitance with precision\"},\n    {\"s\":\"instructor\", \"p\":\"represents\", \"o\":\"system\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"think of an instructor as a system\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "measurement",
+        "p": "measures",
+        "o": "system",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Measurement is at the heart of both engineering and physics."
+      },
+      {
+        "s": "balance",
+        "p": "uses",
+        "o": "reference",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "we place a known weight on one side of a balance and the object on the other"
+      },
+      {
+        "s": "multimeter",
+        "p": "measures",
+        "o": "current, resistance, and capacitance",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These devices let us measure things like current, resistance, and capacitance with precision"
+      },
+      {
+        "s": "instructor",
+        "p": "represents",
+        "o": "system",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "think of an instructor as a system"
+      }
+    ]
+  }
+}

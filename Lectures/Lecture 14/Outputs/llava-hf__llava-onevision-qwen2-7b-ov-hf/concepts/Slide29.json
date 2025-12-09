@@ -1,0 +1,55 @@
+{
+  "slide_id": "Slide29",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAt RPI, we have collaborated with GE Global Research Center and with Bruno Diem and others to develop optimized architectures for dedicated cardiac CT scanners.\n\nWe published a paper last year on this topic.\nDesigning a CT scanner is much like designing a building or room—you consider architecture and optimal layout.\nOur team is currently preparing a grant proposal to advance this research. The proposal is due soon and covers aspects not addressed in previous reviews.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"CT scanner\", \"category\": \"instrumentation\"},\n    {\"term\": \"architecture\", \"category\": \"software\"},\n    {\"term\": \"layout\", \"category\": \"workflow\"},\n    {\"term\": \"GE Global Research Center\", \"category\": \"modality\"},\n    {\"term\": \"Bruno Diem\", \"category\": \"modality\"},\n    {\"term\": \"optimized architectures\", \"category\": \"signal_processing\"},\n    {\"term\": \"cardiac CT scanners\", \"category\": \"modality\"},\n    {\"term\": \"grant proposal\", \"category\": \"communication\"},\n    {\"term\": \"research\", \"category\": \"modality\"},\n    {\"term\": \"proposal\", \"category\": \"communication\"}\n  ],\n  \"evidence\": [\"At RPI, we have collaborated with GE Global Research Center and with Bruno Diem and others to develop optimized architectures for dedicated cardiac CT scanners.\", \"Designing a CT scanner is much like designing a building or room—you consider architecture and optimal layout.\", \"Our team is currently preparing a grant proposal to advance this research. The proposal is due soon and covers aspects not addressed in previous reviews.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "CT scanner",
+        "category": "instrumentation"
+      },
+      {
+        "term": "architecture",
+        "category": "software"
+      },
+      {
+        "term": "layout",
+        "category": "workflow"
+      },
+      {
+        "term": "GE Global Research Center",
+        "category": "modality"
+      },
+      {
+        "term": "Bruno Diem",
+        "category": "modality"
+      },
+      {
+        "term": "optimized architectures",
+        "category": "signal_processing"
+      },
+      {
+        "term": "cardiac CT scanners",
+        "category": "modality"
+      },
+      {
+        "term": "grant proposal",
+        "category": "communication"
+      },
+      {
+        "term": "research",
+        "category": "modality"
+      },
+      {
+        "term": "proposal",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "At RPI, we have collaborated with GE Global Research Center and with Bruno Diem and others to develop optimized architectures for dedicated cardiac CT scanners.",
+      "Designing a CT scanner is much like designing a building or room-you consider architecture and optimal layout.",
+      "Our team is currently preparing a grant proposal to advance this research. The proposal is due soon and covers aspects not addressed in previous reviews."
+    ]
+  }
+}

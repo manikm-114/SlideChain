@@ -1,0 +1,123 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "fan-beam"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstruction"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "artifacts"
+          },
+          {
+            "category": "instrumentation",
+            "term": "source-object distance"
+          },
+          {
+            "category": "modality",
+            "term": "phantom"
+          }
+        ],
+        "evidence": [
+          "fan-beam simulation",
+          "reconstruction looks good",
+          "resolution decreases",
+          "faint artifacts start to appear",
+          "source is from the object",
+          "square phantom",
+          "square no longer looks crisp",
+          "background shows strong artifacts"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "diagonal length"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "the farther away the source is from the object, the lower the reconstruction resolution."
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "D is the distance from the fan-beam source vertex to the center of the object."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "source-object distance",
+        "p": "measures",
+        "s": "D"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "reconstruction resolution"
+          },
+          {
+            "category": "reconstruction",
+            "term": "source-object distance"
+          },
+          {
+            "category": "software",
+            "term": "fan-beam simulation"
+          },
+          {
+            "category": "software",
+            "term": "default value"
+          },
+          {
+            "category": "mathematics",
+            "term": "diagonal length"
+          },
+          {
+            "category": "quality_metric",
+            "term": "resolution"
+          },
+          {
+            "category": "quality_metric",
+            "term": "artifacts"
+          }
+        ],
+        "evidence": [
+          "On the left, with D equals 191 (default), the reconstruction looks good. The square phantom is sharp, and the resolution is reasonable.",
+          "In the middle, when we increase D to 300, the resolution decreases. The edges become less clear, and faint artifacts start to appear in the background.",
+          "On the right, with D equals 500, the resolution drops significantly. The square no longer looks crisp-it appears distorted, and the background shows strong artifacts."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

@@ -1,0 +1,109 @@
+{
+  "lecture": "Lecture 2",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "matrix multiplication"
+          }
+        ],
+        "evidence": [
+          "A times B - with a single star - means matrix multiplication.",
+          "A dot star B - with a dot - means multiply element by element.",
+          "A caret 2 raises the matrix to a power.",
+          "A dot caret 2 squares each element.",
+          "A divided by B solves equations, while A dot slash B divides element-wise."
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "\"A dot star B\" - with a dot - means multiply element by element."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "element-wise multiplication",
+        "p": "represents",
+        "s": "A dot star B"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "matrix multiplication"
+          }
+        ],
+        "evidence": [
+          "A times B",
+          "A dot star B",
+          "A caret 2",
+          "A dot caret 2",
+          "A divided by B",
+          "A dot slash B"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "Same goes for powers and division."
+          }
+        ],
+        "evidence": [
+          "These small differences are key when working with data, equations, or signals in MATLAB."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "mathematics",
+            "term": "matrix multiplication"
+          }
+        ],
+        "evidence": [
+          "In MATLAB, you can do both matrix and element-wise operations - and the difference is all in the dot.",
+          "A times B - with a single star - means matrix multiplication.",
+          "A dot star B - with a dot - means multiply element by element.",
+          "Same goes for powers and division.",
+          "A caret 2 raises the matrix to a power.",
+          "A dot caret 2 squares each element.",
+          "And for division, \u201cA divided by B\u201d solves equations, while \u201cA dot slash B\u201d divides element-wise."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "A times B - with a single star - means matrix multiplication.",
+            "modalities": [
+              "text"
+            ],
+            "o": "matrix",
+            "p": "uses",
+            "s": "matrix multiplication"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Images\\Slide31.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 2\\Texts\\Slide31.txt"
+  },
+  "slide_id": "Slide31"
+}

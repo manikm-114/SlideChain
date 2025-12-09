@@ -1,0 +1,9 @@
+Now let’s see why mean squared error, or MSE, is not always good enough.
+At the top left, we have the original image — the best version, taken under ideal conditions. Below it, you see five different degraded versions of the same image. Some look noisy, some are blurry, and some have other distortions. Clearly, to the human eye, these images do not look equally good.
+
+But here’s the problem: when we compute the mean squared error between the original image and each of these five degraded ones, the result is the same — two hundred and twenty-five. Mathematically, MSE tells us they are equally different from the original.
+Visually, though, that’s obviously not true. Some versions look much closer to the original, while others look far worse. Our eyes immediately pick up those differences, but MSE cannot.
+
+And this is the key point: MSE does not reflect human perception very well. It measures pixel-wise differences, but it cannot capture whether the overall structure of the image is preserved.
+
+This leads us to the next important idea — we need a measure that better matches what humans actually see. That’s where structural similarity, or SSIM, comes in.

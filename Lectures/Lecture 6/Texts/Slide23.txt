@@ -1,0 +1,14 @@
+Now that we’ve gone through several examples, let’s take a moment to highlight some core properties of the Fourier transform — the features that make it such a powerful and elegant analytical tool.
+
+We begin with linearity. If you combine two functions, say f and g, using constants a and b — meaning you form "a times f plus b times g" — then the Fourier transform of that sum is simply "a times the transform of f plus b times the transform of g." This reflects the principle of superposition, which is central to all linear systems.
+
+Next is the time-shifting property. If you shift a function in time — let’s say you move it by x naught — then in the frequency domain, the transform stays the same in shape but gets multiplied by a complex exponential factor. Specifically, it’s multiplied by e to the power minus i 2 pi x naught u. So shifting in time introduces a phase shift in frequency.
+
+Now let’s flip that idea — this is called modulation. If you multiply a function in the time domain by a complex exponential, then you shift its frequency content. So time-domain modulation causes a translation in the frequency domain.
+
+Another important concept is scaling. If you compress or stretch a function in time — say, you use f of a t — then the frequency representation stretches or compresses in the opposite way. And the result is scaled by one over the absolute value of a. So if the time signal gets narrower, the spectrum spreads out.
+
+We also have conjugation. If you take the complex conjugate of a function, then its Fourier transform reflects across the frequency axis — that is, the transform at minus u becomes the conjugate of the transform at u.
+And finally, if the original function is real-valued, its Fourier transform has Hermitian symmetry. That means the spectrum is symmetric in a complex-conjugate sense.
+
+Each of these properties gives us deeper insight into how signals behave across time and frequency. We’ll explore them in more detail as we continue — but for now, keep these tools in mind. They’ll help you decode and design systems with much greater clarity.

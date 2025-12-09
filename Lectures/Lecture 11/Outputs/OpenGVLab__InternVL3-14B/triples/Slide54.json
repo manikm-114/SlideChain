@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide54",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"binary classification\",\n      \"p\": \"represents\",\n      \"o\": \"two competing hypotheses\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Mathematically, we describe this with two competing hypotheses.\"\n    },\n    {\n      \"s\": \"first hypothesis\",\n      \"p\": \"represents\",\n      \"o\": \"image only contains the background plus noise\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The first hypothesis says the image only contains the background — in other words, normal anatomy — plus noise.\"\n    },\n    {\n      \"s\": \"second hypothesis\",\n      \"p\": \"represents\",\n      \"o\": \"image contains both the background and an additional signal, again with noise added\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The second hypothesis says the image contains both the background and an additional signal, such as a tumor, again with noise added.\"\n    },\n    {\n      \"s\": \"classification task\",\n      \"p\": \"depends_on\",\n      \"",
+  "parsed": {
+    "s": "second hypothesis",
+    "p": "represents",
+    "o": "image contains both the background and an additional signal, again with noise added",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "The second hypothesis says the image contains both the background and an additional signal, such as a tumor, again with noise added."
+    ]
+  }
+}

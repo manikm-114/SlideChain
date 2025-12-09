@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Gaussian Sampling Filter\",\n      \"p\": \"represents\",\n      \"o\": \"Fourier transform of Gaussian = Gaussian\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Fourier transform of Gaussian = Gaussian\"\n    },\n    {\n      \"s\": \"Gaussian Sampling Filter\",\n      \"p\": \"uses\",\n      \"o\": \"Gaussian\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"a Gaussian filter offers a great compromise\"\n    },\n    {\n      \"s\": \"Gaussian Sampling Filter\",\n      \"p\": \"produces\",\n      \"o\": \"smooth transition and localized effect\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"the Gaussian gives a smooth transition and localized effect\"\n    }\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Gaussian Sampling Filter",
+        "p": "uses",
+        "o": "Gaussian",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "a Gaussian filter offers a great compromise"
+      },
+      {
+        "s": "Gaussian Sampling Filter",
+        "p": "produces",
+        "o": "smooth transition and localized effect",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the Gaussian gives a smooth transition and localized effect"
+      }
+    ]
+  }
+}

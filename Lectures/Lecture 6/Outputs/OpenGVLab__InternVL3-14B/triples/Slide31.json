@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide31",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform of the convolution of two functions\",\n      \"p\": \"represents\",\n      \"o\": \"simple multiplication of their individual transforms\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So far, we've seen that the Fourier transform of the convolution of two functions — say, f of t and g of t — turns into a simple multiplication of their individual transforms.\"\n    },\n    {\n      \"s\": \"Fourier transform of f(t)\",\n      \"p\": \"multiplies\",\n      \"o\": \"Fourier transform of g(t)\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We start with this: Multiply the Fourier transform of f of t by the Fourier transform of g of t.\"\n    },\n    {\n      \"s\": \"double integral\",\n      \"p\": \"produces\",\n      \"o\": \"convolution of g and f at position u\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"What you get in the end is this: You",
+  "parsed": {
+    "s": "Fourier transform of f(t)",
+    "p": "multiplies",
+    "o": "Fourier transform of g(t)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "We start with this: Multiply the Fourier transform of f of t by the Fourier transform of g of t."
+    ]
+  }
+}

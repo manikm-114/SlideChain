@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide52",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T13:44:41.213969+00:00",
+  "text_length": 1530,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHis photo shows a modern CT-MRI guided radiation therapy system. In radiation oncology, precise targeting of tumors is critical because you want to deliver a very high radiation dose to cancer cells while sparing as much of the surrounding healthy tissue as possible. Traditionally, CT has been used for radiation planning because CT provides good information on patient anatomy and electron density, which are needed to calculate radiation dose. However, CT has limited soft-tissue contrast, which means tumors in organs like the brain, liver, or pelvis may be difficult to outline clearly.\n\nBy combining MRI with CT in radiation therapy, doctors can take advantage of the strengths of both modalities. MRI provides excellent soft tissue contrast, allowing the tumor to be visualized more clearly, while CT provides the necessary density information for radiation dose calculation. This hybrid approach makes the targeting more accurate and safer.\n\nIn this photo, you see the treatment couch where the patient lies, with immobilization devices to keep the patient still. The large circular gantry houses the imaging and radiation components. During treatment, the system acquires imaging data to confirm the tumor’s position, and then the linear accelerator delivers a precisely shaped beam of radiation to the tumor. This technology represents a powerful integration of imaging and therapy — using CT and MRI together to guide radiation treatment in real time, which improves tumor control and reduces side effects for patients.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"CT-MRI guided radiation therapy system\",\n      \"p\": \"represents\",\n      \"o\": \"a powerful integration of imaging and therapy\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.95,\n      \"evidence\": \"This technology represents a powerful integration of imaging and therapy — using CT and MRI together to guide radiation treatment in real time\"\n    },\n    {\n      \"s\": \"CT\",\n      \"p\": \"uses\",\n      \"o\": \"for radiation planning\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Traditionally, CT has been used for radiation planning because CT provides good information on patient anatomy and electron density\"\n    },\n    {\n      \"s\": \"MRI\",\n      \"p\": \"uses\",\n      \"o\": \"for soft tissue contrast\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"MRI provides excellent soft tissue contrast, allowing the tumor to be visualized more clearly\"",
+  "parsed": {
+    "s": "CT",
+    "p": "uses",
+    "o": "for radiation planning",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Traditionally, CT has been used for radiation planning because CT provides good information on patient anatomy and electron density"
+    ]
+  }
+}

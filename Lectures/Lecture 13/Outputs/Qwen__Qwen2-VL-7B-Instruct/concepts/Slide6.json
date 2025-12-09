@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide6",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T06:27:02.315795+00:00",
+  "text_length": 502,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet me explain a little further. Take an arbitrary picture—say, a portrait of our former president. You can decompose the picture into many, many small elements. For each element, it’s very simple: just a homogeneous pixel, a small square. Add these together. \n\nThe trick is really the amplitude: you need to make sure all these amplitudes are modulated nicely. Then, when you put them together, you have the perception of a picture or a natural scene, whatever. This is one way to represent a picture.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"pixel\", \"category\": \"signal_processing\"},\n    {\"term\": \"picture\", \"category\": \"signal_processing\"},\n    {\"term\": \"amplitude\", \"category\": \"signal_processing\"},\n    {\"term\": \"picture representation\", \"category\": \"signal_processing\"},\n    {\"term\": \"picture perception\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"You can decompose the picture into many, many small elements.\", \"The trick is really the amplitude: you need to make sure all these amplitudes are modulated nicely.\", \"Then, when you put them together, you have the perception of a picture or a natural scene, whatever.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "pixel",
+        "category": "signal_processing"
+      },
+      {
+        "term": "picture",
+        "category": "signal_processing"
+      },
+      {
+        "term": "amplitude",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "You can decompose the picture into many, many small elements.",
+      "The trick is really the amplitude: you need to make sure all these amplitudes are modulated nicely.",
+      "Then, when you put them together, you have the perception of a picture or a natural scene, whatever."
+    ]
+  }
+}

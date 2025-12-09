@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide12",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:01:48.699665+00:00",
+  "text_length": 544,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnother type of system is the control system. Unlike simple measurement systems, control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\nFor instance, think of a radar tracking an airplane. The radar detects the plane’s position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change. Control systems are essential in engineering whenever we want systems to adapt or correct themselves in real time.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Control System\", \"category\": \"system\"},\n    {\"term\": \"Input\", \"category\": \"system\"},\n    {\"term\": \"Output\", \"category\": \"system\"},\n    {\"term\": \"Feedback\", \"category\": \"system\"},\n    {\"term\": \"Radar\", \"category\": \"instrumentation\"},\n    {\"term\": \"Tracking\", \"category\": \"algorithm\"},\n    {\"term\": \"Feedback Loop\", \"category\": \"system\"},\n    {\"term\": \"Adaptation\", \"category\": \"system\"},\n    {\"term\": \"Real Time\", \"category\": \"system\"}\n  ],\n  \"evidence\": [\n    \"control systems don’t just generate an output—they use that output as feedback to adjust the input or the system’s behavior.\",\n    \"think of a radar tracking an airplane. The radar detects the plane’s position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Radar",
+        "category": "instrumentation"
+      },
+      {
+        "term": "Tracking",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "control systems don't just generate an output-they use that output as feedback to adjust the input or the system's behavior.",
+      "think of a radar tracking an airplane. The radar detects the plane's position and adjusts itself to keep the target within view. This feedback loop helps the system achieve its goal, even as conditions change."
+    ]
+  }
+}

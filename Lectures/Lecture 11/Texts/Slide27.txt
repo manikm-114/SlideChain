@@ -1,0 +1,14 @@
+Because SSIM works so well, researchers have developed many extensions of the method.
+
+The version we’ve been discussing applies to grayscale images, where each pixel has only one intensity value. But in reality, most images are in color. So naturally, the first extension was to adapt SSIM for color image quality assessment. This involves measuring similarity not only in brightness and contrast, but also in the relationships between color channels.
+
+Another extension is to video quality assessment. Here, SSIM is applied not just frame by frame, but also across time, because our eyes are sensitive to temporal consistency. This has become very important in areas like video compression and streaming.
+There is also multi-scale SSIM, which evaluates images at different levels of resolution. This is especially useful because human vision itself operates on a multi-scale level — we notice both fine details and large structures, depending on how we view an image.
+And finally, there is complex wavelet SSIM, which can handle images that have complex values, such as those produced in MRI. This is a powerful extension that broadens SSIM to applications in medical imaging and beyond.
+
+The core idea of SSIM — comparing luminance, contrast, and structure — has proven to be so flexible that it has been adapted to various domains.
+
+Now, let me pause here and use an analogy that connects to your own experience. When we design an exam, we want the scores to spread out enough to show meaningful differences among students. If everyone scores 90 or higher, we can’t distinguish performance very well. Ideally, the mean should be somewhere in the middle, say around 50, with variation above and below. That way, the test reveals the true distribution of understanding.
+It’s the same idea with SSIM: we normalize by the mean and by the variation, so we can focus on the meaningful structural differences between signals.
+
+So, whether we’re evaluating images or student performance, the principle is the same: measure differences relative to expectations and variability, not in absolute terms.

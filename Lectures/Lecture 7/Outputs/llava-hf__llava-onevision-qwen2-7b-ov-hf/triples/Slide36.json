@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide36",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s now take a heuristic view to better understand the relationship between sampling and signal reconstruction.\nSuppose we represent our signal using a sum of sinusoids. Each term looks like this: A n sine of 2 pi nu t plus phi n. Here, A n is the amplitude, phi n is the phase, and nu is the frequency.\n\nSo for each sinusoidal component, we need to determine two unknowns — amplitude and phase. That means, for N such components, we end up with 2N unknowns in total.\n\nNow, here’s the key point. To determine those two unknowns for each sinusoid — amplitude and phase — we need at least two data points per cycle. Think of it like trying to draw a sine wave: if you only know one point, you can’t say much. But with two points, you start to get the shape — its size and where it starts.\n\nSo, for the highest frequency in our signal — which we’ll call nu — we need to sample at least twice per cycle. This leads to the idea of spacing between samples. To avoid missing any important information, the spacing between adjacent samples must be less than or equal to 1 over 2 nu.\n\nIn more familiar terms, that means the sampling rate — measured in samples per second — must be greater than 2 times nu. This is the famous Nyquist sampling rate.\n\nWhy does this matter? Because if we sample below this rate, we risk losing information. Our signal might be distorted or misrepresented — a problem known as aliasing. But if we sample at twice the highest frequency or more, we guarantee that every sinusoidal component is accurately captured.\nSo the Nyquist rate gives us a fundamental guideline: sample fast enough to resolve the highest frequency present in the signal.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Nyquist sampling rate\", \"p\":\"measures\",\n     \"o\":\"2 times nu\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"To avoid missing any important information, the spacing between adjacent samples must be less than or equal to 1 over 2 nu. In more familiar terms, that means the sampling rate — measured in samples per second — must be greater than 2 times nu. This is the famous Nyquist sampling rate.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Nyquist sampling rate",
+        "p": "measures",
+        "o": "2 times nu",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "To avoid missing any important information, the spacing between adjacent samples must be less than or equal to 1 over 2 nu. In more familiar terms, that means the sampling rate - measured in samples per second - must be greater than 2 times nu. This is the famous Nyquist sampling rate."
+      }
+    ]
+  }
+}

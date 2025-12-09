@@ -1,0 +1,9 @@
+Now we can summarize the X-ray measurement model, which is one of the most important concepts. That’s why I’ve marked this slide with the largest red diamond.
+
+Let’s begin with the monochromatic model. Here, we assume the X-ray beam consists of photons all having the same energy. That’s an idealization, but it helps us understand the basics. In this case, the incoming intensity, I naught, is attenuated according to Beer's law. The output, which we call I-g, is simply I naught times e to the power of minus the line integral of μ along the path. This means the measured signal is directly linked to the cumulative attenuation along the ray.
+If you know the input I naught and measure the output I-g, then by taking the logarithm, you recover the line integral of the attenuation coefficient. That’s the foundation of reconstruction in X-ray imaging and CT.
+
+But in reality, things are more complicated. An actual X-ray tube does not produce a single energy — it generates a spectrum of energies. The detector, in most systems today, does not separate them. Instead, it integrates the total energy deposited, whether from soft X-rays or hard X-rays.
+That leads us to the polychromatic model. In this case, we must integrate over the entire energy spectrum. For each energy, attenuation follows the exponential law, but the detector sums over all energies together. The result is still a single number — a grayscale intensity — but it is a weighted sum across the energy distribution.
+
+So, the monochromatic model is simple and idealized, while the polychromatic model describes the true measurement process in clinical CT scanners. And this distinction is very important — it explains why certain artifacts, like beam hardening, occur in practice.

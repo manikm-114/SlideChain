@@ -1,0 +1,98 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "hardware"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The key is that we collect data using two different X-ray spectra.",
+            "modalities": [
+              "text"
+            ],
+            "o": "two different X-ray spectra",
+            "p": "uses",
+            "s": "dual-energy CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "if we measure the transmitted X-ray signal with spectrum one, we get one equation that depends on A1 and A2. If we measure again with spectrum two, we get a second equation.",
+            "modalities": [
+              "text"
+            ],
+            "o": "A1 and A2",
+            "p": "measures",
+            "s": "dual-energy CT"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "And once we know A1 and A2, we can reconstruct the attenuation coefficient at any X-ray energy.",
+            "modalities": [
+              "text"
+            ],
+            "o": "attenuation coefficient",
+            "p": "reconstructs_with",
+            "s": "dual-energy CT"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "algorithm",
+        "term": "iodine or gold"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "So how do we actually perform a dual-energy measurement? The key is that we collect data using two different X-ray spectra. Let's call them spectrum one and spectrum two.",
+            "modalities": [
+              "text"
+            ],
+            "o": "two different X-ray spectra",
+            "p": "uses",
+            "s": "dual-energy measurement"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "material decomposition"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "The reconstruction of a1(x,y) and a2(x,y) requires the measurement of line integrals A1 and A2 at every point in the projections of the object."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "line integrals A1 and A2",
+        "p": "measures",
+        "s": "dual-energy measurement"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "anatomy",
+        "term": "contrast agents"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide40.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide40.txt"
+  },
+  "slide_id": "Slide40"
+}

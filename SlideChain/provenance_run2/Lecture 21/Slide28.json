@@ -1,0 +1,103 @@
+{
+  "lecture": "Lecture 21",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "piezoelectric effect"
+          },
+          {
+            "category": "physics",
+            "term": "mechanical deformation"
+          },
+          {
+            "category": "physics",
+            "term": "electrical polarization"
+          },
+          {
+            "category": "instrumentation",
+            "term": "transducers"
+          },
+          {
+            "category": "modality",
+            "term": "ultrasound imaging"
+          },
+          {
+            "category": "physics",
+            "term": "mechanical vibration"
+          },
+          {
+            "category": "physics",
+            "term": "electrical energy"
+          }
+        ],
+        "evidence": [
+          "why does the piezoelectric effect actually happen?",
+          "perfect static balance - both mechanically and electrically",
+          "mechanical deformation creates electrical polarization",
+          "piezoelectric crystals act as transducers",
+          "forms the very foundation of ultrasound imaging",
+          "converting mechanical vibration into electrical energy"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Mechanical deformation creates electrical polarization",
+            "modalities": [
+              "text"
+            ],
+            "o": "electrical polarization",
+            "p": "produces",
+            "s": "Mechanical deformation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "static-electric imbalance"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound imaging"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Mechanical deformation creates electrical polarization"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "electrical polarization",
+        "p": "produces",
+        "s": "mechanical deformation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "ultrasound imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 21\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

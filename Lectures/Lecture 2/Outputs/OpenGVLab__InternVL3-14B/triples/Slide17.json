@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"length(v)\",\n      \"p\": \"measures\",\n      \"o\": \"length of vector\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"To find out how long a vector is, just use length — so length of v tells you how many elements it has.\"\n    },\n    {\n      \"s\": \"size(A)\",\n      \"p\": \"measures\",\n      \"o\": \"size of matrix\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If you’re working with a matrix, and you want to know its shape — how many rows and columns — just use size of A.\"\n    },\n    {\n      \"s\": \"rank(A)\",\n      \"p\": \"measures\",\n      \"o\": \"rank of matrix\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Want to check if a matrix is full rank? That’s easy — rank of A will do the job.\"\n    },\n    {\n      \"s\": \"norm(A)\",\n      \"p\": \"",
+  "parsed": {
+    "s": "rank(A)",
+    "p": "measures",
+    "o": "rank of matrix",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Want to check if a matrix is full rank? That’s easy - rank of A will do the job."
+    ]
+  }
+}

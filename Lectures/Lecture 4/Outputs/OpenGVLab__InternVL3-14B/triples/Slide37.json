@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Deconvolution\",\n      \"p\": \"uses\",\n      \"o\": \"point spread function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When an image is blurred, it’s often because the original scene has been convolved with a point spread function — or PSF.\"\n    },\n    {\n      \"s\": \"Deconvolution\",\n      \"p\": \"produces\",\n      \"o\": \"original image\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"Deconvolution is the process of trying to undo that effect — to recover the original image from its blurred version.\"\n    },\n    {\n      \"s\": \"Deconvolution\",\n      \"p\": \"depends_on\",\n      \"o\": \"modeling of the PSF\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"It’s important to note that deconvolution is not always perfect — in real-world systems, noise and distortion make it a challenging problem. But with good modeling of the PSF and proper regularization, we",
+  "parsed": {
+    "s": "Deconvolution",
+    "p": "produces",
+    "o": "original image",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "Deconvolution is the process of trying to undo that effect - to recover the original image from its blurred version."
+    ]
+  }
+}

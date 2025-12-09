@@ -1,0 +1,103 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "X-ray source"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This configuration results in a cone beam geometry originating from the point source."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "point source",
+        "p": "originates from",
+        "s": "cone beam geometry"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "3D CT"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray source"
+          },
+          {
+            "category": "instrumentation",
+            "term": "planar or two-dimensional detector array"
+          },
+          {
+            "category": "signal_processing",
+            "term": "Fourier transform-based imaging methods"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier slice theorem"
+          },
+          {
+            "category": "mathematics",
+            "term": "Fourier transforms in higher dimensions"
+          },
+          {
+            "category": "signal_processing",
+            "term": "3D spatial frequency information"
+          }
+        ],
+        "evidence": [
+          "The X-ray source remains a point source.",
+          "A planar or two-dimensional detector array is used.",
+          "Cone beam geometry originating from the point source.",
+          "The object must be fully contained within the cone beam.",
+          "Rays are rearranged, reorganized, or re-binned into parallel beam geometry.",
+          "Fourier transforms in higher dimensions are required.",
+          "3D spatial frequency information is recovered."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The X-ray source remains a point source.",
+            "modalities": [
+              "text"
+            ],
+            "o": "point source",
+            "p": "uses",
+            "s": "X-ray source"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "frequency_domain",
+        "term": "two-dimensional Fourier spectrum"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "3D spatial frequency information"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide5.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide5.txt"
+  },
+  "slide_id": "Slide5"
+}

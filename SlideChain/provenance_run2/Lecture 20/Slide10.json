@@ -1,0 +1,77 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "basic laws of electromagnetism"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Two symmetric, oppositely oriented coils produce a linear gradient in the central region.",
+            "modalities": [
+              "text"
+            ],
+            "o": "linear magnetic field",
+            "p": "produces",
+            "s": "gradient coils"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "A single loop of current generates a circular magnetic field.",
+            "modalities": [
+              "text"
+            ],
+            "o": "circular magnetic field",
+            "p": "produces",
+            "s": "single loop of current"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "linear section"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "on the left side of the figure, you see a loop with current flowing upward, generating a magnetic field that points to the right"
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "A single loop of current generates a circular magnetic field"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "circular magnetic field",
+        "p": "produces",
+        "s": "single loop of current"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "useful part"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide10.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide10.txt"
+  },
+  "slide_id": "Slide10"
+}

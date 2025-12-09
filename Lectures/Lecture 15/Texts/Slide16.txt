@@ -1,0 +1,8 @@
+Now let’s try a simple experiment with the code.
+
+In the script, there’s a parameter called the theta step. This sets how finely we sample the rotation angles. For example, if the step is 1, MATLAB computes projections at 0, 1, 2, 3 degrees, and so on, all the way to 180. But if we change the step to 5, then MATLAB only samples at 0, 5, 10, 15 degrees, and so on.
+
+Here’s what happens when we make that change. The sinogram becomes much coarser. You can see it here for the square phantom: instead of smooth, continuous curves, the sinogram looks blocky, because we’ve skipped over many intermediate angles.
+What does this mean for reconstruction? It means lower resolution. If we try to reconstruct an image from this sinogram, the result will appear streaky or blocky, because we don’t have enough angular information to fill in the details.
+
+So the takeaway is: to get a high-resolution reconstruction, we want a small theta step, which gives us many angular views. Fewer angles make the computation faster, but the image quality suffers.

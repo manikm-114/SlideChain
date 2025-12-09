@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide5",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Shannon interpolation formula\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original continuous signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"In words, it says: take each sample of your signal, put a sinc function centered at that sample, scale it by the sample’s value, and then add them all together. Do this for every sample — stretching infinitely in both directions — and you get your original continuous signal back exactly, as long as the sampling conditions are satisfied.\"\n    },\n    {\n      \"s\": \"sampling theorem\",\n      \"p\": \"produces\",\n      \"o\": \"Shannon interpolation formula\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"This is a beautiful result. It tells us that perfect reconstruction is not just possible — it’s a direct consequence of the sampling theorem. And this formula is one of the core foundations of all digital signal processing.\"\n    },\n    {\n      \"s\": \"convolution\",\n      \"p\": \"represents\",\n      \"o\": \"infinite sum of shifted sinc functions",
+  "parsed": {
+    "s": "sampling theorem",
+    "p": "produces",
+    "o": "Shannon interpolation formula",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "This is a beautiful result. It tells us that perfect reconstruction is not just possible - it’s a direct consequence of the sampling theorem. And this formula is one of the core foundations of all digital signal processing."
+    ]
+  }
+}

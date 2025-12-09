@@ -1,0 +1,16 @@
+Let’s look at a second example, and here’s where things get interesting.
+
+We again compute convolution in two ways:
+First, the direct method in the time domain.
+Second, the FFT-based method, multiplying in the frequency domain and taking the inverse FFT.
+
+This time, the results are different. Why?
+It comes down to the fact that in discrete Fourier analysis, our signals are treated as periodic, not single, isolated sequences, but infinitely repeated copies.
+Imagine x as one segment in time, and y as another. In the continuous world, when we shift one relative to the other, we only overlap the part that exists in the original copy. But in the discrete Fourier model, when you shift, parts of one copy can wrap around and overlap with the start of the other copy.
+It’s as if your “neighbor” signal is spilling into your yard — and at the same time, you’re spilling into your other neighbor’s yard on the left.
+
+That wrap-around interaction is exactly what circular convolution means:
+The signals are treated as if arranged around a circle.
+When you slide one past the end, it reappears at the other side.
+The FFT-based convolution performs this circular convolution by default, which is why the result here doesn’t match the direct, linear convolution.
+Later, we’ll see how to avoid this wrap-around effect so the FFT method matches the true linear convolution.

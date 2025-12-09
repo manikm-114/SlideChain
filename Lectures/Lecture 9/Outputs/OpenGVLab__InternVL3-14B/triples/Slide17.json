@@ -1,0 +1,31 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"FFT\",\n      \"p\": \"produces\",\n      \"o\": \"discrete frequency components\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"We perform the Fourier transform of our signal using the FFT function. This gives us the discrete frequency components of the signal.\"\n    },\n    {\n      \"s\": \"plot\",\n      \"p\": \"represents\",\n      \"o\": \"magnitude of the FFT against frequency\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then, we plot the magnitude of the FFT against frequency, with frequency in hertz along the horizontal axis.\"\n    },\n    {\n      \"s\": \"202.5 Hz\",\n      \"p\": \"is not well-resolved\",\n      \"o\": \"default spectral bins\",\n      \"modalities\": [\"text\", \"image\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"The 202.5 frequency is not well-resolved → Not within the default spectral bins (1 Hz)\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "FFT",
+        "p": "produces",
+        "o": "discrete frequency components",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We perform the Fourier transform of our signal using the FFT function. This gives us the discrete frequency components of the signal."
+      },
+      {
+        "s": "plot",
+        "p": "represents",
+        "o": "magnitude of the FFT against frequency",
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "confidence": 1.0,
+        "evidence": "Then, we plot the magnitude of the FFT against frequency, with frequency in hertz along the horizontal axis."
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "pixel"
+          },
+          {
+            "category": "signal_processing",
+            "term": "picture"
+          },
+          {
+            "category": "signal_processing",
+            "term": "amplitude"
+          }
+        ],
+        "evidence": [
+          "You can decompose the picture into many, many small elements.",
+          "The trick is really the amplitude: you need to make sure all these amplitudes are modulated nicely.",
+          "Then, when you put them together, you have the perception of a picture or a natural scene, whatever."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "when you put them together, you have the perception of a picture or a natural scene, whatever"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "Take an arbitrary picture-say, a portrait of our former president.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "portrait",
+            "p": "represents",
+            "s": "picture"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "You can decompose the picture into many, many small elements. For each element, it's very simple: just a homogeneous pixel, a small square. Add these together.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "pixel",
+            "p": "reconstructs_with",
+            "s": "picture"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "amplitude"
+          }
+        ],
+        "evidence": [
+          "Take an arbitrary picture-say, a portrait of our former president. You can decompose the picture into many, many small elements. For each element, it\u2019s very simple: just a homogeneous pixel, a small square. Add these together. The trick is really the amplitude: you need to make sure all these amplitudes are modulated nicely. Then, when you put them together, you have the perception of a picture or a natural scene, whatever. This is one way to represent a picture."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide6.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide6.txt"
+  },
+  "slide_id": "Slide6"
+}

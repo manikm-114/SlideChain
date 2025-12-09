@@ -1,0 +1,45 @@
+{
+  "slide_id": "Slide44",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T00:58:52.964089+00:00",
+  "text_length": 2519,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo wrap up our discussion, let’s take a closer look at this final visual — it ties everything together beautifully.\nAt the top, we see a simple rectangular function, labeled f of x. It’s a block function centered at zero. Next to it is h of x, which is a train of two delta functions — one at minus a over two and the other at plus a over two. Their amplitudes are scaled by one-half.\n\nNow, when we convolve f of x with h of x, the result — g of x — is essentially just two shifted copies of the original function. Each delta acts like a copying machine, reproducing f of x at the location of the delta. This is a perfect illustration of how convolution with delta functions results in replicated versions of a signal.\n\nNow let’s look at the bottom half of the slide — we’re moving into the frequency domain.\nThe Fourier transform of the original block function, f of x, becomes a smooth sinc-like curve, F of k. The delta train, h of x, transforms into a cosine wave pattern, H of k. And the product in the frequency domain, F of k times H of k, gives us G of k — a modulated version of the original Fourier transform.\nThis shows us that convolution in the time domain becomes multiplication in the frequency domain — one of the central results of Fourier theory.\n\nNow, relating this back to the sampling theorem...\nWhen we sample a continuous signal, we are essentially multiplying it by a train of delta functions. In the time domain, this multiplication picks out the values at those sampling points. But in the frequency domain, it leads to repetitions — or aliases — of the original spectrum.\nAnd when we reconstruct, we don't use the simple rectangle anymore — instead, we use the sinc function, which is the Fourier transform of an ideal low-pass filter. But the principle is the same: the delta functions trigger copies, and these copies are scaled by the actual sample values — f of k over P.\n\nAnd here’s the key takeaway:\nIf we sample fast enough — meaning at more than twice the highest frequency in the original signal — and if the signal is band-limited, then all those sinc functions will line up perfectly, and we can fully recover the original signal.\nThat’s the heart of the sampling theorem. It’s not just an abstract formula — it’s a practical method that allows us to move between continuous and digital signals with full confidence.\n\nThis slide beautifully summarizes the theory. From delta copies to sinc reconstruction, it’s all about understanding how convolution builds signals piece by piece.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"delta function\", \"category\": \"mathematics\"},\n    {\"term\": \"Fourier transform\", \"category\": \"frequency_domain\"},\n    {\"term\": \"sampling theorem\", \"category\": \"signal_processing\"},\n    {\"term\": \"sinc function\", \"category\": \"signal_processing\"},\n    {\"term\": \"ideal low-pass filter\", \"category\": \"signal_processing\"},\n    {\"term\": \"reconstruction\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"convolution with delta functions results in replicated versions of a signal\",\n    \"convolution in the time domain becomes multiplication in the frequency domain\",\n    \"sampling fast enough and if the signal is band-limited, then all sinc functions will line up perfectly, and we can fully recover the original signal\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "Fourier transform",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "sampling theorem",
+        "category": "signal_processing"
+      },
+      {
+        "term": "sinc function",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ideal low-pass filter",
+        "category": "signal_processing"
+      },
+      {
+        "term": "reconstruction",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "convolution with delta functions results in replicated versions of a signal",
+      "convolution in the time domain becomes multiplication in the frequency domain",
+      "sampling fast enough and if the signal is band-limited, then all sinc functions will line up perfectly, and we can fully recover the original signal"
+    ]
+  }
+}

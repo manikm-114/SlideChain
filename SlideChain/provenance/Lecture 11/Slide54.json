@@ -1,0 +1,95 @@
+{
+  "lecture": "Lecture 11",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "algorithm",
+            "term": "binary classification"
+          },
+          {
+            "category": "mathematics",
+            "term": "hypotheses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "noise"
+          },
+          {
+            "category": "algorithm",
+            "term": "observer models"
+          }
+        ],
+        "evidence": [
+          "binary classification task",
+          "two competing hypotheses",
+          "background as the normal structures",
+          "signal as the diagnostic feature",
+          "noise added",
+          "statistical properties",
+          "clean background image",
+          "clean signal image",
+          "forms the basis of many observer models"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "The second hypothesis says the image contains both the background and an additional signal, such as a tumor, again with noise added."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "image contains both the background and an additional signal, again with noise added",
+        "p": "represents",
+        "s": "second hypothesis"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "modality",
+        "term": "medical imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "clean signal image"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Mathematically, we describe this with two competing hypotheses. The first hypothesis says the image only contains the background... The second hypothesis says the image contains both the background and an additional signal..."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "background-only case or background-plus-signal case",
+        "p": "represents",
+        "s": "binary classification task"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "observer models"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Images\\Slide54.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 11\\Texts\\Slide54.txt"
+  },
+  "slide_id": "Slide54"
+}

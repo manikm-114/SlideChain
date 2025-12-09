@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide14",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"PET\",\n      \"p\": \"uses\",\n      \"o\": \"coincidence detection\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When we use a ring detector in PET, the key is to perform coincidence detection.\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"produces\",\n      \"o\": \"sinogram\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"When you arrange all these projections by angle, you get what’s called a sinogram.\"\n    },\n    {\n      \"s\": \"sinogram\",\n      \"p\": \"represents\",\n      \"o\": \"line integrals\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"As long as you know the attenuation and apply the correct compensation factors, you can accumulate your data into these line integrals.\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"measures\",\n      \"o\": \"line of response (LOR)\",\n      \"modalities\": [\"text",
+  "parsed": {
+    "s": "sinogram",
+    "p": "represents",
+    "o": "line integrals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "As long as you know the attenuation and apply the correct compensation factors, you can accumulate your data into these line integrals."
+    ]
+  }
+}

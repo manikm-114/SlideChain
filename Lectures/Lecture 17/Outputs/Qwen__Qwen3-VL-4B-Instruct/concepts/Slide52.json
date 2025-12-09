@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide52",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:14:53.741105+00:00",
+  "text_length": 237,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo the interesting thing is that I designed a logo specifically for the Fully 3D meeting. The logo is modeled after the iconic Bell Tower in the city, making it a distinctive symbol that connects the event to the cultural heart of Xi’an.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"fully 3d meeting\",\n      \"category\": \"communication\"\n    },\n    {\n      \"term\": \"bell tower\",\n      \"category\": \"anatomy\"\n    },\n    {\n      \"term\": \"xi'an\",\n      \"category\": \"anatomy\"\n    }\n  ],\n  \"evidence\": [\n    \"So the interesting thing is that I designed a logo specifically for the Fully 3D meeting.\",\n    \"The logo is modeled after the iconic Bell Tower in the city, making it a distinctive symbol that connects the event to the cultural heart of Xi’an.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "fully 3d meeting",
+        "category": "communication"
+      }
+    ],
+    "evidence": [
+      "So the interesting thing is that I designed a logo specifically for the Fully 3D meeting.",
+      "The logo is modeled after the iconic Bell Tower in the city, making it a distinctive symbol that connects the event to the cultural heart of Xi'an."
+    ]
+  }
+}

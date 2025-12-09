@@ -1,0 +1,54 @@
+{
+  "slide_id": "Slide50",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAs we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\n\nFor example, have you seen the movie Elysium? In that film, there’s this futuristic machine—a kind of all-in-one medical scanner. It can detect and treat any disease, regenerate or even replace organs, and remarkably, reverse the aging process. It’s the ultimate vision of technology and medicine coming together to provide perfect healthcare.\n\nOf course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics. It’s a powerful reminder of what could be possible.\n\nI hope this inspires you as we move forward in the course. By learning the foundations of medical imaging today, you’re taking the first step toward contributing to the invention of our future.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"medical imaging\", \"category\": \"modality\"},\n    {\"term\": \"artificial intelligence\", \"category\": \"ai_ml\"},\n    {\"term\": \"robotics\", \"category\": \"software\"},\n    {\"term\": \"machine learning\", \"category\": \"ai_ml\"},\n    {\"term\": \"diagnostics\", \"category\": \"workflow\"},\n    {\"term\": \"personalized treatment\", \"category\": \"workflow\"},\n    {\"term\": \"integrated imaging\", \"category\": \"workflow\"},\n    {\"term\": \"perfect healthcare\", \"category\": \"software\"},\n    {\"term\": \"futuristic machine\", \"category\": \"software\"},\n    {\"term\": \"Elysium\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"As we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.\", \"Of course, today we aren’t there yet. But the ideas behind that machine—integrated imaging, precise diagnostics, personalized treatment—are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "medical imaging",
+        "category": "modality"
+      },
+      {
+        "term": "artificial intelligence",
+        "category": "ai_ml"
+      },
+      {
+        "term": "robotics",
+        "category": "software"
+      },
+      {
+        "term": "machine learning",
+        "category": "ai_ml"
+      },
+      {
+        "term": "diagnostics",
+        "category": "workflow"
+      },
+      {
+        "term": "personalized treatment",
+        "category": "workflow"
+      },
+      {
+        "term": "integrated imaging",
+        "category": "workflow"
+      },
+      {
+        "term": "perfect healthcare",
+        "category": "software"
+      },
+      {
+        "term": "futuristic machine",
+        "category": "software"
+      },
+      {
+        "term": "Elysium",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "As we think about how artificial intelligence and robotics might transform medical imaging and healthcare, it’s hard not to be reminded of how often science fiction points the way to future innovations.",
+      "Of course, today we aren’t there yet. But the ideas behind that machine-integrated imaging, precise diagnostics, personalized treatment-are exactly what we’re working toward with advanced medical imaging, machine learning, and robotics."
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slide_id": "Slide38",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nFrom one hundred eighty degrees, you add everything together. You get something not too much different from the truth, but it looks very blurred. You still see a region that is a little high, because this part of the projection is high. When you backproject along the original X-ray paths, that high value is placed along those lines.\n\nHowever, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"backprojection\", \"category\": \"reconstruction\"},\n    {\"term\": \"artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"filter\", \"category\": \"signal_processing\"},\n    {\"term\": \"high value\", \"category\": \"signal_processing\"},\n    {\"term\": \"smearing-back process\", \"category\": \"signal_processing\"},\n    {\"term\": \"accurate image\", \"category\": \"quality_metric\"},\n    {\"term\": \"collecting projections\", \"category\": \"data_processing\"},\n    {\"term\": \"backprojection alone\", \"category\": \"signal_processing\"},\n    {\"term\": \"smears the high values around\", \"category\": \"signal_processing\"},\n    {\"term\": \"filter the projections\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\"However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "backprojection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "artifacts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "filter",
+        "category": "signal_processing"
+      },
+      {
+        "term": "high value",
+        "category": "signal_processing"
+      },
+      {
+        "term": "smearing-back process",
+        "category": "signal_processing"
+      },
+      {
+        "term": "accurate image",
+        "category": "quality_metric"
+      },
+      {
+        "term": "collecting projections",
+        "category": "data_processing"
+      },
+      {
+        "term": "backprojection alone",
+        "category": "signal_processing"
+      },
+      {
+        "term": "smears the high values around",
+        "category": "signal_processing"
+      },
+      {
+        "term": "filter the projections",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "However, there are artifacts. In the smearing-back process, a high value here gets spread to places that are not actually high in the object. Backprojection alone smears the high values around. So, simply collecting projections and doing backprojection is not enough to recover an accurate image. That is why we really need to filter the projections."
+    ]
+  }
+}

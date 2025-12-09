@@ -1,0 +1,24 @@
+Let’s now turn to a beautiful result in Fourier analysis called Parseval’s Identity.
+This identity tells us that the total energy of a signal — measured in the time domain — is exactly equal to the total energy in the frequency domain.
+
+Mathematically, it says:
+The integral of the absolute value squared of f of t, over all time, equals the integral of the absolute value squared of f hat of s, over all frequencies.
+
+In simpler words:If you take a signal and square its amplitude at each point in time, then add up all those values — you get the total energy of the signal in the time domain.
+Now do the same thing in the frequency domain:Take the Fourier transform of the signal, square the magnitude of each frequency component, and integrate — and you get the same total.
+
+This is not just a coincidence. It’s a direct consequence of the fact that the Fourier transform is a unitary operator — it preserves the “length” of the function, just like a rotation in vector space.
+Think of f of t and f hat of s as infinite-dimensional vectors.Then, this identity is telling you that their norms — or their lengths — are the same.So, the energy stays the same when you move from one domain to the other.
+This is why we sometimes say that the Fourier transform conserves energy.
+
+The bottom part of the slide walks through the proof. Let me summarize the key steps:
+We start with the inner product:
+Integral of f of t times the complex conjugate of g of t.
+Then, we apply the inverse Fourier transform to g of t.This gives us an expression involving f of t and the Fourier transform of g, which we call F g of s.
+Then we do some algebra — using properties of complex conjugation, and switching the order of integration — until we end up with:
+The integral of f of s times the complex conjugate of g of s.
+So in the end, the inner product in the time domain equals the inner product in the frequency domain.
+
+That’s Parseval’s Identity in action — and it works for all functions in an inner product space, not just in signal processing.
+It’s one more reason why the Fourier transform is not just a clever trick — it’s a deep and powerful tool grounded in geometry and physics.
+If you’re interested, you can think of it this way:Every time you transform a signal into the frequency domain, you’re rotating it into a new basis — and the energy stays exactly the same.

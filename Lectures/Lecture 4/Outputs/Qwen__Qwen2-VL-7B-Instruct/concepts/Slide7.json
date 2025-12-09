@@ -1,0 +1,57 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:11:46.412050+00:00",
+  "text_length": 1142,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s look at how impulse relates to momentum — a key concept in both physics and system analysis.\nMomentum, as you may recall, is simply mass multiplied by velocity. \n\nSo if an object is at rest, it has zero momentum. When you apply a force over a period of time — say, when you hit a tennis ball with a racket — the object gains velocity. That change in velocity reflects a change in momentum.\n\nNow here’s the essential link:\u000bImpulse is defined as force multiplied by the time over which it acts.\n\u000bWe start with Newton’s second law, which tells us:\u000bForce equals mass times acceleration — or simply,\u000bF equals m a.\n\nNow, acceleration is defined as the change in velocity divided by the change in time — so we write:\u000ba equals delta v over delta t.\n\nIf we substitute that into Newton’s law, we get:\u000bF times delta t equals m times delta v.\n\nThis equation shows us something powerful:\u000bImpulse — that’s force times time — equals the change in momentum.\ntells us that impulse causes the change in momentum.\n\n\n It’s the way to model how mechanical systems respond to external inputs, and the idea applies to other input-output relationships as well.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Impulse\", \"category\": \"physics\"},\n    {\"term\": \"Momentum\", \"category\": \"physics\"},\n    {\"term\": \"Newton's second law\", \"category\": \"physics\"},\n    {\"term\": \"Force\", \"category\": \"physics\"},\n    {\"term\": \"Mass\", \"category\": \"physics\"},\n    {\"term\": \"Velocity\", \"category\": \"physics\"},\n    {\"term\": \"Acceleration\", \"category\": \"physics\"},\n    {\"term\": \"Delta v\", \"category\": \"physics\"},\n    {\"term\": \"Delta t\", \"category\": \"physics\"},\n    {\"term\": \"Change in momentum\", \"category\": \"physics\"},\n    {\"term\": \"Input-output relationship\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"Impulse is defined as force multiplied by the time over which it acts.\",\n    \"Impulse — that’s force times time — equals the change in momentum.\",\n    \"It’s the way to model how mechanical systems respond to external inputs, and the idea applies to other input-output relationships as well.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Impulse",
+        "category": "physics"
+      },
+      {
+        "term": "Momentum",
+        "category": "physics"
+      },
+      {
+        "term": "Force",
+        "category": "physics"
+      },
+      {
+        "term": "Mass",
+        "category": "physics"
+      },
+      {
+        "term": "Velocity",
+        "category": "physics"
+      },
+      {
+        "term": "Acceleration",
+        "category": "physics"
+      },
+      {
+        "term": "Delta v",
+        "category": "physics"
+      },
+      {
+        "term": "Delta t",
+        "category": "physics"
+      },
+      {
+        "term": "Change in momentum",
+        "category": "physics"
+      },
+      {
+        "term": "Input-output relationship",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "Impulse is defined as force multiplied by the time over which it acts.",
+      "Impulse - that's force times time - equals the change in momentum.",
+      "It's the way to model how mechanical systems respond to external inputs, and the idea applies to other input-output relationships as well."
+    ]
+  }
+}

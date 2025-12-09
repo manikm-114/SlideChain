@@ -1,0 +1,184 @@
+{
+  "lecture": "Lecture 7",
+  "slide_id": "Slide21",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Texts\\Slide21.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "impulse train",
+              "category": "signal_processing"
+            },
+            {
+              "term": "spatial domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "multiplication",
+              "category": "signal_processing"
+            },
+            {
+              "term": "periodicity",
+              "category": "signal_processing"
+            },
+            {
+              "term": "point-wise multiplication",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "To sample this signal, what we’re really doing is multiplying it by a train of impulses.",
+            "In the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.",
+            "Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal - creating a periodic train of delta functions in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s now look at what’s happening in the spatial domain when we sample a signal.\\n\\nImagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\nThese impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.\\n\\nIn the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\nAnd here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\nJust as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"impulse train\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"spatial domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"multiplication\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"replication\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"periodicity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"point-wise multiplication\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"To sample this signal, what we’re really doing is multiplying it by a train of impulses.\\\", \\n               \\\"In the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\\", \\n               \\\"Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"impulse train\", \"category\": \"signal_processing\"}, {\"term\": \"spatial domain\", \"category\": \"signal_processing\"}, {\"term\": \"frequency domain\", \"category\": \"signal_processing\"}, {\"term\": \"multiplication\", \"category\": \"signal_processing\"}, {\"term\": \"periodicity\", \"category\": \"signal_processing\"}, {\"term\": \"point-wise multiplication\", \"category\": \"signal_processing\"}], \"evidence\": [\"To sample this signal, what we’re really doing is multiplying it by a train of impulses.\", \"In the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\", \"Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal - creating a periodic train of delta functions in the frequency domain.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s now look at what’s happening in the spatial domain when we sample a signal.\\n\\nImagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\nThese impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.\\n\\nIn the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\nAnd here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\nJust as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"continuous signal\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"impulse train\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"To sample this signal, what we’re really doing is multiplying it by a train of impulses.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "sampling",
+              "category": "signal_processing"
+            },
+            {
+              "term": "impulse train",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discrete values",
+              "category": "signal_processing"
+            },
+            {
+              "term": "point-wise multiplication",
+              "category": "signal_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "spectrum",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "delta functions",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "periodicity",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "operations in the spatial domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "effects in the frequency domain",
+              "category": "frequency_domain"
+            }
+          ],
+          "evidence": [
+            "sampling is essentially a point-wise multiplication of the signal with an impulse train.",
+            "this operation in the spatial domain has a direct consequence in the frequency domain.",
+            "Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal.",
+            "we also obtain periodicity in frequency."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"sampling\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"impulse train\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete values\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"point-wise multiplication\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"spectrum\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"delta functions\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"periodicity\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"operations in the spatial domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"effects in the frequency domain\\\", \\\"category\\\": \\\"frequency_domain\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"sampling is essentially a point-wise multiplication of the signal with an impulse train.\\\",\\n    \\\"this operation in the spatial domain has a direct consequence in the frequency domain.\\\",\\n    \\\"Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal.\\\",\\n    \\\"we also obtain periodicity in frequency.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"sampling\", \"category\": \"signal_processing\"}, {\"term\": \"impulse train\", \"category\": \"signal_processing\"}, {\"term\": \"discrete values\", \"category\": \"signal_processing\"}, {\"term\": \"point-wise multiplication\", \"category\": \"signal_processing\"}, {\"term\": \"frequency domain\", \"category\": \"frequency_domain\"}, {\"term\": \"spectrum\", \"category\": \"frequency_domain\"}, {\"term\": \"delta functions\", \"category\": \"frequency_domain\"}, {\"term\": \"periodicity\", \"category\": \"frequency_domain\"}, {\"term\": \"operations in the spatial domain\", \"category\": \"signal_processing\"}, {\"term\": \"effects in the frequency domain\", \"category\": \"frequency_domain\"}], \"evidence\": [\"sampling is essentially a point-wise multiplication of the signal with an impulse train.\", \"this operation in the spatial domain has a direct consequence in the frequency domain.\", \"Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal.\", \"we also obtain periodicity in frequency.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide21.json",
+        "parsed": {
+          "s": "multiplying by an impulse train",
+          "p": "produces",
+          "o": "discrete values",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "when you multiply the continuous signal by this impulse train, the result is a set of discrete values."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"sampling a signal\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"impulse train\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"To sample this signal, what we’re really doing is multiplying it by a train of impulses.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"impulse train\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"fixed sampling intervals\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"These impulses are spaced evenly along the axis, representing fixed sampling intervals.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"multiplying by an impulse train\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"discrete values\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"when you multiply the continuous signal by this impulse train, the result is a set of discrete values.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"multiplying by an impulse train in space\\\",\\n      \\\"p\\\": \\\"corresponds to\\\",\\n      \\\"o\\\": \\\"replicating the\", \"parsed\": {\"s\": \"multiplying by an impulse train\", \"p\": \"produces\", \"o\": \"discrete values\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"when you multiply the continuous signal by this impulse train, the result is a set of discrete values.\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "spatial domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "sampling",
+              "category": "signal_processing"
+            },
+            {
+              "term": "impulse train",
+              "category": "signal_processing"
+            },
+            {
+              "term": "discrete values",
+              "category": "signal_processing"
+            },
+            {
+              "term": "frequency domain",
+              "category": "signal_processing"
+            },
+            {
+              "term": "periodicity",
+              "category": "signal_processing"
+            }
+          ],
+          "evidence": [
+            "Imagine you have a continuous signal - shown on the left. To sample this signal, what we're really doing is multiplying it by a train of impulses.",
+            "And here's the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal - creating a periodic train of delta functions in the frequency domain."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T00:19:29.006879+00:00\", \"text_length\": 1227, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s now look at what’s happening in the spatial domain when we sample a signal.\\n\\nImagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\nThese impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.\\n\\nIn the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\nAnd here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\nJust as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"spatial domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"sampling\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"impulse train\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"discrete values\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"replicating spectrum\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"periodicity\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"spatial domain to frequency domain\\\", \\\"category\\\": \\\"signal_processing\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Imagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses.\\\",\\n    \\\"And here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"spatial domain\", \"category\": \"signal_processing\"}, {\"term\": \"sampling\", \"category\": \"signal_processing\"}, {\"term\": \"impulse train\", \"category\": \"signal_processing\"}, {\"term\": \"discrete values\", \"category\": \"signal_processing\"}, {\"term\": \"frequency domain\", \"category\": \"signal_processing\"}, {\"term\": \"periodicity\", \"category\": \"signal_processing\"}], \"evidence\": [\"Imagine you have a continuous signal - shown on the left. To sample this signal, what we're really doing is multiplying it by a train of impulses.\", \"And here's the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal - creating a periodic train of delta functions in the frequency domain.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide21.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T01:18:09.892812+00:00\", \"text_length\": 1227, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s now look at what’s happening in the spatial domain when we sample a signal.\\n\\nImagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\nThese impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.\\n\\nIn the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\nAnd here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\nJust as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"continuous signal\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"impulse train\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Imagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 7\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide21.json",
+        "parsed": {
+          "term": "periodicity in frequency",
+          "category": "frequency_domain"
+        },
+        "raw": "{\"slide_id\": \"Slide21\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-08T00:19:46.050920+00:00\", \"text_length\": 1227, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nLet’s now look at what’s happening in the spatial domain when we sample a signal.\\n\\nImagine you have a continuous signal — shown on the left. To sample this signal, what we’re really doing is multiplying it by a train of impulses. That’s the middle figure.\\nThese impulses are spaced evenly along the axis, representing fixed sampling intervals. And when you multiply the continuous signal by this impulse train, the result is a set of discrete values. That’s what you see on the right: only the values of the signal at those impulse positions are preserved — the rest are discarded.\\n\\nIn the spatial domain, sampling is essentially a point-wise multiplication of the signal with an impulse train.\\nAnd here’s the key idea: this operation in the spatial domain has a direct consequence in the frequency domain. Multiplying by an impulse train in space corresponds to replicating the spectrum of the signal — creating a periodic train of delta functions in the frequency domain.\\nJust as we observe periodicity in time or space due to regular sampling, we also obtain periodicity in frequency. This connection — between operations in the spatial domain and their effects in the frequency domain — is fundamental in signal processing.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"In Spatial Domain\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"sampling a signal\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"multiplying it by a train of impulses\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"impulses are spaced evenly along the axis\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"result is a set of discrete values\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"point-wise multiplication of the signal with an impulse train\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"multiplying by an impulse train in space corresponds to replicating the spectrum of the signal\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"creating a periodic train of delta functions in the frequency domain\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"periodicity in frequency\\\",\\n      \\\"category\\\": \\\"frequency_domain\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"connection — between operations in the spatial domain and\", \"parsed\": {\"term\": \"periodicity in frequency\", \"category\": \"frequency_domain\"}}"
+      },
+      "triples": null
+    }
+  }
+}

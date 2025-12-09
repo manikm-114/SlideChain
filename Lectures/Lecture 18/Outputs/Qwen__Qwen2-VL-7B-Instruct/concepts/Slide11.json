@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide11",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T12:34:04.266328+00:00",
+  "text_length": 730,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s quickly review some high school physics to set the stage. Electric charges interact through forces. If you place two charges in space, the nature of those charges determines how they behave. Like charges, meaning both positive or both negative, repel each other. Opposite charges, one positive and one negative, attract each other.\n\nThe strength of this interaction is given by Coulomb’s law. The force is proportional to the product of the two charges, divided by the square of the distance between them. So the closer the charges, the stronger the force.\nThis simple idea about electric forces will be important when we connect electricity and magnetism, and eventually link these basic interactions to the physics of MRI.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Electric charges\", \"category\": \"physics\"},\n    {\"term\": \"Repulsion\", \"category\": \"physics\"},\n    {\"term\": \"Attraction\", \"category\": \"physics\"},\n    {\"term\": \"Coulomb's law\", \"category\": \"physics\"},\n    {\"term\": \"Proportional\", \"category\": \"mathematics\"},\n    {\"term\": \"Distance\", \"category\": \"physics\"},\n    {\"term\": \"Interaction\", \"category\": \"physics\"},\n    {\"term\": \"Electric forces\", \"category\": \"physics\"},\n    {\"term\": \"MRI\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"Electric charges interact through forces.\",\n    \"Like charges repel each other.\",\n    \"Opposite charges attract each other.\",\n    \"The strength of this interaction is given by Coulomb’s law.\",\n    \"The force is proportional to the product of the two charges, divided by the square of the distance between them.\",\n    \"This simple idea about electric forces will be important when we connect electricity and magnetism, and eventually link these basic interactions to the physics of MRI.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Electric charges",
+        "category": "physics"
+      },
+      {
+        "term": "Proportional",
+        "category": "mathematics"
+      },
+      {
+        "term": "Distance",
+        "category": "physics"
+      },
+      {
+        "term": "Interaction",
+        "category": "physics"
+      },
+      {
+        "term": "Electric forces",
+        "category": "physics"
+      },
+      {
+        "term": "MRI",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Electric charges interact through forces.",
+      "Like charges repel each other.",
+      "Opposite charges attract each other.",
+      "The strength of this interaction is given by Coulomb's law.",
+      "The force is proportional to the product of the two charges, divided by the square of the distance between them.",
+      "This simple idea about electric forces will be important when we connect electricity and magnetism, and eventually link these basic interactions to the physics of MRI."
+    ]
+  }
+}

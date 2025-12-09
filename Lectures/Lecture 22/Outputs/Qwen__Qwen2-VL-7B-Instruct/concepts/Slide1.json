@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T17:09:31.730137+00:00",
+  "text_length": 355,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLast time, we explained to you the physical and mathematical principles for ultrasound imaging.\n\nIn this lecture, we will be more specific about how we can form different kinds of ultrasound images. We’re moving from principles to practice—how we send sound, receive echoes, and turn those echoes into the different image types for various clinical tasks.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"ultrasound imaging\", \"category\": \"modality\"},\n    {\"term\": \"physical and mathematical principles\", \"category\": \"physics\"},\n    {\"term\": \"sound\", \"category\": \"signal_processing\"},\n    {\"term\": \"echoes\", \"category\": \"signal_processing\"},\n    {\"term\": \"ultrasound images\", \"category\": \"modality\"},\n    {\"term\": \"clinical tasks\", \"category\": \"application\"},\n    {\"term\": \"sound\", \"category\": \"signal_processing\"},\n    {\"term\": \"echoes\", \"category\": \"signal_processing\"},\n    {\"term\": \"ultrasound images\", \"category\": \"modality\"},\n    {\"term\": \"clinical tasks\", \"category\": \"application\"}\n  ],\n  \"evidence\": [\n    \"explained physical and mathematical principles for ultrasound imaging\",\n    \"moving from principles to practice\",\n    \"how we send sound, receive echoes, and turn those echoes into different image types\",\n    \"various clinical tasks\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "ultrasound imaging",
+        "category": "modality"
+      },
+      {
+        "term": "physical and mathematical principles",
+        "category": "physics"
+      },
+      {
+        "term": "sound",
+        "category": "signal_processing"
+      },
+      {
+        "term": "echoes",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ultrasound images",
+        "category": "modality"
+      },
+      {
+        "term": "sound",
+        "category": "signal_processing"
+      },
+      {
+        "term": "echoes",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ultrasound images",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "explained physical and mathematical principles for ultrasound imaging",
+      "moving from principles to practice",
+      "how we send sound, receive echoes, and turn those echoes into different image types",
+      "various clinical tasks"
+    ]
+  }
+}

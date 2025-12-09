@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Series connection\",\n      \"p\": \"represents\",\n      \"o\": \"Z sub e equals Z one plus Z two\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Series connection — one after the other on the same branch: The same current flows through both, and the voltage drops add. So the equivalent is: “Z sub e equals Z one plus Z two.”\"\n    },\n    {\n      \"s\": \"Parallel connection\",\n      \"p\": \"represents\",\n      \"o\": \"one over Z sub e equals one over Z one plus one over Z two\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Parallel connection — the two elements share the same two nodes: The voltage across each is the same, and the currents add. So the equivalent is: “one over Z sub e equals one over Z one plus one over Z two,”\"\n    },\n    {\n      \"s\": \"Parallel connection\",\n      \"p\": \"represents\",\n      \"o\": \"Z sub e equals Z one times Z two, divided by Z one",
+  "parsed": {
+    "s": "Parallel connection",
+    "p": "represents",
+    "o": "one over Z sub e equals one over Z one plus one over Z two",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Parallel connection - the two elements share the same two nodes: The voltage across each is the same, and the currents add. So the equivalent is: “one over Z sub e equals one over Z one plus one over Z two,”"
+    ]
+  }
+}

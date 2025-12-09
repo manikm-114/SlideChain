@@ -1,0 +1,26 @@
+So far, we’ve assumed that the function we’re analyzing is periodic with a period of one. But in real applications, that’s not always the case. The period might be two, five, or even some irrational number like pi. So how do we handle that?
+
+It turns out the Fourier series still works perfectly—we just need to adjust our formula to account for the actual period, which we’ll call capital T.
+The idea is simple: we scale the time variable by dividing it by T. That way, we bring the problem back into a familiar form—similar to what we did when the period was one.
+
+So the Fourier series becomes:
+f of t equals the sum over all n from negative infinity to infinity of c n times e to the power i 2 pi n t over T.
+
+Let me say that again more slowly:
+We write the function f of t as the sum of c n times e raised to the power i times two pi times n times t divided by T.
+Now what about the coefficients?
+We compute c n using an integral over one full period. And we have two equivalent options for that:
+
+First option:
+c n equals one over T times the integral from zero to capital T of f of t times e to the power negative i 2 pi n t over T, integrated with respect to t.
+Or, second option:
+c n equals one over T times the integral from negative T over 2 to positive T over 2 of f of t times e to the power negative i 2 pi n t over T, again integrated with respect to t.
+
+Either form works. The only difference is the range of integration—whether you go from zero to T or from minus T over 2 to plus T over 2.
+
+So what’s the takeaway?
+This is just a change of variable. We're scaling time so that the period becomes one, applying all our previous results, and then scaling back.
+
+This gives us a general version of the Fourier series that works for any period—not just the special case where the period is one.
+And this flexibility is exactly what makes the Fourier series so powerful. It adapts easily to the structure of whatever signal you're analyzing.
+Up next, we’ll take this idea even further and connect it to the Fourier transform, which is what happens when the period becomes infinitely large.

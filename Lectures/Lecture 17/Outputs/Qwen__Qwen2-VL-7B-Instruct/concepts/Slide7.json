@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide7",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-12T19:33:52.124938+00:00",
+  "text_length": 571,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nAnd Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations. And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB. \n\nIn terms of combination, you think it's the same thing because this is same three individuals are involved in this activity. So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Poisson noise\", \"category\": \"signal_processing\"},\n    {\"term\": \"Poisson distribution\", \"category\": \"signal_processing\"},\n    {\"term\": \"permutations\", \"category\": \"mathematics\"},\n    {\"term\": \"combinations\", \"category\": \"mathematics\"},\n    {\"term\": \"ABC and ACB\", \"category\": \"mathematics\"},\n    {\"term\": \"permutation and combination\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\n    \"And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.\",\n    \"And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.\",\n    \"So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Poisson noise",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Poisson distribution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "permutations",
+        "category": "mathematics"
+      },
+      {
+        "term": "combinations",
+        "category": "mathematics"
+      },
+      {
+        "term": "ABC and ACB",
+        "category": "mathematics"
+      },
+      {
+        "term": "permutation and combination",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "And Poisson noise, Poisson distribution, you would need some high school statistics, you learned permutations and combinations.",
+      "And this permutation, you just see the different arrangement, roughly speaking, a combination, you need to just remove those, those essentially the same arrangement like ABC and ACB.",
+      "So you need just the distinction between permutation and combination. So you can review this slide, you will recall what you learned."
+    ]
+  }
+}

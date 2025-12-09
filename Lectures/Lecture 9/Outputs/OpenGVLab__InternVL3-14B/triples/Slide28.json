@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide28",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Unsharp Image\", \"p\":\"produces\", \"o\":\"enhances edges and fine details\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Unsharp Image — produced by applying an unsharp filter, which enhances edges and fine details by subtracting a blurred version of the image from the original.\"},\n    {\"s\":\"Gaussian Blurred Image\", \"p\":\"produces\", \"o\":\"smooths the image by reducing high-frequency details\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Gaussian Blurred Image — generated using a Gaussian filter, which smooths the image by reducing high-frequency details, resulting in a softer appearance.\"},\n    {\"s\":\"Sobel Filtered Image\", \"p\":\"produces\", \"o\":\"emphasizes edges, particularly strong intensity changes\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Sobel Filtered Image — created using the Sobel operator, which emphasizes edges, particularly strong intensity changes.\"},\n    {\"s\":\"2D FFT of Original\", \"p\":\"represents\", \"o\":\"frequency content of the image\", \"modalities\":[\"text\"], \"confidence\":",
+  "parsed": {
+    "s": "Sobel Filtered Image",
+    "p": "produces",
+    "o": "emphasizes edges, particularly strong intensity changes",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Sobel Filtered Image - created using the Sobel operator, which emphasizes edges, particularly strong intensity changes."
+    ]
+  }
+}

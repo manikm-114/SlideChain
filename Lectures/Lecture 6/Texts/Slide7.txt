@@ -1,0 +1,23 @@
+So far, we’ve been working under a simple assumption — that the function we’re analyzing has a unit period. That means the function repeats every one unit of time, say, from 0 to 1.
+
+But what if the period is something else — like 5, or 100? That’s what we’re covering here.
+This slide shows how to handle a function with an arbitrary period, which we’ll call capital T. The good news is: the concept stays exactly the same — we’re still breaking the function into complex exponential components — but we just adjust the formulas a bit.
+
+Here’s how the function f of t is now written:
+f of t equals the sum from n equals minus infinity to infinity of c n times e to the power i 2 pi n t over T.
+So you can think of this as a generalized version of the complex Fourier series.
+
+And to compute the coefficient c n, we use the formula:
+c n equals 1 over capital T, times the integral from minus T over 2 to T over 2 of e to the power minus i 2 pi n t over T, which is multiplied by f of t, with respect to t.
+
+Now let me break that down for you:
+The exponential term — that’s your harmonic basis function, adjusted for the new period.
+t over T is just a way to normalize time, so that we’re still operating over a standard interval.
+The 1 over T in front is a scaling factor that makes everything work out correctly.
+And the range of integration — from minus T over 2 to plus T over 2 — gives us a symmetric interval, which is often more convenient for analysis.
+
+So, whether your period is 1, 10, or any other positive number, you simply use T in place of 1 and apply this formula. You’re still summing wave-like components — just stretched or compressed in time depending on the period.
+Now here’s something helpful:If you set T equals 1, this formula reduces back to the unit-period version we saw before. So you only need to remember this general form — and adjust T as needed.
+
+In practice, the real form of the Fourier series is nice because it gives you a clear geometric picture — sines, cosines, and their amplitudes.The complex form, like the one we see here, is more compact and elegant, especially when we move into transforms. It just takes a little abstract thinking in complex space.
+So this wraps up our review of Fourier series — both real and complex — and now we’re ready to move on to the Fourier transform itself.

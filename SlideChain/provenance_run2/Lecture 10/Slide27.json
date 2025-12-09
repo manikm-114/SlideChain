@@ -1,0 +1,83 @@
+{
+  "lecture": "Lecture 10",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "A transistor takes a small signal at its input and produces a much larger version of the same signal shape at its output - it acts as an amplifier.",
+            "modalities": [
+              "text"
+            ],
+            "o": "amplification",
+            "p": "produces",
+            "s": "transistor"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "If we combine two diodes in a specific configuration, we create a transistor.",
+            "modalities": [
+              "text"
+            ],
+            "o": "diode",
+            "p": "depends_on",
+            "s": "transistor"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By connecting logic gates, we can create circuits that add, multiply, store data, and make decisions - the very basis of digital computers.",
+            "modalities": [
+              "text"
+            ],
+            "o": "circuits",
+            "p": "produces",
+            "s": "logic gates"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "electronics",
+        "term": "digital processing"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "a transistor takes a small signal at its input and produces a much larger version of the same signal shape at its output"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "electronics",
+        "term": "digital processing"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "A transistor takes a small signal at its input and produces a much larger version of the same signal shape at its output - it acts as an amplifier. This ability to magnify weak signals makes the transistor an essential building block for electronics."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "nonlinear electronic component",
+        "p": "uses|via|represents|depends_on|measures|produces|reconstructs_with",
+        "s": "transistor"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Images\\Slide27.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 10\\Texts\\Slide27.txt"
+  },
+  "slide_id": "Slide27"
+}

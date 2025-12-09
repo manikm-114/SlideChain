@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T20:04:13.477300+00:00",
+  "text_length": 399,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s not forget neurological systems, like the human brain. The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions. Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning. Together, these neural networks form the foundation of our physiological systems.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"neurons\", \"category\": \"anatomy\"},\n    {\"term\": \"neural networks\", \"category\": \"anatomy\"},\n    {\"term\": \"inputs\", \"category\": \"signal_processing\"},\n    {\"term\": \"outputs\", \"category\": \"signal_processing\"},\n    {\"term\": \"reflexes\", \"category\": \"anatomy\"},\n    {\"term\": \"reasoning\", \"category\": \"anatomy\"}\n  ],\n  \"evidence\": [\n    \"The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions.\",\n    \"Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning.\",\n    \"Together, these neural networks form the foundation of our physiological systems.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "inputs",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "The brain is a complex system of billions of neurons that process inputs from the environment and generate intelligent actions.",
+      "Neurons decide whether to fire based on inputs, passing signals that enable everything from basic reflexes to complex reasoning.",
+      "Together, these neural networks form the foundation of our physiological systems."
+    ]
+  }
+}

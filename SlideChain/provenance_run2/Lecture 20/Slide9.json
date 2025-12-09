@@ -1,0 +1,90 @@
+{
+  "lecture": "Lecture 20",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The MRI scanner uses three separate gradient coils, which produce fields we call B-X, B-Y, and B-Z.",
+            "modalities": [
+              "text"
+            ],
+            "o": "gradient coils",
+            "p": "uses",
+            "s": "MRI scanner"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "Controlled Variations"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "The large superconducting magnet provides the strong, uniform B-zero field-that's our background magnetic field. But to create spatial encoding for imaging, we also need additional gradient fields.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "B-zero field",
+            "p": "uses",
+            "s": "Gradient Coils"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "By wiring the coils in specific patterns, we can make the magnetic field vary linearly along any chosen direction"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "To create spatial encoding for imaging, we also need additional gradient fields."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "spatial encoding for imaging",
+        "p": "represents",
+        "s": "gradient coils"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "image reconstruction"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "provides the strong, uniform B-zero field-that\u2019s our background magnetic field.",
+            "modalities": [
+              "text"
+            ],
+            "o": "strong, uniform B-zero field",
+            "p": "produces",
+            "s": "large superconducting magnet"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Images\\Slide9.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 20\\Texts\\Slide9.txt"
+  },
+  "slide_id": "Slide9"
+}

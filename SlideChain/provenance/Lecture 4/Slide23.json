@@ -1,0 +1,129 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "shift-invariance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linear"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous-time convolution integral"
+          },
+          {
+            "category": "signal_processing",
+            "term": "sampling property of the delta function"
+          },
+          {
+            "category": "mathematics",
+            "term": "mathematically well defined"
+          }
+        ],
+        "evidence": [
+          "system\u2019s response to a delta function",
+          "shifting the input shifts the output in the same way - that\u2019s shift-invariance",
+          "Because the system is linear",
+          "This operation, convolution, lies at the heart of modeling and understanding them",
+          "continuous-time convolution integral",
+          "utilized the sampling property of the delta function",
+          "mathematically well defined"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "If we shift the delta to t minus tau, the output becomes h of t minus tau."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "h(t)",
+        "p": "depends_on",
+        "s": "System Output (Continuous)"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "mathematically well defined"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "collecting all the weighted impulse responses across time"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "shift-invariance"
+          },
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "delta function"
+          },
+          {
+            "category": "signal_processing",
+            "term": "weighted impulse responses"
+          },
+          {
+            "category": "signal_processing",
+            "term": "continuous-time convolution integral"
+          }
+        ],
+        "evidence": [
+          "If we shift the input by t minus tau, the output becomes h of t minus tau. In other words, shifting the input shifts the output in the same way - that\u2019s shift-invariance.",
+          "Because the system is linear, the output also gets scaled - giving us x of tau times h of t minus tau.",
+          "To build the full output for a general input signal, we integrate over all time - summing these scaled and shifted responses.",
+          "This is how linear, shift-invariant systems behave in continuous time - and this operation, convolution, lies at the heart of modeling and understanding them."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "Shifting the input shifts the output in the same way - that\u2019s shift-invariance.",
+            "modalities": [
+              "text"
+            ],
+            "o": "h of t minus tau",
+            "p": "represents",
+            "s": "shift-invariance"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide23.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide23.txt"
+  },
+  "slide_id": "Slide23"
+}

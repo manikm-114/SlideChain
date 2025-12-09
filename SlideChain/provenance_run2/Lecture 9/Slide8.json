@@ -1,0 +1,161 @@
+{
+  "lecture": "Lecture 9",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "rectangular pulse"
+          },
+          {
+            "category": "signal_processing",
+            "term": "edge effects"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "signal_processing",
+            "term": "periodically extended"
+          },
+          {
+            "category": "signal_processing",
+            "term": "composite output"
+          }
+        ],
+        "evidence": [
+          "perform a linear convolution",
+          "circular convolution example",
+          "a simple rectangular pulse",
+          "edge effects caused by the circular extension",
+          "we often use zero-padding",
+          "x of n is now periodically extended",
+          "the green section in the middle is the portion unaffected by edge effects"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "If we take these two signals and perform a linear convolution - shown in the third plot - we get a series of triangular shapes.",
+            "modalities": [
+              "text"
+            ],
+            "o": "triangular shapes",
+            "p": "produces",
+            "s": "linear convolution"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Notice what happens: instead of three clean, separate triangles, the edges wrap around, and the red and blue parts start overlapping. These are edge effects caused by the circular extension.",
+            "modalities": [
+              "text"
+            ],
+            "o": "edge effects",
+            "p": "produces",
+            "s": "circular convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "linear convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "circular convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "edge effects"
+          },
+          {
+            "category": "signal_processing",
+            "term": "zero-padding"
+          },
+          {
+            "category": "software",
+            "term": "MATLAB"
+          }
+        ],
+        "evidence": [
+          "convolving two rectangular pulses produces a triangle",
+          "the red and blue parts start overlapping",
+          "to avoid these unwanted overlaps in circular convolution, we often use zero-padding",
+          "we'll explore this zero-padding step in detail in a few slides, and you'll see how MATLAB handles it"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.0,
+            "evidence": "h of n, shown in the first plot - a simple rectangular pulse.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "simple rectangular pulse",
+            "p": "uses",
+            "s": "h of n"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "We would need zero padding here!"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "Then we have x of n in the second plot - think of it as three rectangular pulses in a row, one shown in red and the other two in blue."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "three rectangular pulses in a row, one shown in red and the other two in blue",
+        "p": "represents",
+        "s": "X(n)"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "MATLAB"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "x of n is now periodically extended with N samples per period"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "periodically extended with N samples per period",
+        "p": "represents",
+        "s": "x  N of n"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Images\\Slide8.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 9\\Texts\\Slide8.txt"
+  },
+  "slide_id": "Slide8"
+}

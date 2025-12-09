@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide32",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"modern CT scanners\", \"p\":\"uses\", \"o\":\"1,000 projections\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"In modern CT scanners, such as those from GE or Siemens, a typical rotation collects about 1,000 projections\"},\n    {\"s\":\"detector array\", \"p\":\"captures\", \"o\":\"thousands of data points\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"At each projection, the detector array works like a comb beam or multi-row detector, capturing thousands of data points along each ray path\"},\n    {\"s\":\"image quality\", \"p\":\"depends_on\", \"o\":\"angular sampling intervals\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Angular sampling is also critical. If you have nearly 1,000 views around the object, image quality is good. Using fewer views leads to aliasing artifacts and lower image quality\"},\n    {\"s\":\"image quality\", \"p\":\"depends_on\", \"o\":\"detector element sizes\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To resolve fine details,",
+  "parsed": {
+    "s": "image quality",
+    "p": "depends_on",
+    "o": "angular sampling intervals",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Angular sampling is also critical. If you have nearly 1,000 views around the object, image quality is good. Using fewer views leads to aliasing artifacts and lower image quality"
+    ]
+  }
+}

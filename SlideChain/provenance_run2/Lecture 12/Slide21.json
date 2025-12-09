@@ -1,0 +1,143 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray attenuation"
+          },
+          {
+            "category": "physics",
+            "term": "absorbed"
+          },
+          {
+            "category": "physics",
+            "term": "scattered"
+          },
+          {
+            "category": "physics",
+            "term": "contrast"
+          },
+          {
+            "category": "physics",
+            "term": "quality of the images"
+          }
+        ],
+        "evidence": [
+          "the way X-rays are attenuated by different tissues or materials",
+          "some of them are absorbed, some are scattered",
+          "valuable diagnostic information is encoded",
+          "Understanding attenuation is crucial because it directly determines the contrast and quality of the images"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction.",
+            "modalities": [
+              "text"
+            ],
+            "o": "scatter",
+            "p": "depends_on",
+            "s": "X-ray attenuation"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "It\u2019s in this process - the way X-rays are attenuated by different tissues or materials - that valuable diagnostic information is encoded. Understanding attenuation is crucial because it directly determines the contrast and quality of the images we can produce.",
+            "modalities": [
+              "text"
+            ],
+            "o": "contrast and quality of the images",
+            "p": "measures",
+            "s": "X-ray attenuation"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray Attenuation"
+          },
+          {
+            "category": "physics",
+            "term": "Scatter"
+          }
+        ],
+        "evidence": [
+          "Once X-rays are produced by the tube, or in some cases by a synchrotron radiation source, we use them to probe an object or a patient.",
+          "As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction.",
+          "Understanding attenuation is crucial because it directly determines the contrast and quality of the images we can produce."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "contrast and quality of the images"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "Once X-rays are produced by the tube, or in some cases by a synchrotron radiation source, we use them to probe an object or a patient."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "X-ray Source",
+        "p": "depends_on",
+        "s": "X-ray attenuation"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-ray attenuation"
+          },
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "physics",
+            "term": "synchrotron radiation source"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "modality",
+            "term": "diagnostic information"
+          },
+          {
+            "category": "modality",
+            "term": "contrast"
+          }
+        ],
+        "evidence": [
+          "Once X-rays are produced by the tube, or in some cases by a synchrotron radiation source, we use them to probe an object or a patient. As the X-rays travel through matter, some of them are absorbed, some are scattered, and some pass through with little interaction.",
+          "Understanding attenuation is crucial because it directly determines the contrast and quality of the images we can produce."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide21.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide21.txt"
+  },
+  "slide_id": "Slide21"
+}

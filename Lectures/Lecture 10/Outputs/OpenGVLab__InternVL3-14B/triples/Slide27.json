@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide27",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"transistor\",\n      \"p\": \"produces\",\n      \"o\": \"amplification\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"A transistor takes a small signal at its input and produces a much larger version of the same signal shape at its output — it acts as an amplifier.\"\n    },\n    {\n      \"s\": \"transistor\",\n      \"p\": \"depends_on\",\n      \"o\": \"diode\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"If we combine two diodes in a specific configuration, we create a transistor.\"\n    },\n    {\n      \"s\": \"logic gates\",\n      \"p\": \"produces\",\n      \"o\": \"circuits\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"By connecting logic gates, we can create circuits that add, multiply, store data, and make decisions — the very basis of digital computers.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "transistor",
+        "p": "produces",
+        "o": "amplification",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "A transistor takes a small signal at its input and produces a much larger version of the same signal shape at its output - it acts as an amplifier."
+      },
+      {
+        "s": "transistor",
+        "p": "depends_on",
+        "o": "diode",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "If we combine two diodes in a specific configuration, we create a transistor."
+      },
+      {
+        "s": "logic gates",
+        "p": "produces",
+        "o": "circuits",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By connecting logic gates, we can create circuits that add, multiply, store data, and make decisions - the very basis of digital computers."
+      }
+    ]
+  }
+}

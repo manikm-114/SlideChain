@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide49",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWhen we think about the point spread function, or PSF, we are asking: how does the imaging system represent a single point source of radiation? \n\nIdeally, if you had a perfect gamma camera, one point of activity in the patient would appear as one sharp point in the image.\nIn practice, because of the intrinsic resolution of the scintillation crystal, the photomultiplier tubes, and the electronics, the point source becomes blurred into a Gaussian-shaped distribution. That Gaussian curve is what you would expect from the use of the camera and collimator.\n\nHowever, once you place the patient between the tracer and the detector, Compton scattering adds a complication. Many photons scatter inside the body before reaching the detector, and those scattered photons broaden the distribution. Instead of a neat Gaussian, the PSF develops a long tail—photons detected in places far from the true source location.\nThis long tail is undesirable because it reduces spatial resolution and creates image blur. That is why we use techniques like pulse height analysis to reject scattered photons, keeping only the primary gamma rays.\n\nSo the main lesson here is: the Gaussian-like PSF represents the best-case resolution of the gamma camera, but Compton scattering stretches the PSF, adding tails and degrading image quality. Understanding and controlling this spread is fundamental to improving nuclear medicine imaging.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"point source\", \"p\":\"represents\", \"o\":\"Gaussian-shaped distribution\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"In practice, because of the intrinsic resolution of the scintillation crystal, the photomultiplier tubes, and the electronics, the point source becomes blurred into a Gaussian-shaped distribution.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "point source",
+        "p": "represents",
+        "o": "Gaussian-shaped distribution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "In practice, because of the intrinsic resolution of the scintillation crystal, the photomultiplier tubes, and the electronics, the point source becomes blurred into a Gaussian-shaped distribution."
+      }
+    ]
+  }
+}

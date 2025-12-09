@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T14:36:11.473713+00:00",
+  "text_length": 1692,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nIn the next lecture, we’ll move into optical imaging, but before that, let’s look at how ultrasound and optical imaging can be combined to create a powerful new imaging technique known as photoacoustic tomography. The idea is shown here. Imagine you inject an animal with contrast agents — in this case, graphene-based microbubbles. Once these microbubbles are introduced, they enhance the ultrasound signal because the presence of microbubbles makes acoustic reflections stronger.\n\nNow, graphene has an interesting property: it can absorb light energy and convert it into heat. So, when you shine near-infrared light pulses onto the tissue, the graphene microbubbles absorb the light and heat up slightly. This heating causes a tiny thermal expansion — the microbubbles expand and contract in response to the pulsed laser. Each laser pulse causes a brief expansion followed by cooling, and this mechanical vibration generates an acoustic wave, much like a sound pulse. These acoustic waves are then detected by an ultrasound transducer.\n\nSo, you can think of the process as a chain: near-infrared excitation leads to graphene absorption, which causes heating and thermal expansion, generating acoustic waves that are picked up by an ultrasonic detector. From these signals, you can construct an image for diagnosis. The advantage is that the contrast is introduced optically, while the detection is done acoustically, giving both sensitivity and depth penetration. In addition, some of these microbubbles can be used for therapeutic applications — for example, targeted drug delivery. There’s a lot of exciting research happening in this area, exploring both diagnostic and therapeutic uses.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"Graphene-PVA Microbubbles\",\n      \"p\": \"uses\",\n      \"o\": \"NIR pulsed laser\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"Graphene-PVA Microbubbles are injected and absorb NIR pulsed laser light.\"\n    },\n    {\n      \"s\": \"Graphene-PVA Microbubbles\",\n      \"p\": \"produces\",\n      \"o\": \"Acoustic waves\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"The heating and thermal expansion of graphene microbubbles generates acoustic waves.\"\n    },\n    {\n      \"s\": \"NIR pulsed laser\",\n      \"p\": \"produces\",\n      \"o\": \"Acoustic waves\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.8,\n      \"evidence\": \"The NIR pulsed laser excites graphene microbubbles, which then generate acoustic waves via thermal expansion.\"\n    },\n    {",
+  "parsed": {
+    "s": "NIR pulsed laser",
+    "p": "produces",
+    "o": "Acoustic waves",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.8,
+    "evidence": [
+      "The NIR pulsed laser excites graphene microbubbles, which then generate acoustic waves via thermal expansion."
+    ]
+  }
+}

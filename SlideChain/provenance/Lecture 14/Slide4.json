@@ -1,0 +1,147 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "modality",
+            "term": "X-ray projection data"
+          },
+          {
+            "category": "reconstruction",
+            "term": "image reconstruction"
+          },
+          {
+            "category": "mathematics",
+            "term": "line integral"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "2D image reconstruction"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray source trajectory"
+          },
+          {
+            "category": "reconstruction",
+            "term": "projection"
+          },
+          {
+            "category": "data_processing",
+            "term": "complete data"
+          }
+        ],
+        "evidence": [
+          "collect X-ray projection data",
+          "reconstruct the image layer by layer",
+          "record the line integral-the total attenuation",
+          "2D image reconstruction",
+          "X-ray source trajectory",
+          "measured projection",
+          "complete data for accurate reconstruction"
+        ]
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "This ensures you have complete data for accurate reconstruction."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "accurate reconstruction",
+        "p": "ensures",
+        "s": "complete data"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "unimpeded data acquisition"
+          },
+          {
+            "category": "signal_processing",
+            "term": "X-ray measurements"
+          },
+          {
+            "category": "mathematics",
+            "term": "line integral"
+          },
+          {
+            "category": "reconstruction",
+            "term": "2D image reconstruction"
+          },
+          {
+            "category": "instrumentation",
+            "term": "X-ray source trajectory"
+          },
+          {
+            "category": "data_processing",
+            "term": "measured projection"
+          }
+        ],
+        "evidence": [
+          "X-ray measurements along every line passing through the region of interest",
+          "You need a measured projection corresponding to every line through the cross-section",
+          "This ensures you have complete data for accurate reconstruction"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "To achieve this, you need to have X-ray measurements along every line passing through the region of interest. For each X-ray, you want to record the line integral-the total attenuation along that path.",
+            "modalities": [
+              "text"
+            ],
+            "o": "line integral",
+            "p": "measures",
+            "s": "X-ray measurements"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "Always keep in mind the principle of unimpeded data acquisition"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "data_processing",
+        "term": "measured projection"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "To achieve this, you need to have X-ray measurements along every line passing through the region of interest. For each X-ray, you want to record the line integral-the total attenuation along that path.",
+            "modalities": [
+              "text"
+            ],
+            "o": "line integral",
+            "p": "measures",
+            "s": "X-ray projection data"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide4.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide4.txt"
+  },
+  "slide_id": "Slide4"
+}

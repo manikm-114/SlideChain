@@ -1,0 +1,46 @@
+{
+  "slide_id": "Slide8",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo far, we’ve looked at the Radon transform. But to actually reconstruct an image, we also need the inverse Radon transform. This process relies on something called the Fourier slice theorem.\n\nHere’s the idea in simpler terms. If we take the one-dimensional Fourier transform of a Radon transform projection profile at a specific angle phi, that result is the same as taking the two-dimensional Fourier transform of the object and looking along a line at that same angle phi.\n\nThat’s powerful because it means each projection we acquire gives us a slice, or a line, through the object’s 2D Fourier transform. When we combine all these slices from projections taken at many different angles, we can fill in the complete 2D Fourier transform of the object.\nAnd once we have the full 2D Fourier transform, we can simply apply the inverse two-dimensional Fourier transform to reconstruct the original image.\n\nThe diagram here shows this step by step. Each projection corresponds to one line in Fourier space. Change the angle, and you get another line, and then another. As we add up all these lines at different angles, the Fourier space is gradually filled. Finally, applying the inverse Fourier transform brings us back to a reconstructed image in real space.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"Radon transform\", \"category\": \"reconstruction\"},\n    {\"term\": \"inverse Radon transform\", \"category\": \"reconstruction\"},\n    {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"two-dimensional Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"Fourier space\", \"category\": \"frequency_domain\"},\n    {\"term\": \"projection\", \"category\": \"reconstruction\"},\n    {\"term\": \"2D Fourier transform\", \"category\": \"signal_processing\"},\n    {\"term\": \"inverse Fourier transform\", \"category\": \"reconstruction\"}\n  ],\n  \"evidence\": [\"So far, we’ve looked at the Radon transform. But to actually reconstruct an image, we also need the inverse Radon transform. This process relies on something called the Fourier slice theorem.\", \"Each projection corresponds to one line in Fourier space. Change the angle, and you get another line, and then another. As we add up all these lines at different angles, the Fourier space is gradually filled. Finally, applying the inverse Fourier transform brings us back to a reconstructed image.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Radon transform",
+        "category": "reconstruction"
+      },
+      {
+        "term": "inverse Radon transform",
+        "category": "reconstruction"
+      },
+      {
+        "term": "Fourier slice theorem",
+        "category": "mathematics"
+      },
+      {
+        "term": "two-dimensional Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "Fourier space",
+        "category": "frequency_domain"
+      },
+      {
+        "term": "projection",
+        "category": "reconstruction"
+      },
+      {
+        "term": "2D Fourier transform",
+        "category": "signal_processing"
+      },
+      {
+        "term": "inverse Fourier transform",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "So far, we’ve looked at the Radon transform. But to actually reconstruct an image, we also need the inverse Radon transform. This process relies on something called the Fourier slice theorem.",
+      "Each projection corresponds to one line in Fourier space. Change the angle, and you get another line, and then another. As we add up all these lines at different angles, the Fourier space is gradually filled. Finally, applying the inverse Fourier transform brings us back to a reconstructed image."
+    ]
+  }
+}

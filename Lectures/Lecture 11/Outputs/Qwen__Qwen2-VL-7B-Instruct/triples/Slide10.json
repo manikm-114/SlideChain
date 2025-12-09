@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide10",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T05:23:51.080928+00:00",
+  "text_length": 1730,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nMutual information, which we just discussed, is actually defined in terms of another very fundamental concept: entropy.\n\nSo, what is entropy in this context? Think of it as a measure of uncertainty. If you have a probability distribution that is very spread out and uniform, then you have a lot of uncertainty — you don’t really know what the outcome will be. That means the entropy is high.\nOn the other hand, if the distribution is sharply peaked — like a delta function, where one outcome is guaranteed — then there is no uncertainty. In that case, the entropy is very low, even zero.\n\nSo entropy tells us how much information, or how much unpredictability, is contained in a random variable. In information theory, this is a central concept because information itself is really about reducing uncertainty.\nNow, mutual information can be written as the difference between two entropies: the entropy of Y by itself, minus the entropy of Y given X. In other words, it measures how much uncertainty about Y is reduced when you know X. That’s exactly what we mean by “how much does X tell us about Y.”\nAgain, you don’t need to get bogged down in the formulas here. The key point is: entropy captures uncertainty, and mutual information measures how two variables share or reduce that uncertainty.\n\nFor our purposes, I just want you to know that these information-theoretic measures — KL divergence, mutual information, and entropy — are very powerful, but they are more advanced than what we need right now. Think of them as tools in the background, which complement the simpler measures like mean squared error.\n\nAnd with that, we will soon return to the more practical measures that are directly used in image quality assessment.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Entropy\", \"p\":\"measures\", \"o\":\"Uncertainty\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Entropy tells us how much information, or how much unpredictability, is contained in a random variable.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Entropy",
+        "p": "measures",
+        "o": "Uncertainty",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Entropy tells us how much information, or how much unpredictability, is contained in a random variable."
+      }
+    ]
+  }
+}

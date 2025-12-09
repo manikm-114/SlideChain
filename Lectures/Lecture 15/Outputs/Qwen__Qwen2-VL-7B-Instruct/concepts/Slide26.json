@@ -1,0 +1,51 @@
+{
+  "slide_id": "Slide26",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:57:05.874643+00:00",
+  "text_length": 1164,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s experiment with sensor spacing in fan-beam CT.\n\nIn our code, this is the D sensor value on line 26. By default, we set it to 1. But what happens if we change it?\nOn the left, we set D sensor equals 0.5. This means the detectors are closer together, giving us finer sampling. The result is higher resolution—you can clearly see the square shape, with only minor artifacts.\nIn the middle, we keep the D sensor equal to 1, the default value. The reconstruction is still decent, but not quite as sharp as when we used the smaller spacing.\nOn the right, we set D sensor equals 5. Now the detector spacing is wide, so we lose a lot of detail. The reconstruction looks blurred and distorted—the square shape is almost unrecognizable, more like a rounded blob.\n\nSo the key point here is: resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution.\nIn practice, of course, reducing sensor spacing increases data size and computational load. But if the spacing is too large, the resolution drops too much to be useful. Finding the right balance is part of designing and operating a CT system.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"sensor spacing\", \"category\": \"instrumentation\"},\n    {\"term\": \"resolution\", \"category\": \"physics\"},\n    {\"term\": \"fan-beam CT\", \"category\": \"modality\"},\n    {\"term\": \"D sensor value\", \"category\": \"software\"},\n    {\"term\": \"reconstruction\", \"category\": \"reconstruction\"},\n    {\"term\": \"data size\", \"category\": \"data_processing\"},\n    {\"term\": \"computational load\", \"category\": \"data_processing\"},\n    {\"term\": \"balance\", \"category\": \"algorithm\"}\n  ],\n  \"evidence\": [\n    \"The resolution is related to the sensor spacing (high spacing equals low resolution)\",\n    \"resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution\",\n    \"reduction in sensor spacing increases data size and computational load\",\n    \"if the spacing is too large, the resolution drops too much to be useful\",\n    \"finding the right balance is part of designing and operating a CT system\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "sensor spacing",
+        "category": "instrumentation"
+      },
+      {
+        "term": "resolution",
+        "category": "physics"
+      },
+      {
+        "term": "fan-beam CT",
+        "category": "modality"
+      },
+      {
+        "term": "D sensor value",
+        "category": "software"
+      },
+      {
+        "term": "reconstruction",
+        "category": "reconstruction"
+      },
+      {
+        "term": "data size",
+        "category": "data_processing"
+      },
+      {
+        "term": "computational load",
+        "category": "data_processing"
+      },
+      {
+        "term": "balance",
+        "category": "algorithm"
+      }
+    ],
+    "evidence": [
+      "The resolution is related to the sensor spacing (high spacing equals low resolution)",
+      "resolution is directly related to detector spacing. Smaller spacing means higher resolution. Larger spacing means lower resolution",
+      "reduction in sensor spacing increases data size and computational load",
+      "if the spacing is too large, the resolution drops too much to be useful",
+      "finding the right balance is part of designing and operating a CT system"
+    ]
+  }
+}

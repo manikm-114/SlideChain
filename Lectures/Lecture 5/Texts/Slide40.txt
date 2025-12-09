@@ -1,0 +1,22 @@
+Now that we’ve built up our understanding of Euler’s formula, we’re ready to transition from the real form of the Fourier series to the complex form.
+
+Let me start by reminding you of the real version. For a periodic function, f of t, we can write it as:
+  "a zero divided by two, plus the sum over n of a n times cosine of two pi n t, plus b n times sine of two pi n t."
+That’s the standard real Fourier series form. We’ve seen that it works well, but it requires us to carry around both sine and cosine terms—and two separate sets of coefficients.
+
+Now here’s the trick: using Euler’s formula, we can rewrite sine and cosine using complex exponentials.
+For example, cosine of two pi n t becomes:
+  "e to the power i times two pi n t, plus e to the power negative i times two pi n t, all divided by two."
+And sine of two pi n t becomes:
+  "e to the i two pi n t, minus e to the negative i two pi n t, all divided by two i."
+
+So what’s the point of doing this?
+Well, once we’ve written everything in terms of exponentials, we can merge the sine and cosine parts into one unified expression. Everything now becomes a sum of complex exponentials—no separate sine and cosine terms needed.
+
+Even more interesting, these exponential functions—like e to the i two pi n t—where n is any integer, actually form an orthonormal basis.
+That means: each function has unit length, and all the functions are mutually orthogonal. If you take the inner product of e to the i two pi m t and e to the i two pi n t, the result is:
+  "one, if m equals n; and zero, if m is not equal to n."
+This elegant structure is one of the biggest reasons we prefer the complex form in many applications. It makes the math cleaner, the derivations simpler, and the overall representation more compact.
+
+So in summary: by converting sine and cosine into exponentials using Euler’s identity, we arrive at a cleaner and more powerful way to express Fourier series. And this sets the stage for everything that follows in frequency analysis and Fourier transforms.
+Coming up next, we’ll write down the full complex form of the Fourier series.

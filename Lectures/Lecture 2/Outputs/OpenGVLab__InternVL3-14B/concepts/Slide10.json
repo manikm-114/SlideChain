@@ -1,0 +1,48 @@
+{
+  "slide_id": "Slide10",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"workspace\", \"category\": \"software\"},\n    {\"term\": \"variables\", \"category\": \"software\"},\n    {\"term\": \"save command\", \"category\": \"software\"},\n    {\"term\": \"load\", \"category\": \"software\"},\n    {\"term\": \"clear all\", \"category\": \"software\"},\n    {\"term\": \"clc\", \"category\": \"software\"},\n    {\"term\": \"close all\", \"category\": \"software\"},\n    {\"term\": \"who\", \"category\": \"software\"},\n    {\"term\": \"whos\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"the workspace is used to hold them\",\n    \"save all your current variables to a file\",\n    \"bring them back with load\",\n    \"clear all wipes out everything in the workspace\",\n    \"clc clears the command window\",\n    \"close any open figures\",\n    \"who gives you a simple list\",\n    \"whos gives more detail\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "workspace",
+        "category": "software"
+      },
+      {
+        "term": "variables",
+        "category": "software"
+      },
+      {
+        "term": "save command",
+        "category": "software"
+      },
+      {
+        "term": "load",
+        "category": "software"
+      },
+      {
+        "term": "clear all",
+        "category": "software"
+      },
+      {
+        "term": "close all",
+        "category": "software"
+      },
+      {
+        "term": "whos",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "the workspace is used to hold them",
+      "save all your current variables to a file",
+      "bring them back with load",
+      "clear all wipes out everything in the workspace",
+      "clc clears the command window",
+      "close any open figures",
+      "who gives you a simple list",
+      "whos gives more detail"
+    ]
+  }
+}

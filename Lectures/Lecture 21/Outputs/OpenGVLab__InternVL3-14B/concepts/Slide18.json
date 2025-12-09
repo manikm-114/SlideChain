@@ -1,0 +1,43 @@
+{
+  "slide_id": "Slide18",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"remaining intensity\", \"category\": \"physics\"},\n    {\"term\": \"half-value thickness\", \"category\": \"physics\"},\n    {\"term\": \"decibel\", \"category\": \"mathematics\"},\n    {\"term\": \"attenuation\", \"category\": \"physics\"},\n    {\"term\": \"logarithms\", \"category\": \"mathematics\"},\n    {\"term\": \"intensity\", \"category\": \"physics\"},\n    {\"term\": \"ultrasound\", \"category\": \"modality\"}\n  ],\n  \"evidence\": [\n    \"Calculate the remaining intensity\",\n    \"half-value thickness\",\n    \"negative 30 dB equals 10 log of I2 over 100 milliwatts\",\n    \"intensity is reduced by a factor of one thousand\",\n    \"using the decibel formula\",\n    \"I2 over I1 equals 0.5\",\n    \"ultrasound intensity drops by 50 percent\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "remaining intensity",
+        "category": "physics"
+      },
+      {
+        "term": "half-value thickness",
+        "category": "physics"
+      },
+      {
+        "term": "decibel",
+        "category": "mathematics"
+      },
+      {
+        "term": "logarithms",
+        "category": "mathematics"
+      },
+      {
+        "term": "intensity",
+        "category": "physics"
+      },
+      {
+        "term": "ultrasound",
+        "category": "modality"
+      }
+    ],
+    "evidence": [
+      "Calculate the remaining intensity",
+      "half-value thickness",
+      "negative 30 dB equals 10 log of I2 over 100 milliwatts",
+      "intensity is reduced by a factor of one thousand",
+      "using the decibel formula",
+      "I2 over I1 equals 0.5",
+      "ultrasound intensity drops by 50 percent"
+    ]
+  }
+}

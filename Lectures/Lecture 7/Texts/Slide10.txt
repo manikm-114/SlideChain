@@ -1,0 +1,41 @@
+Let’s now apply Parseval’s theorem to a practical example — the average power of a periodic signal.
+
+Here we’re working with a power signal, which is a signal that keeps oscillating over time, like a sine wave.
+The average power P of such a signal over one period — from minus capital T over 2 to plus capital T over 2 — is given by:
+P equals 1 over T, times the integral of the absolute value of x of t squared, d t.
+According to Parseval’s theorem for power signals, we can also express this using the Fourier series coefficients.So, power equals the sum of the absolute value squared of all c  n — the Fourier coefficients — from n equals minus infinity to infinity.
+
+Let’s go through the example.
+Suppose we have this signal:
+x of t equals 2 times sine of 100 t.
+That’s just a sinusoidal wave with amplitude 2 and frequency 100.
+Now, suppose this signal is the voltage across a unit resistor — that is, a resistor with resistance equal to 1 ohm.
+Then the instantaneous power is just the voltage squared, and the average power is the integral of the squared signal over one period, divided by T.
+
+Let’s calculate it first in the time domain:
+We square the signal:2 times sine of 100 t becomes 4 times sine squared of 100 t.
+When we compute the average of that over one period, we get:
+P equals 2.
+
+Now let’s do it in the frequency domain, using the Fourier series.
+We rewrite the sine wave using Euler’s formula:
+sine of 100 t equals e to the j 100 t minus e to the minus j 100 t, over 2 j.
+So our signal becomes:
+x of t equals 2 times that expression, which simplifies to:
+minus j e to the j 100 t, plus j e to the minus j 100 t.
+Comparing this to the general form of a Fourier series:
+x of t equals the sum of c  n times e to the j n omega naught t,we can identify the coefficients:
+c  1 equals minus j, andc  minus 1 equals plus j.
+
+Now we apply Parseval’s theorem:
+The total power is the sum of the squares of the magnitudes of these coefficients.
+So we compute:
+absolute value of c one squared, which is 1,plus absolute value of c minus one squared, also 1.
+Adding them gives us 2 — the same result we got in the time domain.
+
+This example shows how Parseval’s theorem works in practice.
+You can either:
+Square the signal and average it over time,or Decompose the signal into its sinusoidal components, square their coefficients, and sum them up.
+
+Either way, you’ll get the same result. That’s the beauty of Fourier analysis — it gives you two consistent views of the same signal.
+And this works not just for simple sine waves — it holds even when a signal is made up of many frequencies, including very high ones.Just square each coefficient, add them up, and you’ll know the total power of the signal.

@@ -1,0 +1,168 @@
+{
+  "lecture": "Lecture 3",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "capacitor"
+          },
+          {
+            "category": "physics",
+            "term": "voltage"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          },
+          {
+            "category": "physics",
+            "term": "current"
+          },
+          {
+            "category": "mathematics",
+            "term": "initial condition"
+          },
+          {
+            "category": "mathematics",
+            "term": "linearity"
+          },
+          {
+            "category": "mathematics",
+            "term": "relative change"
+          }
+        ],
+        "evidence": [
+          "A capacitor introduces a bit more complexity.",
+          "Its voltage depends on the integral of the current over time",
+          "plus an initial condition.",
+          "the system behaves linearly.",
+          "initial conditions affect our view of linearity",
+          "considering relative changes can be so useful"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Its voltage depends on the integral of the current over time",
+            "modalities": [
+              "text"
+            ],
+            "o": "integral of the current over time",
+            "p": "depends_on",
+            "s": "capacitor"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "Its voltage depends on the integral of the current over time, plus an initial condition",
+            "modalities": [
+              "text"
+            ],
+            "o": "initial condition",
+            "p": "depends_on",
+            "s": "capacitor"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [],
+        "evidence": [
+          "A capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition.",
+          "If we focus on the relative change-the change from that initial state-the system behaves linearly."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "A capacitor introduces a bit more complexity"
+          },
+          {
+            "category": "mathematics",
+            "term": "Its voltage depends on the integral of the current over time, plus an initial condition"
+          },
+          {
+            "category": "mathematics",
+            "term": "This shows how initial conditions affect our view of linearity"
+          },
+          {
+            "category": "mathematics",
+            "term": "and why considering relative changes can be so useful"
+          }
+        ],
+        "evidence": [
+          "A capacitor introduces a bit more complexity",
+          "Its voltage depends on the integral of the current over time, plus an initial condition",
+          "If we focus on the relative change-the change from that initial state-the system behaves linearly",
+          "This shows how initial conditions affect our view of linearity",
+          "and why considering relative changes can be so useful"
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "capacitor"
+          },
+          {
+            "category": "physics",
+            "term": "voltage"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          },
+          {
+            "category": "physics",
+            "term": "current"
+          },
+          {
+            "category": "signal_processing",
+            "term": "time"
+          },
+          {
+            "category": "mathematics",
+            "term": "initial condition"
+          },
+          {
+            "category": "mathematics",
+            "term": "relative change"
+          },
+          {
+            "category": "signal_processing",
+            "term": "linearity"
+          },
+          {
+            "category": "physics",
+            "term": "initial conditions"
+          }
+        ],
+        "evidence": [
+          "A capacitor introduces a bit more complexity. Its voltage depends on the integral of the current over time, plus an initial condition. If we focus on the relative change-the change from that initial state-the system behaves linearly. This shows how initial conditions affect our view of linearity, and why considering relative changes can be so useful."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 3\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

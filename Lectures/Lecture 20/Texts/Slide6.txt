@@ -1,0 +1,16 @@
+Now let’s talk about how the MRI system actually detects the signal. You don’t need to worry too much about the mathematical details here—think of this as a conceptual overview. The signal we receive from the patient contains both a real part and an imaginary part, and we often combine them into a complex form to make the analysis simpler.
+
+When we first learned about Fourier series, we started with real functions—things like sine and cosine. Later, we introduced complex notation, and suddenly the whole expression became much more compact, taking only about one-third of the space. That’s exactly what we’re doing here—it’s purely a mathematical convenience.
+
+So, we have two components: the real signal, written as S-R of t, and the imaginary signal, written as S-I of t. When we combine them, the total signal can be expressed as: S of omega equals the integral from negative infinity to positive infinity of the quantity S-R of t plus j times S-I of t, multiplied by e to the power of negative j omega t, integrated with respect to t. This simply represents the Fourier transform of our signal, showing how it behaves across different frequencies.
+
+Now, in practical terms, the signal detected by the MRI coil is an oscillating voltage. For a typical 1.5-tesla scanner, this voltage oscillates at around 63.9 megahertz—that’s an extremely high frequency—and its strength is only a few microvolts. Because it’s so high and so weak, it’s very difficult to digitize the signal directly.
+
+To make digitization possible, we first have to demodulate the signal—in other words, we shift it from that very high Larmor frequency down to a much lower intermediate frequency, usually around 10.7 megahertz.
+Here’s how that works: The analog signal coming from the preamplifier is sent into a demodulator, then through a quadrature mixer. The quadrature mixer separates the signal into two parts—often labeled “I” for the in-phase component, and “Q” for the quadrature, or ninety-degree phase-shifted, component. These two parts correspond to the real and imaginary signals we discussed earlier.
+
+After that, the signals pass through filters and variable-gain amplifiers to remove noise and adjust their strength. Finally, they go into two analog-to-digital converters, often called A–D converters, where the continuous analog signal is converted into discrete digital samples.
+Once this conversion is done, the signal enters the digital domain—from there, the computer can perform all kinds of mathematical operations, such as Fourier transforms, image reconstruction, and signal averaging.
+
+So, to summarize: the goal of this detection process is to convert a weak, high-frequency, analog signal into a lower-frequency, digital signal that can be handled by a computer. This step bridges the physical world of magnetic resonance with the digital world of image formation.
+These are primarily electrical engineering concepts, but understanding them gives you a complete picture of how MRI signal acquisition really works.

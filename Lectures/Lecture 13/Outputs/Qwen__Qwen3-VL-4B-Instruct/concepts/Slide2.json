@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide2",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T11:36:40.759340+00:00",
+  "text_length": 539,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s take a look at the roadmap: we’re at the CT Reconstruction milestone. Keep one core idea in mind from the physics background—the roles of the X-ray source, the detector, and how a measurement is formed. Each reading can be interpreted as a line integral of the attenuation coefficient along a straight ray. \n\u000bWith that model in place, we now focus on algorithms that invert those line integrals to recover cross-sectional images. If you’d like more depth on the geometry or notation, the companion reading for this module provides it\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\n      \"term\": \"the roles of the X-ray source, the detector, and how a measurement is formed\",\n      \"category\": \"physics\"\n    },\n    {\n      \"term\": \"each reading can be interpreted as a line integral of the attenuation coefficient along a straight ray\",\n      \"category\": \"mathematics\"\n    },\n    {\n      \"term\": \"algorithms that invert those line integrals to recover cross-sectional images\",\n      \"category\": \"reconstruction\"\n    }\n  ],\n  \"evidence\": [\n    \"Keep one core idea in mind from the physics background—the roles of the X-ray source, the detector, and how a measurement is formed.\",\n    \"Each reading can be interpreted as a line integral of the attenuation coefficient along a straight ray.\",\n    \"With that model in place, we now focus on algorithms that invert those line integrals to recover cross-sectional images.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "the roles of the X-ray source, the detector, and how a measurement is formed",
+        "category": "physics"
+      },
+      {
+        "term": "each reading can be interpreted as a line integral of the attenuation coefficient along a straight ray",
+        "category": "mathematics"
+      },
+      {
+        "term": "algorithms that invert those line integrals to recover cross-sectional images",
+        "category": "reconstruction"
+      }
+    ],
+    "evidence": [
+      "Keep one core idea in mind from the physics background-the roles of the X-ray source, the detector, and how a measurement is formed.",
+      "Each reading can be interpreted as a line integral of the attenuation coefficient along a straight ray.",
+      "With that model in place, we now focus on algorithms that invert those line integrals to recover cross-sectional images."
+    ]
+  }
+}

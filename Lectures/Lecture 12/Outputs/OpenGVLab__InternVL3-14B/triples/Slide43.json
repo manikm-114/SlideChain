@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"photon-counting CT\", \"p\":\"measures\", \"o\":\"K-edge imaging\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"That is exactly what a photon-counting detector provides. Instead of just two broad spectra, it measures photons across multiple energy bins.\"},\n    {\"s\":\"photon-counting CT\", \"p\":\"produces\", \"o\":\"chemically specific maps\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This allows us to do material decomposition and create chemically specific maps.\"},\n    {\"s\":\"photon-counting CT\", \"p\":\"reconstructs_with\", \"o\":\"contrast agents\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"the ability to map contrast agents and even nanoparticles with chemical specificity.\"},\n    {\"s\":\"K-edge imaging\", \"p\":\"depends_on\", \"o\":\"sharp K-edges\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"These materials have sharp K-edges at very specific energies. To detect and separate them reliably, we need true energy-resolved imaging.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "photon-counting CT",
+        "p": "measures",
+        "o": "K-edge imaging",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "That is exactly what a photon-counting detector provides. Instead of just two broad spectra, it measures photons across multiple energy bins."
+      },
+      {
+        "s": "photon-counting CT",
+        "p": "produces",
+        "o": "chemically specific maps",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This allows us to do material decomposition and create chemically specific maps."
+      },
+      {
+        "s": "photon-counting CT",
+        "p": "reconstructs_with",
+        "o": "contrast agents",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "the ability to map contrast agents and even nanoparticles with chemical specificity."
+      },
+      {
+        "s": "K-edge imaging",
+        "p": "depends_on",
+        "o": "sharp K-edges",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "These materials have sharp K-edges at very specific energies. To detect and separate them reliably, we need true energy-resolved imaging."
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "slide_id": "Slide40",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nTo test our new function, we write a quick script.\nWe choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.\nYou can also compare it to MATLAB’s built-in multiplication to check for accuracy.\nAnd here’s something to think about — this triple-loop method works, but it’s not fast. Later on, we’ll talk about how to rewrite this using vectorized operations to make it much more efficient.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"matrix_multiply\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"accuracy\", \"category\": \"software\"},\n    {\"term\": \"vectorized operations\", \"category\": \"software\"},\n    {\"term\": \"efficiency\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"To test our new function, we write a quick script.\", \n               \"We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.\", \n               \"You can also compare it to MATLAB’s built-in multiplication to check for accuracy.\", \n               \"And here’s something to think about — this triple-loop method works, but it’s not fast. Later on, we’ll talk about how to rewrite this using vectorized operations to make it much more efficient.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "matrix_multiply",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "accuracy",
+        "category": "software"
+      },
+      {
+        "term": "vectorized operations",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "To test our new function, we write a quick script.",
+      "We choose a matrix size n, generate two random n-by-n matrices A and B, and call our matrix_multiply function to compute the result.",
+      "You can also compare it to MATLAB’s built-in multiplication to check for accuracy.",
+      "And here’s something to think about - this triple-loop method works, but it’s not fast. Later on, we’ll talk about how to rewrite this using vectorized operations to make it much more efficient."
+    ]
+  }
+}

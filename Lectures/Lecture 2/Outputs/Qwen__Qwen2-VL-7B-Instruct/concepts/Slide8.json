@@ -1,0 +1,39 @@
+{
+  "slide_id": "Slide8",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T19:08:23.111884+00:00",
+  "text_length": 691,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow that you have MATLAB installed, let’s talk about how to launch it.\nIf you’re using Windows, just go to your start menu or applications folder and open MATLAB like any other program. On Linux, you’ll typically launch it from the terminal by typing matlab.\nOnce MATLAB starts, you’ll see what’s called the MATLAB desktop — this is the main environment where everything happens. You’ll notice a command window for typing code, a workspace that keeps track of your variables, a file browser, and an editor where you can write and save scripts.\nTake a few minutes to get familiar with this layout. Learning your way around now will help you feel more confident and efficient as we go forward.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"MATLAB\", \"category\": \"software\"},\n    {\"term\": \"MATLAB desktop\", \"category\": \"software\"},\n    {\"term\": \"command window\", \"category\": \"software\"},\n    {\"term\": \"workspace\", \"category\": \"software\"},\n    {\"term\": \"file browser\", \"category\": \"software\"},\n    {\"term\": \"editor\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"Once MATLAB starts, you’ll see what’s called the MATLAB desktop — this is the main environment where everything happens. You’ll notice a command window for typing code, a workspace that keeps track of your variables, a file browser, and an editor where you can write and save scripts.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "MATLAB",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB desktop",
+        "category": "software"
+      },
+      {
+        "term": "command window",
+        "category": "software"
+      },
+      {
+        "term": "workspace",
+        "category": "software"
+      },
+      {
+        "term": "file browser",
+        "category": "software"
+      },
+      {
+        "term": "editor",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "Once MATLAB starts, you'll see what's called the MATLAB desktop - this is the main environment where everything happens. You'll notice a command window for typing code, a workspace that keeps track of your variables, a file browser, and an editor where you can write and save scripts."
+    ]
+  }
+}

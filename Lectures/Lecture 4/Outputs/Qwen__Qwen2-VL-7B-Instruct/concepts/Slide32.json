@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide32",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:53:24.598927+00:00",
+  "text_length": 1554,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s bring all the cases together to write the full piecewise definition of the convolution result.\nWe’ve carefully stepped through five distinct intervals,\u000beach showing how the amount of overlap between f of t and g of t determines the value of the convolution.\nPutting everything together, we now have the complete solution.\n\nEach case — from full overlap, to partial overlap, to no overlap —\u000bcontributes a segment of the final output.\n\nThis leads to a piecewise-defined function, expressed as follows:\ny of t equals 0,          for t less than –2\ny of t equals –three-halves t squared plus 6, for t between –2 and 0\ny of t equals 6,             for t between 0 and 2\ny of t equals three-halves t squared minus 12 t plus 24, for t between 2 and 4\ny of t equals 0,          for t greater than or equal to 4\nWhen we plot these expressions, we get a smooth, continuous curve —\u000bit rises, flattens out in the middle, and then gradually falls again.\u000bIt forms a kind of bump, which is exactly what we expect\u000bas g of t slides over and past f of t.\n\nThis example gives us a complete, mathematical walkthrough of continuous convolution —\u000bfrom defining the problem, to analyzing it case by case, to combining all pieces into the final solution.\nIt beautifully demonstrates how convolution is built:\u000bby accumulating the area under the product of two functions —\u000beach one flipped, shifted, multiplied, and then integrated, step by step.\nIt’s a powerful blend of geometry and calculus,\u000band it’s absolutely foundational in signal processing and medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"piecewise-defined function\", \"category\": \"mathematics\"},\n    {\"term\": \"continuous convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"accumulation of area\", \"category\": \"mathematics\"},\n    {\"term\": \"flipped, shifted, multiplied, and integrated\", \"category\": \"signal_processing\"},\n    {\"term\": \"geometry and calculus\", \"category\": \"mathematics\"},\n    {\"term\": \"signal processing\", \"category\": \"signal_processing\"},\n    {\"term\": \"medical imaging\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"This example gives us a complete, mathematical walkthrough of continuous convolution\",\n    \"It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions\",\n    \"It’s a powerful blend of geometry and calculus, and it’s absolutely foundational in signal processing and medical imaging\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "piecewise-defined function",
+        "category": "mathematics"
+      },
+      {
+        "term": "continuous convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "geometry and calculus",
+        "category": "mathematics"
+      },
+      {
+        "term": "signal processing",
+        "category": "signal_processing"
+      },
+      {
+        "term": "medical imaging",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "This example gives us a complete, mathematical walkthrough of continuous convolution",
+      "It beautifully demonstrates how convolution is built: by accumulating the area under the product of two functions",
+      "It's a powerful blend of geometry and calculus, and it's absolutely foundational in signal processing and medical imaging"
+    ]
+  }
+}

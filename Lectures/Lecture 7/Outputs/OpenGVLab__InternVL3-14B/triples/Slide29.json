@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide29",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"represents\",\n      \"o\": \"sum of complex exponentials\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We write this function, s T of t, as a sum of delta functions at every multiple of T: s T of t equals the sum over n of delta of t minus n T. Now, since it's periodic, we can also express it as a sum of complex exponentials — that’s what a Fourier series does.\"\n    },\n    {\n      \"s\": \"Fourier series\",\n      \"p\": \"produces\",\n      \"o\": \"train of delta functions in the frequency domain\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"A sum of complex exponentials with equal spacing and equal weights becomes a train of delta functions in the frequency domain.\"\n    },\n    {\n      \"s\": \"s T of t\",\n      \"p\": \"transforms to\",\n      \"o\": \"(1 over T) times s 1 over T of u\",\n      \"modalities\":",
+  "parsed": {
+    "s": "Fourier series",
+    "p": "produces",
+    "o": "train of delta functions in the frequency domain",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "A sum of complex exponentials with equal spacing and equal weights becomes a train of delta functions in the frequency domain."
+    ]
+  }
+}

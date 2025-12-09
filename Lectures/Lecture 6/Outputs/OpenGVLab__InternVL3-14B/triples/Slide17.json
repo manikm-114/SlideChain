@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide17",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\n      \"s\": \"Fourier transform pair\",\n      \"p\": \"represents\",\n      \"o\": \"mapping from time domain to frequency domain and back\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"the Fourier transform pair...the forward transform takes you from time to frequency, and the inverse transform brings you back from frequency to time.\"\n    },\n    {\n      \"s\": \"forward Fourier transform\",\n      \"p\": \"produces\",\n      \"o\": \"frequency spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When we integrate this product across all time, we obtain f hat of u, also called the frequency spectrum or the Fourier transform of f of t.\"\n    },\n    {\n      \"s\": \"inverse Fourier transform\",\n      \"p\": \"reconstructs_with\",\n      \"o\": \"original signal\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"We take all those frequency components...and integrate over all frequencies. And what do we get? We reconstruct the original signal — f of t",
+  "parsed": {
+    "s": "forward Fourier transform",
+    "p": "produces",
+    "o": "frequency spectrum",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.9,
+    "evidence": [
+      "When we integrate this product across all time, we obtain f hat of u, also called the frequency spectrum or the Fourier transform of f of t."
+    ]
+  }
+}

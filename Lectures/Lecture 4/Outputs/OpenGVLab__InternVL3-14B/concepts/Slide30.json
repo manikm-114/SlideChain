@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide30",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"convolution\", \"category\": \"signal_processing\"},\n    {\"term\": \"overlap\", \"category\": \"signal_processing\"},\n    {\"term\": \"integral\", \"category\": \"mathematics\"},\n    {\"term\": \"product of functions\", \"category\": \"mathematics\"},\n    {\"term\": \"flipped and shifted version\", \"category\": \"signal_processing\"},\n    {\"term\": \"parabolic curve\", \"category\": \"mathematics\"},\n    {\"term\": \"partial overlap\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"No overlap means no contribution to the integral, and the output is zero.\",\n    \"Convolution is constructed from slices of overlapping areas — and in each case, we’re summing the product over those intervals of overlap.\",\n    \"3 times the integral of (–tau + 2), from 0 to 2 plus t.\",\n    \"y of t equals negative three-halves t squared plus 6.\",\n    \"Convolution is constructed from slices of overlapping areas — and in each case, we’re summing the product over those intervals of overlap.\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "convolution",
+        "category": "signal_processing"
+      },
+      {
+        "term": "overlap",
+        "category": "signal_processing"
+      },
+      {
+        "term": "integral",
+        "category": "mathematics"
+      },
+      {
+        "term": "flipped and shifted version",
+        "category": "signal_processing"
+      },
+      {
+        "term": "parabolic curve",
+        "category": "mathematics"
+      },
+      {
+        "term": "partial overlap",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "No overlap means no contribution to the integral, and the output is zero.",
+      "Convolution is constructed from slices of overlapping areas - and in each case, we’re summing the product over those intervals of overlap.",
+      "3 times the integral of (-tau + 2), from 0 to 2 plus t.",
+      "y of t equals negative three-halves t squared plus 6.",
+      "Convolution is constructed from slices of overlapping areas - and in each case, we’re summing the product over those intervals of overlap."
+    ]
+  }
+}

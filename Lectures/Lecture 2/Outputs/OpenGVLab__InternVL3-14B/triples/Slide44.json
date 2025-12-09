@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide44",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"produces\",\n      \"o\": \"smooth 3D cone\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"It’s a simple example, but it shows the power of MATLAB for 3D visualization.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"surf\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"use surf to plot it.\"\n    },\n    {\n      \"s\": \"MATLAB\",\n      \"p\": \"uses\",\n      \"o\": \"cylinder function\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 1.0,\n      \"evidence\": \"Then we call the cylinder function to generate the geometry\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "produces",
+        "o": "smooth 3D cone",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "It’s a simple example, but it shows the power of MATLAB for 3D visualization."
+      },
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "surf",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "use surf to plot it."
+      },
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "cylinder function",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Then we call the cylinder function to generate the geometry"
+      }
+    ]
+  }
+}

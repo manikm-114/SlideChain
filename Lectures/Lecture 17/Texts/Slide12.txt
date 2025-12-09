@@ -1,0 +1,7 @@
+Let’s keep going and look further into this constant weight idea. You’ll notice I put a green button here, and what I want to show is how you can eliminate the location dependence—meaning the weighting factor no longer depends on the source position "a."
+
+When you have two factors, each one representing a probability, you multiply them together. The source position cancels out in the exponent when you do this multiplication. You can actually apply this same concept to SPECT imaging. In SPECT, which uses single photon emission, if you put detectors on both sides and take two measurements—one on each side—you can multiply those measurements together.
+
+When you multiply the measured signals, you end up with the concentration of the radiotracer squared—it appears as a square here because you measured along both paths. Technically, you’re combining two partial attenuation factors: one from "a" to detector d1, and one from "a" to detector d2. When you multiply them, the exponentials add up, and the weighting factor becomes constant with respect to the source location.
+
+So it seems, at first glance, like SPECT imaging can have a constant weighting factor for these combined measurements, just like paired photon emission in PET, which already has constant weighting. But, be careful—real life is not always this simple. There are practical limitations and differences in how signals behave, so always question whether these theoretical simplifications hold up in practice.

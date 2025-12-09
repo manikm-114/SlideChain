@@ -1,0 +1,101 @@
+{
+  "lecture": "Lecture 15",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "modality",
+        "term": "CT simulation"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "R is the sinogram, the input data we\u2019ve collected"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "sinogram",
+        "p": "depends_on",
+        "s": "iradon"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "software",
+        "term": "MATLAB"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "workflow",
+        "term": "radon simulates the projections"
+      },
+      "triples": {
+        "confidence": 0.98,
+        "evidence": [
+          "I equals reconstructed image"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "reconstructed image",
+        "p": "produces",
+        "s": "iradon"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "radon"
+          },
+          {
+            "category": "reconstruction",
+            "term": "iradon"
+          },
+          {
+            "category": "data_processing",
+            "term": "sinogram"
+          },
+          {
+            "category": "mathematics",
+            "term": "rotation angles"
+          },
+          {
+            "category": "signal_processing",
+            "term": "interpolation"
+          },
+          {
+            "category": "reconstruction",
+            "term": "filtered back-projection"
+          },
+          {
+            "category": "reconstruction",
+            "term": "radon transform"
+          },
+          {
+            "category": "reconstruction",
+            "term": "reconstructed image"
+          }
+        ],
+        "evidence": [
+          "This function performs back-projection for parallel-beam sinograms, and it can also carry out filtered back-projection if we choose.",
+          "Together, they form the foundation of CT simulation in MATLAB."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Images\\Slide18.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 15\\Texts\\Slide18.txt"
+  },
+  "slide_id": "Slide18"
+}

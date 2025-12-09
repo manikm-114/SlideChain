@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide48",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"gamma camera\", \"p\":\"depends_on\", \"o\":\"intrinsic resolution\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"First, there’s the intrinsic resolution of the gamma camera itself.\"},\n    {\"s\":\"gamma camera\", \"p\":\"depends_on\", \"o\":\"geometry of the collimator\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Second, the geometry of the collimator plays a major role.\"},\n    {\"s\":\"gamma camera\", \"p\":\"depends_on\", \"o\":\"Compton scattering\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Third, Compton scattering inside the patient adds another layer of uncertainty.\"},\n    {\"s\":\"system resolution\", \"p\":\"represents\", \"o\":\"square root of the sum of the squares of the three main contributions\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The overall resolution is then the square root of that sum.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "gamma camera",
+        "p": "depends_on",
+        "o": "intrinsic resolution",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "First, there’s the intrinsic resolution of the gamma camera itself."
+      },
+      {
+        "s": "gamma camera",
+        "p": "depends_on",
+        "o": "geometry of the collimator",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Second, the geometry of the collimator plays a major role."
+      },
+      {
+        "s": "gamma camera",
+        "p": "depends_on",
+        "o": "Compton scattering",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "Third, Compton scattering inside the patient adds another layer of uncertainty."
+      },
+      {
+        "s": "system resolution",
+        "p": "represents",
+        "o": "square root of the sum of the squares of the three main contributions",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The overall resolution is then the square root of that sum."
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "slide_id": "Slide37",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "concepts",
+  "raw_output": "```json\n{\n  \"concepts\": [\n    {\"term\": \"function\", \"category\": \"software\"},\n    {\"term\": \"scripts\", \"category\": \"software\"},\n    {\"term\": \"area\", \"category\": \"mathematics\"},\n    {\"term\": \"circumference\", \"category\": \"mathematics\"},\n    {\"term\": \"radius\", \"category\": \"mathematics\"},\n    {\"term\": \"pi\", \"category\": \"mathematics\"},\n    {\"term\": \"disp\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\n    \"function [area,circum] = circle(r)\",\n    \"M-file scripts:\",\n    \"area = pi*r^2;\",\n    \"circum = 2*pi*r;\",\n    \"disp([‘The area of a circle having radius ‘ num2str(r) ‘ is ‘ num2str(area)])\"\n  ]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "function",
+        "category": "software"
+      },
+      {
+        "term": "scripts",
+        "category": "software"
+      },
+      {
+        "term": "area",
+        "category": "mathematics"
+      },
+      {
+        "term": "circumference",
+        "category": "mathematics"
+      },
+      {
+        "term": "radius",
+        "category": "mathematics"
+      },
+      {
+        "term": "disp",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "function [area,circum] = circle(r)",
+      "M-file scripts:",
+      "area = pi*r^2;",
+      "circum = 2*pi*r;",
+      "disp([‘The area of a circle having radius ‘ num2str(r) ‘ is ‘ num2str(area)])"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide16",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nLet’s start our spectral analysis with a simple but quite subtle example.\n\nWe’ll create a signal that contains two different pure tones — one at one hundred hertz and the other at two hundred two point five hertz.\nIn MATLAB, we first set the sampling frequency, F s, to one thousand hertz. That means we take one thousand samples every second.\nNext, we create the time vector, t. It starts at zero seconds and increases in steps of zero, zero point zero zero one seconds — that’s one millisecond — until just before one second.\n\nNow, our signal x is built by adding two parts:\nFirst, a cosine wave with frequency one hundred hertz. In MATLAB, that’s written as: cosine of open parenthesis two times pi times one hundred times t close parenthesis.\nSecond, a sine wave with frequency two hundred two point five hertz. In MATLAB, that’s: sine of open parenthesis two times pi times two hundred two point five times t close parenthesis.\nWhen we add these two waveforms together, we get x, which contains both frequencies.\n\nIf we plot only the first one hundred samples, we can see the combined oscillations. Sometimes the waves reinforce each other, producing larger peaks; other times they partially cancel out, making smaller peaks.\nThis is the time-domain view. Next, we’ll use the Fourier transform to find these frequencies in the frequency domain — and then we’ll explore how zero-padding can help us make those frequencies stand out more clearly.  It takes some effort to appreciate the benefit of zero-padding!\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"MATLAB\", \"p\":\"uses\", \"o\":\"MATLAB\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"MATLAB\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "MATLAB",
+        "p": "uses",
+        "o": "MATLAB",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "MATLAB"
+      }
+    ]
+  }
+}

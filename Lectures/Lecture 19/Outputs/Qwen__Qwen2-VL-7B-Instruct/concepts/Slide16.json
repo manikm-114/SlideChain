@@ -1,0 +1,44 @@
+{
+  "slide_id": "Slide16",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T13:21:58.260890+00:00",
+  "text_length": 894,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nSo this is about the processional frequency on B. In the textbook, we actually mentioned this in the previous lecture..\n\nBut let’s focus on the conclusion. The derivation goes through all these steps, and if you take the time, you will understand the details.\nThe key point is this: the processional frequency is proportional to the local magnetic field. That means if the overall field is stronger, the M vector — or you can think of it as a spinning top — will process faster.\n\nSo just follow the picture here. The last line is very clear: the angular frequency of precession, omega, is proportional to the local magnetic field. If we call the main field B-naught, then omega is proportional to B-naught. Later on, if you change B-naught to B-prime, omega will be proportional to B-prime.\nAnd then you multiply by a physical constant, called gamma.\n\n So, in short, omega equals gamma times B.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"Processional Frequency on B\", \"category\": \"physics\"},\n    {\"term\": \"Angular Frequency of Precession\", \"category\": \"physics\"},\n    {\"term\": \"Local Magnetic Field\", \"category\": \"physics\"},\n    {\"term\": \"Proportional\", \"category\": \"mathematics\"},\n    {\"term\": \"Gamma\", \"category\": \"physics\"},\n    {\"term\": \"B\", \"category\": \"physics\"},\n    {\"term\": \"B-prime\", \"category\": \"physics\"}\n  ],\n  \"evidence\": [\n    \"The processional frequency is proportional to the local magnetic field.\",\n    \"The angular frequency of precession, omega, is proportional to the local magnetic field.\",\n    \"If we call the main field B-naught, then omega is proportional to B-naught.\",\n    \"Later on, if you change B-naught to B-prime, omega will be proportional to B-prime.\",\n    \"And then you multiply by a physical constant, called gamma.\",\n    \"So, in short, omega equals gamma times B.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "Processional Frequency on B",
+        "category": "physics"
+      },
+      {
+        "term": "Angular Frequency of Precession",
+        "category": "physics"
+      },
+      {
+        "term": "Local Magnetic Field",
+        "category": "physics"
+      },
+      {
+        "term": "Proportional",
+        "category": "mathematics"
+      },
+      {
+        "term": "Gamma",
+        "category": "physics"
+      },
+      {
+        "term": "B-prime",
+        "category": "physics"
+      }
+    ],
+    "evidence": [
+      "The processional frequency is proportional to the local magnetic field.",
+      "The angular frequency of precession, omega, is proportional to the local magnetic field.",
+      "If we call the main field B-naught, then omega is proportional to B-naught.",
+      "Later on, if you change B-naught to B-prime, omega will be proportional to B-prime.",
+      "And then you multiply by a physical constant, called gamma.",
+      "So, in short, omega equals gamma times B."
+    ]
+  }
+}

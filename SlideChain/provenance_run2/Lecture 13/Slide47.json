@@ -1,0 +1,86 @@
+{
+  "lecture": "Lecture 13",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": null,
+      "triples": null
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "sinogram"
+          },
+          {
+            "category": "data_processing",
+            "term": "projection profile"
+          }
+        ],
+        "evidence": [
+          "You get this projection profile-the sinogram."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "you get this projection profile"
+          },
+          {
+            "category": "signal_processing",
+            "term": "the sinogram"
+          }
+        ],
+        "evidence": [
+          "you get this projection profile-the sinogram."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "You get this projection profile-the sinogram.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "sinogram",
+            "p": "represents",
+            "s": "projection profile"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "reconstruction",
+            "term": "sinogram"
+          },
+          {
+            "category": "reconstruction",
+            "term": "projection profile"
+          }
+        ],
+        "evidence": [
+          "You get this projection profile-the sinogram."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Images\\Slide47.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 13\\Texts\\Slide47.txt"
+  },
+  "slide_id": "Slide47"
+}

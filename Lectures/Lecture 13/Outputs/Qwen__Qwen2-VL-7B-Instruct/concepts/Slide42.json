@@ -1,0 +1,47 @@
+{
+  "slide_id": "Slide42",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T07:28:13.493663+00:00",
+  "text_length": 249,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nMATLAB has toolbox commands that implement projection, filtering, and filtered backprojection. \n\nThe keyword is radon. You supply an image and theta. Theta can be a single value, which gives one projection, or an array, which gives many projections.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"radon\", \"category\": \"mathematics\"},\n    {\"term\": \"theta\", \"category\": \"mathematics\"},\n    {\"term\": \"projection\", \"category\": \"mathematics\"},\n    {\"term\": \"filtering\", \"category\": \"mathematics\"},\n    {\"term\": \"filtered backprojection\", \"category\": \"mathematics\"},\n    {\"term\": \"image\", \"category\": \"mathematics\"},\n    {\"term\": \"toolbox\", \"category\": \"software\"},\n    {\"term\": \"MATLAB\", \"category\": \"software\"}\n  ],\n  \"evidence\": [\"MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection.\"]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "radon",
+        "category": "mathematics"
+      },
+      {
+        "term": "theta",
+        "category": "mathematics"
+      },
+      {
+        "term": "projection",
+        "category": "mathematics"
+      },
+      {
+        "term": "filtering",
+        "category": "mathematics"
+      },
+      {
+        "term": "filtered backprojection",
+        "category": "mathematics"
+      },
+      {
+        "term": "image",
+        "category": "mathematics"
+      },
+      {
+        "term": "toolbox",
+        "category": "software"
+      },
+      {
+        "term": "MATLAB",
+        "category": "software"
+      }
+    ],
+    "evidence": [
+      "MATLAB has toolbox commands that implement projection, filtering, and filtered backprojection."
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide20",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "```json\n{\n  \"triples\": [\n    {\n      \"s\": \"FFT\",\n      \"p\": \"produces\",\n      \"o\": \"spectrum\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"When we take the FFT and plot the magnitude against frequency in hertz...\"\n    },\n    {\n      \"s\": \"FFT\",\n      \"p\": \"depends_on\",\n      \"o\": \"bin spacing\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"So, without zero-padding — and therefore without finer bin spacing — our frequency resolution is limited.\"\n    },\n    {\n      \"s\": \"frequencies at 202.5 Hz and 445.8 Hz\",\n      \"p\": \"are not well-resolved\",\n      \"o\": \"FFT bins\",\n      \"modalities\": [\"text\"],\n      \"confidence\": 0.9,\n      \"evidence\": \"The 202.5, 445.8 frequencies are not well-resolved; Frequencies are not discrete\"\n    }\n  ]\n}\n```",
+  "parsed": {
+    "triples": [
+      {
+        "s": "FFT",
+        "p": "produces",
+        "o": "spectrum",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "When we take the FFT and plot the magnitude against frequency in hertz..."
+      },
+      {
+        "s": "FFT",
+        "p": "depends_on",
+        "o": "bin spacing",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.9,
+        "evidence": "So, without zero-padding - and therefore without finer bin spacing - our frequency resolution is limited."
+      }
+    ]
+  }
+}

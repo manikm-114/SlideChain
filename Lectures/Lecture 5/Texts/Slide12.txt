@@ -1,0 +1,14 @@
+Now here’s a very important point — and one that’s often overlooked.A basis is not unique.
+
+Let’s begin with a simple analogy in two-dimensional space.In most problems, we use the standard coordinate system — with one unit vector along the x-axis and one along the y-axis.In that system, the basis vectors are: 1, 0 for the x-direction, and 0, 1 for the y-direction.
+But now imagine we rotate the coordinate system by some angle — let’s call it phi.
+After this rotation, we have a new set of axes — shown in red on the diagram.These new axes define a new basis, one that’s rotated by the angle phi.And here’s the key: this rotated basis is just as valid as the original one.
+Every point in the plane can still be represented using the new basis.The point hasn’t moved — only the coordinate system has changed.So the coordinates of the point relative to the new axes will be different, but the underlying geometry is the same.
+Mathematically, the new coordinates, which we’ll call x-prime and y-prime, are computed from the original coordinates x and y using this rotation:x-prime equals x times cosine phi, plus y times sine phi.y-prime equals negative x times sine phi, plus y times cosine phi.
+
+In matrix form, this looks like:opcosine phi, sine phi; negative sine phi, cosine phi,
+This is a classic rotation matrix — it rotates vectors by an angle phi in the plane.
+And this concept generalizes beautifully.In three dimensions, you can rotate about the x-axis, the y-axis, or the z-axis, producing new orthogonal bases in each case.You can also use combinations of these rotations — just like the lower diagram shows — rotating around alpha, beta, and gamma angles.
+And in n-dimensional space, the same principle applies.
+So what’s the takeaway?The basis you choose to describe vectors is not fixed.You can rotate it, change it, or switch to one that better fits the problem.This is especially useful in Fourier analysis, where we don’t just rotate axes — we build entirely new bases, like sine and cosine functions, to describe signals more effectively.
+So while the geometry remains unchanged, the coordinate description of a point — or a signal — depends on the basis you choose.That’s the power of flexible, non-unique bases in linear algebra and signal processing.

@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide25",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"SSIM\", \"p\":\"measures\", \"o\":\"similarity between signals x and y\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The Structural Similarity Index, or SSIM, is built by combining all three.\"},\n    {\"s\":\"SSIM\", \"p\":\"uses\", \"o\":\"luminance comparison, contrast comparison, and structural comparison\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We’ve defined three components: luminance comparison, contrast comparison, and structural comparison.\"},\n    {\"s\":\"SSIM\", \"p\":\"depends_on\", \"o\":\"parameters alpha, beta, and gamma\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"The parameters alpha, beta, and gamma simply allow us to adjust the relative importance of the three components.\"},\n    {\"s\":\"SSIM\", \"p\":\"uses\", \"o\":\"constants C1, C2, and C3\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"To keep the formula stable, we also include constants — C1, C2, and C3.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "SSIM",
+        "p": "uses",
+        "o": "luminance comparison, contrast comparison, and structural comparison",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We’ve defined three components: luminance comparison, contrast comparison, and structural comparison."
+      },
+      {
+        "s": "SSIM",
+        "p": "depends_on",
+        "o": "parameters alpha, beta, and gamma",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "The parameters alpha, beta, and gamma simply allow us to adjust the relative importance of the three components."
+      }
+    ]
+  }
+}

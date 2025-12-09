@@ -1,0 +1,119 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "Light diffusion"
+          },
+          {
+            "category": "modality",
+            "term": "X-ray imaging"
+          },
+          {
+            "category": "physics",
+            "term": "linear attenuation coefficient"
+          },
+          {
+            "category": "modality",
+            "term": "diffuse optical imaging"
+          },
+          {
+            "category": "algorithm",
+            "term": "inverse problems"
+          },
+          {
+            "category": "algorithm",
+            "term": "diffusion models"
+          }
+        ],
+        "evidence": [
+          "Light diffusion is the heart of the third part.",
+          "With X-ray imaging, rays go essentially straight.",
+          "you can explain it with the linear attenuation coefficient along that ray.",
+          "I showed you that little cartoon of scattering - Rayleigh at small scales, Mie at larger ones",
+          "diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image.",
+          "that\u2019s why we dig into diffusion models and inverse problems to see what can be recovered."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "With X-ray, the projection already looks like a picture.",
+            "modalities": [
+              "text"
+            ],
+            "o": "projection",
+            "p": "produces",
+            "s": "X-ray imaging"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "optical interactions carry rich biological information",
+            "modalities": [
+              "text"
+            ],
+            "o": "biological information",
+            "p": "measures",
+            "s": "optical imaging"
+          },
+          {
+            "confidence": 0.9,
+            "evidence": "diffuse optical imaging says, despite that strong scattering, we still want to reconstruct an image.",
+            "modalities": [
+              "text"
+            ],
+            "o": "image",
+            "p": "reconstructs_with",
+            "s": "diffuse optical imaging"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "reconstruction",
+        "term": "Reconstruction"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "signal is a line integral along the path"
+      },
+      "triples": {
+        "confidence": 0.8,
+        "evidence": [
+          "we want to make a good image behind the finger."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "image behind the finger",
+        "p": "reconstructs_with",
+        "s": "diffuse optical imaging"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "software",
+        "term": "feasible"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide28.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide28.txt"
+  },
+  "slide_id": "Slide28"
+}

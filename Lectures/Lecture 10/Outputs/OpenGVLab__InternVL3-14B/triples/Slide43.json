@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide43",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"gradient descent\", \"p\":\"uses\", \"o\":\"learning rate\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"One common approach is gradient descent. We start with an initial set of weights — often chosen randomly. Then, in each training step, we look at the slope of the error function with respect to each weight.\"},\n    {\"s\":\"gradient descent\", \"p\":\"measures\", \"o\":\"error\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"We measure the difference between the network’s current output and the target output using what we call a loss function, or an error function.\"},\n    {\"s\":\"weight vector\", \"p\":\"represents\", \"o\":\"parameters\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"As I mentioned earlier, when you start with a fresh network, its performance is usually terrible — the outputs are essentially random. The idea is to adjust the parameters — the weights, which we represent as a vector w — in such a way that the network’s predictions get closer and closer to the desired results.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "gradient descent",
+        "p": "uses",
+        "o": "learning rate",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "One common approach is gradient descent. We start with an initial set of weights - often chosen randomly. Then, in each training step, we look at the slope of the error function with respect to each weight."
+      },
+      {
+        "s": "gradient descent",
+        "p": "measures",
+        "o": "error",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "We measure the difference between the network’s current output and the target output using what we call a loss function, or an error function."
+      },
+      {
+        "s": "weight vector",
+        "p": "represents",
+        "o": "parameters",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "As I mentioned earlier, when you start with a fresh network, its performance is usually terrible - the outputs are essentially random. The idea is to adjust the parameters - the weights, which we represent as a vector w - in such a way that the network’s predictions get closer and closer to the desired results."
+      }
+    ]
+  }
+}

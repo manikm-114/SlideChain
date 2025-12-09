@@ -1,0 +1,168 @@
+{
+  "lecture": "Lecture 23",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "zoom lens"
+          },
+          {
+            "category": "physics",
+            "term": "focal length"
+          },
+          {
+            "category": "instrumentation",
+            "term": "magnification"
+          },
+          {
+            "category": "physics",
+            "term": "light rays"
+          },
+          {
+            "category": "instrumentation",
+            "term": "optical system"
+          },
+          {
+            "category": "modality",
+            "term": "microscopy"
+          },
+          {
+            "category": "modality",
+            "term": "photography"
+          },
+          {
+            "category": "instrumentation",
+            "term": "magnifying power"
+          },
+          {
+            "category": "instrumentation",
+            "term": "focus"
+          }
+        ],
+        "evidence": [
+          "zoom lens",
+          "focal length",
+          "magnification",
+          "light rays",
+          "optical system",
+          "microscopy",
+          "photography",
+          "magnifying power",
+          "focus"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "The zoom lens is designed so that by moving certain lens elements back and forth, you can continuously change the focal length.",
+            "modalities": [
+              "text"
+            ],
+            "o": "moving certain lens elements",
+            "p": "uses",
+            "s": "zoom lens"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "The blue, yellow, and green paths you see here represent different light rays being bent and refocused as the lenses shift.",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "different light rays",
+            "p": "represents",
+            "s": "zoom lens"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "By doing this, the system can magnify what you\u2019re looking at - that\u2019s the \u201czoom\u201d part.",
+            "modalities": [
+              "text"
+            ],
+            "o": "magnification",
+            "p": "produces",
+            "s": "zoom lens"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "instrumentation",
+        "term": "dynamically adjusting"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "exploring fine details"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The blue, yellow, and green paths you see here represent different light rays being bent and refocused as the lenses shift."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "different light rays being bent and refocused",
+        "p": "produces",
+        "s": "zoom lens"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "instrumentation",
+            "term": "zoom lens"
+          },
+          {
+            "category": "physics",
+            "term": "focal length"
+          },
+          {
+            "category": "instrumentation",
+            "term": "lens groups"
+          },
+          {
+            "category": "physics",
+            "term": "light rays"
+          },
+          {
+            "category": "instrumentation",
+            "term": "magnification"
+          },
+          {
+            "category": "modality",
+            "term": "microscopy"
+          },
+          {
+            "category": "modality",
+            "term": "photography"
+          }
+        ],
+        "evidence": [
+          "That\u2019s the basic idea behind zoom optics.",
+          "It\u2019s not just about bringing things closer - it\u2019s about dynamically adjusting magnification while keeping the image in focus.",
+          "And that ability to continuously zoom while maintaining clarity is one of the most powerful features of modern optical systems, especially in microscopy and photography."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Images\\Slide12.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 23\\Texts\\Slide12.txt"
+  },
+  "slide_id": "Slide12"
+}

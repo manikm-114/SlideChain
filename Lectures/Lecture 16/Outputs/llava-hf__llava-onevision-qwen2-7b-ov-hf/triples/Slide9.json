@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide9",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nThe physical principles of nuclear imaging can be summarized as follows.\nFirst, we use an unstable isotope as a tracer molecule, also called a radionuclide. This tracer can be administered in different ways — most commonly through intravenous injection, but in some cases, it can also be taken orally, for example, by drinking a small amount of radioactive liquid.\n\nOnce the tracer enters the body, it participates in normal metabolic processes. As it does so, it emits gamma rays from inside the body. These gamma rays are then detected, and the resulting measurements reflect the distribution of the tracer.\nWhat makes this so powerful is that the signal corresponds to metabolism and physiological function, rather than just anatomical structure. In other words, nuclear imaging allows us to see how tissues are working, not just how they look.\n\nThis sets the stage for us to compare nuclear imaging with X-ray imaging, and to highlight both the similarities and the important differences between them.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"radionuclide\", \"p\":\"uses\", \"o\":\"tracer molecule\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"This tracer can be administered in different ways — most commonly through intravenous injection, but in some cases, it can also be taken orally, for example, by drinking a small amount of radioactive liquid.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radionuclide",
+        "p": "uses",
+        "o": "tracer molecule",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "This tracer can be administered in different ways - most commonly through intravenous injection, but in some cases, it can also be taken orally, for example, by drinking a small amount of radioactive liquid."
+      }
+    ]
+  }
+}

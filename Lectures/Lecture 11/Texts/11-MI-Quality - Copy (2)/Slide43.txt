@@ -1,0 +1,8 @@
+In reality, things are rarely so clear-cut.
+
+Most of the time, the distributions of healthy and diseased patients overlap. That means the same measured value could belong either to a healthy individual or to someone with a disease.
+For example, suppose we run a blood test or measure a tumor-related biomarker. Healthy patients tend to cluster around one range, while diseased patients cluster around another. But because of biological variation, measurement noise, and overlapping physiology, there is no perfect separation.
+
+So when the two distributions overlap, a threshold placed in the middle will inevitably create two types of errors. Some diseased patients will fall below the threshold and be misclassified as healthy — these are false negatives. Some healthy patients will fall above the threshold and be misclassified as diseased — these are false positives.
+
+This overlap is exactly what forces us to think carefully about where to place the decision threshold. And it’s what makes tools like the ROC curve so valuable, because they let us analyze the trade-off between sensitivity and specificity across all possible thresholds.

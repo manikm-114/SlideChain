@@ -1,0 +1,40 @@
+{
+  "slide_id": "Slide13",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Medical X-ray imaging\", \"p\":\"uses\", \"o\":\"single projection image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray.\"},\n    {\"s\":\"Medical X-ray imaging\", \"p\":\"produces\", \"o\":\"volumetric image\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"When these slices are stacked together, they form a volumetric image of the entire body.\"},\n    {\"s\":\"Computed tomography\", \"p\":\"reconstructs_with\", \"o\":\"multiple views\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"computed tomography transforms those multiple views into a three-dimensional representation\"},\n    {\"s\":\"X-ray Source\", \"p\":\"produces\", \"o\":\"Beam\", \"modalities\":[\"image\"], \"confidence\":1.0, \"evidence\":\"X-ray Source\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Medical X-ray imaging",
+        "p": "uses",
+        "o": "single projection image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "On the left, you see the simpler and more cost-effective version: a single projection image, like a chest X-ray."
+      },
+      {
+        "s": "Medical X-ray imaging",
+        "p": "produces",
+        "o": "volumetric image",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "When these slices are stacked together, they form a volumetric image of the entire body."
+      },
+      {
+        "s": "Computed tomography",
+        "p": "reconstructs_with",
+        "o": "multiple views",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "computed tomography transforms those multiple views into a three-dimensional representation"
+      }
+    ]
+  }
+}

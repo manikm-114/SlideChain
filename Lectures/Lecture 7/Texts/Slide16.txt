@@ -1,0 +1,13 @@
+Now, let’s go back and revisit the question we just posed:If we take a continuous signal and convert it into discrete samples, can we still reconstruct the original signal?
+To explore that, let’s start with this example — a pure continuous wave.
+
+Here, we’ve plotted the function5 times sine of 2 pi 4 tThat’s a simple sine wave with amplitude 5 and frequency 4 cycles per second — or 4 hertz.
+And this signal is completely continuous in both time and amplitude.
+That means it's defined for every instant in time, not just selected points, and the values can take on any number, not just a limited set.
+This is the kind of signal you might get from an ideal microphone or sensor measuring vibration, sound, or light — in the real world, before any digital conversion takes place.
+
+But here’s the key point:
+The computer can’t store this curve as it is.So we need to figure out: How often do we need to sample this signal to capture all the important information?
+How dense should our sampling be, so that we don’t lose critical features?
+And that question brings us right to the Sampling Theorem — the mathematical foundation for how we digitize continuous signals without losing information.
+That’s exactly what we’ll examine next.

@@ -1,0 +1,108 @@
+{
+  "lecture": "Lecture 4",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "convolution"
+          },
+          {
+            "category": "signal_processing",
+            "term": "overlap"
+          },
+          {
+            "category": "mathematics",
+            "term": "integral"
+          },
+          {
+            "category": "signal_processing",
+            "term": "flipped and shifted version"
+          },
+          {
+            "category": "mathematics",
+            "term": "parabolic curve"
+          },
+          {
+            "category": "signal_processing",
+            "term": "partial overlap"
+          }
+        ],
+        "evidence": [
+          "No overlap means no contribution to the integral, and the output is zero.",
+          "Convolution is constructed from slices of overlapping areas - and in each case, we\u2019re summing the product over those intervals of overlap.",
+          "3 times the integral of (-tau + 2), from 0 to 2 plus t.",
+          "y of t equals negative three-halves t squared plus 6.",
+          "Convolution is constructed from slices of overlapping areas - and in each case, we\u2019re summing the product over those intervals of overlap."
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "No overlap means no contribution to the integral, and the output is zero.",
+            "modalities": [
+              "text"
+            ],
+            "o": "No overlap",
+            "p": "represents",
+            "s": "Case 1"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "So the convolution result in this case is a parabolic curve, rising as t approaches zero.",
+            "modalities": [
+              "text"
+            ],
+            "o": "parabolic curve",
+            "p": "produces",
+            "s": "Convolution"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "convolution result"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "mathematics",
+        "term": "y of t equals negative three-halves t squared plus 6."
+      },
+      "triples": {
+        "confidence": 0.95,
+        "evidence": [
+          "Case II: -2 \u2264 t < 0 g(t) partially overlaps f(t) Area under the product is"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "Area under the product is",
+        "p": "produces",
+        "s": "Case II: -2 \u2264 t < 0"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "integral"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Images\\Slide30.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 4\\Texts\\Slide30.txt"
+  },
+  "slide_id": "Slide30"
+}

@@ -1,0 +1,18 @@
+Let’s take a step further and talk about a powerful idea that shows up across science and engineering — and that’s sparsity.
+You can see the green button here, which means this concept is important, but it’s okay if the details feel abstract for now. Just follow the intuition.
+
+Traditionally, signal processing has focused on signals that are band-limited — which means their frequencies don’t go beyond a certain point. Based on that assumption, we rely on Nyquist sampling: sample at least twice the maximum frequency, and you can perfectly reconstruct the signal.
+
+But what if we go beyond that assumption?
+Modern theory says: you don’t always need to sample that densely. Instead of requiring a signal to be band-limited, we assume that it’s sparse in some domain. That means — in the right representation, most of the values are zero, or nearly zero.
+Think about images. They may look complex, but when you apply a wavelet transform — like the ones shown in the graphics — most of the wavelet coefficients are close to zero. Only a few carry meaningful information. This is sparsity.
+On the left, we have an illustration from the book Wavelets in Physics. It shows how signals in physics often exhibit localized spikes — sparse behavior. In the center and top-right, you see surfaces where most values are flat or close to zero, with just a few sharp peaks — again, sparse structure.
+
+Even in biology — like the cellular structure of a leaf — patterns emerge that are spatially compact and repeated. This biological system, shown on the right, is highly structured and organized. And this kind of structure is often sparse when expressed in the right basis.
+
+Now, here’s why sparsity matters.
+If you don’t have enough measurements to fully determine a signal — that is, if your system is underdetermined — then infinitely many solutions could explain the data. But if you know the signal is sparse, you can ask: among all possible solutions, which one is the sparsest?
+That’s the central idea behind compressed sensing.
+By assuming sparsity, and by choosing the solution with the fewest nonzero components, you can accurately recover the original signal — even from very limited data.
+
+So this concept — sparsity — is not just a mathematical trick. It’s something we see everywhere: in physics, in images, in biology, and in many natural and engineered systems. Recognizing it gives us a powerful way to reconstruct signals and solve problems more efficiently than ever before.

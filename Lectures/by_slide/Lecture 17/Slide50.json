@@ -1,0 +1,130 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide50",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide50.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide50.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "conference",
+              "category": "software"
+            },
+            {
+              "term": "meeting",
+              "category": "software"
+            },
+            {
+              "term": "Xi’an, China",
+              "category": "modality"
+            },
+            {
+              "term": "June 18 to 23, 2017",
+              "category": "workflow"
+            }
+          ],
+          "evidence": [
+            "So this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017.",
+            "It’s also home to the famous Terracotta Army, known as the eighth wonder of the world."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Xi'an\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Terracotta Army\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"China’s oldest ancient capital\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"starting point of the Silk Road\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"conference\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"meeting\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Xi’an, China\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"June 18 to 23, 2017\\\", \\\"category\\\": \\\"workflow\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"So this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017.\\\", \\\"It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"conference\", \"category\": \"software\"}, {\"term\": \"meeting\", \"category\": \"software\"}, {\"term\": \"Xi’an, China\", \"category\": \"modality\"}, {\"term\": \"June 18 to 23, 2017\", \"category\": \"workflow\"}], \"evidence\": [\"So this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017.\", \"It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Xi'an\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"conference\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Xi'an, China from June 18 to 23, 2017\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [],
+          "evidence": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [],\\n  \\\"evidence\\\": []\\n}\\n```\", \"parsed\": {\"concepts\": [], \"evidence\": []}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide50.json",
+        "parsed": {
+          "s": "Xi’an",
+          "p": "represents",
+          "o": "the starting point of the Silk Road",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 1.0,
+          "evidence": [
+            "As the start of the Silk Road"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"```json\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"Fully3D 2017\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"Xi’an, China\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"So this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Xi’an\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"China’s oldest ancient capital\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"Xi’an is the oldest ancient capital of China\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Xi’an\\\",\\n      \\\"p\\\": \\\"represents\\\",\\n      \\\"o\\\": \\\"the starting point of the Silk Road\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"As the start of the Silk Road\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"Xi’an\\\",\\n      \\\"p\\\": \\\"represents\\\",\", \"parsed\": {\"s\": \"Xi’an\", \"p\": \"represents\", \"o\": \"the starting point of the Silk Road\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": [\"As the start of the Silk Road\"]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fully3D 2017",
+              "category": "modality"
+            },
+            {
+              "term": "Silk Road",
+              "category": "algorithm"
+            },
+            {
+              "term": "Terracotta Army",
+              "category": "algorithm"
+            },
+            {
+              "term": "eighth wonder",
+              "category": "algorithm"
+            }
+          ],
+          "evidence": [
+            "Fully3D 2017",
+            "Xi'an is the oldest ancient capital of China",
+            "For 13 dynasties (Fully 13D)",
+            "As the start of the Silk Road",
+            "To the Terracotta Army (the 8th wonder)"
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T11:55:22.597891+00:00\", \"text_length\": 396, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fully3D 2017\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"Xi'an\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"China\\\", \\\"category\\\": \\\"anatomy\\\"},\\n    {\\\"term\\\": \\\"June 18-23, 2017\\\", \\\"category\\\": \\\"software\\\"},\\n    {\\\"term\\\": \\\"Silk Road\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"Terracotta Army\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"eighth wonder\\\", \\\"category\\\": \\\"algorithm\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"Fully3D 2017\\\",\\n    \\\"Xi'an is the oldest ancient capital of China\\\",\\n    \\\"For 13 dynasties (Fully 13D)\\\",\\n    \\\"As the start of the Silk Road\\\",\\n    \\\"To the Terracotta Army (the 8th wonder)\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Fully3D 2017\", \"category\": \"modality\"}, {\"term\": \"Silk Road\", \"category\": \"algorithm\"}, {\"term\": \"Terracotta Army\", \"category\": \"algorithm\"}, {\"term\": \"eighth wonder\", \"category\": \"algorithm\"}], \"evidence\": [\"Fully3D 2017\", \"Xi'an is the oldest ancient capital of China\", \"For 13 dynasties (Fully 13D)\", \"As the start of the Silk Road\", \"To the Terracotta Army (the 8th wonder)\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:33:48.717390+00:00\", \"text_length\": 396, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Fully3D 2017\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\", \\\"o\\\":\\\"Xi'an, China\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"Fully3D 2017 China, June 18-23, 2017\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide50.json",
+        "parsed": {
+          "concepts": [],
+          "evidence": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:14:47.428404+00:00\", \"text_length\": 396, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [],\\n  \\\"evidence\\\": []\\n}\", \"parsed\": {\"concepts\": [], \"evidence\": []}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide50.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide50\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:21:38.852476+00:00\", \"text_length\": 396, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nSo this is the website for the Fully3D 2017 meeting, which was held in Xi’an, China from June 18 to 23, 2017. If you are interested, you can take a look for more information about the conference, its location, and the history of Xi’an as China’s oldest ancient capital and the starting point of the Silk Road. It’s also home to the famous Terracotta Army, known as the eighth wonder of the world.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": []\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    }
+  }
+}

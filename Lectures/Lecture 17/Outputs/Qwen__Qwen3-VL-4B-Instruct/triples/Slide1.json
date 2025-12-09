@@ -1,0 +1,21 @@
+{
+  "slide_id": "Slide1",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-12T19:15:28.730773+00:00",
+  "text_length": 486,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nWelcome to Lecture 17 on SPECT and PET. Today, we’re finishing the nuclear imaging section. Before I explain the content of this lecture, let’s get started by recalling why these modalities matter in biomedical imaging. SPECT stands for Single Photon Emission Computed Tomography, and PET means Positron Emission Tomography.\n\nBoth enable molecular imaging and are vital for diagnostics, functional evaluation. They use specific tracers and detectors, which we’ll explore in detail today\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\n      \"s\": \"SPECT\",\n      \"p\": \"represents\",\n      \"o\": \"Single Photon Emission Computed Tomography\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"SPECT stands for Single Photon Emission Computed Tomography\"\n    },\n    {\n      \"s\": \"PET\",\n      \"p\": \"represents\",\n      \"o\": \"Positron Emission Tomography\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.9,\n      \"evidence\": \"PET means Positron Emission Tomography\"\n    },\n    {\n      \"s\": \"SPECT and PET\",\n      \"p\": \"measures\",\n      \"o\": \"molecular imaging\",\n      \"modalities\": [\n        \"text\",\n        \"image\"\n      ],\n      \"confidence\": 0.8,\n      \"evidence\": \"Both enable molecular imaging\"\n    },\n    {\n      \"s\": \"SPECT and PET\",\n      \"p\": \"depends_on\",\n      \"o\": \"specific tracers and detectors\",",
+  "parsed": {
+    "s": "SPECT and PET",
+    "p": "measures",
+    "o": "molecular imaging",
+    "modalities": [
+      "text",
+      "image"
+    ],
+    "confidence": 0.8,
+    "evidence": [
+      "Both enable molecular imaging"
+    ]
+  }
+}

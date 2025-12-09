@@ -1,0 +1,29 @@
+{
+  "slide_id": "Slide14",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-08T21:22:24.072412+00:00",
+  "text_length": 1583,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nLet’s now connect this idea directly to the delta function and its role in sampling.\nImagine you have a continuous function — let’s call it f of t. Now, if you multiply this function by a shifted delta function, specifically delta of t minus t naught, and then integrate, something powerful happens:\n\u000bYou end up extracting the value of f at t naught. In other words, the delta function acts like a perfect sampling tool.\nMathematically, this is shown through a limiting process. As the width of the delta function shrinks toward zero, its height increases — but the total area remains one. That’s key.\nInside this narrow window around t naught, the function f is essentially flat — and using the mean value theorem, we know there must be some point where the function's value equals the average over that interval. As the window becomes infinitesimally small, that point converges exactly to t naught.\nSo what do we get?\n\nThe integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught.\nThis is called the sampling property of the delta function. It’s as if the delta function \"reaches into\" the function and pulls out the value at a single point.\nEven more fascinating — we can actually rebuild any continuous function using this idea. By stacking many delta functions across time, each weighted by the function’s value at that point, we can reconstruct the entire function. Think of it like slicing the function into tiny pieces — each slice tells us something, and when you add them all together, you get the full picture again.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"delta function\", \"category\": \"mathematics\"},\n    {\"term\": \"sampling property\", \"category\": \"signal_processing\"},\n    {\"term\": \"mean value theorem\", \"category\": \"mathematics\"},\n    {\"term\": \"reconstruction\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"The delta function acts like a perfect sampling tool.\",\n    \"The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t — equals f of t naught.\",\n    \"By stacking many delta functions across time, each weighted by the function’s value at that point, we can reconstruct the entire function.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "delta function",
+        "category": "mathematics"
+      },
+      {
+        "term": "sampling property",
+        "category": "signal_processing"
+      },
+      {
+        "term": "mean value theorem",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "The delta function acts like a perfect sampling tool.",
+      "The integral from minus infinity to infinity of delta of t minus t naught, times f of t, d t - equals f of t naught.",
+      "By stacking many delta functions across time, each weighted by the function's value at that point, we can reconstruct the entire function."
+    ]
+  }
+}

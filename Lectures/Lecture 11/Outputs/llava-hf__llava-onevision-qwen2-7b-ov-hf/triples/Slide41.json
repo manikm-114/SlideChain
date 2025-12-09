@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide41",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nHere’s another way to look at the ROC curve — in terms of true positive fraction and false positive fraction.\n\nThe true positive fraction is simply the sensitivity: among all real disease cases, what fraction we detect correctly.\u000bThe false positive fraction is equal to one minus specificity: among all healthy cases, what fraction we mistakenly call positive.\nWhen we plot sensitivity on the vertical axis against 1 – specificity on the horizontal axis, we get the ROC curve.\n\nIf the curve lies along the diagonal dashed line, it means the test is performing no better than random guessing — the true positive fraction increases at the same rate as the false positive fraction.\nBut if the curve bends upward toward the top-left corner, that indicates good diagnostic performance: we are capturing many true positives while keeping false positives relatively low.\n\nSo in practice, the more the ROC curve bulges toward the upper left, the better the test or imaging system is at separating disease from non-disease.\nThis is exactly why the ROC framework is so valuable. It captures the trade-off between sensitivity and specificity in a single curve, and it gives us a clear visual and quantitative way to compare different diagnostic systems.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"<diagnostic test>\", \"p\":\"measures\",\n     \"o\":\"<true positive fraction>\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The true positive fraction is simply the sensitivity: among all real disease cases, what fraction we detect correctly.\"}\n  ],\n  \"triples\": [\n    {\"s\":\"<diagnostic test>\", \"p\":\"measures\",\n     \"o\":\"<false positive fraction>\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"The false positive fraction is equal to one minus specificity: among all healthy cases, what fraction we mistakenly call positive.\"}\n  ],\n  \"triples\": [\n    {\"s\":\"<diagnostic test>\", \"p\":\"measures\",\n     \"o\":\"<ROC curve>\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"When we plot sensitivity on the vertical axis against 1 – specificity on the horizontal axis, we get the ROC curve.\"}\n  ],\n  \"triples\": [\n    {\"s\":\"<diagnostic test>\", \"p\":\"measures\",\n     \"o\":\"<diagnostic performance>\", \"modalities\":[\"text\"], \"confidence",
+  "parsed": {
+    "s": "<diagnostic test>",
+    "p": "measures",
+    "o": "<ROC curve>",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 0.0,
+    "evidence": [
+      "When we plot sensitivity on the vertical axis against 1 - specificity on the horizontal axis, we get the ROC curve."
+    ]
+  }
+}

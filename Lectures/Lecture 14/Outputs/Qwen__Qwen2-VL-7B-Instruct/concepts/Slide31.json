@@ -1,0 +1,24 @@
+{
+  "slide_id": "Slide31",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "concepts",
+  "timestamp_utc": "2025-11-09T08:34:17.968834+00:00",
+  "text_length": 709,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow, let’s finish with the last two sections. First, image artifacts. I’ve mentioned image artifacts several times throughout this course. Tomographic images are meant to reveal the true underlying anatomical structure. However, for various reasons, the images sometimes show structures that aren’t actually present. These false structures are what we call image artifacts.\n\nIf there’s no real structure present, what you see might just be noise. Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body. They are just artifacts. We’ll discuss CT image quality considerations next, which include how artifacts impact the overall image quality.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Reject filler or administrative text.\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\n\nassistant\n{\n  \"concepts\": [\n    {\"term\": \"image artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"CT image quality\", \"category\": \"signal_processing\"},\n    {\"term\": \"CT image artifacts\", \"category\": \"signal_processing\"},\n    {\"term\": \"CT image quality considerations\", \"category\": \"signal_processing\"},\n    {\"term\": \"CT image artifacts impact\", \"category\": \"signal_processing\"}\n  ],\n  \"evidence\": [\n    \"Tomographic images are meant to reveal the true underlying anatomical structure. However, for various reasons, the images sometimes show structures that aren’t actually present. These false structures are what we call image artifacts.\",\n    \"Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body. They are just artifacts.\"\n  ]\n}",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "image artifacts",
+        "category": "signal_processing"
+      },
+      {
+        "term": "CT image quality",
+        "category": "signal_processing"
+      }
+    ],
+    "evidence": [
+      "Tomographic images are meant to reveal the true underlying anatomical structure. However, for various reasons, the images sometimes show structures that aren't actually present. These false structures are what we call image artifacts.",
+      "Sometimes, artifacts show up as streaks or stripes in the image, but obviously, there are no stripes inside the human body. They are just artifacts."
+    ]
+  }
+}

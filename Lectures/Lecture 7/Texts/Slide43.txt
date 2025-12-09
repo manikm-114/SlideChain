@@ -1,0 +1,18 @@
+Now let’s focus on this final and very important step.
+What you see here is the reconstruction formula — a powerful result that tells us how to rebuild the original continuous-time signal, f of t, from its discrete samples.
+Here’s how it works.
+
+We start with a set of sampled values. These are the values of f of t taken at regular intervals — specifically at times k over P. These are the points where our delta functions were placed during sampling.
+
+Now, we take each of those sampled values — each f of k over P — and multiply it by a special function called the sinc function. You can see it written here as sine of pi times P times t minus k over P divided by pi times P times t minus k over P.
+This sinc function looks like a smooth oscillating wave that decays gradually away from its center. And what’s important is that it has the perfect shape to reconstruct smooth curves from discrete data points.
+
+Now here’s the key idea.
+Each sampled value acts like a weight, and each weight generates a shifted copy of the sinc function centered at that sample point. So at k over P, we get a sinc function that peaks there, scaled by the sample value at that point.
+Then we add up all these sinc functions — one for each sample.
+
+The result? A continuous, smooth signal — which is exactly the original signal f of t that we started with.
+This is how sampling and reconstruction come together. Each delta function "copies" the sinc function. Each copy is scaled by the corresponding sample value. And the sum of all these scaled sinc functions recreates the original analog signal.
+So this final formula — this infinite sum — tells us something remarkable:
+As long as we sample carefully, we can fully reconstruct a continuous signal from just its discrete samples.
+That’s the beauty of the sampling theorem.

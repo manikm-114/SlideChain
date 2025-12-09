@@ -1,0 +1,152 @@
+{
+  "lecture": "Lecture 17",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "data_processing",
+            "term": "scatter background"
+          },
+          {
+            "category": "data_processing",
+            "term": "random counts"
+          },
+          {
+            "category": "data_processing",
+            "term": "attenuation correction"
+          },
+          {
+            "category": "data_processing",
+            "term": "scatter correction"
+          },
+          {
+            "category": "data_processing",
+            "term": "random correction"
+          },
+          {
+            "category": "data_processing",
+            "term": "dead time"
+          },
+          {
+            "category": "signal_processing",
+            "term": "measured signal"
+          },
+          {
+            "category": "signal_processing",
+            "term": "true activity"
+          },
+          {
+            "category": "data_processing",
+            "term": "delayed window"
+          },
+          {
+            "category": "data_processing",
+            "term": "triple coincidences"
+          }
+        ],
+        "evidence": [
+          "scatter background",
+          "random counts",
+          "attenuation correction",
+          "scatter correction",
+          "random correction",
+          "dead time",
+          "measured signal",
+          "true activity",
+          "delayed window",
+          "triple coincidences"
+        ]
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "The total counts-the overall measured signal or image-actually contain two main components. These two components are scatter background and random counts"
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "random counts",
+        "p": "contains",
+        "s": "Total Counts"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "signal_processing",
+            "term": "scatter background"
+          },
+          {
+            "category": "signal_processing",
+            "term": "random counts"
+          },
+          {
+            "category": "algorithm",
+            "term": "correction methods"
+          },
+          {
+            "category": "signal_processing",
+            "term": "corrections"
+          },
+          {
+            "category": "signal_processing",
+            "term": "true activity"
+          }
+        ],
+        "evidence": [
+          "The total counts-the overall measured signal or image-actually contain two main components. These two components are scatter background and random counts, along with a variety of other effects and oddities. You can estimate the random count by using a delayed window, and triple coincidences can be corrected as well. There are many correction methods, but the most important thing to understand from this lecture is to have a rough idea of how these corrections work."
+        ]
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "true activity"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 0.9,
+            "evidence": "The total counts-the overall measured signal or image-actually contain two main components. These two components are scatter background and random counts...",
+            "modalities": [
+              "text",
+              "image"
+            ],
+            "o": "Random Counts",
+            "p": "represents",
+            "s": "Total Counts"
+          }
+        ]
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "make sure your results reflect the true activity"
+      },
+      "triples": {
+        "confidence": 0.0,
+        "evidence": [
+          "triple coincidences can be corrected as well."
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "random count",
+        "p": "corrects",
+        "s": "triple coincidences"
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide42.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide42.txt"
+  },
+  "slide_id": "Slide42"
+}

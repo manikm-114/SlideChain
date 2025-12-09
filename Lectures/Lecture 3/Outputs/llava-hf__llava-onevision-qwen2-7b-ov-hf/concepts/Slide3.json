@@ -1,0 +1,37 @@
+{
+  "slide_id": "Slide3",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nToday’s lecture is straightforward. We’re going to talk about the concept of a system—a core idea that underpins everything we’ll cover in this course. If you’ve downloaded the draft of my textbook, you’ll see that this topic forms the first chapter. Reading just the first ten pages will give you a solid grasp of the key ideas.\nIn each chapter, I aim for a balanced structure: we start with three main sections, followed by a concluding section with remarks and points for deeper thought. In this lecture, we’ll begin with general systems, then narrow our focus to linear systems—which, as the name suggests, behave in a straightforward, predictable way, much like linear functions in mathematics.\nTo qualify as a linear system, two properties must be satisfied: additivity and homogeneity. Together, these form what we call the superposition principle. We’ll break these ideas down, explore when one property implies the other, and consider whether they are truly independent requirements. Lastly, we’ll touch on nonlinear systems—which are simply systems that don’t meet these linearity conditions. This will give you a broad overview of the system concepts essential for medical imaging.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"system\", \"category\": \"mathematics\"},\n    {\"term\": \"linear system\", \"category\": \"mathematics\"},\n    {\"term\": \"additivity\", \"category\": \"mathematics\"},\n    {\"term\": \"homogeneity\", \"category\": \"mathematics\"},\n    {\"term\": \"superposition principle\", \"category\": \"mathematics\"},\n    {\"term\": \"nonlinear system\", \"category\": \"mathematics\"}\n  ],\n  \"evidence\": [\"In each chapter, I aim for a balanced structure: we start with three main sections, followed by a concluding section with remarks and points for deeper thought. In this lecture, we’ll begin with general systems, then narrow our focus to linear systems—which, as the name suggests, behave in a straightforward, predictable way, much like linear functions in mathematics.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "system",
+        "category": "mathematics"
+      },
+      {
+        "term": "linear system",
+        "category": "mathematics"
+      },
+      {
+        "term": "additivity",
+        "category": "mathematics"
+      },
+      {
+        "term": "homogeneity",
+        "category": "mathematics"
+      },
+      {
+        "term": "superposition principle",
+        "category": "mathematics"
+      },
+      {
+        "term": "nonlinear system",
+        "category": "mathematics"
+      }
+    ],
+    "evidence": [
+      "In each chapter, I aim for a balanced structure: we start with three main sections, followed by a concluding section with remarks and points for deeper thought. In this lecture, we’ll begin with general systems, then narrow our focus to linear systems-which, as the name suggests, behave in a straightforward, predictable way, much like linear functions in mathematics."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slide_id": "Slide44",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "triples",
+  "raw_output": "user \nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nOnce the radiofrequency pulse is turned off, the magnetization vector begins to relax back toward the main magnetic field, capital B naught. In this process, the excess energy that was absorbed is released.\nAs the system relaxes, the transverse magnetization — that is, M x y — begins to decay. This decay produces a signal that gradually decreases to zero. We call this the free induction decay, or FID.\n\nThe FID is the fundamental nuclear magnetic resonance signal. It oscillates at the resonance frequency, and its strength is proportional to the local proton density. In other words, the more protons you have in a region, the stronger the signal you record.\n\nThis decay curve, shaped by relaxation mechanisms T1 and T2, contains the raw information that MRI uses. By capturing and analyzing this signal, we can reconstruct images that reveal tissue structure and composition.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if the relation is clearly visible without the text.\n- confidence in [0,1]. Do not invent entities or relations.\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\nassistant\n{\n  \"triples\": [\n    {\"s\":\"radiofrequency pulse\", \"p\":\"produces\", \"o\":\"FID\", \"modalities\":[\"text\"], \"confidence\":0.0, \"evidence\":\"Once the radiofrequency pulse is turned off, the magnetization vector begins to relax back toward the main magnetic field, capital B naught. In this process, the excess energy that was absorbed is released.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "radiofrequency pulse",
+        "p": "produces",
+        "o": "FID",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 0.0,
+        "evidence": "Once the radiofrequency pulse is turned off, the magnetization vector begins to relax back toward the main magnetic field, capital B naught. In this process, the excess energy that was absorbed is released."
+      }
+    ]
+  }
+}

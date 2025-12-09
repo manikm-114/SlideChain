@@ -1,0 +1,30 @@
+{
+  "slide_id": "Slide19",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"Positron emission\", \"p\":\"produces\", \"o\":\"two anti-parallel 511 keV photons\", \"modalities\":[\"text\",\"image\"], \"confidence\":1.0, \"evidence\":\"This annihilation produces two gamma photons, each with an energy of 511 kilo-electronvolts.\"},\n    {\"s\":\"Positron emission tomography\", \"p\":\"depends_on\", \"o\":\"positron emission\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"This property is the basis for positron emission tomography, or PET.\"},\n    {\"s\":\"PET\", \"p\":\"reconstructs_with\", \"o\":\"pairs of gamma photons\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"By detecting pairs of gamma photons and knowing they must lie along the same line, we can reconstruct the location where the positron annihilation occurred.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "Positron emission tomography",
+        "p": "depends_on",
+        "o": "positron emission",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "This property is the basis for positron emission tomography, or PET."
+      },
+      {
+        "s": "PET",
+        "p": "reconstructs_with",
+        "o": "pairs of gamma photons",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "By detecting pairs of gamma photons and knowing they must lie along the same line, we can reconstruct the location where the positron annihilation occurred."
+      }
+    ]
+  }
+}

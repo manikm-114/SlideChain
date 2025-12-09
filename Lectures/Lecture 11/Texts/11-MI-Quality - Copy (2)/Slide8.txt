@@ -1,0 +1,11 @@
+Now, let me briefly mention another type of distance, called information divergence. This is where probability theory comes in.
+
+Suppose you don’t just have two images, but instead you have two probability distributions — for example, two different histograms of pixel values. The question becomes: how do we measure the difference between these two distributions?
+One option is to use Euclidean distance, just as before. But there is a more meaningful way in the context of information theory. This is called the Kullback–Leibler divergence, or KL distance for short.
+
+The formula looks a bit unusual:KL divergence equals the sum over x of p of x, multiplied by the logarithm of p of x divided by q of x.
+You don’t need to worry too much about the details — this is beyond the scope of our lecture — but the idea is important. The KL divergence is always greater than or equal to zero, and it becomes exactly zero if and only if the two distributions are identical.
+
+One interesting property is that the KL divergence is not symmetric. In other words, the distance from P to Q is not the same as the distance from Q to P. That may sound strange, but it has a good analogy. Think of climbing a mountain: going uphill is much harder than going back downhill, even though it’s the same physical path. In the same way, KL divergence measures directionality in information.
+
+So, while we won’t use this directly in our course, it’s good to be aware that such information-based distances exist. They play a big role in areas like machine learning and statistical signal processing.

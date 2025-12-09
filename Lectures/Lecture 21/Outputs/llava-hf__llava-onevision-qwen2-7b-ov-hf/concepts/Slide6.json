@@ -1,0 +1,50 @@
+{
+  "slide_id": "Slide6",
+  "model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "prompt": "concepts",
+  "raw_output": "user \nSystem:\nYou are an expert educator in medical imaging. From the following slide text,\nextract the key technical or scientific concepts that are essential for understanding the topic.\n\nUser:\nSLIDE_TEXT:\nNow let’s look at this picture, which illustrates a classic experiment that helps us understand what sound really is. This is Robert Boyle’s experiment, one of the earliest demonstrations of how sound needs a medium to travel.\n\nSo imagine this setup: we have a ringing alarm clock placed inside a large glass chamber with a valve on top. At first, the clock is ringing, and you can clearly hear the sound through the air inside the container. Then, we connect a vacuum pump and start to remove the air from the chamber.\n\nAs the air is pumped out, the sound of the clock becomes weaker and weaker until eventually, you can hardly hear anything at all. The clock is still ringing, but with almost no air inside the chamber, there’s nothing to carry the sound waves to your ears.\nThen, when you open the valve and let air rush back into the chamber, the sound suddenly becomes loud again.\n\nThis simple experiment beautifully demonstrates that sound waves require a medium — such as air, water, or tissue — to propagate. Unlike light or X-rays, which can travel through a vacuum, mechanical waves cannot.\n\nSo, in ultrasound imaging, the same principle applies: the sound waves travel through biological tissue, reflecting and scattering as they go, allowing us to measure and form images. Without a proper medium — say, if there’s air between the transducer and the skin — no ultrasound signal would be transmitted effectively. That’s why, as you’ll see later, we always use ultrasound gel to eliminate air gaps and ensure good acoustic coupling between the probe and the body.\n\nSTRICT INSTRUCTIONS:\n- Return pure JSON only. No prose, no markdown, no code fences.\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\n- Assign exactly one category from:\n  software | workflow | mathematics | signal_processing | frequency_domain |\n  physics | instrumentation | data_processing | reconstruction |\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\n- Category guidance:\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\n  * physics → energy, radiation, waves, gradients, attenuation\n  * instrumentation → scanners, detectors, coils, transducers, gantry\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\n  * communication → network or data transfer\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\n  * algorithm → analytical/iterative computational methods\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\n- Output format:\n{\n  \"concepts\": [\n    {\"term\": \"<exact term from slide>\", \"category\": \"<category>\"}\n  ],\n  \"evidence\": [\"<short supporting phrase from SLIDE_TEXT>\"]\n}\nassistant\n```json\n{\n  \"concepts\": [\n    {\"term\": \"medium\", \"category\": \"physics\"},\n    {\"term\": \"sound waves\", \"category\": \"physics\"},\n    {\"term\": \"propagate\", \"category\": \"physics\"},\n    {\"term\": \"vacuum\", \"category\": \"physics\"},\n    {\"term\": \"ultrasound imaging\", \"category\": \"modality\"},\n    {\"term\": \"biological tissue\", \"category\": \"anatomy\"},\n    {\"term\": \"transducer\", \"category\": \"instrumentation\"},\n    {\"term\": \"acoustic coupling\", \"category\": \"signal_processing\"},\n    {\"term\": \"ultrasound gel\", \"category\": \"instrumentation\"}\n  ],\n  \"evidence\": [\"This simple experiment beautifully demonstrates that sound waves require a medium — such as air, water, or tissue — to propagate.\", \"Without a proper medium — say, if there’s air between the transducer and the skin — no ultrasound signal would be transmitted effectively.\"]\n}\n```",
+  "parsed": {
+    "concepts": [
+      {
+        "term": "medium",
+        "category": "physics"
+      },
+      {
+        "term": "sound waves",
+        "category": "physics"
+      },
+      {
+        "term": "propagate",
+        "category": "physics"
+      },
+      {
+        "term": "vacuum",
+        "category": "physics"
+      },
+      {
+        "term": "ultrasound imaging",
+        "category": "modality"
+      },
+      {
+        "term": "biological tissue",
+        "category": "anatomy"
+      },
+      {
+        "term": "transducer",
+        "category": "instrumentation"
+      },
+      {
+        "term": "acoustic coupling",
+        "category": "signal_processing"
+      },
+      {
+        "term": "ultrasound gel",
+        "category": "instrumentation"
+      }
+    ],
+    "evidence": [
+      "This simple experiment beautifully demonstrates that sound waves require a medium - such as air, water, or tissue - to propagate.",
+      "Without a proper medium - say, if there’s air between the transducer and the skin - no ultrasound signal would be transmitted effectively."
+    ]
+  }
+}

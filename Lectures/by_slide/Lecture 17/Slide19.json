@@ -1,0 +1,233 @@
+{
+  "lecture": "Lecture 17",
+  "slide_id": "Slide19",
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Images\\Slide19.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Texts\\Slide19.txt"
+  },
+  "models": {
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\concepts\\Slide19.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "closed-form solutions",
+              "category": "mathematics"
+            },
+            {
+              "term": "algebraic approaches",
+              "category": "mathematics"
+            },
+            {
+              "term": "linear equations",
+              "category": "mathematics"
+            },
+            {
+              "term": "analytic techniques",
+              "category": "mathematics"
+            },
+            {
+              "term": "Fourier slice theorem",
+              "category": "mathematics"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "reconstruction problem",
+              "category": "reconstruction"
+            },
+            {
+              "term": "closed-form solutions",
+              "category": "mathematics"
+            },
+            {
+              "term": "advanced mathematics",
+              "category": "mathematics"
+            }
+          ],
+          "evidence": [
+            "Just to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"concepts\", \"raw_output\": \"user \\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Category guidance:\\n  * software → programming tools/environments (MATLAB, Octave, MathWorks)\\n  * workflow → procedural/course steps (BUT exclude admin like office hours)\\n  * mathematics / signal_processing / frequency_domain → formulas, transforms, filters, spectra\\n  * physics → energy, radiation, waves, gradients, attenuation\\n  * instrumentation → scanners, detectors, coils, transducers, gantry\\n  * data_processing / reconstruction → corrections, backprojection, iterative, FBP, FFT usage\\n  * quality_metric → SNR, resolution, artifacts, MTF, DQE\\n  * communication → network or data transfer\\n  * modality → CT, MRI, PET, SPECT, Ultrasound (US), Optical/Photoacoustic, etc.\\n  * anatomy → biological structures (organs, tissues, bones, vessels) ONLY\\n  * algorithm → analytical/iterative computational methods\\n  * ai_ml → learning methods (deep learning, CNN, transformer, self-supervised)\\n- Reject filler or administrative text (office hours, emails, rooms, homework logistics).\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\nassistant\\n```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"closed-form solutions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"algebraic approaches\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"linear equations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"analytic techniques\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Fourier slice theorem\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruction problem\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"closed-form solutions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"advanced mathematics\\\", \\\"category\\\": \\\"mathematics\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"Just to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\\"]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"closed-form solutions\", \"category\": \"mathematics\"}, {\"term\": \"algebraic approaches\", \"category\": \"mathematics\"}, {\"term\": \"linear equations\", \"category\": \"mathematics\"}, {\"term\": \"analytic techniques\", \"category\": \"mathematics\"}, {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"reconstruction problem\", \"category\": \"reconstruction\"}, {\"term\": \"closed-form solutions\", \"category\": \"mathematics\"}, {\"term\": \"advanced mathematics\", \"category\": \"mathematics\"}], \"evidence\": [\"Just to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\llava-hf__llava-onevision-qwen2-7b-ov-hf\\triples\\Slide19.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "Fourier analysis",
+              "p": "uses",
+              "o": "analytic techniques",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 0.0,
+              "evidence": "You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations."
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"llava-hf/llava-onevision-qwen2-7b-ov-hf\", \"prompt\": \"triples\", \"raw_output\": \"user \\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if the relation is clearly visible without the text.\\n- confidence in [0,1]. Do not invent entities or relations.\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\nassistant\\n```json\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"Fourier analysis\\\", \\\"p\\\":\\\"uses\\\", \\\"o\\\":\\\"analytic techniques\\\", \\\"modalities\\\":[\\\"text\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\\"}\\n  ]\\n}\\n```\", \"parsed\": {\"triples\": [{\"s\": \"Fourier analysis\", \"p\": \"uses\", \"o\": \"analytic techniques\", \"modalities\": [\"text\"], \"confidence\": 0.0, \"evidence\": \"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\"}]}}"
+      }
+    },
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\concepts\\Slide19.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "closed-form solutions",
+              "category": "mathematics"
+            },
+            {
+              "term": "algebraic approaches",
+              "category": "algorithm"
+            },
+            {
+              "term": "systems of linear equations",
+              "category": "algorithm"
+            },
+            {
+              "term": "Fourier slice theorem",
+              "category": "signal_processing"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "reconstruction",
+              "category": "reconstruction"
+            },
+            {
+              "term": "deterministic PET reconstruction",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.",
+            "There’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT.",
+            "Next, let’s look at deterministic PET reconstruction."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"concepts\", \"raw_output\": \"```json\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"closed-form solutions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"algebraic approaches\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"systems of linear equations\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"Fourier slice theorem\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"},\\n    {\\\"term\\\": \\\"deterministic PET reconstruction\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\\",\\n    \\\"There’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT.\\\",\\n    \\\"Next, let’s look at deterministic PET reconstruction.\\\"\\n  ]\\n}\\n```\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"closed-form solutions\", \"category\": \"mathematics\"}, {\"term\": \"algebraic approaches\", \"category\": \"algorithm\"}, {\"term\": \"systems of linear equations\", \"category\": \"algorithm\"}, {\"term\": \"Fourier slice theorem\", \"category\": \"signal_processing\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"reconstruction\", \"category\": \"reconstruction\"}, {\"term\": \"deterministic PET reconstruction\", \"category\": \"reconstruction\"}], \"evidence\": [\"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\", \"There’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT.\", \"Next, let’s look at deterministic PET reconstruction.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\OpenGVLab__InternVL3-14B\\triples\\Slide19.json",
+        "parsed": {
+          "triples": [
+            {
+              "s": "analytic techniques",
+              "p": "uses",
+              "o": "Fourier slice theorem",
+              "modalities": [
+                "text"
+              ],
+              "confidence": 1.0,
+              "evidence": "there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT"
+            }
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"OpenGVLab/InternVL3-14B\", \"prompt\": \"triples\", \"raw_output\": \"{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"analytic techniques\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"Fourier slice theorem\\\",\\n      \\\"modalities\\\": [\\\"text\\\"],\\n      \\\"confidence\\\": 1.0,\\n      \\\"evidence\\\": \\\"there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT\\\"\\n    }\\n  ]\\n}\", \"parsed\": {\"triples\": [{\"s\": \"analytic techniques\", \"p\": \"uses\", \"o\": \"Fourier slice theorem\", \"modalities\": [\"text\"], \"confidence\": 1.0, \"evidence\": \"there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT\"}]}}"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\concepts\\Slide19.json",
+        "parsed": {
+          "concepts": [
+            {
+              "term": "Fourier analysis",
+              "category": "signal_processing"
+            },
+            {
+              "term": "closed-form solutions",
+              "category": "mathematics"
+            },
+            {
+              "term": "Fourier slice theorem",
+              "category": "frequency_domain"
+            },
+            {
+              "term": "SPECT",
+              "category": "modality"
+            },
+            {
+              "term": "analytic techniques",
+              "category": "mathematics"
+            },
+            {
+              "term": "CT",
+              "category": "modality"
+            },
+            {
+              "term": "PET reconstruction",
+              "category": "modality"
+            },
+            {
+              "term": "deterministic",
+              "category": "algorithm"
+            },
+            {
+              "term": "linear equations",
+              "category": "mathematics"
+            },
+            {
+              "term": "reconstruction problem",
+              "category": "reconstruction"
+            }
+          ],
+          "evidence": [
+            "You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.",
+            "These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-09T10:58:31.835789+00:00\", \"text_length\": 718, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"Fourier analysis\\\", \\\"category\\\": \\\"signal_processing\\\"},\\n    {\\\"term\\\": \\\"closed-form solutions\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"Fourier slice theorem\\\", \\\"category\\\": \\\"frequency_domain\\\"},\\n    {\\\"term\\\": \\\"SPECT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"analytic techniques\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"CT\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"PET reconstruction\\\", \\\"category\\\": \\\"modality\\\"},\\n    {\\\"term\\\": \\\"deterministic\\\", \\\"category\\\": \\\"algorithm\\\"},\\n    {\\\"term\\\": \\\"linear equations\\\", \\\"category\\\": \\\"mathematics\\\"},\\n    {\\\"term\\\": \\\"reconstruction problem\\\", \\\"category\\\": \\\"reconstruction\\\"}\\n  ],\\n  \\\"evidence\\\": [\\n    \\\"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\\",\\n    \\\"These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics.\\\"\\n  ]\\n}\", \"parsed\": {\"concepts\": [{\"term\": \"Fourier analysis\", \"category\": \"signal_processing\"}, {\"term\": \"closed-form solutions\", \"category\": \"mathematics\"}, {\"term\": \"Fourier slice theorem\", \"category\": \"frequency_domain\"}, {\"term\": \"SPECT\", \"category\": \"modality\"}, {\"term\": \"analytic techniques\", \"category\": \"mathematics\"}, {\"term\": \"CT\", \"category\": \"modality\"}, {\"term\": \"PET reconstruction\", \"category\": \"modality\"}, {\"term\": \"deterministic\", \"category\": \"algorithm\"}, {\"term\": \"linear equations\", \"category\": \"mathematics\"}, {\"term\": \"reconstruction problem\", \"category\": \"reconstruction\"}], \"evidence\": [\"You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\", \"These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics.\"]}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen2-VL-7B-Instruct\\triples\\Slide19.json",
+        "parsed": {
+          "triples": []
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen2-VL-7B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-09T12:15:50.697049+00:00\", \"text_length\": 718, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\", \"parsed\": {\"triples\": []}}"
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\concepts\\Slide19.json",
+        "parsed": {
+          "term": "Fourier slice theorem",
+          "category": "mathematics"
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"concepts\", \"timestamp_utc\": \"2025-11-12T19:09:48.163313+00:00\", \"text_length\": 718, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are an expert educator in medical imaging. From the following slide text,\\nextract the key technical or scientific concepts that are essential for understanding the topic.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return pure JSON only. No prose, no markdown, no code fences.\\n- Each concept must appear verbatim (case-insensitive) in SLIDE_TEXT.\\n- Assign exactly one category from:\\n  software | workflow | mathematics | signal_processing | frequency_domain |\\n  physics | instrumentation | data_processing | reconstruction |\\n  quality_metric | communication | modality | anatomy | algorithm | ai_ml\\n- Reject filler or administrative text.\\n- Output format:\\n{\\n  \\\"concepts\\\": [\\n    {\\\"term\\\": \\\"<exact term from slide>\\\", \\\"category\\\": \\\"<category>\\\"}\\n  ],\\n  \\\"evidence\\\": [\\\"<short supporting phrase from SLIDE_TEXT>\\\"]\\n}\\n\\nassistant\\n{\\n  \\\"concepts\\\": [\\n    {\\n      \\\"term\\\": \\\"some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"you can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"using analytic techniques and the Fourier slice theorem for SPECT\\\",\\n      \\\"category\\\": \\\"reconstruction\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Fourier analysis\\\",\\n      \\\"category\\\": \\\"signal_processing\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"closed-form solutions\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"algebraic approaches, like solving systems of linear equations\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"term\\\": \\\"Fourier slice theorem\\\",\\n      \\\"category\\\": \\\"mathematics\\\"\\n    },\\n    {\\n      \\\"\", \"parsed\": {\"term\": \"Fourier slice theorem\", \"category\": \"mathematics\"}}"
+      },
+      "triples": {
+        "source": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 17\\Outputs\\Qwen__Qwen3-VL-4B-Instruct\\triples\\Slide19.json",
+        "parsed": {
+          "s": "A Fourier reconstruction algorithm with constant attenuation compensation using 180° acquisition data for SPECT",
+          "p": "uses",
+          "o": "the complex variable central slice theorem",
+          "modalities": [
+            "text"
+          ],
+          "confidence": 0.9,
+          "evidence": [
+            "The complex variable central slice theorem is used to derive this algorithm."
+          ]
+        },
+        "raw": "{\"slide_id\": \"Slide19\", \"model\": \"Qwen/Qwen3-VL-4B-Instruct\", \"prompt\": \"triples\", \"timestamp_utc\": \"2025-11-12T19:17:21.400587+00:00\", \"text_length\": 718, \"raw_output\": \"system\\nYou are a helpful AI for medical imaging.\\nuser\\nSystem:\\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\\n\\nUser:\\nSLIDE_TEXT:\\nThere’s a lot of research going on in this area. I should put another green button here for curiosity’s sake—because some of these ideas can be solved analytically when you assume the attenuation coefficient, mu, is constant. You can use Fourier analysis, closed-form solutions, or algebraic approaches, like solving systems of linear equations.\\n\\nJust to point out, for those who are curious, there’s a paper shown here about using analytic techniques and the Fourier slice theorem for SPECT. These methods are more complicated than CT, but they show that there are options for solving the reconstruction problem with closed-form solutions or advanced mathematics. Next, let’s look at deterministic PET reconstruction.\\n\\nSTRICT INSTRUCTIONS:\\n- Return JSON only. No prose, no markdown, no code fences.\\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\\n- Add modalities [\\\"text\\\"] by default; add \\\"image\\\" only if clearly visible without the text.\\n- Confidence in [0,1].\\n\\nOUTPUT:\\n{\\n  \\\"triples\\\": [\\n    {\\\"s\\\":\\\"<verbatim subject>\\\", \\\"p\\\":\\\"uses|via|represents|depends_on|measures|produces|reconstructs_with\\\",\\n     \\\"o\\\":\\\"<verbatim object>\\\", \\\"modalities\\\":[\\\"text\\\",\\\"image\\\"], \\\"confidence\\\":0.0, \\\"evidence\\\":\\\"<short quote from SLIDE_TEXT>\\\"}\\n  ]\\n}\\n\\nassistant\\n{\\n  \\\"triples\\\": [\\n    {\\n      \\\"s\\\": \\\"A Fourier reconstruction algorithm with constant attenuation compensation using 180° acquisition data for SPECT\\\",\\n      \\\"p\\\": \\\"reconstructs_with\\\",\\n      \\\"o\\\": \\\"a direct Fourier reconstruction\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"This new algorithm is in the form of a direct Fourier reconstruction.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"A Fourier reconstruction algorithm with constant attenuation compensation using 180° acquisition data for SPECT\\\",\\n      \\\"p\\\": \\\"uses\\\",\\n      \\\"o\\\": \\\"the complex variable central slice theorem\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The complex variable central slice theorem is used to derive this algorithm.\\\"\\n    },\\n    {\\n      \\\"s\\\": \\\"A Fourier reconstruction algorithm with constant attenuation compensation using 180° acquisition data for SPECT\\\",\\n      \\\"p\\\": \\\"produces\\\",\\n      \\\"o\\\": \\\"an image\\\",\\n      \\\"modalities\\\": [\\n        \\\"text\\\"\\n      ],\\n      \\\"confidence\\\": 0.9,\\n      \\\"evidence\\\": \\\"The image\", \"parsed\": {\"s\": \"A Fourier reconstruction algorithm with constant attenuation compensation using 180° acquisition data for SPECT\", \"p\": \"uses\", \"o\": \"the complex variable central slice theorem\", \"modalities\": [\"text\"], \"confidence\": 0.9, \"evidence\": [\"The complex variable central slice theorem is used to derive this algorithm.\"]}}"
+      }
+    }
+  }
+}

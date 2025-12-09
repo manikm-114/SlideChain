@@ -1,0 +1,18 @@
+{
+  "slide_id": "Slide39",
+  "model": "OpenGVLab/InternVL3-14B",
+  "prompt": "triples",
+  "raw_output": "{\n  \"triples\": [\n    {\"s\":\"chest X-ray\", \"p\":\"measures\", \"o\":\"tuberculosis\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Here’s a concrete example using tuberculosis screening with chest X-ray.\"},\n    {\"s\":\"the system\", \"p\":\"measures\", \"o\":\"sensitivity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Sensitivity: 22 out of 30 true TB cases were detected → about 73%.\"},\n    {\"s\":\"the system\", \"p\":\"measures\", \"o\":\"specificity\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Specificity: 1,739 out of 1,790 healthy cases were correctly identified → about 97%.\"},\n    {\"s\":\"the system\", \"p\":\"measures\", \"o\":\"positive predictive value (PPV)\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"Positive Predictive Value (PPV): 22 out of 73 reported positives were real TB cases → only 30%.\"},\n    {\"s\":\"the",
+  "parsed": {
+    "s": "the system",
+    "p": "measures",
+    "o": "positive predictive value (PPV)",
+    "modalities": [
+      "text"
+    ],
+    "confidence": 1.0,
+    "evidence": [
+      "Positive Predictive Value (PPV): 22 out of 73 reported positives were real TB cases → only 30%."
+    ]
+  }
+}

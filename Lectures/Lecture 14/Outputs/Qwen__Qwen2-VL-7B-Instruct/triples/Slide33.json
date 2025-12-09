@@ -1,0 +1,22 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-09T09:47:51.925231+00:00",
+  "text_length": 936,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nCT reconstruction relies on CT numbers, which are derived from Beer's law. Beer's law relates the incoming and attenuated X-ray intensities via a parameter called the linear attenuation coefficient, mu.\nData processing converts raw measurements into line integrals, which are then used to reconstruct mu values throughout the image.\n\nOn the CT monitor, you don’t see mu values directly but relative values compared to water, since the human body is mostly water.\nThus, CT numbers indicate how much more or less dense a region is than water.\nFor example, bone has a CT number over 1000, air has about -1000, and water is defined as zero. The range is often magnified by 1000 times for visualization.\n\nThis scale is sometimes called Hounsfield units, named after Sir Godfrey Hounsfield, the British engineer who developed the first CT scanner, which earned him a Nobel Prize for its revolutionary capability to reveal internal structures.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"CT reconstruction\", \"p\":\"uses\", \"o\":\"Beer's law\", \"modalities\":[\"text\"], \"confidence\":1.0, \"evidence\":\"CT reconstruction relies on CT numbers, which are derived from Beer's law.\"}\n  ]\n}",
+  "parsed": {
+    "triples": [
+      {
+        "s": "CT reconstruction",
+        "p": "uses",
+        "o": "Beer's law",
+        "modalities": [
+          "text"
+        ],
+        "confidence": 1.0,
+        "evidence": "CT reconstruction relies on CT numbers, which are derived from Beer's law."
+      }
+    ]
+  }
+}

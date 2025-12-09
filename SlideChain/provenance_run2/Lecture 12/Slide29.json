@@ -1,0 +1,118 @@
+{
+  "lecture": "Lecture 12",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "concepts": [
+          {
+            "category": "physics",
+            "term": "X-rays"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation"
+          },
+          {
+            "category": "mathematics",
+            "term": "exponential law"
+          },
+          {
+            "category": "physics",
+            "term": "contrast"
+          },
+          {
+            "category": "physics",
+            "term": "attenuation coefficient"
+          },
+          {
+            "category": "signal_processing",
+            "term": "signal"
+          },
+          {
+            "category": "modality",
+            "term": "contrast agents"
+          },
+          {
+            "category": "modality",
+            "term": "advanced imaging methods"
+          }
+        ],
+        "evidence": [
+          "X-rays are attenuated as they pass through tissue",
+          "attenuation creates contrast in an image",
+          "signal is attenuated according to the exponential law",
+          "contrast is defined as the difference between the normal signal and the signal through the nodule",
+          "contrast depends only on \u03bc, the attenuation coefficient",
+          "Hounsfield Units",
+          "contrast agents or advanced imaging methods are often necessary"
+        ]
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Notice that the contrast depends only on \u03bc, the attenuation coefficient, and z, the extra thickness of the nodule.",
+            "modalities": [
+              "text"
+            ],
+            "o": "\u03bc, the attenuation coefficient, and z, the extra thickness of the nodule",
+            "p": "depends_on",
+            "s": "Contrast"
+          },
+          {
+            "confidence": 1.0,
+            "evidence": "This simple example shows the mechanism of attenuation contrast: the difference in signal arises because one path is slightly longer or passes through tissue with different attenuation properties.",
+            "modalities": [
+              "text"
+            ],
+            "o": "difference in signal",
+            "p": "produces",
+            "s": "Contrast"
+          }
+        ]
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "signal_processing",
+        "term": "\u03bc = 1 per centimeter"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "In real soft tissue, \u03bc is much smaller, closer to 0.2 per centimeter"
+      },
+      "triples": {
+        "confidence": 0.85,
+        "evidence": [
+          "The difference in signal arises because one path is slightly longer or passes through tissue with different attenuation properties."
+        ],
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "o": "image",
+        "p": "produces",
+        "s": "Contrast"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "modality",
+        "term": "soft tissue imaging"
+      },
+      "triples": {
+        "triples": []
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Images\\Slide29.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 12\\Texts\\Slide29.txt"
+  },
+  "slide_id": "Slide29"
+}

@@ -1,0 +1,23 @@
+Alright, let’s wrap up with the big picture.
+
+This slide summarizes the key relationships between time and frequency domains — especially how signals and their spectra behave when we move from continuous to discrete representations.
+At the very top left, we start with a continuous-time signal — a smooth pulse that exists over a limited time interval. On the right, we see its frequency content, also confined to a certain bandwidth.
+
+Now, as we go down the slide, we perform sampling in time. That’s the red comb of vertical lines. We're picking values from the original signal at regular intervals — let’s say every delta t.
+What does this do in the frequency domain?
+It creates multiple copies of the spectrum, repeated again and again. This is called spectral replication. And if these replications don’t overlap, we can perfectly reconstruct the original signal.
+That's the essence of the sampling theorem — to avoid distortion, we must sample fast enough, at least twice the highest frequency present in the signal.
+
+Now, let’s look at the lower half of the slide.
+Here, we’re sampling in the frequency domain instead. That’s shown by the green comb — regularly spaced frequency spikes.
+What happens to the signal in the time domain?
+It becomes periodic — the original signal now repeats over time, again and again.
+
+So the big idea is this:
+Sampling in time causes replication in frequency.
+Sampling in frequency causes repetition in time.
+These two processes mirror each other — one in time, the other in frequency. This duality is at the heart of signal processing.
+Now, I know this diagram is dense, but if you walk through it carefully — step by step — you’ll see how everything we’ve covered comes together.
+
+We’ll cover this in more detail on Friday. In the meantime, I suggest reviewing this flow using the lecture slides and working through the derivations.
+Even if there are a few typos in the book chapter, don’t worry. The key ideas are all here. And if you’re curious, feel free to preview the next topic — the Discrete Fourier Transform — in the book as well.

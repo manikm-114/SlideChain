@@ -1,0 +1,11 @@
+{
+  "slide_id": "Slide33",
+  "model": "Qwen/Qwen2-VL-7B-Instruct",
+  "prompt": "triples",
+  "timestamp_utc": "2025-11-08T21:06:10.077273+00:00",
+  "text_length": 452,
+  "raw_output": "system\nYou are a helpful AI for medical imaging.\nuser\nSystem:\nYou are extracting factual relations from a medical imaging lecture. Use only information grounded in the input SLIDE_TEXT.\n\nUser:\nSLIDE_TEXT:\nMathematically, shift invariance means that if the input shifts by some amount—say a—the output shifts by the same amount. The system’s operation stays consistent, no matter where or when the input occurs.\nShift invariance, combined with linearity, gives us powerful tools for analyzing systems. Together, they allow us to model and predict system behavior with confidence, whether in medical imaging, signal processing, or other fields of engineering.\n\nSTRICT INSTRUCTIONS:\n- Return JSON only. No prose, no markdown, no code fences.\n- Output a triple only if both subject and object appear verbatim in SLIDE_TEXT (case-insensitive).\n- Predicates must be one of: uses | via | represents | depends_on | measures | produces | reconstructs_with.\n- Add modalities [\"text\"] by default; add \"image\" only if clearly visible without the text.\n- Confidence in [0,1].\n\nOUTPUT:\n{\n  \"triples\": [\n    {\"s\":\"<verbatim subject>\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"<verbatim object>\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"<short quote from SLIDE_TEXT>\"}\n  ]\n}\n\nassistant\n{\n  \"triples\": [\n    {\"s\":\"Shift Invariability\", \"p\":\"uses|via|represents|depends_on|measures|produces|reconstructs_with\",\n     \"o\":\"system's operation\", \"modalities\":[\"text\",\"image\"], \"confidence\":0.0, \"evidence\":\"Mathematically, shift invariance means that if the input shifts by some amount—say a—the output shifts by the same amount. The system’s operation stays consistent, no matter where or when the input occurs.\"}\n  ]\n}",
+  "parsed": {
+    "triples": []
+  }
+}

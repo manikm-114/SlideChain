@@ -1,0 +1,75 @@
+{
+  "lecture": "Lecture 14",
+  "models": {
+    "OpenGVLab__InternVL3-14B": {
+      "concepts": {
+        "category": "physics",
+        "term": "peripheral dose"
+      },
+      "triples": {
+        "confidence": 1.0,
+        "evidence": [
+          "MSAD Increases Slightly as Slice Thickness Decreases"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "Slice Thickness",
+        "p": "depends_on",
+        "s": "MSAD"
+      }
+    },
+    "Qwen__Qwen2-VL-7B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "Significantly Less at the Iso-center than Near Surface for Body"
+      },
+      "triples": {
+        "triples": []
+      }
+    },
+    "Qwen__Qwen3-VL-4B-Instruct": {
+      "concepts": {
+        "category": "physics",
+        "term": "for a standard head phantom, the dose at the center and periphery is roughly the same"
+      },
+      "triples": {
+        "confidence": 0.9,
+        "evidence": [
+          "MSAD Increases with kVp"
+        ],
+        "modalities": [
+          "text"
+        ],
+        "o": "kVp",
+        "p": "depends_on",
+        "s": "MSAD"
+      }
+    },
+    "llava-hf__llava-onevision-qwen2-7b-ov-hf": {
+      "concepts": {
+        "category": "physics",
+        "term": "peripheral dose"
+      },
+      "triples": {
+        "triples": [
+          {
+            "confidence": 1.0,
+            "evidence": "Higher tube current means more photons emitted, resulting in a higher radiation dose.",
+            "modalities": [
+              "text"
+            ],
+            "o": "radiation dose",
+            "p": "measures",
+            "s": "tube current"
+          }
+        ]
+      }
+    }
+  },
+  "paths": {
+    "image": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Images\\Slide56.JPG",
+    "text": "G:\\My Drive\\1. Studies\\RPI\\Thesis\\1. Prof Ge Wang\\1. Avatar Project\\Future Directions\\Comparing Models\\Lectures\\Retrieved Data\\Further Work\\MILU23\\Lecture 14\\Texts\\Slide56.txt"
+  },
+  "slide_id": "Slide56"
+}
